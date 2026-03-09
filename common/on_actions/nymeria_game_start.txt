@@ -6,7 +6,7 @@
 
 kill_line_of_char_characters = {
     effect = {
-        every_character = {
+        every_living_character = {
             limit = {
                 is_alive = yes
                 has_trait = line_of_char
