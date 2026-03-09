@@ -1172,13 +1172,28 @@ Gardener_52 = {
 
 	give_nickname = nick_agot_historical_greybeard_Gardener_52
 
-	7052.1.1 = {
+	# 7052.1.1 = {
+	# 	birth = yes
+	# 	add_character_flag = canon_status_canon
+	# 	effect = { add_trait = incapable }
+	# }
+	# 7070.1.1 = { trait = knight }
+	# 7148.1.1 = { # Died at ninety six
+	# 	trait = incapable
+	# 	death = {
+	# 		death_reason = death_murder_known
+	# 		killer = Fowler_110 # Dornishmen found him tied to his bed and dying when they sacked Highgarden
+	# 	}
+	# }
+	7203.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 		effect = { add_trait = incapable }
 	}
-	7070.1.1 = { trait = knight }
-	7148.1.1 = { # Died at ninety six
+
+	7221.1.1 = { trait = knight }
+
+	7300.1.1 = { # Died at ninety six
 		trait = incapable
 		death = {
 			death_reason = death_murder_known
@@ -1197,8 +1212,8 @@ Gardener_53 = {
 
 	father = Gardener_52
 
-	7090.1.1 = { birth = yes }
-	7169.1.1 = { death = yes }
+	7241.1.1 = { birth = yes }
+	7320.1.1 = { death = yes }
 }
 Gardener_54 = {
 	name = Margaery # married Eddison Peake
@@ -1210,8 +1225,8 @@ Gardener_54 = {
 
 	father = Gardener_52
 
-	7092.1.1 = { birth = yes }
-	7167.1.1 = { death = yes }
+	7243.1.1 = { birth = yes }
+	7318.1.1 = { death = yes }
 }
 ### Line of Merle, cousins to Garth X Greybeard
 Gardener_56 = {
@@ -1382,7 +1397,7 @@ Gardener_72 = {
 
 	7253.1.1 = { birth = yes }
 	7270.1.1 = { trait = knight }
-	7312.1.1 = { death = yes }
+	7288.1.1 = { death = yes }
 }
 Gardener_73 = {
 	name = John # III
@@ -1395,7 +1410,7 @@ Gardener_73 = {
 
 	7282.1.1 = { birth = yes }
 	7298.1.1 = { trait = knight }
-	7324.1.1 = { death = yes }
+	7288.1.1 = { death = yes }
 }
 Gardener_61 = {
 	name = Greydon # Canon, Greydon I, who was defeated by Nymeria
@@ -27788,7 +27803,6 @@ Peake_13 = {
 Peake_14 = {
 	name = Eddison # Canon, a lord at the time of the Reach civil-war, married daughter of Garth Greybeard
 	dynasty = dynn_Peake
-
 	prowess = 10
 
 	religion = fots_seven
@@ -27798,13 +27812,13 @@ Peake_14 = {
 
 	give_nickname = nick_agot_historical_the_elder_Peake_14
 
-	7090.1.1 = {
+	7241.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
-	7106.1.1 = { trait = knight }
-	7108.1.1 = { add_spouse = Gardener_54 } # Margaery Gardener
-	7160.1.1 = { death = yes }
+	7257.1.1 = { trait = knight }
+	7259.1.1 = { add_spouse = Gardener_54 } # Margaery Gardener
+	7311.1.1 = { death = yes }
 }
 Peake_125 = {
 	name = Garth # not a lord, victim of the Manderly-Peake civil war
@@ -214727,4 +214741,30 @@ Mollendore_rs_38 = {
 
 	8214.1.1 = { birth = yes }
 	8281.1.1 = { death = yes }
+}
+
+
+Gardener_200 = {
+	name = Mern # a lord
+	dynasty = dynn_Gardener
+
+	religion = fots_seven
+	culture = reachman
+	trait = ambitious
+	trait = stubborn
+	trait = vengeful
+	trait = dilligent
+
+	7276.1.1 = { birth = yes }
+	7286.1.1 = { trait = knight }
+	7288.1.1 = {
+		effect = {
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:e_the_reach
+		}
+	}
+	# 7276.1.1 = { add_spouse = Mollendore_rs_38 }
+	7328.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
 }

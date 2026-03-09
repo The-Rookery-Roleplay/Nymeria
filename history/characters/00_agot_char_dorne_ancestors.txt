@@ -77,6 +77,7 @@ Martell_23 = {
 	trait = brave
 	trait = lustful
 	trait = zealous
+	trait = beauty_good_2
 
 	7275.1.1 = {
 		birth = yes
@@ -142413,6 +142414,46 @@ Santagar_200 = {
 
 
 	7272.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+		add_spouse = Santagar_rs_200
+	}
+	7320.1.1 = { death = yes }
+}
+
+Santagar_rs_200 = {
+	name = Lillan
+	female = yes
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+	7274.1.1 = {
+		birth = yes
+	}
+	# 7245.1.1 = {
+	# 	add_spouse = Wyl_rs_200
+	# }
+	# 7295.1.1 = {
+	# 	trait = knight
+	# 	trait = infirm
+	# 	trait = blind
+	# }
+	7320.1.1 = { death = yes }
+}
+
+Santagar_201 = {
+	name = Victor
+	dynasty = dynn_Santagar
+
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+	mother = Santagar_rs_200
+	father = Santagar_200
+
+	7288.1.1 = {
 		birth = yes
 	}
 	7295.1.1 = {

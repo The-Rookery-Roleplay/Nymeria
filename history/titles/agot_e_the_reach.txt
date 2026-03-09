@@ -145,7 +145,7 @@
 		holder = Gardener_51 # Merle II
 	}
 	7059.1.1 = {
-		holder = Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
+		# holder = 0 Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
 	}
 	7148.1.1 = {
 		holder = Gardener_58 # Mern VI
@@ -163,7 +163,8 @@
 		holder = Gardener_71 # Mattheus
 	}
 	7287.1.1 = {
-		holder = Gardener_72 # Gareth III
+		# holder = Gardener_72 # Gareth III
+		holder = Gardener_52 # Gareth III
 	}
 	7312.1.1 = {
 		holder = Gardener_73 # John III
@@ -407,7 +408,7 @@ k_the_mander = {
 		holder = Gardener_51 # Merle II
 	}
 	7059.1.1 = {
-		holder = Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
+		# holder = 0 Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
 	}
 	7148.1.1 = {
 		holder = Gardener_58 # Mern VI
@@ -425,7 +426,7 @@ k_the_mander = {
 		holder = Gardener_71 # Mattheus
 	}
 	7287.1.1 = {
-		holder = Gardener_72 # Gareth III
+		holder = 0
 	}
 	7312.1.1 = {
 		holder = Gardener_73 # John III
@@ -647,7 +648,7 @@ d_highgarden = {
 		holder = Gardener_51 # Merle II
 	}
 	7059.1.1 = {
-		holder = Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
+		# holder = 0 Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
 	}
 	7148.1.1 = {
 		holder = Gardener_58 # Mern VI
@@ -665,7 +666,8 @@ d_highgarden = {
 		holder = Gardener_71 # Mattheus
 	}
 	7287.1.1 = {
-		holder = Gardener_72 # Gareth III
+		# holder = Gardener_72 # Gareth III
+		holder = Gardener_52 # Gareth III
 	}
 	7312.1.1 = {
 		holder = Gardener_73 # John III
@@ -878,7 +880,7 @@ c_highgarden = {
 		holder = Gardener_51 # Merle II
 	}
 	7059.1.1 = {
-		holder = Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
+		# holder = 0 Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
 	}
 	7148.1.1 = {
 		holder = Gardener_58 # Mern VI
@@ -896,7 +898,8 @@ c_highgarden = {
 		holder = Gardener_71 # Mattheus
 	}
 	7287.1.1 = {
-		holder = Gardener_72 # Gareth III
+		# holder = Gardener_72 # Gareth III
+		holder = Gardener_52 # Gareth III
 	}
 	7312.1.1 = {
 		holder = Gardener_73 # John III
@@ -3169,6 +3172,10 @@ d_cockleswhent = {
 	}
 	7175.1.1 = {
 		holder = Peake_16
+	}
+	7250.1.1 = {
+		liege = e_the_reach
+		holder = Peake_14
 	}
 	7320.1.1 = {
 		holder = Peake_17
@@ -7094,6 +7101,10 @@ c_greenaway = {
 d_manderfields = {
 	900.1.1 = {
 	}
+	7250.1.1 = {
+		liege = e_the_reach
+		holder = Manderly_13
+	}
 }
 c_risley_glade = {
 	2550.1.1 = {
@@ -9103,6 +9114,10 @@ d_palemarch = {
 	7175.1.1 = {
 		holder = Peake_16
 	}
+	7250.1.1 = {
+		liege = e_the_reach
+		holder = Peake_14
+	}
 	7320.1.1 = {
 		holder = Peake_17
 	}
@@ -10570,6 +10585,10 @@ d_shield_islands = {
 		liege = k_the_mander
 		holder = Hewett_13
 	}
+	7250.1.1 = {
+		liege = e_the_iron_islands
+		holder = Sunderly_200
+	}
 	7860.1.1 = {
 		holder = Hewett_15
 	}
@@ -10692,6 +10711,9 @@ c_greenshield = {
 	60.1.1 = {
 		liege = d_shield_islands
 	}
+	7250.1.1 = {
+		holder = Ironborn_Lord_2 
+	}
 	7877.1.1 = {
 		holder = Chester_4
 	}
@@ -10755,7 +10777,10 @@ c_greenshield = {
 }
 c_greyshield = {
 	60.1.1 = {
-		liege = d_shield_islands
+		liege = d_shield_islands 
+	}
+	7875.1.1 = {
+		holder = Ironborn_Lord_1
 	}
 	7875.1.1 = {
 		holder = Grimm_4
@@ -12932,6 +12957,10 @@ d_the_roseroad = {
 	7093.1.1 = {
 		holder = Manderly_13
 	}
+	7250.1.1 = {
+		liege = e_the_reach
+		holder = Manderly_13
+	}
 	7165.1.1 = {
 		holder = Manderly_14
 	}
@@ -14458,6 +14487,9 @@ c_mandale = {
 c_southshield = {
 	60.1.1 = {
 		liege = d_shield_islands
+	}  
+	7250.1.1 = {
+		holder = Ironborn_Lord_3
 	}
 	7850.1.1 = {
 		holder = Serry_7
