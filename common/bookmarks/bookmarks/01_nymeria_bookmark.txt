@@ -1,0 +1,19 @@
+﻿nymeria_bookmark_7299_1= {
+	start_date = 7299.1.1
+	is_playable = yes
+	group = nymeria_bookmark_group
+
+	weight = {
+		value = 0
+	}
+
+	# character = {
+    #     name = "nymeros_nymeria_bookmark_7299_1"  # localization key
+    #     character = Nymeros_1  # the actual character ID in your history files
+    #     playable = yes
+    #     difficulty = "BOOKMARK_DIFFICULTY_EASY"  # or MEDIUM / HARD
+        
+    #     position = { 600 400 }  # position on the map screen
+    # }
+
+}

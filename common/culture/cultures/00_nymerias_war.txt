@@ -1,0 +1,58 @@
+﻿
+# Generated on 2022-10-13 by ACOT Culture Tool
+old_dornish = {
+	color = { 0.88 0.69 0.35 }
+
+	ethos = ethos_stoic
+	heritage = heritage_andal
+	language = language_agot_westeros
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	traditions = {
+		tradition_hit_and_run
+		tradition_eye_for_an_eye
+		tradition_mountaineers
+		tradition_staunch_traditionalists
+	}
+
+	name_list = name_list_stone_dornish
+
+	coa_gfx = {
+		andal_coa_gfx
+	}
+	building_gfx = {
+		mena_building_gfx
+	}
+	clothing_gfx = {
+		mena_clothing_gfx
+		andal_clothing_gfx
+	}
+	unit_gfx = {
+		mena_unit_gfx
+	}
+	house_coa_frame = house_frame_round1
+	house_coa_mask_offset = { 0.0 -0.03 }
+	house_coa_mask_scale = { 0.79500034 0.79500034 }
+
+	ethnicities = {
+		1 = Andal_11
+		1 = Andal_12
+		1 = Andal_13
+		1 = Andal_14
+		1 = Andal_15
+		1 = Andal_16
+		1 = Andal_17
+		1 = Andal_18
+		1 = Andal_19
+		1 = Andal_20
+		1 = Andal_21
+
+	}
+
+	parents = {
+		andal
+		first_man
+	}
+	created = 7000.1.1
+}
