@@ -51689,3 +51689,114 @@ Ironspite_rs_86 = {
 	8227.1.1 = { birth = yes }
 	8295.1.1 = { death = yes }
 }
+
+Sunderly_200 = {
+	name = Roggon # a lord
+	dynasty = dynn_Sunderly
+
+	religion = drowned_god
+	culture = greenborn
+
+	7257.1.1 = { birth = yes }
+	7279.1.1 = { add_spouse = Sunderly_rs_200 } 
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Sunderly_rs_200 = {
+	name = Sheila # a lord
+	female = yes
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	7259.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Sunderly_201 = {
+	name = Rickard # a lord
+	dynasty = dynn_Sunderly
+	mother = Sunderly_rs_200
+	father = Sunderly_200
+	religion = drowned_god
+	culture = greenborn
+
+	7282.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Sunderly_202 = {
+	name = Sheila # a lord
+	female = yes
+	dynasty = dynn_Sunderly
+	mother = Sunderly_rs_200
+	father = Sunderly_200
+	religion = drowned_god
+	culture = greenborn
+	trait = education_intrigue_4
+	intrigue = 8
+	7283.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Sunderly_203 = {
+	name = Gederion # a lord
+	dynasty = dynn_Sunderly
+	mother = Sunderly_rs_200
+	father = Sunderly_200
+	religion = drowned_god
+	culture = greenborn
+	trait = education_martial_3
+	trait = strong
+	7284.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Ironborn_Lord_1 = {
+	name = Wexley # a lord
+	religion = drowned_god
+	culture = greenborn
+	7273.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Ironborn_Lord_2 = {
+	name = Luthron # a lord
+	religion = drowned_god
+	culture = greenborn
+	7273.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Ironborn_Lord_3 = {
+	name = Lester # a lord
+	religion = drowned_god
+	culture = greenborn
+	7282.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
