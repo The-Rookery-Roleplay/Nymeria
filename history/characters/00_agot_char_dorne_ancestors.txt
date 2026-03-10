@@ -1,4 +1,4 @@
-﻿############################       SALTY DORNISH        ############################
+############################       SALTY DORNISH        ############################
 ####################################################################################
 
 ###### HOUSE MARTELL (id = dynn_Martell/house_Martell)
@@ -12070,7 +12070,7 @@ Jordayne_122 = {
 	disallow_random_traits = yes
 
 	6157.9.16 = { birth = yes }
-	7861.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Jordayne_3 = {
 	name = Tremond # a lord
@@ -14248,7 +14248,7 @@ Shells_107 = {
 	disallow_random_traits = yes
 
 	5692.1.1 = { birth = yes }
-	7833.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Shells_6 = {
 	name = Garrison # a lord
@@ -18552,7 +18552,7 @@ Shell_Dorne_95 = {
 	disallow_random_traits = yes
 
 	6041.1.1 = { birth = yes }
-	7855.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Shell_Dorne_12 = {
 	name = Orlyn # a lord
@@ -22130,7 +22130,7 @@ Allyrion_109 = {
 	disallow_random_traits = yes
 
 	6140.1.15 = { birth = yes }
-	7821.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Allyrion_12 = {
 	name = Ballard # a lord
@@ -43240,7 +43240,7 @@ Wyl_15 = {
 	disallow_random_traits = yes
 
 	2235.1.1 = { birth = yes }
-	7837.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Wyl_16 = {
 	name = Edwyle # a lord

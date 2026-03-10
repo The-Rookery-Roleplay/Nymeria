@@ -1,4 +1,4 @@
-﻿# ##AGOT
+# ##AGOT
 ## CK2AGOT Vanity Characters. Will revisit this when we have our own vanity characters. - Gaytriarch
 # vanity_Knuckey_1 = {
 # 	name = "Adam" #

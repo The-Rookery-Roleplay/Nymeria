@@ -1,4 +1,4 @@
-﻿############################         THE NORTH          ############################
+############################         THE NORTH          ############################
 ####################################################################################
 
 ###### HOUSE STARK (id = dynn_Stark)
@@ -781,7 +781,7 @@ Stark_29 = {
 	disallow_random_traits = yes
 
 	7261.1.1 = { birth = yes }
-	7899.1.1 = {
+	7299.1.1 = {
 		trait = disinherited
 		death = yes
 	}
@@ -862,7 +862,7 @@ Stark_134 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 	}
-	7550.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Stark_129 = {
 	name = Karlon # Canon, a lord of Karhold, progenitor of House Karstark
@@ -4215,7 +4215,7 @@ Manderly_73 = {
 	disallow_random_traits = yes
 
 	7176.1.1 = { birth = yes }
-	7325.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Manderly_16 = {
 	name = Mandon # a lord, defeated by Lorimar Peake at behest of Perceon III Gardener
@@ -9594,7 +9594,7 @@ Umber_111 = {
 	disallow_random_traits = yes
 
 	6000.1.1 = { birth = yes }
-	7489.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Umber_78 = {
 	name = Gawen # a lord
@@ -13547,7 +13547,7 @@ Bolton_15 = {
 	disallow_random_traits = yes
 
 	6401.1.1 = { birth = yes }
-	7814.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Bolton_16 = {
 	name = Bennard # a lord
@@ -24942,7 +24942,7 @@ Flint_21 = {
 	disallow_random_traits = yes
 
 	6230.1.1 = { birth = yes }
-	7821.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Flint_22 = {
 	name = Line_of_Widows_Watch
@@ -24957,7 +24957,7 @@ Flint_22 = {
 	disallow_random_traits = yes
 
 	6232.1.1 = { birth = yes }
-	7830.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Flint_23 = {
 	name = Line_of_Flints_Finger
@@ -24972,7 +24972,7 @@ Flint_23 = {
 	disallow_random_traits = yes
 
 	6234.1.1 = { birth = yes }
-	7767.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 
 ### Flint's Finger Branch
@@ -48414,7 +48414,7 @@ Dustin_79 = {
 	disallow_random_traits = yes
 
 	3250.1.1 = { birth = yes }
-	7835.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Dustin_14 = {
 	name = Donnel # a lord
@@ -62201,7 +62201,7 @@ Glover_55 = {
 	disallow_random_traits = yes
 
 	5130.1.1 = { birth = yes }
-	7821.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Glover_8 = {
 	name = Galbart # a lord
@@ -64663,7 +64663,7 @@ Forrester_15 = {
 	disallow_random_traits = yes
 
 	6569.1.1 = { birth = yes }
-	7849.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Forrester_16 = {
 	name = Owen # a lord
@@ -95654,7 +95654,7 @@ BoggsN_32 = {
 	disallow_random_traits = yes
 
 	7045.1.1 = { birth = yes }
-	7890.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 BoggsN_33 = {
 	name = Gaven
@@ -95688,7 +95688,7 @@ BoggsN_31 = {
 	disallow_random_traits = yes
 
 	7043.1.1 = { birth = yes }
-	7890.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 BoggsN_6 = {
 	name = Torin # a lord

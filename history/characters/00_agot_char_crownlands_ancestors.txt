@@ -1,4 +1,4 @@
-﻿############################       THE CROWNLANDS       ############################
+############################       THE CROWNLANDS       ############################
 ####################################################################################
 
 ###### HOUSE BLOUNT (id = dynn_Blount)
@@ -6806,7 +6806,7 @@ Darklyn_83 = {
 	disallow_random_traits = yes
 
 	5875.1.1 = { birth = yes }
-	7830.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Darklyn_1 = {
 	name = Damon # a lord
@@ -8787,7 +8787,7 @@ Hollard_76 = {
 	disallow_random_traits = yes
 
 	5875.1.1 = { birth = yes }
-	7829.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Hollard_12 = {
 	name = Greydon # a lord
@@ -50030,7 +50030,7 @@ Bar_Emmon_6 = {
 	disallow_random_traits = yes
 
 	5858.1.1 = { birth = yes }
-	7807.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Bar_Emmon_7 = {
 	name = Benethon # a lord
@@ -57126,7 +57126,7 @@ Massey_18 = {
 	disallow_random_traits = yes
 
 	5851.1.1 = { birth = yes }
-	7815.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Massey_19 = {
 	name = Justin # a lord
@@ -63101,7 +63101,7 @@ Brune_11 = {
 	disallow_random_traits = yes
 
 	5050.1.1 = { birth = yes }
-	7840.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Brownhollow_6 = {
 	name = Line_of_Bennifer
@@ -63116,7 +63116,7 @@ Brownhollow_6 = {
 	disallow_random_traits = yes
 
 	5050.1.1 = { birth = yes }
-	7840.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 
 ### Dyre Den's Branch
@@ -71101,7 +71101,7 @@ Crabb_14 = {
 	disallow_random_traits = yes
 
 	6625.1.1 = { birth = yes }
-	7828.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Crabb_15 = {
 	name = Rupert # a lord

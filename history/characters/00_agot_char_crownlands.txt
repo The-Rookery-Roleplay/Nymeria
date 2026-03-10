@@ -1,4 +1,4 @@
-﻿############################       THE CROWNLANDS       ############################
+############################       THE CROWNLANDS       ############################
 ####################################################################################
 
 ###### HOUSE STAUNTON (id = dynn_Staunton)
@@ -15687,4 +15687,3 @@ Hazeley_78 = {
 		death = { death_reason = death_drowned } # Boat with lady Ryssa and her cousins sunk
 	}
 }
-
