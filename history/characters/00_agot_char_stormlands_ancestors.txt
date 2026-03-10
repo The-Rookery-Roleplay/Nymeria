@@ -125414,3 +125414,393 @@ Sulk_59 = {
 	8257.1.1 = { birth = yes }
 	8297.1.1 = { death = yes }
 }
+
+Connington_200 = {
+	name = Malrick
+	dynasty = dynn_Connington
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7266.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+
+Gayle_200 = {
+	name = Ulfred
+	dynasty = dynn_Gayle
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7252.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Dripps_200 = {
+	name = Amberly
+	dynasty = dynn_Dripps
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7252.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Brandish_200 = {
+	name = Erik
+	dynasty = dynn_Brandish
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7282.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Wylde_200 = {
+	name = Kurtis
+	dynasty = dynn_Wylde
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7282.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Mertyns_200 = {
+	name = Kurtis
+	dynasty = dynn_Mertyns
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7247.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Estermont_200 = {
+	name = Corrad
+	dynasty = dynn_Estermont
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Tarth_200 = {
+	name = Albar
+	dynasty = dynn_Tarth
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7235.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Penrose_200 = {
+	name = Gwayne
+	dynasty = dynn_Penrose
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7255.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Errol_200 = {
+	name = Garvy
+	dynasty = dynn_Errol
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7255.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Fell_200 = {
+	name = Arton
+	dynasty = dynn_Fell
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7265.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Peasebury_200 = {
+	name = Arton
+	dynasty = dynn_Peasebury
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7236.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Staedmon_200 = {
+	name = Orland
+	dynasty = dynn_Staedmon
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7256.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Grandison_200 = {
+	name = Carl
+	dynasty = dynn_Grandison
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7266.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Toyne_200 = {
+	name = Carl
+	dynasty = dynn_Toyne
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7253.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Morrigen_200 = {
+	name = Ludd
+	dynasty = dynn_Morrigen
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7263.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Swann_200 = {
+	name = Berrik
+	dynasty = dynn_Swann
+
+	religion = fots_seven
+	culture = marcher
+
+	7283.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Dondarrion_200 = {
+	name = Bernard
+	dynasty = dynn_Dondarrion
+
+	religion = fots_seven
+	culture = marcher
+
+	7265.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Caron_200 = {
+	name = Everon
+	dynasty = dynn_Caron
+
+	religion = fots_seven
+	culture = marcher
+
+	7275.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Selmy_200 = {
+	name = Barristan
+	dynasty = dynn_Selmy
+
+	religion = fots_seven
+	culture = marcher
+
+	7254.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Cafferen_200 = {
+	name = Barristan
+	dynasty = dynn_Cafferen
+
+	religion = fots_seven
+	culture = marcher
+
+	7244.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Massey_200 = {
+	name = Ludd
+	dynasty = dynn_Massey
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7243.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Bar_Emmon_200 = {
+	name = Aaron
+	dynasty = dynn_Bar_Emmon
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7264.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Wendwater_200 = {
+	name = Arstan
+	dynasty = dynn_Wendwater
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7259.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+# 7299.1.1 = {
+# 	holder = Gayle_200
+# 	liege = d_nestridge
+# }
