@@ -62,6 +62,9 @@
 	6420.1.1 = {
 		holder = Arryn_42 		#Oswin
 	}
+	7299.1.1 = {
+		holder = Arryn_200
+	}
 	7813.1.1 = {
 		holder = Arryn_45	 # Artys II
 	}
@@ -223,6 +226,9 @@ k_the_vale = {
 	6420.1.1 = {
 		holder = Arryn_42 		#Oswin
 	}
+	7299.1.1 = {
+		holder = Arryn_200
+	}
 	7813.1.1 = {
 		holder = Arryn_45	 # Artys II
 	}
@@ -352,6 +358,9 @@ d_the_giants_lance = {
 	6420.1.1 = {
 		holder = Arryn_42 		#Oswin
 	}
+	7299.1.1 = {
+		holder = Arryn_200
+	}
 	7813.1.1 = {
 		holder = Arryn_45
 	}
@@ -477,6 +486,9 @@ c_the_eyrie = {
 	}
 	6420.1.1 = {
 		holder = Arryn_42 		#Oswin
+	}
+	7299.1.1 = {
+		holder = Arryn_200
 	}
 	7813.1.1 = {
 		holder = Arryn_45
@@ -1278,6 +1290,9 @@ d_crowncrests = {
 	6539.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Egen_200
+	}
 	7871.1.1 = {
 		holder = Egen_7
 	}
@@ -1337,6 +1352,9 @@ d_crowncrests = {
 	}
 }
 c_crown_crescent = {
+	7299.1.1 = {
+		holder = Egen_200
+	}
 	7871.1.1 = {
 		liege = d_crowncrests
 		holder = Egen_7
@@ -1651,6 +1669,9 @@ d_eastweald = {
 	5825.1.1 = {
 		holder = Hunter_11
 	}
+	7299.1.1 = {
+		holder = Hunter_200
+	}
 	7854.1.1 = {
 		holder = Hunter_14
 	}
@@ -1713,6 +1734,9 @@ c_longbow_hills = {
 	}
 	5825.1.1 = {
 		holder = Hunter_11
+	}
+	7299.1.1 = {
+		holder = Hunter_200
 	}
 	7883.1.1 = {
 		holder = Hunter_15
@@ -2145,6 +2169,9 @@ d_gulltown = {
 	6539.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Grafton_200
+	}
 	7850.1.1 = {
 		holder = Grafton_14
 	}
@@ -2222,6 +2249,9 @@ c_gulltown = {
 	}
 	5776.1.1 = {
 		holder = Grafton_12
+	}
+	7299.1.1 = {
+		holder = Grafton_200
 	}
 	7850.1.1 = {
 		holder = Grafton_14
@@ -2561,6 +2591,9 @@ d_hearts_home = {
 	6539.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Corbray_200
+	}
 	7870.1.1 = {
 		holder = Corbray_11
 	}
@@ -2626,6 +2659,9 @@ c_hearts_home = {
 	}
 	5797.1.1 = {
 		holder = Corbray_9
+	}
+	7299.1.1 = {
+		holder = Corbray_200
 	}
 	7870.1.1 = {
 		holder = Corbray_11
@@ -3040,6 +3076,9 @@ d_ironoaks = {
 	5800.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Waynwood_200
+	}
 	7855.1.1 = {
 		holder = Waynwood_28
 	}
@@ -3099,6 +3138,9 @@ c_ironoaks = {
 	5780.1.1 = {
 		liege = d_ironoaks
 		holder = Waynwood_26
+	}
+	7299.1.1 = {
+		holder = Waynwood_200
 	}
 	7855.1.1 = {
 		holder = Waynwood_28
@@ -3815,6 +3857,9 @@ d_northbreach = {
 	6539.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Hersy_200
+	}
 	7795.1.1 = {
 		holder = Hersy_4
 	}
@@ -3892,6 +3937,10 @@ d_northbreach = {
 	}
 }
 c_hersy = {
+	7299.1.1 = {
+		liege = d_northbreach
+		holder = Hersy_200
+	}
 	7795.1.1 = {
 		liege = d_northbreach
 		holder = Hersy_4
@@ -4389,6 +4438,9 @@ d_old_anchor = {
 	6539.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Melcolm_200
+	}
 	7885.1.1 = {
 		holder = Melcolm_6
 	}
@@ -4436,6 +4488,10 @@ d_old_anchor = {
 	}
 }
 c_old_anchor = {
+	7299.1.1 = {
+		liege = d_old_anchor
+		holder = Melcolm_200
+	}
 	7885.1.1 = {
 		liege = d_old_anchor
 		holder = Melcolm_6
@@ -4703,6 +4759,9 @@ d_runestone = {
 	5800.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Royce_200
+	}
 	7453.1.1 = {
 		holder = Royce_116 # Eldred Royce
 	}
@@ -4802,6 +4861,9 @@ c_runestone = {
 	5795.12.1 = {
 		holder = Royce_18
 	}
+	7299.1.1 = {
+        holder = Royce_200
+    }
 	7453.1.1 = {
 		holder = Royce_116 # Eldred Royce
 	}
@@ -4946,6 +5008,9 @@ c_gullview = {
 	}
 	5730.1.1 = {
 		holder = Shett_10
+	}
+	7299.1.1 = {
+		liege = d_runestone
 	}
 	7842.1.1 = {
 		holder = Shett_34
@@ -5154,6 +5219,9 @@ d_snakewood_forest = {
 	6539.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Lynderly_200
+	}
 	7803.1.1 = {
 		holder = Lynderly_83
 	}
@@ -5219,6 +5287,10 @@ d_snakewood_forest = {
 	}
 }
 c_snakewood = {
+	7299.1.1 = {
+		liege = d_snakewood_forest
+		holder = Lynderly_200
+	}
 	7803.1.1 = {
 		liege = d_snakewood_forest
 		holder = Lynderly_83
@@ -5692,6 +5764,9 @@ d_strongsong = {
 	5800.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Belmore_200
+	}
 	7810.1.1 = {
 		holder = Belmore_8
 	}
@@ -5748,6 +5823,9 @@ c_strongsong = {
 	5780.1.1 = {
 		holder = Belmore_60
 		liege = d_strongsong
+	}
+	7299.1.1 = {
+		holder = Belmore_200
 	}
 	7810.1.1 = {
 		holder = Belmore_8
@@ -6160,6 +6238,9 @@ d_strongstone = {
 	5800.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Redfort_200
+	}
 	7837.1.1 = {
 		holder = Redfort_8
 	}
@@ -6210,6 +6291,9 @@ c_the_redfort = {
 	5780.1.1 = {
 		liege = d_strongstone
 		holder = Redfort_6
+	}
+	7299.1.1 = {
+		holder = Redfort_200
 	}
 	7837.1.1 = {
 		holder = Redfort_8
@@ -7253,6 +7337,9 @@ d_grimholm = {
 	6539.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Elesham_200
+	}
 	7772.1.1 = {
 		holder = Elesham_5
 	}
@@ -7320,6 +7407,9 @@ d_grimholm = {
 c_the_paps = {
 	6470.1.1 = {
 		liege = d_grimholm
+	}
+	7299.1.1 = {
+		holder = Elesham_200
 	}
 	7772.1.1 = {
 		holder = Elesham_5
@@ -7830,6 +7920,9 @@ d_the_sisters = {
 	6300.1.1 = {
 		liege = e_the_vale
 	}
+	7299.1.1 = {
+		holder = Sunderland_200
+	}
 	7826.1.1 = {
 		holder = Sunderland_9
 	}
@@ -7901,6 +7994,9 @@ c_sunderland = {
 	6280.1.1 = {
 		holder = Sunderland_54
 		liege = d_the_sisters
+	}
+	7299.1.1 = {
+		holder = Sunderland_200
 	}
 	7826.1.1 = {
 		holder = Sunderland_9
