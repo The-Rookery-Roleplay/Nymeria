@@ -2,5 +2,5 @@ version="1"
 tags={
 	"Decisions"
 }
-name="Season0"
+name="Nymeria"
 supported_version="1.18.3.1"
