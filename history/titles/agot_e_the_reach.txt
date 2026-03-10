@@ -1383,6 +1383,10 @@ d_bitterbridge = {
 	20.1.1 = {
 		liege = e_the_reach
 	}
+	7299.1.1 = {
+		liege = e_the_reach
+		holder = Caswell_200
+	}
 	7866.1.1 = {
 		holder = Caswell_10
 	}
@@ -2263,6 +2267,9 @@ c_ashridge = {
 d_blueburn = {
 	20.1.1 = {
 		liege = e_the_reach
+	}
+	7299.1.1 = {
+		holder = Meadows_200
 	}
 	7830.1.1 = {
 		holder = Meadows_5
@@ -3268,6 +3275,9 @@ c_ashford = {
 	40.1.1 = {
 		liege = d_cockleswhent
 	}
+	7299.1.1 = {
+		holder = Ashford_200
+	}
 	7876.1.1 = {
 		holder = Ashford_5
 	}
@@ -3377,6 +3387,9 @@ c_cockscombe = {
 	40.1.1 = {
 		liege = d_cockleswhent
 	}
+	7299.1.1 = {
+		holder = Ashford_200
+	}
 	7869.1.1 = {
 		holder = Cockshaw_6
 	}
@@ -3432,6 +3445,9 @@ c_cockscombe = {
 c_holyhall = {
 	40.1.1 = {
 		liege = d_cockleswhent
+	}
+	7299.1.1 = {
+		holder = Graceford_200
 	}
 	7845.1.1 = {
 		holder = Graceford_5
@@ -3501,6 +3517,9 @@ c_banbury = {
 	40.1.1 = {
 		liege = d_cockleswhent
 	}
+	7299.1.1 = {
+		holder = Graceford_200
+	}
 	7845.1.1 = {
 		holder = Graceford_5
 	}
@@ -3566,6 +3585,9 @@ c_endrick = {
 	40.1.1 = {
 		liege = d_cockleswhent
 	}
+	7299.1.1 = {
+		holder = Graceford_200
+	}
 	7845.1.1 = {
 		holder = Graceford_5
 	}
@@ -3630,6 +3652,10 @@ c_endrick = {
 d_darkdell = {
 	20.1.1 = {
 		liege = k_the_mander
+	}
+	7299.1.1 = {
+		liege = e_the_reach
+		holder = Vyrwel_200
 	}
 	7866.1.1 = {
 		holder = Vyrwel_10
@@ -4040,7 +4066,10 @@ c_heatherholt = {
 }
 d_darstone = {
 	20.1.1 = {
-		liege = k_the_mander
+		liege = e_the_reach
+	}
+	7299.1.1 = {
+		holder = Willum_200
 	}
 	7860.1.1 = {
 		holder = Willum_4
@@ -4377,7 +4406,10 @@ c_oldheart_forest = {
 }
 d_fullharvest = {
 	20.1.1 = {
-		liege = k_the_mander
+		liege = e_the_reach
+	}
+	7299.1.1 = {
+		holder = Merryweather_200
 	}
 	7849.1.1 = {
 		holder = Merryweather_7
@@ -5355,6 +5387,9 @@ d_goldenfields = {
 	20.1.1 = {
 		liege = e_the_reach
 	}
+	7299.1.1 = {
+		holder = Strickland_200
+	}
 	7862.1.1 = {
 		holder = Strickland_2
 	}
@@ -5699,6 +5734,10 @@ c_brennwater = {
 	}
 }
 k_the_northmarch = {
+	7299.1.1 = {
+		liege = e_the_reach
+		holder = Osgrey_200
+	}
 	8151.1.1 = {
 		holder = Rowan_45
 		liege = e_the_reach
@@ -5729,6 +5768,10 @@ d_goldengrove = {
 			set_variable = agot_historical_march
 		}
 		holder = Rowan_6
+	}
+	7299.1.1 = {
+		liege = k_the_northmarch
+		holder = Rowan_200
 	}
 	7533.1.1 = {
 		holder = Rowan_83
@@ -6320,6 +6363,9 @@ c_apple_hills = {
 d_heartland_heights = {
 	20.1.1 = {
 		liege = e_the_reach
+	}
+	7299.1.1 = {
+		holder = Varner_200
 	}
 	7575.1.1 = {
 		liege = e_the_stormlands
@@ -7123,16 +7169,21 @@ c_greenaway = {
 d_manderfields = {
 	900.1.1 = {
 	}
-	7250.1.1 = {
-		liege = e_the_reach
-		holder = Manderly_13
-	}
+	# 7250.1.1 = {
+	# 	liege = e_the_reach
+	# 	holder = Manderly_13
+	# }
 }
 c_risley_glade = {
 	2550.1.1 = {
 		liege = k_the_mander
 	}
+	7299.1.1 = {
+		liege = d_the_roseroad
+		holder = Risley_200
+	}
 	7863.1.1 = {
+		liege = e_the_reach
 		holder = Risley_11
 	}
 	7868.1.1 = {
@@ -7250,7 +7301,12 @@ c_mandervale = {
 	2550.1.1 = {
 		liege = k_the_mander
 	}
+	7299.1.1 = {
+		liege = d_the_roseroad
+		holder = Risley_200
+	}
 	7877.1.1 = {
+		liege = e_the_reach
 		holder = Itchweed_1
 	}
 	7889.1.1 = {
@@ -7305,6 +7361,14 @@ c_mandervale = {
 c_oaken_rills = {
 	2550.1.1 = {
 		liege = k_the_mander
+	}
+	7299.1.1 = {
+		liege = d_the_roseroad
+		holder = Rhysling_200
+	}
+	7816.1.1 = {
+		liege = e_the_reach
+		holder = Rhysling_43
 	}
 	7816.1.1 = {
 		holder = Rhysling_43
@@ -7368,7 +7432,12 @@ c_windflower = {
 	2550.1.1 = {
 		liege = k_the_mander
 	}
+	7299.1.1 = {
+		liege = d_the_roseroad
+		holder = Winfler_200
+	}
 	7845.1.1 = {
+		liege = e_the_reach
 		holder = Winfler_1
 	}
 	7854.1.1 = {
@@ -7433,7 +7502,12 @@ c_daisyfield = {
 	2550.1.1 = {
 		liege = k_the_mander
 	}
+	7299.1.1 = {
+		liege = d_the_roseroad
+		holder = Rhysling_200
+	}
 	7872.1.1 = {
+		liege = e_the_reach
 		holder = Tharp_1
 	}
 	7875.1.1 = {
@@ -8748,6 +8822,10 @@ d_orchard_way = {
 	2035.1.1 = {
 		holder = Fossoway_9
 	}
+	7299.1.1 = {
+		liege = e_the_reach
+		holder = Fossoway_200
+	}
 	7821.1.1 = {
 		holder = Fossoway_11
 	}
@@ -9639,6 +9717,10 @@ d_red_front = {
 			set_variable = agot_historical_march
 		}
 		holder = Crane_7
+	}
+	7299.1.1 = {
+		liege = k_the_northmarch
+		holder = Crane_200
 	}
 	7830.1.1 = {
 		holder = Crane_68
@@ -10947,6 +11029,9 @@ d_sunnyvale = {
 	2050.1.1 = {
 		holder = Ball_5
 	}
+	7299.1.1 = {
+		holder = Ball_200
+	}
 	7850.1.1 = {
 		holder = Ball_7
 	}
@@ -11419,6 +11504,7 @@ d_the_arbor = {
 		holder = Redwyne_79
 	}
 	7299.1.1 = {
+		liege = e_the_reach
 		holder = Redwyne_200
 	}
 	7850.1.1 = {
@@ -11865,6 +11951,9 @@ d_the_northmarch = {
 	}
 	7040.1.1 = {
 		holder = Osgrey_126
+	}
+	7299.1.1 = {
+		holder = Osgrey_200
 	}
 	7568.1.1 = {
 		holder = Osgrey_71
@@ -12478,8 +12567,11 @@ c_brandybottom = {
 }
 d_the_ocean_road = {
 	2020.1.1 = {
-		liege = k_the_mander
+		liege = e_the_reach
 		holder = Oakheart_5
+	}
+	7299.1.1 = {
+		holder = Oakheart_200
 	}
 	7870.1.1 = {
 		holder = Oakheart_7
@@ -14051,6 +14143,9 @@ b_covennes_hollow = {
 d_tumbleton = {
 	2550.1.1 = {
 		liege = e_the_reach
+	}
+	7299.1.1 = {
+		holder = Footly_200
 	}
 	7575.1.1 = {
 		liege = e_the_stormlands

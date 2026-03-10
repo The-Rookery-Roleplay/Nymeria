@@ -214962,3 +214962,312 @@ Redwyne_200 = {
 	}
 	7320.1.1 = { death = yes }
 }
+
+Fossoway_200 = {
+	name = Derrick
+	dynasty = dynn_Fossoway
+	random_traits = yes
+	religion = fots_seven
+	culture = reachman
+	7259.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Merryweather_200 = {
+	name = Derrick
+	dynasty = dynn_Merryweather
+	random_traits = yes
+	religion = fots_seven
+	culture = reachman
+	7245.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Merryweather_200 = {
+	name = Rookwell
+	dynasty = dynn_Merryweather
+	random_traits = yes
+	religion = fots_seven
+	culture = reachman
+	7245.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Caswell_200 = {
+	name = Cerran
+	dynasty = dynn_Caswell
+	random_traits = yes
+	religion = fots_seven
+	culture = reachman
+	7282.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Ball_200 = {
+	name = Gwayne
+	dynasty = dynn_Ball
+	random_traits = yes
+	religion = fots_seven
+	culture = reachman
+	7251.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Osgrey_200 = {
+	name = Gwayne
+	dynasty = dynn_Osgrey
+
+	religion = fots_seven
+	culture = reachman
+
+	7250.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Rowan_200 = {
+	name = Ester
+	dynasty = dynn_Rowan
+
+	religion = fots_seven
+	culture = reachman
+
+	7282.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Crane_200 = {
+	name = Corrad
+	dynasty = dynn_Crane
+
+	religion = fots_seven
+	culture = reachman
+
+	7242.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Strickland_200 = {
+	name = Meryn
+	dynasty = dynn_Strickland
+	religion = fots_seven
+	culture = reachman
+
+	7272.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Varner_200 = {
+	name = Bodrin
+	dynasty = dynn_Varner
+	religion = fots_seven
+	culture = reachman
+
+	7272.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Footly_200 = {
+	name = Edgarth
+	dynasty = dynn_Footly
+	religion = fots_seven
+	culture = reachman
+
+	7285.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Meadows_200 = {
+	name = Edgarth
+	dynasty = dynn_Meadows
+	religion = fots_seven
+	culture = reachman
+
+	7274.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Vyrwel_200 = {
+	name = Aden
+	dynasty = dynn_Vyrwel
+	religion = fots_seven
+	culture = reachman
+
+	7274.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Willum_200 = {
+	name = Vernan
+	dynasty = dynn_Willum
+	religion = fots_seven
+	culture = reachman
+
+	7284.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Oakheart_200 = {
+	name = Barroth
+	dynasty = dynn_Oakheart
+	religion = fots_seven
+	culture = reachman
+
+	7294.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Risley_200 = {
+	name = Cole
+	dynasty = dynn_Risley
+	religion = fots_seven
+	culture = reachman
+
+	7282.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Rhysling_200 = {
+	name = Ronard
+	dynasty = dynn_Rhysling
+	religion = fots_seven
+	culture = reachman
+
+	7282.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Winfler_200 = {
+	name = Wayne
+	dynasty = dynn_Winfler
+	religion = fots_seven
+	culture = reachman
+
+	7275.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Ashford_200 = {
+	name = Rud
+	dynasty = dynn_Ashford
+	religion = fots_seven
+	culture = reachman
+
+	7267.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Graceford_200 = {
+	name = Todd
+	dynasty = dynn_Graceford
+	religion = fots_seven
+	culture = reachman
+
+	7252.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+
+# 7299.1.1 = {
+# 	liege = d_manderfields
+# 	holder = Rhysling_200
+# }
