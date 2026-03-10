@@ -174,6 +174,9 @@ k_the_greenblood = {
 	6157.9.16 = {
 		holder = 0
 	}
+	7299.1.1 = {
+		holder = Allyrion_200
+	}
 	#House Martell
 	7300.1.1 = { # About 700 years before the events of the books Nymeria landed.
 		holder = Martell_23 # Mors
@@ -1883,6 +1886,9 @@ c_willburn = {
 	}
 }
 d_broken_arm = {
+	7299.1.1 = {
+		holder = Santagar_200
+	}
 	7300.1.1 = {
 		liege = k_the_greenblood
 	}
@@ -2398,13 +2404,16 @@ c_ghaston_grey = {
 	}
 }
 d_ghost_hills = {
-	7300.1.1 = {
-		liege = k_the_greenblood
+	7299.1.1 = {
+		holder = Toland_200
 		effect = {
 			dynasty:dynn_Toland ?= {
 				set_coa = dynn_Toland_Old
 			}
 		}
+	}
+	7300.1.1 = {
+		liege = k_the_greenblood
 	}
 	7863.1.1 = {
 		holder = Toland_8
@@ -2625,6 +2634,9 @@ d_godsgrace = {
 	}
 	6140.1.15 = {
 		holder = 0
+	}
+	7299.1.1 = {
+		holder = Allyrion_200
 	}
 	7853.1.1 = {
 		holder = Allyrion_12
@@ -3023,6 +3035,9 @@ c_sevensdunes = {
 	}
 }
 d_lemonwood = {
+	7299.1.1 = {
+		holder = Dalt_200
+	}
 	7300.1.1 = {
 		liege = k_the_greenblood
 	}
@@ -3587,6 +3602,10 @@ c_the_dustbowl = {
 	}
 }
 d_red_dunes = {
+	7299.1.1 = {
+		holder = Vaith_200
+		liege = k_the_drylands
+	}
 	7300.1.1 = {
 		liege = e_dorne
 	}
@@ -4369,6 +4388,10 @@ c_strongwine = {
 	}
 }
 d_salt_shore = {
+	7299.1.1 = {
+		holder = Gargalen_200
+		liege = k_the_greenblood
+	}
 	7300.1.1 = {
 		liege = k_the_greenblood
 	}
@@ -4656,6 +4679,10 @@ c_white_stones = {
 	}
 }
 d_sandstone = {
+	7299.1.1 = {
+		liege = k_the_drylands
+		holder = Qorgyle_200
+	}
 	7300.1.1 = {
 		liege = e_dorne
 	}
@@ -5488,6 +5515,9 @@ c_princemarch = {
 			title:b_tower_of_joy = { set_title_name = b_lonely_watchtower }
 		}
 	}
+	7299.1.1 = {
+		holder = Warriner_200
+	}
 	7852.1.1 = {
 		holder = Warriner_1
 	}
@@ -5554,6 +5584,9 @@ c_princemarch = {
 c_thorntree = {
 	2940.1.1 = {
 		liege = d_the_princes_pass
+	}
+	7299.1.1 = {
+		holder = Ronce_200
 	}
 	7830.1.1 = {
 		holder = Ronce_1
@@ -5689,7 +5722,8 @@ d_the_stoneway = {
 	2200.1.1 = {
 		holder = Wyl_14
 	}
-	7300.1.1 = {
+	7299.1.1 = {
+		holder = Wyl_200
 		liege = k_yronwood
 		effect = {
 			set_variable = agot_historical_march
@@ -6144,6 +6178,10 @@ d_the_tor = {
 	}
 	6157.9.16 = {
 		holder = 0
+	}
+	7299.1.1 = {
+		holder = Jordayne_200
+		liege = k_yronwood
 	}
 	7300.1.1 = {
 		liege = k_yronwood

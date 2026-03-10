@@ -77,6 +77,7 @@ Martell_23 = {
 	trait = brave
 	trait = lustful
 	trait = zealous
+	trait = beauty_good_2
 
 	7275.1.1 = {
 		birth = yes
@@ -32567,6 +32568,9 @@ Yronwood_16 = {
 		birth = yes
 		add_character_flag = canon_status_canon
 	}
+	7294.1.1 = {
+		add_spouse = Wyl_203
+	}
 	7290.1.1 = { trait = knight }
 	7311.1.1 = {
 		trait = nightswatch_historical # Sent to the Wall by Nymeria
@@ -34713,6 +34717,7 @@ Fowler_11 = {
 		add_character_flag = canon_status_canon
 	}
 	7252.1.1 = { trait = knight }
+	# 7252.1.1 = { add_spouse = }
 	7300.1.1 = {
 		trait = blind
 		give_nickname = nick_agot_historical_the_blind_king
@@ -36647,7 +36652,7 @@ Dayne_81 = {
 	dna = Dayne_81
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Dayne_16
 
@@ -36672,21 +36677,22 @@ Dayne_17 = {
 	prowess = 10
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Dayne_16
 
-	trait = education_martial_2
-	trait = education_martial_prowess_4
+	trait = education_martial_3
+	trait = education_martial_prowess_5
 	trait = strong
 	trait = brave
 	trait = just
-	trait = arrogant
+	trait = honest
+	trait = trusting
 	trait = bossy
 
 	disallow_random_traits = yes
 
-	7265.1.1 = {
+	7275.1.1 = {
 		birth = yes
 		make_trait_inactive = black_hair
 		make_trait_inactive = purple_eyes_13
@@ -36721,11 +36727,11 @@ Dayne_206 = {
 	dynasty = dynn_Dayne
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Dayne_17
 
-	7286.1.1 = {
+	7290.1.1 = {
 		birth = yes
 		make_trait_inactive = black_hair
 		make_trait_inactive = midnight_eyes
@@ -36740,11 +36746,11 @@ Dayne_207 = {
 	dynasty = dynn_Dayne
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Dayne_17
 
-	7289.1.1 = {
+	7292.1.1 = {
 		birth = yes
 		make_trait_inactive = cool_neutral_silver_hair
 		make_trait_inactive = midnight_eyes
@@ -36760,11 +36766,11 @@ Dayne_82 = {
 	dna = Dayne_82
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Dayne_17
 
-	7293.1.1 = {
+	7294.1.1 = {
 		birth = yes
 		make_trait_inactive = black_hair
 		make_trait_inactive = purple_eyes_10
@@ -36781,7 +36787,7 @@ Dayne_94 = {
 	dna = Dayne_94
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	mother = Dayne_81 # Alara Dayne
 
@@ -36801,7 +36807,7 @@ Dayne_18 = {
 	prowess = 9
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Dayne_94
 
@@ -51672,15 +51678,17 @@ Nymeros_1 = {
 	father = Nymeros_5
 	mother = Nymeros_rs_5
 
-	trait = education_martial_4
-	trait = beauty_good_2
+	trait = education_martial_5
+	trait = beauty_good_3
 	trait = intellect_good_1
-	trait = authoritative
+	trait = shrewd
+	trait = stubborn
 	trait = brave
 	trait = diligent
-	trait = just
+	trait = vengeful
 	trait = organizer
 	trait = bossy
+	trait = fashionable
 
 	disallow_random_traits = yes
 
@@ -142282,4 +142290,379 @@ Citrion_rs_62 = {
 	culture = salt_dornish
 
 	8244.1.1 = { birth = yes }
+}
+
+
+# Nymerias War 
+
+Toland_200 = {
+	name = Morgan 
+	dynasty = dynn_Toland
+
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+
+
+	7282.1.1 = {
+		birth = yes
+	}
+	7298.1.1 = {
+		trait = lifestyle_blademaster
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Dalt_200 = {
+	name = Gwayne 
+	dynasty = dynn_Dalt
+
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+
+
+	7253.1.1 = {
+		birth = yes
+	}
+	7271.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Allyrion_200 = {
+	name = Silvestes
+	dynasty = dynn_Allyrion
+
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+
+
+	7277.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Gargalen_200 = {
+	name = Kevan
+	dynasty = dynn_Gargalen
+
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+
+
+	7277.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Vaith_200 = {
+	name = Derrik
+	dynasty = dynn_Vaith
+
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+
+
+	7256.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Qorgyle_200 = {
+	name = Donnel
+	dynasty = dynn_Qorgyle
+
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+
+
+	7249.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Santagar_200 = {
+	name = Victor
+	dynasty = dynn_Santagar
+
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+
+
+	7272.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+		add_spouse = Santagar_rs_200
+	}
+	7320.1.1 = { death = yes }
+}
+
+Santagar_rs_200 = {
+	name = Lillan
+	female = yes
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+	7274.1.1 = {
+		birth = yes
+	}
+	# 7245.1.1 = {
+	# 	add_spouse = Wyl_rs_200
+	# }
+	# 7295.1.1 = {
+	# 	trait = knight
+	# 	trait = infirm
+	# 	trait = blind
+	# }
+	7320.1.1 = { death = yes }
+}
+
+Santagar_201 = {
+	name = Victor
+	dynasty = dynn_Santagar
+
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+	mother = Santagar_rs_200
+	father = Santagar_200
+
+	7288.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Jordayne_200 = {
+	name = Oberyn
+	dynasty = dynn_Jordayne
+
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+
+
+	7272.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Wyl_200 = {
+	name = Wyllas
+	dynasty = dynn_Wyl
+	disallow_random_traits = yes
+	
+	religion = fots_seven
+	culture = old_dornish
+	intrigue = 5
+	trait = vengeful
+	trait = sadistic
+	trait = loyal
+	trait = rude
+	trait = deceitful
+	trait = shrewd
+	trait = education_intrigue_4
+	trait = schemer
+	7232.1.1 = {
+		birth = yes
+		give_nickname = nickname_wyl_200 
+	}
+	7245.1.1 = {
+		add_spouse = Wyl_rs_200
+	}
+	7295.1.1 = {
+		trait = knight
+		trait = infirm
+		trait = blind
+	}
+	7320.1.1 = { death = yes }
+}
+
+Wyl_rs_200 = {
+	name = Leann
+	female = yes
+	dynasty = dynn_Yronwood
+	random_traits = yes
+	father = Yronwood_14
+	religion = fots_seven
+	culture = old_dornish
+	7239.1.1 = {
+		birth = yes
+	}
+	# 7245.1.1 = {
+	# 	add_spouse = Wyl_rs_200
+	# }
+	# 7295.1.1 = {
+	# 	trait = knight
+	# 	trait = infirm
+	# 	trait = blind
+	# }
+	7320.1.1 = { death = yes }
+}
+
+Wyl_201 = {
+	name = Wyl
+	dynasty = dynn_Wyl
+	random_traits = yes
+	father = Wyl_200
+	mother = Wyl_rs_200
+	religion = fots_seven
+	culture = old_dornish
+	7252.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Wyl_202 = {
+	name = Wyllamen
+	dynasty = dynn_Wyl
+	random_traits = yes
+	father = Wyl_200
+	mother = Wyl_rs_200
+	religion = fots_seven
+	culture = old_dornish
+	7254.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7264.1.1 = { death = yes }
+}
+
+Wyl_203 = {
+	name = Wylla 
+	female = yes
+	dynasty = dynn_Wyl
+	random_traits = yes
+	father = Wyl_200
+	mother = Wyl_rs_200
+	religion = fots_seven
+	culture = old_dornish
+	7275.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+	}
+	7320.1.1 = { death = yes }
+}
+
+Wyl_204 = {
+	name = Wyllaman
+	dynasty = dynn_Wyl
+	random_traits = yes
+	father = Wyl_200
+	mother = Wyl_rs_200
+	religion = fots_seven
+	culture = old_dornish
+	7256.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Wyl_205 = {
+	name = Wyllar
+	dynasty = dynn_Wyl
+	random_traits = yes
+	father = Wyl_200
+	mother = Wyl_rs_200
+	religion = fots_seven
+	culture = old_dornish
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Yronwood_200 = {
+	name = Dyanna
+	female = yes
+	dynasty = dynn_Wyl
+	random_traits = yes
+	father = Yronwood_16
+	mother = Wyl_203
+	religion = fots_seven
+	culture = old_dornish
+	
+	trait = beauty_good_2
+	7291.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+	}
+	7320.1.1 = { death = yes }
+}
+
+Warriner_200 = {
+	name = Kevin
+	dynasty = dynn_Warriner
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+	7276.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Ronce_200 = {
+	name = Delten
+	dynasty = dynn_Ronce
+	random_traits = yes
+	religion = fots_seven
+	culture = old_dornish
+	7266.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
 }
