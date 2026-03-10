@@ -3977,7 +3977,7 @@ agot_assign_starting_family_weapons_effect = {
 		}
 		else_if = {
 			limit = { game_start_date >= 7299.1.1 }
-			character:Lannister_200 ?= { agot_create_artifact_vs_brightroar_effect = { OWNER = THIS } }
+			character:Lannister_155 ?= { agot_create_artifact_vs_brightroar_effect = { OWNER = THIS } }
 		}
 	}
 	if = { # Blackfyre - Valyrian Steel sword of house Targaryen

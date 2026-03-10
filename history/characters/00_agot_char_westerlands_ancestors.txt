@@ -6400,6 +6400,20 @@ Tarbeck_41 = {
 		}
 	}
 }
+Tarbeck_200 = {
+    name = Tommen
+    dynasty = dynn_Tarbeck
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7261.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE REYNE (id = dynn_Reyne)
 ############################
@@ -8143,7 +8157,20 @@ Reyne_hh_1 = {
 	}
 	8188.1.1 = { death = yes }
 }
-
+Reyne_200 = {
+    name = Lucion
+    dynasty = dynn_Reyne
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7281.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE HAMELL (id = dynn_Hamell)
 ############################
 ### Cloaked In Honor
@@ -11419,7 +11446,20 @@ Westerling_hh_3 = {
 		}
 	}
 }
-
+Westerling_200 = {
+    name = Tytion
+    dynasty = dynn_Westerling
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7267.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE LORCH (id = dynn_Lorch)
 ############################
 ### Beyond The West
@@ -14681,6 +14721,20 @@ Lefford_43 = {
 	8250.1.1 = { add_spouse = Vikary_90 } # Antaria Vikary
 	8272.1.1 = { death = { death_reason = death_accident } }
 }
+Lefford_200 = {
+    name = Eldon
+    dynasty = dynn_Lefford
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7276.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE LYDDEN (id = dynn_Lydden)
 ############################
@@ -16378,7 +16432,20 @@ Lydden_46_B = {
 	8208.1.1 = { birth = yes }
 	8256.1.1 = { death = yes }
 }
-
+Lydden_200 = {
+    name = Tomard
+    dynasty = dynn_Lydden
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7266.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE CRAKEHALL (id = dynn_Crakehall)
 ############################
 ### None so Fierce
@@ -18302,6 +18369,20 @@ Crakehall_57 = {
 			killer = Lannister_1 # Tywin Lannister
 		}
 	}
+}
+Crakehall_200 = {
+    name = Merlon
+    dynasty = dynn_Crakehall
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7256.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
 }
 
 ###### HOUSE MARBRAND (id = dynn_Marbrand)
@@ -20260,6 +20341,20 @@ Marbrand_hh_1 = {
 	}
 	8191.1.1 = { death = yes }
 }
+Marbrand_200 = {
+    name = Denys
+    dynasty = dynn_Marbrand
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7262.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE FARMAN (id = dynn_Farman)
 ############################
@@ -22054,6 +22149,20 @@ Farman_hh_4 = {
 	}
 	8188.1.1 = { death = yes }
 }
+Farman_200 = {
+    name = Orbert
+    dynasty = dynn_Farman
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7265.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE BROOME (id = dynn_Broome)
 ############################
@@ -23243,6 +23352,20 @@ Broome_76 = {
 	8243.1.1 = {
 		death = { death_reason = death_natural_causes }
 	}
+}
+Broome_200 = {
+    name = Horys
+    dynasty = dynn_Broome
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7270.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
 }
 
 ###### HOUSE KENNING OF KAYCE (id = house_KenningK)
@@ -26210,6 +26333,20 @@ Prester_hh_1 = {
 	}
 	8188.1.1 = { death = yes }
 }
+Prester_200 = {
+    name = Geremy
+    dynasty = dynn_Prester
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7273.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE BANEFORT (id = dynn_Banefort)
 ############################
@@ -28063,6 +28200,20 @@ Banefort_35 = {
 	8243.1.1 = { add_spouse = Yarwyck_69 } # Damylla Yarwyck
 	8259.1.1 = { death = { death_reason = death_battle } }
 }
+Banefort_200 = {
+    name = Kevan
+    dynasty = dynn_Banefort
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7275.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE BRAX (id = dynn_Brax)
 ############################
@@ -29319,7 +29470,20 @@ Brax_36 = {
 	}
 	8268.1.1 = { death = yes }
 }
-
+Brax_200 = {
+    name = Rupert
+    dynasty = dynn_Brax
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7264.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE PECKLEDON (id = dynn_Peckledon)
 ############################
 ### Unflinching
@@ -32443,7 +32607,20 @@ Serrett_79 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
-
+Serrett_200 = {
+    name = Gawen
+    dynasty = dynn_Serrett
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7258.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE ESTREN (id = dynn_Estren)
 ############################
 ### East And West
@@ -39384,6 +39561,20 @@ Payne_68 = {
 		trait = ill
 		death = { death_reason = death_ill }
 	}
+}
+Payne_200 = {
+    name = Gerion
+    dynasty = dynn_Payne
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7274.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
 }
 
 ###### HOUSE RUTTIGER (id = dynn_Ruttiger)
@@ -52154,6 +52345,20 @@ Plumm_rs_26 = {
 	}
 	8281.1.1 = { death = yes }
 }
+Plumm_200 = {
+    name = Harys
+    dynasty = dynn_Plumm
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7251.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE SWYFT (id = dynn_Swyft)
 ############################
@@ -53591,7 +53796,20 @@ Swyft_47 = {
 	}
 	8256.1.1 = { death = yes }
 }
-
+Swyft_200 = {
+    name = Sheldon
+    dynasty = dynn_Swyft
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7260.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE GREENFIELD (id = dynn_Greenfield)
 ############################
 ### Blooming Sweetly
@@ -65837,6 +66055,20 @@ Stackspear_24 = {
 		add_character_flag = canon_status_canon
 	}
 	8245.1.1 = { death = { death_reason = death_childbirth } }
+}
+Stackspear_200 = {
+    name = Willam
+    dynasty = dynn_Stackspear
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7260.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
 }
 
 ###### HOUSE KYNDALL (id = dynn_Kyndall)
