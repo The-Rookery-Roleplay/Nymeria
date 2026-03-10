@@ -1,4 +1,4 @@
-﻿############################      THE WESTERLANDS       ############################
+############################      THE WESTERLANDS       ############################
 ####################################################################################
 
 ###### HOUSE CASTERLY (id = dynn_Casterly)
@@ -3818,7 +3818,7 @@ LannisterLP_9 = {
 	disallow_random_traits = yes
 
 	2317.1.1 = { birth = yes }
-	7805.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 LannisterLP_10 = {
 	name = Tybolt # a lord
@@ -6470,7 +6470,7 @@ Reyne_3 = {
 	disallow_random_traits = yes
 
 	2310.1.1 = { birth = yes }
-	7810.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Reyne_4 = {
 	name = Geremy # a lord
@@ -13060,7 +13060,7 @@ Lefford_96 = {
 	disallow_random_traits = yes
 
 	6380.1.1 = { birth = yes }
-	7826.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Lefford_6 = {
 	name = Eldon # a lord
@@ -14721,7 +14721,7 @@ Lydden_9 = {
 		birth = yes
 		make_trait_inactive = surname_hill
 	}
-	7804.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Lydden_99 = {
 	name = Benedict # a lord
@@ -18356,7 +18356,7 @@ Marbrand_116 = {
 	disallow_random_traits = yes
 
 	6321.1.1 = { birth = yes }
-	7834.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Marbrand_10 = {
 	name = Alyn # a lord
@@ -20429,7 +20429,7 @@ Farman_10 = {
 	disallow_random_traits = yes
 
 	6440.1.1 = { birth = yes }
-	7809.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Farman_11 = {
 	name = Lyndon # a lord
@@ -23293,7 +23293,7 @@ KenningK_5 = {
 	disallow_random_traits = yes
 
 	6365.1.1 = { birth = yes }
-	7839.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 KenningK_6 = {
 	name = Silas # a lord
@@ -26297,7 +26297,7 @@ Banefort_8 = {
 	disallow_random_traits = yes
 
 	2358.1.1 = { birth = yes }
-	7795.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Banefort_9 = {
 	name = Fenton # a lord
@@ -36091,7 +36091,7 @@ Yew_9 = {
 	disallow_random_traits = yes
 
 	2125.1.1 = { birth = yes }
-	7808.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Yew_10 = {
 	name = Alek # a lord
@@ -46030,7 +46030,7 @@ Hawthorne_26 = {
 	disallow_random_traits = yes
 
 	6433.1.1 = { birth = yes }
-	7825.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Hawthorne_8 = {
 	name = Jonothor # a lord
@@ -61464,7 +61464,7 @@ Moreland_4 = {
 	disallow_random_traits = yes
 
 	2127.1.1 = { birth = yes }
-	7471.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Moreland_41 = {
 	name = Roger # a lord
@@ -70306,7 +70306,7 @@ Lanny_9 = {
 	disallow_random_traits = yes
 
 	2318.1.1 = { birth = yes }
-	7785.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Lanny_25 = {
 	name = Eddon # a lord
@@ -71622,7 +71622,7 @@ Lantell_9 = {
 	disallow_random_traits = yes
 
 	2319.1.1 = { birth = yes }
-	7783.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Lantell_21 = {
 	name = Argett # a lord
@@ -73582,7 +73582,7 @@ Lannett_9 = {
 	disallow_random_traits = yes
 
 	2320.1.1 = { birth = yes }
-	7792.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Lannett_22 = {
 	name = Dennis # a lord
@@ -82509,7 +82509,7 @@ Dulver_11 = {
 	disallow_random_traits = yes
 
 	6470.1.1 = { birth = yes }
-	7800.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Dulver_12 = {
 	name = Harrold # a lord
@@ -88382,7 +88382,7 @@ Wrexley_7 = {
 	disallow_random_traits = yes
 
 	6650.1.1 = { birth = yes }
-	7820.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Wrexley_8 = {
 	name = Cedric # a lord

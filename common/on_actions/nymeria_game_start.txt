@@ -1,19 +1,19 @@
-﻿on_game_start = {
-    on_actions = {
-        kill_line_of_char_characters
-    }
-}
+﻿# on_game_start = {
+#     on_actions = {
+#         kill_line_of_char_characters
+#     }
+# }
 
-kill_line_of_char_characters = {
-    effect = {
-        every_living_character = {
-            limit = {
-                is_alive = yes
-                has_trait = line_of_char
-            }
-            death = {
-                death_reason = death_natural_causes
-            }
-        }
-    }
-}
+# kill_line_of_char_characters = {
+#     effect = {
+#         every_living_character = {
+#             limit = {
+#                 is_alive = yes
+#                 has_trait = line_of_char
+#             }
+#             death = {
+#                 death_reason = death_natural_causes
+#             }
+#         }
+#     }
+# }

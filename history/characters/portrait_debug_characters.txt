@@ -1,4 +1,4 @@
-﻿animation_test_female = {
+animation_test_female = {
 	name = "Elvira"
 	female = yes
 	culture = "dragon_culture"

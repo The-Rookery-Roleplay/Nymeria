@@ -1,4 +1,4 @@
-﻿############################   ROYAL PROGRESS WINNERS   ############################
+############################   ROYAL PROGRESS WINNERS   ############################
 ####################################################################################
 
 ###### HOUSE LORELEY (id = dynn_Loreley)
@@ -8819,7 +8819,7 @@ Moonfell_4 = {
 	disallow_random_traits = yes
 
 	6510.1.1 = { birth = yes }
-	7811.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Moonfell_35 = {
 	name = Elbyn # a lord
@@ -11283,7 +11283,7 @@ Talbot_2 = {
 	disallow_random_traits = yes
 
 	285.1.1 = { birth = yes }
-	7810.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Talbot_3 = {
 	name = Loras # a lord

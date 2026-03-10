@@ -1,4 +1,4 @@
-﻿############################       THE RIVERLANDS       ############################
+############################       THE RIVERLANDS       ############################
 ####################################################################################
 
 ###### HOUSE TULLY (id = dynn_Tully)
@@ -104,7 +104,7 @@ Tully_12 = {
 	disallow_random_traits = yes
 
 	5988.1.1 = { birth = yes }
-	7558.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Tully_13 = {
 	name = Elston # Canon, a lord
@@ -14950,7 +14950,7 @@ Vypren_5 = {
 	disallow_random_traits = yes
 
 	5946.1.1 = { birth = yes }
-	7830.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Vypren_86 = {
 	name = Victor # a lord
@@ -16619,7 +16619,7 @@ Blackwood_26 = {
 	disallow_random_traits = yes
 
 	6030.1.1 = { birth = yes }
-	7563.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Blackwood_27 = {
 	name = Roderick # Canon, a lord
@@ -21016,7 +21016,7 @@ Bracken_30 = {
 	disallow_random_traits = yes
 
 	6030.1.1 = { birth = yes }
-	7490.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Bracken_87 = {
 	name = Robin # a lord
@@ -25246,7 +25246,7 @@ Vance_Wayfarers_Rest_12 = {
 	disallow_random_traits = yes
 
 	5951.1.1 = { birth = yes }
-	7551.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 
 ### Wayfarer's Rest Branch
@@ -26666,7 +26666,7 @@ Vance_Atranta_7 = {
 	disallow_random_traits = yes
 
 	6675.1.2 = { birth = yes }
-	7560.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Vance_Atranta_79 = {
 	name = Harrold # Mentioned, a lord
@@ -27891,7 +27891,7 @@ Darry_16 = {
 	disallow_random_traits = yes
 
 	5886.1.1 = { birth = yes }
-	7560.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Darry_13 = {
 	name = Damon # Mentioned
@@ -30522,7 +30522,7 @@ Roote_91 = {
 	disallow_random_traits = yes
 
 	5222.1.1 = { birth = yes }
-	7817.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Roote_36 = {
 	name = Hendry # a lord
@@ -31923,7 +31923,7 @@ Mooton_13 = {
 	disallow_random_traits = yes
 
 	5908.1.1 = { birth = yes }
-	7800.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Mooton_14 = {
 	name = Andrian # a lord
@@ -69240,7 +69240,7 @@ Dally_65 = {
 	disallow_random_traits = yes
 
 	6689.1.1 = { birth = yes }
-	7808.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Dally_1 = {
 	name = Leslyn # a lord
@@ -75453,7 +75453,7 @@ Strong_101 = {
 	disallow_random_traits = yes
 
 	5350.1.1 = { birth = yes }
-	7830.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Strong_1 = {
 	name = Alyn # a lord
@@ -79162,7 +79162,7 @@ Mudd_33 = {
 	disallow_random_traits = yes
 
 	5911.1.1 = { birth = yes }
-	7712.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Mudd_34 = {
 	name = Marq # Canon, Pretender River King
@@ -79369,7 +79369,7 @@ Teague_5 = {
 	disallow_random_traits = yes
 
 	6430.1.1 = { birth = yes }
-	7566.1.1 = { death = { death_reason = death_accident } }
+	7299.1.1 = { death = { death_reason = death_accident } }
 }
 Teague_6 = {
 	name = Humfrey # Canon, Humfrey I Teague
@@ -79600,7 +79600,7 @@ Fisher_riverlands_duplicate_7 = {
 	disallow_random_traits = yes
 
 	3456.1.1 = { birth = yes }
-	7810.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Fisher_riverlands_duplicate_8 = {
 	name = Lymond # Canon, Pretender River King
@@ -79855,7 +79855,7 @@ Justman_11 = {
 		birth = yes
 		make_trait_inactive = surname_rivers
 	}
-	7688.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 ### Descendants of Bernarr
 Justman_12 = {

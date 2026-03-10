@@ -1,4 +1,4 @@
-﻿############################        IRON ISLANDS        ############################
+############################        IRON ISLANDS        ############################
 ####################################################################################
 
 ###### LEGENDARY FIGURES
@@ -2246,7 +2246,7 @@ Greyjoy_29 = {
 	give_nickname = nick_agot_historical_the_old_kraken
 
 	6432.1.1 = { birth = yes }
-	7822.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Greyjoy_32 = {
 	name = Quellon # a lord
@@ -4863,7 +4863,7 @@ Goodbrother_38 = {
 	give_nickname = nick_agot_historical_badbrother
 
 	6499.1.1 = { birth = yes }
-	7841.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Goodbrother_39 = {
 	name = Harlon # a lord
@@ -13986,7 +13986,7 @@ Harlaw_32 = {
 	disallow_random_traits = yes
 
 	6408.1.1 = { birth = yes }
-	7480.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Harlaw_53 = {
 	name = Goren # a lord
@@ -14978,7 +14978,7 @@ Volmark_30 = {
 	disallow_random_traits = yes
 
 	4179.1.1 = { birth = yes }
-	7834.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Volmark_5 = {
 	name = Victarion # a lord
@@ -15451,7 +15451,7 @@ Grey_King_16 = {
 	disallow_random_traits = yes
 
 	2016.1.1 = { birth = yes }
-	7821.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Wynch_7 = {
 	name = Wulfgar # a lord
@@ -16961,7 +16961,7 @@ Grey_King_18 = {
 	disallow_random_traits = yes
 
 	2010.1.1 = { birth = yes }
-	7813.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Botley_19 = {
 	name = Earl # a lord
@@ -17994,7 +17994,7 @@ Grey_King_20 = {
 	disallow_random_traits = yes
 
 	2016.1.1 = { birth = yes }
-	7844.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Saltcliffe_6 = {
 	name = Sigrin # a lord
@@ -21182,7 +21182,7 @@ Grey_King_22 = {
 	disallow_random_traits = yes
 
 	2020.1.1 = { birth = yes }
-	7835.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Myre_6 = {
 	name = Norne # a lord
@@ -23064,7 +23064,7 @@ Kenning_11 = {
 	disallow_random_traits = yes
 
 	6320.1.1 = { birth = yes }
-	7830.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Kenning_12 = {
 	name = Euron # a lord
@@ -24629,7 +24629,7 @@ Grey_King_26 = {
 	disallow_random_traits = yes
 
 	2018.1.1 = { birth = yes }
-	7839.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Stonetree_6 = {
 	name = Loron # a lord
@@ -27262,7 +27262,7 @@ Blacktyde_9 = {
 	give_nickname = nick_agot_historical_maidensbane
 
 	6479.1.1 = { birth = yes }
-	7851.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Blacktyde_10 = {
 	name = Goren # a lord
@@ -28538,7 +28538,7 @@ Drumm_7 = {
 	disallow_random_traits = yes
 
 	3956.1.1 = { birth = yes }
-	7701.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Drumm_14 = {
 	name = Gormond # Canon, a lord, AKA: Gormond the Oldfather
@@ -29473,7 +29473,7 @@ Grey_King_30 = {
 	disallow_random_traits = yes
 
 	2016.1.1 = { birth = yes }
-	7820.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Stonehouse_6 = {
 	name = Ragnor # a lord
@@ -32193,7 +32193,7 @@ Grey_King_32 = {
 	disallow_random_traits = yes
 
 	2012.1.1 = { birth = yes }
-	7811.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Merlyn_5 = {
 	name = Manfryd # a lord
@@ -33614,7 +33614,7 @@ Grey_King_34 = {
 	disallow_random_traits = yes
 
 	2015.1.1 = { birth = yes }
-	7827.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Orkwood_8 = {
 	name = Urron # a lord

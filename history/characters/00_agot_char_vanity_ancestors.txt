@@ -1,4 +1,4 @@
-﻿###############################   DEVELOPER HOUSES   ###############################
+###############################   DEVELOPER HOUSES   ###############################
 ####################################################################################
 
 ###### HOUSE MYSHKIN (id = dynn_Myshkin)
@@ -97,7 +97,7 @@ Myshkin_142 = {
 	disallow_random_traits = yes
 
 	6567.1.1 = { birth = yes }
-	7815.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Myshkin_1 = {
 	name = Jon # a lord
@@ -4427,7 +4427,7 @@ Lysander_99 = {
 	disallow_random_traits = yes
 
 	6732.1.1 = { birth = yes }
-	7821.1.1 = { death = yes }
+	7299.1.1 = { death = yes }
 }
 Lysander_2 = {
 	name = Amos # a lord
