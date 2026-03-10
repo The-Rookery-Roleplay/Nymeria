@@ -4587,6 +4587,17 @@ Greyjoy_93 = {
 	}
 	8226.1.1 = { death = yes }
 }
+Greyjoy_200 = {
+    name = Marlon
+    dynasty = dynn_Greyjoy
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7271.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE GOODBROTHER (id = dynn_Goodbrother)
 ############################
@@ -9529,7 +9540,17 @@ GoodbrotherOM_54 = {
 		death = { death_reason = death_fire }
 	}
 }
-
+Goodbrother_200 = {
+    name = Thoryn
+    dynasty = dynn_Goodbrother
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7260.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE FARWYND (id = dynn_Farwynd)
 ############################
 ### On the Horizon
@@ -13797,6 +13818,17 @@ FarwyndDL_86 = {
 		death = { death_reason = death_fire }
 	}
 }
+Farwynd_200 = {
+    name = Hake
+    dynasty = dynn_Farwynd
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7278.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE HARLAW (id = dynn_Harlaw)
 ############################
@@ -14893,6 +14925,17 @@ Harlaw_49 = {
 	}
 	8208.1.1 = { add_spouse = Greyjoy_68 } # Gwin Greyjoy
 	8234.1.1 = { death = yes }
+}
+Harlaw_200 = {
+    name = Rodrick
+    dynasty = dynn_Harlaw
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7270.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
 }
 
 ###### HOUSE VOLMARK (id = dynn_Volmark)
@@ -28447,6 +28490,17 @@ Blacktyde_81 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
+Blacktyde_200 = {
+    name = Cerrick
+    dynasty = dynn_Blacktyde
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7272.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE DRUMM (id = dynn_Drumm)
 ############################
@@ -29430,7 +29484,17 @@ Drumm_54 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
-
+Drumm_200 = {
+    name = Donel
+    dynasty = dynn_Drumm
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7267.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE STONEHOUSE (id = dynn_Stonehouse)
 ############################
 ### Feed the Flame
