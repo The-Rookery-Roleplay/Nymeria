@@ -6732,6 +6732,20 @@ ArrynCW_52 = {
 		death = { death_reason = death_old_age }
 	}
 }
+Arryn_200 = {
+    name = Roland
+    dynasty = dynn_Arryn
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_upper
+    7258.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE HARDYNG (id = dynn_Hardyng)
 ############################
@@ -9292,7 +9306,20 @@ Corbray_hh_6 = {
 	8172.3.28 = { employer = Targaryen_88 } # Aegon IV Targaryen
 	8173.1.1 = { death = yes }
 }
-
+Corbray_200 = {
+    name = Alester
+    dynasty = dynn_Corbray
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_main
+    7278.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE TEMPLETON (id = dynn_Templeton)
 ############################
 ###
@@ -13811,6 +13838,20 @@ Royce_hh_4 = {
 	}
 	8181.1.1 = { death = yes }
 }
+Royce_200 = {
+    name = Wayrick
+    dynasty = dynn_Royce
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_main
+    7253.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ### Gates of the Moon Branch
 ############################
@@ -15254,7 +15295,20 @@ Grafton_hh_1 = {
 	}
 	8177.1.1 = { death = yes }
 }
-
+Grafton_200 = {
+    name = Edryn
+    dynasty = dynn_Grafton
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_main
+    7275.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE REDFORT (id = dynn_Redfort)
 ############################
 ### As Strong as Stone
@@ -15976,7 +16030,20 @@ Redfort_36 = {
 	8234.1.1 = { add_spouse = Donniger_49 } # Kayla Donniger
 	8252.1.1 = { death = yes }
 }
-
+Redfort_200 = {
+    name = Kerwick
+    dynasty = dynn_Redfort
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_upper
+    7259.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE WAYNWOOD (id = dynn_Waynwood)
 ############################
 ### Onwards
@@ -17402,6 +17469,20 @@ Waynwood_77 = {
 	8236.1.1 = { add_spouse = Erenford_100 } # Bethany Erenford
 	8260.1.1 = { death = yes }
 }
+Waynwood_200 = {
+    name = Corben
+    dynasty = dynn_Waynwood
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_main
+    7269.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE MELCOLM (id = dynn_Melcolm)
 ############################
@@ -18541,6 +18622,20 @@ Melcolm_hh_1 = {
 		}
 	}
 	8173.1.1 = { death = yes }
+}
+Melcolm_200 = {
+    name = Eustace
+    dynasty = dynn_Melcolm
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_main
+    7277.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
 }
 
 ###### HOUSE HUNTER (id = dynn_Hunter)
@@ -19975,7 +20070,20 @@ Hunter_hh_2 = {
 	8178.1.1 = { employer = Hunter_35 } # Harlan Hunter
 	8190.1.1 = { death = yes }
 }
-
+Hunter_200 = {
+    name = Elwood
+    dynasty = dynn_Hunter
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_main
+    7281.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 ###### HOUSE UPCLIFF (id = dynn_Upcliff)
 ############################
 ###
@@ -31334,6 +31442,20 @@ Belmore_1 = {
 	8230.1.1 = { add_spouse = Breakstone_70 } # Elena Breakstone
 	8279.1.1 = { death = yes }
 }
+Belmore_200 = {
+    name = Mavis
+    dynasty = dynn_Belmore
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_upper
+    7274.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE EGEN (id = dynn_Egen)
 ############################
@@ -31958,6 +32080,20 @@ Egen_rs_8 = {
 
 	8183.1.1 = { birth = yes }
 	8227.1.1 = { death = yes }
+}
+Egen_200 = {
+    name = Astos
+    dynasty = dynn_Egen
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_upper
+    7253.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
 }
 
 ###### HOUSE WAXLEY (id = dynn_Waxley)
@@ -42941,6 +43077,20 @@ LynderlySC_28 = {
 	8209.1.1 = { birth = yes }
 	8250.1.1 = { death = yes }
 }
+Lynderly_200 = {
+    name = Donnel
+    dynasty = dynn_Lynderly
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_main
+    7255.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
 
 ###### HOUSE HERSY (id = dynn_Hersy)
 ############################
@@ -44170,6 +44320,20 @@ Hersy_69 = {
 		trait = gout_ridden
 		death = { death_reason = death_gout_ridden }
 	}
+}
+Hersy_200 = {
+    name = Nestor
+    dynasty = dynn_Hersy
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_finger
+    7259.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
 }
 
 ###### HOUSE ELESHAM (id = dynn_Elesham)
@@ -46060,6 +46224,20 @@ Elesham_106 = {
 
 	8199.1.1 = { birth = yes }
 	8243.1.1 = { death = yes }
+}
+Elesham_200 = {
+    name = Merton
+    dynasty = dynn_Elesham
+    random_traits = yes
+    religion = fots_seven
+    culture = valeman_finger
+    7267.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
 }
 
 ###### HOUSE PRYOR (id = dynn_Pryor)
@@ -55794,6 +55972,20 @@ Sunderland_35 = {
 	8231.1.1 = { birth = yes }
 	8258.1.1 = { add_spouse = Longthorpe_27 } # Ethel Longthorpe
 	8277.1.1 = { death = yes }
+}
+Sunderland_200 = {
+    name = Mandon
+    dynasty = dynn_Sunderland
+    random_traits = yes
+    religion = fots_seven
+    culture = sisterman
+    7272.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
 }
 
 ###### HOUSE BORRELL (id = dynn_Borrell)
