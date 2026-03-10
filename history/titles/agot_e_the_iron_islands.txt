@@ -385,6 +385,9 @@ d_pyke = {
 	6367.1.1 = {
 		holder = Greyjoy_21
 	}
+	7299.1.1 = {
+		holder = Greyjoy_200
+	}
 	7853.1.1 = {
 		holder = Greyjoy_32
 	}
@@ -474,6 +477,9 @@ c_pyke = {
 	}
 	6367.1.1 = {
 		holder = Greyjoy_21
+	}
+	7299.1.1 = {
+		holder = Greyjoy_200
 	}
 	7853.1.1 = {
 		holder = Greyjoy_32
@@ -733,6 +739,9 @@ d_blacktyde = {
 	6450.1.1 = {
 		holder = Blacktyde_8
 	}
+	7299.1.1 = {
+		holder = Blacktyde_200
+	}
 	7878.1.1 = {
 		holder = Blacktyde_10
 	}
@@ -811,6 +820,9 @@ c_blacktyde = {
 	}
 	6450.1.1 = {
 		holder = Blacktyde_8
+	}
+	7299.1.1 = {
+		holder = Blacktyde_200
 	}
 	7878.1.1 = {
 		holder = Blacktyde_10
@@ -969,6 +981,9 @@ d_hardstone_hills = {
 	6458.1.1 = {
 		holder = Goodbrother_37
 	}
+	7299.1.1 = {
+		holder = Goodbrother_200
+	}
 	7871.1.1 = {
 		holder = Goodbrother_39
 	}
@@ -1044,6 +1059,9 @@ c_hammerhorn = {
 	}
 	6458.1.1 = {
 		holder = Goodbrother_37
+	}
+	7299.1.1 = {
+		holder = Goodbrother_200
 	}
 	7871.1.1 = {
 		holder = Goodbrother_39
@@ -1609,6 +1627,9 @@ d_harlaw = {
 	6396.1.1 = {
 		holder = Harlaw_31
 	}
+	7299.1.1 = {
+		holder = Harlaw_200
+	}
 	7513.1.1 = {
 		holder = Harlaw_53
 	}
@@ -1690,6 +1711,9 @@ c_ten_towers = {
 	}
 	6396.1.1 = {
 		holder = Harlaw_31
+	}
+	7299.1.1 = {
+		holder = Harlaw_200
 	}
 	7859.1.1 = {
 		holder = Harlaw_33
@@ -2343,6 +2367,9 @@ d_lonely_light = {
 		succession_laws = { male_only_law }
 		liege = e_the_iron_islands
 	}
+	7299.1.1 = {
+		holder = Farwynd_200
+	}
 	7862.1.1 = {
 		holder = Farwynd_10
 	}
@@ -2398,6 +2425,10 @@ d_lonely_light = {
 c_lonely_light = {
 	900.1.1 = {
 		succession_laws = { male_only_law }
+	}
+	7299.1.1 = {
+		holder = Farwynd_200
+		liege = d_lonely_light
 	}
 	7862.1.1 = {
 		holder = Farwynd_10
@@ -2460,6 +2491,9 @@ d_old_wyk = {
 	3912.1.1 = {
 		holder = Drumm_6
 		liege = e_the_iron_islands
+	}
+	7299.1.1 = {
+		holder = Drumm_200
 	}
 	7720.1.1 = {
 		holder = Drumm_14
@@ -2524,6 +2558,9 @@ c_bleachbone = {
 	}
 	3912.1.1 = {
 		holder = Drumm_6
+	}
+	7299.1.1 = {
+		holder = Drumm_200
 	}
 	7720.1.1 = {
 		holder = Drumm_14
