@@ -783,6 +783,9 @@ d_sharp_point = {
 	5838.1.1 = {
 		holder = Bar_Emmon_5
 	}
+	7299.1.1 = {
+		holder = Bar_Emmon_200
+	}
 	7850.1.1 = {
 		holder = Bar_Emmon_7
 	}

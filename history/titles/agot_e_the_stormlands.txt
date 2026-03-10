@@ -1515,6 +1515,9 @@ d_blackhaven = {
 			set_variable = agot_historical_march
 		}
 	}
+	7299.1.1 = {
+		holder = Dondarrion_200
+	}
 	7856.1.1 = {
 		holder = Dondarrion_5
 	}
@@ -1860,6 +1863,9 @@ c_highscar = {
 d_cape_wrath = {
 	202.1.1 = {
 		liege = e_the_stormlands
+	}
+	7299.1.1 = {
+		holder = Mertyns_200
 	}
 	7828.1.1 = {
 		holder = Mertyns_8
@@ -2560,6 +2566,9 @@ d_estermont_isles = {
 	20.1.1 = {
 		liege = e_the_stormlands
 	}
+	7299.1.1 = {
+		holder = Estermont_200
+	}
 	7844.1.1 = {
 		holder = Estermont_11
 	}
@@ -2839,6 +2848,9 @@ c_tudbury_island = {
 d_grandview = {
 	30.1.1 = {
 		liege = e_the_stormlands
+	}
+	7299.1.1 = {
+		holder = Grandison_200
 	}
 	7869.1.1 = {
 		holder = Grandison_8
@@ -3251,6 +3263,9 @@ d_greatstock = {
 	202.1.1 = {
 		liege = e_the_stormlands
 	}
+	7299.1.1 = {
+		holder = Peasebury_200
+	}
 	7845.1.1 = {
 		holder = Peasebury_4
 	}
@@ -3636,6 +3651,9 @@ c_wetherstruck = {
 d_kingswood = {
 	202.1.1 = {
 		liege = e_the_stormlands
+	}
+	7299.1.1 = {
+		holder = Fell_200
 	}
 	7833.1.1 = {
 		holder = Fell_6
@@ -4193,6 +4211,9 @@ d_marchfields = {
 			set_variable = agot_historical_march
 		}
 	}
+	7299.1.1 = {
+		holder = Selmy_200
+	}
 	7869.1.1 = {
 		holder = Selmy_11
 	}
@@ -4491,6 +4512,10 @@ c_the_stalks = {
 d_nestridge = {
 	202.1.1 = {
 		liege = k_shipbreaker_bay
+	}
+	7299.1.1 = {
+		liege = e_the_stormlands
+		holder = Connington_200
 	}
 	7876.1.1 = {
 		holder = Connington_10
@@ -4862,6 +4887,9 @@ d_nightsong = {
 			set_variable = agot_historical_march
 		}
 	}
+	7299.1.1 = {
+		holder = Caron_200 
+	}
 	7855.1.1 = {
 		holder = Caron_10
 	}
@@ -5223,6 +5251,9 @@ d_red_watch = {
 		effect = {
 			set_variable = agot_historical_march
 		}
+	}
+	7299.1.1 = {
+		holder = Swann_200
 	}
 	7862.1.1 = {
 		holder = Swann_9
@@ -5616,6 +5647,9 @@ d_the_slayne = {
 	202.1.1 = {
 		liege = k_shipbreaker_bay
 	}
+	7299.1.1 = {
+		holder = Morrigen_200
+	}
 	7843.1.1 = {
 		holder = Morrigen_5
 	}
@@ -5841,6 +5875,9 @@ c_slaynes_break = {
 d_stackfield = {
 	20.1.1 = {
 		liege = k_shipbreaker_bay
+	}
+	7299.1.1 = {
+		holder = Errol_200
 	}
 	7853.1.1 = {
 		holder = Errol_4
@@ -6139,6 +6176,9 @@ d_tarth = {
 	}
 	3055.1.1 = {
 		liege = e_the_stormlands
+	}
+	7299.1.1 = {
+		holder = Tarth_200
 	}
 	7847.1.1 = {
 		holder = Tarth_10
@@ -6504,6 +6544,10 @@ d_the_drench = {
 	}
 }
 c_rainshore = {
+	7299.1.1 = {
+		holder = Dripps_200
+		liege = d_nestridge
+	}
 	7879.1.1 = {
 		liege = d_nestridge
 		holder = Dripps_1
@@ -6576,6 +6620,10 @@ c_rainshore = {
 	}
 }
 c_griffin_river = {
+	7299.1.1 = {
+		holder = Gayle_200
+		liege = d_nestridge
+	}
 	7864.1.1 = {
 		holder = Gayle_1
 		liege = d_nestridge
@@ -6686,6 +6734,10 @@ c_grinsdale = {
 	}
 }
 c_greenpools = {
+	7299.1.1 = {
+		holder = Brandish_200
+		liege = d_nestridge
+	}
 	7868.1.1 = {
 		holder = Brandish_1
 	}
@@ -6753,6 +6805,9 @@ c_greenpools = {
 d_the_rainwood = {
 	20.1.1 = {
 		liege = e_the_stormlands
+	}
+	7299.1.1 = {
+		holder = Wylde_200
 	}
 	7869.1.1 = {
 		holder = Wylde_14
@@ -7166,6 +7221,9 @@ d_valor_meadows = {
 	20.1.1 = {
 		liege = e_the_stormlands
 	}
+	7299.1.1 = {
+		holder = Staedmon_200
+	}
 	7849.1.1 = {
 		holder = Staedmon_5
 	}
@@ -7344,6 +7402,9 @@ d_dark_harrow = {
 	20.1.1 = {
 		liege = e_the_stormlands
 	}
+	7299.1.1 = {
+		holder = Toyne_200
+	}
 	7851.1.1 = {
 		holder = Toyne_9
 	}
@@ -7510,6 +7571,9 @@ c_trenchester = {
 d_vellum_coast = {
 	202.1.1 = {
 		liege = k_shipbreaker_bay
+	}
+	7299.1.1 = {
+		holder = Penrose_200
 	}
 	7865.1.1 = {
 		holder = Penrose_5
@@ -7799,6 +7863,9 @@ d_whentway = {
 		effect = {
 			set_variable = agot_historical_march
 		}
+	}
+	7299.1.1 = {
+		holder = Cafferen_200
 	}
 	7869.1.1 = {
 		holder = Cafferen_5

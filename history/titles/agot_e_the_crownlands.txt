@@ -2986,6 +2986,9 @@ d_masseys_hook = {
 	6551.1.1 = {
 		liege = e_the_stormlands
 	}
+	7299.1.1 = {
+		holder = Massey_200
+	}
 	7859.1.1 = {
 		holder = Massey_19
 	}
@@ -5379,6 +5382,9 @@ c_pikemouth = {
 d_wendwater_forest = {
 	20.1.1 = {
 		liege = e_the_stormlands
+	}
+	7299.1.1 = {
+		holder = Wendwater_200
 	}
 	7874.1.1 = {
 		holder = Wendwater_4
