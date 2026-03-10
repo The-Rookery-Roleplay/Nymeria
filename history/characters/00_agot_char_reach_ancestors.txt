@@ -214768,3 +214768,197 @@ Gardener_200 = {
 		death = { death_reason = death_natural_causes }
 	}
 }
+
+Tyrell_200 = {
+	name = Osmund # a lord
+	dynasty = dynn_Tyrell
+
+	religion = fots_seven
+	culture = reachman
+	stewardship = 10
+	diplomacy = 8
+	trait = education_stewardship_5
+	trait = patient
+	trait = stubborn
+	trait = diligent
+	trait = authoritative
+	trait = charming
+	trait = intellect_good_2
+
+	7276.1.1 = { birth = yes }
+	7286.1.1 = { 
+		trait = knight
+		give_nickname = nickname_tyrell_200 
+	}
+	7328.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+Hightower_200 = {
+	name = Steffon # a lord
+	dynasty = dynn_Hightower
+
+	religion = fots_seven
+	culture = honeywiner
+	stewardship = 2
+	diplomacy = 1
+	martial = 0
+	intrigue = 0
+	prowess = 2
+	trait = education_stewardship_1
+	trait = fickle
+	trait = temperate
+	trait = calm
+	trait = craven
+	trait = charming
+	trait = intellect_bad_2
+
+	7256.1.1 = { birth = yes }
+	7286.1.1 = { 
+		give_nickname = nickname_hightower_200 
+	}
+	7328.1.1 = {
+		death = { death_reason = death_natural_causes }
+	}
+}
+
+Florent_200 = {
+	name = Sterlan
+	dynasty = dynn_Florent
+	random_traits = yes
+	religion = fots_seven
+	culture = honeywiner
+	7266.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Beesbury_200 = {
+	name = Elmar
+	dynasty = dynn_Beesbury
+	random_traits = yes
+	religion = fots_seven
+	culture = honeywiner
+	7246.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Bulwer_200 = {
+	name = Elmar
+	dynasty = dynn_Bulwer
+	random_traits = yes
+	religion = fots_seven
+	culture = honeywiner
+	7255.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Costayne_200 = {
+	name = Constantin
+	dynasty = dynn_Costayne
+	random_traits = yes
+	religion = fots_seven
+	culture = honeywiner
+	7255.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Mullendore_200 = {
+	name = Constantin
+	dynasty = dynn_Mullendore
+	random_traits = yes
+	religion = fots_seven
+	culture = honeywiner
+	7263.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Cuy_200 = {
+	name = Corbus
+	dynasty = dynn_Cuy
+	random_traits = yes
+	religion = fots_seven
+	culture = honeywiner
+	7263.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Roxton_200 = {
+	name = Lynn
+	female = yes
+	dynasty = dynn_Roxton
+	random_traits = yes
+	religion = fots_seven
+	culture = marcher
+	prowess = 10
+	trait = brave
+	trait = education_martial_3
+	trait = education_martial_prowess_5
+	trait = physique_good_2
+	trait = strong
+	7273.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+	}
+	7320.1.1 = { death = yes }
+}
+
+Tarly_200 = {
+	name = Samwell
+	dynasty = dynn_Tarly
+	random_traits = yes
+	religion = fots_seven
+	culture = marcher
+	7253.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+	}
+	7320.1.1 = { death = yes }
+}
+
+Redwyne_200 = {
+	name = Garlan
+	dynasty = dynn_Redwyne
+	random_traits = yes
+	religion = fots_seven
+	culture = honeywiner
+	7259.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}

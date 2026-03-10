@@ -972,6 +972,9 @@ c_gardenbounds = {
 	20.1.1 = {
 		liege = d_highgarden
 	}
+	7299.1.1 = {
+		holder = Tyrell_200
+	}
 	7864.1.1 = {
 		holder = Middlebury_7
 	}
@@ -1308,6 +1311,9 @@ c_vinewarren = {
 	}
 	7178.1.1 = {
 		holder = Tyrell_48
+	}
+	7299.1.1 = {
+		holder = Tyrell_200
 	}
 	7825.1.1 = {
 		holder = Tyrell_50
@@ -1879,6 +1885,9 @@ d_black_sound = {
 	2000.1.1 = {
 		liege = k_oldtown
 		holder = Bulwer_6
+	}
+	7299.1.1 = {
+		holder = Bulwer_200
 	}
 	7857.1.1 = {
 		holder = Bulwer_8
@@ -2678,6 +2687,10 @@ d_brightwater = {
 	}
 	2550.1.1 = {
 		liege = k_the_mander
+	}
+	7299.1.1 = {
+		liege = e_the_reach
+		holder = Florent_200
 	}
 	7859.1.1 = {
 		holder = Florent_20
@@ -4801,6 +4814,9 @@ d_whisper_point = {
 	20.1.1 = {
 		liege = k_oldtown
 	}
+	7299.1.1 = {
+		holder = Costayne_200
+	}
 	7878.1.1 = {
 		holder = Costayne_7
 	}
@@ -5117,6 +5133,9 @@ d_garden_coast = {
 	}
 	6810.1.1 = {
 		holder = Cuy_60
+	}
+	7299.1.1 = {
+		holder = Cuy_200
 	}
 	7869.1.1 = {
 		holder = Cuy_5
@@ -6754,6 +6773,9 @@ d_honeylands = {
 		liege = k_oldtown
 		holder = Beesbury_8
 	}
+	7299.1.1 = {
+		holder = Beesbury_200
+	}
 	7847.1.1 = {
 		holder = Beesbury_10
 	}
@@ -7473,6 +7495,9 @@ d_oldhills = {
 	2550.1.1 = {
 		liege = e_the_reach
 	}
+	7299.1.1 = {
+		holder = Roxton_200
+	}
 	7825.1.1 = {
 		holder = Roxton_10
 	}
@@ -7961,6 +7986,9 @@ k_oldtown = {
 	6895.1.1 = {
 		holder = Hightower_40
 	}
+	7299.1.1 = {
+		holder = Hightower_200
+	}
 	7730.1.1 = {
 		holder = Hightower_42
 	}
@@ -8098,6 +8126,9 @@ d_oldtown = {
 	}
 	6895.1.1 = {
 		holder = Hightower_40
+	}
+	7299.1.1 = {
+		holder = Hightower_200
 	}
 	7730.1.1 = {
 		holder = Hightower_42
@@ -10024,6 +10055,9 @@ d_ridgeview = {
 	25.1.1 = {
 		liege = k_oldtown
 	}
+	7299.1.1 = {
+		holder = Mullendore_200
+	}
 	7860.1.1 = {
 		holder = Mullendore_4
 	}
@@ -11383,6 +11417,9 @@ d_the_arbor = {
 	}
 	6260.1.1 = {
 		holder = Redwyne_79
+	}
+	7299.1.1 = {
+		holder = Redwyne_200
 	}
 	7850.1.1 = {
 		holder = Redwyne_13
@@ -13482,6 +13519,9 @@ d_the_westmarch = {
 	}
 	2004.1.1 = {
 		holder = Tarly_8
+	}
+	7299.1.1 = {
+		holder = Tarly_200
 	}
 	7867.1.1 = {
 		holder = Tarly_11
