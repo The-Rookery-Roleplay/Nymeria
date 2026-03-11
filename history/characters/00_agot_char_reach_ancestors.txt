@@ -27809,14 +27809,21 @@ Peake_14 = {
 	culture = marcher
 
 	father = Peake_13
-
+	trait = ambitious
+	trait = vengeful
+	trait = stubborn
+	trait = callous
 	give_nickname = nick_agot_historical_the_elder_Peake_14
 
 	7241.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_heterosexual
 	}
-	7257.1.1 = { trait = knight }
+	7257.1.1 = { 
+		trait = knight 
+		set_relation_nemesis = character:Manderly_13
+	}
 	7259.1.1 = { add_spouse = Gardener_54 } # Margaery Gardener
 	7311.1.1 = { death = yes }
 }
