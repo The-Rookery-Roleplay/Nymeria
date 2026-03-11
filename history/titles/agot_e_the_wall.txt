@@ -1893,6 +1893,11 @@ b_waysrest = {
 	}
 }
 c_whitecross = {
+	7299.1.1 = {
+		liege = d_last_lands
+		de_jure_liege = d_last_lands
+		holder = Umber_200
+	}
 	7826.1.1 = {
 		liege = d_last_lands
 		de_jure_liege = d_last_lands
@@ -1981,6 +1986,11 @@ b_old_hedge = {
 	}
 }
 c_giantsbeard = {
+	7299.1.1 = {
+		liege = d_last_lands
+		de_jure_liege = d_last_lands
+		holder = Umber_200
+	}
 	7826.1.1 = {
 		liege = d_last_lands
 		de_jure_liege = d_last_lands
