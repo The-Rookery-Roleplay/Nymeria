@@ -524,6 +524,10 @@ c_burnout = {
 	6648.1.1 = {
 		liege = d_riverrun
 	}
+	7299.1.1 = { 
+		liege = d_riverrun
+		holder = Renn_200
+	}
 	7844.1.1 = {
 		holder = Renn_1
 	}
@@ -585,6 +589,10 @@ c_burnout = {
 c_illfield = {
 	6648.1.1 = {
 		liege = d_riverrun
+	}
+	7299.1.1 = { 
+		liege = d_riverrun
+		holder = Clare_200
 	}
 	7838.1.1 = {
 		holder = Clare_1
@@ -704,6 +712,10 @@ c_stars_ban = {
 	6648.1.1 = {
 		liege = d_riverrun
 	}
+	7299.1.1 = { 
+		liege = d_riverrun
+		holder = Alderdice_200
+	}
 	7817.1.1 = {
 		holder = Alderdice_1
 	}
@@ -766,6 +778,10 @@ c_turnbridge = {
 	6648.1.1 = {
 		liege = d_riverrun
 	}
+	7299.1.1 = { 
+		liege = d_riverrun
+		holder = Wayn_200
+	}
 	7862.1.1 = {
 		holder = Wayn_4
 	}
@@ -825,6 +841,10 @@ c_heathersage = {
 	5920.1.1 = {
 		liege = d_riverrun
 		holder = Tully_11
+	}
+	7299.1.1 = { 
+		liege = d_riverrun
+		holder = Wayn_200
 	}
 	7862.1.1 = {
 		holder = Wayn_4
@@ -1056,10 +1076,23 @@ c_atranta = {
 		holder = Vance_Atranta_1
 	}
 }
+
 c_armisteads_wood = {
+	7299.1.1 = { 
+		liege = d_atranta
+		holder = RandomCount_228
+		effect = {
+			set_title_name = c_hooks_wood
+			title:b_castle_armistead = { set_title_name = b_castle_hook }
+		}
+	}
 	7866.1.1 = {
 		liege = d_atranta
 		holder = Vance_Armisteads_Wood_1
+		effect = {
+			reset_title_name = yes
+			title:b_castle_armistead = { reset_title_name = yes }
+		}
 	}
 	7872.1.1 = {
 		holder = Vance_Armisteads_Wood_2
@@ -1114,6 +1147,10 @@ c_armisteads_wood = {
 	}
 }
 c_blackrush = {
+	7299.1.1 = { 
+		liege = d_atranta
+		holder = Becker_200
+	}
 	7848.1.1 = {
 		liege = d_atranta
 		holder = Becker_1
@@ -1165,6 +1202,10 @@ c_blackrush = {
 	}
 }
 c_bringrunn = {
+	7299.1.1 = { 
+		liege = d_atranta
+		holder = Common_200
+	}
 	7863.1.1 = {
 		liege = d_atranta
 		holder = Common_1
@@ -1280,6 +1321,10 @@ c_hagedorn = {
 	}
 }
 c_rushinground = {
+	7299.1.1 = { 
+		liege = d_atranta
+		holder = Boddy_200
+	}
 	7804.1.1 = {
 		liege = d_atranta
 	}
@@ -2739,6 +2784,10 @@ c_hammerford = {
 	5910.1.1 = {
 		holder = Mudd_32 	 # Tristifer (C)
 	}
+	7299.1.1 = { 
+		liege = d_cape_of_eagles
+		holder = Pemford_200
+	}
 	7854.1.1 = {
 		holder = Pemford_6
 	}
@@ -2798,6 +2847,10 @@ c_hook_bay = {
 	5917.1.1 = {
 		liege = d_cape_of_eagles
 	}
+	7299.1.1 = { 
+		liege = d_cape_of_eagles
+		holder = Keath_200
+	}
 	7848.1.1 = {
 		holder = Keath_5
 	}
@@ -2850,6 +2903,10 @@ c_hook_bay = {
 c_mistcore = {
 	5917.1.1 = {
 		liege = d_cape_of_eagles
+	}
+	7299.1.1 = { 
+		liege = d_cape_of_eagles
+		holder = Brightmoon_200
 	}
 	7832.1.1 = {
 		holder = Brightmoon_1
@@ -2912,6 +2969,10 @@ c_mistcore = {
 c_rushmoor = {
 	5917.1.1 = {
 		liege = d_cape_of_eagles
+	}
+	7299.1.1 = { 
+		liege = d_cape_of_eagles
+		holder = Rushmoor_200
 	}
 	7882.1.1 = {
 		holder = Rushmoor_1
@@ -4449,6 +4510,10 @@ c_shorehedge = {
 	}
 }
 c_stoney_sept = {
+	7299.1.1 = { 
+		liege = k_red_rambles
+		holder = Blanetree_200
+	}
 	7804.1.1 = {
 		liege = d_atranta
 	}
@@ -4505,6 +4570,10 @@ c_stoney_sept = {
 	}
 }
 c_bechester = {
+	7299.1.1 = { 
+		liege = k_red_rambles
+		holder = Penny_200
+	}
 	7804.1.1 = {
 		liege = d_atranta
 	}
@@ -4555,6 +4624,10 @@ c_bechester = {
 	}
 }
 c_fieldstone = {
+	7299.1.1 = { 
+		liege = k_red_rambles
+		holder = Pimm_200
+	}
 	7804.1.1 = {
 		liege = d_atranta
 	}
@@ -4611,6 +4684,10 @@ c_fieldstone = {
 	}
 }
 c_mainstream = {
+	7299.1.1 = { 
+		liege = k_red_rambles
+		holder = Haynes_200
+	}
 	7804.1.1 = {
 		liege = d_atranta
 	}
@@ -4676,6 +4753,10 @@ c_mainstream = {
 	}
 }
 c_tumblers_falls = {
+	7299.1.1 = { 
+		liege = k_red_rambles
+		holder = Dunstable_200
+	}
 	7804.1.1 = {
 		liege = d_atranta
 	}
@@ -6412,6 +6493,10 @@ c_pinkmaiden = {
 	}
 }
 c_dawngate = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Barrett_200
+	}
 	7803.1.1 = {
 		holder = Barrett_1
 	}
@@ -6471,6 +6556,10 @@ c_dawngate = {
 	}
 }
 c_float_river = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Perryn_200
+	}
 	7836.1.1 = {
 		liege = d_pinkmaiden
 	}
@@ -6527,6 +6616,10 @@ c_float_river = {
 	}
 }
 c_puresprings = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Leed_200
+	}
 	7833.1.1 = {
 		holder = Leed_1
 	}
@@ -6624,6 +6717,10 @@ b_coldsteel = {
 	}
 }
 c_wallwood = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Gillmore_200
+	}
 	7822.1.1 = {
 		holder = Gillmore_1
 	}
@@ -6686,6 +6783,10 @@ c_wallwood = {
 	}
 }
 c_whitebricks = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Fletcher_200
+	}
 	7830.1.1 = {
 		holder = Fletcher_1
 	}
@@ -6748,6 +6849,10 @@ c_whitebricks = {
 	}
 }
 c_wishere = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Mason_200
+	}
 	7815.1.1 = {
 		holder = Mason_1
 	}
@@ -9477,6 +9582,10 @@ c_acorns_ridge = {
 	6648.1.1 = {
 		liege = d_wayfarers_rest
 	}
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Smallwood_200
+	}
 	7560.1.1 = {
 		holder = Smallwood_52
 	}
@@ -9568,6 +9677,10 @@ c_acorns_ridge = {
 c_banbeck_vale = {
 	6648.1.1 = {
 		liege = d_wayfarers_rest
+	}
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Banbeck_200
 	}
 	7818.1.1 = {
 		holder = Banbeck_1
@@ -9709,6 +9822,10 @@ c_donnelwood = {
 	6648.1.1 = {
 		liege = d_wayfarers_rest
 	}
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Givven_200
+	}
 	7851.1.1 = {
 		holder = Givven_1
 	}
@@ -9764,6 +9881,10 @@ c_donnelwood = {
 c_morningswake = {
 	6648.1.1 = {
 		liege = d_wayfarers_rest
+	}
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Madduc_200
 	}
 	7808.1.1 = {
 		holder = Madduc_1
@@ -9827,6 +9948,10 @@ c_ruby_shoals = {
 	6648.1.1 = {
 		liege = d_wayfarers_rest
 	}
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Whistler_200
+	}
 	7872.1.1 = {
 		holder = Whistler_12
 	}
@@ -9879,6 +10004,10 @@ c_ruby_shoals = {
 c_runvane = {
 	6648.1.1 = {
 		liege = d_wayfarers_rest
+	}
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Dannett_200
 	}
 	7868.1.1 = {
 		holder = Dannett_11
@@ -10638,6 +10767,10 @@ b_stenchpool = {
 c_seasorrow = {
 	6000.1.1 = {
 		liege = d_cape_of_eagles
+	}
+	7299.1.1 = { 
+		liege = d_cape_of_eagles
+		holder = Chaynes_200
 	}
 	7819.1.1 = {
 		holder = Chaynes_1
