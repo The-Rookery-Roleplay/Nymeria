@@ -161,6 +161,9 @@ k_the_blackwater = {
 	6183.1.1 = {
 		holder = 0 	 # Justman royal line extinct
 	}
+	7299.1.1 = {
+		holder = Hook_200 
+	}
 	7500.1.1 = {
 		holder = Durrandon_66 # Conquered by Arlan I Durrandon
 	}
@@ -346,6 +349,16 @@ c_kings_landing = {
 			title:b_landingfield = { set_title_name = b_north_verge }
 		}
 	}
+	# 7299.1.1 = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = { game_start_date < 7300.1.1 }
+	# 			title:b_godsfort = { set_capital_barony = yes }
+	# 			title:b_harrenhal.title_province = { remove_holding = yes }
+	# 			title:b_harrenhal.title_province = { add_special_building_slot = generic_harrenhal_01 }
+	# 		}
+	# 	}
+	# }
 	7869.1.1 = {
 		holder = Rosby_5
 	}
@@ -594,6 +607,14 @@ c_blackstripe = {
 	3306.1.1 = {
 		liege = e_the_stormlands
 		de_jure_liege = d_the_baywater_woods
+	}
+	7299.1.1 = {
+		liege = k_the_blackwater
+		holder = Hook_200 
+	}
+	7300.1.1 = {
+		liege = e_the_stormlands
+		holder = 0
 	}
 	7850.1.1 = {
 		holder = Gaunt_8
@@ -971,6 +992,14 @@ c_wings_pass = {
 	20.1.1 = {
 		liege = e_the_stormlands
 		de_jure_liege = d_the_baywater_woods
+	}
+	7299.1.1 = {
+		liege = k_the_blackwater
+		holder = Hook_200 
+	}
+	7300.1.1 = {
+		liege = e_the_stormlands
+		holder = 0
 	}
 	7856.1.1 = {
 		holder = Belgrave_6
@@ -1953,6 +1982,9 @@ k_duskwashes = {
 	5875.1.2 = { # Flavorization bugfix
 		holder = 0
 	}
+	7299.1.1 = {
+		holder = Darklyn_200
+	}
 	7999.9.15 = {
 		de_jure_liege = e_the_crownlands
 	}
@@ -2569,6 +2601,10 @@ c_yellowstars = {
 d_hayford = {
 	3306.1.1 = {
 		liege = e_the_riverlands
+	}
+	7299.1.1 = {
+		holder = Hayford_200
+		liege = k_the_blackwater
 	}
 	7858.1.1 = {
 		holder = Hayford_3
@@ -4754,6 +4790,14 @@ c_silverhead = {
 	}
 }
 c_the_gauntlet = {
+	7299.1.1 = {
+		liege = k_the_blackwater
+		holder = Hook_200 
+	}
+	7300.1.1 = {
+		liege = e_the_stormlands
+		holder = 0
+	}
 	7600.1.1 = {
 		liege = e_the_stormlands
 	}

@@ -2756,7 +2756,7 @@ d_brightwater = {
 		liege = 0
 	}
 	8300.1.5 = {
-		holder = Florent_7
+		holder = Florent_7 
 	}
 }
 c_brightwater = {
@@ -6560,6 +6560,10 @@ c_harps_head = {
 	}
 }
 c_harmony = {
+	7299.1.1 = {
+		liege = k_the_blackwater
+		holder = Hook_200 
+	}
 	7839.1.1 = {
 		holder = Harme_1
 		liege = d_heartland_heights
@@ -7652,6 +7656,14 @@ d_oldhills = {
 	}
 }
 c_hastwyck = {
+	7299.1.1 = {
+		liege = k_the_blackwater
+		holder = Hook_200 
+	}
+	7300.1.1 = {
+		liege = d_heartland_heights
+		holder = 0
+	}
 	7839.1.1 = {
 		liege = d_heartland_heights
 	}
@@ -14687,3 +14699,37 @@ c_southshield = {
 		holder = Serry_2
 	}
 }
+
+c_briarcrest = {
+	7299.1.1 = {
+		liege = k_the_blackwater
+		holder = Hook_200 
+	}
+	7300.1.1 = {
+		liege = d_tumbleton
+		holder = 0
+	}
+}
+
+c_longgrass = {
+	7299.1.1 = {
+		liege = k_the_blackwater
+		holder = Hook_200 
+	}
+	7300.1.1 = {
+		liege = d_tumbleton
+		holder = 0
+	}
+}
+
+c_pikemouth = {
+	7299.1.1 = {
+		liege = k_the_blackwater
+		holder = Hook_200 
+	}
+	7300.1.1 = {
+		liege = d_heartland_heights
+		holder = 0
+	}
+}
+
