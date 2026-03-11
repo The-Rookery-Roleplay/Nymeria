@@ -161,6 +161,12 @@
 	6395.1.1 = {
 		holder = Teague_4 	 # Theo (C)
 	}
+	7198.1.1 = {
+		holder = Teague_199
+	}
+	7289.1.1 = {
+		holder = Teague_200
+	}
 	7583.1.1 = {
 		holder = Teague_6 	 # Humfrey (C)
 	}
@@ -325,6 +331,9 @@ k_red_rambles = {
 	6675.1.1 = {
 		holder = 0
 	}
+	7299.1.1 = {
+		holder = Vance_Wayfarers_Rest_200
+	}
 	7999.8.15 = {
 		holder = Tully_21
 		liege = e_the_riverlands
@@ -376,6 +385,9 @@ d_riverrun = {
 	}
 	5920.1.1 = {
 		holder = Tully_11
+	}
+	7299.1.1 = {
+		holder = Tully_200
 	}
 	7580.1.1 = {
 		holder = Tully_13
@@ -891,8 +903,13 @@ d_atranta = {
 	5950.1.1 = {
 		holder = Vance_Atranta_78
 	}
+	7299.1.1 = {
+		holder = Hook_200
+		liege = k_the_blackwater
+	}
 	7580.1.1 = {
 		holder = Vance_Atranta_79
+		liege = e_the_riverlands
 	}
 	7804.1.1 = {
 		holder = Vance_Atranta_8
@@ -1205,6 +1222,9 @@ c_bringrunn = {
 	}
 }
 c_hagedorn = {
+	7299.1.1 = {
+		holder = Goodbrook_200
+	}
 	7804.1.1 = {
 		liege = d_atranta
 	}
@@ -1382,6 +1402,9 @@ d_blackwood_vale = {
 	}
 	5977.1.1 = {
 		holder = Blackwood_25
+	}
+	7299.1.1 = {
+		holder = Blackwood_200
 	}
 	7579.1.1 = {
 		holder = Blackwood_27
@@ -2315,6 +2338,9 @@ d_cape_of_eagles = {
 	5910.1.1 = {
 		holder = Mudd_32 	 # Tristifer (C)
 	}
+	7299.1.1 = {
+		holder = Mallister_200
+	}
 	7822.1.1 = {
 		holder = Mallister_79
 	}
@@ -2961,6 +2987,9 @@ d_fairmarket = {
 	6183.1.1 = {
 		holder = 0 	 # Justman royal line extinct
 	}
+	7299.1.1 = {
+		holder = Teague_201
+	}
 	7600.1.5 = {
 		holder = Durrandon_69 # Arlan III
 	}
@@ -3457,6 +3486,12 @@ d_harrenhal = {
 	3306.1.1 = {
 		liege = e_the_riverlands
 	}
+	7299.1.1 = {
+		holder = Teague_200
+		effect = {
+			set_title_name = d_godsfort
+		}
+	}
 	### House Nutt
 	7641.1.1 = {
 		holder = Nutt_54 # Norbert
@@ -3501,6 +3536,9 @@ d_harrenhal = {
 	}
 	7960.1.1 = {
 		holder = Hoare_31
+		effect = {
+			reset_title_name = yes
+		}
 	}
 	7999.8.15 = {
 		holder = Qoherys_1
@@ -3600,21 +3638,36 @@ d_harrenhal = {
 	}
 }
 c_harrenhal = {
-	7641.1.1 = {
-		liege = d_harrenhal
-		holder = Nutt_54 # Norbert
+	7299.1.1 = {
+		holder = Teague_200
 		effect = {
 			set_title_name = c_godsfort
 			title:b_harrenhal = { set_title_name = b_weirgaze }
 			title:b_harrentown = { set_title_name = b_godsroad }
 			title:b_hoarespring = { set_title_name = b_greenspring }
 			if = {
-				limit = { game_start_date < 7960.1.1 }
+				limit = { game_start_date < 7300.1.1 }
 				title:b_godsfort = { set_capital_barony = yes }
 				title:b_harrenhal.title_province = { remove_holding = yes }
 				title:b_harrenhal.title_province = { add_special_building_slot = generic_harrenhal_01 }
 			}
 		}
+	}
+	7641.1.1 = {
+		liege = d_harrenhal
+		holder = Nutt_54 # Norbert
+		# effect = {
+		# 	set_title_name = c_godsfort
+		# 	title:b_harrenhal = { set_title_name = b_weirgaze }
+		# 	title:b_harrentown = { set_title_name = b_godsroad }
+		# 	title:b_hoarespring = { set_title_name = b_greenspring }
+		# 	if = {
+		# 		limit = { game_start_date < 7960.1.1 }
+		# 		title:b_godsfort = { set_capital_barony = yes }
+		# 		title:b_harrenhal.title_province = { remove_holding = yes }
+		# 		title:b_harrenhal.title_province = { add_special_building_slot = generic_harrenhal_01 }
+		# 	}
+		# }
 	}
 	7646.1.1 = {
 		holder = Nutt_53 # Halard
@@ -3735,9 +3788,12 @@ c_harrenhal = {
 	}
 }
 c_briarwhite = {
-	7641.1.1 = {
-		liege = d_eastern_eye
-	}
+	# 7000.1.1 = {
+	# 	liege = d_eastern_eye
+	# }
+	# 7299.1.1 = {
+	# 	holder = Wode_200
+	# }
 	7873.1.1 = {
 		holder = Wode_5
 	}
@@ -3800,6 +3856,10 @@ c_briarwhite = {
 	}
 }
 c_ferrybridge = {
+	# 7299.1.1 = {
+	# 	liege = d_eastern_eye
+	# 	holder = Nutt_201
+	# }
 	7641.1.1 = {
 		liege = d_harrenhal
 		holder = Nutt_54 # Norbert
@@ -3898,8 +3958,9 @@ c_harroway = {
 			title:b_harroway_tower = { set_title_name = b_claybend_keep }
 		}
 	}
-	7641.1.1 = {
+	7299.1.1 = {
 		liege = d_harrenhal
+		holder = Nutt_200
 	}
 	7776.1.1 = {
 		holder = Nutt_47 # Barion
@@ -3982,8 +4043,9 @@ c_horsehead = {
 	5200.1.1 = {
 		holder = Roote_90
 	}
-	7641.1.1 = {
+	7299.1.1 = {
 		liege = d_harrenhal
+		holder = Roote_200
 	}
 	7858.1.1 = {
 		holder = Roote_36
@@ -4032,8 +4094,9 @@ c_horsehead = {
 	}
 }
 d_eastern_eye = {
-	7641.1.1 = {
+	7299.1.1 = {
 		liege = e_the_riverlands
+		holder = Butterwell_200
 	}
 	7859.1.1 = {
 		holder = Butterwell_5
@@ -4173,8 +4236,11 @@ c_milkstone = {
 	}
 }
 c_rippledown_rill = {
-	7641.1.1 = {
+	7299.1.1 = {
 		liege = d_harrenhal
+		holder = Nutt_200
+	}
+	7641.1.1 = {
 		holder = Nutt_54 # Norbert
 	}
 	7646.1.1 = {
@@ -4623,6 +4689,9 @@ d_lakehaven = {
 	3306.1.1 = {
 		liege = e_the_riverlands
 	}
+	7299.1.1 = {
+		holder = Goodbrook_200
+	}
 	7830.1.1 = {
 		holder = Goodbrook_9
 	}
@@ -5054,6 +5123,9 @@ d_lakeleaf_highlands = {
 	3306.1.1 = {
 		liege = e_the_riverlands
 	}
+	7299.1.1 = {
+		holder = Mandrake_200
+	}
 	7777.1.1 = {
 		holder = Mandrake_1
 	}
@@ -5122,8 +5194,11 @@ d_lakeleaf_highlands = {
 	}
 }
 c_wayleroot = {
-	7777.1.1 = {
+	7299.1.1 = {
 		liege = d_lakeleaf_highlands
+		holder = Mandrake_200
+	}
+	7777.1.1 = {
 		holder = Mandrake_1
 	}
 	7803.1.1 = {
@@ -5661,7 +5736,12 @@ d_maidenpool = {
 	5908.1.1 = {
 		holder = Mooton_12
 	}
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Mooton_200
+	}
 	7827.1.1 = {
+		liege = e_the_riverlands
 		holder = Mooton_14
 	}
 	7858.1.1 = {
@@ -5758,6 +5838,9 @@ c_maidenpool = {
 	5908.1.1 = {
 		holder = Mooton_12
 	}
+	7299.1.1 = {
+		holder = Mooton_200
+	}
 	7827.1.1 = {
 		holder = Mooton_14
 	}
@@ -5823,6 +5906,9 @@ c_honeymaiden = {
 	6451.1.1 = {
 		liege = d_maidenpool
 	}
+	7299.1.1 = {
+		holder = MootonHM_200
+	}
 	7878.1.1 = {
 		holder = MootonHM_1
 	}
@@ -5878,6 +5964,9 @@ c_honeymaiden = {
 c_lolliston = {
 	6451.1.1 = {
 		liege = d_maidenpool
+	}
+	7299.1.1 = {
+		holder = RandomCount_225
 	}
 	7877.1.1 = {
 		holder = Lolliston_5
@@ -5957,6 +6046,9 @@ c_oldhonor = {
 	5908.1.1 = {
 		holder = Mooton_12
 	}
+	7299.1.1 = {
+		holder = RandomCount_227
+	}
 	7827.1.1 = {
 		holder = Mooton_14
 	}
@@ -6027,6 +6119,9 @@ c_oldhonor = {
 c_werthport = {
 	6451.1.1 = {
 		liege = d_maidenpool
+	}
+	7299.1.1 = {
+		holder = RandomCount_226
 	}
 	7777.1.1 = {
 		holder = Werth_1
@@ -6099,6 +6194,10 @@ d_pinkmaiden = {
 	3306.1.1 = {
 		liege = e_the_riverlands
 	}
+	7299.1.1 = {
+		holder = Piper_200
+		liege = k_red_rambles
+	}
 	7836.1.1 = {
 		holder = Piper_11
 	}
@@ -6118,7 +6217,6 @@ d_pinkmaiden = {
 		holder = Piper_16
 	}
 	7999.8.15 = {
-		liege = k_red_rambles
 	}
 	8008.1.1 = {
 		holder = Piper_18
@@ -6703,6 +6801,9 @@ d_southstone = {
 	}
 	5977.1.1 = {
 		holder = Bracken_133
+	}
+	7299.1.1 = {
+		holder = Bracken_200
 	}
 	7523.1.1 = {
 		holder = Bracken_87 # Robin
@@ -7302,6 +7403,9 @@ d_the_crossing = {
 	3306.1.1 = {
 		liege = e_the_riverlands
 	}
+	7299.1.1 = {
+		holder = Charlton_200
+	}
 	7595.1.1 = {
 		holder = Charlton_40 # Jonos
 	}
@@ -7420,6 +7524,27 @@ d_the_crossing = {
 	}
 }
 c_the_twins = {
+	7299.1.1 = {
+		liege = d_the_crossing
+		holder = Charlton_200
+		effect = {
+			set_title_name = c_crossing
+			title:b_the_twins = { set_title_name = b_crossing }
+			if = {
+				limit = { game_start_date < 7300.1.1 }
+				title:b_ravelkeep = { set_capital_barony = yes }
+				title:b_the_twins.title_province = { remove_holding = yes }
+				title:b_the_twins.title_province = { add_special_building_slot = the_twins_01 }
+			}
+		}
+	}
+	7595.1.1 = {
+		liege = d_the_crossing
+		effect = {
+			reset_title_name = yes
+			title:b_the_twins = { reset_title_name = yes }
+		}
+	}
 	7595.1.1 = {
 		liege = d_the_crossing
 	}
@@ -8006,6 +8131,9 @@ d_three_forks = {
 	3306.1.1 = {
 		liege = e_the_riverlands
 	}
+	7299.1.1 = {
+		holder = Strong_200
+	}
 	7850.1.1 = {
 		holder = Strong_1
 	}
@@ -8339,6 +8467,9 @@ d_tridents_mouth = {
 	5890.1.1 = {
 		holder = Darry_12
 	}
+	7299.1.1 = {
+		holder = Darry_200
+	}
 	7580.1.1 = {
 		holder = Darry_88
 	}
@@ -8537,6 +8668,9 @@ c_marstone = {
 	3306.1.1 = {
 		liege = d_tridents_mouth
 	}
+	7299.1.1 = {
+		holder = Urgont_200
+	}
 	7854.1.1 = {
 		holder = Urgont_1
 	}
@@ -8599,6 +8733,10 @@ c_riverbend = {
 		}
 	}
 	### House Nutt
+	7299.1.1 = {
+		liege = d_tridents_mouth
+		holder = Nutt_202 
+	}
 	7611.1.1 = {
 		liege = d_tridents_mouth
 		holder = Nutt_54 # Norbert
@@ -8720,6 +8858,9 @@ c_saltpans = {
 	3306.1.1 = {
 		liege = d_tridents_mouth
 	}
+	7299.1.1 = {
+		holder = Cox_200
+	}
 	7854.1.1 = {
 		holder = Cox_36
 	}
@@ -8784,6 +8925,9 @@ c_saltpans = {
 c_saltpans_rise = {
 	3306.1.1 = {
 		liege = d_tridents_mouth
+	}
+	7299.1.1 = {
+		holder = Hawick_200
 	}
 	7866.1.1 = {
 		holder = Hawick_39
@@ -8862,6 +9006,9 @@ c_spiderwood = {
 	3306.1.1 = {
 		liege = d_tridents_mouth
 	}
+	7299.1.1 = {
+		holder = Deremond_200
+	}
 	7862.1.1 = {
 		holder = Deremond_1
 	}
@@ -8933,6 +9080,9 @@ c_spiderwood = {
 c_stillside = {
 	3306.1.1 = {
 		liege = d_tridents_mouth
+	}
+	7299.1.1 = {
+		holder = Rankenfell_200
 	}
 	7640.1.1 = {
 		holder = Rankenfell_6
@@ -9029,11 +9179,13 @@ d_wayfarers_rest = {
 	5951.1.1 = {
 		liege = 0
 	}
-	6939.1.1 = {
-		liege = e_the_riverlands
+	7299.1.1 = {
+		holder = Vance_Wayfarers_Rest_200
+		liege = k_red_rambles
 	}
 	7571.1.1 = {
 		holder = Vance_Wayfarers_Rest_90
+		liege = e_the_riverlands
 	}
 	7751.1.1 = {
 		holder = Vance_Wayfarers_Rest_13
@@ -9652,6 +9804,9 @@ d_willow_wood = {
 	6939.1.1 = {
 		liege = e_the_riverlands
 	}
+	7299.1.1 = {
+		holder = Ryger_200
+	}
 	7830.1.1 = {
 		holder = Ryger_5
 	}
@@ -9765,6 +9920,10 @@ c_willow_wood = {
 	}
 }
 c_elmbridge = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Elridge_200
+	}
 	7830.1.1 = {
 		liege = d_willow_wood
 	}
@@ -9821,6 +9980,10 @@ c_elmbridge = {
 	}
 }
 c_sweetwillow = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Forthe_200
+	}
 	7817.1.1 = {
 		holder = Forthe_1
 	}
@@ -9949,6 +10112,10 @@ c_longleaf = {
 	}
 }
 c_morey = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Brimer_200
+	}
 	7849.1.1 = {
 		liege = d_willow_wood
 		holder = Brimer_1
@@ -10006,6 +10173,10 @@ c_morey = {
 	}
 }
 c_oldferns = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Grey_200
+	}
 	7830.1.1 = {
 		liege = d_willow_wood
 		holder = Grey_6
@@ -10069,6 +10240,10 @@ c_oldferns = {
 	}
 }
 c_white_wood = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Sillinger_200
+	}
 	7819.1.1 = {
 		holder = Sillinger_1
 	}
@@ -10131,6 +10306,10 @@ c_white_wood = {
 	}
 }
 c_helmesmont = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Grey_200
+	}
 	7830.1.1 = {
 		liege = d_willow_wood
 		holder = Grey_6
