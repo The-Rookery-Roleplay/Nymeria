@@ -1,5 +1,6 @@
 ﻿nickname_wyl_200 = { is_bad = yes }
 nickname_tyrell_200 = {}
+nickname_nymeros_1 = {}
 nickname_hightower_200 = { is_bad = yes }
 # nick_agot_historical_badbrother = { is_bad = yes }
 # nick_agot_historical_be_lucky = {}

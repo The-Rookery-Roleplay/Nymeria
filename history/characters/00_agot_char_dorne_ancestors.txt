@@ -51663,7 +51663,7 @@ Nymeros_1 = {
 	name = Nymeria # Canon, THE Nymeria
 	dynasty = dynn_Nymeros
 	female = yes
-	dna = Nymeros_1
+	dna = nymeriaswar_nymeria
 
 	martial = 11
 	diplomacy = 15
@@ -51696,6 +51696,7 @@ Nymeros_1 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
+		give_nickname = nickname_nymeros_1
 	}
 	7300.1.1 = {
 		add_spouse = Martell_23 # Mors Martell
@@ -142621,6 +142622,7 @@ Wyl_205 = {
 Yronwood_200 = {
 	name = Dyanna
 	female = yes
+	dna = nymeriaswar_dyanna
 	dynasty = dynn_Wyl
 	random_traits = yes
 	father = Yronwood_16
@@ -142630,9 +142632,8 @@ Yronwood_200 = {
 	
 	trait = beauty_good_2
 	7291.1.1 = {
+		make_trait_inactive = scripted_appearance
 		birth = yes
-	}
-	7295.1.1 = {
 	}
 	7320.1.1 = { death = yes }
 }
