@@ -2,6 +2,7 @@
 nickname_tyrell_200 = {}
 nickname_nymeros_1 = {}
 nickname_hightower_200 = { is_bad = yes }
+nickname_durrandon_62 = {}
 # nick_agot_historical_badbrother = { is_bad = yes }
 # nick_agot_historical_be_lucky = {}
 # nick_agot_historical_big_Hogg_12 = { is_prefix = yes }

@@ -273,6 +273,10 @@ k_the_blackwater = {
 	}
 }
 d_kings_landing = {
+	7299.1.1 = {
+		holder = Thorne_200
+		liege = k_the_blackwater
+	}
 	7999.4.1 = {
 		holder = Targaryen_27
 	}
@@ -1630,6 +1634,10 @@ c_strongcliffs = {
 d_deerfield = {
 	3306.1.1 = {
 		liege = e_the_riverlands
+	}
+	7299.1.1 = {
+		holder = Buckwell_200
+		liege = k_duskwashes
 	}
 	7888.1.1 = {
 		holder = Buckwell_8
@@ -3531,6 +3539,10 @@ d_rooks_rest = {
 	3306.1.1 = {
 		liege = e_the_riverlands
 	}
+	7299.1.1 = {
+		holder = Staunton_200
+		liege = k_duskwashes
+	}
 	7855.1.1 = {
 		holder = Staunton_4
 	}
@@ -3813,6 +3825,10 @@ c_stellarstake = {
 d_rosby = {
 	3306.1.1 = {
 		liege = e_the_riverlands
+	}
+	7299.1.1 = {
+		holder = Rosby_200
+		liege = k_duskwashes
 	}
 	7869.1.1 = {
 		holder = Rosby_5
@@ -4285,6 +4301,10 @@ c_whiteplate = {
 d_stokeworth = {
 	3306.1.1 = {
 		liege = e_the_riverlands
+	}
+	7299.1.1 = {
+		holder = Stokeworth_200
+		liege = k_duskwashes
 	}
 	7859.1.1 = {
 		holder = Stokeworth_8

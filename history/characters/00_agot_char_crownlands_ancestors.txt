@@ -80660,3 +80660,81 @@ Hayford_200 = {
 	}
 	7320.1.1 = { death = yes }
 }
+
+Staunton_200 = {
+	name = Mathis
+	dynasty = dynn_Staunton
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman_main
+	7258.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Stokeworth_200 = {
+	name = Rodwell
+	dynasty = dynn_Stokeworth
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman_main
+	7245.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Buckwell_200 = {
+	name = Tywald
+	dynasty = dynn_Buckwell
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman_main
+	7272.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Rosby_200 = {
+	name = Moryn
+	dynasty = dynn_Rosby
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman_main
+	7268.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Thorne_200 = {
+	name = Alliser
+	dynasty = dynn_Thorne
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman_main
+	trait = rude
+	trait = stubborn
+	trait = honest
+	7245.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
