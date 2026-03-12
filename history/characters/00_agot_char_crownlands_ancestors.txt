@@ -81491,3 +81491,78 @@ Belgrave_200 = {
 	}
 	7331.1.1 = { death = yes }
 }
+
+Mallery_200 = {
+	name = Gyles
+	dynasty = dynn_Mallery
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman_main
+	7254.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7327.1.1 = { death = yes }
+}
+
+Chelsted_200 = {
+	name = Symond
+	dynasty = dynn_Chelsted
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman_main
+	7261.1.1 = {
+		birth = yes
+	}
+	7296.1.1 = {
+		trait = knight
+	}
+	7330.1.1 = { death = yes }
+}
+
+Cressey_200 = {
+	name = Raymund
+	dynasty = dynn_Cressey
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman
+	7253.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7324.1.1 = { death = yes }
+}
+
+Yore_200 = {
+	name = Symond
+	dynasty = dynn_Yore
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman
+	7261.1.1 = {
+		birth = yes
+	}
+	7296.1.1 = {
+		trait = knight
+	}
+	7330.1.1 = { death = yes }
+}
+
+Hogg_200 = {
+	name = Bennard
+	dynasty = dynn_Hogg
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman
+	7247.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7321.1.1 = { death = yes }
+}

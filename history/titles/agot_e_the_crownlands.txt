@@ -696,6 +696,10 @@ c_blackstripe = {
 	}
 }
 c_bramsfort = {
+	7299.1.1 = { 
+		liege = d_kings_landing
+		holder = Chelsted_200
+	}
 	7653.1.1 = {
 		liege = e_the_riverlands
 	}
@@ -845,6 +849,10 @@ c_briarcrest = {
 	}
 }
 c_riverline = {
+	7299.1.1 = { 
+		liege = d_kings_landing
+		holder = Mallery_200
+	}
 	7653.1.1 = {
 		liege = e_the_riverlands
 	}
@@ -2863,6 +2871,10 @@ b_brickdale = {
 	}
 }
 c_old_yore = {
+	7299.1.1 = { 
+		liege = d_hayford
+		holder = Yore_200
+	}
 	7853.1.1 = {
 		holder = Yore_4
 	}
@@ -2919,6 +2931,10 @@ c_old_yore = {
 	}
 }
 c_proudwell = {
+	7299.1.1 = { 
+		liege = d_hayford
+		holder = Cressey_200
+	}
 	7858.1.1 = {
 		liege = d_hayford
 	}
@@ -2975,6 +2991,10 @@ c_proudwell = {
 	}
 }
 c_sows_horn = {
+	7299.1.1 = { 
+		liege = d_hayford
+		holder = Hogg_200
+	}
 	7851.1.1 = {
 		holder = Hogg_4
 	}
