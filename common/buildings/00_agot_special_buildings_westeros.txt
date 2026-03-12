@@ -3602,10 +3602,10 @@ agot_sept_of_the_snows_01 = {
 		}
 	}
 
-	# asset = { Removed for now - Kizan
-	# 	type = pdxmesh
-	# 	name = "building_special_WH_SnowySept_mesh"
-	# }
+	asset = { 
+		type = pdxmesh
+		name = "building_special_WH_SnowySept_mesh"
+	}
 
 	cost_gold = expensive_building_tier_5_cost
 
