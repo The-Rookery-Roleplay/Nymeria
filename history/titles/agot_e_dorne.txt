@@ -677,6 +677,9 @@ c_husk_flats = {
 	6029.1.1 = {
 		holder = Shell_Dorne_94
 	}
+	7299.1.1 = { 
+		holder = Shell_Dorne_200
+	}
 	7300.1.1 = {
 		liege = d_sunspear
 	}
@@ -866,6 +869,9 @@ c_plankytown = {
 	}
 }
 c_stinkwater = {
+	7299.1.1 = { 
+		holder = Wade_200
+	}
 	7300.1.1 = {
 		liege = d_sunspear
 	}
@@ -1066,6 +1072,14 @@ c_baldcrest = {
 	7278.1.1 = {
 		liege = d_blackmont
 	}
+	7299.1.1 = { 
+		liege = k_blackmont
+		holder = Trevanion_200
+	}
+
+	7300.1.1 = { 
+		liege = d_blackmont
+	}
 	7798.1.1 = {
 		holder = Trevanion_1
 	}
@@ -1128,6 +1142,14 @@ c_carrion_heights = {
 	7278.1.1 = {
 		liege = d_blackmont
 	}
+	7299.1.1 = { 
+		liege = k_blackmont
+		holder = Offal_200
+	}
+
+	7300.1.1 = { 
+		liege = d_blackmont
+	}
 	7840.1.1 = {
 		holder = Offal_3
 	}
@@ -1185,6 +1207,14 @@ c_carrion_heights = {
 }
 c_the_crawl = {
 	7278.1.1 = {
+		liege = d_blackmont
+	}
+	7299.1.1 = { 
+		liege = k_blackmont
+		holder = Gore_200
+	}
+
+	7300.1.1 = { 
 		liege = d_blackmont
 	}
 	7832.1.1 = {
@@ -1250,6 +1280,14 @@ c_the_crawl = {
 }
 c_westroost = {
 	7278.1.1 = {
+		liege = d_blackmont
+	}
+	7299.1.1 = { 
+		liege = k_blackmont
+		holder = Ravencroft_200
+	}
+
+	7300.1.1 = { 
 		liege = d_blackmont
 	}
 	7818.1.1 = {
@@ -1597,6 +1635,14 @@ c_burning_dunes = {
 	7274.1.1 = {
 		liege = d_brimstone
 	}
+	7299.1.1 = { 
+		liege = k_the_drylands
+		holder = Loux_200
+	}
+
+	7300.1.1 = { 
+		liege = d_brimstone
+	}
 	7857.1.1 = {
 		holder = Loux_11
 	}
@@ -1654,6 +1700,14 @@ c_burning_dunes = {
 }
 c_jackalrun = {
 	7274.1.1 = {
+		liege = d_brimstone
+	}
+	7299.1.1 = { 
+		liege = k_the_drylands
+		holder = Shanin_200
+	}
+
+	7300.1.1 = { 
 		liege = d_brimstone
 	}
 	7806.1.1 = {
@@ -1721,6 +1775,14 @@ c_steamfall = {
 	7274.1.1 = {
 		liege = d_brimstone
 	}
+	7299.1.1 = { 
+		liege = k_the_drylands
+		holder = Belam_200
+	}
+
+	7300.1.1 = { 
+		liege = d_brimstone
+	}
 	7858.1.1 = {
 		holder = Belam_1
 	}
@@ -1772,6 +1834,13 @@ c_steamfall = {
 }
 c_sulphur_flats = {
 	7274.1.1 = {
+		liege = d_brimstone
+	}
+	7299.1.1 = { 
+		liege = k_the_drylands
+		holder = Cook_200
+	}
+	7300.1.1 = { 
 		liege = d_brimstone
 	}
 	7811.1.1 = {
@@ -1833,6 +1902,13 @@ c_sulphur_flats = {
 	}
 }
 c_willburn = {
+	7299.1.1 = { 
+		liege = k_the_drylands
+		holder = Karlach_200
+	}
+	7300.1.1 = { 
+		liege = d_brimstone
+	}
 	7274.1.1 = {
 		liege = d_brimstone
 	}
@@ -2005,6 +2081,10 @@ c_spottswood = {
 	}
 }
 c_rockwell = {
+	7299.1.1 = { 
+		liege = d_broken_arm
+		holder = Clarisse_200
+	}
 	7860.1.1 = {
 		liege = d_broken_arm
 	}
@@ -2067,6 +2147,10 @@ c_rockwell = {
 	}
 }
 c_torchwood = {
+	7299.1.1 = { 
+		liege = d_broken_arm
+		holder = Ladybright_200
+	}
 	7860.1.1 = {
 		liege = d_broken_arm
 		holder = Ladybright_8
@@ -2523,6 +2607,10 @@ c_ghost_hills = {
 	}
 }
 c_nymercairn = {
+	7299.1.1 = { 
+		liege = d_ghost_hills
+		holder = Jytarn_200
+	}
 	7823.1.1 = {
 		liege = d_ghost_hills
 		holder = Jytarn_1
@@ -2760,6 +2848,10 @@ c_godsgrace = {
 	}
 }
 c_goldpeppers = {
+	7299.1.1 = { 
+		liege = d_godsgrace
+		holder = Cascabel_200
+	}
 	7866.1.1 = {
 		liege = d_godsgrace
 		holder = Cascabel_1
@@ -2817,6 +2909,10 @@ c_goldpeppers = {
 	}
 }
 c_latebloom = {
+	7299.1.1 = { 
+		liege = d_godsgrace
+		holder = Gerradyn_200
+	}
 	7851.1.1 = {
 		holder = Gerradyn_8
 	}
@@ -2870,6 +2966,10 @@ c_latebloom = {
 	}
 }
 c_nerandyn = {
+	7299.1.1 = { 
+		liege = d_godsgrace
+		holder = Erdinyyra_200
+	}
 	7840.1.1 = {
 		liege = d_godsgrace
 		holder = Erdinyyra_1
@@ -2924,6 +3024,10 @@ c_nerandyn = {
 	}
 }
 c_orangewood = {
+	7299.1.1 = { 
+		liege = d_godsgrace
+		holder = Hull_200
+	}
 	7877.1.1 = {
 		liege = d_godsgrace
 		holder = Hull_12
@@ -2975,6 +3079,10 @@ c_orangewood = {
 	}
 }
 c_sevensdunes = {
+	7299.1.1 = { 
+		liege = d_godsgrace
+		holder = Vestor_200
+	}
 	7870.1.1 = {
 		liege = d_godsgrace
 		holder = Vestor_1
@@ -3216,6 +3324,10 @@ c_drillwater_islands = {
 	}
 }
 c_sourmarket = {
+	7299.1.1 = { 
+		liege = d_lemonwood
+		holder = Tart_200
+	}
 	7883.1.1 = {
 		liege = d_lemonwood
 		holder = Tart_1
@@ -3264,6 +3376,10 @@ c_sourmarket = {
 	}
 }
 c_sweetwater = {
+	7299.1.1 = { 
+		liege = d_lemonwood
+		holder = Beveridge_200
+	}
 	7857.1.1 = {
 		liege = d_lemonwood
 		holder = Beveridge_1
@@ -3321,6 +3437,14 @@ c_first_well = {
 	2940.1.1 = {
 		liege = d_the_princes_pass
 	}
+	7299.1.1 = { 
+		liege = k_the_drylands
+		holder = Wells_200
+	}
+
+	7300.1.1 = { 
+		liege = d_the_princes_pass
+	}
 	7875.1.1 = {
 		holder = Wells_9
 	}
@@ -3369,6 +3493,14 @@ c_first_well = {
 }
 c_drywell = {
 	6400.1.1 = {
+		liege = k_yronwood
+	}
+	7299.1.1 = { 
+		liege = k_the_drylands
+		holder = Dryside_200
+	}
+
+	7300.1.1 = { 
 		liege = k_yronwood
 	}
 	7835.1.1 = {
@@ -3430,6 +3562,14 @@ c_pronghorn = {
 	7274.1.1 = {
 		liege = d_brimstone
 	}
+	7299.1.1 = { 
+		liege = k_the_drylands
+		holder = Pronghorn_200
+	}
+
+	7300.1.1 = { 
+		liege = d_brimstone
+	}
 	7857.1.1 = {
 		holder = Pronghorn_1
 	}
@@ -3489,6 +3629,14 @@ c_pronghorn = {
 	}
 }
 c_shady_sands = {
+	7299.1.1 = { 
+		liege = k_the_drylands
+		holder = Aradesh_200
+	}
+
+	7300.1.1 = { 
+		liege = k_yronwood
+	}
 	7863.1.1 = {
 		liege = k_yronwood
 		holder = Aradesh_1
@@ -3543,6 +3691,14 @@ c_shady_sands = {
 	}
 }
 c_the_dustbowl = {
+	7299.1.1 = { 
+		liege = k_the_drylands
+		holder = Flask_200
+	}
+
+	7300.1.1 = { 
+		liege = d_sandstone
+	}
 	7818.1.1 = {
 		holder = Flask_1
 	}
@@ -3722,6 +3878,11 @@ c_vaith = {
 	}
 }
 c_brittlebush = {
+	7299.1.1 = { 
+		liege = d_red_dunes
+		holder = Cuttar_200
+	}
+
 	7866.1.1 = {
 		liege = d_red_dunes
 		holder = Cuttar_1
@@ -3776,6 +3937,10 @@ c_brittlebush = {
 	}
 }
 c_killburne = {
+	7299.1.1 = { 
+		liege = d_red_dunes
+		holder = Brook_200
+	}
 	7878.1.1 = {
 		liege = d_red_dunes
 		holder = Brook_21
@@ -3830,6 +3995,10 @@ c_killburne = {
 	}
 }
 c_red_waste = {
+	7299.1.1 = { 
+		liege = d_red_dunes
+		holder = Veckryn_200
+	}
 	7791.1.1 = {
 		holder = Veckryn_1
 	}
@@ -3898,6 +4067,10 @@ c_red_waste = {
 	}
 }
 c_the_barrens = {
+	7299.1.1 = { 
+		liege = d_red_dunes
+		holder = Qaurovera_200
+	}
 	7854.1.1 = {
 		liege = d_red_dunes
 		holder = Qaurovera_1
@@ -3952,6 +4125,10 @@ c_the_barrens = {
 	}
 }
 c_the_scablands = {
+	7299.1.1 = { 
+		liege = d_red_dunes
+		holder = Newmock_200
+	}
 	7867.1.1 = {
 		liege = d_red_dunes
 		holder = Newmock_1
@@ -4146,6 +4323,14 @@ c_mortberry = {
 	7274.1.1 = {
 		liege = d_redmarch
 	}
+	7299.1.1 = { 
+		liege = k_kingsgrave
+		holder = Stillbloom_200
+	}
+
+	7848.1.1 = { 
+		liege = d_redmarch
+	}
 	7793.1.1 = {
 		holder = Stillbloom_1
 	}
@@ -4206,6 +4391,13 @@ c_mortberry = {
 }
 c_redstone_heights = {
 	7274.1.1 = {
+		liege = d_redmarch
+	}
+	7299.1.1 = { 
+		liege = k_kingsgrave
+		holder = Endar_200
+	}
+	7848.1.1 = { 
 		liege = d_redmarch
 	}
 	7848.1.1 = {
@@ -4330,6 +4522,14 @@ c_rustbarren = {
 }
 c_strongwine = {
 	7274.1.1 = {
+		liege = d_redmarch
+	}
+	7299.1.1 = { 
+		liege = k_kingsgrave
+		holder = Peele_200
+	}
+
+	7848.1.1 = { 
 		liege = d_redmarch
 	}
 	7857.1.1 = {
@@ -4490,6 +4690,10 @@ c_salt_shore = {
 	}
 }
 c_brackish = {
+	7299.1.1 = { 
+		liege = d_salt_shore
+		holder = Zundanar_200
+	}
 	7857.1.1 = {
 		liege = d_salt_shore
 		holder = Zundanar_1
@@ -4553,6 +4757,10 @@ c_brackish = {
 	}
 }
 c_saltstone = {
+	7299.1.1 = { 
+	liege = d_salt_shore
+	holder = Haulight_200
+}
 	7848.1.1 = {
 		liege = d_salt_shore
 		holder = Haulight_1
@@ -4610,6 +4818,10 @@ c_saltstone = {
 	}
 }
 c_white_stones = {
+	7299.1.1 = { 
+		liege = d_salt_shore
+		holder = Mercer_200
+	}
 	7806.1.1 = {
 		holder = Mercer_1
 	}
@@ -4805,6 +5017,10 @@ c_sandstone = {
 	}
 }
 c_arnight = {
+	7299.1.1 = { 
+	liege = d_sandstone
+	holder = Ruthvan_200
+}
 	7803.1.1 = {
 		holder = Ruthvan_1
 	}
@@ -4867,6 +5083,10 @@ c_arnight = {
 	}
 }
 c_barbmane = {
+	7299.1.1 = { 
+		liege = d_sandstone
+		holder = Barb_200
+	}
 	7843.1.1 = {
 		liege = d_sandstone
 	}
@@ -4923,6 +5143,10 @@ c_barbmane = {
 	}
 }
 c_dreadsands = {
+	7299.1.1 = { 
+		liege = d_sandstone
+		holder = Pink_200
+	}
 	7843.1.1 = {
 		liege = d_sandstone
 	}
@@ -4979,6 +5203,10 @@ c_dreadsands = {
 	}
 }
 c_sandhorn = {
+	7299.1.1 = { 
+	liege = d_sandstone
+	holder = Maltrevar_200
+}
 	7836.1.1 = {
 		holder = Maltrevar_1
 	}
@@ -5041,6 +5269,10 @@ c_sandhorn = {
 	}
 }
 c_stained_sands = {
+	7299.1.1 = { 
+		liege = d_sandstone
+		holder = Nessarry_200
+	}
 	7843.1.1 = {
 		liege = d_sandstone
 	}
@@ -5148,6 +5380,10 @@ c_stinging_sands = {
 	}
 }
 c_white_dunes = {
+	7299.1.1 = {
+		liege = d_sandstone
+		holder = Roast_200
+	}
 	7843.1.1 = {
 		liege = d_sandstone
 	}
@@ -5454,6 +5690,14 @@ c_cadgemont = {
 }
 c_hoodridge = {
 	2940.1.1 = {
+		liege = d_the_princes_pass
+	}
+	7299.1.1 = { 
+		liege = k_stone_and_sky
+		holder = Hood_200
+	}
+
+	7300.1.1 = { 
 		liege = d_the_princes_pass
 	}
 	7881.1.1 = {
@@ -5862,6 +6106,10 @@ c_blackvein = {
 	200.1.1 = {
 		liege = d_the_stoneway
 	}
+	7299.1.1 = { 
+		liege = d_the_stoneway
+		holder = Sallow_200
+	}
 	7803.1.1 = {
 		holder = Sallow_1
 	}
@@ -5933,6 +6181,10 @@ c_brinkburn = {
 	200.1.1 = {
 		liege = d_the_stoneway
 	}
+	7299.1.1 = { 
+		liege = d_the_stoneway
+		holder = Weekes_200
+	}
 	7858.1.1 = {
 		holder = Weekes_1
 	}
@@ -5988,6 +6240,10 @@ c_brinkburn = {
 c_denmont = {
 	200.1.1 = {
 		liege = d_the_stoneway
+	}
+	7299.1.1 = { 
+		liege = d_the_stoneway
+		holder = Regel_200
 	}
 	7852.1.1 = {
 		holder = Regel_1
@@ -6049,6 +6305,10 @@ c_fangside = {
 	200.1.1 = {
 		liege = d_the_stoneway
 	}
+	7299.1.1 = { 
+		liege = d_the_stoneway
+		holder = Sandracer_200
+	}
 	7858.1.1 = {
 		holder = Sandracer_1
 	}
@@ -6107,6 +6367,10 @@ c_fangside = {
 c_highgrave = {
 	200.1.1 = {
 		liege = d_the_stoneway
+	}
+	7299.1.1 = { 
+		liege = d_the_stoneway
+		holder = Bellows_200
 	}
 	7858.1.1 = {
 		holder = Bellows_1
@@ -6311,6 +6575,10 @@ c_the_tor = {
 	}
 }
 c_barberry = {
+	7299.1.1 = { 
+		liege = d_the_tor
+		holder = Renshar_200
+	}
 	7863.1.1 = {
 		liege = d_the_tor
 		holder = Renshar_1
@@ -6371,6 +6639,10 @@ c_barberry = {
 	}
 }
 c_dream_dunes = {
+	7299.1.1 = { 
+		liege = d_the_tor
+		holder = Sanders_200
+	}
 	7815.1.1 = {
 		holder = Sanders_1
 	}
@@ -6439,6 +6711,10 @@ c_dream_dunes = {
 	}
 }
 c_murrandy = {
+	7299.1.1 = { 
+		liege = d_the_tor
+		holder = Murrandy_200
+	}
 	7838.1.1 = {
 		holder = Murrandy_1
 	}
@@ -6504,6 +6780,10 @@ c_murrandy = {
 	}
 }
 c_stedding = {
+	7299.1.1 = { 
+		liege = d_the_tor
+		holder = Ogier_200
+	}
 	7852.1.1 = {
 		liege = d_the_tor
 		holder = Ogier_1
@@ -6626,6 +6906,10 @@ c_tallor_islands = {
 	}
 }
 c_the_bramble = {
+	7299.1.1 = { 
+		liege = d_the_tor
+		holder = Briar_200
+	}
 	7880.1.1 = {
 		liege = d_the_tor
 	}
@@ -6857,6 +7141,14 @@ c_astermine = {
 		liege = d_torrentine
 		holder = Dayne_15
 	}
+	7299.1.1 = { 
+		liege = k_the_torrentine
+		holder = Aster_200
+	}
+
+	7300.1.1 = { 
+		liege = d_torrentine
+	}
 	7840.1.1 = {
 		holder = Aster_1
 	}
@@ -6914,6 +7206,14 @@ c_dawnbrink = {
 		liege = d_torrentine
 		holder = Dayne_15
 	}
+	7299.1.1 = { 
+		liege = k_the_torrentine
+		holder = Thatch_200
+	}
+
+	7300.1.1 = { 
+		liege = d_torrentine
+	}
 	7851.1.1 = {
 		holder = Thatch_1
 	}
@@ -6970,6 +7270,14 @@ c_fields_of_glass = {
 	6151.1.1 = {
 		liege = d_torrentine
 		holder = Dayne_15
+	}
+	7299.1.1 = { 
+		liege = k_the_torrentine
+		holder = Tannicks_200
+	}
+
+	7300.1.1 = { 
+		liege = d_torrentine
 	}
 	7862.1.1 = {
 		holder = Tannicks_1
@@ -7126,6 +7434,14 @@ c_radiant_cliffs = {
 		liege = d_torrentine
 		holder = Dayne_15
 	}
+	7299.1.1 = { 
+		liege = k_the_torrentine
+		holder = Dodges_200
+	}
+
+	7300.1.1 = { 
+		liege = d_torrentine
+	}
 	7849.1.1 = {
 		holder = Dodges_1
 	}
@@ -7180,6 +7496,14 @@ c_shining_sands = {
 		liege = d_torrentine
 		holder = Dayne_15
 	}
+	7299.1.1 = { 
+		liege = k_the_torrentine
+		holder = Parry_200
+	}
+
+	7300.1.1 = { 
+		liege = d_torrentine
+	}
 	7864.1.1 = {
 		holder = Parry_1
 	}
@@ -7233,6 +7557,14 @@ c_the_elbow = {
 	6151.1.1 = {
 		liege = d_torrentine
 		holder = Dayne_15
+	}
+	7299.1.1 = { 
+		liege = k_the_torrentine
+		holder = Errey_200
+	}
+
+	7300.1.1 = { 
+		liege = d_torrentine
 	}
 	7862.1.1 = {
 		holder = Errey_1
@@ -7601,6 +7933,14 @@ c_blood_gulch = {
 	210.1.1 = {
 		liege = d_greenbelt
 	}
+	7299.1.1 = { 
+		liege = k_yronwood
+		holder = Urlagon_200
+	}
+
+	7300.1.1 = { 
+		liege = d_greenbelt
+	}
 	7840.1.1 = {
 		holder = Urlagon_1
 	}
@@ -7714,6 +8054,14 @@ c_great_dunes = {
 	210.1.1 = {
 		liege = d_greenbelt
 	}
+	7299.1.1 = { 
+		liege = k_yronwood
+		holder = Swelter_200
+	}
+
+	7300.1.1 = { 
+		liege = d_greenbelt
+	}
 	7825.1.1 = {
 		holder = Swelter_1
 	}
@@ -7776,6 +8124,14 @@ c_great_dunes = {
 	}
 }
 c_greenbelt = {
+	7299.1.1 = { 
+		liege = k_yronwood
+		holder = Cane_200
+	}
+
+	7300.1.1 = { 
+		liege = d_greenbelt
+	}
 	210.1.1 = {
 		liege = d_greenbelt
 	}
@@ -7901,6 +8257,14 @@ c_the_scourge = {
 	210.1.1 = {
 		liege = d_greenbelt
 	}
+	7299.1.1 = { 
+		liege = k_yronwood
+		holder = Drinkwater_200
+	}
+
+	7300.1.1 = { 
+		liege = d_greenbelt
+	}
 	7849.1.1 = {
 		holder = Drinkwater_6
 	}
@@ -7961,6 +8325,14 @@ c_the_scourge = {
 }
 c_wayguard = {
 	210.1.1 = {
+		liege = d_greenbelt
+	}
+	7299.1.1 = { 
+		liege = k_yronwood
+		holder = Claviger_200
+	}
+
+	7300.1.1 = { 
 		liege = d_greenbelt
 	}
 	7845.1.1 = {
