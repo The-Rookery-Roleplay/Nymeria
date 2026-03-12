@@ -125773,6 +125773,7 @@ Massey_200 = {
 
 	7243.1.1 = {
 		birth = yes
+		give_nickname = nickname_massey_200
 	}
 	7295.1.1 = {
 		trait = knight
@@ -125812,7 +125813,3 @@ Wendwater_200 = {
 	7320.1.1 = { death = yes }
 }
 
-# 7299.1.1 = {
-# 	holder = Gayle_200
-# 	liege = d_nestridge
-# }

@@ -1185,7 +1185,10 @@
 ########### c_pepperwood - d_rooks_rest ###########
 4277 = {
 	culture = clawman
-	religion = fots_seven
+	religion = old_gods_wnw
+	7500.1.1 = {
+		religion = fots_seven
+	}
 	holding = castle_holding
 	7824.1.1 = {
 		buildings = { castle_02 }
@@ -1239,7 +1242,10 @@
 ########## c_dyre_den - d_crackclaw_point #########
 4284 = {
 	culture = clawman
-	religion = fots_seven
+	religion = old_gods_wnw
+	7500.1.1 = {
+		religion = fots_seven
+	}
 	holding = castle_holding
 	7824.1.1 = {
 		buildings = { castle_03 }
@@ -1278,7 +1284,10 @@
 ######## c_strongcliffs - d_crackclaw_point #######
 4289 = {
 	culture = clawman
-	religion = fots_seven
+	religion = old_gods_wnw
+	7500.1.1 = {
+		religion = fots_seven
+	}
 	holding = castle_holding
 	7824.1.1 = {
 		buildings = { castle_02 }
@@ -1318,7 +1327,10 @@
 ######### c_pointside - d_crackclaw_point #########
 4294 = {
 	culture = clawman
-	religion = fots_seven
+	religion = old_gods_wnw
+	7500.1.1 = {
+		religion = fots_seven
+	}
 	holding = castle_holding
 	7824.1.1 = {
 		buildings = { castle_02 }
@@ -1372,7 +1384,10 @@
 ######## c_brownhollow - d_crackclaw_point ########
 4301 = {
 	culture = clawman
-	religion = fots_seven
+	religion = old_gods_wnw
+	7500.1.1 = {
+		religion = fots_seven
+	}
 	holding = castle_holding
 	7824.1.1 = {
 		buildings = { castle_02 }
@@ -1398,7 +1413,10 @@
 ########## c_hazewood - d_crackclaw_point #########
 4305 = {
 	culture = clawman
-	religion = fots_seven
+	religion = old_gods_wnw
+	7500.1.1 = {
+		religion = fots_seven
+	}
 	holding = castle_holding
 	7824.1.1 = {
 		buildings = { castle_01 }
@@ -1429,7 +1447,10 @@
 ######### c_bronzeholm - d_crackclaw_point ########
 4310 = {
 	culture = clawman
-	religion = fots_seven
+	religion = old_gods_wnw
+	7500.1.1 = {
+		religion = fots_seven
+	}
 	holding = castle_holding
 	7824.1.1 = {
 		buildings = { castle_02 }
@@ -1460,7 +1481,10 @@
 ######## c_needlewater - d_crackclaw_point ########
 4314 = {
 	culture = clawman
-	religion = fots_seven
+	religion = old_gods_wnw
+	7500.1.1 = {
+		religion = fots_seven
+	}
 	holding = castle_holding
 	7824.1.1 = {
 		buildings = { castle_02 }
