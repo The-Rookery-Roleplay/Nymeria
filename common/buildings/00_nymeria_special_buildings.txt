@@ -1,0 +1,43 @@
+﻿# test_whiteharbor_walls = { # Duskendale, needs to be properly modelled, not finished.
+# 	construction_time = very_slow_construction_time
+
+# 	type_icon = "icon_structure_walls_of_genoa.dds"
+	
+# 	asset = {
+# 		type = pdxmesh
+# 		name = "test_duskendale_entity"
+# 	}
+
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
+	
+# 	cost_gold = 2500
+# 	max_garrison = 1000
+# 	county_modifier = {
+# 		development_growth = 0.5
+# 		development_growth_factor = 0.25
+# 		defender_holding_advantage = 10
+# 		hostile_raid_time = 0.5
+# 	}
+	
+# 	province_modifier = {
+# 		garrison_size = 2.5
+# 		fort_level = 10
+# 		monthly_income = 7
+# 		travel_danger = -20
+# 	}
+	
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { 
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
+	
+# 	type = special
+
+# 	flag = travel_point_of_interest_martial
+# }

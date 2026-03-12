@@ -1,0 +1,50 @@
+pdxmesh = {
+	name = "building_special_WH_NewCastle_mesh"
+	file = "building_special_WH_NewCastle.mesh"
+
+	meshsettings = {
+		name = "building_special_WH_NewCastleShape"
+		index = 0
+		texture_diffuse = "building_special_WH_NewCastle_diffuse.dds"
+		texture_normal = "building_special_WH_NewCastle_normal.dds"
+		texture_specular = "building_special_WH_NewCastle_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "building_special_WH_Houses_mesh"
+	file = "building_special_WH_Houses.mesh"
+
+	meshsettings = {
+		name = "building_special_WH_HousesShape"
+		index = 0
+		texture_diffuse = "building_special_WH_city_diffuse.dds"
+		texture_normal = "building_special_WH_city_normal.dds"
+		texture_specular = "building_special_WH_city_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+pdxmesh = {
+	name = "building_special_WH_Walls_mesh"
+	file = "building_special_WH_Walls.mesh"
+
+	meshsettings = {
+		name = "building_special_WH_WallsShape"
+		index = 0
+		texture_diffuse = "building_special_WH_city_diffuse.dds"
+		texture_normal = "building_special_WH_city_normal.dds"
+		texture_specular = "building_special_WH_city_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+
+entity = {
+	name = "nymeriawhiteharbor3_entity"
+	pdxmesh = "nymeriawhiteharbor3_mesh"
+}
