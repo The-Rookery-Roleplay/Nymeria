@@ -18261,3 +18261,33 @@ Targaryen_hh_10 = {
 		}
 	}
 }
+
+Sunglass_200 = {
+	name = Symond
+	dynasty = dynn_Sunglass
+	random_traits = yes
+	religion = fots_seven
+	culture = stormlander_main
+	7253.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7323.1.1 = { death = yes }
+}
+
+Quince_200 = {
+	name = Raymund
+	dynasty = dynn_Quince
+	random_traits = yes
+	religion = fots_seven
+	culture = stormlander_main
+	7261.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7326.1.1 = { death = yes }
+}

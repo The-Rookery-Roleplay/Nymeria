@@ -519,6 +519,7 @@ c_longbar = {
 }
 d_driftmark = {
 	7299.1.1 = { 
+		liege = k_the_hook 
 		holder = Blackberry_200
 		effect = {
 			set_title_name = d_blackmark
@@ -832,9 +833,11 @@ d_sharp_point = {
 		holder = Bar_Emmon_5
 	}
 	7299.1.1 = {
+		liege = k_the_hook 
 		holder = Bar_Emmon_200
 	}
 	7850.1.1 = {
+		liege = e_the_stormlands
 		holder = Bar_Emmon_7
 	}
 	7869.1.1 = {
@@ -962,6 +965,10 @@ d_claw_isle = {
 	}
 }
 c_blackmark = {
+	7299.1.1 = {
+		liege = d_driftmark
+		holder = Blackberry_201 
+	}
 	7870.1.1 = {
 		liege = d_driftmark
 		holder = Blackberry_24 # Illister
@@ -1092,6 +1099,10 @@ c_gullet_isle = {
 		de_jure_liege = d_sharp_point
 		liege = d_sharp_point
 	}
+	7299.1.1 = { 
+		liege = d_sharp_point
+		holder = Quince_200
+	}
 	7850.1.1 = {
 		holder = Bar_Emmon_7
 	}
@@ -1155,6 +1166,10 @@ c_gullet_isle = {
 	}
 }
 c_sweetport_sound = {
+	7299.1.1 = { 
+		liege = d_sharp_point
+		holder = Sunglass_200
+	}
 	7869.1.1 = {
 		liege = d_sharp_point
 	}
