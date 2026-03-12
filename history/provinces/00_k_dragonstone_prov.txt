@@ -37,7 +37,12 @@
 ################ b_castle_driftmark ###############
 ############ c_driftmark - d_driftmark ############
 4419 = {
-	culture = westerosi_valyrian
+	culture = riverman_main
+	religion = fots_seven
+	7500.1.1 = {
+		culture = westerosi_valyrian
+		religion = fots_seven
+	}
 	religion = fots_seven
 	holding = castle_holding
 	special_building = agot_driftmark_01
@@ -77,8 +82,12 @@
 ################### b_high_tide ###################
 ############ c_high_tide - d_driftmark ############
 4424 = {
-	culture = westerosi_valyrian
+	culture = riverman_main
 	religion = fots_seven
+	7500.1.1 = {
+		culture = westerosi_valyrian
+		religion = fots_seven
+	}
 	holding = castle_holding
 	special_building_slot = agot_hightide_01
 	7824.1.1 = {
@@ -203,8 +212,12 @@
 ################### b_vallscale ###################
 ############ c_the_scales - d_claw_isle ###########
 4435 = {
-	culture = westerosi_valyrian
-	religion = fots_seven
+	culture = clawman
+	religion = old_gods_wnw
+	7500.1.1 = {
+		culture = westerosi_valyrian
+		religion = fots_seven
+	}
 	holding = castle_holding
 	7824.1.1 = {
 		buildings = { castle_02 }
@@ -213,8 +226,12 @@
 ################## b_crabs_return #################
 ############ c_claw_isle - d_claw_isle ############
 4436 = {
-	culture = westerosi_valyrian
-	religion = fots_seven
+	culture = clawman
+	religion = old_gods_wnw
+	7500.1.1 = {
+		culture = westerosi_valyrian
+		religion = fots_seven
+	}
 	holding = castle_holding
 	special_building = agot_claw_isle_01
 	7824.1.1 = {

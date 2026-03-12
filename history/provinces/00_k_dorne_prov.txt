@@ -6,11 +6,6 @@
 		culture = sand_dornish
 		religion = fots_seven
 	}
-	culture = old_dornish
-	7500.1.1 = {
-		culture = salt_dornish
-		religion = fots_seven
-	}
 	religion = fots_seven
 	holding = castle_holding
 	special_building_slot = sunspear_01

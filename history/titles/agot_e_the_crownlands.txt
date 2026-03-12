@@ -1088,6 +1088,9 @@ c_dyre_den = {
 	5025.1.1 = {
 		holder = Brune_9
 	}
+	7299.1.1 = { 
+		holder = Brune_200
+	}
 	5050.1.1 = {
 		liege = d_crackclaw_point
 		holder = Brune_10
@@ -1153,6 +1156,9 @@ c_dyre_den = {
 c_bronzeholm = {
 	5050.1.1 = {
 		liege = d_crackclaw_point
+	}
+	7299.1.1 = { 
+		holder = Boggs_200
 	}
 	7870.1.1 = {
 		holder = Boggs_14
@@ -1229,6 +1235,9 @@ c_brownhollow = {
 		liege = d_crackclaw_point
 		holder = Brownhollow_5
 	}
+	7299.1.1 = { 
+		holder = Brownhollow_200
+	}
 	7874.1.1 = {
 		holder = Brownhollow_7
 	}
@@ -1300,6 +1309,9 @@ c_hazewood = {
 	5050.1.1 = {
 		liege = d_crackclaw_point
 	}
+	7299.1.1 = { 
+		holder = Bush_200
+	}
 	7865.1.1 = {
 		holder = Bush_31
 	}
@@ -1367,6 +1379,9 @@ c_hazewood = {
 c_needlewater = {
 	5050.1.1 = {
 		liege = d_crackclaw_point
+	}
+	7299.1.1 = { 
+		holder = Pyne_200
 	}
 	7854.1.1 = {
 		holder = Pyne_27
@@ -1439,6 +1454,9 @@ c_pointside = {
 	5050.1.1 = {
 		liege = d_crackclaw_point
 	}
+	7299.1.1 = { 
+		holder = Hardy_200
+	}
 	7854.1.1 = {
 		holder = Hardy_11
 	}
@@ -1510,6 +1528,9 @@ c_strongbox = {
 	5050.1.1 = {
 		liege = d_crackclaw_point
 	}
+	7299.1.1 = { 
+		holder = Cave_200
+	}
 	7863.1.1 = {
 		holder = Cave_30
 	}
@@ -1572,6 +1593,9 @@ c_strongcliffs = {
 	6600.1.1 = {
 		liege = d_crackclaw_point
 		holder = Crabb_13
+	}
+	7299.1.1 = { 
+		holder = Crabb_200
 	}
 	7871.1.1 = {
 		holder = Crabb_15
@@ -3659,6 +3683,9 @@ c_rooks_rest = {
 	}
 }
 c_pepperwood = {
+	7299.1.1 = { 
+		holder = Smithe_200
+	}
 	7855.1.1 = {
 		holder = Smithe_1
 		liege = d_rooks_rest
@@ -3713,6 +3740,10 @@ c_pepperwood = {
 	}
 }
 c_risegrave = {
+	7299.1.1 = { 
+		liege = d_rooks_rest
+		holder = Shreeve_200
+	}
 	7881.1.1 = {
 		liege = d_rooks_rest
 		holder = Shreeve_1
@@ -3764,6 +3795,10 @@ c_risegrave = {
 	}
 }
 c_stellarstake = {
+	7299.1.1 = { 
+		liege = d_rooks_rest
+		holder = Langward_200
+	}
 	7855.1.1 = {
 		liege = d_rooks_rest
 	}

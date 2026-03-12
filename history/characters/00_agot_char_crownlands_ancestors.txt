@@ -80738,3 +80738,259 @@ Thorne_200 = {
 	}
 	7320.1.1 = { death = yes }
 }
+
+# Velaryon_200 = {
+# 	name = Monterys
+# 	dynasty = dynn_Velaryon
+# 	random_traits = yes
+# 	religion = valyrian_pan_freehold
+# 	culture = westerosi_valyrian
+# 	trait = beauty_good_1
+# 	7254.1.1 = {
+# 		birth = yes
+# 		add_character_flag = canon_status_canon
+# 	}
+# 	7290.1.1 = {
+# 		add_spouse = Velaryon_201
+# 	}
+# 	7330.1.1 = { death = yes }
+# }
+
+# Velaryon_201 = {
+# 	name = Daena
+# 	female = yes
+# 	dynasty = dynn_Velaryon
+# 	random_traits = yes
+# 	religion = valyrian_pan_freehold
+# 	culture = westerosi_valyrian
+# 	trait = beauty_good_2
+# 	7260.1.1 = {
+# 		birth = yes
+# 	}
+# 	7338.1.1 = { death = yes }
+# }
+
+# Celtigar_200 = {
+# 	name = Aurion
+# 	dynasty = dynn_Celtigar
+# 	random_traits = yes
+# 	religion = valyrian_pan_freehold
+# 	culture = westerosi_valyrian
+# 	7248.1.1 = {
+# 		birth = yes
+# 	}
+# 	7292.1.1 = {
+# 		trait = knight
+# 	}
+# 	7330.1.1 = { death = yes }
+# }
+
+# Saerygan_200 = {
+# 	name = Gaemon
+# 	dynasty = dynn_Saerygan
+# 	random_traits = yes
+# 	religion = valyrian_pan_freehold
+# 	culture = westerosi_valyrian
+# 	7256.1.1 = {
+# 		birth = yes
+# 	}
+# 	7294.1.1 = {
+# 		trait = knight
+# 	}
+# 	7334.1.1 = { death = yes }
+# }
+
+Blackberry_200 = {
+	name = Martyn
+	dynasty = dynn_Blackberry
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman_main
+	7255.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7325.1.1 = { death = yes }
+}
+
+Pyne_200 = {
+	name = Garren
+	dynasty = dynn_Pyne
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7252.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7330.1.1 = { death = yes }
+}
+
+Cave_200 = {
+	name = Corryn
+	dynasty = dynn_Cave
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7246.1.1 = {
+		birth = yes
+	}
+	7292.1.1 = {
+		trait = knight
+	}
+	7328.1.1 = { death = yes }
+}
+
+Brune_200 = {
+	name = Bennard
+	dynasty = dynn_Brune
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7258.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7332.1.1 = { death = yes }
+}
+
+Brune_201 = {
+	name = Harwyn
+	dynasty = dynn_Brune
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7270.1.1 = {
+		birth = yes
+	}
+	7297.1.1 = {
+		trait = knight
+	}
+	7335.1.1 = { death = yes }
+}
+
+Bush_200 = {
+	name = Walton
+	dynasty = dynn_Bush
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7330.1.1 = { death = yes }
+}
+
+Crabb_200 = {
+	name = Godric
+	dynasty = dynn_Crabb
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7254.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7331.1.1 = { death = yes }
+}
+
+Boggs_200 = {
+	name = Tymor
+	dynasty = dynn_Boggs
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7266.1.1 = {
+		birth = yes
+	}
+	7296.1.1 = {
+		trait = knight
+	}
+	7336.1.1 = { death = yes }
+}
+
+Hardy_200 = {
+	name = Gerren
+	dynasty = dynn_Hardy
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7251.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7331.1.1 = { death = yes }
+}
+
+Smithe_200 = {
+	name = Torrhen
+	dynasty = dynn_Smithe
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7263.1.1 = {
+		birth = yes
+	}
+	7296.1.1 = {
+		trait = knight
+	}
+	7336.1.1 = { death = yes }
+}
+
+Brownhollow_200 = {
+	name = Corryn
+	dynasty = dynn_Brownhollow
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7257.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7334.1.1 = { death = yes }
+}
+
+Langward_200 = {
+	name = Raymund
+	dynasty = dynn_Langward
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman_main
+	7253.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7322.1.1 = { death = yes }
+}
+
+Shreeve_200 = {
+	name = Martyn
+	dynasty = dynn_Shreeve
+	random_traits = yes
+	religion = fots_seven
+	culture = riverman_main
+	7261.1.1 = {
+		birth = yes
+	}
+	7296.1.1 = {
+		trait = knight
+	}
+	7326.1.1 = { death = yes }
+}
