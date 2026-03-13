@@ -74,6 +74,10 @@ crackclaw_confed_on_game_start = {
                         limit = { exists = title:c_strongcliffs.holder }
                         add_confederation_member = title:c_strongcliffs.holder
                     }
+                    if = {
+                        limit = { exists = title:c_the_scales.holder }
+                        add_confederation_member = title:c_the_scales.holder
+                    }
                 }
             }
         }
