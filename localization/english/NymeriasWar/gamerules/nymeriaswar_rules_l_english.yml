@@ -1,5 +1,8 @@
 ﻿l_english:
 
+ #Game Rule Category
+ game_rule_category_nymeria:0 "Nymeria's War"
+
  #Crackclaw Confederation
  rule_crackclaw_confederation:0 "#Y Nymeria:#! Crackclaw Starts As Confederation"
  setting_crackclaw_confederation_on:0 "#high Enabled#"

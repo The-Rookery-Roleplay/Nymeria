@@ -31418,7 +31418,7 @@ Dryland_1 = {
 	dynasty = dynn_Dryland
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	7258.1.1 = {
 		birth = yes
@@ -32560,7 +32560,7 @@ Yronwood_16 = {
 	prowess = 10
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Yronwood_15
 
@@ -34667,7 +34667,7 @@ Fowler_113 = {
 	dynasty = dynn_Fowler
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Fowler_111
 
@@ -34681,7 +34681,7 @@ Fowler_114 = {
 	dynasty = dynn_Fowler
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Fowler_113
 
@@ -34700,7 +34700,7 @@ Fowler_11 = {
 	learning = 4
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Fowler_114
 
@@ -34740,7 +34740,7 @@ Fowler_115 = {
 	dynasty = dynn_Fowler
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Fowler_11
 
@@ -41228,7 +41228,7 @@ Blackmont_10 = {
 	prowess = 8
 
 	religion = fc_pan_blackgoat
-	culture = stone_dornish
+	culture = old_dornish
 
 	trait = zealous
 	trait = wrathful
@@ -41259,8 +41259,10 @@ Blackmont_109 = {
 	dynasty = dynn_Blackmont
 
 	religion = fots_seven
-	culture = stone_dornish
-
+	culture = old_dornish
+	trait = zealous
+	trait = stubborn
+	trait = brave
 	father = Blackmont_10
 
 	7284.1.1 = { birth = yes }
@@ -45109,7 +45111,7 @@ Manwoody_9 = {
 	prowess = 8
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	trait = education_intrigue_1
 	trait = lunatic_1
@@ -45142,7 +45144,7 @@ Manwoody_106 = {
 	dynasty = dynn_Manwoody
 
 	religion = fots_seven
-	culture = stone_dornish
+	culture = old_dornish
 
 	father = Manwoody_9
 
