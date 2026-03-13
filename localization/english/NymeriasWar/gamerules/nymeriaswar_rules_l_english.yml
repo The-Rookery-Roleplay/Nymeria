@@ -10,3 +10,11 @@
 
  setting_crackclaw_confederation_on_desc:0 "In Nymeria's start date, the #bold Crackclaw Confederation#! will form at game start, making the Crackclaw more likely to maintain its lore accurate independence."
  setting_crackclaw_confederation_off_desc:0 "In Nymeria's start date, the Crackclaw Confederation will #bold not#! form at game start, leaving the region politically fragmented and far more likely to be invaded by surrounding AI realms."
+
+  #Dorne Scripted Events
+ rule_nymeria_dorne_story:0 "#Y Nymeria:#! Scripted Events in Dorne"
+ setting_nymeria_dorne_story_on:0 "#high Enabled#!"
+ setting_nymeria_dorne_story_off:0 "Disabled"
+
+ setting_nymeria_dorne_story_on_desc:0 "Scripted events in #bold Dorne#! will be enabled, helping guide the region toward a more lore-accurate outcome and increasing the likelihood of Dorne uniting."
+ setting_nymeria_dorne_story_off_desc:0 "Scripted events in Dorne will #bold not#! trigger. Without these events, the likelihood of Dorne uniting is significantly reduced."

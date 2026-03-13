@@ -1,6 +1,6 @@
 ﻿l_english:
 
-d_laamp_Nymeria:0 "the Rhoynish"
+d_laamp_Nymeria:0 "the Rhoynar"
 d_misty_islands:0 "the Misty Isles"
 d_godsfort:0 "Godsfort"
 c_crossing:0 "The Crossing"
@@ -13,4 +13,9 @@ b_castle_blackberry:0 "Castle Blackberry"
 c_smoke_isle:0 "The Smoke Isle"
 b_smoke_isle:0 "The Smoke Isle"
 b_smoke_isle_tower:0 "Smoke Isle Tower"
+c_mouth_of_greenblood:0 "Mouth of the Greenblood"
+b_mouth_of_greenblood:0 "Mouth of the Greenblood"
+c_sunship:0 "Sunship"
+d_sunship:0 "Sunship"
+b_sunship:0 "The Sunship"
 d_crackclaw_confederation:0 "The Crackclaw Confederation"

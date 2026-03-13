@@ -7,7 +7,7 @@
 # Nymeria
 d_laamp_Nymeria = {
 	color = { 100 100 100 }
-	capital = c_sunspear
+	capital = c_torchwood
 	definite_form = yes
 	landless = yes
 	ruler_uses_title_name = no

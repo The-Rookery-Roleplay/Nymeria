@@ -1,0 +1,28 @@
+﻿l_english:
+
+ nymeria_laamp_events.0002.t:0 "The Shores of Dorne"
+ nymeria_laamp_events.0002.desc:0 "At last, our ships have reached the shores of a distant land known as #bold Dorne#!. Before us stretches a harsh and unforgiving country, its deserts vast, its mountains jagged, and its people hardened by the unforgiving sun.\n\nYet this land is far from united. The whispers of sailors and scouts alike speak of countless #bold lords and petty kings#!, each warring against the other for dominion over this parched realm.\n\nWhere others see a fractured and hostile land, I see opportunity. A land divided is a land that can be claimed.\n\nPerhaps the time has come to make this place the new home of the #bold Rhoynar#!."
+ nymeria_laamp_events.0002.a:0 "Dorne shall become our home."
+ nymeria_laamp_events.0002.b:0 "This land is not ours to claim."
+ nymeria_laamp_events0002a_popup:0 "This option will provide you with different options on how to make #bold Dorne#! your home."
+ nymeria_laamp_events0002b_popup:0 "This option will end the #bold Dorne Story#! cycle, giving you a more sandbox experience."
+
+ nymeria_laamp_events.0003.t:0 "How Shall Dorne Be Claimed?"
+ nymeria_laamp_events.0003.desc:0 "If Dorne is to become the home of the #bold Rhoynar#!, then the path must now be chosen. Its lords are divided, its petty kings proud, and its lands as hostile as its politics.\n\nI may extend open hands and honeyed words to the rulers of this land, or I may seize Dorne through blood and conquest."
+ nymeria_laamp_events.0003.a:0 "Send letters to the local lords."
+ nymeria_laamp_events.0003.b:0 "We shall conquer Dorne by force."
+ nymeria_laamp_events.0003.a.tt:0 "You will attempt to approach the local lords through #bold diplomacy#!."
+ nymeria_laamp_events.0003.b.tt:0 "You will seek to make Dorne your home through #bold conquest#!."
+
+  #Mors receives Nymeria's letter
+ nymeria_laamp_events.0004.t:0 "A Letter From Nymeria"
+ nymeria_laamp_events.0004.desc:0 "Word has arrived from the shores of Dorne. Nymeria of the #bold Rhoynar#! has sent a letter to the lords of the Greenblood.\n\nHer people seek a place to settle, a new home in this land of sand and stone. She offers friendship, perhaps even loyalty, to those willing to welcome the Rhoynar.\n\nMany tales already circle around the woman, of her cunning, her ambition, and her beauty."
+
+ nymeria_laamp_events.0004.a:0 "I have heard of her beauty. I shall make her an offer she cannot refuse."
+ nymeria_laamp_events.0004.b:0 "Rhoynish scum. Dorne is no home for you."
+
+ #Nymeria receives Mors' offer
+ nymeria_laamp_events.0005.t:0 "An Offer From Mors Martell"
+ nymeria_laamp_events.0005.desc:0 "A letter has returned from #bold Mors Martell#!, lord among the Greenblood.\n\nHe offers the Rhoynar a place to settle in #bold the Mouth of the Greenblood#!, where the Greenblood meets the Summer Sea. In exchange, he asks for your support in the struggles of Dorne.\n\nYet his proposal carries one final condition, that you bind your fates together in marriage."
+
+ nymeria_laamp_events.0005.a:0 "A tempting offer."
