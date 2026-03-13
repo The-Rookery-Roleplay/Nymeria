@@ -32561,8 +32561,12 @@ Yronwood_16 = {
 
 	religion = fots_seven
 	culture = old_dornish
-
 	father = Yronwood_15
+	trait = education_diplomacy_3
+	trait = authoritative
+	trait = brave
+	trait = stubborn
+	trait = diplomat
 
 	7274.1.1 = {
 		birth = yes

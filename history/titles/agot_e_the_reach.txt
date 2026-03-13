@@ -1523,6 +1523,10 @@ c_bitterbridge = {
 	}
 }
 c_hammerhal = {
+	7299.1.1 = { 
+	liege = d_bitterbridge
+	holder = Cordwayner_200
+}
 	7866.1.1 = {
 		liege = d_bitterbridge
 	}
@@ -1585,6 +1589,10 @@ c_hammerhal = {
 	}
 }
 c_runnelweald = {
+	7299.1.1 = { 
+	liege = d_bitterbridge
+	holder = Bridges_200
+}
 	7817.1.1 = {
 		holder = Bridges_28
 	}
@@ -1650,6 +1658,10 @@ c_runnelweald = {
 	}
 }
 c_melneyness = {
+	7299.1.1 = { 
+	liege = d_bitterbridge
+	holder = Singer_200
+}
 	7836.1.1 = {
 		holder = Singer_1
 	}
@@ -1712,6 +1724,10 @@ c_melneyness = {
 	}
 }
 c_bawnbrook = {
+	7299.1.1 = { 
+	liege = d_bitterbridge
+	holder = Blume_200
+}
 	7829.1.1 = {
 		holder = Blume_1
 	}
@@ -1780,6 +1796,10 @@ c_bawnbrook = {
 	}
 }
 c_cherlysh = {
+	7299.1.1 = { 
+	liege = d_bitterbridge
+	holder = Fairley_200
+}
 	7859.1.1 = {
 		holder = Fairley_1
 	}
@@ -1839,6 +1859,10 @@ c_cherlysh = {
 	}
 }
 c_summerfell = {
+	7299.1.1 = { 
+	liege = d_bitterbridge
+	holder = Summerchild_200
+}
 	7866.1.1 = {
 		liege = d_bitterbridge
 	}
@@ -2487,6 +2511,10 @@ c_wesselvare = {
 	}
 }
 c_hatchbury = {
+	7299.1.1 = { 
+	liege = d_blueburn
+	holder = Eilish_200
+}
 	7830.1.1 = {
 		liege = d_blueburn
 	}
@@ -2540,6 +2568,10 @@ c_hatchbury = {
 	}
 }
 c_stafford = {
+	7299.1.1 = { 
+	liege = d_blueburn
+	holder = Stafford_200
+}
 	7830.1.1 = {
 		liege = d_blueburn
 	}
@@ -2596,6 +2628,10 @@ c_stafford = {
 	}
 }
 c_roseford = {
+	7299.1.1 = { 
+	liege = d_blueburn
+	holder = Larch_200
+}
 	7830.1.1 = {
 		liege = d_blueburn
 	}
@@ -2655,6 +2691,10 @@ c_roseford = {
 	}
 }
 c_wantington = {
+	7299.1.1 = { 
+	liege = d_blueburn
+	holder = Strum_200
+}
 	7830.1.1 = {
 		liege = d_blueburn
 	}
@@ -4609,6 +4649,10 @@ c_longtable = {
 	}
 }
 c_cobblestone = {
+	7299.1.1 = { 
+	liege = d_fullharvest
+	holder = Cobb_200
+}
 	7849.1.1 = {
 		liege = d_fullharvest
 	}
@@ -4665,6 +4709,10 @@ c_cobblestone = {
 	}
 }
 c_harvestyne = {
+	7299.1.1 = { 
+	liege = d_fullharvest
+	holder = Winnow_200
+}
 	7812.1.1 = {
 		holder = Winnow_1
 	}
@@ -4730,6 +4778,10 @@ c_harvestyne = {
 	}
 }
 c_esterrace = {
+	7299.1.1 = { 
+	liege = d_fullharvest
+	holder = Threshingham_200
+}
 	7849.1.1 = {
 		liege = d_fullharvest
 	}
@@ -4792,6 +4844,11 @@ c_esterrace = {
 	}
 }
 c_merrilene = {
+	7299.1.1 = { 
+	liege = d_fullharvest
+	holder = Cropp_200
+}
+
 	7849.1.1 = {
 		liege = d_fullharvest
 	}
@@ -4854,6 +4911,10 @@ c_merrilene = {
 	}
 }
 c_stalkvale = {
+	7299.1.1 = { 
+	liege = d_fullharvest
+	holder = Addey_200
+}
 	7841.1.1 = {
 		holder = Addey_22
 	}
@@ -5552,6 +5613,10 @@ d_goldenfields = {
 	}
 }
 c_norcross = {
+	7299.1.1 = { 
+	liege = d_goldenfields
+	holder = Norcross_200
+}
 	7862.1.1 = {
 		liege = d_goldenfields
 	}
@@ -5659,6 +5724,10 @@ c_wysedale = {
 	}
 }
 c_battram = {
+	7299.1.1 = { 
+	liege = d_goldenfields
+	holder = Yelshire_200
+}
 	7862.1.1 = {
 		liege = d_goldenfields
 	}
@@ -5712,6 +5781,10 @@ c_battram = {
 	}
 }
 c_wysteria = {
+	7299.1.1 = { 
+	liege = d_goldenfields
+	holder = Persemon_200
+}
 	7857.1.1 = {
 		holder = Persemon_1
 	}
@@ -5774,6 +5847,10 @@ c_wysteria = {
 	}
 }
 c_brennwater = {
+	7299.1.1 = { 
+	liege = d_goldenfields
+	holder = Nodding_200
+}
 	7838.1.1 = {
 		holder = Nodding_1
 	}
@@ -6637,6 +6714,10 @@ c_the_ring = {
 	}
 }
 c_harps_head = {
+	7299.1.1 = { 
+	liege = d_blueburn
+	holder = Orme_200
+}
 	7830.1.1 = {
 		liege = d_blueburn
 	}
@@ -6751,6 +6832,10 @@ c_harmony = {
 	}
 }
 c_heckenridge = {
+	7299.1.1 = { 
+	liege = d_heartland_heights
+	holder = Darn_200
+}
 	7839.1.1 = {
 		liege = d_heartland_heights
 	}
@@ -6813,6 +6898,10 @@ c_heckenridge = {
 	}
 }
 c_kildale = {
+	7299.1.1 = { 
+	liege = d_heartland_heights
+	holder = Archay_200
+}
 	7825.1.1 = {
 		holder = Archay_28
 	}
@@ -6887,6 +6976,10 @@ c_kildale = {
 	}
 }
 c_goodgate = {
+	7299.1.1 = { 
+	liege = d_heartland_heights
+	holder = Gates_200
+}
 	7819.1.1 = {
 		holder = Gates_41
 	}
@@ -11421,6 +11514,10 @@ c_woodbine = {
 	}
 }
 c_greenridge = {
+	7299.1.1 = { 
+	liege = d_sunnyvale
+	holder = Lahey_200
+}
 	7850.1.1 = {
 		liege = d_sunnyvale
 	}
@@ -11477,6 +11574,10 @@ c_greenridge = {
 	}
 }
 c_olinger = {
+	7299.1.1 = { 
+	liege = d_sunnyvale
+	holder = Juniper_200
+}
 	7850.1.1 = {
 		liege = d_sunnyvale
 	}
@@ -11605,6 +11706,10 @@ c_blandford = {
 	}
 }
 c_sommelfield = {
+	7299.1.1 = { 
+	liege = d_sunnyvale
+	holder = Redding_200
+}
 	7850.1.1 = {
 		liege = d_sunnyvale
 	}
@@ -14688,6 +14793,10 @@ c_tumbleton = {
 	}
 }
 c_catsclaw = {
+	7299.1.1 = { 
+	liege = d_tumbleton
+	holder = Lyberr_200
+}
 	7858.1.1 = {
 		holder = Lyberr_25
 	}
@@ -14744,6 +14853,10 @@ c_catsclaw = {
 	}
 }
 c_tread_hills = {
+	7299.1.1 = { 
+	liege = d_tumbleton
+	holder = Kiteberry_200
+}
 	7833.1.1 = {
 		holder = Kiteberry_1
 	}
@@ -14812,6 +14925,10 @@ c_tread_hills = {
 	}
 }
 c_wheatcombe = {
+	7299.1.1 = { 
+	liege = d_tumbleton
+	holder = Tillwick_200
+}
 	7847.1.1 = {
 		holder = Tillwick_1
 	}
@@ -14868,6 +14985,11 @@ c_wheatcombe = {
 	}
 }
 c_estaring = {
+	7299.1.1 = { 
+	liege = d_tumbleton
+	holder = Dalbridge_200
+}
+
 	7832.1.1 = {
 		holder = Dalbridge_3
 	}
@@ -14921,6 +15043,10 @@ c_estaring = {
 	}
 }
 c_ridgeland = {
+	7299.1.1 = { 
+	liege = d_tumbleton
+	holder = Norridge_200
+}
 	7873.1.1 = {
 		liege = d_tumbleton
 	}
@@ -14974,6 +15100,11 @@ c_ridgeland = {
 	}
 }
 c_mandale = {
+	7299.1.1 = { 
+	liege = d_tumbleton
+	holder = Holly_200
+}
+
 	7838.1.1 = {
 		holder = Holly_1
 	}
