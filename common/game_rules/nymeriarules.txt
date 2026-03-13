@@ -1,0 +1,9 @@
+crackclaw_confederation = {
+    categories = {
+		nymeria
+	}
+    default = crackclaw_confederation_on
+    
+    crackclaw_confederation_on = {}
+    crackclaw_confederation_off = {}
+}

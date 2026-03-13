@@ -174,9 +174,9 @@ k_the_greenblood = {
 	6157.9.16 = {
 		holder = 0
 	}
-	7299.1.1 = {
-		holder = Allyrion_200
-	}
+	# 7299.1.1 = {
+	# 	holder = Allyrion_200
+	# }
 	#House Martell
 	7300.1.1 = { # About 700 years before the events of the books Nymeria landed.
 		holder = Martell_23 # Mors
@@ -4590,7 +4590,6 @@ c_strongwine = {
 d_salt_shore = {
 	7299.1.1 = {
 		holder = Gargalen_200
-		liege = k_the_greenblood
 	}
 	7300.1.1 = {
 		liege = k_the_greenblood

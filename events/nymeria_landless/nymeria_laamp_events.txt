@@ -1,0 +1,32 @@
+﻿namespace = nymeria_laamp_events
+
+nymeria_laamp_events.0001 = {
+    hidden = yes
+    type = character_event
+
+    immediate = {
+        hidden_effect = {
+            create_maa_regiment = {
+                type = heavy_infantry
+                check_can_recruit = no
+                size = 25
+            }
+            create_maa_regiment = {
+                type = armored_horsemen
+                check_can_recruit = no
+                size = 10
+            }
+            create_maa_regiment = {
+                type = crossbowmen
+                check_can_recruit = no
+                size = 20
+            }
+            create_maa_regiment = {
+                type = trebuchet
+                check_can_recruit = no
+                size = 6
+            }
+        }
+    }
+}
+

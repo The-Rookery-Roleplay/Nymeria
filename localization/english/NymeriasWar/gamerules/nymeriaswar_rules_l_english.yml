@@ -1,0 +1,12 @@
+﻿l_english:
+
+ #Game Rule Category
+ game_rule_category_nymeria:0 "Nymeria's War"
+
+ #Crackclaw Confederation
+ rule_crackclaw_confederation:0 "#Y Nymeria:#! Crackclaw Starts As Confederation"
+ setting_crackclaw_confederation_on:0 "#high Enabled#"
+ setting_crackclaw_confederation_off:0 "Disabled"
+
+ setting_crackclaw_confederation_on_desc:0 "In Nymeria's start date, the #bold Crackclaw Confederation#! will form at game start, making the Crackclaw more likely to maintain its lore accurate independence."
+ setting_crackclaw_confederation_off_desc:0 "In Nymeria's start date, the Crackclaw Confederation will #bold not#! form at game start, leaving the region politically fragmented and far more likely to be invaded by surrounding AI realms."

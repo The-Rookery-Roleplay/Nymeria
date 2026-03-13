@@ -3448,9 +3448,14 @@ agot_assign_starting_family_weapons_effect = {
 		}
 	}
 	if = { # Disputant - Valyrian Steel sword of house Lothston and house Whent
+		if = {
+			limit = { game_start_date = 7299.1.1 }
+			character:Teague_200 ?= { agot_create_artifact_vs_disputant_effect = { OWNER = THIS } }
+		}
 		limit = {
-			game_start_date >= 8025.1.1
-			game_start_date <= 8300.1.7
+			always = yes
+			# game_start_date >= 8025.1.1
+			# game_start_date <= 8300.1.7
 		}
 		if = {
 			limit = { game_start_date >= 8296.1.1 }
