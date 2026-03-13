@@ -1,0 +1,6 @@
+crackclaw_confederation = {
+    default = crackclaw_confederation_on
+    
+    crackclaw_confederation_on = {}
+    crackclaw_confederation_off = {}
+}

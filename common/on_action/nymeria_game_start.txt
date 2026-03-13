@@ -1,0 +1,81 @@
+﻿on_game_start_after_lobby = {
+    effect = {
+        title:d_laamp_Nymeria ?= {
+            holder ?= {
+                trigger_event = {
+                    id = nymeria_laamp_events.0001
+                    days = 1
+                }
+            }
+        }
+    }
+}
+
+on_game_start = {
+    on_actions = {
+        crackclaw_confed_on_game_start
+    }
+}
+
+crackclaw_confed_on_game_start = {
+    effect = {
+        if = {
+            limit = {
+                has_game_rule = crackclaw_confederation_on
+                game_start_date = 7299.1.1
+                NOR = {
+                    exists = title:d_crackclaw.holder
+                    exists = title:k_the_claw.holder
+                }
+            }
+            title:c_dyre_den.holder ?= {
+                create_confederation = {
+                    name = d_crackclaw_confederation
+                }
+                scope:new_confederation = {
+                    set_variable = confederation_is_crackclaw
+                    set_global_variable = {
+                        name = crackclaw_confederation
+                        value = scope:new_confederation
+                    }
+                    if = {
+                        limit = { exists = title:c_needlewater.holder }
+                        add_confederation_member = title:c_needlewater.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_pepperwood.holder }
+                        add_confederation_member = title:c_pepperwood.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_strongbox.holder }
+                        add_confederation_member = title:c_strongbox.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_bronzeholm.holder }
+                        add_confederation_member = title:c_bronzeholm.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_hazewood.holder }
+                        add_confederation_member = title:c_hazewood.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_dyre_den.holder }
+                        add_confederation_member = title:c_dyre_den.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_brownhollow.holder }
+                        add_confederation_member = title:c_brownhollow.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_pointside.holder }
+                        add_confederation_member = title:c_pointside.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_strongcliffs.holder }
+                        add_confederation_member = title:c_strongcliffs.holder
+                    }
+                }
+            }
+        }
+    }
+}

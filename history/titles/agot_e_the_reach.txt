@@ -1034,6 +1034,10 @@ c_aldenley = {
 	20.1.1 = {
 		liege = d_highgarden
 	}
+	7299.1.1 = { 
+	liege = d_highgarden
+	holder = Oldflowers_200
+}
 	7898.1.1 = {
 		holder = Oldflowers_4
 	}
@@ -1238,6 +1242,11 @@ c_greenwall = {
 	20.1.1 = {
 		liege = d_highgarden
 	}
+	7299.1.1 = { 
+	liege = d_highgarden
+	holder = Bushy_200
+}
+
 	7869.1.1 = {
 		holder = Bushy_4
 	}
@@ -2027,6 +2036,10 @@ c_blackcrown = {
 	}
 }
 c_bandallon = {
+	7299.1.1 = { 
+	liege = d_black_sound
+	holder = Blackbar_200
+}
 	7860.1.1 = {
 		liege = d_black_sound
 		holder = Blackbar_3
@@ -2088,6 +2101,10 @@ c_pruttand = {
 		liege = d_black_sound
 		holder = Bulwer_6
 	}
+	7299.1.1 = { 
+	liege = d_black_sound
+	holder = Boult_200
+}
 	7854.1.1 = {
 		holder = Boult_1
 	}
@@ -2147,6 +2164,10 @@ c_pruttand = {
 	}
 }
 c_walnut_bank = {
+	7299.1.1 = { 
+	liege = d_black_sound
+	holder = Lavett_200
+}
 	7849.1.1 = {
 		holder = Lavett_1
 	}
@@ -2206,6 +2227,10 @@ c_walnut_bank = {
 	}
 }
 c_ashridge = {
+	7299.1.1 = { 
+	liege = d_black_sound
+	holder = Ashridge_200
+}
 	7839.1.1 = {
 		holder = Ashridge_1
 	}
@@ -4965,6 +4990,10 @@ c_meadowport = {
 	25.1.1 = {
 		liege = d_whisper_point
 	}
+	7299.1.1 = { 
+	liege = d_whisper_point
+	holder = Lilly_200
+}
 	7828.1.1 = {
 		holder = Lilly_1
 	}
@@ -5030,6 +5059,10 @@ c_meadowsmeet = {
 	25.1.1 = {
 		liege = d_whisper_point
 	}
+	7299.1.1 = { 
+	liege = d_whisper_point
+	holder = Quayle_200
+}
 	7831.1.1 = {
 		holder = Quayle_1
 	}
@@ -5095,6 +5128,10 @@ c_richglade = {
 	25.1.1 = {
 		liege = d_whisper_point
 	}
+	7299.1.1 = { 
+	liege = d_whisper_point
+	holder = Oates_200
+}
 	7843.1.1 = {
 		holder = Oates_1
 	}
@@ -7897,6 +7934,10 @@ c_strong_spirits = {
 	25.1.1 = {
 		liege = d_ridgeview
 	}
+	7299.1.1 = { 
+	liege = d_ridgeview
+	holder = Twinrose_200
+}
 	7850.1.1 = {
 		holder = Cask_1
 	}
@@ -7953,6 +7994,10 @@ c_turrellis = {
 	25.1.1 = {
 		liege = d_ridgeview
 	}
+	7299.1.1 = { 
+	liege = d_ridgeview
+	holder = Millendore_200
+}
 	7860.1.1 = {
 		holder = Courtnall_1
 	}
@@ -8497,6 +8542,11 @@ c_rhodalea = {
 	25.1.1 = {
 		liege = d_oldtown
 	}
+	7299.1.1 = { 
+	liege = d_oldtown
+	holder = Rodden_200
+}
+
 	7849.1.1 = {
 		holder = Rodden_23
 	}
@@ -8559,6 +8609,10 @@ c_brightbrock = {
 	25.1.1 = {
 		liege = d_oldtown
 	}
+	7299.1.1 = { 
+	liege = d_oldtown
+	holder = Sawyer_200
+}
 	7873.1.1 = {
 		holder = Sawyer_11
 	}
@@ -8606,6 +8660,10 @@ c_greylock_hills = {
 	25.1.1 = {
 		liege = d_oldtown
 	}
+	7299.1.1 = { 
+	liege = d_oldtown
+	holder = Potter_200
+}
 	7897.1.1 = {
 		holder = Potter_14
 	}
@@ -8659,6 +8717,10 @@ c_honeywine = {
 	25.1.1 = {
 		liege = d_oldtown
 	}
+	7299.1.1 = { 
+	liege = d_oldtown
+	holder = Combe_200
+}
 	7869.1.1 = {
 		holder = Combe_2
 	}
@@ -8721,6 +8783,10 @@ c_ashborne = {
 	25.1.1 = {
 		liege = d_oldtown
 	}
+	7299.1.1 = { 
+	liege = d_oldtown
+	holder = Steady_200
+}
 	7829.1.1 = {
 		holder = Steady_1
 	}
@@ -8777,6 +8843,10 @@ c_daresbury = {
 	25.1.1 = {
 		liege = d_oldtown
 	}
+	7299.1.1 = { 
+	liege = d_oldtown
+	holder = Lysander_200
+}
 	7850.1.1 = {
 		holder = Lysander_2
 	}
@@ -10606,6 +10676,11 @@ c_millendale = {
 	25.1.1 = {
 		liege = d_ridgeview
 	}
+	7299.1.1 = { 
+	liege = d_ridgeview
+	holder = Millendore_200
+}
+
 	7921.1.1 = {
 		holder = Millendore_1
 	}
@@ -10656,6 +10731,10 @@ c_trueguard = {
 	25.1.1 = {
 		liege = d_ridgeview
 	}
+	7299.1.1 = { 
+	liege = d_ridgeview
+	holder = Twinrose_200
+}
 	7855.1.1 = {
 		holder = Twinrose_1
 	}
@@ -11423,6 +11502,9 @@ k_the_arbor = {
 			agot_turn_westerosi_kingdom_into_lordship_history_effect = { YEAR = 6260 }
 		}
 	}
+	7299.1.1 = {
+		holder = Redwyne_200
+	}
 	7850.1.1 = {
 		holder = Redwyne_13
 	}
@@ -11516,7 +11598,7 @@ d_the_arbor = {
 		holder = Redwyne_79
 	}
 	7299.1.1 = {
-		liege = e_the_reach
+		liege = k_the_arbor
 		holder = Redwyne_200
 	}
 	7850.1.1 = {
@@ -11659,6 +11741,10 @@ c_stonecrab_cape = {
 	30.1.1 = {
 		liege = d_the_arbor
 	}
+	7299.1.1 = { 
+	liege = d_the_arbor
+	holder = Stonecrab_200
+}
 	7874.1.1 = {
 		holder = Stonecrab_5
 	}
@@ -11734,6 +11820,10 @@ c_vinetown = {
 	6260.1.1 = {
 		holder = Redwyne_79
 	}
+	7299.1.1 = { 
+	liege = d_the_arbor
+	holder = Goldwyne_200
+}
 	7850.1.1 = {
 		holder = Redwyne_13
 	}
@@ -11784,6 +11874,10 @@ c_starfish_harbor = {
 	30.1.1 = {
 		liege = d_the_arbor
 	}
+	7299.1.1 = { 
+	liege = d_the_arbor
+	holder = Cupps_200
+}
 	7896.1.1 = {
 		holder = Cupps_18
 	}
@@ -11834,6 +11928,10 @@ c_peachtree = {
 	30.1.1 = {
 		liege = d_the_arbor
 	}
+	7299.1.1 = { 
+	liege = d_the_arbor
+	holder = Rochalan_200
+}
 	7870.1.1 = {
 		holder = Rochalan_1
 	}
@@ -11896,6 +11994,11 @@ c_mermaid_rocks = {
 	30.1.1 = {
 		liege = d_the_arbor
 	}
+	7299.1.1 = { 
+	liege = d_the_arbor
+	holder = Draper_200
+}
+
 	7863.1.1 = {
 		holder = Draper_1
 	}
@@ -13122,6 +13225,10 @@ c_manderside = {
 	20.1.1 = {
 		liege = d_highgarden
 	}
+	7299.1.1 = { 
+	liege = d_highgarden
+	holder = Oldflowers_200
+}
 	7898.1.1 = {
 		holder = Oldflowers_4
 	}
@@ -13491,6 +13598,11 @@ c_rosewood = {
 	}
 }
 c_lavenderne = {
+	7299.1.1 = { 
+	liege = d_ridgeview
+	holder = Lavenderne_200
+}
+
 	7825.1.1 = {
 		liege = d_oldhills
 	}
