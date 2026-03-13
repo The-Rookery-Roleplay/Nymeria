@@ -142,17 +142,14 @@ game_rule.1001 = { #by Mathilda Bjarnehed - Modified by Kizan for Nymerias War B
 		}
 	}
 
-
 	immediate = {
 		if = {
 			limit = { faith = { has_doctrine_parameter = marriage_event } }
 			add_character_flag = ignore_marriage_event
 		}
 		save_scope_as = location_scope
-		#AGOT Modified
-		# game_rule_create_spouse_and_children = { CHARACTER = root LOCATION = scope:location_scope }
 		random = {
-			chance = 100 # Changed from 75 to 100. - Kizan
+			chance = 100
 			game_rule_create_spouse_and_children = { CHARACTER = root LOCATION = scope:location_scope }
 		}
 
@@ -187,19 +184,19 @@ game_rule.1001 = { #by Mathilda Bjarnehed - Modified by Kizan for Nymerias War B
 				}
 			}
 		}
-		# Remove fertile trait if spawned
+		# Remove infertile trait if spawned
 		if = {
-			limit = { has_trait = fertile }
-			remove_trait = fertile
+			limit = { has_trait = infertile }
+			remove_trait = infertile
 		}
 		every_child = {
-			limit = { has_trait = fertile }
-			remove_trait = fertile
+			limit = { has_trait = infertile }
+			remove_trait = infertile
 		}
 		every_child = {
 			every_child = {
-				limit = { has_trait = fertile }
-				remove_trait = fertile
+				limit = { has_trait = infertile }
+				remove_trait = infertile
 			}
 		}
 		# Martial prowess education for martial educated characters - root
