@@ -7,3 +7,13 @@ crackclaw_confederation = {
     crackclaw_confederation_on = {}
     crackclaw_confederation_off = {}
 }
+
+nymeria_dorne_story = {
+    categories = {
+        nymeria
+    }
+    default = nymeria_dorne_story_on
+
+    nymeria_dorne_story_on = {}
+    nymeria_dorne_story_off = {}
+}

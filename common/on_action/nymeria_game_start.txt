@@ -1,15 +1,17 @@
-﻿# on_game_start_after_lobby = {
-#     effect = {
-#         title:d_laamp_Nymeria ?= {
-#             holder ?= {
-#                 trigger_event = {
-#                     id = nymeria_laamp_events.0001
-#                     days = 1
-#                 }
-#             }
-#         }
-#     }
-# }
+﻿on_game_start_after_lobby = {
+    effect = {
+        character:Nymeros_1 = {
+            trigger_event = nymeria_laamp_events.0001
+        }
+
+        if = {
+            limit = { has_game_rule = nymeria_dorne_story_on }
+            character:Nymeros_1 = {
+                trigger_event = nymeria_laamp_events.0002
+            }
+        }
+    }
+}
 
 on_game_start = {
     on_actions = {

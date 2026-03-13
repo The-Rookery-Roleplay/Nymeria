@@ -315,10 +315,20 @@ k_the_greenblood = {
 d_sunspear = {
 	7299.1.1 = { # About 700 years before the events of the books Nymeria landed.
 		holder = Martell_23 #Mors
+		effect = {
+			set_title_name = d_sunship
+			title:c_sunspear = { set_title_name = c_sunship }
+			title:b_sunspear = { set_title_name = b_sunship }
+		}
 	}
 	7300.1.1 = {
 		liege = k_the_greenblood
 		holder = Martell_23
+		effect = {
+			reset_title_name = yes
+			title:c_sunspear = { reset_title_name = yes }
+			title:b_sunspear = { reset_title_name = yes }
+		}
 	}
 	7309.1.1 = {
 		holder = Nymeros_1
@@ -736,10 +746,23 @@ c_plankytown = {
 	7299.1.1 = { 
 		liege = d_sunspear
 		holder = Martell_23
+		effect = {
+			set_title_name = c_mouth_of_greenblood
+			title:b_plankytown = { set_title_name = b_mouth_of_greenblood }
+			if = {
+				limit = { game_start_date < 7300.1.1 }
+				title:b_plankytown.title_province = { remove_holding = yes }
+				title:b_plankytown.title_province = { add_special_building_slot = agot_plankytown_01 }
+			}
+		}
 	}
 	7300.1.1 = {
 		liege = d_sunspear
 		holder = Martell_23
+		effect = {
+			reset_title_name = yes
+			title:b_plankytown = { reset_title_name = yes }
+		}
 	}
 	7309.1.1 = {
 		holder = Nymeros_1
