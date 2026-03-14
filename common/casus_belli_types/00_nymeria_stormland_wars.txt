@@ -1,0 +1,235 @@
+﻿nymeria_hook_conquest = {
+    group = conquest
+    icon = invasion
+
+    war_name = "WAR_NAME_NYMERIA_HOOK_CONQUEST"
+    my_war_name = "WAR_NAME_NYMERIA_HOOK_CONQUEST"
+
+    target_titles = none
+    white_peace_possible = no
+    
+
+    valid_to_start = { always = no }
+    allowed_for_character = { always = no }
+    allowed_against_character = { always = no }
+
+    should_check_for_interface_availability = no
+    ai = no
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    transfer_behavior = transfer
+
+    on_declaration = { on_declared_war = yes }
+
+    # --- WIN ---
+    on_victory = {
+        scope:attacker = { show_pow_release_message_effect = yes }
+
+        # Step 1: Take k_the_hook
+        create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = hook_change
+            add_claim_on_loss = no
+        }
+        title:k_the_hook = {
+            change_title_holder = {
+                holder = scope:attacker
+                change = scope:hook_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:hook_change
+
+        # Step 2: Make Hook King swear fealty
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = fealty_change
+        }
+        scope:defender = {
+            change_liege = {
+                liege = scope:attacker
+                change = scope:fealty_change
+            }
+        }
+        scope:attacker = {
+            imprison = {
+                target = scope:defender
+                type = hard
+            }
+        }
+
+        # Step 3: Keep d_massey_hook holder under Hook King
+        title:d_massey_hook.holder = {
+            change_liege = {
+                liege = scope:defender
+                change = scope:fealty_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:fealty_change
+
+        # Step 4: Move counties as direct vassals of Durrandon
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = county_change
+        }
+        title:c_greyhelm.holder = {
+            change_liege = {
+                liege = scope:attacker
+                change = scope:county_change
+            }
+        }
+        title:c_bywater.holder = {
+            change_liege = {
+                liege = scope:attacker
+                change = scope:county_change
+            }
+        }
+        title:c_brushmill.holder = {
+            change_liege = {
+                liege = scope:attacker
+                change = scope:county_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:county_change
+
+        # Step 5: Destroy k_the_hook via temporary list
+        custom_tooltip = nymeria_hook_conquest_destroy_hook_tt
+        scope:attacker = {
+            every_held_title = {
+                limit = { this = title:k_the_hook }
+                add_to_temporary_list = titles_to_destroy
+            }
+        }
+        every_in_list = {
+            list = titles_to_destroy
+            scope:attacker = {
+                destroy_title = prev
+            }
+        }
+
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = victory
+                }
+            }
+        }
+
+        agot_war_victory_effects = yes
+    }
+
+    on_victory_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = nymeria_hook_conquest_victory_desc
+            }
+        }
+    }
+
+    # --- WHITE PEACE ---
+    on_white_peace = {
+        scope:attacker = {
+            add_prestige = -200
+            give_nickname = nick_the_humbled
+        }
+
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = white_peace
+                }
+            }
+        }
+    }
+
+    on_white_peace_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = nymeria_hook_conquest_white_peace_desc
+            }
+        }
+    }
+
+    # --- LOSE ---
+    on_defeat = {
+        scope:defender = {
+            imprison = {
+                target = scope:attacker
+                type = hard
+            }
+        }
+        scope:attacker = {
+            add_prestige = -1000
+        }
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = stackfield_change
+        }
+        title:d_stackfield.holder = {
+            change_liege = {
+                liege = scope:defender
+                change = scope:stackfield_change
+            }
+        }
+        title:d_vellum_coast.holder = {
+            change_liege = {
+                liege = scope:defender
+                change = scope:stackfield_change
+            }
+        }
+        title:d_kingswood.holder = {
+            change_liege = {
+                liege = scope:defender
+                change = scope:stackfield_change
+            }
+        }
+        title:d_greatstock.holder = {
+            change_liege = {
+                liege = scope:defender
+                change = scope:stackfield_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:stackfield_change
+
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = defeat
+                }
+            }
+        }
+    }
+
+    on_defeat_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = nymeria_hook_conquest_defeat_desc
+            }
+        }
+    }
+
+    attacker_ticking_warscore = 0.1
+    defender_ticking_warscore = 0.1
+    full_occupation_by_attacker_gives_victory = yes
+    full_occupation_by_defender_gives_victory = yes
+    ticking_war_score_targets_entire_realm = yes
+    max_attacker_score_from_occupation = 150
+    max_defender_score_from_occupation = 150
+    max_attacker_score_from_battles = 100
+    max_defender_score_from_battles = 50
+
+    interface_priority = 120
+}

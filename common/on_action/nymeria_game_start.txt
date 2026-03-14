@@ -1,12 +1,47 @@
 ﻿on_game_start_after_lobby = {
     on_actions = {
         nymeria_dorne_events_cycle 
+        nymeria_stormlands_events_cycle 
+    }
+}
+
+quarterly_playable_pulse = {
+    on_actions = {
+        nymeria_stormlands_events_cycle2
     }
 }
 
 on_game_start = {
     on_actions = {
         crackclaw_confed_on_game_start
+    }
+}
+
+nymeria_stormlands_events_cycle = {
+    effect = {
+        if = {
+            limit = { has_game_rule = nymeria_dorne_story_on }
+            character:Durrandon_62 = {
+                trigger_event = nymeria_stormlands.0001
+            }
+        }
+    }
+}
+
+nymeria_stormlands_events_cycle2 = {
+    effect = {
+        if = {
+            limit = {
+                has_game_rule = nymeria_stormlands_story_on
+                current_date >= 7299.7.20
+                character:Durrandon_62 = {
+                    has_character_flag = stormlands_war_pending
+                }
+            }
+            character:Durrandon_62 = {
+                trigger_event = nymeria_stormlands.0002
+            }
+        }
     }
 }
 

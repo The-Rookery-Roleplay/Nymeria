@@ -19,3 +19,21 @@ c_sunship:0 "Sunship"
 d_sunship:0 "Sunship"
 b_sunship:0 "The Sunship"
 d_crackclaw_confederation:0 "The Crackclaw Confederation"
+
+
+# Flavorization
+
+ hook_king_flavorization: "Hook King"
+ hook_king_flavorization_female: "Hook Queen"
+ hook_queen_consort_flavorization: "Hook Queen"
+ hook_king_consort_flavorization: "Hook King Consort"
+
+ duskwashes_king_flavorization: "Shadow King"
+ duskwashes_queen_flavorization: "Shadow Queen"
+ duskwashes_queen_consort_flavorization: "Shadow Queen"
+ duskwashes_king_consort_flavorization: "Shadow King Consort"
+
+ river_king_flavorization: "River King"
+ river_queen_flavorization: "River Queen"
+ river_queen_consort_flavorization: "River Queen"
+ river_king_consort_flavorization: "River King Consort"

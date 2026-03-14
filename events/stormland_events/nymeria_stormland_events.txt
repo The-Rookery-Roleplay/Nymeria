@@ -1,0 +1,104 @@
+﻿namespace = nymeria_stormlands
+
+# Initial flavor event - fires on Durrandon_62
+nymeria_stormlands.0001 = {
+    type = character_event
+    title = nymeria_stormlands.0001.t
+    desc = nymeria_stormlands.0001.desc
+    theme = war
+    left_portrait = {
+        character = scope:storm_king
+        animation = aggressive
+    }
+
+    trigger = {
+        has_game_rule = nymeria_stormlands_story_on
+        this = character:Durrandon_62
+        NOT = { has_character_flag = stormlands_war_pending }
+    }
+
+    immediate = {
+        save_scope_as = storm_king
+        remove_character_flag = stormlands_war_pending
+        title:k_the_hook.holder = { trigger_event = nymeria_stormlands.0003 }
+        title:k_the_blackwater.holder = { trigger_event = nymeria_stormlands.0003 }
+        title:k_duskwashes.holder = { trigger_event = nymeria_stormlands.0003 }
+    }
+
+    option = {
+        name = nymeria_stormlands.0001.a   # "Ours is the Fury"
+        add_character_flag = stormlands_war_pending
+        custom_tooltip = nymeria_stormlands0001a_popup
+        ai_chance = { base = 100 }
+    }
+}
+
+# Declaration of war event
+nymeria_stormlands.0002 = {
+    type = character_event
+    title = nymeria_stormlands.0002.t
+    desc = nymeria_stormlands.0002.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = anger
+    }
+    right_portrait = {
+        character = title:k_the_hook.holder
+        animation = fear
+    }
+
+    trigger = {
+        has_game_rule = nymeria_stormlands_story_on
+        this = character:Durrandon_62
+        has_character_flag = stormlands_war_pending
+        title:k_the_hook = {
+            exists = holder
+        }
+    }
+
+    immediate = {
+        remove_character_flag = stormlands_war_pending
+        save_scope_as = storm_king
+        title:k_the_hook.holder = {
+            save_scope_as = hook_holder
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0002.a
+        ai_chance = { base = 100 }
+
+        scope:storm_king = {
+            start_war = {
+                target = scope:hook_holder
+                casus_belli = nymeria_hook_conquest
+                title = k_the_hook
+            }
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0002.b
+        ai_chance = { base = 0 }
+        set_character_flag = nymeria_stormlands_story_ended
+        custom_tooltip = nymeria_stormlands0002b_popup
+    }
+}
+
+nymeria_stormlands.0003 = {
+    type = character_event
+    title = nymeria_stormlands.0003.t
+    desc = nymeria_stormlands.0003.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = threat
+    }
+
+    option = {
+        name = nymeria_stormlands.0003.a
+        ai_chance = { base = 100 }
+        custom_tooltip = nymeria_stormlands0003a_popup
+    }
+}

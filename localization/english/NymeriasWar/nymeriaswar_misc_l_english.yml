@@ -1,3 +1,12 @@
 ﻿l_english:
 
 rhoynar_host:0 "The Rhoynish"
+
+WAR_NAME_NYMERIA_HOOK_CONQUEST: "War for the Hook"
+nymeria_hook_conquest:0 "War for the Hook"
+nymeria_hook_conquest_destroy_hook_tt: "The Kingdom of the Hook will be destroyed."
+nymeria_hook_conquest_victory_desc: "The Hook has fallen. Its king bends the knee to Storm's End, and the Kingdom of the Hook is no more, swallowed by the might of the Bloody Stag."
+nymeria_hook_conquest_white_peace_desc: "The Storm King's march on the Hook has come to nothing. Durrandon returns to Storm's End diminished, his ambitions checked by the stubbornness of the Hook Kings."
+nymeria_hook_conquest_defeat_desc: "The march on the Hook has become a march on Storm's End. The banners of the Stag lie trampled in the mud, the war is lost, the Bloody Stag utterly crushed. What began as conquest ends in humiliation."
+WAR_NAME_NYMERIA_HOOK_CONQUEST: "War for the Hook"
+

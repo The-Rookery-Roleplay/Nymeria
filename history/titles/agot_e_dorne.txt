@@ -3461,7 +3461,6 @@ c_first_well = {
 		liege = d_the_princes_pass
 	}
 	7299.1.1 = { 
-		liege = k_the_drylands
 		holder = Wells_200
 	}
 
@@ -3519,7 +3518,7 @@ c_drywell = {
 		liege = k_yronwood
 	}
 	7299.1.1 = { 
-		liege = k_the_drylands
+		liege = k_yronwood
 		holder = Dryside_200
 	}
 
@@ -3653,7 +3652,7 @@ c_pronghorn = {
 }
 c_shady_sands = {
 	7299.1.1 = { 
-		liege = k_the_drylands
+		liege = k_yronwood
 		holder = Aradesh_200
 	}
 
