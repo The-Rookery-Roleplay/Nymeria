@@ -51864,3 +51864,267 @@ Ironborn_Lord_3 = {
 		death = { death_reason = death_ill }
 	}
 }
+
+Saltcliffe_200 = {
+	name = Harrag
+	dynasty = dynn_Saltcliffe
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+	}
+	7318.1.1 = { death = yes }
+}
+
+Ironmaker_200 = {
+	name = Harrag
+	dynasty = dynn_Ironmaker
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7256.1.1 = {
+		birth = yes
+	}
+	7318.1.1 = { death = yes }
+}
+
+Botley_200 = {
+	name = Balon
+	dynasty = dynn_Botley
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7249.1.1 = {
+		birth = yes
+	}
+	7315.1.1 = { death = yes }
+}
+
+Wynch_200 = {
+	name = Qarl
+	dynasty = dynn_Wynch
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7262.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Stonetree_200 = {
+	name = Harrag
+	dynasty = dynn_Stonetree
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7256.1.1 = {
+		birth = yes
+	}
+	7318.1.1 = { death = yes }
+}
+
+Kenning_200 = {
+	name = Balon
+	dynasty = dynn_Kenning
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7249.1.1 = {
+		birth = yes
+	}
+	7315.1.1 = { death = yes }
+}
+
+Myre_200 = {
+	name = Qarl
+	dynasty = dynn_Myre
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7262.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Volmark_200 = {
+	name = Dagon
+	dynasty = dynn_Volmark
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7253.1.1 = {
+		birth = yes
+	}
+	7317.1.1 = { death = yes }
+}
+
+Harlaw_201 = {
+	name = Rodrik
+	dynasty = dynn_Harlaw
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7246.1.1 = {
+		birth = yes
+	}
+	7313.1.1 = { death = yes }
+}
+
+Saltson_200 = {
+	name = Urron
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7258.1.1 = {
+		birth = yes
+	}
+	7319.1.1 = { death = yes }
+}
+
+Greyflood_200 = {
+	name = Maron
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7251.1.1 = {
+		birth = yes
+	}
+	7316.1.1 = { death = yes }
+}
+
+Orkwood_200 = {
+	name = Maron
+	dynasty = dynn_Orkwood
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7255.1.1 = {
+		birth = yes
+	}
+	7325.1.1 = { death = yes }
+}
+
+Tawney_200 = {
+	name = Qhorin
+	dynasty = dynn_Tawney
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7258.1.1 = {
+		birth = yes
+	}
+	7326.1.1 = { death = yes }
+}
+
+Stonehouse_200 = {
+	name = Harl
+	dynasty = dynn_Stonehouse
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7254.1.1 = {
+		birth = yes
+	}
+	7322.1.1 = { death = yes }
+}
+
+GoodbrotherSS_200 = {
+	name = Andrik
+	dynasty_house = house_GoodbrotherSS
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7257.1.1 = {
+		birth = yes
+	}
+	7328.1.1 = { death = yes }
+}
+
+Tidewood_200 = {
+	name = Harras
+	dynasty = dynn_Tidewood
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7253.1.1 = {
+		birth = yes
+	}
+	7324.1.1 = { death = yes }
+}
+
+GoodbrotherCPK_200 = {
+	name = Gorold
+	dynasty_house = house_GoodbrotherCPK
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7250.1.1 = {
+		birth = yes
+	}
+	7323.1.1 = { death = yes }
+}
+
+FarwyndDL_200 = {
+	name = Maron
+	dynasty_house = house_FarwyndDL
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7256.1.1 = {
+		birth = yes
+	}
+	7327.1.1 = { death = yes }
+}
+
+Freeborn_200 = {
+	name = Qarl
+	dynasty = dynn_Freeborn
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7258.1.1 = {
+		birth = yes
+	}
+	7329.1.1 = { death = yes }
+}
+
+Sparr_200 = {
+	name = Rodrik
+	dynasty = dynn_Sparr
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7252.1.1 = {
+		birth = yes
+	}
+	7326.1.1 = { death = yes }
+}
+
+Merlyn_200 = {
+	name = Dagon
+	dynasty = dynn_Merlyn
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7251.1.1 = {
+		birth = yes
+	}
+	7324.1.1 = { death = yes }
+}
+
+Sharp_200 = {
+	name = Qhorin
+	dynasty = dynn_Sharp
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7257.1.1 = {
+		birth = yes
+	}
+	7328.1.1 = { death = yes }
+}

@@ -18370,20 +18370,20 @@ Crakehall_57 = {
 		}
 	}
 }
-Crakehall_200 = {
-    name = Merlon
-    dynasty = dynn_Crakehall
-    random_traits = yes
-    religion = fots_seven
-    culture = westerman_main
-    7256.1.1 = {
-        birth = yes
-    }
-    7295.1.1 = {
-        trait = knight
-    }
-    7320.1.1 = { death = yes }
-}
+# Crakehall_200 = {
+#     name = Merlon
+#     dynasty = dynn_Crakehall
+#     random_traits = yes
+#     religion = fots_seven
+#     culture = westerman_main
+#     7256.1.1 = {
+#         birth = yes
+#     }
+#     7295.1.1 = {
+#         trait = knight
+#     }
+#     7320.1.1 = { death = yes }
+# }
 
 ###### HOUSE MARBRAND (id = dynn_Marbrand)
 ############################
