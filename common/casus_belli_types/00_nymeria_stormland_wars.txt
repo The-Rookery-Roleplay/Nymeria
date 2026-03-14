@@ -6,7 +6,8 @@
     my_war_name = "WAR_NAME_NYMERIA_HOOK_CONQUEST"
 
     target_titles = none
-    white_peace_possible = yes
+    white_peace_possible = no
+    
 
     valid_to_start = { always = no }
     allowed_for_character = { always = no }
