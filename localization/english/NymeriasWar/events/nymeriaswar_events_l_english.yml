@@ -50,3 +50,19 @@
  nymeria_stormlands.0003.desc: "Word has reached us from the south. The Storm King Durran Durrandon, they call him the Bloody Stag, has begun rallying his banners. His eyes turn north, towards the Blackwater, toward the Hook, toward everything we have built.\n\nHe is ambitious, ruthless, and hungry. Our fathers knew the Storm Kings well enough to fear them. Perhaps we should too."
  nymeria_stormlands.0003.a: "We will face the Storm."
  nymeria_stormlands0003a_popup: "It will only be a matter of time until the Stag marches for our borders."
+
+ nymeria_stormlands.0005.t: "The Hook is Ours"
+ nymeria_stormlands.0005.desc: "The banners of Storm's End fly over the Hook. What our forebears lost has been reclaimed, the Hook Kings are broken, their kingdom swallowed by the Stag.\n\nBut the horizon does not end at the Hook. The Blackwater Kingdom lies to the north, rich and exposed. The conquest is not yet finished."
+ nymeria_stormlands.0005.a: "The Hook is ours. The Blackwater is next."
+ nymeria_stormlands0005a_popup: "In around a year, the next campaign will begin. The Stag does not rest."
+
+ nymeria_stormlands.0006.t: "March on the Blackwater"
+ nymeria_stormlands.0006.desc: "The Hook has fallen. Now the Blackwater Kingdom stands before us, the next step in a conquest that will echo through the ages. The Storm King's banners are ready. The march begins."
+ nymeria_stormlands.0006.a: "The Blackwater shall bend the knee."
+ nymeria_stormlands.0006.b: "We cannot risk another war right now."
+ nymeria_stormlands0006b_popup: "This will end the Stormlands Story. No further events will trigger for the Storm King's campaign."
+
+ nymeria_stormlands.0008.t: "The Hook Has Fallen"
+ nymeria_stormlands.0008.desc: "The news arrives like a storm in the dark. The Kingdom of the Hook, gone. Swept away in a single campaign by the Bloody Stag of Storm's End.\n\nDurran Durrandon did not negotiate. He did not hesitate. He marched, he conquered, and he destroyed what stood in his way.\n\nWe are next. The Storm is no longer on the horizon, it is at our doorstep."
+ nymeria_stormlands.0008.a: "We must prepare for the worst."
+ nymeria_stormlands0008a_popup: "The Storm King's ambitions will not stop at the Hook. We must ready ourselves."

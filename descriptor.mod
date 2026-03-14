@@ -3,4 +3,4 @@ tags={
 	"Decisions"
 }
 name="Nymeria"
-supported_version="1.18.3.1"
+supported_version="1.18.4"
