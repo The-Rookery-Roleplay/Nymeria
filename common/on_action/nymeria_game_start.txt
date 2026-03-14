@@ -1,4 +1,16 @@
 ﻿on_game_start_after_lobby = {
+    on_actions = {
+        nymeria_dorne_events_cycle 
+    }
+}
+
+on_game_start = {
+    on_actions = {
+        crackclaw_confed_on_game_start
+    }
+}
+
+nymeria_dorne_events_cycle = {
     effect = {
         character:Nymeros_1 = {
             trigger_event = nymeria_laamp_events.0001
@@ -10,12 +22,6 @@
                 trigger_event = nymeria_laamp_events.0002
             }
         }
-    }
-}
-
-on_game_start = {
-    on_actions = {
-        crackclaw_confed_on_game_start
     }
 }
 

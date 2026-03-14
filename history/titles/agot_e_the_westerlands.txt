@@ -804,6 +804,10 @@ c_fang_hill = {
 			title:b_cleganes_keep = { set_title_name = b_pride_grounds }
 		}
 	}
+	7299.1.1 = { 
+	liege = d_casterly_rock
+	holder = Parren_200
+}
 	7872.1.1 = {
 		holder = Parren_1
 	}
@@ -878,6 +882,10 @@ c_lonmont = {
 	40.1.1 = {
 		liege = d_casterly_rock
 	}
+	7299.1.1 = { 
+	liege = d_casterly_rock
+	holder = Jast_200
+}
 	7859.1.1 = {
 		holder = Jast_6
 	}
@@ -943,6 +951,10 @@ c_motley_hills = {
 	40.1.1 = {
 		liege = d_casterly_rock
 	}
+	7299.1.1 = { 
+	liege = d_casterly_rock
+	holder = Falwell_200
+}
 	7867.1.1 = {
 		holder = Falwell_6
 	}
@@ -999,6 +1011,10 @@ c_hadersly = {
 	40.1.1 = {
 		liege = d_casterly_rock
 	}
+	7299.1.1 = { 
+	liege = d_casterly_rock
+	holder = Taves_200
+}
 	7788.1.1 = {
 		holder = Taves_21
 	}
@@ -1064,6 +1080,10 @@ c_hetherfield = {
 	40.1.1 = {
 		liege = d_casterly_rock
 	}
+	7299.1.1 = { 
+	liege = d_casterly_rock
+	holder = Hetherspoon_200
+}
 	7856.1.1 = {
 		holder = Hetherspoon_8
 	}
@@ -1117,6 +1137,10 @@ c_lannisport = {
 	40.1.1 = {
 		liege = d_casterly_rock
 	}
+	7299.1.1 = { 
+	liege = d_casterly_rock
+	holder = LannisterLP_200
+}
 	7838.1.1 = {
 		holder = LannisterLP_10
 	}
@@ -1346,6 +1370,10 @@ c_ashemark = {
 	}
 }
 c_nunns_deep = {
+	7299.1.1 = { 
+	liege = d_ashemark
+	holder = Foote_200
+}
 	7834.1.1 = {
 		liege = d_ashemark
 	}
@@ -1405,6 +1433,10 @@ c_nunns_deep = {
 	}
 }
 c_the_drop = {
+	7299.1.1 = { 
+	liege = d_ashemark
+	holder = Ruttiger_200
+}
 	7834.1.1 = {
 		liege = d_ashemark
 	}
@@ -1461,6 +1493,10 @@ c_the_drop = {
 	}
 }
 c_rivermont = {
+	7299.1.1 = { 
+	liege = d_ashemark
+	holder = Lanster_200
+}
 	7780.1.1 = {
 		holder = Lanster_21
 	}
@@ -1520,6 +1556,11 @@ c_rivermont = {
 	}
 }
 c_ruffell = {
+	7299.1.1 = { 
+	liege = d_ashemark
+	holder = Myatt_200
+}
+
 	7834.1.1 = {
 		liege = d_ashemark
 	}
@@ -1729,6 +1770,10 @@ c_sarsfield = {
 	200.1.1 = {
 		liege = d_castamere
 	}
+	7299.1.1 = { 
+	liege = d_castamere
+	holder = Sarsfield_200
+}
 	7874.1.1 = {
 		holder = Sarsfield_4
 	}
@@ -1782,6 +1827,10 @@ c_lowell = {
 	200.1.1 = {
 		liege = d_castamere
 	}
+	7299.1.1 = { 
+	liege = d_castamere
+	holder = Lowell_200
+}
 	7843.1.1 = {
 		holder = Lowell_1
 	}
@@ -1839,6 +1888,10 @@ c_pendric_hills = {
 		liege = d_castamere
 		holder = Reyne_1
 	}
+	7299.1.1 = { 
+	liege = d_castamere
+	holder = Pendric_200
+}
 	7863.1.1 = {
 		holder = Pendric_1
 	}
@@ -1902,6 +1955,10 @@ c_borrowmore = {
 		liege = d_castamere
 		holder = Reyne_1
 	}
+	7299.1.1 = { 
+	liege = d_castamere
+	holder = Lender_200
+}
 	7854.1.1 = {
 		holder = Lender_1
 	}
@@ -2170,6 +2227,10 @@ c_borrenline = {
 	}
 }
 c_trembley = {
+	7299.1.1 = { 
+	liege = d_tarrich
+	holder = Trembley_200
+}
 	7854.1.1 = {
 		holder = Trembley_1
 		liege = d_tarrich
@@ -2228,7 +2289,7 @@ d_crakehall = {
 		liege = k_the_rock
 	}
 	7299.1.1 = {
-		holder = Crakehall_200
+		holder = Crakehall_13
 	}
 	7820.1.1 = {
 		holder = Crakehall_15
@@ -2394,6 +2455,10 @@ c_biltmore = {
 	6410.1.1 = {
 		holder = Hawthorne_27 # Lorent
 	}
+	7299.1.1 = { 
+	liege = d_crakehall
+	holder = Hawthorne_200
+}
 	7866.1.1 = {
 		holder = Hawthorne_8
 	}
@@ -2444,6 +2509,10 @@ c_broughton = {
 	50.1.1 = {
 		liege = d_crakehall
 	}
+	7299.1.1 = { 
+	liege = d_crakehall
+	holder = Merchant_200
+}
 	7820.1.1 = {
 		holder = Merchant_22
 	}
@@ -2506,6 +2575,10 @@ c_forthane = {
 	50.1.1 = {
 		liege = d_crakehall
 	}
+	7299.1.1 = { 
+	liege = d_crakehall
+	holder = Yew_200
+}
 	7839.1.1 = {
 		holder = Yew_10
 	}
@@ -2568,6 +2641,10 @@ c_greenrust = {
 	50.1.1 = {
 		liege = d_crakehall
 	}
+	7299.1.1 = { 
+	liege = d_crakehall
+	holder = Moreland_200
+}
 	7500.1.1 = {
 		holder = Moreland_41 # Roger
 	}
@@ -2776,6 +2853,10 @@ c_greybrocks = {
 	6694.1.1 = {
 		liege = d_denslane
 	}
+	7299.1.1 = { 
+	liege = d_denslane
+	holder = Brockryn_200
+}
 	7871.1.1 = {
 		holder = Brockryn_1
 	}
@@ -2833,6 +2914,10 @@ c_long_rock = {
 		liege = d_denslane
 		holder = Lydden_8
 	}
+	7299.1.1 = { 
+	liege = d_denslane
+	holder = Burrows_200
+}
 	7804.1.1 = {
 		holder = Lydden_99
 	}
@@ -2895,6 +2980,10 @@ c_raddle = {
 	6694.1.1 = {
 		liege = d_denslane
 	}
+	7299.1.1 = { 
+	liege = d_denslane
+	holder = Ferren_200
+}
 	7863.1.1 = {
 		holder = Ferren_5
 	}
@@ -2951,6 +3040,10 @@ c_stars_ridge = {
 	6694.1.1 = {
 		liege = d_denslane
 	}
+	7299.1.1 = { 
+	liege = d_denslane
+	holder = Peckledon_200
+}
 	7861.1.1 = {
 		holder = Peckledon_7
 	}
@@ -3186,6 +3279,10 @@ c_clifton = {
 	5390.1.1 = {
 		liege = d_fair_isle
 	}
+	7299.1.1 = { 
+	liege = d_fair_isle
+	holder = Clifton_200
+}
 	7817.1.1 = {
 		holder = Clifton_39
 	}
@@ -3431,6 +3528,10 @@ c_darrows = {
 	6435.1.1 = {
 		holder = Dulver_53
 	}
+	7299.1.1 = { 
+	liege = d_goldmarch
+	holder = Dulver_200
+}
 	7800.1.1 = {
 		holder = Dulver_12
 	}
@@ -3493,6 +3594,10 @@ c_darrows = {
 	}
 }
 c_golden_hills = {
+	7299.1.1 = { 
+	liege = d_goldmarch
+	holder = Algood_200
+}
 	7850.1.1 = {
 		holder = Algood_7
 	}
@@ -3703,6 +3808,10 @@ c_fearby = {
 	235.1.1 = {
 		liege = d_withermoore
 	}
+	7299.1.1 = { 
+	liege = d_withermoore
+	holder = Ruskyn_200
+}
 	7807.1.1 = {
 		holder = Ruskyn_24
 	}
@@ -3765,6 +3874,10 @@ c_old_ridge = {
 	235.1.1 = {
 		liege = d_withermoore
 	}
+	7299.1.1 = { 
+	liege = d_withermoore
+	holder = Westford_200
+}
 	7864.1.1 = {
 		holder = Westford_4
 	}
@@ -3827,6 +3940,10 @@ c_wyndemere = {
 	235.1.1 = {
 		liege = d_withermoore
 	}
+	7299.1.1 = { 
+	liege = d_withermoore
+	holder = Estren_200
+}
 	7879.1.1 = {
 		holder = Estren_4
 	}
@@ -4021,6 +4138,10 @@ c_hornvale = {
 	}
 }
 c_alderedge = {
+	7299.1.1 = { 
+	liege = d_hornvale
+	holder = Garner_200
+}
 	7866.1.1 = {
 		holder = Garner_4
 	}
@@ -4080,6 +4201,10 @@ c_alderedge = {
 	}
 }
 c_bymore = {
+	7299.1.1 = { 
+	liege = d_hornvale
+	holder = Lugus_200
+}
 	7874.1.1 = {
 		liege = d_hornvale
 	}
@@ -4139,6 +4264,10 @@ c_bymore = {
 	}
 }
 c_deadwater = {
+	7299.1.1 = { 
+	liege = d_hornvale
+	holder = Bettley_200
+}
 	7874.1.1 = {
 		liege = d_hornvale
 	}
@@ -4315,6 +4444,10 @@ c_feastfires = {
 	}
 }
 c_clever_cove = {
+	7299.1.1 = { 
+	liege = d_lanns_point
+	holder = Tarwick_200
+}
 	7831.1.1 = {
 		holder = Tarwick_24
 	}
@@ -4380,6 +4513,10 @@ c_kayce = {
 	6325.6.1 = {
 		holder = KenningK_4
 	}
+	7299.1.1 = { 
+	liege = d_lanns_point
+	holder = KenningK_200
+}
 	7866.1.1 = {
 		holder = KenningK_6
 		liege = d_lanns_point
@@ -4428,6 +4565,10 @@ c_kayce = {
 	}
 }
 c_kynlands = {
+	7299.1.1 = { 
+	liege = d_lanns_point
+	holder = Kyndall_200
+}
 	7800.1.1 = {
 		holder = Kyndall_31
 	}
@@ -4598,6 +4739,10 @@ c_roundtowers = {
 	}
 }
 c_stilwood = {
+	7299.1.1 = { 
+	liege = d_rundridge
+	holder = Stillwood_200
+}
 	7854.1.1 = {
 		liege = d_rundridge
 	}
@@ -4654,6 +4799,10 @@ c_stilwood = {
 	}
 }
 c_pleasant_hills = {
+	7299.1.1 = { 
+	liege = d_rundridge
+	holder = Merrell_200
+}
 	7809.1.1 = {
 		holder = Merrell_19
 	}
@@ -4716,6 +4865,10 @@ c_pleasant_hills = {
 	}
 }
 c_stingrock = {
+	7299.1.1 = { 
+	liege = d_rundridge
+	holder = Lorch_200
+}
 	7854.1.1 = {
 		liege = d_rundridge
 	}
@@ -4892,6 +5045,10 @@ c_silverhill = {
 	}
 }
 c_featherhorn = {
+	7299.1.1 = { 
+	liege = d_sterling
+	holder = Doggett_200
+}
 	7855.1.1 = {
 		liege = d_sterling
 	}
@@ -4948,6 +5105,10 @@ c_featherhorn = {
 	}
 }
 c_lansdale = {
+	7299.1.1 = {
+		holder = Stackspear_200
+		liege = d_haft_ridge
+	}
 	7806.1.1 = {
 		holder = Lansdale_20
 	}
@@ -5004,6 +5165,10 @@ c_lansdale = {
 	}
 }
 c_longbolt = {
+	7299.1.1 = { 
+	liege = d_sterling
+	holder = Drox_200
+}
 	7855.1.1 = {
 		liege = d_sterling
 	}
@@ -5063,6 +5228,10 @@ c_longbolt = {
 	}
 }
 c_louth = {
+	7299.1.1 = { 
+	liege = d_sterling
+	holder = Weaf_200
+}
 	7855.1.1 = {
 		liege = d_sterling
 	}
@@ -5122,6 +5291,10 @@ c_louth = {
 	}
 }
 c_redbramble = {
+	7299.1.1 = { 
+	liege = d_sterling
+	holder = Turnberry_200
+}
 	7855.1.1 = {
 		liege = d_sterling
 	}
@@ -5181,6 +5354,10 @@ c_redbramble = {
 	}
 }
 c_stonecliffe = {
+	7299.1.1 = { 
+	liege = d_haft_ridge
+	holder = Hamell_200
+}
 	7855.1.1 = {
 		liege = d_haft_ridge
 		holder = Serrett_5
@@ -5540,6 +5717,10 @@ c_eldress = {
 	}
 }
 c_vellon = {
+	7299.1.1 = { 
+	liege = d_the_crag
+	holder = Tinpenny_200
+}
 	7860.1.1 = {
 		liege = d_the_crag
 	}
@@ -5596,6 +5777,10 @@ c_vellon = {
 	}
 }
 c_highview = {
+	7299.1.1 = { 
+	liege = d_the_crag
+	holder = Price_200
+}
 	7856.1.1 = {
 		holder = Price_1
 		liege = d_the_crag
@@ -5776,6 +5961,10 @@ c_cornfield = {
 	}
 }
 c_toll_pass = {
+	7299.1.1 = { 
+	liege = d_the_fieldlands
+	holder = Tortoll_200
+}
 	7856.1.1 = {
 		holder = Tortoll_22
 	}
@@ -5839,6 +6028,10 @@ c_toll_pass = {
 	}
 }
 c_greenfield = {
+	7299.1.1 = { 
+	liege = d_the_fieldlands
+	holder = Greenfield_200
+}
 	7861.1.1 = {
 		holder = Greenfield_9
 	}
@@ -6000,6 +6193,10 @@ c_worthmark = {
 	}
 }
 c_brixworth = {
+	7299.1.1 = { 
+	liege = d_the_gold_road
+	holder = Thanders_200
+}
 	7859.1.1 = {
 		holder = Thanders_1
 		liege = d_the_gold_road
@@ -6077,6 +6274,7 @@ c_riverspring = {
 	}
 	7297.1.1 = {
 		holder = Sarwyck_104
+		liege = d_the_gold_road
 	}
 	7340.1.1 = {
 		holder = Sarwyck_105
@@ -6191,6 +6389,10 @@ c_riverspring = {
 	}
 }
 c_rutland = {
+	7299.1.1 = { 
+	liege = d_haft_ridge
+	holder = Hamell_200
+}
 	7806.1.1 = {
 		holder = Hamell_38
 	}
@@ -6391,6 +6593,10 @@ c_the_golden_tooth = {
 	}
 }
 c_oxcross = {
+	7299.1.1 = { 
+	liege = d_the_golden_tooth
+	holder = Yarwyck_200
+}
 	7826.1.1 = {
 		liege = d_the_golden_tooth
 	}
@@ -6444,6 +6650,10 @@ c_oxcross = {
 	}
 }
 c_bellantine = {
+	7299.1.1 = { 
+	liege = d_the_golden_tooth
+	holder = Dabell_200
+}
 	7826.1.1 = {
 		liege = d_the_golden_tooth
 	}
@@ -6506,6 +6716,10 @@ c_bellantine = {
 	}
 }
 c_broadhollow = {
+	7299.1.1 = { 
+	liege = d_the_golden_tooth
+	holder = Headingley_200
+}
 	7826.1.1 = {
 		liege = d_the_golden_tooth
 	}
@@ -6559,6 +6773,10 @@ c_broadhollow = {
 	}
 }
 c_wellsmere = {
+	7299.1.1 = { 
+	liege = d_the_fieldlands
+	holder = Voyald_200
+}
 	7840.1.1 = {
 		holder = Voyald_78
 	}
@@ -6615,6 +6833,10 @@ c_midvale = {
 	6640.1.1 = {
 		holder = Wrexley_6
 	}
+	7299.1.1 = { 
+	liege = d_tarrich
+	holder = Wrexley_200
+}
 	7817.1.1 = {
 		holder = Wrexley_8
 	}
@@ -6683,6 +6905,10 @@ c_midvale = {
 	}
 }
 c_averill = {
+	7299.1.1 = { 
+	liege = d_the_fieldlands
+	holder = Avery_200
+}
 	7866.1.1 = {
 		liege = d_the_fieldlands
 	}
