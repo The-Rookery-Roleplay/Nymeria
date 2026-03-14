@@ -39,6 +39,7 @@ nymeria_stormlands_events_cycle2 = {
                 }
             }
             character:Durrandon_62 = {
+                # trigger_event = nymeria_stormlands.0004
                 trigger_event = nymeria_stormlands.0002
             }
         }

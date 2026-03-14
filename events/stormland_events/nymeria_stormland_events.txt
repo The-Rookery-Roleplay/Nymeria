@@ -8,7 +8,7 @@ nymeria_stormlands.0001 = {
     theme = war
     left_portrait = {
         character = scope:storm_king
-        animation = aggressive
+        animation = anger
     }
 
     trigger = {
@@ -93,12 +93,149 @@ nymeria_stormlands.0003 = {
     theme = war
     left_portrait = {
         character = character:Durrandon_62
-        animation = threat
+        animation = anger
     }
 
     option = {
         name = nymeria_stormlands.0003.a
         ai_chance = { base = 100 }
         custom_tooltip = nymeria_stormlands0003a_popup
+    }
+}
+
+# nymeria_stormlands.0004 = {
+#     hidden = yes
+#     type = character_event
+
+#     option = {
+#         name = nymeria_stormlands.0004.a
+#     }
+
+#     immediate = {
+#         hidden_effect = {
+#             create_maa_regiment = {
+#                 type = light_footmen
+#                 check_can_recruit = no
+#                 size = 6
+#             }
+#             create_maa_regiment = {
+#                 type = pikemen_unit
+#                 check_can_recruit = no
+#                 size = 6
+#             }
+#             create_maa_regiment = {
+#                 type = armored_footmen
+#                 check_can_recruit = no
+#                 size = 6
+#             }
+#             create_maa_regiment = {  
+#                 type = bowmen
+#                 check_can_recruit = no
+#                 size = 6
+#             }
+#             create_maa_regiment = {
+#                 type = armored_horsemen
+#                 check_can_recruit = no
+#                 size = 5
+#             }
+#             create_maa_regiment = {
+#                 type = crossbowmen
+#                 check_can_recruit = no
+#                 size = 6
+#             }
+#             create_maa_regiment = {
+#                 type = trebuchet
+#                 check_can_recruit = no
+#                 size = 6
+#             }
+#         }
+#     }
+# }
+
+nymeria_stormlands.0005 = {
+    type = character_event
+    title = nymeria_stormlands.0005.t
+    desc = nymeria_stormlands.0005.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = war_over_win
+    }
+
+    option = {
+        name = nymeria_stormlands.0005.a
+        ai_chance = { base = 100 }
+        trigger_event = {
+            id = nymeria_stormlands.0006
+            days = 365
+        }
+        custom_tooltip = nymeria_stormlands0005a_popup
+    }
+}
+
+nymeria_stormlands.0006 = {
+    type = character_event
+    title = nymeria_stormlands.0006.t
+    desc = nymeria_stormlands.0006.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = anger
+    }
+    right_portrait = {
+        character = title:k_the_blackwater.holder
+        animation = fear
+    }
+
+    trigger = {
+        has_game_rule = nymeria_stormlands_story_on
+        this = character:Durrandon_62
+        title:k_the_blackwater = {
+            exists = holder
+        }
+        NOT = { has_character_flag = nymeria_stormlands_story_ended }
+    }
+
+    immediate = {
+        save_scope_as = storm_king
+        title:k_the_blackwater.holder = {
+            save_scope_as = blackwater_holder
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0006.a
+        ai_chance = { base = 100 }
+        scope:storm_king = {
+            start_war = {
+                target = scope:blackwater_holder
+                casus_belli = nymeria_blackwater_conquest
+                title = k_the_blackwater
+            }
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0006.b
+        ai_chance = { base = 0 }
+        set_character_flag = nymeria_stormlands_story_ended
+        custom_tooltip = nymeria_stormlands0006b_popup
+    }
+}
+
+nymeria_stormlands.0008 = {
+    type = character_event
+    title = nymeria_stormlands.0008.t
+    desc = nymeria_stormlands.0008.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = anger
+    }
+
+    option = {
+        name = nymeria_stormlands.0008.a
+        ai_chance = { base = 100 }
+        custom_tooltip = nymeria_stormlands0008a_popup
     }
 }

@@ -10,3 +10,9 @@ nymeria_hook_conquest_white_peace_desc: "The Storm King's march on the Hook has 
 nymeria_hook_conquest_defeat_desc: "The march on the Hook has become a march on Storm's End. The banners of the Stag lie trampled in the mud, the war is lost, the Bloody Stag utterly crushed. What began as conquest ends in humiliation."
 WAR_NAME_NYMERIA_HOOK_CONQUEST: "War for the Hook"
 
+WAR_NAME_NYMERIA_BLACKWATER_CONQUEST: "War for the Blackwater"
+nymeria_blackwater_conquest_victory_desc: "The Blackwater Kingdom has fallen. Its king is in chains, its banners torn down, the Storm King's dominion stretches further north than ever before."
+nymeria_blackwater_conquest:0 "War for the Blackwater"
+nymeria_blackwater_conquest_white_peace_desc: "The march on the Blackwater has stalled. Durrandon returns to Storm's End empty-handed, his ambitions checked once more."
+nymeria_blackwater_conquest_defeat_desc: "The Stormlands have been turned back. The Blackwater holds."
+nymeria_blackwater_conquest_destroy_tt: "The Kingdom of the Blackwater will be destroyed."
