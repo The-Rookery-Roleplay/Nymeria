@@ -17,3 +17,13 @@ nymeria_dorne_story = {
     nymeria_dorne_story_on = {}
     nymeria_dorne_story_off = {}
 }
+
+nymeria_stormlands_story = {
+    categories = {
+        nymeria
+    }
+    default = nymeria_stormlands_story_on
+
+    nymeria_stormlands_story_on = {}
+    nymeria_stormlands_story_off = {}
+}

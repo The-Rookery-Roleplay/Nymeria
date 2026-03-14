@@ -2289,7 +2289,7 @@ d_crakehall = {
 		liege = k_the_rock
 	}
 	7299.1.1 = {
-		holder = Crakehall_13
+		holder = Crakehall_200
 	}
 	7820.1.1 = {
 		holder = Crakehall_15

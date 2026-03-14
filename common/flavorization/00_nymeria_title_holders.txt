@@ -1,0 +1,179 @@
+﻿# The Hook King/Queen themselves
+hook_king_flavorization = {
+    type = character
+    gender = male
+    tier = kingdom
+    special = holder
+    priority = 100
+    titles = { k_the_hook }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = yes
+    }
+}
+
+hook_king_flavorization_female = {
+    type = character
+    gender = female
+    tier = kingdom
+    special = holder
+    priority = 100
+    titles = { k_the_hook }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = yes
+    }
+}
+
+# The spouse of the Hook King/Queen
+hook_queen_consort_flavorization = {
+    type = character
+    gender = female
+    tier = kingdom
+    special = holder
+    priority = 99
+    titles = { k_the_hook }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = no
+        spouse_takes_title = yes
+    }
+}
+
+hook_king_consort_flavorization = {
+    type = character
+    gender = male
+    tier = kingdom
+    special = holder
+    priority = 99
+    titles = { k_the_hook }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = no
+        spouse_takes_title = yes
+    }
+}
+
+# Holders
+duskwashes_king_flavorization = {
+    type = character
+    gender = male
+    tier = kingdom
+    special = holder
+    priority = 100
+    titles = { k_duskwashes }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = yes
+    }
+}
+
+duskwashes_queen_flavorization = {
+    type = character
+    gender = female
+    tier = kingdom
+    special = holder
+    priority = 100
+    titles = { k_duskwashes }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = yes
+    }
+}
+
+# Consorts
+duskwashes_queen_consort_flavorization = {
+    type = character
+    gender = female
+    tier = kingdom
+    special = holder
+    priority = 99
+    titles = { k_duskwashes }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = no
+        spouse_takes_title = yes
+    }
+}
+
+duskwashes_king_consort_flavorization = {
+    type = character
+    gender = male
+    tier = kingdom
+    special = holder
+    priority = 99
+    titles = { k_duskwashes }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = no
+        spouse_takes_title = yes
+    }
+}
+
+# Holders
+river_king_flavorization = {
+    type = character
+    gender = male
+    tier = kingdom
+    special = holder
+    priority = 100
+    titles = { k_red_rambles k_the_blackwater }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = yes
+    }
+}
+
+river_queen_flavorization = {
+    type = character
+    gender = female
+    tier = kingdom
+    special = holder
+    priority = 100
+    titles = { k_red_rambles k_the_blackwater }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = yes
+    }
+}
+
+# Consorts
+river_queen_consort_flavorization = {
+    type = character
+    gender = female
+    tier = kingdom
+    special = holder
+    priority = 99
+    titles = { k_red_rambles k_the_blackwater }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = no
+        spouse_takes_title = yes
+    }
+}
+
+river_king_consort_flavorization = {
+    type = character
+    gender = male
+    tier = kingdom
+    special = holder
+    priority = 99
+    titles = { k_red_rambles k_the_blackwater }
+
+    flavourization_rules = {
+        only_independent = yes
+        only_holder = no
+        spouse_takes_title = yes
+    }
+}

@@ -26,3 +26,27 @@
  nymeria_laamp_events.0005.desc:0 "A letter has returned from #bold Mors Martell#!, lord among the Greenblood.\n\nHe offers the Rhoynar a place to settle in #bold the Mouth of the Greenblood#!, where the Greenblood meets the Summer Sea. In exchange, he asks for your support in the struggles of Dorne.\n\nYet his proposal carries one final condition, that you bind your fates together in marriage."
 
  nymeria_laamp_events.0005.a:0 "A tempting offer."
+
+
+
+
+
+
+
+ # Stormland Events
+
+ nymeria_stormlands.0001.t: "The Blackwater Beckons"
+ nymeria_stormlands.0001.desc: "The Storm Kings of old cast their eyes north to the Blackwater, and once, they held it. Yet the Hook Kings drove us back, clawing away what was rightfully ours.\n\nNo more. I am Durran of House Durrandon, the Bloody Stag, and I will remind the Hook that the Stormlands do not forget. When the Hook falls, the Blackwater follows, and with it, a legacy that will echo for generations.\n\n#weak Historic Note: Durran Durrandon's conquest of the Hook and the Blackwater laid the foundation for later Storm Kings to subjugate the Riverlands and break the Shadow Kings of Duskendale.#!"
+ nymeria_stormlands.0001.a: "Ours is the Fury."
+ nymeria_stormlands0001a_popup: "In a few months, the Storm King will receive the first event to begin his march on the Blackwater."
+
+ nymeria_stormlands.0002.t: "March on the Hook"
+ nymeria_stormlands.0002.desc: "Generations ago, the Hook bent the knee to Storm's End. Its lords swore oaths, paid tribute, and called themselves loyal subjects of the Storm King.\n\nThen they broke those oaths. While our forebears were occupied elsewhere, the Hook kings seized their chance, declaring themselves free, independent, untouchable. They have hidden behind that lie ever since.\n\nNo more. The Stag does not forget. The Hook was ours, and it will be ours again."
+ nymeria_stormlands.0002.a: "The Hook shall be ours again. March."
+ nymeria_stormlands.0002.b: "We cannot risk war right now. The Hook can wait."
+ nymeria_stormlands0002b_popup: "This will end the Stormlands Story. No further events will trigger for the Storm King's campaign."
+
+ nymeria_stormlands.0003.t: "The Stag Stirs"
+ nymeria_stormlands.0003.desc: "Word has reached us from the south. The Storm King Durran Durrandon, they call him the Bloody Stag, has begun rallying his banners. His eyes turn north, towards the Blackwater, toward the Hook, toward everything we have built.\n\nHe is ambitious, ruthless, and hungry. Our fathers knew the Storm Kings well enough to fear them. Perhaps we should too."
+ nymeria_stormlands.0003.a: "We will face the Storm."
+ nymeria_stormlands0003a_popup: "It will only be a matter of time until the Stag marches for our borders."
