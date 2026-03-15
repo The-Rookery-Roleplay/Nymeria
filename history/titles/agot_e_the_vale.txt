@@ -1440,6 +1440,7 @@ c_crestfall = {
 		holder = Marsten_16
 	}
 	7299.1.1 = {
+		liege = d_crowncrests
 		holder = Marsten_200
 	}
 	7830.1.1 = {
@@ -3537,6 +3538,9 @@ d_ninestars = {
 	}
 	5800.1.1 = {
 		liege = e_the_vale
+	}
+	7299.1.1 = {
+		holder = Templeton_200
 	}
 	7856.1.1 = {
 		holder = Templeton_7
