@@ -134960,6 +134960,7 @@ Teague_200 = {
 	name = Lorimer
 	dynasty = dynn_Teague
 	random_traits = yes
+	dna = nymeriaswar_lorimer_teague
 	religion = fots_seven
 	culture = riverman_main
 	father = Teague_199
@@ -135095,6 +135096,7 @@ Piper_200 = {
 
 Vance_Wayfarers_Rest_200 = {
 	name = Quentyn
+	dna = nymeriaswar_quentyn
 	dynasty = dynn_Vance
 	random_traits = yes
 	religion = fots_seven
