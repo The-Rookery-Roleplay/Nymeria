@@ -80633,6 +80633,7 @@ Hazeley_60 = {
 
 Darklyn_200 = {
 	name = Symond
+	dna = nymeriaswar_symond_darklyn
 	dynasty = dynn_Darklyn
 	random_traits = yes
 	religion = fots_seven
