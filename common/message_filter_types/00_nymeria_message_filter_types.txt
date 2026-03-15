@@ -1,0 +1,3 @@
+﻿msg_nymerias_war = {
+    display = popup
+}
