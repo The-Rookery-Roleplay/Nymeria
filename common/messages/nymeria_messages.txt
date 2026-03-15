@@ -1,0 +1,4 @@
+msg_nymeria_durrandon_border_claim = {
+    display = toast
+    style = neutral
+}
