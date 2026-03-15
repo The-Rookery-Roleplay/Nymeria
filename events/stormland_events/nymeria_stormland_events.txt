@@ -8,7 +8,7 @@ nymeria_stormlands.0001 = {
     theme = war
     left_portrait = {
         character = scope:storm_king
-        animation = anger
+        animation = rage
     }
 
     trigger = {
@@ -98,8 +98,54 @@ nymeria_stormlands.0003 = {
 
     option = {
         name = nymeria_stormlands.0003.a
+        trigger = {
+            NOT = { any_held_title = { this = title:k_duskwashes } }
+            NOT = { any_held_title = { this = title:k_the_blackwater } }
+        }
         ai_chance = { base = 100 }
+        add_truce_both_ways = {
+            character = title:k_the_blackwater.holder
+            days = 1825
+        }
         custom_tooltip = nymeria_stormlands0003a_popup
+    }
+
+    option = {
+        name = nymeria_stormlands.0003.b
+        trigger = {
+            any_held_title = { this = title:k_duskwashes }
+            NOT = { any_held_title = { this = title:k_the_blackwater } }
+        }
+        ai_chance = { base = 100 }
+        add_truce_both_ways = {
+            character = title:e_the_riverlands.holder
+            days = 1825
+        }
+        add_truce_both_ways = {
+            character = title:k_the_blackwater.holder
+            days = 1825
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0003.c
+        trigger = {
+            any_held_title = { this = title:k_the_blackwater }
+            NOT = { any_held_title = { this = title:k_duskwashes } }
+        }
+        ai_chance = { base = 100 }
+        add_truce_both_ways = {
+            character = title:e_the_riverlands.holder
+            days = 1825
+        }
+        add_truce_both_ways = {
+            character = title:k_duskwashes.holder
+            days = 1825
+        }
+        add_truce_both_ways = {
+            character = title:e_the_reach.holder
+            days = 1825
+        }
     }
 }
 
@@ -237,5 +283,445 @@ nymeria_stormlands.0008 = {
         name = nymeria_stormlands.0008.a
         ai_chance = { base = 100 }
         custom_tooltip = nymeria_stormlands0008a_popup
+    }
+}
+
+nymeria_stormlands.0009 = {
+    type = character_event
+    title = nymeria_stormlands.0009.t
+    desc = nymeria_stormlands.0009.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = anger
+    }
+
+    option = {
+        name = nymeria_stormlands.0009.a
+        ai_chance = { base = 100 }
+    }
+}
+
+nymeria_stormlands.0010 = {
+    type = character_event
+    title = nymeria_stormlands.0010.t
+    desc = nymeria_stormlands.0010.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = anger
+    }
+
+    option = {
+        name = nymeria_stormlands.0010.a
+        ai_chance = { base = 100 }
+        custom_tooltip = nymeria_stormlands0010a_popup
+    }
+
+    option = {
+        name = nymeria_stormlands.0010.b
+        ai_chance = { base = 100 }
+        custom_tooltip = nymeria_stormlands0010b_popup
+        title:e_the_riverlands.holder = {
+            trigger_event = nymeria_stormlands.0011
+        }
+    }
+}
+
+nymeria_stormlands.0011 = {
+    type = character_event
+    title = nymeria_stormlands.0011.t
+    desc = nymeria_stormlands.0011.desc
+    theme = diplomacy
+    left_portrait = {
+        character = title:k_duskwashes.holder
+        animation = worry
+    }
+    right_portrait = {
+        character = root
+        animation = thinking
+    }
+
+    immediate = {
+        title:k_duskwashes.holder = {
+            save_scope_as = dusk_king
+        }
+    }
+
+    # Option 1 - Protect the Blackwater, form alliance
+    option = {
+        name = nymeria_stormlands.0011.a
+        ai_chance = { base = 25 }
+        create_alliance = {
+            target = scope:dusk_king
+        }
+        scope:dusk_king = {
+            trigger_event = nymeria_stormlands.0012
+        }
+        character:Durrandon_62 = {
+            trigger_event = nymeria_stormlands.0017
+        }
+    }
+
+    # Option 2 - Protect them if d_deerfield becomes vassal
+    option = {
+        name = nymeria_stormlands.0011.b
+        ai_chance = { base = 50 }
+        scope:dusk_king = {
+            trigger_event = nymeria_stormlands.0015
+        }
+    }
+
+    # Option 3 - Leave them to their own devices
+    option = {
+        name = nymeria_stormlands.0011.c
+        ai_chance = { base = 25 }
+        scope:dusk_king = {
+            trigger_event = nymeria_stormlands.0014
+        }
+    }
+}
+
+nymeria_stormlands.0012 = {
+    type = character_event
+    title = nymeria_stormlands.0012.t
+    desc = nymeria_stormlands.0012.desc
+    theme = diplomacy
+    left_portrait = {
+        character = title:e_the_riverlands.holder
+        animation = happiness
+    }
+
+    option = {
+        name = nymeria_stormlands.0012.a
+        ai_chance = { base = 100 }
+    }
+}
+
+nymeria_stormlands.0013 = {
+    type = character_event
+    title = nymeria_stormlands.0013.t
+    desc = nymeria_stormlands.0013.desc
+    theme = diplomacy
+    left_portrait = {
+        character = title:e_the_riverlands.holder
+        animation = threat
+    }
+
+    option = {
+        name = nymeria_stormlands.0013.a
+        ai_chance = { base = 100 }
+    }
+}
+
+nymeria_stormlands.0014 = {
+    type = character_event
+    title = nymeria_stormlands.0014.t
+    desc = nymeria_stormlands.0014.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = threat
+    }
+
+    option = {
+        name = nymeria_stormlands.0014.a
+        ai_chance = { base = 100 }
+    }
+}
+
+nymeria_stormlands.0015 = {
+    type = character_event
+    title = nymeria_stormlands.0015.t
+    desc = nymeria_stormlands.0015.desc
+    theme = diplomacy
+    left_portrait = {
+        character = title:e_the_riverlands.holder
+        animation = threat
+    }
+
+    immediate = {
+        title:e_the_riverlands.holder = {
+            save_scope_as = river_king
+        }
+    }
+
+    # Accept
+    option = {
+        name = nymeria_stormlands.0015.a
+        ai_chance = { base = 75 }
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = deerfield_change
+        }
+        title:d_deerfield.holder = {
+            change_liege = {
+                liege = scope:river_king
+                change = scope:deerfield_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:deerfield_change
+        create_alliance = {
+            target = scope:river_king
+        }
+        scope:river_king = {
+            trigger_event = nymeria_stormlands.0013
+        }
+        character:Durrandon_62 = {
+            trigger_event = nymeria_stormlands.0017
+        }
+    }
+
+    # Refuse
+    option = {
+        name = nymeria_stormlands.0015.b
+        ai_chance = { base = 25 }
+        scope:river_king = {
+            trigger_event = nymeria_stormlands.0016
+        }
+    }
+}
+
+nymeria_stormlands.0016 = {
+    type = character_event
+    title = nymeria_stormlands.0016.t
+    desc = nymeria_stormlands.0016.desc
+    theme = diplomacy
+    left_portrait = {
+        character = title:k_duskwashes.holder
+        animation = disapproval
+    }
+
+    option = {
+        name = nymeria_stormlands.0016.a
+        ai_chance = { base = 100 }
+    }
+}
+
+nymeria_stormlands.0017 = {
+    type = character_event
+    title = nymeria_stormlands.0017.t
+    desc = nymeria_stormlands.0017.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = anger
+    }
+    right_portrait = {
+        character = title:k_duskwashes.holder
+        animation = fear
+    }
+
+    immediate = {
+        save_scope_as = storm_king
+        title:k_duskwashes.holder = {
+            save_scope_as = dusk_holder
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0017.a
+        ai_chance = { base = 100 }
+        scope:storm_king = {
+            start_war = {
+                target = scope:dusk_holder
+                casus_belli = nymeria_duskwashes_conquest
+                title = k_duskwashes
+            }
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0017.b
+        ai_chance = { base = 0 }
+        set_character_flag = nymeria_stormlands_story_ended
+        custom_tooltip = nymeria_stormlands0017b_popup
+    }
+}
+
+
+# Reach vs Stormlands Events
+
+nymeria_stormlands.0049 = {
+    type = character_event
+    hidden = yes
+
+    trigger = {
+        has_character_flag = nymeria_gardener_greybeard
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                has_game_rule = nymeria_stormlands_story_on
+                character:Durrandon_62 = { is_alive = yes }
+                NOT = {
+                    character:Durrandon_62 = {
+                        has_character_flag = nymeria_stormlands_story_ended
+                    }
+                }
+            }
+            character:Durrandon_62 = {
+                trigger_event = {
+                    id = nymeria_stormlands.0050
+                    days = 5
+                }
+            }
+        }
+    }
+
+    option = { name = OK }
+}
+
+nymeria_stormlands.0050 = {
+    type = character_event
+    title = nymeria_stormlands.0050.t
+    desc = nymeria_stormlands.0050.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = scheme
+    }
+    right_portrait = {
+        character = title:e_the_reach.holder
+        animation = worry
+    }
+
+    trigger = {
+        this = character:Durrandon_62
+    }
+
+    immediate = {
+        save_scope_as = storm_king
+        title:e_the_reach.holder = {
+            save_scope_as = reach_holder
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0050.a
+        ai_chance = { base = 99 }
+        custom_tooltip = nymeria_stormlands0050a_popup
+        title:e_the_reach.holder = {
+            trigger_event = {
+                id = nymeria_stormlands.0051
+                days = 5
+            }
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0050.b
+        ai_chance = { base = 1 }
+        custom_tooltip = nymeria_stormlands0050b_popup
+    }
+}
+
+nymeria_stormlands.0051 = {
+    type = character_event
+    title = nymeria_stormlands.0051.t
+    desc = nymeria_stormlands.0051.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = threat
+    }
+    right_portrait = {
+        character = root
+        animation = worry
+    }
+
+    immediate = {
+        character:Durrandon_62 = {
+            save_scope_as = storm_king
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0051.a
+        ai_chance = { base = 0 }
+        custom_tooltip = nymeria_stormlands0051a_popup
+        character:Durrandon_62 = {
+            trigger_event = nymeria_stormlands.0052
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0051.b
+        ai_chance = { base = 100 }
+        custom_tooltip = nymeria_stormlands0051b_popup
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = border_change
+        }
+        title:d_blueburn.holder = {
+            change_liege = {
+                liege = scope:storm_king
+                change = scope:border_change
+            }
+        }
+        title:d_tumbleton.holder = {
+            change_liege = {
+                liege = scope:storm_king
+                change = scope:border_change
+            }
+        }
+        title:d_heartland_heights.holder = {
+            change_liege = {
+                liege = scope:storm_king
+                change = scope:border_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:border_change
+
+        add_truce_both_ways = {
+            character = character:Durrandon_62
+            days = 1825
+        }
+
+        every_player = {
+            send_interface_message = {
+                type = msg_nymeria_durrandon_border_claim
+                title = nymeria_stormlands0054_msg_title
+                desc = nymeria_stormlands0054_msg_desc
+                left_icon = character:Durrandon_62
+            }
+        }
+
+        character:Durrandon_62 = {
+            trigger_event = nymeria_stormlands.0053
+        }
+    }
+}
+
+nymeria_stormlands.0052 = {
+    type = character_event
+    title = nymeria_stormlands.0052.t
+    desc = nymeria_stormlands.0052.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = anger
+    }
+
+    option = {
+        name = nymeria_stormlands.0052.a
+        ai_chance = { base = 100 }
+    }
+}
+
+nymeria_stormlands.0053 = {
+    type = character_event
+    title = nymeria_stormlands.0053.t
+    desc = nymeria_stormlands.0053.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = war_over_win
+    }
+
+    option = {
+        name = nymeria_stormlands.0053.a
+        ai_chance = { base = 100 }
     }
 }
