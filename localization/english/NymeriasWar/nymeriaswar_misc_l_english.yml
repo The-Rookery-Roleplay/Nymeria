@@ -22,3 +22,7 @@ nymeria_duskwashes_conquest_victory_desc: "Duskendale has fallen. The last kingd
 nymeria_duskwashes_conquest_white_peace_desc: "The march on Duskendale has stalled. The Stag returns to Storm's End empty handed."
 nymeria_duskwashes_conquest_defeat_desc: "The Stormlands have been turned back. Duskendale holds — for now."
 nymeria_duskwashes_conquest_destroy_tt: "The Kingdom of Duskendale will be destroyed."
+nymeria_duskwashes_conquest:0 "War for Duskendale"
+
+message_filter_msg_nymerias_war:0 "Nymeria's War Messages"
+message_filter_msg_nymerias_war_desc:0 "All messages related to the scripted campaigns and events of Nymeria's War."

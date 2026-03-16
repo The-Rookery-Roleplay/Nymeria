@@ -110,13 +110,22 @@
  nymeria_stormlands.0016.a: "Then he faces the Storm alone. So be it."
 
  nymeria_stormlands.0017.t: "Duskendale Seeks Allies"
- nymeria_stormlands.0017.desc: "Word has reached Storm's End. The King of Duskendale, desperate and fearful, has sought the protection of the Riverlands. An alliance has been formed — a direct attempt to check the Stag's expansion.\n\nThis cannot be tolerated. Duskendale must fall before this alliance can take root."
+ nymeria_stormlands.0017.desc: "Word has reached Storm's End. The King of Duskendale, desperate and fearful, has sought the protection of the Riverlands. An alliance has been formed, a direct attempt to check the Stag's expansion.\n\nThis cannot be tolerated. Duskendale must fall before this alliance can take root."
  nymeria_stormlands.0017.a: "March on Duskendale. Crush them before they can be saved."
- nymeria_stormlands.0017.b: "We cannot risk war right now. The Stag rests."
- nymeria_stormlands0017b_popup: "This will end the Stormlands Story. No further events will trigger for the Storm King's campaign."
+ nymeria_stormlands.0017.b: "Not yet. Give it another year, then we march."
+ nymeria_stormlands0017b_popup: "The Storm King will delay the march on Duskendale by one year."
+ nymeria_stormlands.0017.c: "We cannot risk this war. The campaign ends here."
+ nymeria_stormlands0017c_popup: "This will end the Stormlands Story. No further events will trigger for the Storm King's campaign."
+ 
+
+ nymeria_stormlands.0018.t: "The Duskendale Question"
+ nymeria_stormlands.0018.desc: "Duskendale still stands. The Stag has waited long enough, the time to march is now, before they grow stronger or find more allies."
+ nymeria_stormlands.0018.a: "March on Duskendale. No more delays."
+ nymeria_stormlands.0018.b: "Not yet. We wait another season."
+ nymeria_stormlands.0018.c: "Leave Duskendale be. The campaign is over."
 
  nymeria_stormlands.0050.t: "The Greybeard is Dead"
- nymeria_stormlands.0050.desc: "Word arrives from the Reach — old Gardener, the Greybeard, is dead. The great lords of the Reach scramble for position, their eyes turned inward, their armies distracted by succession and politics.\n\nThe borderlands lie exposed. This is our moment — we could march in and take what has long been within our reach, and none would stop us."
+ nymeria_stormlands.0050.desc: "Word arrives from the Reach, old Gardener, the Greybeard, is dead. The great lords of the Reach scramble for position, their eyes turned inward, their armies distracted by succession and politics.\n\nThe borderlands lie exposed. This is our moment, we could march in and take what has long been within our reach, and none would stop us."
  nymeria_stormlands.0050.a: "The Reach is in chaos. March on the borderlands."
  nymeria_stormlands.0050.b: "Leave the Reach to its grief. We will not strike a mourning realm."
  nymeria_stormlands0050a_popup: "The Storm King will forcefully occupy the borderlands. The new Reach lord will be given the chance to contest this."
@@ -138,5 +147,10 @@
  nymeria_stormlands.0053.a: "The Reach has learned its place."
 
  nymeria_stormlands.0054.t: "A Declaration from Storm's End"
- nymeria_stormlands.0054.desc: "A raven bearing the black stag seal of House Durrandon arrives at court. The message within is brief and to the point:\n\n\"I, Durran of House Durrandon, Storm King of the Stormlands, do hereby declare that the lands of Blueburn, Tumbleton and Heartland Heights are rightfully mine by conquest and claim. Let no lord contest what the Stag has taken. The borderlands belong to Storm's End — now and forever.\"\n\n#weak — Durran Durrandon, the Bloody Stag, Storm King of the Stormlands#!"
+ nymeria_stormlands.0054.desc: "A raven bearing the black stag seal of House Durrandon arrives at court. The message within is brief and to the point:\n\n\"I, Durran of House Durrandon, Storm King of the Stormlands, do hereby declare that the lands of Blueburn, Tumbleton and Heartland Heights are rightfully mine by conquest and claim. Let no lord contest what the Stag has taken. The borderlands belong to Storm's End, now and forever.\"\n\n#weak — Durran Durrandon, the Bloody Stag, Storm King of the Stormlands#!"
  nymeria_stormlands.0054.a: "Noted."
+
+ msg_nymeria_durrandon_border_claim:0 "A Declaration from Storm's End"
+ msg_nymeria_durrandon_border_claim_desc:0 "I, Durran of House Durrandon, Storm King of the Stormlands, do hereby declare that Blueburn, Tumbleton and Heartland Heights are rightfully mine. Let no lord contest what the Stag has taken."
+
+ 

@@ -1,4 +1,4 @@
-﻿nymeria_hook_conquest = {
+﻿nymeria_hook_conquest = { # War of the Hook
     group = conquest
     icon = invasion
 
@@ -7,7 +7,6 @@
 
     target_titles = none
     white_peace_possible = no
-    
 
     valid_to_start = { always = no }
     allowed_for_character = { always = no }
@@ -35,8 +34,11 @@
         title:k_duskwashes.holder = {
             trigger_event = nymeria_stormlands.0008
         }
-        
-        scope:attacker = { show_pow_release_message_effect = yes }
+
+        scope:attacker = {
+            show_pow_release_message_effect = yes
+            add_prestige = 500
+        }
 
         # Step 1: Take k_the_hook
         create_title_and_vassal_change = {
@@ -243,7 +245,7 @@
     interface_priority = 120
 }
 
-nymeria_blackwater_conquest = {
+nymeria_blackwater_conquest = { # War of the Blackwater
     group = conquest
     icon = invasion
 
@@ -272,13 +274,17 @@ nymeria_blackwater_conquest = {
 
     # --- WIN ---
     on_victory = {
-        # Fire events on Blackwater victory
-        scope:attacker = { 
-            show_pow_release_message_effect = yes 
+        scope:attacker = {
+            show_pow_release_message_effect = yes
+            add_prestige = 500
+            add_character_flag = nymeria_duskwashes_war_pending
             trigger_event = nymeria_stormlands.0009
         }
         title:k_duskwashes.holder = {
-            trigger_event = nymeria_stormlands.0010
+            trigger_event = {
+                id = nymeria_stormlands.0010
+                days = 30
+            }
         }
         # Step 1: Take k_the_blackwater and all vassals
         create_title_and_vassal_change = {
@@ -427,11 +433,6 @@ nymeria_blackwater_conquest = {
             }
         }
 
-        # Step 6: Fire victory flavor event
-        scope:attacker = {
-            trigger_event = nymeria_stormlands.0007
-        }
-
         hidden_effect = {
             scope:attacker = {
                 add_truce_both_ways = {
@@ -453,6 +454,7 @@ nymeria_blackwater_conquest = {
             }
         }
     }
+
     # --- LOSE --- (placeholder for now)
     on_defeat = {
         hidden_effect = {
@@ -488,7 +490,7 @@ nymeria_blackwater_conquest = {
     interface_priority = 120
 }
 
-nymeria_duskwashes_conquest = {
+nymeria_duskwashes_conquest = { # War of Duskendale
     group = conquest
     icon = invasion
 
@@ -496,7 +498,7 @@ nymeria_duskwashes_conquest = {
     my_war_name = "WAR_NAME_NYMERIA_DUSKWASHES_CONQUEST"
 
     target_titles = none
-    white_peace_possible = yes
+    white_peace_possible = no
 
     valid_to_start = { always = no }
     allowed_for_character = { always = no }
@@ -517,7 +519,11 @@ nymeria_duskwashes_conquest = {
 
     # --- WIN ---
     on_victory = {
-        scope:attacker = { show_pow_release_message_effect = yes }
+        scope:attacker = {
+            show_pow_release_message_effect = yes
+            add_prestige = 500
+            add_pressed_claim = title:e_the_riverlands
+        }
 
         # Step 1: Take k_duskwashes
         create_title_and_vassal_change = {
@@ -617,8 +623,27 @@ nymeria_duskwashes_conquest = {
         }
     }
 
-    # --- LOSE --- (placeholder)
+    # --- LOSE ---
     on_defeat = {
+        # Transfer d_hayford and d_kings_landing to Duskendale
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = defeat_change
+        }
+        title:d_hayford.holder = {
+            change_liege = {
+                liege = scope:defender
+                change = scope:defeat_change
+            }
+        }
+        title:d_kings_landing.holder = {
+            change_liege = {
+                liege = scope:defender
+                change = scope:defeat_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:defeat_change
+
         hidden_effect = {
             scope:attacker = {
                 add_truce_both_ways = {

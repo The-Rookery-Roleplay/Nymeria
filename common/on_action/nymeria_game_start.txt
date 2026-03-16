@@ -8,6 +8,7 @@
 quarterly_playable_pulse = {
     on_actions = {
         nymeria_stormlands_events_cycle2
+        nymeria_stormlands_events_cycle3
     }
 }
 
@@ -69,6 +70,26 @@ nymeria_stormlands_events_cycle2 = {
             character:Durrandon_62 = {
                 # trigger_event = nymeria_stormlands.0004
                 trigger_event = nymeria_stormlands.0002
+            }
+        }
+    }
+}
+
+nymeria_stormlands_events_cycle3 = {
+    effect = {
+        if = {
+            limit = {
+                has_game_rule = nymeria_stormlands_story_on
+                character:Durrandon_62 = {
+                    has_character_flag = nymeria_duskwashes_war_pending
+                    is_at_war = no
+                    NOT = { has_character_flag = nymeria_stormlands_story_ended }
+                    NOT = { has_character_flag = nymeria_duskwashes_delay }
+                }
+                title:k_duskwashes = { exists = holder }
+            }
+            character:Durrandon_62 = {
+                trigger_event = nymeria_stormlands.0018
             }
         }
     }

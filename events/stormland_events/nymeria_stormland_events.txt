@@ -1,7 +1,7 @@
 ﻿namespace = nymeria_stormlands
 
 # Initial flavor event - fires on Durrandon_62
-nymeria_stormlands.0001 = {
+nymeria_stormlands.0001 = { # Durrandon's initial ambition event - sets stormlands_war_pending flag
     type = character_event
     title = nymeria_stormlands.0001.t
     desc = nymeria_stormlands.0001.desc
@@ -28,13 +28,14 @@ nymeria_stormlands.0001 = {
     option = {
         name = nymeria_stormlands.0001.a   # "Ours is the Fury"
         add_character_flag = stormlands_war_pending
+        add_trait = conqueror
         custom_tooltip = nymeria_stormlands0001a_popup
         ai_chance = { base = 100 }
     }
 }
 
-# Declaration of war event
-nymeria_stormlands.0002 = {
+# Declaration of war event on the Hook
+nymeria_stormlands.0002 = { # Durrandon declares war on the Hook
     type = character_event
     title = nymeria_stormlands.0002.t
     desc = nymeria_stormlands.0002.desc
@@ -66,7 +67,7 @@ nymeria_stormlands.0002 = {
     }
 
     option = {
-        name = nymeria_stormlands.0002.a
+        name = nymeria_stormlands.0002.a # Declare war on the Hook
         ai_chance = { base = 100 }
 
         scope:storm_king = {
@@ -79,14 +80,15 @@ nymeria_stormlands.0002 = {
     }
 
     option = {
-        name = nymeria_stormlands.0002.b
+        name = nymeria_stormlands.0002.b # End the Stormlands story
         ai_chance = { base = 0 }
         set_character_flag = nymeria_stormlands_story_ended
         custom_tooltip = nymeria_stormlands0002b_popup
     }
 }
 
-nymeria_stormlands.0003 = {
+# Reaction event - fires on Hook, Blackwater and Duskwashes kings when Durrandon declares ambitions
+nymeria_stormlands.0003 = { # Hook/Blackwater/Duskendale kings react to Durrandon's ambitions
     type = character_event
     title = nymeria_stormlands.0003.t
     desc = nymeria_stormlands.0003.desc
@@ -97,7 +99,7 @@ nymeria_stormlands.0003 = {
     }
 
     option = {
-        name = nymeria_stormlands.0003.a
+        name = nymeria_stormlands.0003.a # Default - Hook King only
         trigger = {
             NOT = { any_held_title = { this = title:k_duskwashes } }
             NOT = { any_held_title = { this = title:k_the_blackwater } }
@@ -111,7 +113,7 @@ nymeria_stormlands.0003 = {
     }
 
     option = {
-        name = nymeria_stormlands.0003.b
+        name = nymeria_stormlands.0003.b # Duskendale King - truce with Riverlands and Blackwater
         trigger = {
             any_held_title = { this = title:k_duskwashes }
             NOT = { any_held_title = { this = title:k_the_blackwater } }
@@ -128,7 +130,7 @@ nymeria_stormlands.0003 = {
     }
 
     option = {
-        name = nymeria_stormlands.0003.c
+        name = nymeria_stormlands.0003.c # Blackwater King - truce with Riverlands, Duskendale and Reach
         trigger = {
             any_held_title = { this = title:k_the_blackwater }
             NOT = { any_held_title = { this = title:k_duskwashes } }
@@ -198,7 +200,7 @@ nymeria_stormlands.0003 = {
 #     }
 # }
 
-nymeria_stormlands.0005 = {
+nymeria_stormlands.0005 = { # Victory event after winning the Hook War
     type = character_event
     title = nymeria_stormlands.0005.t
     desc = nymeria_stormlands.0005.desc
@@ -213,13 +215,13 @@ nymeria_stormlands.0005 = {
         ai_chance = { base = 100 }
         trigger_event = {
             id = nymeria_stormlands.0006
-            days = 365
+            days = 730
         }
         custom_tooltip = nymeria_stormlands0005a_popup
     }
 }
 
-nymeria_stormlands.0006 = {
+nymeria_stormlands.0006 = { # War Declaration on the Blackwater
     type = character_event
     title = nymeria_stormlands.0006.t
     desc = nymeria_stormlands.0006.desc
@@ -269,7 +271,7 @@ nymeria_stormlands.0006 = {
     }
 }
 
-nymeria_stormlands.0008 = {
+nymeria_stormlands.0008 = { # Warning event for Blackwater and Duskwashes after Hook falls
     type = character_event
     title = nymeria_stormlands.0008.t
     desc = nymeria_stormlands.0008.desc
@@ -286,7 +288,7 @@ nymeria_stormlands.0008 = {
     }
 }
 
-nymeria_stormlands.0009 = {
+nymeria_stormlands.0009 = { # Victory flair event after winning the Blackwater War
     type = character_event
     title = nymeria_stormlands.0009.t
     desc = nymeria_stormlands.0009.desc
@@ -302,7 +304,7 @@ nymeria_stormlands.0009 = {
     }
 }
 
-nymeria_stormlands.0010 = {
+ck3nymeria_stormlands.0010 = { # Duskendale reacts to Blackwater falling - seek alliance or face alone
     type = character_event
     title = nymeria_stormlands.0010.t
     desc = nymeria_stormlands.0010.desc
@@ -313,14 +315,20 @@ nymeria_stormlands.0010 = {
     }
 
     option = {
-        name = nymeria_stormlands.0010.a
-        ai_chance = { base = 100 }
+        name = nymeria_stormlands.0010.a # Face the Storm alone - 365 day delay
+        ai_chance = { base = 75 }
         custom_tooltip = nymeria_stormlands0010a_popup
+        character:Durrandon_62 = {
+            trigger_event = {
+                id = nymeria_stormlands.0017
+                days = 365
+            }
+        }
     }
 
     option = {
-        name = nymeria_stormlands.0010.b
-        ai_chance = { base = 100 }
+        name = nymeria_stormlands.0010.b # Send envoy to the Riverlands - immediate
+        ai_chance = { base = 25 }
         custom_tooltip = nymeria_stormlands0010b_popup
         title:e_the_riverlands.holder = {
             trigger_event = nymeria_stormlands.0011
@@ -328,7 +336,7 @@ nymeria_stormlands.0010 = {
     }
 }
 
-nymeria_stormlands.0011 = {
+nymeria_stormlands.0011 = { # Riverlands receives Duskendale's plea for alliance
     type = character_event
     title = nymeria_stormlands.0011.t
     desc = nymeria_stormlands.0011.desc
@@ -348,9 +356,8 @@ nymeria_stormlands.0011 = {
         }
     }
 
-    # Option 1 - Protect the Blackwater, form alliance
     option = {
-        name = nymeria_stormlands.0011.a
+        name = nymeria_stormlands.0011.a # Protect Duskendale freely
         ai_chance = { base = 25 }
         create_alliance = {
             target = scope:dusk_king
@@ -363,18 +370,16 @@ nymeria_stormlands.0011 = {
         }
     }
 
-    # Option 2 - Protect them if d_deerfield becomes vassal
     option = {
-        name = nymeria_stormlands.0011.b
+        name = nymeria_stormlands.0011.b # Protect them if d_deerfield becomes vassal
         ai_chance = { base = 50 }
         scope:dusk_king = {
             trigger_event = nymeria_stormlands.0015
         }
     }
 
-    # Option 3 - Leave them to their own devices
     option = {
-        name = nymeria_stormlands.0011.c
+        name = nymeria_stormlands.0011.c # Leave Duskendale to their own devices
         ai_chance = { base = 25 }
         scope:dusk_king = {
             trigger_event = nymeria_stormlands.0014
@@ -382,7 +387,7 @@ nymeria_stormlands.0011 = {
     }
 }
 
-nymeria_stormlands.0012 = {
+nymeria_stormlands.0012 = { # Duskendale: Riverlands accepted alliance freely
     type = character_event
     title = nymeria_stormlands.0012.t
     desc = nymeria_stormlands.0012.desc
@@ -398,7 +403,7 @@ nymeria_stormlands.0012 = {
     }
 }
 
-nymeria_stormlands.0013 = {
+nymeria_stormlands.0013 = { # Duskendale: Riverlands accepted alliance with Deerfield condition
     type = character_event
     title = nymeria_stormlands.0013.t
     desc = nymeria_stormlands.0013.desc
@@ -414,7 +419,7 @@ nymeria_stormlands.0013 = {
     }
 }
 
-nymeria_stormlands.0014 = {
+nymeria_stormlands.0014 = { # Duskendale: Riverlands left them to their own devices
     type = character_event
     title = nymeria_stormlands.0014.t
     desc = nymeria_stormlands.0014.desc
@@ -430,7 +435,7 @@ nymeria_stormlands.0014 = {
     }
 }
 
-nymeria_stormlands.0015 = {
+nymeria_stormlands.0015 = { # Duskendale: Riverlands offers conditional alliance - Deerfield for protection
     type = character_event
     title = nymeria_stormlands.0015.t
     desc = nymeria_stormlands.0015.desc
@@ -446,9 +451,8 @@ nymeria_stormlands.0015 = {
         }
     }
 
-    # Accept
     option = {
-        name = nymeria_stormlands.0015.a
+        name = nymeria_stormlands.0015.a # Accept - Deerfield transfers to Riverlands
         ai_chance = { base = 75 }
         create_title_and_vassal_change = {
             type = swear_fealty
@@ -472,9 +476,8 @@ nymeria_stormlands.0015 = {
         }
     }
 
-    # Refuse
     option = {
-        name = nymeria_stormlands.0015.b
+        name = nymeria_stormlands.0015.b # Refuse - no alliance, no transfer
         ai_chance = { base = 25 }
         scope:river_king = {
             trigger_event = nymeria_stormlands.0016
@@ -482,7 +485,7 @@ nymeria_stormlands.0015 = {
     }
 }
 
-nymeria_stormlands.0016 = {
+nymeria_stormlands.0016 = { # Riverlands: Duskendale refused the Deerfield deal
     type = character_event
     title = nymeria_stormlands.0016.t
     desc = nymeria_stormlands.0016.desc
@@ -498,7 +501,7 @@ nymeria_stormlands.0016 = {
     }
 }
 
-nymeria_stormlands.0017 = {
+nymeria_stormlands.0017 = { # Durrandon declares war on Duskendale
     type = character_event
     title = nymeria_stormlands.0017.t
     desc = nymeria_stormlands.0017.desc
@@ -520,8 +523,9 @@ nymeria_stormlands.0017 = {
     }
 
     option = {
-        name = nymeria_stormlands.0017.a
+        name = nymeria_stormlands.0017.a # Declare war now
         ai_chance = { base = 100 }
+        remove_character_flag = nymeria_duskwashes_war_pending
         scope:storm_king = {
             start_war = {
                 target = scope:dusk_holder
@@ -532,13 +536,77 @@ nymeria_stormlands.0017 = {
     }
 
     option = {
-        name = nymeria_stormlands.0017.b
+        name = nymeria_stormlands.0017.b # Delay by 1 year
+        ai_chance = { base = 0 }
+        custom_tooltip = nymeria_stormlands0017b_popup
+        add_character_flag = nymeria_duskwashes_war_pending
+        add_character_flag = {
+            flag = nymeria_duskwashes_delay
+            years = 1
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0017.c # End the story entirely
         ai_chance = { base = 0 }
         set_character_flag = nymeria_stormlands_story_ended
-        custom_tooltip = nymeria_stormlands0017b_popup
+        custom_tooltip = nymeria_stormlands0017c_popup
     }
 }
 
+nymeria_stormlands.0018 = { # Quarterly retry - Durrandon declares war on Duskendale
+    type = character_event
+    title = nymeria_stormlands.0018.t
+    desc = nymeria_stormlands.0018.desc
+    theme = war
+    left_portrait = {
+        character = character:Durrandon_62
+        animation = anger
+    }
+    right_portrait = {
+        character = title:k_duskwashes.holder
+        animation = fear
+    }
+
+    immediate = {
+        remove_character_flag = nymeria_duskwashes_war_pending
+        save_scope_as = storm_king
+        title:k_duskwashes.holder = {
+            save_scope_as = dusk_holder
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0018.a # Declare war now
+        ai_chance = { base = 100 }
+        remove_character_flag = nymeria_duskwashes_war_pending
+        scope:storm_king = {
+            start_war = {
+                target = scope:dusk_holder
+                casus_belli = nymeria_duskwashes_conquest
+                title = k_duskwashes
+            }
+        }
+    }
+
+    option = {
+        name = nymeria_stormlands.0018.b # Delay again
+        ai_chance = { base = 0 }
+        add_character_flag = nymeria_duskwashes_war_pending
+        add_character_flag = {
+            flag = nymeria_duskwashes_delay
+            years = 1
+        }
+        custom_tooltip = nymeria_stormlands0017b_popup
+    }
+
+    option = {
+        name = nymeria_stormlands.0018.c # End the story entirely
+        ai_chance = { base = 0 }
+        set_character_flag = nymeria_stormlands_story_ended
+        custom_tooltip = nymeria_stormlands0017c_popup
+    }
+}
 
 # Reach vs Stormlands Events
 
@@ -573,7 +641,7 @@ nymeria_stormlands.0049 = {
     option = { name = OK }
 }
 
-nymeria_stormlands.0050 = {
+nymeria_stormlands.0050 = { # Durrandon demands the Reach borderlands after Gardener's death
     type = character_event
     title = nymeria_stormlands.0050.t
     desc = nymeria_stormlands.0050.desc
@@ -589,6 +657,12 @@ nymeria_stormlands.0050 = {
 
     trigger = {
         this = character:Durrandon_62
+        NOT = {
+            title:d_blueburn = {
+                holder = { liege = character:Durrandon_62 }
+            }
+        }
+        NOT = { has_character_flag = nymeria_reach_demand_ended }
     }
 
     immediate = {
@@ -600,12 +674,18 @@ nymeria_stormlands.0050 = {
 
     option = {
         name = nymeria_stormlands.0050.a
-        ai_chance = { base = 99 }
+        ai_chance = { base = 100 }
         custom_tooltip = nymeria_stormlands0050a_popup
         title:e_the_reach.holder = {
             trigger_event = {
                 id = nymeria_stormlands.0051
                 days = 5
+            }
+        }
+        character:Durrandon_62 = {
+            trigger_event = {
+                id = nymeria_stormlands.0050
+                days = 365
             }
         }
     }
@@ -614,6 +694,7 @@ nymeria_stormlands.0050 = {
         name = nymeria_stormlands.0050.b
         ai_chance = { base = 1 }
         custom_tooltip = nymeria_stormlands0050b_popup
+        add_character_flag = nymeria_reach_demand_ended
     }
 }
 
@@ -679,11 +760,16 @@ nymeria_stormlands.0051 = {
             days = 1825
         }
 
+        # Stop the fallback loop since transfer succeeded
+        character:Durrandon_62 = {
+            add_character_flag = nymeria_reach_demand_ended
+        }
+
         every_player = {
             send_interface_message = {
                 type = msg_nymeria_durrandon_border_claim
-                title = nymeria_stormlands0054_msg_title
-                desc = nymeria_stormlands0054_msg_desc
+                title = msg_nymeria_durrandon_border_claim
+                desc = msg_nymeria_durrandon_border_claim_desc
                 left_icon = character:Durrandon_62
             }
         }
