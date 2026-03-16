@@ -3625,10 +3625,6 @@ agot_assign_starting_family_weapons_effect = {
 			character:Dayne_94 ?= { agot_create_artifact_vs_dawn_effect = { OWNER = THIS } }
 		}
 		else_if = {
-			limit = { game_start_date >= 7299.1.1 }
-			character:Dayne_200 ?= { agot_create_artifact_vs_dawn_effect = { OWNER = THIS } }
-		}
-		else_if = {
 			limit = { game_start_date >= 7281.1.1 }
 			character:Dayne_17 ?= { agot_create_artifact_vs_dawn_effect = { OWNER = THIS } }
 		}
