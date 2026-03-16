@@ -20,6 +20,7 @@ d_sunspear = {
 
 c_husk_flats = {
 	7299.1.1 = { 
+		liege = d_sunspear
 		holder = Shell_Dorne_200
 	}
 }
@@ -50,6 +51,7 @@ c_plankytown = {
 
 c_stinkwater = {
 	7299.1.1 = { 
+		liege = d_sunspear
 		holder = Wade_200
 	}
 }

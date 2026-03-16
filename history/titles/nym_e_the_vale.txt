@@ -673,24 +673,28 @@ c_west_longsister = {
 
 c_wickenden = {
 	7299.1.1 = {
+		liege = e_the_vale
 		holder = Waxley_200
 	}
 }
 
 c_crabs_shore = {
 	7299.1.1 = {
+		liege = e_the_vale
 		holder = Garnett_200
 	}
 }
 
 c_marbletoft = {
 	7299.1.1 = {
+		liege = e_the_vale
 		holder = Weatherwax_200
 	}
 }
 
 c_moonbloom = {
 	7299.1.1 = {
+		liege = e_the_vale
 		holder = Revere_200
 	}
 }

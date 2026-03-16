@@ -15,6 +15,7 @@ k_red_rambles = {
 
 d_riverrun = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Tully_200
 	}
 }
@@ -56,6 +57,7 @@ c_heathersage = {
 
 d_atranta = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Hook_200
 		liege = k_the_blackwater
 	}
@@ -118,6 +120,7 @@ c_rushinground = {
 
 d_blackwood_vale = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Blackwood_200
 	}
 }
@@ -166,6 +169,7 @@ c_waspwood = {
 
 d_cape_of_eagles = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Mallister_200
 	}
 }
@@ -200,6 +204,7 @@ c_rushmoor = {
 
 d_fairmarket = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Teague_201
 	}
 }
@@ -342,6 +347,7 @@ c_tumblers_falls = {
 
 d_lakehaven = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Goodbrook_200
 	}
 }
@@ -383,6 +389,7 @@ c_tanglewood = {
 
 d_lakeleaf_highlands = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Mandrake_200
 	}
 }
@@ -451,24 +458,28 @@ c_maidenpool = {
 
 c_honeymaiden = {
 	7299.1.1 = {
+		liege = d_maidenpool
 		holder = MootonHM_200
 	}
 }
 
 c_lolliston = {
 	7299.1.1 = {
+		liege = d_maidenpool
 		holder = RandomCount_225
 	}
 }
 
 c_oldhonor = {
 	7299.1.1 = {
+		liege = d_maidenpool
 		holder = RandomCount_227
 	}
 }
 
 c_werthport = {
 	7299.1.1 = {
+		liege = d_maidenpool
 		holder = RandomCount_226
 	}
 }
@@ -526,6 +537,7 @@ c_wishere = {
 
 d_southstone = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Bracken_200
 	}
 }
@@ -581,6 +593,7 @@ c_the_willows = {
 
 d_the_crossing = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Charlton_200
 	}
 }
@@ -646,6 +659,7 @@ c_leechpool = {
 
 d_three_forks = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Strong_200
 	}
 }
@@ -673,12 +687,14 @@ c_speckleplum = {
 
 d_tridents_mouth = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Darry_200
 	}
 }
 
 c_marstone = {
 	7299.1.1 = {
+		liege = d_tridents_mouth
 		holder = Urgont_200
 	}
 }
@@ -692,24 +708,28 @@ c_riverbend = {
 
 c_saltpans = {
 	7299.1.1 = {
+		liege = d_tridents_mouth
 		holder = Cox_200
 	}
 }
 
 c_saltpans_rise = {
 	7299.1.1 = {
+		liege = d_tridents_mouth
 		holder = Hawick_200
 	}
 }
 
 c_spiderwood = {
 	7299.1.1 = {
+		liege = d_tridents_mouth
 		holder = Deremond_200
 	}
 }
 
 c_stillside = {
 	7299.1.1 = {
+		liege = d_tridents_mouth
 		holder = Rankenfell_200
 	}
 }
@@ -769,6 +789,7 @@ c_runvane = {
 
 d_willow_wood = {
 	7299.1.1 = {
+		liege = e_the_riverlands
 		holder = Ryger_200
 	}
 }
