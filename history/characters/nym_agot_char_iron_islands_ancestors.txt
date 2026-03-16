@@ -1,0 +1,692 @@
+Greyjoy_29 = {
+	name = Line_of_Loron
+	dynasty = dynn_Greyjoy
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Greyjoy_21
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	give_nickname = nick_agot_historical_the_old_kraken
+
+	6432.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Greyjoy_200 = {
+    name = Marlon
+    dynasty = dynn_Greyjoy
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7271.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
+
+Goodbrother_38 = {
+	name = Line_of_Urrathon
+	dynasty = dynn_Goodbrother
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Goodbrother_37
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	give_nickname = nick_agot_historical_badbrother
+
+	6499.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Goodbrother_200 = {
+    name = Thoryn
+    dynasty = dynn_Goodbrother
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7260.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
+
+Farwynd_200 = {
+    name = Hake
+    dynasty = dynn_Farwynd
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7278.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
+
+Harlaw_32 = {
+	name = Line_of_Harron
+	dynasty = dynn_Harlaw
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Harlaw_31
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6408.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Harlaw_200 = {
+    name = Rodrick
+    dynasty = dynn_Harlaw
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7270.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
+
+Volmark_30 = {
+	name = Line_of_Veron
+	dynasty = dynn_Volmark
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Volmark_29 
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	4179.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Grey_King_16 = {
+	name = Line_of_The_Wynch
+	dynasty = dynn_Grey_King
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Grey_King_15
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2016.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Grey_King_18 = {
+	name = Line_of_The_Botley
+	dynasty = dynn_Grey_King
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Grey_King_17
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2010.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Grey_King_20 = {
+	name = Line_of_The_Saltcliffe
+	dynasty = dynn_Grey_King
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Grey_King_19
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2016.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Grey_King_22 = {
+	name = Line_of_The_Myre
+	dynasty = dynn_Grey_King
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Grey_King_21
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2020.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Kenning_11 = {
+	name = Line_of_Harren
+	dynasty = dynn_Kenning
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Kenning_10
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6320.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Grey_King_26 = {
+	name = Line_of_The_Stonetree
+	dynasty = dynn_Grey_King
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Grey_King_25
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2018.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Blacktyde_9 = {
+	name = Line_of_Joron
+	dynasty = dynn_Blacktyde
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Blacktyde_8
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	give_nickname = nick_agot_historical_maidensbane
+
+	6479.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Blacktyde_200 = {
+    name = Cerrick
+    dynasty = dynn_Blacktyde
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7272.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
+
+Drumm_7 = {
+	name = Line_of_Regnar
+	dynasty = dynn_Drumm
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Drumm_6
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	3956.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Drumm_200 = {
+    name = Donel
+    dynasty = dynn_Drumm
+    random_traits = yes
+    religion = drowned_god
+    culture = ironborn
+    7267.1.1 = {
+        birth = yes
+    }
+    7320.1.1 = { death = yes }
+}
+
+Grey_King_30 = {
+	name = Line_of_Ragged_Ralf
+	dynasty = dynn_Grey_King
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Grey_King_29
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2016.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Grey_King_32 = {
+	name = Line_of_The_Merlyn
+	dynasty = dynn_Grey_King
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Grey_King_31
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2012.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Grey_King_34 = {
+	name = Line_of_The_Orkwood
+	dynasty = dynn_Grey_King
+
+	religion = drowned_god
+	culture = ironborn
+
+	father = Grey_King_33
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2015.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Sunderly_200 = {
+	name = Roggon # a lord
+	dynasty = dynn_Sunderly
+
+	religion = drowned_god
+	culture = greenborn
+
+	7257.1.1 = { birth = yes }
+	7279.1.1 = { add_spouse = Sunderly_rs_200 } 
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Sunderly_rs_200 = {
+	name = Sheila # a lord
+	female = yes
+	dynasty = dynn_Ironspite
+
+	religion = drowned_god
+	culture = ironborn
+
+	7259.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Sunderly_201 = {
+	name = Rickard # a lord
+	dynasty = dynn_Sunderly
+	mother = Sunderly_rs_200
+	father = Sunderly_200
+	religion = drowned_god
+	culture = greenborn
+
+	7282.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Sunderly_202 = {
+	name = Sheila # a lord
+	female = yes
+	dynasty = dynn_Sunderly
+	mother = Sunderly_rs_200
+	father = Sunderly_200
+	religion = drowned_god
+	culture = greenborn
+	trait = education_intrigue_4
+	intrigue = 8
+	7283.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Sunderly_203 = {
+	name = Gederion # a lord
+	dynasty = dynn_Sunderly
+	mother = Sunderly_rs_200
+	father = Sunderly_200
+	religion = drowned_god
+	culture = greenborn
+	trait = education_martial_3
+	trait = strong
+	7284.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Ironborn_Lord_1 = {
+	name = Wexley # a lord
+	religion = drowned_god
+	culture = greenborn
+	7273.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Ironborn_Lord_2 = {
+	name = Luthron # a lord
+	religion = drowned_god
+	culture = greenborn
+	7273.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Ironborn_Lord_3 = {
+	name = Lester # a lord
+	religion = drowned_god
+	culture = greenborn
+	7282.1.1 = { birth = yes }
+	7320.1.1 = {
+		trait = ill
+		death = { death_reason = death_ill }
+	}
+}
+
+Saltcliffe_200 = {
+	name = Harrag
+	dynasty = dynn_Saltcliffe
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+	}
+	7318.1.1 = { death = yes }
+}
+
+Ironmaker_200 = {
+	name = Harrag
+	dynasty = dynn_Ironmaker
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7256.1.1 = {
+		birth = yes
+	}
+	7318.1.1 = { death = yes }
+}
+
+Botley_200 = {
+	name = Balon
+	dynasty = dynn_Botley
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7249.1.1 = {
+		birth = yes
+	}
+	7315.1.1 = { death = yes }
+}
+
+Wynch_200 = {
+	name = Qarl
+	dynasty = dynn_Wynch
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7262.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Stonetree_200 = {
+	name = Harrag
+	dynasty = dynn_Stonetree
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7256.1.1 = {
+		birth = yes
+	}
+	7318.1.1 = { death = yes }
+}
+
+Kenning_200 = {
+	name = Balon
+	dynasty = dynn_Kenning
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7249.1.1 = {
+		birth = yes
+	}
+	7315.1.1 = { death = yes }
+}
+
+Myre_200 = {
+	name = Qarl
+	dynasty = dynn_Myre
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7262.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Volmark_200 = {
+	name = Dagon
+	dynasty = dynn_Volmark
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7253.1.1 = {
+		birth = yes
+	}
+	7317.1.1 = { death = yes }
+}
+
+Harlaw_201 = {
+	name = Rodrik
+	dynasty = dynn_Harlaw
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7246.1.1 = {
+		birth = yes
+	}
+	7313.1.1 = { death = yes }
+}
+
+Saltson_200 = {
+	name = Urron
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7258.1.1 = {
+		birth = yes
+	}
+	7319.1.1 = { death = yes }
+}
+
+Greyflood_200 = {
+	name = Maron
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7251.1.1 = {
+		birth = yes
+	}
+	7316.1.1 = { death = yes }
+}
+
+Orkwood_200 = {
+	name = Maron
+	dynasty = dynn_Orkwood
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7255.1.1 = {
+		birth = yes
+	}
+	7325.1.1 = { death = yes }
+}
+
+Tawney_200 = {
+	name = Qhorin
+	dynasty = dynn_Tawney
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7258.1.1 = {
+		birth = yes
+	}
+	7326.1.1 = { death = yes }
+}
+
+Stonehouse_200 = {
+	name = Harl
+	dynasty = dynn_Stonehouse
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7254.1.1 = {
+		birth = yes
+	}
+	7322.1.1 = { death = yes }
+}
+
+GoodbrotherSS_200 = {
+	name = Andrik
+	dynasty_house = house_GoodbrotherSS
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7257.1.1 = {
+		birth = yes
+	}
+	7328.1.1 = { death = yes }
+}
+
+Tidewood_200 = {
+	name = Harras
+	dynasty = dynn_Tidewood
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7253.1.1 = {
+		birth = yes
+	}
+	7324.1.1 = { death = yes }
+}
+
+GoodbrotherCPK_200 = {
+	name = Gorold
+	dynasty_house = house_GoodbrotherCPK
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7250.1.1 = {
+		birth = yes
+	}
+	7323.1.1 = { death = yes }
+}
+
+FarwyndDL_200 = {
+	name = Maron
+	dynasty_house = house_FarwyndDL
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7256.1.1 = {
+		birth = yes
+	}
+	7327.1.1 = { death = yes }
+}
+
+Freeborn_200 = {
+	name = Qarl
+	dynasty = dynn_Freeborn
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7258.1.1 = {
+		birth = yes
+	}
+	7329.1.1 = { death = yes }
+}
+
+Sparr_200 = {
+	name = Rodrik
+	dynasty = dynn_Sparr
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7252.1.1 = {
+		birth = yes
+	}
+	7326.1.1 = { death = yes }
+}
+
+Merlyn_200 = {
+	name = Dagon
+	dynasty = dynn_Merlyn
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7251.1.1 = {
+		birth = yes
+	}
+	7324.1.1 = { death = yes }
+}
+
+Sharp_200 = {
+	name = Qhorin
+	dynasty = dynn_Sharp
+	random_traits = yes
+	religion = drowned_god
+	culture = ironborn
+	7257.1.1 = {
+		birth = yes
+	}
+	7328.1.1 = { death = yes }
+}

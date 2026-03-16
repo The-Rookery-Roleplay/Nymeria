@@ -1,0 +1,2217 @@
+Stark_29 = {
+	name = Line_of_Brandon # Used for dynamic linking to brandon the shipwright
+	dynasty = dynn_Stark
+
+	religion = old_gods_wnw
+	culture = northman
+
+	father = Stark_28
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7261.1.1 = { birth = yes }
+	7299.1.1 = {
+		trait = disinherited
+		death = yes
+	}
+}
+
+Stark_134 = {
+	name = Line_of_Brandon
+	dynasty = dynn_Stark
+
+	dna = Stark_134
+
+	religion = old_gods_wnw
+	culture = northman
+
+	father = Stark_33
+	mother = Stark_rs_2
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7289.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+	}
+	7299.1.1 = { death = yes }
+}
+
+Manderly_13 = {
+	name = Marlon # Mentioned, a lord
+	dynasty = dynn_Manderly
+
+	religion = fots_seven
+	culture = reachman
+
+	father = Manderly_72
+
+	trait = education_stewardship_4
+	trait = diligent
+	trait = ambitious
+	trait = vengeful
+	trait = callous
+	trait = bossy
+
+	disallow_random_traits = yes
+
+	7244.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	7260.1.1 = {
+		trait = knight
+		add_spouse = Gardener_53 # Olenna Gardener, daughter of Garth X Gardener
+	}
+	7316.1.1 = { death = yes }
+}
+
+Manderly_73 = {
+	name = Line_of_Merle
+	dynasty = dynn_Manderly
+
+	religion = fots_seven
+	culture = reachman
+
+	father = Manderly_14
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7176.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Umber_111 = {
+	name = Line_of_Hoarfrost
+	dynasty = dynn_Umber
+
+	religion = old_gods_wnw
+	culture = northman
+
+	father = Umber_110
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6000.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Bolton_15 = {
+	name = Line_of_Brandon
+	dynasty = dynn_Bolton
+
+	religion = old_gods_wnw
+	culture = northman
+
+	father = Bolton_69
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6401.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Flint_21 = {
+	name = Line_of_Breakstone_Hill
+	dynasty = dynn_Flint
+
+	religion = old_gods_wnw
+	culture = northman
+
+	father = Flint_19
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6230.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Flint_22 = {
+	name = Line_of_Widows_Watch
+	dynasty = dynn_Flint
+
+	religion = old_gods_wnw
+	culture = northman
+
+	father = Flint_19
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6232.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Flint_23 = {
+	name = Line_of_Flints_Finger
+	dynasty = dynn_Flint
+
+	religion = old_gods_wnw
+	culture = northman
+
+	father = Flint_19
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6234.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Dustin_79 = {
+	name = Line_of_Roderick
+	dynasty = dynn_Dustin
+
+	religion = old_gods_wnw
+	culture = northman
+
+	father = Dustin_78
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	3250.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Glover_55 = {
+	name = Line_of_Benton
+	dynasty = dynn_Glover
+
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+
+	father = Glover_54
+	mother = Greenwood_3
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	5130.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Forrester_15 = {
+	name = Line_of_Karlon
+	dynasty = dynn_Forrester
+
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+
+	father = Forrester_12 # Karlon Forrester
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6569.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+BoggsN_32 = {
+	name = Line_of_Gaven
+	dynasty = dynn_BoggsN
+
+	religion = old_gods_wnw
+	culture = crannogman
+
+	father = BoggsN_4 # Gaven Boggs
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7045.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+BoggsN_31 = {
+	name = Line_of_Royce
+	dynasty = dynn_BoggsN
+
+	religion = old_gods_wnw
+	culture = crannogman
+
+	father = BoggsN_2 # Royce Boggs
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7043.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Mormont_200 = {
+	name = Joron
+	dynasty = dynn_Mormont
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = bearman
+	7253.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Umber_200 = {
+	name = Gawen
+	dynasty = dynn_Umber
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7268.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Karstark_200 = {
+	name = Karlon
+	dynasty_house = house_Karstark
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7241.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Glover_200 = {
+	name = Galbart
+	dynasty = dynn_Glover
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7275.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Bolton_200 = {
+	name = Royce
+	dynasty = dynn_Bolton
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7260.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Hornwood_200 = {
+	name = Harwin
+	dynasty = dynn_Hornwood
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7247.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Flint_200WW = {
+	name = Benfred
+	dynasty_house = house_FlintWW
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7272.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Flint_200FF = {
+	name = Rodrik
+	dynasty_house = house_FlintFF
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7256.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Locke_200 = {
+	name = Harrion
+	dynasty = dynn_Locke
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7264.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Reed_200 = {
+	name = Jojen
+	dynasty = dynn_Reed
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7249.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Dustin_200 = {
+	name = Helman
+	dynasty = dynn_Dustin
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7278.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Ryswell_200 = {
+	name = Rickard
+	dynasty = dynn_Ryswell
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7244.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Tallhart_200 = {
+	name = Benjen
+	dynasty = dynn_Tallhart
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7258.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+FisherSS_200 = {
+	name = Donnor
+	dynasty = dynn_FisherSS
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7270.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Cerwyn_200 = {
+	name = Medger
+	dynasty = dynn_Cerwyn
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7251.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Slate_200 = {
+	name = Donnel
+	dynasty = dynn_Slate
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7266.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Ashwood_200 = {
+	name = Torrhen
+	dynasty = dynn_Ashwood
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7245.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Aldcreek_200 = {
+	name = Torrhen
+	dynasty = dynn_Aldcreek
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7280.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Banks_200 = {
+	name = Rickard
+	dynasty = dynn_Banks
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7247.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Barker_200 = {
+	name = Brandon
+	dynasty = dynn_Barker
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7241.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Barley_200 = {
+	name = Edwyle
+	dynasty = dynn_Barley
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7257.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Bates_200 = {
+	name = Willam
+	dynasty = dynn_Bates
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7255.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Beech_200 = {
+	name = Benjen
+	dynasty = dynn_Beech
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7254.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Blackbrow_200 = {
+	name = Rodrik
+	dynasty = dynn_Blackbrow
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7248.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Bole_200 = {
+	name = Cregan
+	dynasty = dynn_Bole
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7246.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Branch_200 = {
+	name = Barthogan
+	dynasty = dynn_Branch
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7274.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Bray_200 = {
+	name = Jonnel
+	dynasty = dynn_Bray
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7245.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Brent_200 = {
+	name = Theon
+	dynasty = dynn_Brent
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7277.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Brewer_200 = {
+	name = Alaric
+	dynasty = dynn_Brewer
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7267.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Broths_200 = {
+	name = Beron
+	dynasty = dynn_Broths
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7242.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Brownbarrow_200 = {
+	name = Edrick
+	dynasty = dynn_Brownbarrow
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7241.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Brummel_200 = {
+	name = Harlon
+	dynasty = dynn_Brummel
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7245.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Burl_200 = {
+	name = Artos
+	dynasty = dynn_Burl
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7253.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Burley_200 = {
+	name = Hugo
+	dynasty = dynn_Burley
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northern_clan
+	7254.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Bywash_200 = {
+	name = Donnor
+	dynasty = dynn_Bywash
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7272.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Cade_200 = {
+	name = Errold
+	dynasty = dynn_Cade
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7278.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Cairns_200 = {
+	name = Walton
+	dynasty = dynn_Cairns
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7241.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Cantle_200 = {
+	name = Desmond
+	dynasty = dynn_Cantle
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7275.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Catcher_200 = {
+	name = Halys
+	dynasty = dynn_Catcher
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7252.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Caulfield_200 = {
+	name = Edwyn
+	dynasty = dynn_Caulfield
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7274.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Clay_200 = {
+	name = Osric
+	dynasty = dynn_Clay
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7266.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Coaler_200 = {
+	name = Gerrick
+	dynasty = dynn_Coaler
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7254.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Colt_200 = {
+	name = Harmond
+	dynasty = dynn_Colt
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7268.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Condon_200 = {
+	name = Arnolf
+	dynasty = dynn_Condon
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7277.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Cray_200 = {
+	name = Jojen
+	dynasty = dynn_Cray
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7257.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Croggen_200 = {
+	name = Howland
+	dynasty = dynn_Croggen
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7240.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Crook_200 = {
+	name = Dorren
+	dynasty = dynn_Crook
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7250.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Crowl_200 = {
+	name = Styr
+	dynasty = dynn_Crowl
+	random_traits = yes
+	religion = old_gods_btw_sas
+	culture = skagosi
+	7267.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Darsett_200 = {
+	name = Eyron
+	dynasty = dynn_Darsett
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7261.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Draywin_200 = {
+	name = Garrick
+	dynasty = dynn_Draywin
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7257.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Dronigan_200 = {
+	name = Hendry
+	dynasty = dynn_Dronigan
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7249.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Dusk_200 = {
+	name = Jorah
+	dynasty = dynn_Dusk
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7253.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Elliver_200 = {
+	name = Karl
+	dynasty = dynn_Elliver
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7261.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Flade_200 = {
+	name = Ludd
+	dynasty = dynn_Flade
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7246.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+FlintMC_200 = {
+	name = Torghen
+	dynasty = dynn_Flint
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northern_clan
+	7245.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Flood_200 = {
+	name = Meribald
+	dynasty = dynn_Flood
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7264.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Fog_200 = {
+	name = Mors
+	dynasty = dynn_Fog
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7246.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Frikrigg_200 = {
+	name = Sigorn
+	dynasty = dynn_Frikrigg
+	random_traits = yes
+	religion = old_gods_btw_sas
+	culture = skagosi
+	7262.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Fross_200 = {
+	name = Norbert
+	dynasty = dynn_Fross
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = krakenman
+	7262.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Glenmore_200 = {
+	name = Owen
+	dynasty = dynn_Glenmore
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7278.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Goodman_200 = {
+	name = Porther
+	dynasty = dynn_Goodman
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7256.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Grayson_200 = {
+	name = Rogar
+	dynasty = dynn_Grayson
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7242.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Greenleaf_200 = {
+	name = Tormund
+	dynasty = dynn_Greenleaf
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7269.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Harclay_200 = {
+	name = Morgan
+	dynasty = dynn_Harclay
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northern_clan
+	7274.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Hartleaf_200 = {
+	name = Ulf
+	dynasty = dynn_Hartleaf
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7247.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Hatchett_200 = {
+	name = Wendel
+	dynasty = dynn_Hatchett
+	random_traits = yes
+	religion = fots_oldnew
+	culture = harborman
+	7264.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Hawley_200 = {
+	name = Wylis
+	dynasty = dynn_Hawley
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7245.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Herring_200 = {
+	name = Gawen
+	dynasty = dynn_Herring
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7275.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Hide_200 = {
+	name = Cley
+	dynasty = dynn_Hide
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = bearman
+	7258.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Holt_200 = {
+	name = Robard
+	dynasty = dynn_Holt
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7280.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Howle_200 = {
+	name = Harrion
+	dynasty = dynn_Howle
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7279.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Hume_200 = {
+	name = Hrothgar
+	dynasty = dynn_Hume
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7263.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Ironsmith_200 = {
+	name = Ragnar
+	dynasty = dynn_Ironsmith
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7276.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Jeyne_200 = {
+	name = Bjorn
+	dynasty = dynn_Jeyne
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = krakenman
+	7252.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Karn_200 = {
+	name = Thorin
+	dynasty = dynn_Karn
+	random_traits = yes
+	religion = old_gods_btw_sas
+	culture = skagosi
+	7244.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Kell_200 = {
+	name = Torren
+	dynasty = dynn_Kell
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northern_clan
+	7242.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Kiddle_200 = {
+	name = Grim
+	dynasty = dynn_Kiddle
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7254.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Knott_200 = {
+	name = Norren
+	dynasty = dynn_Knott
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northern_clan
+	7258.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Leadranack_200 = {
+	name = Sveinn
+	dynasty = dynn_Leadranack
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7245.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Liddle_200 = {
+	name = Flint
+	dynasty = dynn_Liddle
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northern_clan
+	7254.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Lightfoot_200 = {
+	name = Hrodulf
+	dynasty = dynn_Lightfoot
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7246.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Long_200 = {
+	name = Torr
+	dynasty = dynn_Long
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7264.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Lurk_200 = {
+	name = Mikkel
+	dynasty = dynn_Lurk
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7257.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Mack_200 = {
+	name = Oddvar
+	dynasty = dynn_Mack
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7269.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Madden_200 = {
+	name = Duncan
+	dynasty = dynn_Madden
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northern_clan
+	7280.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Magnar_200 = {
+	name = Ragnvald
+	dynasty = dynn_Magnar
+	random_traits = yes
+	religion = old_gods_btw_sas
+	culture = skagosi
+	7263.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Marsh_200 = {
+	name = Kolbjorn
+	dynasty = dynn_Marsh
+	random_traits = yes
+	religion = fots_oldnew
+	culture = harborman
+	7250.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Mazin_200 = {
+	name = Eyvind
+	dynasty_house = house_Mazin
+	random_traits = yes
+	religion = fots_seven
+	culture = northman
+	7263.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Messer_200 = {
+	name = Jyck
+	dynasty = dynn_Messer
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7262.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Mollen_200 = {
+	name = Mudge
+	dynasty = dynn_Mollen
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7253.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Moss_200 = {
+	name = Quent
+	dynasty = dynn_Moss
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7257.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Mund_200 = {
+	name = Henly
+	dynasty = dynn_Mund
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7244.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Mundrel_200 = {
+	name = Lorren
+	dynasty = dynn_Mundrel
+	random_traits = yes
+	religion = old_gods_btw_sas
+	culture = skagosi
+	7278.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Nash_200 = {
+	name = Wallen
+	dynasty = dynn_Nash
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7280.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Noll_200 = {
+	name = Brynden
+	dynasty = dynn_Noll
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7250.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Norrey_200 = {
+	name = Bennard
+	dynasty = dynn_Norrey
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northern_clan
+	7274.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Orcutt_200 = {
+	name = Gavin
+	dynasty = dynn_Orcutt
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7255.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Orlych_200 = {
+	name = Dagmer
+	dynasty = dynn_Orlych
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7250.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Overton_200 = {
+	name = Halleck
+	dynasty = dynn_Overton
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7269.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Pale_200 = {
+	name = Gregor
+	dynasty = dynn_Pale
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7264.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Pinn_200 = {
+	name = Harwin
+	dynasty = dynn_Pinn
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7257.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Poole_200 = {
+	name = Jarl
+	dynasty = dynn_Poole
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7280.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Portan_200 = {
+	name = Daryn
+	dynasty = dynn_Portan
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7275.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Porter_200 = {
+	name = Kerwin
+	dynasty = dynn_Porter
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7254.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Proud_200 = {
+	name = Gawen
+	dynasty = dynn_Proud
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7260.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Quagg_200 = {
+	name = Edwyle
+	dynasty = dynn_Quagg
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7254.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Reamy_200 = {
+	name = Brandon
+	dynasty = dynn_Reamy
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7260.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Reaves_200 = {
+	name = Arnolf
+	dynasty = dynn_Reaves
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = krakenman
+	7257.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Riggwelt_200 = {
+	name = Willam
+	dynasty = dynn_Riggwelt
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7253.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Risk_200 = {
+	name = Porther
+	dynasty = dynn_Risk
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7260.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Rockhead_200 = {
+	name = Edrick
+	dynasty = dynn_Rockhead
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7271.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Rouse_200 = {
+	name = Arnolf
+	dynasty = dynn_Rouse
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7269.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Ryder_200 = {
+	name = Jonnel
+	dynasty = dynn_Ryder
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7256.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Sapp_200 = {
+	name = Barthogan
+	dynasty = dynn_Sapp
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7255.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Scrimshaw_200 = {
+	name = Owen
+	dynasty = dynn_Scrimshaw
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7274.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Seaver_200 = {
+	name = Donnor
+	dynasty = dynn_Seaver
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7277.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Sedge_200 = {
+	name = Eyron
+	dynasty = dynn_Sedge
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7277.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Shackes_200 = {
+	name = Arnolf
+	dynasty = dynn_Shackes
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7263.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Shale_200 = {
+	name = Harlon
+	dynasty = dynn_Shale
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7248.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Silverfield_200 = {
+	name = Ludd
+	dynasty = dynn_Silverfield
+	random_traits = yes
+	religion = fots_seven
+	culture = harborman
+	7271.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Slowburn_200 = {
+	name = Benjen
+	dynasty = dynn_Slowburn
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7243.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Somber_200 = {
+	name = Cregan
+	dynasty = dynn_Somber
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7249.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Spears_200 = {
+	name = Ulf
+	dynasty = dynn_Spears
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7250.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Stane_200 = {
+	name = Gawen
+	dynasty = dynn_Stane
+	random_traits = yes
+	religion = old_gods_btw_sas
+	culture = skagosi
+	7267.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Still_200 = {
+	name = Harmond
+	dynasty = dynn_Still
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7264.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Stilt_200 = {
+	name = Sigorn
+	dynasty = dynn_Stilt
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7269.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Stout_200 = {
+	name = Mors
+	dynasty = dynn_Stout
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7256.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Strand_200 = {
+	name = Owen
+	dynasty = dynn_Strand
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = krakenman
+	7240.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Stump_200 = {
+	name = Gawen
+	dynasty = dynn_Stump
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7247.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Sully_200 = {
+	name = Gawen
+	dynasty = dynn_Sully
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7274.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Switch_200 = {
+	name = Errold
+	dynasty = dynn_Switch
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7261.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Thaw_200 = {
+	name = Cregan
+	dynasty = dynn_Thaw
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7258.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Tumbler_200 = {
+	name = Eyron
+	dynasty = dynn_Tumbler
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7250.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Verran_200 = {
+	name = Hendry
+	dynasty = dynn_Verran
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7240.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Waterman_200 = {
+	name = Harrion
+	dynasty = dynn_Waterman
+	random_traits = yes
+	religion = fots_oldnew
+	culture = harborman
+	7256.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Weir_200 = {
+	name = Ludd
+	dynasty = dynn_Weir
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7251.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+WellsN_200 = {
+	name = Ludd
+	dynasty = dynn_WellsN
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7246.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Wibberley_200 = {
+	name = Ulf
+	dynasty = dynn_Wibberley
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = barrowman
+	7259.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Woods_200 = {
+	name = Ulf
+	dynasty = dynn_Woods
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7272.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Woolfield_200 = {
+	name = Sigorn
+	dynasty = dynn_Woolfield
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7252.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Wull_200 = {
+	name = Jonnel
+	dynasty = dynn_Wull
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northern_clan
+	7263.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Yggr_200 = {
+	name = Theon
+	dynasty = dynn_Yggr
+	random_traits = yes
+	religion = old_gods_btw_sas
+	culture = skagosi
+	7274.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Blackmyre_200 = {
+	name = Torrhen
+	dynasty = dynn_Blackmyre
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7258.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+BoggsN_200 = {
+	name = Jojen
+	dynasty = dynn_BoggsN
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7244.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Colden_200 = {
+	name = Rickard
+	dynasty = dynn_Colden
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7266.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Dampwood_200 = {
+	name = Howland
+	dynasty = dynn_Dampwood
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7252.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Fenn_200 = {
+	name = Mudge
+	dynasty = dynn_Fenn
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7270.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Forrester_200 = {
+	name = Rodrik
+	dynasty = dynn_Forrester
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7248.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Furr_200 = {
+	name = Brandon
+	dynasty = dynn_Furr
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7260.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Greengood_200 = {
+	name = Wallen
+	dynasty = dynn_Greengood
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7256.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Lake_200 = {
+	name = Edwyle
+	dynasty = dynn_Lake
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7274.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Leach_200 = {
+	name = Brynden
+	dynasty = dynn_Leach
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7242.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Logg_200 = {
+	name = Benjen
+	dynasty = dynn_Logg
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = wolfswood_clansman
+	7264.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Muddle_200 = {
+	name = Gavin
+	dynasty = dynn_Muddle
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7278.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Peat_200 = {
+	name = Henly
+	dynasty = dynn_Peat
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7246.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Short_200 = {
+	name = Willam
+	dynasty = dynn_Short
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7268.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Tyre_200 = {
+	name = Walton
+	dynasty = dynn_Tyre
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = northman
+	7240.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Whitehill_200 = {
+	name = Desmond
+	dynasty = dynn_Whitehill
+	random_traits = yes
+	religion = fots_seven
+	culture = wolfswood_clansman
+	7254.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Carr_200 = {
+	name = Quent
+	dynasty = dynn_Carr
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = crannogman
+	7262.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+
+Stark_25 = {
+	name = Brandon # Mentioned, Brandon VI, killed his own father in battle
+	dynasty = dynn_Stark
+	dna = Stark_25
+
+	prowess = 6
+
+	religion = old_gods_wnw
+	culture = northman
+
+	father = Bael_1
+	mother = Stark_24
+
+	trait = legitimized_bastard
+
+	trait = education_martial_3
+	trait = brave
+	trait = wrathful
+	trait = rowdy
+
+	disallow_random_traits = yes
+
+	# canon_children_bastard_parent_status unmarried_father_unmarried_mother
+	# canon_children_bastard_reveal canon_bastard_known_father_public
+
+	6345.1.1 = {
+		birth = yes
+		make_trait_inactive = grey_eyes
+		make_trait_inactive = dark_brown_hair
+		make_trait_inactive = scripted_appearance
+		add_character_flag = canon_status_mentioned
+	}
+	6374.1.1 = { trait = kinslayer_3 }
+	6398.9.9 = {
+		death = {
+			death_reason = death_torture # Flayed
+			killer = Bolton_69 # Brandon Bolton
+		}
+	}
+}
+
+Marsh_King_1 = {
+	name = The_Marsh_King # Mentioned, the last Marsh King
+	dynasty = dynn_Marsh_King
+
+	prowess = 9
+
+	religion = old_gods_wnw
+	culture = crannogman
+
+	5652.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	5668.1.1 = { trait = lifestyle_mystic_3_history }
+	5706.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = Stark_19 # Rickard Stark
+		}
+	}
+}

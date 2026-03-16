@@ -1,0 +1,31 @@
+Myshkin_142 = {
+	name = Line_of_Harbert
+	dynasty = dynn_Myshkin
+
+	religion = old_gods_wnw
+	culture = first_man
+
+	father = Myshkin_139
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6567.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Lysander_99 = {
+	name = Line_of_Mathis
+	dynasty = dynn_Lysander
+
+	religion = fots_seven
+	culture = honeywiner
+
+	father = Lysander_98
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6732.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}

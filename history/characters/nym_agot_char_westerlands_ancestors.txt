@@ -1,0 +1,1446 @@
+LannisterLP_9 = {
+	name = Line_of_Lannisport
+	dynasty_house = house_LannisterLannisport
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Lannister_29 # Lann the Clever
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2317.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Tarbeck_200 = {
+    name = Tommen
+    dynasty = dynn_Tarbeck
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7261.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Reyne_3 = {
+	name = Line_of_Reynard
+	dynasty = dynn_Reyne
+
+	religion = old_gods_wnw
+	culture = westerman_main
+
+	father = Reyne_1
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2310.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Reyne_200 = {
+    name = Lucion
+    dynasty = dynn_Reyne
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7281.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Westerling_200 = {
+    name = Tytion
+    dynasty = dynn_Westerling
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7267.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Lefford_96 = {
+	name = Line_of_Cerion
+	dynasty = dynn_Lefford
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Lefford_95
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6380.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Lefford_200 = {
+    name = Eldon
+    dynasty = dynn_Lefford
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7276.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Lydden_9 = {
+	name = Line_of_Joffrey
+	dynasty = dynn_Lydden
+
+	religion = fots_seven
+	culture = westerman_main
+
+	trait = bastard # Stop this line inheriting
+
+	father = Lydden_8
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6311.1.1 = {
+		birth = yes
+		make_trait_inactive = surname_hill
+	}
+	7299.1.1 = { death = yes }
+}
+
+Lydden_200 = {
+    name = Tomard
+    dynasty = dynn_Lydden
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7266.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Crakehall_200 = {
+    name = Merlon
+    dynasty = dynn_Crakehall
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7256.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Marbrand_116 = {
+	name = Line_of_Gerold
+	dynasty = dynn_Marbrand
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Marbrand_115
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6321.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Marbrand_200 = {
+    name = Denys
+    dynasty = dynn_Marbrand
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7262.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Farman_10 = {
+	name = Line_of_Tommen
+	dynasty = dynn_Farman
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Farman_88
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6440.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Farman_200 = {
+    name = Orbert
+    dynasty = dynn_Farman
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7265.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Broome_200 = {
+    name = Horys
+    dynasty = dynn_Broome
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7270.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+KenningK_5 = {
+	name = Line_of_Herrock
+	dynasty_house = house_KenningK
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = KenningK_4
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6365.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Prester_200 = {
+    name = Geremy
+    dynasty = dynn_Prester
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7273.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Banefort_8 = {
+	name = Line_of_Morgon
+	dynasty = dynn_Banefort
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Banefort_7
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2358.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Banefort_200 = {
+    name = Kevan
+    dynasty = dynn_Banefort
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7275.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Brax_200 = {
+    name = Rupert
+    dynasty = dynn_Brax
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7264.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Serrett_200 = {
+    name = Gawen
+    dynasty = dynn_Serrett
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7258.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Yew_9 = {
+	name = Line_of_Alan_o_the_oak
+	dynasty = dynn_Yew
+
+	religion = old_gods_wnw
+	culture = first_man
+
+	father = Yew_8
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2125.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Payne_200 = {
+    name = Gerion
+    dynasty = dynn_Payne
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7274.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Hawthorne_26 = {
+	name = Line_of_Lorent
+	dynasty = dynn_Hawthorne
+
+	religion = old_gods_wnw
+	culture = first_man
+
+	father = Hawthorne_27 # Lorent Hawthorne
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6433.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Plumm_200 = {
+    name = Harys
+    dynasty = dynn_Plumm
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7251.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Swyft_200 = {
+    name = Sheldon
+    dynasty = dynn_Swyft
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7260.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Moreland_4 = {
+	name = Line_of_Pate
+	dynasty = dynn_Moreland
+
+	religion = old_gods_wnw
+	culture = first_man
+
+	father = Moreland_3
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2127.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Stackspear_200 = {
+    name = Willam
+    dynasty = dynn_Stackspear
+    random_traits = yes
+    religion = fots_seven
+    culture = westerman_main
+    7260.1.1 = {
+        birth = yes
+    }
+    7295.1.1 = {
+        trait = knight
+    }
+    7320.1.1 = { death = yes }
+}
+
+Lanny_9 = {
+	name = Line_of_Lanny
+	dynasty_house = house_Lanny
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Lannister_29 # Lann the Clever
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2318.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Lantell_9 = {
+	name = Line_of_Lantell
+	dynasty_house = house_Lantell
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Lannister_29 # Lann the Clever
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2319.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Lannett_9 = {
+	name = Line_of_Lannett
+	dynasty_house = house_Lannett
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Lannister_29 # Lann the Clever
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	2320.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Dulver_11 = {
+	name = Line_of_Walgram
+	dynasty = dynn_Dulver
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Dulver_53
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6470.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Wrexley_7 = {
+	name = Line_of_Cleos
+	dynasty = dynn_Wrexley
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Wrexley_6
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6650.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Hawthorne_200 = {
+	name = Raymont
+	dynasty = dynn_Hawthorne
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Yew_200 = {
+	name = Symond
+	dynasty = dynn_Yew
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Merchant_200 = {
+	name = Bennard
+	dynasty = dynn_Merchant
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Moreland_200 = {
+	name = Gyles
+	dynasty = dynn_Moreland
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7253.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7317.1.1 = { death = yes }
+}
+
+Avery_200 = {
+	name = Raymont
+	dynasty = dynn_Avery
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Voyald_200 = {
+	name = Symond
+	dynasty = dynn_Voyald
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Tortoll_200 = {
+	name = Bennard
+	dynasty = dynn_Tortoll
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Greenfield_200 = {
+	name = Gyles
+	dynasty = dynn_Greenfield
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7253.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7317.1.1 = { death = yes }
+}
+
+Merrell_200 = {
+	name = Raymont
+	dynasty = dynn_Merrell
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Lorch_200 = {
+	name = Symond
+	dynasty = dynn_Lorch
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Stillwood_200 = {
+	name = Bennard
+	dynasty = dynn_Stillwood
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Weaf_200 = {
+	name = Raymont
+	dynasty = dynn_Weaf
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Drox_200 = {
+	name = Symond
+	dynasty = dynn_Drox
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Doggett_200 = {
+	name = Bennard
+	dynasty = dynn_Doggett
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Turnberry_200 = {
+	name = Gyles
+	dynasty = dynn_Turnberry
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7253.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7317.1.1 = { death = yes }
+}
+
+Lansdale_200 = {
+	name = Raymont
+	dynasty = dynn_Lansdale
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Tetting_200 = {
+	name = Symond
+	dynasty = dynn_Tetting
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Hamell_200 = {
+	name = Bennard
+	dynasty = dynn_Hamell
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Thanders_200 = {
+	name = Raymont
+	dynasty = dynn_Thanders
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Burrows_200 = {
+	name = Raymont
+	dynasty = dynn_Burrows
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Peckledon_200 = {
+	name = Symond
+	dynasty = dynn_Peckledon
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Brockryn_200 = {
+	name = Bennard
+	dynasty = dynn_Brockryn
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Ferren_200 = {
+	name = Gyles
+	dynasty = dynn_Ferren
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7253.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7317.1.1 = { death = yes }
+}
+
+LannisterLP_200 = {
+	name = Tyland
+	dynasty_house = house_LannisterLannisport
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7260.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Parren_200 = {
+	name = Raymont
+	dynasty = dynn_Parren
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7317.1.1 = { death = yes }
+}
+
+Taves_200 = {
+	name = Symond
+	dynasty = dynn_Taves
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Hetherspoon_200 = {
+	name = Bennard
+	dynasty = dynn_Hetherspoon
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Jast_200 = {
+	name = Gyles
+	dynasty = dynn_Jast
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7253.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7316.1.1 = { death = yes }
+}
+
+Falwell_200 = {
+	name = Olyvar
+	dynasty = dynn_Falwell
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7247.1.1 = {
+		birth = yes
+	}
+	7292.1.1 = {
+		trait = knight
+	}
+	7313.1.1 = { death = yes }
+}
+
+Bettley_200 = {
+	name = Raymont
+	dynasty = dynn_Bettley
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Lugus_200 = {
+	name = Symond
+	dynasty = dynn_Lugus
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Garner_200 = {
+	name = Bennard
+	dynasty = dynn_Garner
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Yarwyck_200 = {
+	name = Raymont
+	dynasty = dynn_Yarwyck
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Headingley_200 = {
+	name = Symond
+	dynasty = dynn_Headingley
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Dabell_200 = {
+	name = Bennard
+	dynasty = dynn_Dabell
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+KenningK_200 = {
+	name = Raymont
+	dynasty_house = house_KenningK
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Tarwick_200 = {
+	name = Symond
+	dynasty = dynn_Tarwick
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Kyndall_200 = {
+	name = Bennard
+	dynasty = dynn_Kyndall
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Wrexley_200 = {
+	name = Raymont
+	dynasty = dynn_Wrexley
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Trembley_200 = {
+	name = Symond
+	dynasty = dynn_Trembley
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Myatt_200 = {
+	name = Raymont
+	dynasty = dynn_Myatt
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Foote_200 = {
+	name = Symond
+	dynasty = dynn_Foote
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Ruttiger_200 = {
+	name = Bennard
+	dynasty = dynn_Ruttiger
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Lanster_200 = {
+	name = Gyles
+	dynasty = dynn_Lanster
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7253.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7317.1.1 = { death = yes }
+}
+
+Lowell_200 = {
+	name = Raymont
+	dynasty = dynn_Lowell
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Lender_200 = {
+	name = Symond
+	dynasty = dynn_Lender
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Sarsfield_200 = {
+	name = Bennard
+	dynasty = dynn_Sarsfield
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Pendric_200 = {
+	name = Gyles
+	dynasty = dynn_Pendric
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7253.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7317.1.1 = { death = yes }
+}
+
+Clifton_200 = {
+	name = Raymont
+	dynasty = dynn_Clifton
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Price_200 = {
+	name = Raymont
+	dynasty = dynn_Price
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Tinpenny_200 = {
+	name = Symond
+	dynasty = dynn_Tinpenny
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Ruskyn_200 = {
+	name = Raymont
+	dynasty = dynn_Ruskyn
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Estren_200 = {
+	name = Symond
+	dynasty = dynn_Estren
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Westford_200 = {
+	name = Bennard
+	dynasty = dynn_Westford
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7262.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+
+Algood_200 = {
+	name = Raymont
+	dynasty = dynn_Algood
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7256.1.1 = {
+		birth = yes
+	}
+	7294.1.1 = {
+		trait = knight
+	}
+	7318.1.1 = { death = yes }
+}
+
+Dulver_200 = {
+	name = Symond
+	dynasty = dynn_Dulver
+	random_traits = yes
+	religion = fots_seven
+	culture = westerman_main
+	7249.1.1 = {
+		birth = yes
+	}
+	7293.1.1 = {
+		trait = knight
+	}
+	7315.1.1 = { death = yes }
+}
+
+Casterly_7 = {
+	name = Caster # Mentioned, last Casterly lord
+	dynasty = dynn_Casterly
+
+	religion = old_gods_wnw
+	culture = first_man
+
+	father = Casterly_6
+
+	trait = education_stewardship_2
+	trait = charming
+
+	disallow_random_traits = yes
+
+	1990.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_mentioned
+	}
+	2024.1.1 = {
+		trait = compassionate
+		trait = generous
+		trait = brave
+		trait = trusting
+		trait = depressed_1
+	}
+	2028.1.1 = {
+		death = { death_reason = death_mysterious } # Various versions
+	}
+}
+
+Lannister_59 = {
+	name = Lancel # Canon, Lancel IV, killed Iron King Harrald Halfdrowned
+	dynasty = dynn_Lannister
+
+	religion = fots_seven
+	culture = westerman_main
+
+	father = Lannister_154
+
+	trait = education_martial_2
+
+	7009.1.1 = {
+		birth = yes
+		make_trait_inactive = emerald_eyes
+		make_trait_inactive = gold_hair
+		add_character_flag = canon_status_canon
+	}
+	7025.1.1 = {
+		trait = knight
+		trait = brave
+		trait = ambitious
+		trait = lifestyle_blademaster_3_history
+	}
+	7051.1.1 = {
+		death = {
+			death_reason = death_battle # Battle of the Red Lake
+			killer = Osgrey_12 # Wilbert Osgrey
+		}
+	}
+}
+
+Banefort_7 = {
+	name = Morgon # Canon, Last Hooded King
+	dynasty = dynn_Banefort
+
+	religion = old_gods_wnw
+	culture = first_man
+
+	father = Banefort_6
+
+	trait = education_intrigue_4
+	trait = education_martial_prowess_3
+
+	2315.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	2331.1.1 = {
+		trait = wrathful
+		trait = deceitful
+		trait = zealous
+		trait = lifestyle_mystic_3_history
+	}
+	2358.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = Lannister_30 # Loreon I Lannister
+		}
+	}
+}

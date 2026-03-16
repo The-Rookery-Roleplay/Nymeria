@@ -1,0 +1,31 @@
+Moonfell_4 = {
+	name = Line_of_Hugh
+	dynasty = dynn_Moonfell
+
+	religion = fots_seven
+	culture = valeman_main
+
+	father = Moonfell_3
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6510.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}
+
+Talbot_2 = {
+	name = Line_of_Talbot
+	dynasty = dynn_Talbot
+
+	religion = old_gods_wnw
+	culture = reachman
+
+	father = Talbot_1
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	285.1.1 = { birth = yes }
+	7299.1.1 = { death = yes }
+}

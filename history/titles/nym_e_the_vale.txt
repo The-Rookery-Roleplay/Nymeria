@@ -1,0 +1,696 @@
+e_the_vale = {
+	7299.1.1 = {
+		holder = Arryn_200
+	}
+}
+
+k_the_vale = {
+	7299.1.1 = {
+		holder = Arryn_200
+	}
+}
+
+d_the_giants_lance = {
+	7299.1.1 = {
+		holder = Arryn_200
+	}
+}
+
+c_the_eyrie = {
+	7299.1.1 = {
+		holder = Arryn_200
+	}
+}
+
+c_donnersdown = {
+	7299.1.1 = {
+		holder = Donnerly_200
+	}
+}
+
+c_giants_scar = {
+	7299.1.1 = {
+		holder = Arryn_200
+	}
+}
+
+c_godsroost = {
+	7299.1.1 = {
+		holder = Arryn_200
+	}
+}
+
+c_moongates = {
+	7299.1.1 = {
+		holder = Arryn_200
+	}
+}
+
+c_the_bloody_gate = {
+	7299.1.1 = {
+		holder = Arryn_200
+	}
+}
+
+d_crowncrests = {
+	7299.1.1 = {
+		holder = Egen_200
+	}
+}
+
+c_crown_crescent = {
+	7299.1.1 = {
+		holder = Egen_200
+	}
+}
+
+c_crestfall = {
+	7299.1.1 = {
+		liege = d_crowncrests
+		holder = Marsten_200
+	}
+}
+
+c_morency = {
+	7299.1.1 = {
+		liege = d_crowncrests
+		holder = Altger_200
+	}
+}
+
+c_purling = {
+	7299.1.1 = {
+		liege = d_crowncrests
+		holder = Halcott_200
+	}
+}
+
+d_eastweald = {
+	7299.1.1 = {
+		holder = Hunter_200
+	}
+}
+
+c_longbow_hills = {
+	7299.1.1 = {
+		holder = Hunter_200
+	}
+}
+
+c_sedgemore = {
+	7299.1.1 = {
+		holder = Crayne_200
+	}
+}
+
+c_bowlyn = {
+	7299.1.1 = {
+		holder = Chase_200
+	}
+}
+
+c_brackenbrick_point = {
+	7299.1.1 = {
+		holder = Crews_200
+	}
+}
+
+c_lyme = {
+	7299.1.1 = {
+		holder = Bretherick_200
+	}
+}
+
+c_ruthermont = {
+	7299.1.1 = {
+		holder = Ruthermont_200
+	}
+}
+
+c_the_stills = {
+	7299.1.1 = {
+		holder = Ran_Cammon_200
+	}
+}
+
+d_gulltown = {
+	7299.1.1 = {
+		holder = Grafton_200
+	}
+}
+
+c_gulltown = {
+	7299.1.1 = {
+		holder = Grafton_200
+	}
+}
+
+c_etterbill = {
+	7299.1.1 = {
+		holder = Barnaby_200
+	}
+}
+
+c_kear = {
+	7299.1.1 = {
+		holder = Kinnear_200
+	}
+}
+
+c_osgoodswell = {
+	7299.1.1 = {
+		holder = ShettGT_200
+	}
+}
+
+c_port_of_arryn = {
+	7299.1.1 = {
+		holder = Grafton_200
+	}
+}
+
+d_hearts_home = {
+	7299.1.1 = {
+		holder = Corbray_200
+	}
+}
+
+c_hearts_home = {
+	7299.1.1 = {
+		holder = Corbray_200
+	}
+}
+
+c_bronzespear = {
+	7299.1.1 = {
+		holder = Moore_200
+	}
+}
+
+c_rathmore = {
+	7299.1.1 = {
+		holder = Shelldrake_200
+	}
+}
+
+c_standish = {
+	7299.1.1 = {
+		holder = Moore_200
+	}
+}
+
+c_stonefall = {
+	7299.1.1 = {
+		holder = Breakstone_200
+	}
+}
+
+d_ironoaks = {
+	7299.1.1 = {
+		holder = Waynwood_200
+	}
+}
+
+c_ironoaks = {
+	7299.1.1 = {
+		holder = Waynwood_200
+	}
+}
+
+c_hardvale = {
+	7299.1.1 = {
+		holder = Hardyng_200
+	}
+}
+
+c_hazen = {
+	7299.1.1 = {
+		holder = Verlayn_200
+	}
+}
+
+c_ryefeld = {
+	7299.1.1 = {
+		holder = Beale_200
+	}
+}
+
+c_the_banners = {
+	7299.1.1 = {
+		holder = Orimund_200
+	}
+}
+
+d_ninestars = {
+	7299.1.1 = {
+		holder = Templeton_200
+	}
+}
+
+c_ninestars = {
+	7299.1.1 = {
+		holder = Templeton_200
+	}
+}
+
+c_kipress = {
+	7299.1.1 = {
+		holder = Dutton_200
+	}
+}
+
+c_newberry = {
+	7299.1.1 = {
+		holder = Upshall_200
+	}
+}
+
+c_stoutstone = {
+	7299.1.1 = {
+		holder = Stewart_200
+	}
+}
+
+d_northbreach = {
+	7299.1.1 = {
+		holder = Hersy_200
+	}
+}
+
+c_hersy = {
+	7299.1.1 = {
+		liege = d_northbreach
+		holder = Hersy_200
+	}
+}
+
+c_eventide = {
+	7299.1.1 = {
+		liege = d_northbreach
+		holder = Morgryn_200
+	}
+}
+
+c_forgotten_shore = {
+	7299.1.1 = {
+		liege = d_northbreach
+		holder = Symes_200
+	}
+}
+
+c_pebble = {
+	7299.1.1 = {
+		liege = d_northbreach
+		holder = Pryor_200
+	}
+}
+
+c_portmouth = {
+	7299.1.1 = {
+		liege = d_northbreach
+		holder = Wiltwood_200
+	}
+}
+
+c_reckshaw = {
+	7299.1.1 = {
+		liege = d_northbreach
+		holder = Bleaker_200
+	}
+}
+
+c_scorched_vale = {
+	7299.1.1 = {
+		liege = d_northbreach
+		holder = Grolt_200
+	}
+}
+
+c_strikeguard = {
+	7299.1.1 = {
+		liege = d_northbreach
+		holder = Brask_200
+	}
+}
+
+d_old_anchor = {
+	7299.1.1 = {
+		holder = Melcolm_200
+	}
+}
+
+c_old_anchor = {
+	7299.1.1 = {
+		liege = d_old_anchor
+		holder = Melcolm_200
+	}
+}
+
+c_wycliffe = {
+	7299.1.1 = {
+		liege = d_old_anchor
+		holder = Wydman_200
+	}
+}
+
+c_rustpointe = {
+	7299.1.1 = {
+		liege = d_old_anchor
+		holder = Cullimore_200
+	}
+}
+
+c_tetchmere = {
+	7299.1.1 = {
+		liege = d_old_anchor
+		holder = Seldon_200
+	}
+}
+
+d_runestone = {
+	7299.1.1 = {
+		holder = Royce_200
+	}
+}
+
+c_runestone = {
+	7299.1.1 = {
+        holder = Royce_200
+    }
+}
+
+c_bronzeguard = {
+	7299.1.1 = {
+		holder = True_200
+	}
+}
+
+c_gullview = {
+	7299.1.1 = {
+		liege = d_runestone
+		holder = Shett_200
+	}
+}
+
+c_the_etchings = {
+	7299.1.1 = {
+		holder = Witt_200
+	}
+}
+
+c_witch_isle = {
+	7299.1.1 = {
+		holder = Upcliff_200
+	}
+}
+
+d_snakewood_forest = {
+	7299.1.1 = {
+		holder = Lynderly_200
+	}
+}
+
+c_snakewood = {
+	7299.1.1 = {
+		liege = d_snakewood_forest
+		holder = Lynderly_200
+	}
+}
+
+c_correll = {
+	7299.1.1 = {
+		liege = d_snakewood_forest
+		holder = Whickett_200
+	}
+}
+
+c_harrowpool = {
+	7299.1.1 = {
+		liege = d_snakewood_forest
+		holder = Harrow_200
+	}
+}
+
+c_hungerford = {
+	7299.1.1 = {
+		liege = d_snakewood_forest
+		holder = Hungerford_200
+	}
+}
+
+c_misty_moor = {
+	7299.1.1 = {
+		liege = d_snakewood_forest
+		holder = Rutley_200
+	}
+}
+
+c_sunkenwood = {
+	7299.1.1 = {
+		liege = d_snakewood_forest
+		holder = Yates_200
+	}
+}
+
+c_willowspire = {
+	7299.1.1 = {
+		liege = d_snakewood_forest
+		holder = Devener_200
+	}
+}
+
+d_strongsong = {
+	7299.1.1 = {
+		holder = Belmore_200
+	}
+}
+
+c_strongsong = {
+	7299.1.1 = {
+		holder = Belmore_200
+	}
+}
+
+c_timbers_wedge = {
+	7299.1.1 = {
+		liege = d_strongsong
+		holder = Warrick_200
+	}
+}
+
+c_bluewater = {
+	7299.1.1 = {
+		liege = d_strongsong
+		holder = Seasons_200
+	}
+}
+
+c_clammath = {
+	7299.1.1 = {
+		holder = Belmore_200
+	}
+}
+
+c_topperpoole = {
+	7299.1.1 = {
+		liege = d_strongsong
+		holder = Myshkin_200
+	}
+}
+
+c_vearnon = {
+	7299.1.1 = {
+		liege = d_strongsong
+		holder = Vearnon_200
+	}
+}
+
+c_waldlake = {
+	7299.1.1 = {
+		liege = d_strongsong
+		holder = Morris_200
+	}
+}
+
+d_strongstone = {
+	7299.1.1 = {
+		holder = Redfort_200
+	}
+}
+
+c_the_redfort = {
+	7299.1.1 = {
+		holder = Redfort_200
+	}
+}
+
+c_breckland = {
+	7299.1.1 = {
+		holder = Redfort_200
+	}
+}
+
+c_brume = {
+	7299.1.1 = {
+		holder = Weight_200
+	}
+}
+
+c_mullbry = {
+	7299.1.1 = {
+		holder = Mullyn_200
+	}
+}
+
+c_tangled_shore = {
+	7299.1.1 = {
+		holder = Auldryn_200
+	}
+}
+
+c_sunrise_bite = {
+	7299.1.1 = {
+		holder = Donniger_200
+	}
+}
+
+c_bludden = {
+	7299.1.1 = {
+		holder = Flattery_200
+	}
+}
+
+c_crows_barrens = {
+	7299.1.1 = {
+		holder = Garrish_200
+	}
+}
+
+c_rockle = {
+	7299.1.1 = {
+		holder = Lipps_200
+	}
+}
+
+c_coldwater_burn = {
+	7299.1.1 = {
+		holder = Coldwater_200
+	}
+}
+
+c_grey_glen = {
+	7299.1.1 = {
+		holder = Tollett_200
+	}
+}
+
+c_tammerlan = {
+	7299.1.1 = {
+		holder = Kurrigan_200
+	}
+}
+
+d_grimholm = {
+	7299.1.1 = {
+		holder = Elesham_200
+	}
+}
+
+c_the_paps = {
+	7299.1.1 = {
+		holder = Elesham_200
+	}
+}
+
+c_bommenstone = {
+	7299.1.1 = {
+		holder = Bommenstone_200
+	}
+}
+
+c_brownden = {
+	7299.1.1 = {
+		holder = Woodhull_200
+	}
+}
+
+c_longmoor = {
+	7299.1.1 = {
+		holder = Driscoll_200
+	}
+}
+
+c_midlor = {
+	7299.1.1 = {
+		holder = Den_Brove_200
+	}
+}
+
+c_midlor_point = {
+	7299.1.1 = {
+		holder = Midlor_200
+	}
+}
+
+c_pinkstrath = {
+	7299.1.1 = {
+		holder = Marks_200
+	}
+}
+
+d_the_sisters = {
+	7299.1.1 = {
+		holder = Sunderland_200
+	}
+}
+
+c_sunderland = {
+	7299.1.1 = {
+		holder = Sunderland_200
+	}
+}
+
+c_littlesister = {
+	7299.1.1 = {
+		liege = d_the_sisters
+		holder = Torrent_200
+	}
+}
+
+c_sweetsister = {
+	7299.1.1 = {
+		liege = d_the_sisters
+		holder = Borrell_200
+	}
+}
+
+c_west_longsister = {
+	7299.1.1 = {
+		liege = d_the_sisters
+		holder = Longthorpe_200
+	}
+}
+
+c_wickenden = {
+	7299.1.1 = {
+		holder = Waxley_200
+	}
+}
+
+c_crabs_shore = {
+	7299.1.1 = {
+		holder = Garnett_200
+	}
+}
+
+c_marbletoft = {
+	7299.1.1 = {
+		holder = Weatherwax_200
+	}
+}
+
+c_moonbloom = {
+	7299.1.1 = {
+		holder = Revere_200
+	}
+}

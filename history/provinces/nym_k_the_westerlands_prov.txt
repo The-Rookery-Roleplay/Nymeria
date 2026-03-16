@@ -1,0 +1,8 @@
+2992 = {
+	culture = westerman_main
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_04 }	
+	}
+}

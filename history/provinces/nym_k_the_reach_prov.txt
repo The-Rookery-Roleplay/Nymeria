@@ -1,0 +1,79 @@
+4102 = {
+	culture = greenborn
+	religion = drowned_god
+	7824.1.1 = {
+		buildings = { castle_03 }
+		culture = shieldman
+		religion = fots_seven
+	}
+	holding = castle_holding
+	special_building = agot_oakenshield_bastion_01
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+4107 = {
+	culture = greenborn
+	religion = drowned_god
+	7824.1.1 = {
+		culture = shieldman
+		religion = fots_seven
+	}
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+4111 = {
+	culture = greenborn
+	religion = drowned_god
+	7824.1.1 = {
+		culture = shieldman
+		religion = fots_seven
+	}
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+4116 = {
+	culture = greenborn
+	religion = drowned_god
+	7824.1.1 = {
+		culture = shieldman
+		religion = fots_seven
+	}
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+4117 = {
+	culture = greenborn
+	religion = drowned_god
+	7824.1.1 = {
+		culture = shieldman
+		religion = fots_seven
+	}
+	holding = city_holding
+	7824.1.1 = {
+		buildings = { city_01 }
+	}
+}
+
+4122 = {
+	culture = greenborn
+	religion = drowned_god
+	7824.1.1 = {
+		culture = shieldman
+		religion = fots_seven
+	}
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
