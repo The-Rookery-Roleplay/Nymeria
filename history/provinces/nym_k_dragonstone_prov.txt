@@ -1,0 +1,61 @@
+4419 = {
+	culture = riverman_main
+	religion = fots_seven
+	7500.1.1 = {
+		culture = westerosi_valyrian
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	special_building = agot_driftmark_01
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+4424 = {
+	culture = riverman_main
+	religion = fots_seven
+	7500.1.1 = {
+		culture = westerosi_valyrian
+		religion = fots_seven
+	}
+	holding = castle_holding
+	special_building_slot = agot_hightide_01
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+	8086.1.1 = {
+		special_building = agot_hightide_01
+	}
+	8130.1.6 = {
+		special_building = agot_ruins_hightide_01
+	}
+}
+
+4435 = {
+	culture = clawman
+	religion = old_gods_wnw
+	7500.1.1 = {
+		culture = westerosi_valyrian
+		religion = fots_seven
+	}
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+4436 = {
+	culture = clawman
+	religion = old_gods_wnw
+	7500.1.1 = {
+		culture = westerosi_valyrian
+		religion = fots_seven
+	}
+	holding = castle_holding
+	special_building = agot_claw_isle_01
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
