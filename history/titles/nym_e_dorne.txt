@@ -1,669 +1,672 @@
 d_sunspear = {
-	7299.1.1 = { # About 700 years before the events of the books Nymeria landed.
-		holder = Martell_23 #Mors
-		effect = {
-			set_title_name = d_sunship
-			title:c_sunspear = { set_title_name = c_sunship }
-			title:b_sunspear = { set_title_name = b_sunship }
-		}
-	}
-	7300.1.1 = {
-		liege = k_the_greenblood
-		holder = Martell_23
-		effect = {
-			reset_title_name = yes
-			title:c_sunspear = { reset_title_name = yes }
-			title:b_sunspear = { reset_title_name = yes }
-		}
-	}
+    7299.1.1 = { # About 700 years before the events of the books Nymeria landed.
+        holder = Martell_23 #Mors
+        effect = {
+            set_title_name = d_sunship
+            title:c_sunspear = { set_title_name = c_sunship }
+            title:b_sunspear = { set_title_name = b_sunship }
+        }
+    }
+    7300.1.1 = {
+        liege = k_the_greenblood
+        holder = Martell_23
+        effect = {
+            reset_title_name = yes
+            title:c_sunspear = { reset_title_name = yes }
+            title:b_sunspear = { reset_title_name = yes }
+        }
+    }
 }
 
 c_husk_flats = {
-	7299.1.1 = { 
-		liege = d_sunspear
-		holder = Shell_Dorne_200
-	}
+    7299.1.1 = {
+        liege = d_sunspear
+        holder = Shell_Dorne_200
+    }
 }
 
 c_plankytown = {
-	7299.1.1 = { 
-		liege = d_sunspear
-		holder = Martell_23
-		effect = {
-			set_title_name = c_mouth_of_greenblood
-			title:b_plankytown = { set_title_name = b_mouth_of_greenblood }
-			if = {
-				limit = { game_start_date < 7300.1.1 }
-				title:b_plankytown.title_province = { remove_holding = yes }
-				title:b_plankytown.title_province = { add_special_building_slot = agot_plankytown_01 }
-			}
-		}
-	}
-	7300.1.1 = {
-		liege = d_sunspear
-		holder = Martell_23
-		effect = {
-			reset_title_name = yes
-			title:b_plankytown = { reset_title_name = yes }
-		}
-	}
+    7299.1.1 = {
+        liege = d_sunspear
+        holder = Martell_23
+        effect = {
+            set_title_name = c_mouth_of_greenblood
+            title:b_plankytown = { set_title_name = b_mouth_of_greenblood }
+            if = {
+                limit = { game_start_date < 7300.1.1 }
+                title:b_plankytown.title_province = { remove_holding = yes }
+                title:b_plankytown.title_province = { add_special_building_slot = agot_plankytown_01 }
+            }
+        }
+    }
+    7300.1.1 = {
+        liege = d_sunspear
+        holder = Martell_23
+        effect = {
+            reset_title_name = yes
+            title:b_plankytown = { reset_title_name = yes }
+        }
+    }
 }
 
 c_stinkwater = {
-	7299.1.1 = { 
-		liege = d_sunspear
-		holder = Wade_200
-	}
+    7299.1.1 = {
+        liege = d_sunspear
+        holder = Wade_200
+    }
 }
 
 c_baldcrest = {
-	7299.1.1 = { 
-		liege = k_blackmont
-		holder = Trevanion_200
-	}
-	7300.1.1 = { 
-		liege = d_blackmont
-	}
+    7299.1.1 = {
+        liege = k_blackmont
+        holder = Trevanion_200
+    }
+    7300.1.1 = {
+        liege = d_blackmont
+    }
 }
 
 c_carrion_heights = {
-	7299.1.1 = { 
-		liege = k_blackmont
-		holder = Offal_200
-	}
-	7300.1.1 = { 
-		liege = d_blackmont
-	}
+    7299.1.1 = {
+        liege = k_blackmont
+        holder = Offal_200
+    }
+    7300.1.1 = {
+        liege = d_blackmont
+    }
 }
 
 c_the_crawl = {
-	7299.1.1 = { 
-		liege = k_blackmont
-		holder = Gore_200
-	}
-	7300.1.1 = { 
-		liege = d_blackmont
-	}
+    7299.1.1 = {
+        liege = k_blackmont
+        holder = Gore_200
+    }
+    7300.1.1 = {
+        liege = d_blackmont
+    }
 }
 
 c_westroost = {
-	7299.1.1 = { 
-		liege = k_blackmont
-		holder = Ravencroft_200
-	}
-	7300.1.1 = { 
-		liege = d_blackmont
-	}
+    7299.1.1 = {
+        liege = k_blackmont
+        holder = Ravencroft_200
+    }
+    7300.1.1 = {
+        liege = d_blackmont
+    }
 }
 
 c_burning_dunes = {
-	7299.1.1 = { 
-		liege = k_the_drylands
-		holder = Loux_200
-	}
-	7300.1.1 = { 
-		liege = d_brimstone
-	}
+    7299.1.1 = {
+        liege = k_the_drylands
+        holder = Loux_200
+    }
+    7300.1.1 = {
+        liege = d_brimstone
+    }
 }
 
 c_jackalrun = {
-	7299.1.1 = { 
-		liege = k_the_drylands
-		holder = Shanin_200
-	}
-	7300.1.1 = { 
-		liege = d_brimstone
-	}
+    7299.1.1 = {
+        liege = k_the_drylands
+        holder = Shanin_200
+    }
+    7300.1.1 = {
+        liege = d_brimstone
+    }
 }
 
 c_steamfall = {
-	7299.1.1 = { 
-		liege = k_the_drylands
-		holder = Belam_200
-	}
-	7300.1.1 = { 
-		liege = d_brimstone
-	}
+    7299.1.1 = {
+        liege = k_the_drylands
+        holder = Belam_200
+    }
+    7300.1.1 = {
+        liege = d_brimstone
+    }
 }
 
 c_sulphur_flats = {
-	7299.1.1 = { 
-		liege = k_the_drylands
-		holder = Cook_200
-	}
-	7300.1.1 = { 
-		liege = d_brimstone
-	}
+    7299.1.1 = {
+        liege = k_the_drylands
+        holder = Cook_200
+    }
+    7300.1.1 = {
+        liege = d_brimstone
+    }
 }
 
 c_willburn = {
-	7299.1.1 = { 
-		liege = k_the_drylands
-		holder = Karlach_200
-	}
-	7300.1.1 = { 
-		liege = d_brimstone
-	}
+    7299.1.1 = {
+        liege = k_the_drylands
+        holder = Karlach_200
+    }
+    7300.1.1 = {
+        liege = d_brimstone
+    }
 }
 
 d_broken_arm = {
-	7299.1.1 = {
-		holder = Santagar_200
-	}
+    7299.1.1 = {
+        holder = Santagar_200
+    }
 }
 
 c_rockwell = {
-	7299.1.1 = { 
-		liege = d_broken_arm
-		holder = Clarisse_200
-	}
+    7299.1.1 = {
+        liege = d_broken_arm
+        holder = Clarisse_200
+    }
 }
 
 c_torchwood = {
-	7299.1.1 = { 
-		liege = d_broken_arm
-		holder = Ladybright_200
-	}
+    7299.1.1 = {
+        liege = d_broken_arm
+        holder = Ladybright_200
+    }
 }
 
 d_ghost_hills = {
-	7299.1.1 = {
-		holder = Toland_200
-		effect = {
-			dynasty:dynn_Toland ?= {
-				set_coa = dynn_Toland_Old
-			}
-		}
-	}
-	7300.1.1 = {
-		liege = k_the_greenblood
-	}
+    7299.1.1 = {
+        holder = Toland_200
+        effect = {
+            dynasty:dynn_Toland ?= {
+                set_coa = dynn_Toland_Old
+            }
+        }
+    }
+    7300.1.1 = {
+        liege = k_the_greenblood
+    }
 }
 
 c_nymercairn = {
-	7299.1.1 = { 
-		liege = d_ghost_hills
-		holder = Jytarn_200
-	}
+    7299.1.1 = {
+        liege = d_ghost_hills
+        holder = Jytarn_200
+    }
 }
 
 d_godsgrace = {
-	7299.1.1 = {
-		holder = Allyrion_200
-	}
+    7299.1.1 = {
+        holder = Allyrion_200
+    }
 }
 
 c_goldpeppers = {
-	7299.1.1 = { 
-		liege = d_godsgrace
-		holder = Cascabel_200
-	}
+    7299.1.1 = {
+        liege = d_godsgrace
+        holder = Cascabel_200
+    }
 }
 
 c_latebloom = {
-	7299.1.1 = { 
-		liege = d_godsgrace
-		holder = Gerradyn_200
-	}
+    7299.1.1 = {
+        liege = d_godsgrace
+        holder = Gerradyn_200
+    }
 }
 
 c_nerandyn = {
-	7299.1.1 = { 
-		liege = d_godsgrace
-		holder = Erdinyyra_200
-	}
+    7299.1.1 = {
+        liege = d_godsgrace
+        holder = Erdinyyra_200
+    }
 }
 
 c_orangewood = {
-	7299.1.1 = { 
-		liege = d_godsgrace
-		holder = Hull_200
-	}
+    7299.1.1 = {
+        liege = d_godsgrace
+        holder = Hull_200
+    }
 }
 
 c_sevensdunes = {
-	7299.1.1 = { 
-		liege = d_godsgrace
-		holder = Vestor_200
-	}
+    7299.1.1 = {
+        liege = d_godsgrace
+        holder = Vestor_200
+    }
 }
 
 d_lemonwood = {
-	7299.1.1 = {
-		holder = Dalt_200
-	}
+    7299.1.1 = {
+        holder = Dalt_200
+    }
 }
 
 c_sourmarket = {
-	7299.1.1 = { 
-		liege = d_lemonwood
-		holder = Tart_200
-	}
+    7299.1.1 = {
+        liege = d_lemonwood
+        holder = Tart_200
+    }
 }
 
 c_sweetwater = {
-	7299.1.1 = { 
-		liege = d_lemonwood
-		holder = Beveridge_200
-	}
+    7299.1.1 = {
+        liege = d_lemonwood
+        holder = Beveridge_200
+    }
 }
 
 c_first_well = {
-	7299.1.1 = { 
-		holder = Wells_200
-	}
-	7300.1.1 = { 
-		liege = d_the_princes_pass
-	}
+    7299.1.1 = {
+        holder = Wells_200
+    }
+    7300.1.1 = {
+        liege = d_the_princes_pass
+    }
 }
 
 c_drywell = {
-	7299.1.1 = { 
-		liege = k_yronwood
-		holder = Dryside_200
-	}
-	7300.1.1 = { 
-		liege = k_yronwood
-	}
+    7299.1.1 = {
+        liege = k_yronwood
+        holder = Dryside_200
+    }
+    7300.1.1 = {
+        liege = k_yronwood
+    }
 }
 
 c_pronghorn = {
-	7299.1.1 = { 
-		liege = k_the_drylands
-		holder = Pronghorn_200
-	}
-	7300.1.1 = { 
-		liege = d_brimstone
-	}
+    7299.1.1 = {
+        liege = k_the_drylands
+        holder = Pronghorn_200
+    }
+    7300.1.1 = {
+        liege = d_brimstone
+    }
 }
 
 c_shady_sands = {
-	7299.1.1 = { 
-		liege = k_yronwood
-		holder = Aradesh_200
-	}
-	7300.1.1 = { 
-		liege = k_yronwood
-	}
+    7299.1.1 = {
+        liege = k_yronwood
+        holder = Aradesh_200
+    }
+    7300.1.1 = {
+        liege = k_yronwood
+    }
 }
 
 c_the_dustbowl = {
-	7299.1.1 = { 
-		liege = k_the_drylands
-		holder = Flask_200
-	}
-	7300.1.1 = { 
-		liege = d_sandstone
-	}
+    7299.1.1 = {
+        liege = k_the_drylands
+        holder = Flask_200
+    }
+    7300.1.1 = {
+        liege = d_sandstone
+    }
 }
 
 d_red_dunes = {
-	7299.1.1 = {
-		holder = Vaith_200
-		liege = k_the_drylands
-	}
+    7299.1.1 = {
+        holder = Vaith_200
+        liege = k_the_drylands
+    }
 }
 
 c_brittlebush = {
-	7299.1.1 = { 
-		liege = d_red_dunes
-		holder = Cuttar_200
-	}
+    7299.1.1 = {
+        liege = d_red_dunes
+        holder = Cuttar_200
+    }
 }
 
 c_killburne = {
-	7299.1.1 = { 
-		liege = d_red_dunes
-		holder = Brook_200
-	}
+    7299.1.1 = {
+        liege = d_red_dunes
+        holder = Brook_200
+    }
 }
 
 c_red_waste = {
-	7299.1.1 = { 
-		liege = d_red_dunes
-		holder = Veckryn_200
-	}
+    7299.1.1 = {
+        liege = d_red_dunes
+        holder = Veckryn_200
+    }
 }
 
 c_the_barrens = {
-	7299.1.1 = { 
-		liege = d_red_dunes
-		holder = Qaurovera_200
-	}
+    7299.1.1 = {
+        liege = d_red_dunes
+        holder = Qaurovera_200
+    }
 }
 
 c_the_scablands = {
-	7299.1.1 = { 
-		liege = d_red_dunes
-		holder = Newmock_200
-	}
+    7299.1.1 = {
+        liege = d_red_dunes
+        holder = Newmock_200
+    }
 }
 
 c_mortberry = {
-	7299.1.1 = { 
-		liege = k_kingsgrave
-		holder = Stillbloom_200
-	}
-	7848.1.1 = { 
-		liege = d_redmarch
-	}
+    7299.1.1 = {
+        liege = k_kingsgrave
+        holder = Stillbloom_200
+    }
+    7848.1.1 = {
+        liege = d_redmarch
+    }
 }
 
 c_redstone_heights = {
-	7299.1.1 = { 
-		liege = k_kingsgrave
-		holder = Endar_200
-	}
+    7299.1.1 = {
+        liege = k_kingsgrave
+        holder = Endar_200
+    }
+    7320.1.1 = {
+        liege = e_the_reach
+    }
 }
 
 c_strongwine = {
-	7299.1.1 = { 
-		liege = k_kingsgrave
-		holder = Peele_200
-	}
-	7848.1.1 = { 
-		liege = d_redmarch
-	}
+    7299.1.1 = {
+        liege = k_kingsgrave
+        holder = Peele_200
+    }
+    7848.1.1 = {
+        liege = d_redmarch
+    }
 }
 
 d_salt_shore = {
-	7299.1.1 = {
-		holder = Gargalen_200
-	}
+    7299.1.1 = {
+        holder = Gargalen_200
+    }
 }
 
 c_brackish = {
-	7299.1.1 = { 
-		liege = d_salt_shore
-		holder = Zundanar_200
-	}
+    7299.1.1 = {
+        liege = d_salt_shore
+        holder = Zundanar_200
+    }
 }
 
 c_saltstone = {
-	7299.1.1 = { 
-	liege = d_salt_shore
-	holder = Haulight_200
-}
+    7299.1.1 = {
+        liege = d_salt_shore
+        holder = Haulight_200
+    }
 }
 
 c_white_stones = {
-	7299.1.1 = { 
-		liege = d_salt_shore
-		holder = Mercer_200
-	}
+    7299.1.1 = {
+        liege = d_salt_shore
+        holder = Mercer_200
+    }
 }
 
 d_sandstone = {
-	7299.1.1 = {
-		liege = k_the_drylands
-		holder = Qorgyle_200
-	}
+    7299.1.1 = {
+        liege = k_the_drylands
+        holder = Qorgyle_200
+    }
 }
 
 c_arnight = {
-	7299.1.1 = { 
-	liege = d_sandstone
-	holder = Ruthvan_200
-}
+    7299.1.1 = {
+        liege = d_sandstone
+        holder = Ruthvan_200
+    }
 }
 
 c_barbmane = {
-	7299.1.1 = { 
-		liege = d_sandstone
-		holder = Barb_200
-	}
+    7299.1.1 = {
+        liege = d_sandstone
+        holder = Barb_200
+    }
 }
 
 c_dreadsands = {
-	7299.1.1 = { 
-		liege = d_sandstone
-		holder = Pink_200
-	}
+    7299.1.1 = {
+        liege = d_sandstone
+        holder = Pink_200
+    }
 }
 
 c_sandhorn = {
-	7299.1.1 = { 
-	liege = d_sandstone
-	holder = Maltrevar_200
-}
+    7299.1.1 = {
+        liege = d_sandstone
+        holder = Maltrevar_200
+    }
 }
 
 c_stained_sands = {
-	7299.1.1 = { 
-		liege = d_sandstone
-		holder = Nessarry_200
-	}
+    7299.1.1 = {
+        liege = d_sandstone
+        holder = Nessarry_200
+    }
 }
 
 c_white_dunes = {
-	7299.1.1 = {
-		liege = d_sandstone
-		holder = Roast_200
-	}
+    7299.1.1 = {
+        liege = d_sandstone
+        holder = Roast_200
+    }
 }
 
 c_hoodridge = {
-	7299.1.1 = { 
-		liege = k_stone_and_sky
-		holder = Hood_200
-	}
-	7300.1.1 = { 
-		liege = d_the_princes_pass
-	}
+    7299.1.1 = {
+        liege = k_stone_and_sky
+        holder = Hood_200
+    }
+    7300.1.1 = {
+        liege = d_the_princes_pass
+    }
 }
 
 c_princemarch = {
-	7299.1.1 = {
-		holder = Warriner_200
-	}
+    7299.1.1 = {
+        holder = Warriner_200
+    }
 }
 
 c_thorntree = {
-	7299.1.1 = {
-		holder = Ronce_200
-	}
+    7299.1.1 = {
+        holder = Ronce_200
+    }
 }
 
 d_the_stoneway = {
-	7299.1.1 = {
-		holder = Wyl_200
-		liege = k_yronwood
-		effect = {
-			set_variable = agot_historical_march
-		}
-	}
+    7299.1.1 = {
+        holder = Wyl_200
+        liege = k_yronwood
+        effect = {
+            set_variable = agot_historical_march
+        }
+    }
 }
 
 c_blackvein = {
-	7299.1.1 = { 
-		liege = d_the_stoneway
-		holder = Sallow_200
-	}
+    7299.1.1 = {
+        liege = d_the_stoneway
+        holder = Sallow_200
+    }
 }
 
 c_brinkburn = {
-	7299.1.1 = { 
-		liege = d_the_stoneway
-		holder = Weekes_200
-	}
+    7299.1.1 = {
+        liege = d_the_stoneway
+        holder = Weekes_200
+    }
 }
 
 c_denmont = {
-	7299.1.1 = { 
-		liege = d_the_stoneway
-		holder = Regel_200
-	}
+    7299.1.1 = {
+        liege = d_the_stoneway
+        holder = Regel_200
+    }
 }
 
 c_fangside = {
-	7299.1.1 = { 
-		liege = d_the_stoneway
-		holder = Sandracer_200
-	}
+    7299.1.1 = {
+        liege = d_the_stoneway
+        holder = Sandracer_200
+    }
 }
 
 c_highgrave = {
-	7299.1.1 = { 
-		liege = d_the_stoneway
-		holder = Bellows_200
-	}
+    7299.1.1 = {
+        liege = d_the_stoneway
+        holder = Bellows_200
+    }
 }
 
 d_the_tor = {
-	7299.1.1 = {
-		holder = Jordayne_200
-		liege = k_yronwood
-	}
+    7299.1.1 = {
+        holder = Jordayne_200
+        liege = k_yronwood
+    }
 }
 
 c_barberry = {
-	7299.1.1 = { 
-		liege = d_the_tor
-		holder = Renshar_200
-	}
+    7299.1.1 = {
+        liege = d_the_tor
+        holder = Renshar_200
+    }
 }
 
 c_dream_dunes = {
-	7299.1.1 = { 
-		liege = d_the_tor
-		holder = Sanders_200
-	}
+    7299.1.1 = {
+        liege = d_the_tor
+        holder = Sanders_200
+    }
 }
 
 c_murrandy = {
-	7299.1.1 = { 
-		liege = d_the_tor
-		holder = Murrandy_200
-	}
+    7299.1.1 = {
+        liege = d_the_tor
+        holder = Murrandy_200
+    }
 }
 
 c_stedding = {
-	7299.1.1 = { 
-		liege = d_the_tor
-		holder = Ogier_200
-	}
+    7299.1.1 = {
+        liege = d_the_tor
+        holder = Ogier_200
+    }
 }
 
 c_the_bramble = {
-	7299.1.1 = { 
-		liege = d_the_tor
-		holder = Briar_200
-	}
+    7299.1.1 = {
+        liege = d_the_tor
+        holder = Briar_200
+    }
 }
 
 c_astermine = {
-	7299.1.1 = { 
-		liege = k_the_torrentine
-		holder = Aster_200
-	}
-	7300.1.1 = { 
-		liege = d_torrentine
-	}
+    7299.1.1 = {
+        liege = k_the_torrentine
+        holder = Aster_200
+    }
+    7300.1.1 = {
+        liege = d_torrentine
+    }
 }
 
 c_dawnbrink = {
-	7299.1.1 = { 
-		liege = k_the_torrentine
-		holder = Thatch_200
-	}
-	7300.1.1 = { 
-		liege = d_torrentine
-	}
+    7299.1.1 = {
+        liege = k_the_torrentine
+        holder = Thatch_200
+    }
+    7300.1.1 = {
+        liege = d_torrentine
+    }
 }
 
 c_fields_of_glass = {
-	7299.1.1 = { 
-		liege = k_the_torrentine
-		holder = Tannicks_200
-	}
-	7300.1.1 = { 
-		liege = d_torrentine
-	}
+    7299.1.1 = {
+        liege = k_the_torrentine
+        holder = Tannicks_200
+    }
+    7300.1.1 = {
+        liege = d_torrentine
+    }
 }
 
 c_radiant_cliffs = {
-	7299.1.1 = { 
-		liege = k_the_torrentine
-		holder = Dodges_200
-	}
-	7300.1.1 = { 
-		liege = d_torrentine
-	}
+    7299.1.1 = {
+        liege = k_the_torrentine
+        holder = Dodges_200
+    }
+    7300.1.1 = {
+        liege = d_torrentine
+    }
 }
 
 c_shining_sands = {
-	7299.1.1 = { 
-		liege = k_the_torrentine
-		holder = Parry_200
-	}
-	7300.1.1 = { 
-		liege = d_torrentine
-	}
+    7299.1.1 = {
+        liege = k_the_torrentine
+        holder = Parry_200
+    }
+    7300.1.1 = {
+        liege = d_torrentine
+    }
 }
 
 c_the_elbow = {
-	7299.1.1 = { 
-		liege = k_the_torrentine
-		holder = Errey_200
-	}
-	7300.1.1 = { 
-		liege = d_torrentine
-	}
+    7299.1.1 = {
+        liege = k_the_torrentine
+        holder = Errey_200
+    }
+    7300.1.1 = {
+        liege = d_torrentine
+    }
 }
 
 c_blood_gulch = {
-	7299.1.1 = { 
-		liege = k_yronwood
-		holder = Urlagon_200
-	}
-	7300.1.1 = { 
-		liege = d_greenbelt
-	}
+    7299.1.1 = {
+        liege = k_yronwood
+        holder = Urlagon_200
+    }
+    7300.1.1 = {
+        liege = d_greenbelt
+    }
 }
 
 c_great_dunes = {
-	7299.1.1 = { 
-		liege = k_yronwood
-		holder = Swelter_200
-	}
-	7300.1.1 = { 
-		liege = d_greenbelt
-	}
+    7299.1.1 = {
+        liege = k_yronwood
+        holder = Swelter_200
+    }
+    7300.1.1 = {
+        liege = d_greenbelt
+    }
 }
 
 c_greenbelt = {
-	7299.1.1 = { 
-		liege = k_yronwood
-		holder = Cane_200
-	}
-	7300.1.1 = { 
-		liege = d_greenbelt
-	}
+    7299.1.1 = {
+        liege = k_yronwood
+        holder = Cane_200
+    }
+    7300.1.1 = {
+        liege = d_greenbelt
+    }
 }
 
 c_the_scourge = {
-	7299.1.1 = { 
-		liege = k_yronwood
-		holder = Drinkwater_200
-	}
-	7300.1.1 = { 
-		liege = d_greenbelt
-	}
+    7299.1.1 = {
+        liege = k_yronwood
+        holder = Drinkwater_200
+    }
+    7300.1.1 = {
+        liege = d_greenbelt
+    }
 }
 
 c_wayguard = {
-	7299.1.1 = { 
-		liege = k_yronwood
-		holder = Claviger_200
-	}
-	7300.1.1 = { 
-		liege = d_greenbelt
-	}
+    7299.1.1 = {
+        liege = k_yronwood
+        holder = Claviger_200
+    }
+    7300.1.1 = {
+        liege = d_greenbelt
+    }
 }
 
 c_sunspear = {
-	7299.1.1 = { 
-		liege = d_sunspear
-		holder = Martell_23
-	}
+    7299.1.1 = {
+        liege = d_sunspear
+        holder = Martell_23
+    }
 }

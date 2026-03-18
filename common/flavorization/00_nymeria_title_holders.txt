@@ -125,7 +125,7 @@ river_king_flavorization = {
     tier = kingdom
     special = holder
     priority = 100
-    titles = { k_red_rambles k_the_blackwater }
+    titles = { k_armistia k_the_blackwater }
 
     flavourization_rules = {
         only_independent = yes
@@ -139,7 +139,7 @@ river_queen_flavorization = {
     tier = kingdom
     special = holder
     priority = 100
-    titles = { k_red_rambles k_the_blackwater }
+    titles = { k_armistia k_the_blackwater }
 
     flavourization_rules = {
         only_independent = yes
@@ -154,7 +154,7 @@ river_queen_consort_flavorization = {
     tier = kingdom
     special = holder
     priority = 99
-    titles = { k_red_rambles k_the_blackwater }
+    titles = { k_armistia k_the_blackwater }
 
     flavourization_rules = {
         only_independent = yes
@@ -169,7 +169,7 @@ river_king_consort_flavorization = {
     tier = kingdom
     special = holder
     priority = 99
-    titles = { k_red_rambles k_the_blackwater }
+    titles = { k_armistia k_the_blackwater }
 
     flavourization_rules = {
         only_independent = yes

@@ -21497,7 +21497,7 @@ e_the_riverlands = {
 		}
 	}
 
-	k_red_rambles = {
+	k_armistia = {
 		color = { 72 91 134 } # color = { 50 95 196 } - Changed by Kizan
 		capital = c_riverrun
 		can_create = {
@@ -21511,7 +21511,7 @@ e_the_riverlands = {
 						}
 					}
 				}
-				has_title = title:k_red_rambles.title_capital_county
+				has_title = title:k_armistia.title_capital_county
 			}
 			custom_tooltip = {
 				text = agot_can_create_duchy

@@ -1,851 +1,851 @@
-# e_the_riverlands = {
-# 	7198.1.1 = {
-# 		holder = Teague_199
-# 	}
-# 	7289.1.1 = {
-# 		holder = Teague_200
-# 	}
-# }
-
-# k_red_rambles = {
-# 	7299.1.1 = {
-# 		holder = Vance_Wayfarers_Rest_200
-# 	}
-# }
-
-# d_riverrun = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Tully_200
-# 	}
-# }
-
-# c_burnout = {
-# 	7299.1.1 = { 
-# 		liege = d_riverrun
-# 		holder = Renn_200
-# 	}
-# }
-
-# c_illfield = {
-# 	7299.1.1 = { 
-# 		liege = d_riverrun
-# 		holder = Clare_200
-# 	}
-# }
-
-# c_stars_ban = {
-# 	7299.1.1 = { 
-# 		liege = d_riverrun
-# 		holder = Alderdice_200
-# 	}
-# }
-
-# c_turnbridge = {
-# 	7299.1.1 = { 
-# 		liege = d_riverrun
-# 		holder = Wayn_200
-# 	}
-# }
-
-# c_heathersage = {
-# 	7299.1.1 = { 
-# 		liege = d_riverrun
-# 		holder = Wayn_200
-# 	}
-# }
-
-# d_atranta = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Hook_200
-# 		liege = k_the_blackwater
-# 	}
-# 	7580.1.1 = {
-# 		holder = Vance_Atranta_79
-# 		liege = e_the_riverlands
-# 	}
-# }
-
-# c_armisteads_wood = {
-# 	7299.1.1 = { 
-# 		liege = d_atranta
-# 		holder = RandomCount_228
-# 		effect = {
-# 			set_title_name = c_hooks_wood
-# 			title:b_castle_armistead = { set_title_name = b_castle_hook }
-# 		}
-# 	}
-# 	7866.1.1 = {
-# 		liege = d_atranta
-# 		holder = Vance_Armisteads_Wood_1
-# 		effect = {
-# 			reset_title_name = yes
-# 			title:b_castle_armistead = { reset_title_name = yes }
-# 		}
-# 	}
-# }
-
-# c_blackrush = {
-# 	7299.1.1 = { 
-# 		liege = d_atranta
-# 		holder = Becker_200
-# 	}
-# }
-
-# c_bringrunn = {
-# 	7299.1.1 = { 
-# 		liege = d_atranta
-# 		holder = Common_200
-# 	}
-# }
-
-# c_hagedorn = {
-# 	7299.1.1 = { 
-# 		de_jure_liege = d_lakehaven
-# 		liege = d_lakehaven
-# 	}
-# 	7804.1.1 = {
-# 		de_jure_liege = d_atranta
-# 		liege = d_atranta
-# 	}
-# }
-
-# c_rushinground = {
-# 	7299.1.1 = { 
-# 		liege = d_atranta
-# 		holder = Boddy_200
-# 	}
-# }
-
-# d_blackwood_vale = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Blackwood_200
-# 	}
-# }
-
-# c_honeytree = {
-# 	7299.1.1 = { 
-# 		liege = d_blackwood_vale
-# 		holder = Hickory_200
-# 	}
-# }
-
-# c_maidstone = {
-# 	7299.1.1 = { 
-# 		liege = d_blackwood_vale
-# 		holder = Bigglestone_200
-# 	}
-# }
-
-# c_mudgrave = {
-# 	7299.1.1 = { 
-# 		liege = d_blackwood_vale
-# 		holder = Terrick_200
-# 	}
-# }
-
-# c_ravensmarch = {
-# 	7299.1.1 = { 
-# 		liege = d_blackwood_vale
-# 		holder = Byrne_200
-# 	}
-# }
-
-# c_rutting = {
-# 	7299.1.1 = { 
-# 		liege = d_blackwood_vale
-# 		holder = Terrick_200
-# 	}
-# }
-
-# c_waspwood = {
-# 	7299.1.1 = { 
-# 		liege = d_blackwood_vale
-# 		holder = Pond_200
-# 	}
-# }
-
-# d_cape_of_eagles = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Mallister_200
-# 	}
-# }
-
-# c_hammerford = {
-# 	7299.1.1 = { 
-# 		liege = d_cape_of_eagles
-# 		holder = Pemford_200
-# 	}
-# }
-
-# c_hook_bay = {
-# 	7299.1.1 = { 
-# 		liege = d_cape_of_eagles
-# 		holder = Keath_200
-# 	}
-# }
-
-# c_mistcore = {
-# 	7299.1.1 = { 
-# 		liege = d_cape_of_eagles
-# 		holder = Brightmoon_200
-# 	}
-# }
-
-# c_rushmoor = {
-# 	7299.1.1 = { 
-# 		liege = d_cape_of_eagles
-# 		holder = Rushmoor_200
-# 	}
-# }
-
-# d_fairmarket = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Teague_201
-# 	}
-# }
-
-# c_ramsford = {
-# 	7299.1.1 = { 
-# 		liege = d_fairmarket
-# 		holder = Paege_200
-# 	}
-# }
-
-# c_runnymudd = {
-# 	7299.1.1 = { 
-# 		liege = d_fairmarket
-# 		holder = Runny_200
-# 	}
-# }
-
-# c_whiskermoor = {
-# 	7299.1.1 = { 
-# 		liege = d_fairmarket
-# 		holder = Shawney_200
-# 	}
-# }
-
-# d_harrenhal = {
-# 	7299.1.1 = {
-# 		holder = Teague_200
-# 		effect = {
-# 			set_title_name = d_godsfort
-# 		}
-# 	}
-# 	7960.1.1 = {
-# 		holder = Hoare_31
-# 		effect = {
-# 			reset_title_name = yes
-# 		}
-# 	}
-# }
-
-# c_harrenhal = {
-# 	7299.1.1 = {
-# 		holder = Teague_200
-# 		effect = {
-# 			set_title_name = c_godsfort
-# 			title:b_harrenhal = { set_title_name = b_weirgaze }
-# 			title:b_harrentown = { set_title_name = b_godsroad }
-# 			title:b_hoarespring = { set_title_name = b_greenspring }
-# 			if = {
-# 				limit = { game_start_date < 7300.1.1 }
-# 				title:b_godsfort = { set_capital_barony = yes }
-# 				title:b_harrenhal.title_province = { remove_holding = yes }
-# 				title:b_harrenhal.title_province = { add_special_building_slot = generic_harrenhal_01 }
-# 			}
-# 		}
-# 	}
-# 	7641.1.1 = {
-# 		liege = d_harrenhal
-# 		holder = Nutt_54 # Norbert
-# 		# effect = {
-# 		# 	set_title_name = c_godsfort
-# 		# 	title:b_harrenhal = { set_title_name = b_weirgaze }
-# 		# 	title:b_harrentown = { set_title_name = b_godsroad }
-# 		# 	title:b_hoarespring = { set_title_name = b_greenspring }
-# 		# 	if = {
-# 		# 		limit = { game_start_date < 7960.1.1 }
-# 		# 		title:b_godsfort = { set_capital_barony = yes }
-# 		# 		title:b_harrenhal.title_province = { remove_holding = yes }
-# 		# 		title:b_harrenhal.title_province = { add_special_building_slot = generic_harrenhal_01 }
-# 		# 	}
-# 		# }
-# 	}
-# }
-
-# c_harroway = {
-# 	7299.1.1 = {
-# 		liege = d_harrenhal
-# 		holder = Nutt_200
-# 	}
-# }
-
-# c_horsehead = {
-# 	7299.1.1 = {
-# 		liege = d_harrenhal
-# 		holder = Roote_200
-# 	}
-# }
-
-# d_eastern_eye = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Butterwell_200
-# 	}
-# }
-
-# c_rippledown_rill = {
-# 	7299.1.1 = {
-# 		liege = d_harrenhal
-# 		holder = Nutt_200
-# 	}
-# 	7641.1.1 = {
-# 		holder = Nutt_54 # Norbert
-# 	}
-# }
-
-# c_stoney_sept = {
-# 	7299.1.1 = { 
-# 		liege = k_red_rambles
-# 		holder = Blanetree_200
-# 	}
-# }
-
-# c_bechester = {
-# 	7299.1.1 = { 
-# 		liege = k_red_rambles
-# 		holder = Penny_200
-# 	}
-# }
-
-# c_fieldstone = {
-# 	7299.1.1 = { 
-# 		liege = k_red_rambles
-# 		holder = Pimm_200
-# 	}
-# }
-
-# c_mainstream = {
-# 	7299.1.1 = { 
-# 		liege = k_red_rambles
-# 		holder = Haynes_200
-# 	}
-# }
-
-# c_tumblers_falls = {
-# 	7299.1.1 = { 
-# 		liege = k_red_rambles
-# 		holder = Dunstable_200
-# 	}
-# }
-
-# d_lakehaven = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Goodbrook_200
-# 	}
-# }
-
-# c_castlewood = {
-# 	7299.1.1 = { 
-# 		liege = d_lakehaven
-# 		holder = Harlton_200
-# 	}
-# }
-
-# c_darkmoor = {
-# 	7299.1.1 = { 
-# 		liege = d_lakehaven
-# 		holder = Berry_200
-# 	}
-# }
-
-# c_elmcastle = {
-# 	7299.1.1 = { 
-# 		liege = d_lakehaven
-# 		holder = Landseer_200
-# 	}
-# }
-
-# c_rushdown = {
-# 	7299.1.1 = { 
-# 		liege = d_lakehaven
-# 		holder = Carian_200
-# 	}
-# }
-
-# c_tanglewood = {
-# 	7299.1.1 = { 
-# 		liege = d_lakehaven
-# 		holder = Ward_200
-# 	}
-# }
-
-# d_lakeleaf_highlands = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Mandrake_200
-# 	}
-# }
-
-# c_wayleroot = {
-# 	7299.1.1 = {
-# 		liege = d_lakeleaf_highlands
-# 		holder = Mandrake_200
-# 	}
-# 	7777.1.1 = {
-# 		holder = Mandrake_1
-# 	}
-# }
-
-# c_stillfen = {
-# 	7299.1.1 = { 
-# 		liege = d_lakeleaf_highlands
-# 		holder = Vypren_200
-# 	}
-# }
-
-# c_greenlily = {
-# 	7299.1.1 = { 
-# 		liege = d_lakeleaf_highlands
-# 		holder = Weller_200
-# 	}
-# }
-
-# c_grimwind = {
-# 	7299.1.1 = { 
-# 		liege = d_lakeleaf_highlands
-# 		holder = Warl_200
-# 	}
-# }
-
-# c_stonyhead = {
-# 	7299.1.1 = { 
-# 		liege = d_lakeleaf_highlands
-# 		holder = Sylvas_200
-# 	}
-# }
-
-# c_wernell = {
-# 	7299.1.1 = { 
-# 		liege = d_lakeleaf_highlands
-# 		holder = Wotlin_200
-# 	}
-# }
-
-# d_maidenpool = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Mooton_200
-# 	}
-# 	7827.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Mooton_14
-# 	}
-# }
-
-# c_maidenpool = {
-# 	7299.1.1 = {
-# 		holder = Mooton_200
-# 	}
-# }
-
-# c_honeymaiden = {
-# 	7299.1.1 = {
-# 		liege = d_maidenpool
-# 		holder = MootonHM_200
-# 	}
-# }
-
-# c_lolliston = {
-# 	7299.1.1 = {
-# 		liege = d_maidenpool
-# 		holder = RandomCount_225
-# 	}
-# }
-
-# c_oldhonor = {
-# 	7299.1.1 = {
-# 		liege = d_maidenpool
-# 		holder = RandomCount_227
-# 	}
-# }
-
-# c_werthport = {
-# 	7299.1.1 = {
-# 		liege = d_maidenpool
-# 		holder = RandomCount_226
-# 	}
-# }
-
-# d_pinkmaiden = {
-# 	7299.1.1 = {
-# 		holder = Piper_200
-# 		liege = k_red_rambles
-# 	}
-# 	7999.8.15 = {
-# 	}
-# }
-
-# c_dawngate = {
-# 	7299.1.1 = { 
-# 		liege = d_pinkmaiden
-# 		holder = Barrett_200
-# 	}
-# }
-
-# c_float_river = {
-# 	7299.1.1 = { 
-# 		liege = d_pinkmaiden
-# 		holder = Perryn_200
-# 	}
-# }
-
-# c_puresprings = {
-# 	7299.1.1 = { 
-# 		liege = d_pinkmaiden
-# 		holder = Leed_200
-# 	}
-# }
-
-# c_wallwood = {
-# 	7299.1.1 = { 
-# 		liege = d_pinkmaiden
-# 		holder = Gillmore_200
-# 	}
-# }
-
-# c_whitebricks = {
-# 	7299.1.1 = { 
-# 		liege = d_pinkmaiden
-# 		holder = Fletcher_200
-# 	}
-# }
-
-# c_wishere = {
-# 	7299.1.1 = { 
-# 		liege = d_pinkmaiden
-# 		holder = Mason_200
-# 	}
-# }
-
-# d_southstone = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Bracken_200
-# 	}
-# }
-
-# c_crossing_ponds = {
-# 	7299.1.1 = { 
-# 		liege = d_southstone
-# 		holder = Kemble_200
-# 	}
-# }
-
-# c_deadsteady = {
-# 	7299.1.1 = { 
-# 		liege = d_southstone
-# 		holder = Pace_200
-# 	}
-# }
-
-# c_high_heart = {
-# 	7299.1.1 = { 
-# 		liege = d_southstone
-# 		holder = Finch_200
-# 	}
-# }
-
-# c_medway = {
-# 	7299.1.1 = { 
-# 		liege = d_southstone
-# 		holder = Lychester_200
-# 	}
-# }
-
-# c_oldwithe = {
-# 	7299.1.1 = { 
-# 		liege = d_southstone
-# 		holder = Eager_200
-# 	}
-# }
-
-# c_sallydance = {
-# 	7299.1.1 = { 
-# 		liege = d_southstone
-# 		holder = Fernly_200
-# 	}
-# }
-
-# c_the_willows = {
-# 	7299.1.1 = { 
-# 		liege = d_southstone
-# 		holder = Severyn_200
-# 	}
-# }
-
-# d_the_crossing = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Charlton_200
-# 	}
-# }
-
-# c_the_twins = {
-# 	7299.1.1 = {
-# 		liege = d_the_crossing
-# 		holder = Charlton_200
-# 		effect = {
-# 			set_title_name = c_crossing
-# 			title:b_the_twins = { set_title_name = b_crossing }
-# 			if = {
-# 				limit = { game_start_date < 7300.1.1 }
-# 				title:b_ravelkeep = { set_capital_barony = yes }
-# 				title:b_the_twins.title_province = { remove_holding = yes }
-# 				title:b_the_twins.title_province = { add_special_building_slot = the_twins_01 }
-# 			}
-# 		}
-# 	}
-# }
-
-# c_arganbrook = {
-# 	7299.1.1 = { 
-# 		liege = d_the_crossing
-# 		holder = Nayland_200
-# 	}
-# }
-
-# c_blackpitch = {
-# 	7299.1.1 = { 
-# 		liege = d_the_crossing
-# 		holder = Haigh_200
-# 	}
-# }
-
-# c_erenford = {
-# 	7299.1.1 = { 
-# 		liege = d_the_crossing
-# 		holder = Erenford_200
-# 	}
-# }
-
-# c_helney = {
-# 	7299.1.1 = { 
-# 		liege = d_the_crossing
-# 		holder = Helney_200
-# 	}
-# }
-
-# c_ironwater = {
-# 	7299.1.1 = { 
-# 		liege = d_the_crossing
-# 		holder = Dally_200
-# 	}
-# }
-
-# c_leechpool = {
-# 	7299.1.1 = { 
-# 		liege = d_the_crossing
-# 		holder = Nayland_200
-# 	}
-# }
-
-# d_three_forks = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Strong_200
-# 	}
-# }
-
-# c_lancewood = {
-# 	7299.1.1 = {
-# 		liege = d_three_forks
-# 		holder = Deddings_200
-# 	}
-# }
-
-# c_branstone = {
-# 	7299.1.1 = {
-# 		liege = d_three_forks
-# 		holder = Chambers_200
-# 	}
-# }
-
-# c_speckleplum = {
-# 	7299.1.1 = {
-# 		liege = d_three_forks
-# 		holder = Warrens_200
-# 	}
-# }
-
-# d_tridents_mouth = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Darry_200
-# 	}
-# }
-
-# c_marstone = {
-# 	7299.1.1 = {
-# 		liege = d_tridents_mouth
-# 		holder = Urgont_200
-# 	}
-# }
-
-# c_riverbend = {
-# 	7299.1.1 = {
-# 		liege = d_tridents_mouth
-# 		holder = Nutt_202 
-# 	}
-# }
-
-# c_saltpans = {
-# 	7299.1.1 = {
-# 		liege = d_tridents_mouth
-# 		holder = Cox_200
-# 	}
-# }
-
-# c_saltpans_rise = {
-# 	7299.1.1 = {
-# 		liege = d_tridents_mouth
-# 		holder = Hawick_200
-# 	}
-# }
-
-# c_spiderwood = {
-# 	7299.1.1 = {
-# 		liege = d_tridents_mouth
-# 		holder = Deremond_200
-# 	}
-# }
-
-# c_stillside = {
-# 	7299.1.1 = {
-# 		liege = d_tridents_mouth
-# 		holder = Rankenfell_200
-# 	}
-# }
-
-# d_wayfarers_rest = {
-# 	7299.1.1 = {
-# 		holder = Vance_Wayfarers_Rest_200
-# 		liege = k_red_rambles
-# 	}
-# 	7571.1.1 = {
-# 		holder = Vance_Wayfarers_Rest_90
-# 		liege = e_the_riverlands
-# 	}
-# }
-
-# c_acorns_ridge = {
-# 	7299.1.1 = { 
-# 		liege = d_wayfarers_rest
-# 		holder = Smallwood_200
-# 	}
-# }
-
-# c_banbeck_vale = {
-# 	7299.1.1 = { 
-# 		liege = d_wayfarers_rest
-# 		holder = Banbeck_200
-# 	}
-# }
-
-# c_donnelwood = {
-# 	7299.1.1 = { 
-# 		liege = d_wayfarers_rest
-# 		holder = Givven_200
-# 	}
-# }
-
-# c_morningswake = {
-# 	7299.1.1 = { 
-# 		liege = d_wayfarers_rest
-# 		holder = Madduc_200
-# 	}
-# }
-
-# c_ruby_shoals = {
-# 	7299.1.1 = { 
-# 		liege = d_wayfarers_rest
-# 		holder = Whistler_200
-# 	}
-# }
-
-# c_runvane = {
-# 	7299.1.1 = { 
-# 		liege = d_wayfarers_rest
-# 		holder = Dannett_200
-# 	}
-# }
-
-# d_willow_wood = {
-# 	7299.1.1 = {
-# 		liege = e_the_riverlands
-# 		holder = Ryger_200
-# 	}
-# }
-
-# c_elmbridge = {
-# 	7299.1.1 = {
-# 		liege = d_willow_wood
-# 		holder = Elridge_200
-# 	}
-# }
-
-# c_sweetwillow = {
-# 	7299.1.1 = {
-# 		liege = d_willow_wood
-# 		holder = Forthe_200
-# 	}
-# }
-
-# c_morey = {
-# 	7299.1.1 = {
-# 		liege = d_willow_wood
-# 		holder = Brimer_200
-# 	}
-# }
-
-# c_oldferns = {
-# 	7299.1.1 = {
-# 		liege = d_willow_wood
-# 		holder = Grey_200
-# 	}
-# }
-
-# c_white_wood = {
-# 	7299.1.1 = {
-# 		liege = d_willow_wood
-# 		holder = Sillinger_200
-# 	}
-# }
-
-# c_helmesmont = {
-# 	7299.1.1 = {
-# 		liege = d_willow_wood
-# 		holder = Grey_200
-# 	}
-# }
-
-# c_woodrush = {
-# 	7299.1.1 = { 
-# 		liege = d_the_crossing
-# 		holder = Dally_200
-# 	}
-# }
-
-# c_seasorrow = {
-# 	7299.1.1 = { 
-# 		liege = d_cape_of_eagles
-# 		holder = Chaynes_200
-# 	}
-# }
+e_the_riverlands = {
+	7198.1.1 = {
+		holder = Teague_199
+	}
+	7289.1.1 = {
+		holder = Teague_200
+	}
+}
+
+k_armistia = {
+	7299.1.1 = {
+		holder = Vance_Wayfarers_Rest_200
+	}
+}
+
+d_riverrun = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Tully_200
+	}
+}
+
+c_burnout = {
+	7299.1.1 = { 
+		liege = d_riverrun
+		holder = Renn_200
+	}
+}
+
+c_illfield = {
+	7299.1.1 = { 
+		liege = d_riverrun
+		holder = Clare_200
+	}
+}
+
+c_stars_ban = {
+	7299.1.1 = { 
+		liege = d_riverrun
+		holder = Alderdice_200
+	}
+}
+
+c_turnbridge = {
+	7299.1.1 = { 
+		liege = d_riverrun
+		holder = Wayn_200
+	}
+}
+
+c_heathersage = {
+	7299.1.1 = { 
+		liege = d_riverrun
+		holder = Wayn_200
+	}
+}
+
+d_atranta = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Hook_200
+		liege = k_the_blackwater
+	}
+	7580.1.1 = {
+		holder = Vance_Atranta_79
+		liege = e_the_riverlands
+	}
+}
+
+c_armisteads_wood = {
+	7299.1.1 = { 
+		liege = d_atranta
+		holder = RandomCount_228
+		effect = {
+			set_title_name = c_hooks_wood
+			title:b_castle_armistead = { set_title_name = b_castle_hook }
+		}
+	}
+	7866.1.1 = {
+		liege = d_atranta
+		holder = Vance_Armisteads_Wood_1
+		effect = {
+			reset_title_name = yes
+			title:b_castle_armistead = { reset_title_name = yes }
+		}
+	}
+}
+
+c_blackrush = {
+	7299.1.1 = { 
+		liege = d_atranta
+		holder = Becker_200
+	}
+}
+
+c_bringrunn = {
+	7299.1.1 = { 
+		liege = d_atranta
+		holder = Common_200
+	}
+}
+
+c_hagedorn = {
+	7299.1.1 = { 
+		de_jure_liege = d_lakehaven
+		liege = d_lakehaven
+	}
+	7804.1.1 = {
+		de_jure_liege = d_atranta
+		liege = d_atranta
+	}
+}
+
+c_rushinground = {
+	7299.1.1 = { 
+		liege = d_atranta
+		holder = Boddy_200
+	}
+}
+
+d_blackwood_vale = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Blackwood_200
+	}
+}
+
+c_honeytree = {
+	7299.1.1 = { 
+		liege = d_blackwood_vale
+		holder = Hickory_200
+	}
+}
+
+c_maidstone = {
+	7299.1.1 = { 
+		liege = d_blackwood_vale
+		holder = Bigglestone_200
+	}
+}
+
+c_mudgrave = {
+	7299.1.1 = { 
+		liege = d_blackwood_vale
+		holder = Terrick_200
+	}
+}
+
+c_ravensmarch = {
+	7299.1.1 = { 
+		liege = d_blackwood_vale
+		holder = Byrne_200
+	}
+}
+
+c_rutting = {
+	7299.1.1 = { 
+		liege = d_blackwood_vale
+		holder = Terrick_200
+	}
+}
+
+c_waspwood = {
+	7299.1.1 = { 
+		liege = d_blackwood_vale
+		holder = Pond_200
+	}
+}
+
+d_cape_of_eagles = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Mallister_200
+	}
+}
+
+c_hammerford = {
+	7299.1.1 = { 
+		liege = d_cape_of_eagles
+		holder = Pemford_200
+	}
+}
+
+c_hook_bay = {
+	7299.1.1 = { 
+		liege = d_cape_of_eagles
+		holder = Keath_200
+	}
+}
+
+c_mistcore = {
+	7299.1.1 = { 
+		liege = d_cape_of_eagles
+		holder = Brightmoon_200
+	}
+}
+
+c_rushmoor = {
+	7299.1.1 = { 
+		liege = d_cape_of_eagles
+		holder = Rushmoor_200
+	}
+}
+
+d_fairmarket = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Teague_201
+	}
+}
+
+c_ramsford = {
+	7299.1.1 = { 
+		liege = d_fairmarket
+		holder = Paege_200
+	}
+}
+
+c_runnymudd = {
+	7299.1.1 = { 
+		liege = d_fairmarket
+		holder = Runny_200
+	}
+}
+
+c_whiskermoor = {
+	7299.1.1 = { 
+		liege = d_fairmarket
+		holder = Shawney_200
+	}
+}
+
+d_harrenhal = {
+	7299.1.1 = {
+		holder = Teague_200
+		effect = {
+			set_title_name = d_godsfort
+		}
+	}
+	7960.1.1 = {
+		holder = Hoare_31
+		effect = {
+			reset_title_name = yes
+		}
+	}
+}
+
+c_harrenhal = {
+	7299.1.1 = {
+		holder = Teague_200
+		effect = {
+			set_title_name = c_godsfort
+			title:b_harrenhal = { set_title_name = b_weirgaze }
+			title:b_harrentown = { set_title_name = b_godsroad }
+			title:b_hoarespring = { set_title_name = b_greenspring }
+			if = {
+				limit = { game_start_date < 7300.1.1 }
+				title:b_godsfort = { set_capital_barony = yes }
+				title:b_harrenhal.title_province = { remove_holding = yes }
+				title:b_harrenhal.title_province = { add_special_building_slot = generic_harrenhal_01 }
+			}
+		}
+	}
+	7641.1.1 = {
+		liege = d_harrenhal
+		holder = Nutt_54 # Norbert
+		# effect = {
+		# 	set_title_name = c_godsfort
+		# 	title:b_harrenhal = { set_title_name = b_weirgaze }
+		# 	title:b_harrentown = { set_title_name = b_godsroad }
+		# 	title:b_hoarespring = { set_title_name = b_greenspring }
+		# 	if = {
+		# 		limit = { game_start_date < 7960.1.1 }
+		# 		title:b_godsfort = { set_capital_barony = yes }
+		# 		title:b_harrenhal.title_province = { remove_holding = yes }
+		# 		title:b_harrenhal.title_province = { add_special_building_slot = generic_harrenhal_01 }
+		# 	}
+		# }
+	}
+}
+
+c_harroway = {
+	7299.1.1 = {
+		liege = d_harrenhal
+		holder = Nutt_200
+	}
+}
+
+c_horsehead = {
+	7299.1.1 = {
+		liege = d_harrenhal
+		holder = Roote_200
+	}
+}
+
+d_eastern_eye = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Butterwell_200
+	}
+}
+
+c_rippledown_rill = {
+	7299.1.1 = {
+		liege = d_harrenhal
+		holder = Nutt_200
+	}
+	7641.1.1 = {
+		holder = Nutt_54 # Norbert
+	}
+}
+
+c_stoney_sept = {
+	7299.1.1 = { 
+		liege = k_armistia
+		holder = Blanetree_200
+	}
+}
+
+c_bechester = {
+	7299.1.1 = { 
+		liege = k_armistia
+		holder = Penny_200
+	}
+}
+
+c_fieldstone = {
+	7299.1.1 = { 
+		liege = k_armistia
+		holder = Pimm_200
+	}
+}
+
+c_mainstream = {
+	7299.1.1 = { 
+		liege = k_armistia
+		holder = Haynes_200
+	}
+}
+
+c_tumblers_falls = {
+	7299.1.1 = { 
+		liege = k_armistia
+		holder = Dunstable_200
+	}
+}
+
+d_lakehaven = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Goodbrook_200
+	}
+}
+
+c_castlewood = {
+	7299.1.1 = { 
+		liege = d_lakehaven
+		holder = Harlton_200
+	}
+}
+
+c_darkmoor = {
+	7299.1.1 = { 
+		liege = d_lakehaven
+		holder = Berry_200
+	}
+}
+
+c_elmcastle = {
+	7299.1.1 = { 
+		liege = d_lakehaven
+		holder = Landseer_200
+	}
+}
+
+c_rushdown = {
+	7299.1.1 = { 
+		liege = d_lakehaven
+		holder = Carian_200
+	}
+}
+
+c_tanglewood = {
+	7299.1.1 = { 
+		liege = d_lakehaven
+		holder = Ward_200
+	}
+}
+
+d_lakeleaf_highlands = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Mandrake_200
+	}
+}
+
+c_wayleroot = {
+	7299.1.1 = {
+		liege = d_lakeleaf_highlands
+		holder = Mandrake_200
+	}
+	7777.1.1 = {
+		holder = Mandrake_1
+	}
+}
+
+c_stillfen = {
+	7299.1.1 = { 
+		liege = d_lakeleaf_highlands
+		holder = Vypren_200
+	}
+}
+
+c_greenlily = {
+	7299.1.1 = { 
+		liege = d_lakeleaf_highlands
+		holder = Weller_200
+	}
+}
+
+c_grimwind = {
+	7299.1.1 = { 
+		liege = d_lakeleaf_highlands
+		holder = Warl_200
+	}
+}
+
+c_stonyhead = {
+	7299.1.1 = { 
+		liege = d_lakeleaf_highlands
+		holder = Sylvas_200
+	}
+}
+
+c_wernell = {
+	7299.1.1 = { 
+		liege = d_lakeleaf_highlands
+		holder = Wotlin_200
+	}
+}
+
+d_maidenpool = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Mooton_200
+	}
+	7827.1.1 = {
+		liege = e_the_riverlands
+		holder = Mooton_14
+	}
+}
+
+c_maidenpool = {
+	7299.1.1 = {
+		holder = Mooton_200
+	}
+}
+
+c_honeymaiden = {
+	7299.1.1 = {
+		liege = d_maidenpool
+		holder = MootonHM_200
+	}
+}
+
+c_lolliston = {
+	7299.1.1 = {
+		liege = d_maidenpool
+		holder = RandomCount_225
+	}
+}
+
+c_oldhonor = {
+	7299.1.1 = {
+		liege = d_maidenpool
+		holder = RandomCount_227
+	}
+}
+
+c_werthport = {
+	7299.1.1 = {
+		liege = d_maidenpool
+		holder = RandomCount_226
+	}
+}
+
+d_pinkmaiden = {
+	7299.1.1 = {
+		holder = Piper_200
+		liege = k_armistia
+	}
+	7999.8.15 = {
+	}
+}
+
+c_dawngate = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Barrett_200
+	}
+}
+
+c_float_river = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Perryn_200
+	}
+}
+
+c_puresprings = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Leed_200
+	}
+}
+
+c_wallwood = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Gillmore_200
+	}
+}
+
+c_whitebricks = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Fletcher_200
+	}
+}
+
+c_wishere = {
+	7299.1.1 = { 
+		liege = d_pinkmaiden
+		holder = Mason_200
+	}
+}
+
+d_southstone = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Bracken_200
+	}
+}
+
+c_crossing_ponds = {
+	7299.1.1 = { 
+		liege = d_southstone
+		holder = Kemble_200
+	}
+}
+
+c_deadsteady = {
+	7299.1.1 = { 
+		liege = d_southstone
+		holder = Pace_200
+	}
+}
+
+c_high_heart = {
+	7299.1.1 = { 
+		liege = d_southstone
+		holder = Finch_200
+	}
+}
+
+c_medway = {
+	7299.1.1 = { 
+		liege = d_southstone
+		holder = Lychester_200
+	}
+}
+
+c_oldwithe = {
+	7299.1.1 = { 
+		liege = d_southstone
+		holder = Eager_200
+	}
+}
+
+c_sallydance = {
+	7299.1.1 = { 
+		liege = d_southstone
+		holder = Fernly_200
+	}
+}
+
+c_the_willows = {
+	7299.1.1 = { 
+		liege = d_southstone
+		holder = Severyn_200
+	}
+}
+
+d_the_crossing = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Charlton_200
+	}
+}
+
+c_the_twins = {
+	7299.1.1 = {
+		liege = d_the_crossing
+		holder = Charlton_200
+		effect = {
+			set_title_name = c_crossing
+			title:b_the_twins = { set_title_name = b_crossing }
+			if = {
+				limit = { game_start_date < 7300.1.1 }
+				title:b_ravelkeep = { set_capital_barony = yes }
+				title:b_the_twins.title_province = { remove_holding = yes }
+				title:b_the_twins.title_province = { add_special_building_slot = the_twins_01 }
+			}
+		}
+	}
+}
+
+c_arganbrook = {
+	7299.1.1 = { 
+		liege = d_the_crossing
+		holder = Nayland_200
+	}
+}
+
+c_blackpitch = {
+	7299.1.1 = { 
+		liege = d_the_crossing
+		holder = Haigh_200
+	}
+}
+
+c_erenford = {
+	7299.1.1 = { 
+		liege = d_the_crossing
+		holder = Erenford_200
+	}
+}
+
+c_helney = {
+	7299.1.1 = { 
+		liege = d_the_crossing
+		holder = Helney_200
+	}
+}
+
+c_ironwater = {
+	7299.1.1 = { 
+		liege = d_the_crossing
+		holder = Dally_200
+	}
+}
+
+c_leechpool = {
+	7299.1.1 = { 
+		liege = d_the_crossing
+		holder = Nayland_200
+	}
+}
+
+d_three_forks = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Strong_200
+	}
+}
+
+c_lancewood = {
+	7299.1.1 = {
+		liege = d_three_forks
+		holder = Deddings_200
+	}
+}
+
+c_branstone = {
+	7299.1.1 = {
+		liege = d_three_forks
+		holder = Chambers_200
+	}
+}
+
+c_speckleplum = {
+	7299.1.1 = {
+		liege = d_three_forks
+		holder = Warrens_200
+	}
+}
+
+d_tridents_mouth = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Darry_200
+	}
+}
+
+c_marstone = {
+	7299.1.1 = {
+		liege = d_tridents_mouth
+		holder = Urgont_200
+	}
+}
+
+c_riverbend = {
+	7299.1.1 = {
+		liege = d_tridents_mouth
+		holder = Nutt_202 
+	}
+}
+
+c_saltpans = {
+	7299.1.1 = {
+		liege = d_tridents_mouth
+		holder = Cox_200
+	}
+}
+
+c_saltpans_rise = {
+	7299.1.1 = {
+		liege = d_tridents_mouth
+		holder = Hawick_200
+	}
+}
+
+c_spiderwood = {
+	7299.1.1 = {
+		liege = d_tridents_mouth
+		holder = Deremond_200
+	}
+}
+
+c_stillside = {
+	7299.1.1 = {
+		liege = d_tridents_mouth
+		holder = Rankenfell_200
+	}
+}
+
+d_wayfarers_rest = {
+	7299.1.1 = {
+		holder = Vance_Wayfarers_Rest_200
+		liege = k_armistia
+	}
+	7571.1.1 = {
+		holder = Vance_Wayfarers_Rest_90
+		liege = e_the_riverlands
+	}
+}
+
+c_acorns_ridge = {
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Smallwood_200
+	}
+}
+
+c_banbeck_vale = {
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Banbeck_200
+	}
+}
+
+c_donnelwood = {
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Givven_200
+	}
+}
+
+c_morningswake = {
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Madduc_200
+	}
+}
+
+c_ruby_shoals = {
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Whistler_200
+	}
+}
+
+c_runvane = {
+	7299.1.1 = { 
+		liege = d_wayfarers_rest
+		holder = Dannett_200
+	}
+}
+
+d_willow_wood = {
+	7299.1.1 = {
+		liege = e_the_riverlands
+		holder = Ryger_200
+	}
+}
+
+c_elmbridge = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Elridge_200
+	}
+}
+
+c_sweetwillow = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Forthe_200
+	}
+}
+
+c_morey = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Brimer_200
+	}
+}
+
+c_oldferns = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Grey_200
+	}
+}
+
+c_white_wood = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Sillinger_200
+	}
+}
+
+c_helmesmont = {
+	7299.1.1 = {
+		liege = d_willow_wood
+		holder = Grey_200
+	}
+}
+
+c_woodrush = {
+	7299.1.1 = { 
+		liege = d_the_crossing
+		holder = Dally_200
+	}
+}
+
+c_seasorrow = {
+	7299.1.1 = { 
+		liege = d_cape_of_eagles
+		holder = Chaynes_200
+	}
+}
