@@ -7,3 +7,27 @@ nymeria_bookmark_7299_1_desc:0 "Princess Nymeria leads the Rhoynar across the se
 
 old_dornish:0 "Dornish"
 old_dornish_prefix:0 "Dornish"
+
+bookmark_1499_nymeria:0 "Princess Nymeria"
+ bookmark_1499_nymeria_subheading:0 "Princess of the Rhoynar"
+ bookmark_1499_nymeria_desc:0 "The Rhoynar were once masters of the mighty River Rhoyne, their cities the envy of every king. Then the Valyrian Freehold turned its dragons on the Rhoyne, and city after city burned.\n\nNymeria gathered what remained of her people and led them away from the only home they had ever known. For years they wandered, plague, slavers and hostile spears driving them onward.\n\n#bold; Now her ships have landed on the shores of Dorne. Perhaps this is where the Rhoynar finally make their home. Or perhaps there is still better land further ahead.#!"
+
+bookmark_1499_martell:0 "Lord Mors Martell"
+ bookmark_1499_martell_subheading:0 "Lord of the Sandship"
+ bookmark_1499_martell_desc:0 "Of all the lords of Dorne, House Martell is among the weaker ones. Where others boast ancient kingdoms and storied bloodlines, the Martells hold little more than the Sunship and the lands around it.\n\nMors Martell is not a fool however. He knows that swords alone will not raise his house to greatness.\n\n#bold; Now word has reached him of a beautiful woman and ten thousand ships landing on his shores. Perhaps there is a deal to be struck.#!"
+
+bookmark_1499_yronwood:0 "Bloodroyal Yorick Yronwood"
+ bookmark_1499_yronwood_subheading:0 "Bloodroyal of Dorne"
+ bookmark_1499_yronwood_desc:0 "House Yronwood is the oldest and greatest kingdom in all of Dorne. While other lords bicker over scraps of dried earth, the Yronwoods have held dominion over most of Dorne since before living memory.\n\nYorick has little regard for the kings around him. Small men, holding small lands, wearing crowns they did not earn.\n\n#bold; Now a foreign woman and her fleet have come to his shores. The Bloodroyals have crushed greater threats than this.#!"
+
+bookmark_1499_wyl:0 "Lord Wyllas Wyl"
+ bookmark_1499_wyl_subheading:0 "Lord of the Stoneway"
+ bookmark_1499_wyl_desc:0 "Lord Wyllas Wyl has never been a man who shied away from dirty work. Where others talk, he acts. Where others hesitate, he does not. It is no secret that much of Yronwood's strength rests on the shoulders of men like Wyllas, loyal dogs who get things done and ask no questions after.\n\nHe has served House Yronwood faithfully, and the Stoneway has prospered for it.\n\n#bold; But now a foreign woman called Nymeria has landed near the Sunship. Perhaps it is time for House Wyl to reconsider where their loyalties truly lie.#!"
+
+bookmark_1499_dayne:0 "King Vorian Dayne"
+ bookmark_1499_dayne_subheading:0 "Sword of the Morning"
+ bookmark_1499_dayne_desc:0 "Of all the Dornish kings who stand, none are spoken of with such admiration as King Vorian Dayne, the Sword of the Morning.\n\nVorian is said to be without equal in single combat.\n\nIn an age of ruthless kings and desperate men, King Vorian is known above all else for his honor. He has never broken a sworn oath, never struck a kneeling man, never turned his blade on the innocent. His enemies respect him even as they fight him.\n\n#bold;Now Nymeria and her ten thousand ships have come to Dorne's shores. Whether King Vorian's sword and his honor will be enough, remains to be seen.#!"
+
+bookmark_1499_dryland:0 "King Lucifer Dryland"
+ bookmark_1499_dryland_subheading:0 "King of the Drylands"
+ bookmark_1499_dryland_desc:0 "House Dryland has held their sun-scorched lands for centuries, long before any other king set foot in Dorne.\n\nOf all the Dornish kings, Lucifer is known to be among the crueler ones. He rules with an iron fist, and those who cross him rarely live to speak of it.\n\n#bold; He has no intention of surrendering what his family has held for centuries, not to Nymeria and her ships, and not to any of the bastard kings who fancy themselves his betters.#!"
