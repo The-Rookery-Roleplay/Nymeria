@@ -117,7 +117,7 @@ crackclaw_confed_on_game_start = {
                 has_game_rule = crackclaw_confederation_on
                 game_start_date = 7299.1.1
                 NOR = {
-                    exists = title:d_crackclaw.holder
+                    exists = title:d_crackclaw_point.holder
                     exists = title:k_the_claw.holder
                 }
             }
