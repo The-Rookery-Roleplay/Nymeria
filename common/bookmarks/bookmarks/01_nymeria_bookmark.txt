@@ -21,7 +21,7 @@
 		history_id = Nymeros_1
 		position = { 1050 810 }
 
-		animation = steward
+		animation = personality_bold
 	}
 
 	character = {
@@ -38,7 +38,7 @@
 		history_id = Martell_23
 		position = { 1000 500 }
 
-		animation = steward
+		animation = personality_honorable
 	}
 
 	character = {
@@ -55,7 +55,7 @@
 		history_id = Dayne_17
 		position = { 100 500 }
 
-		animation = steward
+		animation = personality_honorable
 	}
 
 	character = {
@@ -72,7 +72,7 @@
 		history_id = Yronwood_16
 		position = { 1050 200 }
 
-		animation = steward
+		animation = disapproval
 	}
 
 	character = {
@@ -89,7 +89,7 @@
 		history_id = Wyl_200
 		position = { 450 120 }
 
-		animation = steward
+		animation = personality_vengeful
 	}
 
 	character = {
@@ -106,7 +106,7 @@
 		history_id = Dryland_1
 		position = { 500 750 }
 
-		animation = steward
+		animation = war_attacker
 	}
 	
 

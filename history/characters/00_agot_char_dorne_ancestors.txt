@@ -142512,7 +142512,6 @@ Wyl_200 = {
 	7295.1.1 = {
 		trait = knight
 		trait = infirm
-		trait = blind
 	}
 	7320.1.1 = { death = yes }
 }
