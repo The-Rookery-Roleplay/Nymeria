@@ -7,13 +7,107 @@
 		value = 0
 	}
 
-	# character = {
-    #     name = "nymeros_nymeria_bookmark_7299_1"  # localization key
-    #     character = Nymeros_1  # the actual character ID in your history files
-    #     playable = yes
-    #     difficulty = "BOOKMARK_DIFFICULTY_EASY"  # or MEDIUM / HARD
-        
-    #     position = { 600 400 }  # position on the map screen
-    # }
+	character = {
+		name = "bookmark_1499_nymeria"
+		dynasty = dynn_Nymeros
+		dynasty_splendor_level = 2
+		type = female
+		birth = 7275.1.1
+		title = d_laamp_Nymeria
+		government = landless_adventurer_government
+		culture = rhoynar_original
+		religion = mother_rhoyne
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Nymeros_1
+		position = { 1150 810 }
+
+		animation = steward
+	}
+
+	character = {
+		name = "bookmark_1499_martell"
+		dynasty = dynn_Martell
+		dynasty_splendor_level = 2
+		type = male
+		birth = 7275.1.1
+		title = d_sunspear
+		government = lp_feudal_government
+		culture = old_dornish
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Martell_23
+		position = { 1500 500 }
+
+		animation = steward
+	}
+
+	character = {
+		name = "bookmark_1499_yronwood"
+		dynasty = dynn_Yronwood
+		dynasty_splendor_level = 2
+		type = male
+		birth = 7274.1.1
+		title = k_yronwood
+		government = lp_feudal_government
+		culture = old_dornish
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Yronwood_16
+		position = { 1000 260 }
+
+		animation = steward
+	}
+
+	character = {
+		name = "bookmark_1499_wyl"
+		dynasty = dynn_Wyl
+		dynasty_splendor_level = 2
+		type = male
+		birth = 7232.1.1
+		title = d_the_stoneway
+		government = lp_feudal_government
+		culture = old_dornish
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Wyl_200
+		position = { 450 240 }
+
+		animation = steward
+	}
+
+	character = {
+		name = "bookmark_1499_dryland"
+		dynasty = dynn_Dryland
+		dynasty_splendor_level = 2
+		type = male
+		birth = 7258.1.1
+		title = k_the_drylands
+		government = lp_feudal_government
+		culture = old_dornish
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Dryland_1
+		position = { 500 750 }
+
+		animation = steward
+	}
+
+	character = {
+		name = "bookmark_1499_dayne"
+		dynasty = dynn_Dayne
+		dynasty_splendor_level = 2
+		type = male
+		birth = 7275.1.1
+		title = k_the_torrentine
+		government = lp_feudal_government
+		culture = old_dornish
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = dayne_17
+		position = { 100 500 }
+
+		animation = steward
+	}
+	
 
 }
