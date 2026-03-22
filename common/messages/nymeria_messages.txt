@@ -1,4 +1,4 @@
-msg_nymeria_durrandon_border_claim = {
+﻿msg_nymeria_durrandon_border_claim = {
     icon = "titles"
     style = neutral
     title = event_message_title

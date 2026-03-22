@@ -1,4 +1,4 @@
-crackclaw_confederation = {
+﻿crackclaw_confederation = {
     categories = {
 		nymeria
 	}
