@@ -1,0 +1,34 @@
+﻿k_yronwood = {
+	pattern="pattern_solid.dds"
+	color1 = "agot_sand"
+	color2 = "agot_black"
+	colored_emblem = {
+		color1 = "agot_black"
+		color2 = "agot_black"
+		texture = "do_yronwood.dds"
+		instance = { position = { 0.5 0.45 } scale = { 1.1 1.1 }  }
+	}
+}
+
+d_the_stoneway = {
+	pattern = "pattern_solid.dds"
+	color1 = "agot_yellow"
+	color2 = "agot_black"
+	colored_emblem = {
+		color1 = "agot_carnation"
+		color2 = "agot_black"
+		texture = "do_wyl.dds"
+		instance = { position = { 0.5 0.45 } scale = { 0.9 0.9 } }
+	}
+}
+
+d_sunspear = {
+	pattern = "pattern_solid.dds"
+	color1 = "agot_orange"
+	colored_emblem = {
+		color1 = "agot_yellow"
+		color2 = "agot_black"
+		texture = "do_martell.dds"
+		instance = { position = { 0.5 0.45 } scale = { 0.8 0.8 } }
+	}
+}

@@ -468,7 +468,7 @@ c_thorntree = {
 }
 
 d_the_stoneway = {
-    7299.1.1 = {
+    7298.1.1 = {
         holder = Wyl_200
         liege = k_yronwood
         effect = {
