@@ -135188,6 +135188,7 @@ Blackwood_200 = {
 Hook_200 = {
 	name = Quentyn
 	dynasty = dynn_Hook
+	dna = nymeriaswar_quentyn_hook
 	random_traits = yes
 	religion = fots_seven
 	culture = riverman_main
