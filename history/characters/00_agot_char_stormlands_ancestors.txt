@@ -125767,7 +125767,7 @@ Cafferen_200 = {
 Massey_200 = {
 	name = Ludd
 	dynasty = dynn_Massey
-	dna = nymeriaswar_ludd_massey
+	# dna = nymeriaswar_ludd_massey
 	religion = fots_seven
 	culture = stormlander_main
 
