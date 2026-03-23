@@ -27,3 +27,24 @@ nymeria_stormlands_story = {
     nymeria_stormlands_story_on = {}
     nymeria_stormlands_story_off = {}
 }
+
+generate_families = {
+	
+	categories = {
+		nymeria
+	}
+	
+	default = on_generate_families
+
+	on_generate_families = {
+	
+	}
+	
+	on_generate_families_ai_only = {
+	
+	}
+
+	off_generate_families = {
+	
+	}
+}
