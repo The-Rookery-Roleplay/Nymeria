@@ -6806,7 +6806,22 @@ Darklyn_83 = {
 	disallow_random_traits = yes
 
 	5875.1.1 = { birth = yes }
-	7299.1.1 = { death = yes }
+	7248.1.1 = { death = yes }
+}
+Darklyn_line = {
+	name = Line_of_Gunthor
+	dynasty = dynn_Darklyn
+
+	religion = fots_seven
+	culture = riverman_main
+
+	father = Darklyn_200
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7320.1.1 = { birth = yes }
+	7830.1.1 = { death = yes }
 }
 Darklyn_1 = {
 	name = Damon # a lord
@@ -6816,7 +6831,7 @@ Darklyn_1 = {
 	religion = fots_seven
 	culture = riverman_main
 
-	father = Darklyn_83
+	father = Darklyn_line
 
 	7830.1.1 = {
 		birth = yes
@@ -63101,7 +63116,7 @@ Brune_11 = {
 	disallow_random_traits = yes
 
 	5050.1.1 = { birth = yes }
-	7299.1.1 = { death = yes }
+	7258.1.1 = { death = yes }
 }
 Brownhollow_6 = {
 	name = Line_of_Bennifer
@@ -63116,11 +63131,41 @@ Brownhollow_6 = {
 	disallow_random_traits = yes
 
 	5050.1.1 = { birth = yes }
-	7299.1.1 = { death = yes }
+	7270.1.1 = { death = yes }
 }
 
 ### Dyre Den's Branch
 ############################
+Brune_200 = {
+	name = Bennard
+	dynasty = dynn_Brune
+	random_traits = yes
+	religion = fots_seven
+	father = Brune_11
+	culture = clawman
+	7258.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7332.1.1 = { death = yes }
+}
+Brune_11ine = {
+	name = Line_of_Bennard
+	dynasty = dynn_Brune
+
+	religion = fots_seven
+	culture = clawman
+
+	father = Brune_200
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7332.1.1 = { birth = yes }
+	7823.1.1 = { death = yes }
+}
 Brune_12 = {
 	name = Osney # a lord
 	dynasty = dynn_Brune
@@ -63128,7 +63173,7 @@ Brune_12 = {
 	religion = fots_seven
 	culture = clawman
 
-	father = Brune_11
+	father = Brune_11ine
 
 	7823.1.1 = { birth = yes }
 	7842.1.1 = { trait = knight }
@@ -64174,6 +64219,36 @@ Brune_79 = {
 
 ### Brownhollow's Branch
 ############################
+Brune_201 = {
+	name = Harwyn
+	dynasty_house = house_Brownhollow
+	father = Brownhollow_6
+	random_traits = yes
+	religion = old_gods_wnw
+	culture = clawman
+	7270.1.1 = {
+		birth = yes
+	}
+	7297.1.1 = {
+		trait = knight
+	}
+	7335.1.1 = { death = yes }
+}
+Brownhollow_linee = {
+	name = Line_of_Harwyn
+	dynasty_house = house_Brownhollow
+
+	religion = fots_seven
+	culture = clawman
+
+	father = Brune_201
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7335.1.1 = { birth = yes }
+	7835.1.1 = { death = yes }
+}
 Brownhollow_7 = {
 	name = Bennard # a lord
 	dynasty_house = house_Brownhollow
@@ -64181,7 +64256,7 @@ Brownhollow_7 = {
 	religion = fots_seven
 	culture = clawman
 
-	father = Brownhollow_6
+	father = Brownhollow_linee
 
 	7835.1.1 = { birth = yes }
 	7851.1.1 = { trait = knight }
@@ -80635,6 +80710,7 @@ Darklyn_200 = {
 	name = Symond
 	dna = nymeriaswar_symond_darklyn
 	dynasty = dynn_Darklyn
+	father = Darklyn_83
 	random_traits = yes
 	religion = fots_seven
 	culture = riverman_main
@@ -80878,35 +80954,9 @@ Cave_200 = {
 	7328.1.1 = { death = yes }
 }
 
-Brune_200 = {
-	name = Bennard
-	dynasty = dynn_Brune
-	random_traits = yes
-	religion = fots_seven
-	culture = clawman
-	7258.1.1 = {
-		birth = yes
-	}
-	7295.1.1 = {
-		trait = knight
-	}
-	7332.1.1 = { death = yes }
-}
 
-Brune_201 = {
-	name = Harwyn
-	dynasty = dynn_Brune
-	random_traits = yes
-	religion = old_gods_wnw
-	culture = clawman
-	7270.1.1 = {
-		birth = yes
-	}
-	7297.1.1 = {
-		trait = knight
-	}
-	7335.1.1 = { death = yes }
-}
+
+
 
 Bush_200 = {
 	name = Walton

@@ -54,11 +54,34 @@ c_highscar = {
 }
 
 d_cape_wrath = {
-	7299.1.1 = {
-		holder = Mertyns_200
+	6450.1.1 = {
+		holder = Mertyns_f1
+	}
+	7200.1.1 = {
+		holder = Mertyns_n0
+	}
+	7260.1.1 = {
+		holder = Mertyns_n1
+	}
+	7310.1.1 = {
+		holder = Mertyns_n2
 	}
 }
 
+c_mistfall = {
+	6450.1.1 = {
+		holder = Mertyns_f1
+	}
+	7200.1.1 = {
+		holder = Mertyns_n0
+	}
+	7260.1.1 = {
+		holder = Mertyns_n1
+	}
+	7310.1.1 = {
+		holder = Mertyns_n2
+	}
+}
 c_armigan = {
 	7299.1.1 = { 
 	liege = d_cape_wrath
@@ -150,6 +173,17 @@ c_tudbury_island = {
 }
 
 d_grandview = {
+	6450.1.1 = {
+		holder = Grandison_f1
+	}
+	7299.1.1 = {
+		holder = Grandison_200
+	}
+}
+c_grandview = {
+	6450.1.1 = {
+		holder = Grandison_f1
+	}
 	7299.1.1 = {
 		holder = Grandison_200
 	}
@@ -225,8 +259,31 @@ c_wetherstruck = {
 }
 
 d_kingswood = {
-	7299.1.1 = {
+	6450.1.1 = {
+		holder = Fell_f1
+	}
+	7230.1.1 = {
+		holder = Fell_n1
+	}
+	7295.1.1 = {
 		holder = Fell_200
+	}
+	7320.1.1 = {
+		holder = Fell_n4
+	}
+}
+c_felwood = {
+	6450.1.1 = {
+		holder = Fell_f1
+	}
+	7230.1.1 = {
+		holder = Fell_n1
+	}
+	7295.1.1 = {
+		holder = Fell_200
+	}
+	7320.1.1 = {
+		holder = Fell_n4
 	}
 }
 
@@ -335,11 +392,45 @@ c_redwind = {
 }
 
 d_nightsong = {
+	100.1.1 = {
+		holder = Caron_ah
+	}
+	160.1.1 = {
+		holder = 0
+	}
+	6450.1.1 = {
+		holder = Caron_a1
+	}
+	6510.1.1 = {
+		holder = Caron_a2
+	}
+	6550.1.1 = {
+		holder = Caron_a3
+	}
 	7299.1.1 = {
 		holder = Caron_200 
 	}
 }
-
+c_nightsong = {
+	100.1.1 = {
+		holder = Caron_ah
+	}
+	160.1.1 = {
+		holder = 0
+	}
+	6450.1.1 = {
+		holder = Caron_a1
+	}
+	6510.1.1 = {
+		holder = Caron_a2
+	}
+	6550.1.1 = {
+		holder = Caron_a3
+	}
+	7299.1.1 = {
+		holder = Caron_200 
+	}
+}
 c_choicemarch = {
 	7299.1.1 = { 
 	liege = d_red_watch
@@ -369,11 +460,45 @@ c_thrushing = {
 }
 
 d_red_watch = {
+	100.1.1 = {
+		holder = Swann_ah
+	}
+	160.1.1 = {
+		holder = 0
+	}
+	6450.1.1 = {
+		holder = Swann_a1
+	}
+	6510.1.1 = {
+		holder = Swann_a2
+	}
+	6580.1.1 = {
+		holder = Swann_a3
+	}
 	7299.1.1 = {
-		holder = Swann_200
+		holder = Swann_nymeria_1
 	}
 }
-
+c_stonehelm = {
+	100.1.1 = {
+		holder = Swann_ah
+	}
+	160.1.1 = {
+		holder = 0
+	}
+	6450.1.1 = {
+		holder = Swann_a1
+	}
+	6510.1.1 = {
+		holder = Swann_a2
+	}
+	6580.1.1 = {
+		holder = Swann_a3
+	}
+	7299.1.1 = {
+		holder = Swann_nymeria_1
+	}
+}
 c_corningstone = {
 	7299.1.1 = { 
 	liege = d_red_watch
@@ -457,9 +582,13 @@ c_strawbury = {
 }
 
 d_tarth = {
-	7299.1.1 = {
+	7235.1.1 = {
 		holder = Tarth_200
 	}
+	7300.1.1 = {
+		holder = Tarth_n2
+	}
+
 }
 
 c_brightmoor = {
@@ -519,11 +648,21 @@ c_greenpools = {
 }
 
 d_the_rainwood = {
+	6450.1.1 = {
+		holder = Wylde_f1
+	}
 	7299.1.1 = {
-		holder = Wylde_200
+		holder = Wylde_n1
 	}
 }
-
+c_whirlyng = {
+	6450.1.1 = {
+		holder = Wylde_f1
+	}
+	7299.1.1 = {
+		holder = Wylde_n1
+	}
+}
 c_bluegrove = {
 	7299.1.1 = { 
 	liege = d_the_rainwood
@@ -572,8 +711,31 @@ c_trenchester = {
 }
 
 d_vellum_coast = {
-	7299.1.1 = {
+	7190.1.1 = {
+		holder = Penrose_n0
+	}
+	7240.1.1 = {
+		holder = Penrose_n1
+	}
+	7270.1.1 = {
 		holder = Penrose_200
+	}
+	7320.1.1 = {
+		holder = Penrose_n4
+	}
+}
+c_parchments = {
+	7190.1.1 = {
+		holder = Penrose_n0
+	}
+	7240.1.1 = {
+		holder = Penrose_n1
+	}
+	7270.1.1 = {
+		holder = Penrose_200
+	}
+	7320.1.1 = {
+		holder = Penrose_n4
 	}
 }
 

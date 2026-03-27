@@ -71,7 +71,7 @@ c_bronzeholm = {
 
 c_brownhollow = {
 	7299.1.1 = { 
-		holder = Brownhollow_200
+		holder = Brune_201
 	}
 }
 

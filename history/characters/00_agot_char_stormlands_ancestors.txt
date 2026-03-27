@@ -1551,6 +1551,7 @@ Durrandon_62 = {
 		make_trait_inactive = blue_eyes
 		give_nickname = nickname_durrandon_62
 	}
+	7275.1.1 = { add_spouse = Tarth_n1 }
 	7316.1.1 = { death = yes }
 }
 Durrandon_63 = {
@@ -1561,6 +1562,7 @@ Durrandon_63 = {
 	culture = stormlander_main
 
 	father = Durrandon_62
+	mother = Tarth_n1
 	trait = strong
 	trait = physique_good_2
 	7277.1.1 = {
@@ -1569,7 +1571,27 @@ Durrandon_63 = {
 		make_trait_inactive = black_hair
 		make_trait_inactive = blue_eyes
 	}
+	7293.1.1 = { add_spouse = Penrose_n3 }
 	7326.1.1 = { death = yes }
+}
+Durrandon_n1 = {
+	name = Erich 
+	dynasty = dynn_Durrandon
+	religion = fots_seven
+	culture = stormlander_main
+
+	father = Durrandon_62
+	mother = Tarth_n1
+	trait = physique_good_2
+	trait = brave
+
+	7280.1.1 = {
+		birth = yes
+		make_trait_inactive = smol_tol
+		make_trait_inactive = black_hair
+		make_trait_inactive = blue_eyes
+	}
+	7320.1.1 = { death = yes }
 }
 ### Issue of Durran XXVII
 Durrandon_89 = {
@@ -1580,7 +1602,7 @@ Durrandon_89 = {
 	culture = stormlander_main
 
 	father = Durrandon_63
-
+	mother = Penrose_n3
 	trait = education_martial_2
 	trait = physique_good_1
 	trait = ambitious
@@ -6583,10 +6605,54 @@ Buckler_hh_2 = {
 ############################
 ### To New Heights
 ###
+Connington_200 = {
+	name = Malrick
+	dynasty = dynn_Connington
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7266.1.1 = {
+		birth = yes
+	}
+	7281.1.1 = {
+		trait = knight
+	}
+	7281.1.1 = { add_spouse = Tarth_n4 } 
+	7320.1.1 = { death = yes }
+}
+Connington_n1 = {
+	name = Clement
+	dynasty = dynn_Connington
+	father = Connington_200
+	mother = Tarth_n4
+	religion = fots_seven
+	culture = stormlander_main
+
+	7285.1.1 = {
+		birth = yes
+	}
+	7302.1.1 = {
+		trait = knight
+	}
+	7350.1.1 = { death = yes }
+}
+Conngton_fill = {
+	name = Line_of_Micheal # a lord
+	dynasty = dynn_Connington
+	father = Connington_n1
+	religion = fots_seven
+	culture = stormlander_main
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7320.1.1 = { birth = yes }
+	7824.1.1 = { death = yes }
+}
 Connington_10 = {
 	name = Roy # a lord
 	dynasty = dynn_Connington
-
+	father = Conngton_fill
 	religion = fots_seven
 	culture = stormlander_main
 
@@ -10729,10 +10795,120 @@ Errol_73 = {
 ############################
 ### The Moon is High
 ###
+Fell_f1 = {
+	name = Durran # a lord
+	dynasty = dynn_Fell
+	religion = old_gods_wnw
+	culture = first_man
+
+	6450.1.1 = { birth = yes }
+	6510.1.1 = { death = yes }
+}
+Fell_fil = {
+	name = Line_of_Durran # a lord
+	dynasty = dynn_Fell
+	father = Fell_f1
+	religion = old_gods_wnw
+	culture = first_man
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6620.1.1 = { birth = yes }
+	7230.1.1 = { death = yes }
+}
+Fell_n1 = {
+	name = Arlan
+	dynasty = dynn_Fell
+	father = Fell_fil
+	religion = fots_seven
+	culture = stormlander_main
+
+	7230.1.1 = {
+		birth = yes
+	}
+	7246.1.1 = {
+		trait = knight
+	}
+	7246.1.1 = { add_spouse = Penrose_n0_2 }
+	7295.1.1 = { death = yes }
+}
+Fell_n2 = {
+	name = Salene
+	female = yes
+	dynasty = dynn_Fell
+	father = Fell_n1
+	mother = Penrose_n0_2
+	religion = fots_seven
+	culture = stormlander_main
+
+	7250.1.1 = { birth = yes }
+	7300.1.1 = { death = yes }
+}
+Fell_200 = {
+	name = Arton
+	dynasty = dynn_Fell
+	father = Fell_n1
+	mother = Penrose_n0_2
+	religion = fots_seven
+	culture = stormlander_main
+
+	7265.1.1 = {
+		birth = yes
+	}
+	7281.1.1 = {
+		trait = knight
+	}
+	7281.1.1 = { add_spouse = Mertyns_n4 }
+	7320.1.1 = { death = yes }
+}
+Fell_n3 = {
+	name = Dally
+	dynasty = dynn_Fell
+	father = Fell_n1
+	mother = Penrose_n0_2
+	religion = fots_seven
+	culture = stormlander_main
+
+	7270.1.1 = {
+		birth = yes
+	}
+	7300.1.1 = {
+		trait = knight
+	}
+	7340.1.1 = { death = yes }
+}
+Fell_n4 = {
+	name = Farlon
+	dynasty = dynn_Fell
+	father = Fell_200
+	mother = Mertyns_n4
+	religion = fots_seven
+	culture = stormlander_main
+
+	7283.1.1 = {
+		birth = yes
+	}
+	7299.1.1 = {
+		trait = knight
+	}
+	7345.1.1 = { death = yes }
+}
+Fell_fill = {
+	name = Line_of_Ronald # a lord
+	dynasty = dynn_Fell
+	father = Fell_n4
+	religion = fots_seven
+	culture = stormlander_main
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7345.1.1 = { birth = yes }
+	7796.1.1 = { death = yes }
+}
 Fell_6 = {
 	name = Triston # a lord
 	dynasty = dynn_Fell
-
+	father = Fell_fill
 	religion = fots_seven
 	culture = stormlander_main
 
@@ -13603,10 +13779,58 @@ Gower_63 = {
 ############################
 ### Rouse Me Not
 ###
+Grandison_f1 = {
+	name = Ronald # a lord
+	dynasty = dynn_Grandison
+	religion = old_gods_wnw
+	culture = first_man
+
+	6450.1.1 = { birth = yes }
+	6510.1.1 = { death = yes }
+}
+Gradison_fil = {
+	name = Line_of_Ronald # a lord
+	dynasty = dynn_Grandison
+	father = Grandison_f1
+	religion = old_gods_wnw
+	culture = first_man
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6620.1.1 = { birth = yes }
+	7266.1.1 = { death = yes }
+}
+Grandison_200 = {
+	name = Carl
+	dynasty = dynn_Grandison
+	father = Gradison_fil
+	religion = fots_seven
+	culture = stormlander_main
+
+	7266.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+Gradison_fill = {
+	name = Line_of_Ronald # a lord
+	dynasty = dynn_Grandison
+	father = Grandison_200
+	religion = fots_seven
+	culture = stormlander_main
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7320.1.1 = { birth = yes }
+	7840.1.1 = { death = yes }
+}
 Grandison_8 = {
 	name = Luthor # a lord
 	dynasty = dynn_Grandison
-
+	father = Gradison_fill
 	religion = fots_seven
 	culture = stormlander_main
 
@@ -17756,10 +17980,163 @@ Kellington_24 = {
 ############################
 ### We Wait in Darkness
 ###
+Mertyns_f1 = {
+	name = Ronald # a lord
+	dynasty = dynn_Mertyns
+	religion = old_gods_wnw
+	culture = first_man
+
+	6450.1.1 = { birth = yes }
+	6510.1.1 = { death = yes }
+}
+Mertyns_fil = {
+	name = Line_of_Ronald # a lord
+	dynasty = dynn_Mertyns
+	father = Mertyns_f1
+	religion = old_gods_wnw
+	culture = first_man
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6620.1.1 = { birth = yes }
+	7220.1.1 = { death = yes }
+}
+Mertyns_n0 = {
+	name = Meredyth
+	dynasty = dynn_Mertyns
+	father = Mertyns_fil
+	religion = fots_seven
+	culture = stormlander_main
+
+	7200.1.1 = {
+		birth = yes
+	}
+	7236.1.1 = {
+		trait = knight
+	}
+	7260.1.1 = { death = yes }
+} 
+Mertyns_n0_1 = {
+	name = Megan
+	dynasty = dynn_Mertyns
+	father = Mertyns_n0
+	female = yes
+	religion = fots_seven
+	culture = stormlander_main
+
+	7220.1.1 = {
+		birth = yes
+	}
+	7275.1.1 = { death = yes }
+}
+Mertyns_n02 = {
+	name = Narbert
+	dynasty = dynn_Mertyns
+	father = Mertyns_n0
+	religion = fots_seven
+	trait = diligent
+	trait = education_stewardship_2
+	culture = stormlander_main
+
+	7250.1.1 = {
+		birth = yes
+	}
+	7266.1.1 = {
+		trait = knight
+	}
+	7310.1.1 = { death = yes }
+}
+Mertyns_n1 = {
+	name = Nolan
+	dynasty = dynn_Mertyns
+	father = Mertyns_n0
+	religion = fots_seven
+	culture = stormlander_main
+
+	7247.1.1 = {
+		birth = yes
+	}
+	7263.1.1 = {
+		trait = knight
+	}
+	7310.1.1 = { death = yes }
+}
+Mertyns_n2 = {
+	name = Kyle
+	dynasty = dynn_Mertyns
+	father = Mertyns_n1
+	religion = fots_seven
+	culture = stormlander_main
+
+	7265.1.1 = {
+		birth = yes
+	}
+	7282.1.1 = {
+		trait = knight
+	}
+	7282.1.1 = { add_spouse = Tarth_n3 } 
+	7330.1.1 = { death = yes }
+}
+Mertyns_n3 = {
+	name = Karl
+	dynasty = dynn_Mertyns
+	father = Mertyns_n1
+	religion = fots_seven
+	culture = stormlander_main
+
+	7269.1.1 = {
+		birth = yes
+	}
+	7286.1.1 = {
+		trait = knight
+	}
+	7330.1.1 = { death = yes }
+}
+Mertyns_n4 = {
+	name = Karella
+	dynasty = dynn_Mertyns
+	father = Mertyns_n1
+	female = yes
+	religion = fots_seven
+	culture = stormlander_main
+
+	7267.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+Mertyns_n5 = {
+	name = Cole
+	dynasty = dynn_Mertyns
+	father = Mertyns_n2
+	mother = Tarth_n3
+	religion = fots_seven
+	culture = stormlander_main
+
+	7285.1.1 = {
+		birth = yes
+	}
+	7302.1.1 = {
+		trait = knight
+	}
+	7350.1.1 = { death = yes }
+}
+Mertyns_linen = {
+	name = Line_of_Ronald # a lord
+	dynasty = dynn_Mertyns
+	father = Mertyns_n5
+	religion = fots_seven
+	culture = stormlander_main
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7350.1.1 = { birth = yes }
+	7819.1.1 = { death = yes }
+}
 Mertyns_8 = {
 	name = Dermot # a lord
 	dynasty = dynn_Mertyns
-
+	father = Mertyns_linen
 	religion = fots_seven
 	culture = stormlander_main
 
@@ -21302,10 +21679,209 @@ Peasebury_70 = {
 ############################
 ### Set Down Our Deeds
 ###
+Penrose_n0 = {
+	name = Pearse
+	dynasty = dynn_Penrose
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7190.1.1 = {
+		birth = yes
+	}
+	7206.1.1 = {
+		trait = knight
+	}
+	7240.1.1 = { death = yes }
+}
+Penrose_n1 = {
+	name = Gerold
+	dynasty = dynn_Penrose
+	father = Penrose_n0
+	religion = fots_seven
+	culture = stormlander_main
+
+	7210.1.1 = {
+		birth = yes
+	}
+	7226.1.1 = {
+		trait = knight
+	}
+	7236.1.1 = { add_spouse = Mertyns_n0_1 }
+	7270.1.1 = { death = yes }
+}
+Penrose_n0_1 = {
+	name = Monford
+	dynasty = dynn_Penrose
+	father = Penrose_n0
+	religion = fots_seven
+	culture = stormlander_main
+
+	trait = education_learning_2
+
+	7235.1.1 = {
+		birth = yes
+	}
+
+	7251.1.1 = {
+		trait = maester_historical
+		agot_safe_buy_scholar_perk_history_effect = yes
+		trait = scholar
+		effect = { # Maester of Runestone
+			agot_maester_starting_setup_history_effect = yes
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:c_parchments
+				POSITION = maester_court_position
+			}
+		}
+	}
+	7300.1.1 = { death = yes }
+}
+Penrose_n0_2 = {
+	name = Lyllian
+	female = yes
+	dynasty = dynn_Penrose
+	father = Penrose_n0
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	7236.1.1 = { birth = yes }
+	7290.1.1 = { death = yes }
+}
+Penrose_200 = {
+	name = Gwayne
+	dynasty = dynn_Penrose
+	father = Penrose_n1
+	mother = Mertyns_n0_1
+	religion = fots_seven
+	culture = stormlander_main
+
+	7255.1.1 = {
+		birth = yes
+	}
+	7271.1.1 = {
+		trait = knight
+	}
+	7271.1.1 = { add_spouse = Fell_n2 }
+	7320.1.1 = { death = yes }
+}
+Penrose_n2 = {
+	name = Erich
+	dynasty = dynn_Penrose
+	father = Penrose_n1
+	mother = Mertyns_n0_1
+	religion = fots_seven
+	culture = stormlander_main
+
+	7260.1.1 = {
+		birth = yes
+	}
+	7276.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+Penrose_n2_1 = {
+	name = Waymar
+	dynasty = dynn_Penrose
+	father = Penrose_n2
+	religion = fots_seven
+	culture = stormlander_main
+
+	7280.1.1 = {
+		birth = yes
+	}
+	7296.1.1 = {
+		trait = knight
+	}
+	7340.1.1 = { death = yes }
+}
+Penrose_n2_2 = {
+	name = Margaery
+	female = yes
+	dynasty = dynn_Penrose
+	father = Penrose_n2
+	religion = fots_seven
+	culture = stormlander_main
+
+	7282.1.1 = { birth = yes }
+	7340.1.1 = { death = yes }
+}
+Penrose_n3 = {
+	name = Daria
+	female = yes
+	dynasty = dynn_Penrose
+	father = Penrose_n1
+	mother = Mertyns_n0_1
+	religion = fots_seven
+	culture = stormlander_main
+
+	7269.1.1 = { birth = yes }
+	7340.1.1 = { death = yes }
+}
+Penrose_n4 = {
+	name = Michael
+	dynasty = dynn_Penrose
+	father = Penrose_200
+	mother = Fell_n2
+	religion = fots_seven
+	culture = stormlander_main
+
+	7275.1.1 = {
+		birth = yes
+	}
+	7291.1.1 = {
+		trait = knight
+	}
+	7360.1.1 = { death = yes }
+}
+Penrose_n5 = {
+	name = Macella
+	female = yes
+	dynasty = dynn_Penrose
+	father = Penrose_200
+	mother = Fell_n2
+	trait = twin
+	religion = fots_seven
+	culture = stormlander_main
+
+	7277.1.1 = { birth = yes }
+	7357.1.1 = { death = yes }
+}
+Penrose_n6 = {
+	name = Jon
+	dynasty = dynn_Penrose
+	father = Penrose_200
+	mother = Fell_n2
+	religion = fots_seven
+	culture = stormlander_main
+	trait = twin
+
+	7277.1.1 = {
+		birth = yes
+	}
+	7292.1.1 = {
+		trait = knight
+	}
+	7357.1.1 = { death = yes }
+}
+Penrose_fill = {
+	name = Line_of_Micheal # a lord
+	dynasty = dynn_Penrose
+	father = Penrose_n4
+	religion = fots_seven
+	culture = stormlander_main
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7360.1.1 = { birth = yes }
+	7823.1.1 = { death = yes }
+}
 Penrose_5 = {
 	name = Oswyn # a lord
 	dynasty = dynn_Penrose
-
+	father = Penrose_fill
 	religion = fots_seven
 	culture = stormlander_main
 
@@ -25349,7 +25925,94 @@ Tarth_9 = {
 	disallow_random_traits = yes
 
 	3072.1.1 = { birth = yes }
-	7299.1.1 = { death = yes }
+	7235.1.1 = { death = yes }
+}
+
+Tarth_200 = {
+	name = Albar
+	dynasty = dynn_Tarth
+
+	religion = fots_seven
+	father = Tarth_9
+	culture = stormlander_main
+
+	7235.1.1 = {
+		birth = yes
+	}
+	7251.1.1 = {
+		trait = knight
+	}
+	7300.1.1 = { death = yes }
+}
+Tarth_n1 = {
+	name = Brienne
+	dynasty = dynn_Tarth
+	father = Tarth_200
+	female = yes
+	religion = fots_seven
+	culture = stormlander_main
+
+	7255.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+Tarth_n2 = {
+	name = Edwyn
+	dynasty = dynn_Tarth
+
+	religion = fots_seven
+	father = Tarth_200
+	culture = stormlander_main
+
+	7251.1.1 = {
+		birth = yes
+	}
+	7266.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+Tarth_n3 = {
+	name = Lysa
+	dynasty = dynn_Tarth
+	father = Tarth_200
+	female = yes
+	religion = fots_seven
+	culture = stormlander_main
+
+	7257.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+Tarth_n4 = {
+	name = Kalyra
+	dynasty = dynn_Tarth
+	father = Tarth_200
+	female = yes
+	religion = fots_seven
+	culture = stormlander_main
+
+	7259.1.1 = {
+		birth = yes
+	}
+	7320.1.1 = { death = yes }
+}
+Tarth_line = {
+	name = Line_of_Albar_Evenstar
+	dynasty = dynn_Tarth
+
+	religion = fots_seven
+	culture = stormlander_main
+
+	father = Tarth_n2
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7320.1.1 = { birth = yes }
+	7797.1.1 = { death = yes }
 }
 Tarth_10 = {
 	name = Selwyn # a lord
@@ -25358,7 +26021,7 @@ Tarth_10 = {
 	religion = fots_seven
 	culture = stormlander_main
 
-	father = Tarth_9
+	father = Tarth_line
 
 	7797.1.1 = { birth = yes }
 	7814.1.1 = { trait = knight }
@@ -28946,10 +29609,59 @@ Tudbury_52 = {
 ############################
 ### The Storm Still Rages
 ###
+Wylde_f1 = {
+	name = Ron # a lord
+	dynasty = dynn_Wylde
+	religion = old_gods_wnw
+	culture = first_man
+
+	6450.1.1 = { birth = yes }
+	6510.1.1 = { death = yes }
+}
+Wylde_fil = {
+	name = Line_of_Ron # a lord
+	dynasty = dynn_Wylde
+	father = Wylde_f1
+	religion = old_gods_wnw
+	culture = first_man
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6620.1.1 = { birth = yes }
+	7282.1.1 = { death = yes }
+}
+Wylde_n1 = {
+	name = Kurtis
+	dynasty = dynn_Wylde
+	father = Wylde_fil
+	religion = fots_seven
+	culture = stormlander_main
+
+	7282.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	} 
+	7295.1.1 = { add_spouse = Penrose_n2_2 }
+	7320.1.1 = { death = yes }
+}
+Wylde_fill = {
+	name = Line_of_Kurtis # a lord
+	dynasty = dynn_Wylde
+	father = Wylde_n1
+	religion = fots_seven
+	culture = stormlander_main
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7320.1.1 = { birth = yes }
+	7790.1.1 = { death = yes }
+}
 Wylde_14 = {
 	name = Willem # a lord
 	dynasty = dynn_Wylde
-
+	father = Wylde_fill
 	religion = fots_seven
 	culture = stormlander_main
 
@@ -44849,10 +45561,102 @@ Bartheld_27 = {
 ############################
 ### On White Feathered Wings
 ###
-Swann_9 = {
+Swann_ah = {
 	name = Rolland # a lord
 	dynasty = dynn_Swann
 
+	religion = old_gods_wnw
+	culture = first_man
+
+	100.1.1 = { birth = yes }
+	160.1.1 = { death = yes }
+}
+Swann_ahl = {
+	name = Line_of_Rolland # a lord
+	dynasty = dynn_Swann
+	father = Swann_ah
+	religion = old_gods_wnw
+	culture = first_man
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	160.1.1 = { birth = yes }
+	6450.1.1 = { death = yes }
+}
+Swann_a1 = {
+	name = Rolland # a lord
+	dynasty = dynn_Swann
+	father = Swann_ahl
+	religion = old_gods_wnw
+	culture = first_man
+
+	6450.1.1 = { birth = yes }
+	6510.1.1 = { death = yes }
+}
+Swann_a2 = {
+	name = Rolland # a lord
+	dynasty = dynn_Swann
+	father = Swann_a1
+	religion = old_gods_wnw
+	culture = first_man
+
+	6500.1.1 = { birth = yes }
+	6580.1.1 = { death = yes }
+}
+Swann_a3 = {
+	name = Ron # a lord
+	dynasty = dynn_Swann
+	father = Swann_a2
+	religion = old_gods_wnw
+	culture = first_man
+
+	6540.1.1 = { birth = yes }
+	6620.1.1 = { death = yes }
+}
+Swann_ail = {
+	name = Line_of_Rolland # a lord
+	dynasty = dynn_Swann
+	father = Swann_a3
+	religion = old_gods_wnw
+	culture = first_man
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6620.1.1 = { birth = yes }
+	7283.1.1 = { death = yes }
+}
+Swann_nymeria_1 = {
+	name = Berrik
+	dynasty = dynn_Swann
+	father = Swann_ail
+	religion = fots_seven
+	culture = marcher
+
+	7283.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = { add_spouse = Penrose_n5 }
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+Swann_nline = {
+	name = Line_of_Rolland # a lord
+	dynasty = dynn_Swann
+	father = Swann_nymeria_1
+	religion = old_gods_wnw
+	culture = first_man
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7320.1.1 = { birth = yes }
+	7819.1.1 = { death = yes }
+}
+Swann_9 = {
+	name = Rolland # a lord
+	dynasty = dynn_Swann
+	father = Swann_nline
 	religion = fots_seven
 	culture = marcher
 
@@ -46656,10 +47460,103 @@ Dondarrion_47 = {
 ############################
 ### No Song so Sweet
 ###
-Caron_10 = {
+Caron_ah = {
 	name = Bryce # a lord
 	dynasty = dynn_Caron
 
+	religion = old_gods_wnw
+	culture = first_man
+
+	100.1.1 = { birth = yes }
+	160.1.1 = { death = yes }
+}
+Caron_ahl = {
+	name = Line_of_Bryce # a lord
+	dynasty = dynn_Caron
+	father = Caron_ah
+
+	religion = old_gods_wnw
+	culture = first_man
+
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	160.1.1 = { birth = yes }
+	6450.1.1 = { death = yes }
+}
+Caron_a1 = {
+	name = Bryce # a lord
+	dynasty = dynn_Caron
+	father = Caron_ahl
+	religion = old_gods_wnw
+	culture = first_man
+
+	6450.1.1 = { birth = yes }
+	6510.1.1 = { death = yes }
+}
+Caron_a2 = {
+	name = Bron # a lord
+	dynasty = dynn_Caron
+	father = Caron_a1
+	religion = old_gods_wnw
+	culture = first_man
+
+	6490.1.1 = { birth = yes }
+	6550.1.1 = { death = yes }
+}
+Caron_a3 = {
+	name = Bran # a lord
+	dynasty = dynn_Caron
+	father = Caron_a1
+	religion = old_gods_wnw
+	culture = first_man
+
+	6540.1.1 = { birth = yes }
+	6630.1.1 = { death = yes }
+}
+Caron_al = {
+	name = Line_of_Bryce # a lord
+	dynasty = dynn_Caron
+	father = Caron_a3
+	religion = old_gods_wnw
+	culture = first_man
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	6630.1.1 = { birth = yes }
+	7275.1.1 = { death = yes }
+}
+Caron_200 = {
+	name = Everon
+	dynasty = dynn_Caron
+	father = Caron_al
+	religion = fots_seven
+	culture = marcher
+
+	7275.1.1 = {
+		birth = yes
+	}
+	7295.1.1 = {
+		trait = knight
+	}
+	7320.1.1 = { death = yes }
+}
+Caron_nline = {
+	name = Line_of_Everton # a lord
+	dynasty = dynn_Caron
+	father = Caron_200
+	religion = fots_seven
+	culture = marcher
+	trait = line_of_char
+	disallow_random_traits = yes
+
+	7320.1.1 = { birth = yes }
+	7811.1.1 = { death = yes }
+}
+Caron_10 = {
+	name = Bryce # a lord
+	dynasty = dynn_Caron
+	father = Caron_nline
 	religion = fots_seven
 	culture = marcher
 
@@ -125427,21 +126324,7 @@ Sulk_59 = {
 	8297.1.1 = { death = yes }
 }
 
-Connington_200 = {
-	name = Malrick
-	dynasty = dynn_Connington
 
-	religion = fots_seven
-	culture = stormlander_main
-
-	7266.1.1 = {
-		birth = yes
-	}
-	7295.1.1 = {
-		trait = knight
-	}
-	7320.1.1 = { death = yes }
-}
 
 
 Gayle_200 = {
@@ -125492,38 +126375,6 @@ Brandish_200 = {
 	7320.1.1 = { death = yes }
 }
 
-Wylde_200 = {
-	name = Kurtis
-	dynasty = dynn_Wylde
-
-	religion = fots_seven
-	culture = stormlander_main
-
-	7282.1.1 = {
-		birth = yes
-	}
-	7295.1.1 = {
-		trait = knight
-	}
-	7320.1.1 = { death = yes }
-}
-
-Mertyns_200 = {
-	name = Kurtis
-	dynasty = dynn_Mertyns
-
-	religion = fots_seven
-	culture = stormlander_main
-
-	7247.1.1 = {
-		birth = yes
-	}
-	7295.1.1 = {
-		trait = knight
-	}
-	7320.1.1 = { death = yes }
-}
-
 Estermont_200 = {
 	name = Corrad
 	dynasty = dynn_Estermont
@@ -125532,38 +126383,6 @@ Estermont_200 = {
 	culture = stormlander_main
 
 	7262.1.1 = {
-		birth = yes
-	}
-	7295.1.1 = {
-		trait = knight
-	}
-	7320.1.1 = { death = yes }
-}
-
-Tarth_200 = {
-	name = Albar
-	dynasty = dynn_Tarth
-
-	religion = fots_seven
-	culture = stormlander_main
-
-	7235.1.1 = {
-		birth = yes
-	}
-	7295.1.1 = {
-		trait = knight
-	}
-	7320.1.1 = { death = yes }
-}
-
-Penrose_200 = {
-	name = Gwayne
-	dynasty = dynn_Penrose
-
-	religion = fots_seven
-	culture = stormlander_main
-
-	7255.1.1 = {
 		birth = yes
 	}
 	7295.1.1 = {
@@ -125588,21 +126407,6 @@ Errol_200 = {
 	7320.1.1 = { death = yes }
 }
 
-Fell_200 = {
-	name = Arton
-	dynasty = dynn_Fell
-
-	religion = fots_seven
-	culture = stormlander_main
-
-	7265.1.1 = {
-		birth = yes
-	}
-	7295.1.1 = {
-		trait = knight
-	}
-	7320.1.1 = { death = yes }
-}
 
 Peasebury_200 = {
 	name = Arton
@@ -125628,22 +126432,6 @@ Staedmon_200 = {
 	culture = stormlander_main
 
 	7256.1.1 = {
-		birth = yes
-	}
-	7295.1.1 = {
-		trait = knight
-	}
-	7320.1.1 = { death = yes }
-}
-
-Grandison_200 = {
-	name = Carl
-	dynasty = dynn_Grandison
-
-	religion = fots_seven
-	culture = stormlander_main
-
-	7266.1.1 = {
 		birth = yes
 	}
 	7295.1.1 = {
@@ -125684,21 +126472,6 @@ Morrigen_200 = {
 	7320.1.1 = { death = yes }
 }
 
-Swann_200 = {
-	name = Berrik
-	dynasty = dynn_Swann
-
-	religion = fots_seven
-	culture = marcher
-
-	7283.1.1 = {
-		birth = yes
-	}
-	7295.1.1 = {
-		trait = knight
-	}
-	7320.1.1 = { death = yes }
-}
 
 Dondarrion_200 = {
 	name = Bernard
@@ -125708,22 +126481,6 @@ Dondarrion_200 = {
 	culture = marcher
 
 	7265.1.1 = {
-		birth = yes
-	}
-	7295.1.1 = {
-		trait = knight
-	}
-	7320.1.1 = { death = yes }
-}
-
-Caron_200 = {
-	name = Everon
-	dynasty = dynn_Caron
-
-	religion = fots_seven
-	culture = marcher
-
-	7275.1.1 = {
 		birth = yes
 	}
 	7295.1.1 = {
