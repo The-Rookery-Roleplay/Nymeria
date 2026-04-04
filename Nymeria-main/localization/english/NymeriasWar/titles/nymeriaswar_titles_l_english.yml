@@ -1,0 +1,39 @@
+﻿l_english:
+
+d_laamp_Nymeria:0 "the Rhoynar"
+d_misty_islands:0 "the Misty Isles"
+d_godsfort:0 "Godsfort"
+c_crossing:0 "The Crossing"
+b_crossing:0 "The Crossing"
+b_castle_hook:0 "Castle Hook"
+c_hooks_wood:0 "Hook's Wood"
+d_blackmark:0 "Blackmark"
+c_blackmark:0 "Blackmark"
+b_castle_blackberry:0 "Castle Blackberry"
+c_smoke_isle:0 "The Smoke Isle"
+b_smoke_isle:0 "The Smoke Isle"
+b_smoke_isle_tower:0 "Smoke Isle Tower"
+c_mouth_of_greenblood:0 "Mouth of the Greenblood"
+b_mouth_of_greenblood:0 "Mouth of the Greenblood"
+c_sunship:0 "Sandship"
+d_sunship:0 "Sandship"
+b_sunship:0 "The Sandship"
+d_crackclaw_confederation:0 "The Crackclaw Confederation"
+
+
+# Flavorization
+
+ hook_king_flavorization: "Hook King"
+ hook_king_flavorization_female: "Hook Queen"
+ hook_queen_consort_flavorization: "Hook Queen"
+ hook_king_consort_flavorization: "Hook King Consort"
+
+ duskwashes_king_flavorization: "Shadow King"
+ duskwashes_queen_flavorization: "Shadow Queen"
+ duskwashes_queen_consort_flavorization: "Shadow Queen"
+ duskwashes_king_consort_flavorization: "Shadow King Consort"
+
+ river_king_flavorization: "River King"
+ river_queen_flavorization: "River Queen"
+ river_queen_consort_flavorization: "River Queen"
+ river_king_consort_flavorization: "River King Consort"

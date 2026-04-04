@@ -1,0 +1,226 @@
+﻿namespace = nymeria_laamp_events
+
+nymeria_laamp_events.0001 = {
+    hidden = yes
+    type = character_event
+
+    immediate = {
+        hidden_effect = {
+            create_maa_regiment = {
+                type = light_footmen
+                check_can_recruit = no
+                size = 15
+            }
+            create_maa_regiment = {
+                type = pikemen_unit
+                check_can_recruit = no
+                size = 15
+            }
+            create_maa_regiment = {
+                type = armored_footmen
+                check_can_recruit = no
+                size = 15
+            }
+            create_maa_regiment = {  
+                type = bowmen
+                check_can_recruit = no
+                size = 15
+            }
+            create_maa_regiment = {
+                type = armored_horsemen
+                check_can_recruit = no
+                size = 5
+            }
+            create_maa_regiment = {
+                type = crossbowmen
+                check_can_recruit = no
+                size = 15
+            }
+            create_maa_regiment = {
+                type = trebuchet
+                check_can_recruit = no
+                size = 6
+            }
+            spawn_army = {
+                name = rhoynar_host
+                levies = 10000
+                inheritable = yes
+                location = root.capital_province
+            }
+        }
+    }
+}
+
+nymeria_laamp_events.0002 = { # Settle Dorne?
+    hidden = no
+    type = character_event
+    title = nymeria_laamp_events.0002.t
+    desc = nymeria_laamp_events.0002.desc
+    theme = realm
+
+    trigger = {
+        is_character = character:Nymeria_1
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    left_portrait = {
+        character = root
+        animation = thinking
+    }
+
+    immediate = {
+        set_character_flag = nymeria_story_002_fired
+    }
+
+    option = {
+        name = nymeria_laamp_events.0002.a
+        ai_chance = { base = 100 }
+        trigger_event = {
+            id = nymeria_laamp_events.0003
+        }
+        custom_tooltip = nymeria_laamp_events0002a_popup
+    }
+
+    option = {
+        name = nymeria_laamp_events.0002.b
+        ai_chance = { base = 0 }
+        set_character_flag = nymeria_story_cycle_ended
+        custom_tooltip = nymeria_laamp_events0002b_popup
+    }
+}
+
+nymeria_laamp_events.0003 = { # How to Settle Dorne?
+    hidden = no
+    type = character_event
+    title = nymeria_laamp_events.0003.t
+    desc = nymeria_laamp_events.0003.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = thinking
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = nymeria_laamp_events.0003.a
+        custom_tooltip = nymeria_laamp_events.0003.a.tt
+        ai_chance = {
+            base = 100
+        }
+
+        character:Martell_23 = {
+            trigger_event = {
+                id = nymeria_laamp_events.0004
+            }
+        }
+    }
+
+    option = {
+        name = nymeria_laamp_events.0003.b
+        custom_tooltip = nymeria_laamp_events.0003.b.tt
+        ai_chance = {
+            base = 0
+        }
+    }
+}
+
+nymeria_laamp_events.0004 = { # Offer to Martell
+    hidden = no
+    type = character_event
+    title = nymeria_laamp_events.0004.t
+    desc = nymeria_laamp_events.0004.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = reading
+    }
+
+    option = {
+        name = nymeria_laamp_events.0004.a
+        ai_chance = { base = 100 }
+
+        character:Nymeria_1 = {
+            trigger_event = {
+                id = nymeria_laamp_events.0005
+                days = 1
+            }
+        }
+    }
+
+    option = {
+        name = nymeria_laamp_events.0004.b
+        ai_chance = { base = 0 }
+    }
+}
+
+nymeria_laamp_events.0005 = { # Offer from Mors Martell recieved.
+    hidden = no
+    type = character_event
+    title = nymeria_laamp_events.0005.t
+    desc = nymeria_laamp_events.0005.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = reading
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = nymeria_laamp_events.0005.a
+        ai_chance = {
+            base = 100
+        }
+    }
+}
+# nymeria_laamp_events.0001 = {
+#     hidden = yes
+#     type = character_event
+
+#     immediate = {
+#         hidden_effect = {
+#             create_maa_regiment = {
+#                 type = light_footmen
+#                 check_can_recruit = no
+#                 size = 15
+#             }
+#             create_maa_regiment = {
+#                 type = pikemen_unit
+#                 check_can_recruit = no
+#                 size = 15
+#             }
+#             create_maa_regiment = {
+#                 type = armored_footmen
+#                 check_can_recruit = no
+#                 size = 15
+#             }
+#             create_maa_regiment = {  
+#                 type = bowmen
+#                 check_can_recruit = no
+#                 size = 15
+#             }
+#             create_maa_regiment = {
+#                 type = armored_horsemen
+#                 check_can_recruit = no
+#                 size = 5
+#             }
+#             create_maa_regiment = {
+#                 type = crossbowmen
+#                 check_can_recruit = no
+#                 size = 15
+#             }
+#             create_maa_regiment = {
+#                 type = trebuchet
+#                 check_can_recruit = no
+#                 size = 6
+#             }
+#         }
+#     }
+# }
+

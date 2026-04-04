@@ -1,0 +1,28 @@
+﻿l_english:
+
+ #Game Rule Category
+ game_rule_category_nymeria:0 "Nymeria's War"
+
+ #Crackclaw Confederation
+ rule_crackclaw_confederation:0 "#Y Nymeria:#! Crackclaw Starts As Confederation"
+ setting_crackclaw_confederation_on:0 "#high Enabled#"
+ setting_crackclaw_confederation_off:0 "Disabled"
+
+ setting_crackclaw_confederation_on_desc:0 "In Nymeria's start date, the #bold Crackclaw Confederation#! will form at game start, making the Crackclaw more likely to maintain its lore accurate independence."
+ setting_crackclaw_confederation_off_desc:0 "In Nymeria's start date, the Crackclaw Confederation will #bold not#! form at game start, leaving the region politically fragmented and far more likely to be invaded by surrounding AI realms."
+
+  #Dorne Scripted Events
+ rule_nymeria_dorne_story:0 "#Y Nymeria:#! Scripted Events in Dorne"
+ setting_nymeria_dorne_story_on:0 "#high Enabled#!"
+ setting_nymeria_dorne_story_off:0 "Disabled"
+
+ setting_nymeria_dorne_story_on_desc:0 "Scripted events in #bold Dorne#! will be enabled, helping guide the region toward a more lore-accurate outcome and increasing the likelihood of Dorne uniting."
+ setting_nymeria_dorne_story_off_desc:0 "Scripted events in Dorne will #bold not#! trigger. Without these events, the likelihood of Dorne uniting is significantly reduced."
+
+ #Stormlands Scripted Events
+ rule_nymeria_stormlands_story:0 "#Y Nymeria:#! Scripted Events in the Stormlands"
+ setting_nymeria_stormlands_story_on:0 "#high Enabled#!"
+ setting_nymeria_stormlands_story_off:0 "Disabled"
+
+ setting_nymeria_stormlands_story_on_desc:0 "Scripted events in #bold the Stormlands#! will be enabled, helping guide the region toward a more lore-accurate outcome and increasing the likelihood of the Storm King's dominance over the Blackwater."
+ setting_nymeria_stormlands_story_off_desc:0 "Scripted events in the Stormlands will #bold not#! trigger. Without these events, the Storm King's campaign against the Blackwater will not occur."

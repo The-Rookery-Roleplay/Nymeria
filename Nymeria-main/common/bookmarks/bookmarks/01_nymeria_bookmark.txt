@@ -1,0 +1,140 @@
+﻿nymeria_bookmark_7299_1= {
+	start_date = 7299.1.1
+	is_playable = yes
+	group = nymeria_bookmark_group
+
+	weight = {
+		value = 0
+	}
+
+	character = {
+		name = "bookmark_1499_nymeria"
+		dynasty = dynn_Nymeros
+		dynasty_splendor_level = 2
+		type = female
+		birth = 7275.1.1
+		title = d_laamp_Nymeria
+		government = landless_adventurer_government
+		culture = rhoynar_original
+		religion = mother_rhoyne
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Nymeros_1
+		position = { 1050 810 }
+
+		animation = personality_bold
+	}
+
+	character = {
+		name = "bookmark_1499_martell"
+		dynasty = dynn_Martell
+		dynasty_splendor_level = 2
+		type = male
+		birth = 7275.1.1
+		title = d_sunspear
+		government = lp_feudal_government
+		culture = old_dornish
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Martell_23
+		position = { 1100 500 }
+
+		animation = personality_honorable
+	}
+
+	character = {
+		name = "bookmark_1499_dayne"
+		dynasty = dynn_Dayne
+		dynasty_splendor_level = 2
+		type = male
+		birth = 7275.1.1
+		title = k_the_torrentine
+		government = lp_feudal_government
+		culture = old_dornish
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Dayne_17
+		position = { 200 500 }
+
+		animation = personality_honorable
+	}
+
+	character = {
+		name = "bookmark_1499_yronwood"
+		dynasty = dynn_Yronwood
+		dynasty_splendor_level = 2
+		type = male
+		birth = 7274.1.1
+		title = k_yronwood
+		government = feudal_government
+		culture = old_dornish
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Yronwood_16
+		position = { 1050 200 }
+
+		animation = disapproval
+	}
+
+	character = {
+		name = "bookmark_1499_wyl"
+		dynasty = dynn_Wyl
+		dynasty_splendor_level = 2
+		type = male
+		birth = 7232.1.1
+		title = d_the_stoneway
+		government = feudal_government
+		culture = old_dornish
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Wyl_200
+		position = { 500 200 }
+
+		animation = personality_vengeful
+	}
+
+	character = {
+		name = "bookmark_1499_dryland"
+		dynasty = dynn_Dryland
+		dynasty_splendor_level = 2
+		type = male
+		birth = 7258.1.1
+		title = k_the_drylands
+		government = lp_feudal_government
+		culture = old_dornish
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Dryland_1
+		position = { 500 750 }
+
+		animation = war_attacker
+	}
+	
+
+}
+
+# nymeria_bookmark_7299_2= {
+# 	start_date = 7299.1.1
+# 	is_playable = yes
+# 	group = nymeria_bookmark_group
+
+# 	weight = {
+# 		value = 0
+# 	}
+
+# 	character = {
+# 		name = "bookmark_1499_nymeria"
+# 		dynasty = dynn_Nymeros
+# 		dynasty_splendor_level = 2
+# 		type = female
+# 		birth = 7275.1.1
+# 		title = d_laamp_Nymeria
+# 		government = landless_adventurer_government
+# 		culture = rhoynar_original
+# 		religion = mother_rhoyne
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+# 		history_id = Nymeros_1
+# 		position = { 1050 810 }
+
+# 		animation = steward
+# 	}
+# }

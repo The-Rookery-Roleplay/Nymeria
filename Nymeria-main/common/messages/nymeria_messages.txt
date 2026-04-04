@@ -1,0 +1,7 @@
+﻿msg_nymeria_durrandon_border_claim = {
+    icon = "titles"
+    style = neutral
+    title = event_message_title
+    desc = event_message_text
+    message_filter_type = msg_nymerias_war
+}

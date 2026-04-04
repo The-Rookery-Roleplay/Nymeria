@@ -1,0 +1,473 @@
+k_the_blackwater = {
+	7299.1.1 = {
+		holder = Hook_200 
+	}
+}
+
+d_kings_landing = {
+	7299.1.1 = {
+		holder = Thorne_200
+		liege = k_the_blackwater
+	}
+}
+
+c_blackstripe = {
+	7299.1.1 = {
+		liege = k_the_blackwater
+		holder = Gaunt_200 
+	}
+	7300.1.1 = {
+		liege = e_the_stormlands
+		holder = 0
+	}
+}
+
+c_bramsfort = {
+	7299.1.1 = { 
+		liege = d_kings_landing
+		holder = Chelsted_200
+	}
+}
+
+c_riverline = {
+	7299.1.1 = { 
+		liege = d_kings_landing
+		holder = Mallery_200
+	}
+}
+
+d_the_baywater_woods = {
+	7299.1.1 = {
+		liege = k_the_blackwater
+		holder = Gaunt_200 
+	}
+	7300.1.1 = {
+		holder = 0
+	}
+}
+
+c_wings_pass = {
+	7299.1.1 = {
+		liege = d_the_baywater_woods
+		holder = Belgrave_200 
+	}
+	7300.1.1 = {
+		liege = e_the_stormlands
+		holder = 0
+	}
+}
+
+c_dyre_den = {
+	7299.1.1 = { 
+		holder = Brune_200
+	}
+}
+
+c_bronzeholm = {
+	7299.1.1 = { 
+		holder = Boggs_200
+	}
+}
+
+c_brownhollow = {
+	7299.1.1 = { 
+		holder = Brune_201
+	}
+}
+
+c_hazewood = {
+	7299.1.1 = { 
+		holder = Bush_200
+	}
+}
+
+c_needlewater = {
+	7299.1.1 = { 
+		holder = Pyne_200
+	}
+}
+
+c_pointside = {
+	7299.1.1 = { 
+		holder = Hardy_200
+	}
+}
+
+c_strongbox = {
+	7299.1.1 = { 
+		holder = Cave_200
+	}
+}
+
+c_strongcliffs = {
+	7299.1.1 = { 
+		holder = Crabb_200
+	}
+}
+
+d_deerfield = {
+	7299.1.1 = {
+		holder = Buckwell_200
+		liege = k_duskwashes
+	}
+}
+
+c_brackworth = {
+	7299.1.1 = { 
+		liege = d_deerfield
+		holder = Holk_200
+	}
+}
+
+c_tuskford = {
+	7299.1.1 = { 
+		liege = d_deerfield
+		holder = Cooper_200
+	}
+}
+
+c_vairs_head = {
+	7299.1.1 = { 
+		liege = d_deerfield
+		holder = Harte_200
+	}
+}
+
+k_duskwashes = {
+	7299.1.1 = {
+		holder = Darklyn_200
+	}
+}
+
+c_bluntmark = {
+	7299.1.1 = { 
+		liege = k_duskwashes
+		holder = Rykker_200
+	}
+}
+
+c_crownback = {
+	5789.1.1 = {
+		holder = Hollard_73
+	}
+	7299.1.1 = { 
+		liege = k_duskwashes
+		holder = Hollard_200
+	}
+	7829.1.1 = {
+		liege = d_duskendale
+		holder = Hollard_12
+	}
+}
+
+c_shadowshield = {
+	7299.1.1 = { 
+		liege = k_duskwashes
+		holder = Rychard_200
+	}
+}
+
+c_spinney = {
+	7299.1.1 = { 
+		liege = k_duskwashes
+		holder = Rykker_200
+	}
+}
+
+c_yellowstars = {
+	7299.1.1 = { 
+		liege = k_duskwashes
+		holder = Rychard_200
+	}
+}
+
+d_hayford = {
+	7299.1.1 = {
+		holder = Hayford_200
+		liege = k_the_blackwater
+	}
+}
+
+c_old_yore = {
+	7299.1.1 = { 
+		liege = d_hayford
+		holder = Yore_200
+	}
+}
+
+c_proudwell = {
+	7299.1.1 = { 
+		liege = d_hayford
+		holder = Cressey_200
+	}
+}
+
+c_sows_horn = {
+	7299.1.1 = { 
+		liege = d_hayford
+		holder = Hogg_200
+	}
+}
+
+k_the_hook = {
+	7299.1.1 = {
+		holder = Massey_200
+	}
+}
+
+d_masseys_hook = {
+	7299.1.1 = {
+		holder = Massey_200
+	}
+}
+
+c_chancedoor = {
+	7299.1.1 = { 
+		de_jure_liege = k_the_hook
+		holder = Rambton_200
+	}
+	7300.1.1 = { 
+		de_jure_liege = d_masseys_hook
+	}
+}
+
+c_glasswater = {
+	7299.1.1 = { 
+		de_jure_liege = k_the_hook
+		holder = Chyttering_200
+	}
+	7300.1.1 = { 
+		de_jure_liege = d_masseys_hook
+	}
+}
+
+c_seedskull = {
+	7299.1.1 = { 
+		de_jure_liege = k_the_hook
+		holder = Bean_200
+	}
+	7300.1.1 = { 
+		de_jure_liege = d_masseys_hook
+	}
+}
+
+c_sweetmont = {
+	7299.1.1 = { 
+		de_jure_liege = k_the_hook
+		holder = Sweet_200
+	}
+	7300.1.1 = { 
+		de_jure_liege = d_masseys_hook
+	}
+}
+
+c_winded_glade = {
+	7299.1.1 = { 
+		de_jure_liege = k_the_hook
+		holder = Bentley_200
+	}
+	7300.1.1 = { 
+		de_jure_liege = d_masseys_hook
+	}
+}
+
+c_wisewood = {
+	7299.1.1 = { 
+		de_jure_liege = k_the_hook
+		holder = Follard_200
+	}
+	7300.1.1 = { 
+		de_jure_liege = d_masseys_hook
+	}
+}
+
+d_rooks_rest = {
+	7299.1.1 = {
+		holder = Staunton_200
+		liege = k_duskwashes
+	}
+}
+
+c_pepperwood = {
+	7299.1.1 = { 
+		holder = Smithe_200
+	}
+}
+
+c_risegrave = {
+	7299.1.1 = { 
+		liege = d_rooks_rest
+		holder = Shreeve_200
+	}
+}
+
+c_stellarstake = {
+	7299.1.1 = { 
+		liege = d_rooks_rest
+		holder = Langward_200
+	}
+}
+
+d_rosby = {
+	7299.1.1 = {
+		holder = Rosby_200
+		liege = k_duskwashes
+	}
+}
+
+c_edgerton = {
+	7299.1.1 = { 
+		liege = d_rosby
+		holder = Edgerton_200
+	}
+}
+
+c_greensward = {
+	7299.1.1 = { 
+		liege = d_rosby
+		holder = Blount_200
+	}
+}
+
+c_redbend = {
+	7299.1.1 = { 
+		liege = d_rosby
+		holder = Hazeley_200
+	}
+}
+
+c_strongmead = {
+	7299.1.1 = { 
+		liege = d_rosby
+		holder = Cargyll_200
+	}
+}
+
+c_whiteplate = {
+	7299.1.1 = { 
+		liege = d_rosby
+		holder = Whitfield_200
+	}
+}
+
+d_stokeworth = {
+	7299.1.1 = {
+		holder = Stokeworth_200
+		liege = k_duskwashes
+	}
+}
+
+c_bentbranch = {
+	7299.1.1 = { 
+		liege = d_stokeworth
+		holder = Baxter_200
+	}
+}
+
+c_cantondale = {
+	7299.1.1 = { 
+		liege = d_stokeworth
+		holder = Branfield_200
+	}
+}
+
+c_grainside = {
+	7299.1.1 = { 
+		liege = d_stokeworth
+		holder = Wheaton_200
+	}
+}
+
+c_nessing = {
+	7299.1.1 = { 
+		liege = d_stokeworth
+		holder = Biggs_200
+	}
+}
+
+c_silverhead = {
+	7299.1.1 = { 
+		liege = d_stokeworth
+		holder = Byrch_200
+	}
+}
+
+c_the_gauntlet = {
+	7299.1.1 = { 
+		liege = d_the_baywater_woods
+		holder = Gaunt_200
+	}
+	7300.1.1 = {
+		liege = e_the_stormlands
+		holder = 0
+	}
+}
+
+c_brushmill = {
+	7299.1.1 = { 
+		liege = k_the_hook
+		holder = Miller_200
+	}
+	7300.1.1 = { 
+		liege = e_the_stormlands
+	}
+}
+
+c_bywater = {
+	7299.1.1 = { 
+		liege = k_the_hook
+		holder = Bywater_200
+	}
+	7300.1.1 = { 
+		liege = e_the_stormlands
+	}
+}
+
+c_greyhelm = {
+	7299.1.1 = { 
+		liege = k_the_hook
+		holder = Pyle_200
+	}
+	7300.1.1 = { 
+		liege = e_the_stormlands
+	}
+}
+
+d_wendwater_forest = {
+	7299.1.1 = {
+		liege = k_the_hook 
+		holder = Wendwater_200
+	}
+	7874.1.1 = {
+		liege = e_the_stormlands
+		holder = Wendwater_4
+	}
+}
+
+c_farring_cross = {
+	7299.1.1 = { 
+		liege = d_wendwater_forest
+		holder = Farring_200
+	}
+}
+
+c_darkgroves = {
+	7299.1.1 = { 
+		liege = d_wendwater_forest
+		holder = Groves_200
+	}
+}
+
+c_noblewood = {
+	7299.1.1 = { 
+		liege = d_wendwater_forest
+		holder = Correy_200
+	}
+}
+
+c_stripeharbor = {
+	7299.1.1 = { 
+		liege = d_wendwater_forest
+		holder = Manning_200
+	}
+}

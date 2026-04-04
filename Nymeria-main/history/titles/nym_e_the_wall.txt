@@ -1,0 +1,15 @@
+c_whitecross = {
+	7299.1.1 = {
+		liege = d_last_lands
+		de_jure_liege = d_last_lands
+		holder = Umber_200
+	}
+}
+
+c_giantsbeard = {
+	7299.1.1 = {
+		liege = d_last_lands
+		de_jure_liege = d_last_lands
+		holder = Umber_200
+	}
+}

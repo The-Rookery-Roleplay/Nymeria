@@ -1,0 +1,178 @@
+﻿on_game_start_after_lobby = {
+    on_actions = {
+        nymeria_dorne_events_cycle 
+        nymeria_stormlands_events_cycle 
+    }
+}
+
+quarterly_playable_pulse = {
+    on_actions = {
+        nymeria_stormlands_events_cycle2
+        nymeria_stormlands_events_cycle3
+    }
+}
+
+on_game_start = {
+    on_actions = {
+        crackclaw_confed_on_game_start
+    }
+}
+
+on_death = {
+    on_actions = {
+        nymeria_stormlands_gardener_death
+    }
+}
+
+nymeria_stormlands_gardener_death = {
+    trigger = {
+        has_character_flag = nymeria_gardener_greybeard
+    }
+    effect = {
+        if = {
+            limit = {
+                has_game_rule = nymeria_stormlands_story_on
+                character:Durrandon_62 = { is_alive = yes }
+                NOT = {
+                    character:Durrandon_62 = {
+                        has_character_flag = nymeria_stormlands_story_ended
+                    }
+                }
+            }
+            character:Durrandon_62 = {
+                trigger_event = nymeria_stormlands.0050
+            }
+        }
+    }
+}
+
+nymeria_stormlands_events_cycle = {
+    effect = {
+        if = {
+            limit = { has_game_rule = nymeria_dorne_story_on }
+            character:Durrandon_62 = {
+                trigger_event = nymeria_stormlands.0001
+            }
+        }
+    }
+}
+
+nymeria_stormlands_events_cycle2 = {
+    effect = {
+        if = {
+            limit = {
+                has_game_rule = nymeria_stormlands_story_on
+                current_date >= 7299.7.20
+                character:Durrandon_62 = {
+                    has_character_flag = stormlands_war_pending
+                }
+            }
+            character:Durrandon_62 = {
+                # trigger_event = nymeria_stormlands.0004
+                trigger_event = nymeria_stormlands.0002
+            }
+        }
+    }
+}
+
+nymeria_stormlands_events_cycle3 = {
+    effect = {
+        if = {
+            limit = {
+                has_game_rule = nymeria_stormlands_story_on
+                character:Durrandon_62 = {
+                    has_character_flag = nymeria_duskwashes_war_pending
+                    is_at_war = no
+                    NOT = { has_character_flag = nymeria_stormlands_story_ended }
+                    NOT = { has_character_flag = nymeria_duskwashes_delay }
+                }
+                title:k_duskwashes = { exists = holder }
+            }
+            character:Durrandon_62 = {
+                trigger_event = nymeria_stormlands.0018
+            }
+        }
+    }
+}
+
+nymeria_dorne_events_cycle = {
+    effect = {
+        character:Nymeros_1 = {
+            trigger_event = nymeria_laamp_events.0001
+        }
+
+        if = {
+            limit = { has_game_rule = nymeria_dorne_story_on }
+            character:Nymeros_1 = {
+                trigger_event = nymeria_laamp_events.0002
+            }
+        }
+    }
+}
+
+crackclaw_confed_on_game_start = {
+    effect = {
+        if = {
+            limit = {
+                has_game_rule = crackclaw_confederation_on
+                game_start_date = 7299.1.1
+                NOR = {
+                    exists = title:d_crackclaw_point.holder
+                    exists = title:k_the_claw.holder
+                }
+            }
+            title:c_dyre_den.holder ?= {
+                create_confederation = {
+                    name = d_crackclaw_confederation
+                }
+                scope:new_confederation = {
+                    set_variable = confederation_is_crackclaw
+                    set_global_variable = {
+                        name = crackclaw_confederation
+                        value = scope:new_confederation
+                    }
+                    if = {
+                        limit = { exists = title:c_needlewater.holder }
+                        add_confederation_member = title:c_needlewater.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_pepperwood.holder }
+                        add_confederation_member = title:c_pepperwood.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_strongbox.holder }
+                        add_confederation_member = title:c_strongbox.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_bronzeholm.holder }
+                        add_confederation_member = title:c_bronzeholm.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_hazewood.holder }
+                        add_confederation_member = title:c_hazewood.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_dyre_den.holder }
+                        add_confederation_member = title:c_dyre_den.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_brownhollow.holder }
+                        add_confederation_member = title:c_brownhollow.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_pointside.holder }
+                        add_confederation_member = title:c_pointside.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_strongcliffs.holder }
+                        add_confederation_member = title:c_strongcliffs.holder
+                    }
+                    if = {
+                        limit = { exists = title:c_the_scales.holder }
+                        add_confederation_member = title:c_the_scales.holder
+                    }
+                }
+            }
+        }
+    }
+}

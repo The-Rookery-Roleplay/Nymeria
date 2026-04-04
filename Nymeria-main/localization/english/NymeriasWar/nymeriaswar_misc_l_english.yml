@@ -1,0 +1,27 @@
+﻿l_english:
+
+rhoynar_host:0 "The Rhoynish"
+
+WAR_NAME_NYMERIA_HOOK_CONQUEST: "War for the Hook"
+nymeria_hook_conquest:0 "War for the Hook"
+nymeria_hook_conquest_destroy_hook_tt: "The Kingdom of the Hook will be destroyed."
+nymeria_hook_conquest_victory_desc: "The Hook has fallen. Its king bends the knee to Storm's End, and the Kingdom of the Hook is no more, swallowed by the might of the Bloody Stag."
+nymeria_hook_conquest_white_peace_desc: "The Storm King's march on the Hook has come to nothing. Durrandon returns to Storm's End diminished, his ambitions checked by the stubbornness of the Hook Kings."
+nymeria_hook_conquest_defeat_desc: "The march on the Hook has become a march on Storm's End. The banners of the Stag lie trampled in the mud, the war is lost, the Bloody Stag utterly crushed. What began as conquest ends in humiliation."
+
+WAR_NAME_NYMERIA_BLACKWATER_CONQUEST: "War for the Blackwater"
+nymeria_blackwater_conquest_victory_desc: "The Blackwater Kingdom has fallen. Its king is in chains, its banners torn down, the Storm King's dominion stretches further north than ever before."
+nymeria_blackwater_conquest:0 "War for the Blackwater"
+nymeria_blackwater_conquest_white_peace_desc: "The march on the Blackwater has stalled. Durrandon returns to Storm's End empty-handed, his ambitions checked once more."
+nymeria_blackwater_conquest_defeat_desc: "The Stormlands have been turned back. The Blackwater holds."
+nymeria_blackwater_conquest_destroy_tt: "The Kingdom of the Blackwater will be destroyed."
+
+WAR_NAME_NYMERIA_DUSKWASHES_CONQUEST: "War for Duskendale"
+nymeria_duskwashes_conquest_victory_desc: "Duskendale has fallen. The last kingdom between Storm's End and the Riverlands is no more — its king in chains, its banners torn down."
+nymeria_duskwashes_conquest_white_peace_desc: "The march on Duskendale has stalled. The Stag returns to Storm's End empty handed."
+nymeria_duskwashes_conquest_defeat_desc: "The Stormlands have been turned back. Duskendale holds — for now."
+nymeria_duskwashes_conquest_destroy_tt: "The Kingdom of Duskendale will be destroyed."
+nymeria_duskwashes_conquest:0 "War for Duskendale"
+
+message_filter_msg_nymerias_war:0 "Nymeria's War Messages"
+message_filter_msg_nymerias_war_desc:0 "All messages related to the scripted campaigns and events of Nymeria's War."

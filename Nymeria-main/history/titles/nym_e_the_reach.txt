@@ -1,0 +1,1276 @@
+e_the_reach = {
+    7059.1.1 = {
+        # holder = 0 Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
+    }
+    7287.1.1 = {
+        # holder = Gardener_72 # Gareth III
+        holder = Gardener_52 # Gareth III
+    }
+}
+
+k_the_mander = {
+    7059.1.1 = {
+        # holder = 0 Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
+    }
+    7287.1.1 = {
+        holder = 0
+    }
+}
+
+d_highgarden = {
+    7059.1.1 = {
+        # holder = 0 Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
+    }
+    7287.1.1 = {
+        # holder = Gardener_72 # Gareth III
+        holder = Gardener_52 # Gareth III
+    }
+}
+
+c_highgarden = {
+    7059.1.1 = {
+        # holder = 0 Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
+    }
+    7287.1.1 = {
+        # holder = Gardener_72 # Gareth III
+        holder = Gardener_52 # Gareth III
+    }
+}
+
+c_gardenbounds = {
+    7299.1.1 = {
+        holder = Tyrell_200
+    }
+}
+
+c_aldenley = {
+    7299.1.1 = {
+        liege = d_highgarden
+        holder = Oldflowers_200
+    }
+}
+
+c_greenwall = {
+    7299.1.1 = {
+        liege = d_highgarden
+        holder = Bushy_200
+    }
+}
+
+c_vinewarren = {
+    7299.1.1 = {
+        holder = Tyrell_200
+    }
+}
+
+d_bitterbridge = {
+    7299.1.1 = {
+        liege = e_the_reach
+        holder = Caswell_200
+    }
+}
+
+c_hammerhal = {
+    7299.1.1 = {
+        liege = d_bitterbridge
+        holder = Cordwayner_200
+    }
+}
+
+c_runnelweald = {
+    7299.1.1 = {
+        liege = d_bitterbridge
+        holder = Bridges_200
+    }
+}
+
+c_melneyness = {
+    7299.1.1 = {
+        liege = d_bitterbridge
+        holder = Singer_200
+    }
+}
+
+c_bawnbrook = {
+    7299.1.1 = {
+        liege = d_bitterbridge
+        holder = Blume_200
+    }
+}
+
+c_cherlysh = {
+    7299.1.1 = {
+        liege = d_bitterbridge
+        holder = Fairley_200
+    }
+}
+
+c_summerfell = {
+    7299.1.1 = {
+        liege = d_bitterbridge
+        holder = Summerchild_200
+    }
+}
+
+d_black_sound = {
+    7299.1.1 = {
+        holder = Bulwer_200
+    }
+}
+
+c_bandallon = {
+    7299.1.1 = {
+        liege = d_black_sound
+        holder = Blackbar_200
+    }
+}
+
+c_pruttand = {
+    7299.1.1 = {
+        liege = d_black_sound
+        holder = Boult_200
+    }
+}
+
+c_walnut_bank = {
+    7299.1.1 = {
+        liege = d_black_sound
+        holder = Lavett_200
+    }
+}
+
+c_ashridge = {
+    7299.1.1 = {
+        liege = d_black_sound
+        holder = Ashridge_200
+    }
+}
+
+d_blueburn = {
+    7299.1.1 = {
+        holder = Meadows_200
+    }
+}
+
+c_hatchbury = {
+    7299.1.1 = {
+        liege = d_blueburn
+        holder = Eilish_200
+    }
+}
+
+c_stafford = {
+    7299.1.1 = {
+        liege = d_blueburn
+        holder = Stafford_200
+    }
+}
+
+c_roseford = {
+    7299.1.1 = {
+        liege = d_blueburn
+        holder = Larch_200
+    }
+}
+
+c_wantington = {
+    7299.1.1 = {
+        liege = d_blueburn
+        holder = Strum_200
+    }
+}
+
+d_brightwater = {
+    7299.1.1 = {
+        liege = e_the_reach
+        holder = Florent_200
+    }
+    8300.1.5 = {
+        holder = Florent_7
+    }
+}
+
+c_denflower = {
+    7299.1.1 = {
+        liege = d_brightwater
+        holder = Foxglove_200
+    }
+}
+
+c_whitewater_watch = {
+    7299.1.1 = {
+        liege = d_brightwater
+        holder = Whitewater_200
+    }
+}
+
+c_islandview = {
+    7299.1.1 = {
+        liege = d_brightwater
+        holder = Amandine_200
+    }
+}
+
+c_bloomfield_hills = {
+    7299.1.1 = {
+        liege = d_brightwater
+        holder = Enright_200
+    }
+}
+
+c_festune = {
+    7299.1.1 = {
+        liege = d_black_sound
+        holder = Festune_200
+    }
+}
+
+c_laurelridge = {
+    7299.1.1 = {
+        liege = d_black_sound
+        holder = Posey_200
+    }
+}
+
+d_cockleswhent = {
+    7250.1.1 = {
+        liege = e_the_reach
+        holder = Peake_14
+    }
+}
+
+c_ashford = {
+    7299.1.1 = {
+        holder = Ashford_200
+    }
+}
+
+c_cockscombe = {
+    7299.1.1 = {
+        holder = Ashford_200
+    }
+}
+
+c_holyhall = {
+    7299.1.1 = {
+        holder = Graceford_200
+    }
+}
+
+c_banbury = {
+    7299.1.1 = {
+        holder = Graceford_200
+    }
+}
+
+c_endrick = {
+    7299.1.1 = {
+        holder = Graceford_200
+    }
+}
+
+d_darkdell = {
+    7299.1.1 = {
+        liege = e_the_reach
+        holder = Vyrwel_200
+    }
+}
+
+c_harborvyne = {
+    7299.1.1 = {
+        liege = d_darkdell
+        holder = Kidwell_200
+    }
+}
+
+c_windworth = {
+    7299.1.1 = {
+        liege = d_darkdell
+        holder = Bellamy_200
+    }
+}
+
+c_strathby = {
+    7299.1.1 = {
+        liege = d_darkdell
+        holder = Percy_200
+    }
+}
+
+c_heatherholt = {
+    7299.1.1 = {
+        liege = d_darkdell
+        holder = Whitaker_200
+    }
+}
+
+d_darstone = {
+    20.1.1 = {
+        liege = e_the_reach
+    }
+    7299.1.1 = {
+        holder = Willum_200
+    }
+}
+
+c_warnstand = {
+    7299.1.1 = {
+        liege = d_darstone
+        holder = Woodwright_200
+    }
+}
+
+c_stennard = {
+    7299.1.1 = {
+        liege = d_darstone
+        holder = Lashings_200
+    }
+}
+
+c_runchester = {
+    7299.1.1 = {
+        liege = d_darstone
+        holder = Deckler_200
+    }
+}
+
+d_fullharvest = {
+    20.1.1 = {
+        liege = e_the_reach
+    }
+    7299.1.1 = {
+        holder = Merryweather_200
+    }
+}
+
+c_cobblestone = {
+    7299.1.1 = {
+        liege = d_fullharvest
+        holder = Cobb_200
+    }
+}
+
+c_harvestyne = {
+    7299.1.1 = {
+        liege = d_fullharvest
+        holder = Winnow_200
+    }
+}
+
+c_esterrace = {
+    7299.1.1 = {
+        liege = d_fullharvest
+        holder = Threshingham_200
+    }
+}
+
+c_merrilene = {
+    7299.1.1 = {
+        liege = d_fullharvest
+        holder = Cropp_200
+    }
+}
+
+c_stalkvale = {
+    7299.1.1 = {
+        liege = d_fullharvest
+        holder = Addey_200
+    }
+}
+
+d_whisper_point = {
+    7299.1.1 = {
+        holder = Costayne_200
+    }
+}
+
+c_meadowport = {
+    7299.1.1 = {
+        liege = d_whisper_point
+        holder = Lilly_200
+    }
+}
+
+c_meadowsmeet = {
+    7299.1.1 = {
+        liege = d_whisper_point
+        holder = Quayle_200
+    }
+}
+
+c_richglade = {
+    7299.1.1 = {
+        liege = d_whisper_point
+        holder = Oates_200
+    }
+}
+
+d_garden_coast = {
+    7299.1.1 = {
+        holder = Cuy_200
+    }
+}
+
+c_beachcastle = {
+    7299.1.1 = {
+        liege = d_garden_coast
+        holder = Glasser_200
+    }
+}
+
+c_orchard_shore = {
+    7299.1.1 = {
+        liege = d_garden_coast
+        holder = Garland_200
+    }
+}
+
+d_goldenfields = {
+    7299.1.1 = {
+        holder = Strickland_200
+    }
+}
+
+c_norcross = {
+    7299.1.1 = {
+        liege = d_goldenfields
+        holder = Norcross_200
+    }
+}
+
+c_battram = {
+    7299.1.1 = {
+        liege = d_goldenfields
+        holder = Yelshire_200
+    }
+}
+
+c_wysteria = {
+    7299.1.1 = {
+        liege = d_goldenfields
+        holder = Persemon_200
+    }
+}
+
+c_brennwater = {
+    7299.1.1 = {
+        liege = d_goldenfields
+        holder = Nodding_200
+    }
+}
+
+d_goldengrove = {
+    7299.1.1 = {
+        liege = e_the_reach
+        holder = Rowan_200
+    }
+}
+
+c_inchfield = {
+    7299.1.1 = {
+        liege = d_goldengrove
+        holder = Inchfield_200
+    }
+}
+
+c_roundtree = {
+    7299.1.1 = {
+        liege = d_goldengrove
+        holder = Roundtree_200
+    }
+}
+
+c_smithyton = {
+    7299.1.1 = {
+        liege = d_goldengrove
+        holder = Shermer_200
+    }
+}
+
+c_westbrook = {
+    7299.1.1 = {
+        liege = d_goldengrove
+        holder = Westbrook_200
+    }
+}
+
+c_wethermere = {
+    7299.1.1 = {
+        liege = d_goldengrove
+        holder = Wether_200
+    }
+}
+
+c_longtress = {
+    7299.1.1 = {
+        liege = d_goldengrove
+        holder = Erdtree_200
+    }
+}
+
+c_apple_hills = {
+    7299.1.1 = {
+        liege = d_goldengrove
+        holder = Foy_200
+    }
+}
+
+d_heartland_heights = {
+    7299.1.1 = {
+        holder = Varner_200
+    }
+}
+
+c_harps_head = {
+    7299.1.1 = {
+        liege = d_blueburn
+        holder = Orme_200
+    }
+}
+
+c_harmony = {
+    7299.1.1 = {
+        liege = k_the_blackwater
+        holder = Hook_200
+    }
+}
+
+c_heckenridge = {
+    7299.1.1 = {
+        liege = d_heartland_heights
+        holder = Darn_200
+    }
+}
+
+c_kildale = {
+    7299.1.1 = {
+        liege = d_heartland_heights
+        holder = Archay_200
+    }
+}
+
+c_goodgate = {
+    7299.1.1 = {
+        liege = d_heartland_heights
+        holder = Gates_200
+    }
+}
+
+d_honeylands = {
+    7299.1.1 = {
+        holder = Beesbury_200
+        liege = k_oldtown
+    }
+}
+
+c_perrygate = {
+    7299.1.1 = {
+        liege = d_honeylands
+        holder = Fayard_200
+    }
+}
+
+c_goode_glen = {
+    7299.1.1 = {
+        liege = d_honeylands
+        holder = Goode_200
+    }
+}
+
+c_wakefield = {
+    7299.1.1 = {
+        liege = d_honeylands
+        holder = Ross_200
+    }
+}
+
+c_greenaway = {
+    7299.1.1 = {
+        liege = d_highgarden
+        holder = Oldflowers_200
+    }
+}
+
+c_risley_glade = {
+    7299.1.1 = {
+        liege = d_the_roseroad
+        holder = Risley_200
+    }
+    7863.1.1 = {
+        liege = e_the_reach
+        holder = Risley_11
+    }
+}
+
+c_mandervale = {
+    7299.1.1 = {
+        liege = d_the_roseroad
+        holder = Risley_200
+    }
+    7877.1.1 = {
+        liege = e_the_reach
+        holder = Itchweed_1
+    }
+}
+
+c_oaken_rills = {
+    7299.1.1 = {
+        liege = d_the_roseroad
+        holder = Rhysling_200
+    }
+    7320.1.1 = {
+        liege = e_the_reach
+    }
+}
+
+c_windflower = {
+    7299.1.1 = {
+        liege = d_the_roseroad
+        holder = Winfler_200
+    }
+    7845.1.1 = {
+        liege = e_the_reach
+        holder = Winfler_1
+    }
+}
+
+c_daisyfield = {
+    7299.1.1 = {
+        liege = d_the_roseroad
+        holder = Rhysling_200
+    }
+    7872.1.1 = {
+        liege = e_the_reach
+        holder = Tharp_1
+    }
+}
+
+d_oldhills = {
+    7299.1.1 = {
+        holder = Roxton_200
+    }
+}
+
+c_hastwyck = {
+    7299.1.1 = {
+        liege = k_the_blackwater
+        holder = Hook_200
+    }
+    7300.1.1 = {
+        liege = d_heartland_heights
+        holder = 0
+    }
+}
+
+c_dunnsbridge = {
+    7299.1.1 = {
+        liege = d_oldhills
+        holder = Dunn_200
+    }
+}
+
+c_freeridge = {
+    7299.1.1 = {
+        liege = d_oldhills
+        holder = Sorley_200
+    }
+}
+
+c_the_rolls = {
+    7299.1.1 = {
+        liege = d_oldhills
+        holder = Astley_200
+    }
+}
+
+c_strong_spirits = {
+    7299.1.1 = {
+        liege = d_ridgeview
+        holder = Twinrose_200
+    }
+}
+
+c_turrellis = {
+    7299.1.1 = {
+        liege = d_ridgeview
+        holder = Millendore_200
+    }
+}
+
+k_oldtown = {
+    7299.1.1 = {
+        holder = Hightower_200
+    }
+}
+
+d_oldtown = {
+    7299.1.1 = {
+        holder = Hightower_200
+    }
+}
+
+c_rhodalea = {
+    7299.1.1 = {
+        liege = d_oldtown
+        holder = Rodden_200
+    }
+}
+
+c_brightbrock = {
+    7299.1.1 = {
+        liege = d_oldtown
+        holder = Sawyer_200
+    }
+}
+
+c_greylock_hills = {
+    7299.1.1 = {
+        liege = d_oldtown
+        holder = Potter_200
+    }
+}
+
+c_honeywine = {
+    7299.1.1 = {
+        liege = d_oldtown
+        holder = Combe_200
+    }
+}
+
+c_ashborne = {
+    7299.1.1 = {
+        liege = d_oldtown
+        holder = Steady_200
+    }
+}
+
+c_daresbury = {
+    7299.1.1 = {
+        liege = d_oldtown
+        holder = Lysander_200
+    }
+}
+
+d_orchard_way = {
+    7299.1.1 = {
+        liege = e_the_reach
+        holder = Fossoway_200
+    }
+}
+
+c_appleton = {
+    7299.1.1 = {
+        liege = d_orchard_way
+        holder = Appleton_200
+    }
+}
+
+c_sugarbush = {
+    7299.1.1 = {
+        liege = d_orchard_way
+        holder = Rummand_200
+    }
+}
+
+c_russeting = {
+    7299.1.1 = {
+        liege = d_the_westmarch
+        holder = Hunt_200
+    }
+}
+
+d_palemarch = {
+    7250.1.1 = {
+        liege = e_the_reach
+        holder = Peake_14
+    }
+}
+
+c_torrentpeak = {
+    7299.1.1 = {
+        liege = d_palemarch
+        holder = Ambrose_200
+    }
+}
+
+c_estryck = {
+    7299.1.1 = {
+        liege = d_palemarch
+        holder = Leygood_200
+    }
+}
+
+c_bendtilling = {
+    7299.1.1 = {
+        liege = d_palemarch
+        holder = Hutcheson_200
+    }
+}
+
+c_grandmercy = {
+    7299.1.1 = {
+        liege = d_palemarch
+        holder = Deadsing_200
+    }
+}
+
+c_burkley = {
+    7299.1.1 = {
+        liege = d_palemarch
+        holder = Macey_200
+    }
+}
+
+d_red_front = {
+    7299.1.1 = {
+        liege = e_the_reach
+        holder = Crane_200
+    }
+}
+
+c_wallow_dell = {
+    7299.1.1 = {
+        liege = d_red_front
+        holder = Conklyn_200
+    }
+}
+
+c_nunny = {
+    7299.1.1 = {
+        liege = d_red_front
+        holder = Kern_200
+    }
+}
+
+c_iron_hedge = {
+    7299.1.1 = {
+        liege = d_red_front
+        holder = Farrow_200
+    }
+}
+
+c_rilldene = {
+    7299.1.1 = {
+        liege = d_red_front
+        holder = Bowles_200
+    }
+}
+
+d_ridgeview = {
+    7299.1.1 = {
+        holder = Mullendore_200
+    }
+}
+
+c_evenmorn = {
+    7299.1.1 = {
+        liege = d_oldhills
+        holder = Sloane_200
+    }
+}
+
+c_echo_hills = {
+    7299.1.1 = {
+        liege = d_the_westmarch
+        holder = Janney_200
+    }
+}
+
+c_dersling = {
+    7299.1.1 = {
+        liege = d_oldhills
+        holder = Bettencer_200
+    }
+}
+
+c_millendale = {
+    7299.1.1 = {
+        liege = d_ridgeview
+        holder = Millendore_200
+    }
+}
+
+c_trueguard = {
+    7299.1.1 = {
+        liege = d_ridgeview
+        holder = Twinrose_200
+    }
+}
+
+d_shield_islands = {
+    7250.1.1 = {
+        liege = e_the_iron_islands
+        holder = Sunderly_200
+        effect = {
+            title:d_shield_islands = { set_title_name = d_misty_islands }
+        }
+    }
+    7860.1.1 = {
+        holder = Hewett_15
+        liege = e_the_reach
+        effect = {
+            title:b_shield_islands = { reset_title_name = yes }
+        }
+    }
+}
+
+c_greenshield = {
+    7250.1.1 = {
+        holder = Ironborn_Lord_2
+    }
+}
+
+c_greyshield = {
+    60.1.1 = {
+        liege = d_shield_islands
+    }
+    7250.1.1 = {
+        holder = Ironborn_Lord_1
+    }
+}
+
+d_sunnyvale = {
+    7299.1.1 = {
+        holder = Ball_200
+    }
+}
+
+c_greenridge = {
+    7299.1.1 = {
+        liege = d_sunnyvale
+        holder = Lahey_200
+    }
+}
+
+c_olinger = {
+    7299.1.1 = {
+        liege = d_sunnyvale
+        holder = Juniper_200
+    }
+}
+
+c_sommelfield = {
+    7299.1.1 = {
+        liege = d_sunnyvale
+        holder = Redding_200
+    }
+}
+
+k_the_arbor = {
+    7299.1.1 = {
+        holder = Redwyne_200
+    }
+}
+
+d_the_arbor = {
+    7299.1.1 = {
+        liege = k_the_arbor
+        holder = Redwyne_200
+    }
+}
+
+c_stonecrab_cape = {
+    7299.1.1 = {
+        liege = d_the_arbor
+        holder = Stonecrab_200
+    }
+}
+
+c_vinetown = {
+    7299.1.1 = {
+        liege = d_the_arbor
+        holder = Goldwyne_200
+    }
+}
+
+c_starfish_harbor = {
+    7299.1.1 = {
+        liege = d_the_arbor
+        holder = Cupps_200
+    }
+}
+
+c_peachtree = {
+    7299.1.1 = {
+        liege = d_the_arbor
+        holder = Rochalan_200
+    }
+}
+
+c_mermaid_rocks = {
+    7299.1.1 = {
+        liege = d_the_arbor
+        holder = Draper_200
+    }
+}
+
+d_the_northmarch = {
+    7299.1.1 = {
+        holder = Osgrey_200
+    }
+}
+
+c_cobble_cove = {
+    7299.1.1 = {
+        liege = d_the_northmarch
+        holder = Durwell_200
+    }
+}
+
+c_derring_downs = {
+    7299.1.1 = {
+        liege = d_the_northmarch
+        holder = Litchmore_200
+    }
+}
+
+c_brandybottom = {
+    7299.1.1 = {
+        liege = d_the_northmarch
+        holder = Webber_200
+    }
+}
+
+d_the_ocean_road = {
+    2020.1.1 = {
+        liege = e_the_reach
+        holder = Oakheart_5
+    }
+    7299.1.1 = {
+        holder = Oakheart_200
+    }
+}
+
+c_beechshore = {
+    7299.1.1 = {
+        liege = d_the_ocean_road
+        holder = Rosvenore_200
+    }
+}
+
+c_clickingmoor = {
+    7299.1.1 = {
+        liege = d_the_ocean_road
+        holder = Lowther_200
+    }
+}
+
+c_pippengrow = {
+    7299.1.1 = {
+        liege = d_the_ocean_road
+        holder = Wythers_200
+    }
+}
+
+c_summer_cove = {
+    7299.1.1 = {
+        liege = d_the_ocean_road
+        holder = Stackhouse_200
+    }
+}
+
+c_new_grace = {
+    7299.1.1 = {
+        liege = d_the_ocean_road
+        holder = Oakley_200
+    }
+}
+
+c_lace_river = {
+    7299.1.1 = {
+        liege = d_the_ocean_road
+        holder = Silkbraid_200
+    }
+}
+
+d_the_roseroad = {
+    7250.1.1 = {
+        liege = e_the_reach
+        holder = Manderly_13
+    }
+}
+
+c_manderside = {
+    7299.1.1 = {
+        liege = d_highgarden
+        holder = Oldflowers_200
+    }
+}
+
+c_grandseed = {
+    7299.1.1 = {
+        liege = d_the_roseroad
+        holder = Pommingham_200
+    }
+    7320.1.1 = {
+        liege = e_the_reach
+    }
+}
+
+c_heartsmere = {
+    7299.1.1 = {
+        liege = d_the_roseroad
+        holder = Lush_200
+    }
+    7320.1.1 = {
+        liege = e_the_reach
+    }
+}
+
+c_averdyre = {
+    7299.1.1 = {
+        liege = d_the_roseroad
+        holder = Averdyre_200
+    }
+    7320.1.1 = {
+        liege = e_the_reach
+    }
+}
+
+c_rosewood = {
+    7299.1.1 = {
+        liege = d_the_roseroad
+        holder = Thornton_200
+    }
+    7320.1.1 = {
+        liege = e_the_reach
+    }
+}
+
+c_lavenderne = {
+    7299.1.1 = {
+        liege = d_ridgeview
+        holder = Lavenderne_200
+    }
+}
+
+c_florynn = {
+    7299.1.1 = {
+        liege = d_the_roseroad
+        holder = Converlon_200
+    }
+    7320.1.1 = {
+        liege = e_the_reach
+    }
+}
+
+d_the_westmarch = {
+    7299.1.1 = {
+        holder = Tarly_200
+    }
+}
+
+c_grave_ridge = {
+    7299.1.1 = {
+        liege = d_the_westmarch
+        holder = Graves_200
+    }
+}
+
+c_cornerstone = {
+    7299.1.1 = {
+        liege = d_the_westmarch
+        holder = Verge_200
+    }
+}
+
+c_cresthaven = {
+    7299.1.1 = {
+        liege = d_the_westmarch
+        holder = Marchment_200
+    }
+}
+
+c_sunwatch = {
+    7299.1.1 = {
+        liege = d_the_westmarch
+        holder = Ronning_200
+    }
+}
+
+d_tumbleton = {
+    7299.1.1 = {
+        holder = Footly_200
+    }
+}
+
+c_catsclaw = {
+    7299.1.1 = {
+        liege = d_tumbleton
+        holder = Lyberr_200
+    }
+}
+
+c_tread_hills = {
+    7299.1.1 = {
+        liege = d_tumbleton
+        holder = Kiteberry_200
+    }
+}
+
+c_wheatcombe = {
+    7299.1.1 = {
+        liege = d_tumbleton
+        holder = Tillwick_200
+    }
+}
+
+c_estaring = {
+    7299.1.1 = {
+        liege = d_tumbleton
+        holder = Dalbridge_200
+    }
+}
+
+c_ridgeland = {
+    7299.1.1 = {
+        liege = d_tumbleton
+        holder = Norridge_200
+    }
+}
+
+c_mandale = {
+    7299.1.1 = {
+        liege = d_tumbleton
+        holder = Holly_200
+    }
+}
+
+c_southshield = {
+    7250.1.1 = {
+        holder = Ironborn_Lord_3
+    }
+}
+
+c_briarcrest = {
+    7299.1.1 = {
+        liege = k_the_blackwater
+        holder = Hook_200
+    }
+    7300.1.1 = {
+        liege = d_tumbleton
+        holder = 0
+    }
+}
+
+c_longgrass = {
+    7299.1.1 = {
+        liege = k_the_blackwater
+        holder = Hook_200
+    }
+    7300.1.1 = {
+        liege = d_tumbleton
+        holder = 0
+    }
+}
+
+c_pikemouth = {
+    7299.1.1 = {
+        liege = k_the_blackwater
+        holder = Hook_200
+    }
+    7300.1.1 = {
+        liege = d_heartland_heights
+        holder = 0
+    }
+}

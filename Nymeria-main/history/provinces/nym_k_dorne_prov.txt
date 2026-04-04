@@ -1,0 +1,1301 @@
+4937 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	special_building_slot = sunspear_01
+	7300.1.1 = {
+		buildings = { castle_05 }
+		special_building = sunspear_01
+		duchy_capital_building = leisure_palace_02
+	}
+	
+}
+
+4944 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = greenblood
+		religion = mother_oprhan
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+4949 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+4955 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+4960 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	duchy_capital_building = agot_vineyard_01
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+4966 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+4971 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+4976 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+4979 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+4986 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+4991 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+4996 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5002 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	duchy_capital_building = agot_vineyard_02
+	holding = castle_holding
+	special_building = agot_godsgrace_01
+	7824.1.1 = {
+		buildings = { castle_04 }
+	}
+}
+
+5008 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5013 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5018 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = greenblood
+		religion = mother_orphan
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5022 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5027 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = greenblood
+		religion = mother_orphan
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5032 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	duchy_capital_building = royal_forest_01
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5038 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5044 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5049 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5056 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5062 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5068 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_04 }
+	}
+}
+
+5074 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5077 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5081 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5086 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5091 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5096 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5102 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5108 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5114 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5120 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5125 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5130 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5135 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	duchy_capital_building = siege_works_01
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+	8010.10.25 = {
+		special_building = agot_hellholt_01
+	}
+}
+
+5141 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5147 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5153 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5159 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5165 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5171 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5177 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5183 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5189 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5194 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5199 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5205 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5211 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	special_building = agot_sandstone_01
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5217 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5222 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5227 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5233 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5239 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5245 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5251 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5257 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	special_building = agot_starfall_01
+	duchy_capital_building = blacksmiths_01
+	7824.1.1 = {
+		buildings = { castle_05 }
+	}
+}
+
+5264 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5271 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5277 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5282 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5286 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5291 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+}
+
+5297 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5303 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	special_building = agot_yronwood_01
+	duchy_capital_building = royal_armory_02
+	7824.1.1 = {
+		buildings = { castle_05 }
+	}
+}
+
+5311 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5317 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5323 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5329 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5335 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5341 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5346 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5352 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	special_building = agot_skyreach_01
+	duchy_capital_building = march_02
+	7824.1.1 = {
+		buildings = { castle_05 }
+	}
+}
+
+5358 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5363 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5368 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5373 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = sand_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5378 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5383 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	duchy_capital_building = march_01
+	7824.1.1 = {
+		buildings = { castle_04 }
+	}
+}
+
+5389 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = city_holding
+	7824.1.1 = {
+		buildings = { city_01 }
+	}
+}
+
+5392 = {
+	holding = castle_holding
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5394 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5400 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5406 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5412 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	duchy_capital_building = march_01
+	7824.1.1 = {
+		buildings = { castle_04 }
+	}
+}
+
+5418 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5424 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5430 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5436 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5441 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	duchy_capital_building = march_01
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5447 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5452 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5458 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_01 }
+	}
+	8162.1.1 = {
+		religion = fots_blessed
+	}
+}
+
+5465 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	special_building = agot_vultures_roost_01
+	7824.1.1 = {
+		buildings = { castle_03 }
+	}
+}
+
+5466 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	7824.1.1 = {
+		buildings = { castle_02 }
+	}
+}
+
+5472 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = stone_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = castle_holding
+	special_building_slot = agot_ghaston_grey_01
+	7824.1.1 = {
+		buildings = { castle_02 }
+		special_building = agot_ghaston_grey_01
+	}
+}

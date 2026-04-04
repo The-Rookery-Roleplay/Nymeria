@@ -1,0 +1,156 @@
+﻿l_english:
+
+ nymeria_laamp_events.0002.t:0 "The Shores of Dorne"
+ nymeria_laamp_events.0002.desc:0 "At last, our ships have reached the shores of a distant land known as #bold Dorne#!. Before us stretches a harsh and unforgiving country, its deserts vast, its mountains jagged, and its people hardened by the unforgiving sun.\n\nYet this land is far from united. The whispers of sailors and scouts alike speak of countless #bold lords and petty kings#!, each warring against the other for dominion over this parched realm.\n\nWhere others see a fractured and hostile land, I see opportunity. A land divided is a land that can be claimed.\n\nPerhaps the time has come to make this place the new home of the #bold Rhoynar#!."
+ nymeria_laamp_events.0002.a:0 "Dorne shall become our home."
+ nymeria_laamp_events.0002.b:0 "This land is not ours to claim."
+ nymeria_laamp_events0002a_popup:0 "This option will provide you with different options on how to make #bold Dorne#! your home."
+ nymeria_laamp_events0002b_popup:0 "This option will end the #bold Dorne Story#! cycle, giving you a more sandbox experience."
+
+ nymeria_laamp_events.0003.t:0 "How Shall Dorne Be Claimed?"
+ nymeria_laamp_events.0003.desc:0 "If Dorne is to become the home of the #bold Rhoynar#!, then the path must now be chosen. Its lords are divided, its petty kings proud, and its lands as hostile as its politics.\n\nI may extend open hands and honeyed words to the rulers of this land, or I may seize Dorne through blood and conquest."
+ nymeria_laamp_events.0003.a:0 "Send letters to the local lords."
+ nymeria_laamp_events.0003.b:0 "We shall conquer Dorne by force."
+ nymeria_laamp_events.0003.a.tt:0 "You will attempt to approach the local lords through #bold diplomacy#!."
+ nymeria_laamp_events.0003.b.tt:0 "You will seek to make Dorne your home through #bold conquest#!."
+
+  #Mors receives Nymeria's letter
+ nymeria_laamp_events.0004.t:0 "A Letter From Nymeria"
+ nymeria_laamp_events.0004.desc:0 "Word has arrived from the shores of Dorne. Nymeria of the #bold Rhoynar#! has sent a letter to the lords of the Greenblood.\n\nHer people seek a place to settle, a new home in this land of sand and stone. She offers friendship, perhaps even loyalty, to those willing to welcome the Rhoynar.\n\nMany tales already circle around the woman, of her cunning, her ambition, and her beauty."
+
+ nymeria_laamp_events.0004.a:0 "I have heard of her beauty. I shall make her an offer she cannot refuse."
+ nymeria_laamp_events.0004.b:0 "Rhoynish scum. Dorne is no home for you."
+
+ #Nymeria receives Mors' offer
+ nymeria_laamp_events.0005.t:0 "An Offer From Mors Martell"
+ nymeria_laamp_events.0005.desc:0 "A letter has returned from #bold Mors Martell#!, lord among the Greenblood.\n\nHe offers the Rhoynar a place to settle in #bold the Mouth of the Greenblood#!, where the Greenblood meets the Summer Sea. In exchange, he asks for your support in the struggles of Dorne.\n\nYet his proposal carries one final condition, that you bind your fates together in marriage."
+
+ nymeria_laamp_events.0005.a:0 "A tempting offer."
+
+
+
+
+
+
+
+ # Stormland Events
+
+ nymeria_stormlands.0001.t: "The Blackwater Beckons"
+ nymeria_stormlands.0001.desc: "The Storm Kings of old cast their eyes north to the Blackwater, and once, they held it. Yet the Hook Kings drove us back, clawing away what was rightfully ours.\n\nNo more. I am Durran of House Durrandon, the Bloody Stag, and I will remind the Hook that the Stormlands do not forget. When the Hook falls, the Blackwater follows, and with it, a legacy that will echo for generations.\n\n#weak Historic Note: Durran Durrandon's conquest of the Hook and the Blackwater laid the foundation for later Storm Kings to subjugate the Riverlands and break the Shadow Kings of Duskendale.#!"
+ nymeria_stormlands.0001.a: "Ours is the Fury."
+ nymeria_stormlands0001a_popup: "In a few months, the Storm King will receive the first event to begin his march on the Blackwater."
+
+ nymeria_stormlands.0002.t: "March on the Hook"
+ nymeria_stormlands.0002.desc: "Generations ago, the Hook bent the knee to Storm's End. Its lords swore oaths, paid tribute, and called themselves loyal subjects of the Storm King.\n\nThen they broke those oaths. While our forebears were occupied elsewhere, the Hook kings seized their chance, declaring themselves free, independent, untouchable. They have hidden behind that lie ever since.\n\nNo more. The Stag does not forget. The Hook was ours, and it will be ours again."
+ nymeria_stormlands.0002.a: "The Hook shall be ours again. March."
+ nymeria_stormlands.0002.b: "We cannot risk war right now. The Hook can wait."
+ nymeria_stormlands0002b_popup: "This will end the Stormlands Story. No further events will trigger for the Storm King's campaign."
+
+ nymeria_stormlands.0003.t: "The Stag Stirs"
+ nymeria_stormlands.0003.desc: "Word has reached us from the south. The Storm King Durran Durrandon, they call him the Bloody Stag, has begun rallying his banners. His eyes turn north, towards the Blackwater, toward the Hook, toward everything we have built.\n\nHe is ambitious, ruthless, and hungry. Our fathers knew the Storm Kings well enough to fear them. Perhaps we should too."
+ nymeria_stormlands.0003.a: "We will face the Storm."
+ nymeria_stormlands0003a_popup: "It will only be a matter of time until the Stag marches for our borders."
+ nymeria_stormlands.0003.b: "We must secure our northern border. Seek peace with the Riverlands."
+ nymeria_stormlands.0003.c: "We cannot fight on all fronts. Seek peace with both the Riverlands and the Reach."
+
+ nymeria_stormlands.0005.t: "The Hook is Ours"
+ nymeria_stormlands.0005.desc: "The banners of Storm's End fly over the Hook. What our forebears lost has been reclaimed, the Hook Kings are broken, their kingdom swallowed by the Stag.\n\nBut the horizon does not end at the Hook. The Blackwater Kingdom lies to the north, rich and exposed. The conquest is not yet finished."
+ nymeria_stormlands.0005.a: "The Hook is ours. The Blackwater is next."
+ nymeria_stormlands0005a_popup: "In around a year, the next campaign will begin. The Stag does not rest."
+
+ nymeria_stormlands.0006.t: "March on the Blackwater"
+ nymeria_stormlands.0006.desc: "The Hook has fallen. Now the Blackwater Kingdom stands before us, the next step in a conquest that will echo through the ages. The Storm King's banners are ready. The march begins."
+ nymeria_stormlands.0006.a: "The Blackwater shall bend the knee."
+ nymeria_stormlands.0006.b: "We cannot risk another war right now."
+ nymeria_stormlands0006b_popup: "This will end the Stormlands Story. No further events will trigger for the Storm King's campaign."
+
+ nymeria_stormlands.0008.t: "The Hook Has Fallen"
+ nymeria_stormlands.0008.desc: "The news arrives like a storm in the dark. The Kingdom of the Hook, gone. Swept away in a single campaign by the Bloody Stag of Storm's End.\n\nDurran Durrandon did not negotiate. He did not hesitate. He marched, he conquered, and he destroyed what stood in his way.\n\nWe are next. The Storm is no longer on the horizon, it is at our doorstep."
+ nymeria_stormlands.0008.a: "We must prepare for the worst."
+ nymeria_stormlands0008a_popup: "The Storm King's ambitions will not stop at the Hook. We must ready ourselves."
+
+ nymeria_stormlands.0009.t: "The Storm Reaches the Riverlands"
+ nymeria_stormlands.0009.desc: "The Blackwater has fallen. What began as a march to reclaim the Hook has become something far greater.\n\nThe Stormlands now stretch from the shores of Shipbreaker Bay all the way to the very edge of the Riverlands. Our forebears could only dream of such dominion. The Bloody Stag has made it real.\n\nThe Riverlands lie just beyond. They will take notice."
+ nymeria_stormlands.0009.a: "The Storm has never blown so far north."
+
+ nymeria_stormlands.0010.t: "The Blackwater Has Fallen"
+ nymeria_stormlands.0010.desc: "First the Hook. Now the Blackwater.\n\nThe Bloody Stag has swept through two kingdoms in a single generation, and his hunger shows no sign of abating. Duskendale stands alone now, the last realm between Storm's End and the heart of the Riverlands.\n\nWe are not naive enough to think he has forgotten us."
+ nymeria_stormlands.0010.a: "Surely we are next."
+ nymeria_stormlands.0010.b: "We must seek the protection of the King of the Trident."
+ nymeria_stormlands.0010.a: "We will face this Storm alone."
+ nymeria_stormlands0010a_popup: "Duskendale will stand on its own. No envoys, no alliances, only steel."
+ nymeria_stormlands.0010.b: "We must send an envoy to the King of the Trident."
+ nymeria_stormlands0010b_popup: "An envoy will be dispatched to the Riverlands, seeking an alliance to secure Duskendale's independence against the Storm King."
+
+ nymeria_stormlands.0011.t: "A Plea from Duskendale"
+ nymeria_stormlands.0011.desc: "A messenger has arrived bearing the seal of Duskendale. The Hook has fallen. The Blackwater has fallen. Now the King of Duskendale turns to us, desperate, fearful, seeking assurance that the Storm will not swallow them whole as well.\n\nWhat answer shall we send?"
+ nymeria_stormlands.0011.a: "We cannot let the Stag expand any further. Protect the Blackwater!"
+ nymeria_stormlands.0011.b: "We will protect you, but Deerfield must become ours first."
+ nymeria_stormlands.0011.c: "Leave them to their own devices. This is not our war."
+
+ nymeria_stormlands.0012.t: "The Riverlands Stand With Us"
+ nymeria_stormlands.0012.desc: "The King of the Trident has answered. The Riverlands will stand with Duskendale against the Storm King. The Stag will find no easy march northward while the Trident flows against him."
+ nymeria_stormlands.0012.a: "Then we are not alone."
+
+ nymeria_stormlands.0013.t: "Protection at a Price"
+ nymeria_stormlands.0013.desc: "The King of the Trident has answered, but his protection comes at a cost. Deerfield now flies the banners of the Riverlands. A bitter concession, but perhaps a necessary one. At least the Storm King will not march unopposed."
+ nymeria_stormlands.0013.a: "A steep price, but we have little choice."
+
+ nymeria_stormlands.0014.t: "The Trident Will Not Flow For Us"
+ nymeria_stormlands.0014.desc: "No answer came from the Riverlands. Or rather, the answer was silence. We stand alone against the Bloody Stag, with no ally to our name and the Storm King's banners already on the horizon."
+ nymeria_stormlands.0014.a: "Then we face the Storm alone."
+
+ nymeria_stormlands.0015.t: "A Price for Protection"
+ nymeria_stormlands.0015.desc: "The King of the Trident has responded, but his protection does not come freely. He demands that Deerfield be yielded to the Riverlands in exchange for his alliance and his swords.\n\nA bitter price. But with the Bloody Stag at our doorstep, can we afford to refuse?"
+ nymeria_stormlands.0015.a: "A steep price, but we have no choice. Deerfield is theirs."
+ nymeria_stormlands.0015.b: "We will not yield our lands to buy protection. We refuse."
+
+ nymeria_stormlands.0016.t: "Duskendale Refuses"
+ nymeria_stormlands.0016.desc: "The King of Duskendale has refused our terms. Deerfield will remain in his hands, and so too will his problems. He faces the Storm King alone, and that is his choice to make."
+ nymeria_stormlands.0016.a: "Then he faces the Storm alone. So be it."
+
+ nymeria_stormlands.0017.t: "Duskendale Seeks Allies"
+ nymeria_stormlands.0017.desc: "Word has reached Storm's End. The King of Duskendale, desperate and fearful, has sought the protection of the Riverlands. An alliance has been formed, a direct attempt to check the Stag's expansion.\n\nThis cannot be tolerated. Duskendale must fall before this alliance can take root."
+ nymeria_stormlands.0017.a: "March on Duskendale. Crush them before they can be saved."
+ nymeria_stormlands.0017.b: "Not yet. Give it another year, then we march."
+ nymeria_stormlands0017b_popup: "The Storm King will delay the march on Duskendale by one year."
+ nymeria_stormlands.0017.c: "We cannot risk this war. The campaign ends here."
+ nymeria_stormlands0017c_popup: "This will end the Stormlands Story. No further events will trigger for the Storm King's campaign."
+ 
+
+ nymeria_stormlands.0018.t: "The Duskendale Question"
+ nymeria_stormlands.0018.desc: "Duskendale still stands. The Stag has waited long enough, the time to march is now, before they grow stronger or find more allies."
+ nymeria_stormlands.0018.a: "March on Duskendale. No more delays."
+ nymeria_stormlands.0018.b: "Not yet. We wait another season."
+ nymeria_stormlands.0018.c: "Leave Duskendale be. The campaign is over."
+
+ nymeria_stormlands.0050.t: "The Greybeard is Dead"
+ nymeria_stormlands.0050.desc: "Word arrives from the Reach, old Gardener, the Greybeard, is dead. The great lords of the Reach scramble for position, their eyes turned inward, their armies distracted by succession and politics.\n\nThe borderlands lie exposed. This is our moment, we could march in and take what has long been within our reach, and none would stop us."
+ nymeria_stormlands.0050.a: "The Reach is in chaos. March on the borderlands."
+ nymeria_stormlands.0050.b: "Leave the Reach to its grief. We will not strike a mourning realm."
+ nymeria_stormlands0050a_popup: "The Storm King will forcefully occupy the borderlands. The new Reach lord will be given the chance to contest this."
+ nymeria_stormlands0050b_popup: "The Stag turns away. The borderlands remain in Reach hands."
+
+ nymeria_stormlands.0051.t: "The Stag Moves on Our Borders"
+ nymeria_stormlands.0051.desc: "Our King is barely cold in the ground and already the Storm King moves. Durrandon's soldiers march into the borderlands, Blueburn, Tumbleton, Heartland Heights, claiming them in the name of Storm's End.\n\nDo we contest this brazen land grab, or do we swallow the loss and live to fight another day?"
+ nymeria_stormlands.0051.a: "We will not yield our lands to the Stag. Contest it!"
+ nymeria_stormlands.0051.b: "We cannot fight on two fronts. Let the borderlands go, for now."
+ nymeria_stormlands0051a_popup: "The Storm King will be notified that the Reach contests his occupation."
+ nymeria_stormlands0051b_popup: "Blueburn, Tumbleton and Heartland Heights will transfer as vassals to the Storm King."
+
+ nymeria_stormlands.0052.t: "The Reach Contests Our Claim"
+ nymeria_stormlands.0052.desc: "The new King of the Reach has refused to accept our occupation of the borderlands. They contest our claim, bold, for a realm still reeling from the death of its King.\n\nLet them come. The Stag does not yield."
+ nymeria_stormlands.0052.a: "Then we will hold what we have taken by force."
+
+ nymeria_stormlands.0053.t: "The Borderlands Are Ours"
+ nymeria_stormlands.0053.desc: "The new King of the Reach has chosen wisdom over pride. Blueburn, Tumbleton and Heartland Heights now fly the banners of Storm's End, taken without a single sword drawn.\n\nThe Stag grows stronger still."
+ nymeria_stormlands.0053.a: "The Reach has learned its place."
+
+ nymeria_stormlands.0054.t: "A Declaration from Storm's End"
+ nymeria_stormlands.0054.desc: "A raven bearing the black stag seal of House Durrandon arrives at court. The message within is brief and to the point:\n\n\"I, Durran of House Durrandon, Storm King of the Stormlands, do hereby declare that the lands of Blueburn, Tumbleton and Heartland Heights are rightfully mine by conquest and claim. Let no lord contest what the Stag has taken. The borderlands belong to Storm's End, now and forever.\"\n\n#weak — Durran Durrandon, the Bloody Stag, Storm King of the Stormlands#!"
+ nymeria_stormlands.0054.a: "Noted."
+
+ msg_nymeria_durrandon_border_claim:0 "A Declaration from Storm's End"
+ msg_nymeria_durrandon_border_claim_desc:0 "I, Durran of House Durrandon, Storm King of the Stormlands, do hereby declare that Blueburn, Tumbleton and Heartland Heights are rightfully mine. Let no lord contest what the Stag has taken."
+
+ 

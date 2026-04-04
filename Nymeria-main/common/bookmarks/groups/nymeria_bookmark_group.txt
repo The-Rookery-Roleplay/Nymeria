@@ -1,0 +1,3 @@
+﻿nymeria_bookmark_group = { # Nymeria's War
+	default_start_date = 7298.1.1
+}

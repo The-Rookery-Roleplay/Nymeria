@@ -1,0 +1,12 @@
+7303 = {
+	culture = old_dornish
+	7500.1.1 = {
+		culture = salt_dornish
+		religion = fots_seven
+	}
+	religion = fots_seven
+	holding = pirate_den_holding
+	7824.1.1 = {
+		buildings = { pirate_den_02 }
+	}
+}

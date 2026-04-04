@@ -1,0 +1,143 @@
+c_dragonstone = {
+	510.1.2 = {
+		holder = Wilderness_Empress
+		effect = {
+			set_title_name = c_smoke_isle
+			title:b_dragonstone = { set_title_name = b_smoke_isle }
+			title:b_gaemons_tower = { set_title_name = b_smoke_isle_tower }
+			if = {
+				limit = { game_start_date < 7300.1.1 }
+				title:b_gaemons_tower = { set_capital_barony = yes }
+				title:b_dragonstone.title_province = { remove_holding = yes }
+				title:b_harrenhal.title_province = { add_special_building_slot = dragonstone_01 }
+			}
+		}
+	}
+	7887.1.1 = {
+		liege = d_dragonstone
+		holder = Targaryen_13
+		effect = {
+			reset_title_name = yes
+			title:b_dragonstone = { reset_title_name = yes }
+			title:b_gaemons_tower = { reset_title_name = yes }
+			if = {
+				limit = { agot_dragon_population_alive = yes }
+				set_variable = has_dragonkeeper_order
+			}
+			if = {
+				limit = {
+					has_ep1_dlc_trigger = yes
+					holder.primary_title.tier >= tier_kingdom
+					holder = { agot_can_use_dragonpit_amenities = yes }
+				}
+				holder = {
+					set_amenity_level = {
+						type = agot_dragonpit_amenities
+						value = 4 # High
+					}
+				}
+			}
+		}
+	}
+}
+
+d_driftmark = {
+	7299.1.1 = { 
+		liege = k_the_hook 
+		holder = Blackberry_200
+		effect = {
+			set_title_name = d_blackmark
+		}
+	}
+	7854.1.1 = {
+		holder = Velaryon_6
+		effect = {
+			reset_title_name = yes
+		}
+	}
+}
+
+c_driftmark = {
+	7299.1.1 = { 
+		holder = Blackberry_200
+		effect = {
+			set_title_name = c_blackmark
+			title:b_castle_driftmark = { set_title_name = b_castle_blackberry }
+		}
+	}
+	7854.1.1 = {
+		liege = d_driftmark
+		holder = Velaryon_6
+		effect = {
+			title:b_hull = { set_title_name = b_driftage_shore }
+			title:b_castle_driftmark = { reset_title_name = yes }
+			reset_title_name = yes
+		}
+	}
+}
+
+c_high_tide = {
+	7299.1.1 = {
+		holder = Blackberry_200
+		effect = {
+			set_title_name = c_mermont
+			title:b_high_tide = { set_title_name = b_mermont }
+			title:b_spicetown = { set_title_name = b_flotsam_coast }
+			if = {
+				limit = { game_start_date < 7300.1.1 }
+				title:b_blackhull = { set_capital_barony = yes }
+				title:b_high_tide.title_province = { remove_holding = yes }
+			}
+		}
+	}
+}
+
+d_sharp_point = {
+	7299.1.1 = {
+		liege = k_the_hook 
+		holder = Bar_Emmon_200
+	}
+	7850.1.1 = {
+		liege = e_the_stormlands
+		holder = Bar_Emmon_7
+	}
+}
+
+d_claw_isle = {
+	7299.1.1 = { 
+		holder = Celtigar_200
+	}
+}
+
+c_blackmark = {
+	7299.1.1 = {
+		liege = d_driftmark
+		holder = Blackberry_201 
+	}
+}
+
+c_gullet_isle = {
+	7299.1.1 = { 
+		liege = d_sharp_point
+		holder = Quince_200
+	}
+}
+
+c_sweetport_sound = {
+	7299.1.1 = { 
+		liege = d_sharp_point
+		holder = Sunglass_200
+	}
+}
+
+c_the_scales = {
+	7299.1.1 = { 
+		holder = Brune_201
+	}
+}
+
+c_claw_isle = {
+	7299.1.1 = { 
+		holder = Crabb_200
+	}
+}
