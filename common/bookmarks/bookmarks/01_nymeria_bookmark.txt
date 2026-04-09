@@ -15,7 +15,7 @@
 		birth = 7275.1.1
 		title = d_laamp_Nymeria
 		government = landless_adventurer_government
-		culture = rhoynar_original
+		culture = sarar
 		religion = mother_rhoyne
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = Nymeros_1

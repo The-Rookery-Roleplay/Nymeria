@@ -51433,7 +51433,7 @@ Nymeros_2 = {
 	dynasty = dynn_Nymeros
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	trait = strong
 
@@ -51447,7 +51447,7 @@ Nymeros_rs_2 = {
 	female = yes
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	trait = intellect_good_1
 
@@ -51460,7 +51460,7 @@ Nymeros_3 = {
 	dynasty = dynn_Nymeros
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	father = Nymeros_2
 	mother = Nymeros_rs_2
@@ -51484,7 +51484,7 @@ Nymeros_rs_3 = {
 	female = yes
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	7240.1.1 = { birth = yes }
 	7269.4.4 = { death = { death_reason = death_dungeon } }
@@ -51496,7 +51496,7 @@ Nymeros_4 = {
 	dna = Nymeros_4
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	father = Nymeros_2
 	mother = Nymeros_rs_2
@@ -51521,7 +51521,7 @@ Nymeros_5 = {
 	dna = Nymeros_5
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	father = Nymeros_3
 	mother = Nymeros_rs_3
@@ -51548,10 +51548,10 @@ Nymeros_rs_5 = {
 	female = yes
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	7260.1.1 = { birth = yes }
-	7299.2.4 = { death = { death_reason = death_battle } }
+	7298.2.4 = { death = { death_reason = death_battle } }
 }
 ### Issue of Chroyana
 Nymeros_6 = {
@@ -51566,7 +51566,7 @@ Nymeros_6 = {
 	prowess = 12
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	mother = Nymeros_4
 
@@ -51597,17 +51597,17 @@ Nymeros_rs_6 = {
 	female = yes
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	7255.1.1 = { birth = yes }
-	7305.1.1 = { death = yes }
+	7297.2.1 = { death = yes }
 }
 Nymeros_7 = {
 	name = Garmyn
 	dynasty = dynn_Nymeros
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	mother = Nymeros_4
 
@@ -51620,14 +51620,14 @@ Nymeros_7 = {
 		trait = brave
 		trait = diligent
 	}
-	7299.4.4 = { death = { death_reason = death_battle } }
+	7298.4.4 = { death = { death_reason = death_battle } }
 }
 Nymeros_8 = {
 	name = Cyrence
 	dynasty = dynn_Nymeros
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	mother = Nymeros_4
 
@@ -51644,7 +51644,7 @@ Nymeros_8 = {
 		trait = diligent
 		trait = compassionate
 	}
-	7299.4.4 = { death = { death_reason = death_battle } }
+	7298.4.4 = { death = { death_reason = death_battle } }
 }
 ### Issue of Garin
 Nymeros_9 = {
@@ -51652,7 +51652,7 @@ Nymeros_9 = {
 	dynasty = dynn_Nymeros
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	father = Nymeros_6
 	mother = Nymeros_rs_6
@@ -51661,7 +51661,7 @@ Nymeros_9 = {
 
 	7278.1.1 = { birth = yes }
 	7294.1.1 = { trait = brave }
-	7299.4.4 = { death = { death_reason = death_battle } }
+	7298.4.4 = { death = { death_reason = death_battle } }
 }
 ### Issue of Ryon
 Nymeros_1 = {
@@ -51678,7 +51678,7 @@ Nymeros_1 = {
 	prowess = 10
 
 	religion = mother_rhoyne
-	culture = rhoynar_original
+	culture = sarar
 
 	father = Nymeros_5
 	mother = Nymeros_rs_5
