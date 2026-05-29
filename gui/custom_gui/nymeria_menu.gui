@@ -1,0 +1,92 @@
+types Main
+{
+	type nymeria_early_access_warning = widget {
+		name = "nymeria_early_access_warning"
+		size = { 100% 100% }
+		alwaystransparent = no
+		visible = "[Not(GetVariableSystem.Exists('nymeria_early_access_confirmed'))]"
+
+		state = {
+			name = _show
+			using = Animation_FadeIn_Standard
+			using = Sound_WindowShow_Standard
+		}
+
+		state = {
+			name = _hide
+			using = Animation_FadeOut_Quick
+			using = Sound_WindowHide_Standard
+		}
+
+		button_normal = {
+			size = { 100% 100% }
+			onclick = "[GetVariableSystem.Set('nymeria_early_access_confirmed', 'true')]"
+		}
+
+		using = Background_Full_Dim
+
+		window = {
+			movable = no
+			resizable = no
+			parentanchor = center
+			using = Window_Decoration_Spike
+			using = Window_Background
+
+			vbox = {
+				using = Window_Margins
+				set_parent_size_to_minimum = yes
+
+				header_pattern = {
+					layoutpolicy_horizontal = expanding
+
+					blockoverride "header_text"
+					{
+						text = "NYMERIA_EARLY_ACCESS_TITLE"
+					}
+					blockoverride "button_back"
+					{
+						visible = no
+					}
+					blockoverride "button_close"
+					{
+						onclick = "[GetVariableSystem.Set('nymeria_early_access_confirmed', 'true')]"
+					}
+				}
+
+				scrollbox = {
+					size = { 620 320 }
+
+					blockoverride "scrollbox_content"
+					{
+						vbox = {
+							text_multi = {
+								text = "NYMERIA_EARLY_ACCESS_DESCRIPTION"
+								autoresize = yes
+								max_width = 580
+								min_width = 580
+								margin = { 16 0 }
+								fontsize = 20
+							}
+						}
+					}
+				}
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					margin = { 0 10 }
+					spacing = 15
+
+					background = {
+						using = Background_Area
+					}
+
+					button_primary = {
+						text = "NYMERIA_EARLY_ACCESS_CONFIRM"
+						onclick = "[GetVariableSystem.Set('nymeria_early_access_confirmed', 'true')]"
+						shortcut = confirm
+					}
+				}
+			}
+		}
+	}
+}
