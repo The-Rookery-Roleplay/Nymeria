@@ -614,37 +614,6 @@ nymeria_stormlands.0018 = { # Quarterly retry - Durrandon declares war on Dusken
 
 # Reach vs Stormlands Events
 
-nymeria_stormlands.0049 = {
-    type = character_event
-    hidden = yes
-
-    trigger = {
-        has_character_flag = nymeria_gardener_greybeard
-    }
-
-    immediate = {
-        if = {
-            limit = {
-                has_game_rule = nymeria_stormlands_story_on
-                character:Durrandon_62 = { is_alive = yes }
-                NOT = {
-                    character:Durrandon_62 = {
-                        has_character_flag = nymeria_stormlands_story_ended
-                    }
-                }
-            }
-            character:Durrandon_62 = {
-                trigger_event = {
-                    id = nymeria_stormlands.0050
-                    days = 5
-                }
-            }
-        }
-    }
-
-    option = { name = OK }
-}
-
 nymeria_stormlands.0050 = { # Durrandon demands the Reach borderlands after Gardener's death
     type = character_event
     title = nymeria_stormlands.0050.t
