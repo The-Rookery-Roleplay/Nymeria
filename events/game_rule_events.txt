@@ -212,11 +212,11 @@ game_rule.1001 = { #by Mathilda Bjarnehed - Modified by Kizan for Nymerias War B
 				15 = { add_trait = education_martial_prowess_3 }
 				4 = {
 					add_trait = education_martial_prowess_4
-					set_stat = { stat = prowess value = 5 }
+					add_prowess_skill = 5
 				}
 				1 = {
 					add_trait = education_martial_prowess_5
-					set_stat = { stat = prowess value = 10 }
+					add_prowess_skill = 10
 				}
 			}
 			add_character_flag = martial_edu_done
@@ -234,11 +234,11 @@ game_rule.1001 = { #by Mathilda Bjarnehed - Modified by Kizan for Nymerias War B
 				15 = { add_trait = education_martial_prowess_3 }
 				4 = {
 					add_trait = education_martial_prowess_4
-					set_stat = { stat = prowess value = 5 }
+					add_prowess_skill = 5
 				}
 				1 = {
 					add_trait = education_martial_prowess_5
-					set_stat = { stat = prowess value = 10 }
+					add_prowess_skill = 10
 				}
 			}
 			add_character_flag = martial_edu_done
@@ -257,11 +257,11 @@ game_rule.1001 = { #by Mathilda Bjarnehed - Modified by Kizan for Nymerias War B
 					15 = { add_trait = education_martial_prowess_3 }
 					4 = {
 						add_trait = education_martial_prowess_4
-						set_stat = { stat = prowess value = 5 }
+						add_prowess_skill = 5
 					}
 					1 = {
 						add_trait = education_martial_prowess_5
-						set_stat = { stat = prowess value = 10 }
+						add_prowess_skill = 10
 					}
 				}
 				add_character_flag = martial_edu_done

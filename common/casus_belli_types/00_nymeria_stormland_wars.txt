@@ -69,15 +69,18 @@
             trigger_event = nymeria_stormlands.0005
             imprison = {
                 target = scope:defender
-                type = hard
+                type = dungeon
             }
         }
 
         # Step 3: Keep d_massey_hook holder under Hook King
-        title:d_massey_hook.holder = {
-            change_liege = {
-                liege = scope:defender
-                change = scope:fealty_change
+        if = {
+            limit = { exists = title:d_massey_hook.holder }
+            title:d_massey_hook.holder = {
+                change_liege = {
+                    liege = scope:defender
+                    change = scope:fealty_change
+                }
             }
         }
         resolve_title_and_vassal_change = scope:fealty_change
@@ -171,12 +174,20 @@
         }
     }
 
+    on_invalidated_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = nymeria_hook_conquest_invalidated_desc
+            }
+        }
+    }
+
     # --- LOSE ---
     on_defeat = {
         scope:defender = {
             imprison = {
                 target = scope:attacker
-                type = hard
+                type = dungeon
             }
         }
         scope:attacker = {
@@ -414,7 +425,7 @@ nymeria_blackwater_conquest = { # War of the Blackwater
         scope:attacker = {
             imprison = {
                 target = scope:defender
-                type = hard
+                type = dungeon
             }
         }
 
@@ -473,6 +484,22 @@ nymeria_blackwater_conquest = { # War of the Blackwater
         first_valid = {
             triggered_desc = {
                 desc = nymeria_blackwater_conquest_defeat_desc
+            }
+        }
+    }
+
+    on_white_peace_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = nymeria_blackwater_conquest_white_peace_desc
+            }
+        }
+    }
+
+    on_invalidated_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = nymeria_blackwater_conquest_invalidated_desc
             }
         }
     }
@@ -556,7 +583,7 @@ nymeria_duskwashes_conquest = { # War of Duskendale
         scope:attacker = {
             imprison = {
                 target = scope:defender
-                type = hard
+                type = dungeon
             }
         }
 
@@ -660,6 +687,14 @@ nymeria_duskwashes_conquest = { # War of Duskendale
         first_valid = {
             triggered_desc = {
                 desc = nymeria_duskwashes_conquest_defeat_desc
+            }
+        }
+    }
+
+    on_invalidated_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = nymeria_duskwashes_conquest_invalidated_desc
             }
         }
     }

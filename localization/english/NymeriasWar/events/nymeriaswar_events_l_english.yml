@@ -75,8 +75,6 @@
 
  nymeria_stormlands.0010.t: "The Blackwater Has Fallen"
  nymeria_stormlands.0010.desc: "First the Hook. Now the Blackwater.\n\nThe Bloody Stag has swept through two kingdoms in a single generation, and his hunger shows no sign of abating. Duskendale stands alone now, the last realm between Storm's End and the heart of the Riverlands.\n\nWe are not naive enough to think he has forgotten us."
- nymeria_stormlands.0010.a: "Surely we are next."
- nymeria_stormlands.0010.b: "We must seek the protection of the King of the Trident."
  nymeria_stormlands.0010.a: "We will face this Storm alone."
  nymeria_stormlands0010a_popup: "Duskendale will stand on its own. No envoys, no alliances, only steel."
  nymeria_stormlands.0010.b: "We must send an envoy to the King of the Trident."
@@ -149,6 +147,11 @@
  nymeria_stormlands.0054.t: "A Declaration from Storm's End"
  nymeria_stormlands.0054.desc: "A raven bearing the black stag seal of House Durrandon arrives at court. The message within is brief and to the point:\n\n\"I, Durran of House Durrandon, Storm King of the Stormlands, do hereby declare that the lands of Blueburn, Tumbleton and Heartland Heights are rightfully mine by conquest and claim. Let no lord contest what the Stag has taken. The borderlands belong to Storm's End, now and forever.\"\n\n#weak — Durran Durrandon, the Bloody Stag, Storm King of the Stormlands#!"
  nymeria_stormlands.0054.a: "Noted."
+
+ nymeria_hook_conquest_invalidated_desc: "The war for the Hook has been invalidated."
+ nymeria_blackwater_conquest_white_peace_desc: "The war for the Blackwater ends in a stalemate."
+ nymeria_blackwater_conquest_invalidated_desc: "The war for the Blackwater has been invalidated."
+ nymeria_duskwashes_conquest_invalidated_desc: "The war for Duskendale has been invalidated."
 
  msg_nymeria_durrandon_border_claim:0 "A Declaration from Storm's End"
  msg_nymeria_durrandon_border_claim_desc:0 "I, Durran of House Durrandon, Storm King of the Stormlands, do hereby declare that Blueburn, Tumbleton and Heartland Heights are rightfully mine. Let no lord contest what the Stag has taken."

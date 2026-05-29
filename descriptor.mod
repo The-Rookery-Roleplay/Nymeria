@@ -4,5 +4,5 @@ tags={
 }
 name="Nymeria"
 picture="thumbnail.png"
-supported_version="1.18.4"
+supported_version="1.19.0.6"
 remote_file_id="3690940552"

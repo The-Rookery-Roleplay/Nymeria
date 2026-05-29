@@ -72,9 +72,9 @@ nymeria_stormlands.0002 = { # Durrandon declares war on the Hook
 
         scope:storm_king = {
             start_war = {
+                cb = nymeria_hook_conquest
                 target = scope:hook_holder
-                casus_belli = nymeria_hook_conquest
-                title = k_the_hook
+                target_title = title:k_the_hook
             }
         }
     }
@@ -82,7 +82,7 @@ nymeria_stormlands.0002 = { # Durrandon declares war on the Hook
     option = {
         name = nymeria_stormlands.0002.b # End the Stormlands story
         ai_chance = { base = 0 }
-        set_character_flag = nymeria_stormlands_story_ended
+        add_character_flag = nymeria_stormlands_story_ended
         custom_tooltip = nymeria_stormlands0002b_popup
     }
 }
@@ -256,9 +256,9 @@ nymeria_stormlands.0006 = { # War Declaration on the Blackwater
         ai_chance = { base = 100 }
         scope:storm_king = {
             start_war = {
+                cb = nymeria_blackwater_conquest
                 target = scope:blackwater_holder
-                casus_belli = nymeria_blackwater_conquest
-                title = k_the_blackwater
+                target_title = title:k_the_blackwater
             }
         }
     }
@@ -266,7 +266,7 @@ nymeria_stormlands.0006 = { # War Declaration on the Blackwater
     option = {
         name = nymeria_stormlands.0006.b
         ai_chance = { base = 0 }
-        set_character_flag = nymeria_stormlands_story_ended
+        add_character_flag = nymeria_stormlands_story_ended
         custom_tooltip = nymeria_stormlands0006b_popup
     }
 }
@@ -304,7 +304,7 @@ nymeria_stormlands.0009 = { # Victory flair event after winning the Blackwater W
     }
 }
 
-ck3nymeria_stormlands.0010 = { # Duskendale reacts to Blackwater falling - seek alliance or face alone
+nymeria_stormlands.0010 = { # Duskendale reacts to Blackwater falling - seek alliance or face alone
     type = character_event
     title = nymeria_stormlands.0010.t
     desc = nymeria_stormlands.0010.desc
@@ -361,6 +361,8 @@ nymeria_stormlands.0011 = { # Riverlands receives Duskendale's plea for alliance
         ai_chance = { base = 25 }
         create_alliance = {
             target = scope:dusk_king
+            allied_through_owner = root
+            allied_through_target = scope:dusk_king
         }
         scope:dusk_king = {
             trigger_event = nymeria_stormlands.0012
@@ -467,6 +469,8 @@ nymeria_stormlands.0015 = { # Duskendale: Riverlands offers conditional alliance
         resolve_title_and_vassal_change = scope:deerfield_change
         create_alliance = {
             target = scope:river_king
+            allied_through_owner = root
+            allied_through_target = scope:river_king
         }
         scope:river_king = {
             trigger_event = nymeria_stormlands.0013
@@ -528,9 +532,9 @@ nymeria_stormlands.0017 = { # Durrandon declares war on Duskendale
         remove_character_flag = nymeria_duskwashes_war_pending
         scope:storm_king = {
             start_war = {
+                cb = nymeria_duskwashes_conquest
                 target = scope:dusk_holder
-                casus_belli = nymeria_duskwashes_conquest
-                title = k_duskwashes
+                target_title = title:k_duskwashes
             }
         }
     }
@@ -549,7 +553,7 @@ nymeria_stormlands.0017 = { # Durrandon declares war on Duskendale
     option = {
         name = nymeria_stormlands.0017.c # End the story entirely
         ai_chance = { base = 0 }
-        set_character_flag = nymeria_stormlands_story_ended
+        add_character_flag = nymeria_stormlands_story_ended
         custom_tooltip = nymeria_stormlands0017c_popup
     }
 }
@@ -582,9 +586,9 @@ nymeria_stormlands.0018 = { # Quarterly retry - Durrandon declares war on Dusken
         remove_character_flag = nymeria_duskwashes_war_pending
         scope:storm_king = {
             start_war = {
+                cb = nymeria_duskwashes_conquest
                 target = scope:dusk_holder
-                casus_belli = nymeria_duskwashes_conquest
-                title = k_duskwashes
+                target_title = title:k_duskwashes
             }
         }
     }
@@ -603,7 +607,7 @@ nymeria_stormlands.0018 = { # Quarterly retry - Durrandon declares war on Dusken
     option = {
         name = nymeria_stormlands.0018.c # End the story entirely
         ai_chance = { base = 0 }
-        set_character_flag = nymeria_stormlands_story_ended
+        add_character_flag = nymeria_stormlands_story_ended
         custom_tooltip = nymeria_stormlands0017c_popup
     }
 }
