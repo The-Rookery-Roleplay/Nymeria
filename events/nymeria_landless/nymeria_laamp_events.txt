@@ -59,7 +59,7 @@ nymeria_laamp_events.0002 = { # Settle Dorne?
     theme = realm
 
     trigger = {
-        is_character = character:Nymeria_1
+        this = character:Nymeria_1
         has_game_rule = nymeria_dorne_story_on
     }
 
@@ -69,7 +69,7 @@ nymeria_laamp_events.0002 = { # Settle Dorne?
     }
 
     immediate = {
-        set_character_flag = nymeria_story_002_fired
+        add_character_flag = nymeria_story_002_fired
     }
 
     option = {
@@ -84,7 +84,7 @@ nymeria_laamp_events.0002 = { # Settle Dorne?
     option = {
         name = nymeria_laamp_events.0002.b
         ai_chance = { base = 0 }
-        set_character_flag = nymeria_story_cycle_ended
+        add_character_flag = nymeria_story_cycle_ended
         custom_tooltip = nymeria_laamp_events0002b_popup
     }
 }
