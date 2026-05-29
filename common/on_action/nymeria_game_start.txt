@@ -1,7 +1,19 @@
 ﻿on_game_start_after_lobby = {
     on_actions = {
-        nymeria_dorne_events_cycle 
-        nymeria_stormlands_events_cycle 
+        nymeria_dorne_events_cycle
+        nymeria_stormlands_events_cycle
+        nymeria_dorne_test_event
+    }
+}
+
+nymeria_dorne_test_event = {
+    effect = {
+        if = {
+            limit = { has_game_rule = nymeria_dorne_story_on }
+            character:Fowler_11 = {
+                trigger_event = nymeria_dorne_events.0001
+            }
+        }
     }
 }
 

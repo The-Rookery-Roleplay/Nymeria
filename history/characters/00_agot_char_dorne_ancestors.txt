@@ -34708,7 +34708,7 @@ Fowler_11 = {
 	father = Fowler_114
 
 	trait = education_martial_2
-	trait = intellect_good_1
+	trait = intellect_good_3
 	trait = diligent
 	trait = deceitful
 	trait = pensive
@@ -142511,7 +142511,7 @@ Wyl_200 = {
 	}
 	7295.1.1 = {
 		trait = knight
-		trait = infirm
+		trait = clouded_eyes
 	}
 	7320.1.1 = { death = yes }
 }

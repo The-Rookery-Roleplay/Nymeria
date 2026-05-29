@@ -1,0 +1,27 @@
+namespace = nymeria_dorne_events
+
+nymeria_dorne_events.0001 = { # Test event - Hello World
+    type = character_event
+    title = nymeria_dorne_events.0001.t
+    desc = nymeria_dorne_events.0001.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    trigger = {
+        this = character:Fowler_11
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = nymeria_dorne_events.0001.a
+        add_prestige = 500
+        add_trait = infirm
+    }
+}

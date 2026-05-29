@@ -1194,6 +1194,17 @@ Gardener_52 = {
 
 	7221.1.1 = { trait = knight }
 
+	7298.1.1 = {
+		effect = {
+			add_trait = infirm
+			add_trait_xp = {
+				trait = infirm
+				track = infirm
+				value = 100
+			}
+		}
+	}
+
 	7300.1.1 = { # Died at ninety six
 		trait = incapable
 		death = {

@@ -1,0 +1,66 @@
+﻿# Decision to claim the Empire of Dorne (e_dorne) once you control the
+# overwhelming majority of its de jure lands. The unifier earns the nickname
+# "The Unifier".
+
+nymeria_unify_dorne_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+	}
+	decision_group_type = major
+
+	ai_check_interval = 120
+
+	desc = nymeria_unify_dorne_decision_desc
+	selection_tooltip = nymeria_unify_dorne_decision_tooltip
+
+	is_shown = {
+		culture = culture:old_dornish
+		is_independent_ruler = yes
+		NOT = { has_title = title:e_dorne }
+	}
+
+	is_valid = {
+		culture = culture:old_dornish
+		is_independent_ruler = yes
+		is_imprisoned = no
+		custom_description = {
+			text = nymeria_unify_dorne_decision_control
+			title:e_dorne = {
+				any_de_jure_county = {
+					percent >= 0.8
+					holder = { top_liege = root }
+				}
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 1000
+	}
+
+	effect = {
+		add_prestige = 1000
+
+		get_title = title:e_dorne
+		set_primary_title_to = title:e_dorne
+
+		# Your old Dorne kingdom crown(s) are subsumed into the new empire.
+		every_held_title = {
+			limit = {
+				tier = tier_kingdom
+				target_is_de_jure_liege_or_above = title:e_dorne
+			}
+			add_to_temporary_list = unify_old_crowns
+		}
+		every_in_list = {
+			list = unify_old_crowns
+			root = { destroy_title = prev }
+		}
+
+		give_nickname = nickname_the_unifier
+	}
+}

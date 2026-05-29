@@ -1,5 +1,9 @@
 ﻿l_english:
 
+ nymeria_dorne_events.0001.t:0 "King Garrison Fowler the Intelligent"
+ nymeria_dorne_events.0001.desc:0 "They call you the wisest man in Westeros, and you have used that wit to make House Fowler matter. Even your rivals come to Skyreach for counsel.\n\nWit cannot stop time, though.\n\nA messenger kneels before your throne with news from the east: a woman called #bold Nymeria of the Rhoynar#! has landed on Dorne's shores, and a host beyond counting follows her.\n\nYou understand at once what this could mean for Dorne.\n\nThen a sharp ache spreads across your back. You grip the armrest and wait for it to pass. It takes its time.\n\nThe messenger is still talking. You are no longer listening.\n\n#italic You are not the man you once were.#!"
+ nymeria_dorne_events.0001.a:0 "\"I wish I'd live forever...\""
+
  nymeria_laamp_events.0002.t:0 "The Shores of Dorne"
  nymeria_laamp_events.0002.desc:0 "At last, our ships have reached the shores of a distant land known as #bold Dorne#!. Before us stretches a harsh and unforgiving country, its deserts vast, its mountains jagged, and its people hardened by the unforgiving sun.\n\nYet this land is far from united. The whispers of sailors and scouts alike speak of countless #bold lords and petty kings#!, each warring against the other for dominion over this parched realm.\n\nWhere others see a fractured and hostile land, I see opportunity. A land divided is a land that can be claimed.\n\nPerhaps the time has come to make this place the new home of the #bold Rhoynar#!."
  nymeria_laamp_events.0002.a:0 "Dorne shall become our home."
