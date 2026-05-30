@@ -57,7 +57,7 @@ nymeria_dorne_events.0003 = { # Introduction Event - House Dayne
 
     left_portrait = {
         character = root
-        animation = personality_rational
+        animation = personality_bold
     }
 
     trigger = {
@@ -68,6 +68,7 @@ nymeria_dorne_events.0003 = { # Introduction Event - House Dayne
     option = {
         name = nymeria_dorne_events.0003.a
         add_prestige = 100
+        add_prowess_skill = 2
     }
 }
 
@@ -135,12 +136,20 @@ nymeria_dorne_events.0006 = { # Introduction Event - House Dryland
 
     left_portrait = {
         character = root
-        animation = personality_rational
+        animation = scheme
     }
 
     trigger = {
         this = character:Dryland_1
         has_game_rule = nymeria_dorne_story_on
+    }
+
+    immediate = {
+        # Why he is the Last of His Ilk - he will take no wife. - Kizan
+        if = {
+            limit = { NOT = { has_trait = refusing_marriage } }
+            add_trait = refusing_marriage
+        }
     }
 
     option = {
@@ -181,5 +190,22 @@ nymeria_dorne_events.0008 = { # Notification - a petty lord proclaims himself Ki
 
     option = {
         name = nymeria_dorne_events.0008.a
+    }
+}
+
+nymeria_dorne_events.0009 = { # Hidden - Lord Harmen Uller takes no wife
+    hidden = yes
+    type = character_event
+
+    trigger = {
+        this = character:Uller_200
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    immediate = {
+        if = {
+            limit = { NOT = { has_trait = refusing_marriage } }
+            add_trait = refusing_marriage
+        }
     }
 }

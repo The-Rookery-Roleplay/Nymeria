@@ -3,6 +3,7 @@
         nymeria_dorne_events_cycle
         nymeria_stormlands_events_cycle
         nymeria_dorne_test_event
+        nymeria_place_bookmark_artifacts
     }
 }
 
@@ -31,6 +32,57 @@ nymeria_dorne_test_event = {
             character:Martell_23 = {
                 trigger_event = nymeria_dorne_events.0007
             }
+            # Hidden - gives Lord Uller the refusing_marriage trait. - Kizan
+            character:Uller_200 = {
+                trigger_event = nymeria_dorne_events.0009
+            }
+        }
+    }
+}
+
+# Re-gives the Valyrian-steel swords to the _200 bookmark lords at the Nymeria's War
+# (7299) start. AGOT's own scenario_artifacts only seeds these at later dates, so
+# without this they would not exist at our bookmark. Ported out of AGOT's
+# scenario_artifacts so we no longer override that whole file. - Kizan
+nymeria_place_bookmark_artifacts = {
+    effect = {
+        if = {
+            limit = { game_start_date = 7299.1.1 }
+            character:Dustin_200 ?= { agot_create_artifact_vs_wyrmfang_effect = { OWNER = THIS } }
+            character:Lydden_200 ?= { agot_create_artifact_vs_widestripe_effect = { OWNER = THIS } }
+            character:Hightower_200 ?= { agot_create_artifact_vs_vigilance_effect = { OWNER = THIS } }
+            character:Rogare_200 ?= { agot_create_artifact_vs_truth_effect = { OWNER = THIS } }
+            character:Brax_200 ?= { agot_create_artifact_vs_tranquility_effect = { OWNER = THIS } }
+            character:Swann_200 ?= { agot_create_artifact_vs_swansong_effect = { OWNER = THIS } }
+            character:Bar_Emmon_200 ?= { agot_create_artifact_vs_swordfish_effect = { OWNER = THIS } }
+            character:Serrett_200 ?= { agot_create_artifact_vs_supremacy_effect = { OWNER = THIS } }
+            character:Darklyn_200 ?= { agot_create_artifact_vs_stalwart_effect = { OWNER = THIS } }
+            character:Banefort_200 ?= { agot_create_artifact_vs_skullcleaver_effect = { OWNER = THIS } }
+            character:Velaryon_200 ?= { agot_create_artifact_vs_seafoam_effect = { OWNER = THIS } }
+            character:Cargyll_200 ?= { agot_create_artifact_vs_remige_effect = { OWNER = THIS } }
+            character:Reyne_200 ?= { agot_create_artifact_vs_red_rain_effect = { OWNER = THIS } }
+            character:Jast_200 ?= { agot_create_artifact_vs_pride_effect = { OWNER = THIS } }
+            character:Celtigar_200 ?= { agot_create_artifact_vs_pincer_effect = { OWNER = THIS } }
+            character:Roxton_200 ?= { agot_create_artifact_vs_orphan_maker_effect = { OWNER = THIS } }
+            character:Greyjoy_200 ?= { agot_create_artifact_vs_nightfall_effect = { OWNER = THIS } }
+            character:Mormont_200 ?= { agot_create_artifact_vs_longclaw_effect = { OWNER = THIS } }
+            character:Royce_200 ?= { agot_create_artifact_vs_lamentation_effect = { OWNER = THIS } }
+            character:Corbray_200 ?= { agot_create_artifact_vs_lady_forlorn_effect = { OWNER = THIS } }
+            character:Stark_200 ?= { agot_create_artifact_vs_ice_effect = { OWNER = THIS } }
+            character:Tarly_200 ?= { agot_create_artifact_vs_heartsbane_effect = { OWNER = THIS } }
+            character:Forrester_200 ?= { agot_create_artifact_vs_iron_will_effect = { OWNER = THIS } }
+            character:Rowan_200 ?= { agot_create_artifact_vs_evergold_effect = { OWNER = THIS } }
+            character:Ironsmith_200 ?= { agot_create_artifact_vs_defiance_effect = { OWNER = THIS } }
+            character:Teague_200 ?= { agot_create_artifact_vs_disputant_effect = { OWNER = THIS } }
+            character:Vyrwel_200 ?= { agot_create_artifact_vs_darktalon_effect = { OWNER = THIS } }
+            character:Targaryen_200 ?= { agot_create_artifact_vs_dark_sister_effect = { OWNER = THIS } }
+            character:Massey_200 ?= { agot_create_artifact_vs_dancer_effect = { OWNER = THIS } }
+            character:Adarys_200 ?= { agot_create_artifact_vs_cloudbreak_effect = { OWNER = THIS } }
+            # House Lannister are NOT supposed to have Brightroar (it is lost). - Kizan
+            # character:Lannister_155 ?= { agot_create_artifact_vs_brightroar_effect = { OWNER = THIS } }
+            character:Targaryen_200 ?= { agot_create_artifact_vs_blackfyre_effect = { OWNER = THIS } }
+            character:Wyl_200 ?= { agot_create_artifact_vs_adders_fang_effect = { OWNER = THIS } }
+            character:Beesbury_200 ?= { agot_create_artifact_bumblin_sword_effect = { OWNER = THIS } }
         }
     }
 }
@@ -45,6 +97,16 @@ quarterly_playable_pulse = {
 on_game_start = {
     on_actions = {
         crackclaw_confed_on_game_start
+        nymeria_block_dragonstone_colonization
+    }
+}
+
+nymeria_block_dragonstone_colonization = {
+    effect = {
+        if = {
+            limit = { NOT = { title:c_dragonstone = { has_county_modifier = block_settlement_ability } } }
+            title:c_dragonstone = { add_county_modifier = block_settlement_ability }
+        }
     }
 }
 

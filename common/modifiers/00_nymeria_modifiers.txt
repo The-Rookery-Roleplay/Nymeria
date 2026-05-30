@@ -1,0 +1,8 @@
+﻿# Nymeria's iron grip after she breaks the Broken Arm - her vassals are both
+# adored into loyalty and cowed by dread, so none of them will ever rebel.
+# Applied permanently on the Broken Arm victory, removed if she is crushed. - Kizan
+nymeria_rhoynar_dominance_modifier = {
+    icon = diplomacy_positive
+    vassal_opinion = 200
+    dread_baseline_add = 100
+}

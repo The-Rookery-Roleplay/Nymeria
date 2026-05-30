@@ -31420,6 +31420,11 @@ Dryland_1 = {
 	religion = fots_seven
 	culture = old_dornish
 
+	trait = education_intrigue_3
+	trait = ambitious
+	trait = deceitful
+	trait = callous
+
 	7258.1.1 = {
 		birth = yes
 		add_character_flag = canon_status_canon
@@ -45153,6 +45158,33 @@ nymeria_garry = {
 	7290.1.1 = {
 		employer = Manwoody_9 # Albin Manwoody
 		give_nickname = nickname_the_messenger
+	}
+}
+
+Uller_200 = {
+	name = Harmen # Lord of Brimstone Hall, vassal of King Lucifer Dryland - Kizan
+	dynasty = dynn_Uller
+
+	religion = fots_seven
+	culture = old_dornish
+
+	7262.1.1 = { birth = yes }
+	7325.1.1 = { death = yes }
+}
+
+nymeria_shae = {
+	name = Shae # A Rhoynish beauty who, like Uller, will take no husband - setup. - Kizan
+	female = yes
+
+	religion = mother_rhoyne
+	culture = sarar
+
+	trait = beauty_good_3
+	trait = refusing_marriage
+
+	7280.1.1 = { birth = yes }
+	7299.1.1 = {
+		employer = Nymeros_1 # In Nymeria's company
 	}
 }
 Manwoody_106 = {

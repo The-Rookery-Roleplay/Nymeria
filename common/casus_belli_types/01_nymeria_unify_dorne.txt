@@ -56,6 +56,10 @@ nymeria_unify_dorne_cb = {
         on_declared_war = yes
     }
 
+    # The war for Dornish unity is fought to the end - no white peace for either
+    # side (so the AI can never weasel out with a status-quo peace). - Kizan
+    white_peace_possible = no
+
     on_invalidated_desc = msg_subjugation_war_invalidated_message
 
     on_victory_desc = {
@@ -136,24 +140,26 @@ nymeria_unify_dorne_cb = {
         agot_war_victory_effects = yes
     }
 
-    on_white_peace_desc = {
-        first_valid = {
-            triggered_desc = {
-                desc = nymeria_unify_dorne_cb_white_peace_desc
-            }
-        }
-    }
+    # White peace is disabled for this war (white_peace_possible = no), so these
+    # blocks can never fire - kept commented for reference. - Kizan
+    # on_white_peace_desc = {
+    #     first_valid = {
+    #         triggered_desc = {
+    #             desc = nymeria_unify_dorne_cb_white_peace_desc
+    #         }
+    #     }
+    # }
 
-    on_white_peace = {
-        scope:attacker = {
-            show_pow_release_message_effect = yes
-            add_prestige = {
-                value = medium_prestige_value
-                multiply = -1.0
-            }
-        }
-        add_truce_white_peace_effect = yes
-    }
+    # on_white_peace = {
+    #     scope:attacker = {
+    #         show_pow_release_message_effect = yes
+    #         add_prestige = {
+    #             value = medium_prestige_value
+    #             multiply = -1.0
+    #         }
+    #     }
+    #     add_truce_white_peace_effect = yes
+    # }
 
     on_defeat_desc = {
         first_valid = {

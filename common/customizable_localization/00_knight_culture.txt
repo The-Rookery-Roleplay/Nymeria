@@ -1,0 +1,69 @@
+﻿###################################################################################
+# !!! NYMERIA SAME-PATH REPLACEMENT OF AGOT 00_knight_culture.txt - RE-SYNC ON UPDATE
+# A separate file MERGES (AGOT's "Captain" fallback wins first), so we replace the
+# whole file instead. Only change vs AGOT: in KnightCulture, the heritage->captain
+# list is now ONLY heritage_ironman, and the fallback is knight_default ("Knight")
+# instead of knight_hero ("Captain"). So only the Ironborn are "Captain". - Kizan
+###################################################################################
+
+KnightCulture = {
+	type = character
+
+	#AGOT Added
+	text = {
+		trigger = {
+			faith = { has_doctrine_parameter = can_grant_knighthood }
+		}
+		localization_key = knight_default
+	}
+	text = {
+		# Nymeria: ONLY the Ironborn keep "Captain" (AGOT also had andal/first_man/
+		# rhoynar/valyrian here). - Kizan
+		trigger = {
+			culture = { has_cultural_pillar = heritage_ironman }
+		}
+		localization_key = knight_captain
+	}
+
+	text = {
+		# Nymeria: fallback is the plain "Knight" (knight_default), not "Captain"
+		# (knight_hero) - this is what was turning Essosi / Free Cities into captains. - Kizan
+		localization_key = knight_default
+		fallback = yes
+	}
+}
+
+KnightCulturePlural = {
+	parent = KnightCulture
+	suffix = "_plural"
+}
+
+KnightCultureNoTooltip = {
+	parent = KnightCulture
+	suffix = "_no_tooltip"
+}
+
+KnightCulturePluralNoTooltip = {
+	parent = KnightCulture
+	suffix = "_no_tooltip_plural"
+}
+
+KnightCultureNoTooltipLowercase = {
+	parent = KnightCulture
+	suffix = "_no_tooltip_lowercase"
+}
+
+KnightCulturePluralNoTooltipLowercase = {
+	parent = KnightCulture
+	suffix = "_no_tooltip_lowercase_plural"
+}
+
+KnightCulturePluralPossessiveNoTooltipLowercase = {
+	parent = KnightCulture
+	suffix = "_no_tooltip_lowercase_plural_possessive"
+}
+
+KnightCultureAdjectiveNoTooltipLowercase = {
+	parent = KnightCulture
+	suffix = "_no_tooltip_lowercase_adjective"
+}

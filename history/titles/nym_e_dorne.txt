@@ -193,6 +193,13 @@ d_godsgrace = {
     }
 }
 
+c_brimstone = {
+    7299.1.1 = {
+        liege = d_brimstone # Harmen Uller, vassal of King Lucifer Dryland - Kizan
+        holder = Uller_200
+    }
+}
+
 c_goldpeppers = {
     7299.1.1 = {
         liege = d_godsgrace

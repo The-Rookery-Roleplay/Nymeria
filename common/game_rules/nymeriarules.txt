@@ -28,6 +28,16 @@ nymeria_stormlands_story = {
     nymeria_stormlands_story_off = {}
 }
 
+nymeria_flavorization = {
+    categories = {
+        nymeria
+    }
+    default = nymeria_flavorization_on
+
+    nymeria_flavorization_on = {}
+    nymeria_flavorization_off = {}
+}
+
 generate_families = {
 	
 	categories = {

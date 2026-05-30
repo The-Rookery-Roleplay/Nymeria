@@ -1,184 +1,445 @@
 ﻿namespace = nymeria_laamp_events
 
-# nymeria_laamp_events.0001 = {
-#     hidden = yes
-#     type = character_event
+nymeria_laamp_events.0001 = {
+    hidden = yes
+    type = character_event
 
-#     immediate = {
-#         hidden_effect = {
-#             create_maa_regiment = {
-#                 type = light_footmen
-#                 check_can_recruit = no
-#                 size = 15
-#             }
-#             create_maa_regiment = {
-#                 type = pikemen_unit
-#                 check_can_recruit = no
-#                 size = 15
-#             }
-#             create_maa_regiment = {
-#                 type = armored_footmen
-#                 check_can_recruit = no
-#                 size = 15
-#             }
-#             create_maa_regiment = {  
-#                 type = bowmen
-#                 check_can_recruit = no
-#                 size = 15
-#             }
-#             create_maa_regiment = {
-#                 type = armored_horsemen
-#                 check_can_recruit = no
-#                 size = 5
-#             }
-#             create_maa_regiment = {
-#                 type = crossbowmen
-#                 check_can_recruit = no
-#                 size = 15
-#             }
-#             create_maa_regiment = {
-#                 type = trebuchet
-#                 check_can_recruit = no
-#                 size = 6
-#             }
-#             spawn_army = {
-#                 name = rhoynar_host
-#                 levies = 10000
-#                 inheritable = yes
-#                 location = root.capital_province
-#             }
-#         }
-#     }
-# }
+    immediate = {
+        hidden_effect = {
+            create_maa_regiment = {
+                type = light_footmen
+                check_can_recruit = no
+                size = 15
+            }
+            create_maa_regiment = {
+                type = pikemen_unit
+                check_can_recruit = no
+                size = 15
+            }
+            create_maa_regiment = {
+                type = armored_footmen
+                check_can_recruit = no
+                size = 15
+            }
+            create_maa_regiment = {
+                type = bowmen
+                check_can_recruit = no
+                size = 15
+            }
+            create_maa_regiment = {
+                type = armored_horsemen
+                check_can_recruit = no
+                size = 5
+            }
+            create_maa_regiment = {
+                type = crossbowmen
+                check_can_recruit = no
+                size = 15
+            }
+            create_maa_regiment = {
+                type = trebuchet
+                check_can_recruit = no
+                size = 6
+            }
+            spawn_army = {
+                name = rhoynar_host
+                levies = 10000
+                inheritable = yes
+                location = root.capital_province
+            }
+        }
+    }
+}
 
-# nymeria_laamp_events.0002 = { # Settle Dorne?
-#     hidden = no
-#     type = character_event
-#     title = nymeria_laamp_events.0002.t
-#     desc = nymeria_laamp_events.0002.desc
-#     theme = realm
+nymeria_laamp_events.0002 = { # Settle Dorne?
+    hidden = no
+    type = character_event
+    title = nymeria_laamp_events.0002.t
+    desc = nymeria_laamp_events.0002.desc
+    theme = realm
 
-#     trigger = {
-#         this = character:Nymeria_1
-#         has_game_rule = nymeria_dorne_story_on
-#     }
+    trigger = {
+        this = character:Nymeros_1
+        has_game_rule = nymeria_dorne_story_on
+    }
 
-#     left_portrait = {
-#         character = root
-#         animation = thinking
-#     }
+    left_portrait = {
+        character = root
+        animation = thinking
+    }
 
-#     immediate = {
-#         add_character_flag = nymeria_story_002_fired
-#     }
+    immediate = {
+        add_character_flag = nymeria_story_002_fired
+    }
 
-#     option = {
-#         name = nymeria_laamp_events.0002.a
-#         ai_chance = { base = 100 }
-#         trigger_event = {
-#             id = nymeria_laamp_events.0003
-#         }
-#         custom_tooltip = nymeria_laamp_events0002a_popup
-#     }
+    option = {
+        name = nymeria_laamp_events.0002.a
+        ai_chance = { base = 100 }
+        trigger_event = {
+            id = nymeria_laamp_events.0003
+        }
+        custom_tooltip = nymeria_laamp_events0002a_popup
+    }
 
-#     option = {
-#         name = nymeria_laamp_events.0002.b
-#         ai_chance = { base = 0 }
-#         add_character_flag = nymeria_story_cycle_ended
-#         custom_tooltip = nymeria_laamp_events0002b_popup
-#     }
-# }
+    option = {
+        name = nymeria_laamp_events.0002.b
+        ai_chance = { base = 0 }
+        add_character_flag = nymeria_story_cycle_ended
+        custom_tooltip = nymeria_laamp_events0002b_popup
+    }
+}
 
-# nymeria_laamp_events.0003 = { # How to Settle Dorne?
-#     hidden = no
-#     type = character_event
-#     title = nymeria_laamp_events.0003.t
-#     desc = nymeria_laamp_events.0003.desc
-#     theme = realm
+nymeria_laamp_events.0003 = { # How to Settle Dorne?
+    hidden = no
+    type = character_event
+    title = nymeria_laamp_events.0003.t
+    desc = nymeria_laamp_events.0003.desc
+    theme = realm
 
-#     left_portrait = {
-#         character = root
-#         animation = thinking
-#     }
+    left_portrait = {
+        character = root
+        animation = thinking
+    }
 
-#     immediate = {
-#     }
+    immediate = {
+    }
 
-#     option = {
-#         name = nymeria_laamp_events.0003.a
-#         custom_tooltip = nymeria_laamp_events.0003.a.tt
-#         ai_chance = {
-#             base = 100
-#         }
+    option = {
+        name = nymeria_laamp_events.0003.a
+        custom_tooltip = nymeria_laamp_events.0003.a.tt
+        ai_chance = {
+            base = 0 # TESTING: forced down so the AI takes conquest (change later to 100 - Kizan)
+        }
 
-#         character:Martell_23 = {
-#             trigger_event = {
-#                 id = nymeria_laamp_events.0004
-#             }
-#         }
-#     }
+        character:Martell_23 = {
+            trigger_event = {
+                id = nymeria_laamp_events.0004
+            }
+        }
+    }
 
-#     option = {
-#         name = nymeria_laamp_events.0003.b
-#         custom_tooltip = nymeria_laamp_events.0003.b.tt
-#         ai_chance = {
-#             base = 0
-#         }
-#     }
-# }
+    option = {
+        name = nymeria_laamp_events.0003.b
+        custom_tooltip = nymeria_laamp_events.0003.b.tt
+        ai_chance = {
+            base = 100 # TESTING: AI always conquers (change later to 0 - Kizan)
+        }
 
-# nymeria_laamp_events.0004 = { # Offer to Martell
-#     hidden = no
-#     type = character_event
-#     title = nymeria_laamp_events.0004.t
-#     desc = nymeria_laamp_events.0004.desc
-#     theme = realm
+        # The Rhoynar take Dorne by the spear. The first war falls on the
+        # Broken Arm and its lord, Santagar. - Kizan
+        title:d_broken_arm.holder = { save_scope_as = broken_arm_holder }
+        start_war = {
+            cb = nymeria_rhoynish_invasion_broken_arm
+            target = scope:broken_arm_holder
+            target_title = title:c_torchwood
+        }
+    }
+}
 
-#     left_portrait = {
-#         character = root
-#         animation = reading
-#     }
+nymeria_laamp_events.0004 = { # Offer to Martell
+    hidden = no
+    type = character_event
+    title = nymeria_laamp_events.0004.t
+    desc = nymeria_laamp_events.0004.desc
+    theme = realm
 
-#     option = {
-#         name = nymeria_laamp_events.0004.a
-#         ai_chance = { base = 100 }
+    left_portrait = {
+        character = root
+        animation = reading
+    }
 
-#         character:Nymeria_1 = {
-#             trigger_event = {
-#                 id = nymeria_laamp_events.0005
-#                 days = 1
-#             }
-#         }
-#     }
+    option = {
+        name = nymeria_laamp_events.0004.a
+        ai_chance = { base = 100 }
 
-#     option = {
-#         name = nymeria_laamp_events.0004.b
-#         ai_chance = { base = 0 }
-#     }
-# }
+        character:Nymeros_1 = {
+            trigger_event = {
+                id = nymeria_laamp_events.0005
+                days = 1
+            }
+        }
+    }
 
-# nymeria_laamp_events.0005 = { # Offer from Mors Martell recieved.
-#     hidden = no
-#     type = character_event
-#     title = nymeria_laamp_events.0005.t
-#     desc = nymeria_laamp_events.0005.desc
-#     theme = realm
+    option = {
+        name = nymeria_laamp_events.0004.b
+        ai_chance = { base = 0 }
+    }
+}
 
-#     left_portrait = {
-#         character = root
-#         animation = reading
-#     }
+nymeria_laamp_events.0005 = { # Offer from Mors Martell recieved.
+    hidden = no
+    type = character_event
+    title = nymeria_laamp_events.0005.t
+    desc = nymeria_laamp_events.0005.desc
+    theme = realm
 
-#     immediate = {
-#     }
+    left_portrait = {
+        character = root
+        animation = reading
+    }
 
-#     option = {
-#         name = nymeria_laamp_events.0005.a
-#         ai_chance = {
-#             base = 100
-#         }
-#     }
-# }
+    immediate = {
+    }
+
+    option = {
+        name = nymeria_laamp_events.0005.a
+        ai_chance = {
+            base = 100
+        }
+    }
+}
+
+# =====================================================================
+# CHAPTER 2 - Dorne answers the Rhoynar (after the Broken Arm war). - Kizan
+# =====================================================================
+
+nymeria_laamp_events.0006 = { # Toland rallies Dorne, offers Martell an alliance
+    type = character_event
+    title = nymeria_laamp_events.0006.t
+    desc = nymeria_laamp_events.0006.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = anger
+    }
+    right_portrait = {
+        character = character:Martell_23
+        animation = personality_rational
+    }
+
+    trigger = {
+        this = character:Toland_200
+        exists = character:Martell_23
+        character:Nymeros_1 = { is_alive = yes }
+    }
+
+    option = { # Send the raven to Sunspear
+        name = nymeria_laamp_events.0006.a
+        ai_chance = { base = 100 }
+        character:Martell_23 = {
+            trigger_event = {
+                id = nymeria_laamp_events.0007
+                days = 2
+            }
+        }
+    }
+
+    option = { # Stand alone against the Rhoynar
+        name = nymeria_laamp_events.0006.b
+        ai_chance = { base = 0 }
+    }
+}
+
+nymeria_laamp_events.0007 = { # Martell weighs Toland's alliance against the Rhoynar
+    type = character_event
+    title = nymeria_laamp_events.0007.t
+    desc = nymeria_laamp_events.0007.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = thinking
+    }
+    right_portrait = {
+        character = character:Toland_200
+        animation = personality_bold
+    }
+
+    trigger = {
+        this = character:Martell_23
+    }
+
+    option = { # Accept - crush the Rhoynar together
+        name = nymeria_laamp_events.0007.a
+        ai_chance = { base = 95 }
+
+        # Toland declares the war; Martell joins as co-attacker. - Kizan
+        character:Toland_200 = {
+            start_war = {
+                cb = nymeria_crush_rhoynar
+                target = character:Nymeros_1
+                target_title = title:c_torchwood
+            }
+            every_character_war = {
+                limit = { using_cb = nymeria_crush_rhoynar }
+                add_attacker = character:Martell_23
+            }
+        }
+    }
+
+    option = { # Decline - let the petty lord drown alone
+        name = nymeria_laamp_events.0007.b
+        ai_chance = { base = 5 }
+
+        # A few days on, Nymeria may take the fight to one of them. The flag marks
+        # the no-alliance path so she can be re-offered the second target. - Kizan
+        character:Nymeros_1 = {
+            add_character_flag = nymeria_route_b_active
+            trigger_event = {
+                id = nymeria_laamp_events.0008
+                days = 5
+            }
+        }
+    }
+}
+
+nymeria_laamp_events.0008 = { # With Dorne divided, Nymeria chooses her next prey
+    type = character_event
+    title = nymeria_laamp_events.0008.t
+    desc = nymeria_laamp_events.0008.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = scheme
+    }
+
+    trigger = {
+        this = character:Nymeros_1
+    }
+
+    option = { # Invade the Tolands of Ghost Hill
+        name = nymeria_laamp_events.0008.a
+        trigger = {
+            exists = character:Toland_200
+            character:Toland_200 = { is_independent_ruler = yes }
+        }
+        character:Toland_200 = { save_scope_as = invade_target }
+        start_war = {
+            cb = nymeria_rhoynish_invasion
+            target = scope:invade_target
+            target_title = scope:invade_target.primary_title
+        }
+    }
+
+    option = { # Invade the Martells of Sunspear
+        name = nymeria_laamp_events.0008.b
+        trigger = {
+            exists = character:Martell_23
+            character:Martell_23 = { is_independent_ruler = yes }
+        }
+        character:Martell_23 = { save_scope_as = invade_target }
+        start_war = {
+            cb = nymeria_rhoynish_invasion
+            target = scope:invade_target
+            target_title = scope:invade_target.primary_title
+        }
+    }
+
+    option = { # Bide your time
+        name = nymeria_laamp_events.0008.c
+    }
+}
+
+# =====================================================================
+# CHAPTER 3 - The Greenblood bends (after Toland & Martell are subdued). - Kizan
+# =====================================================================
+
+nymeria_laamp_events.0009 = { # Nymeria sends letters of dominance up the Greenblood
+    type = character_event
+    title = nymeria_laamp_events.0009.t
+    desc = nymeria_laamp_events.0009.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_bold
+    }
+
+    trigger = {
+        this = character:Nymeros_1
+    }
+
+    immediate = {
+        save_scope_as = rhoynar_queen
+    }
+
+    option = { # Let the spears speak for the ink
+        name = nymeria_laamp_events.0009.a
+
+        # Gather the lord of each Greenblood duchy by TITLE (not a hardcoded ID).
+        # An empty duchy is skipped; the list is a set, so a lord who holds two
+        # of the three duchies is only summoned once. - Kizan
+        if = {
+            limit = {
+                exists = title:d_godsgrace.holder
+                title:d_godsgrace.holder = { is_independent_ruler = yes }
+            }
+            title:d_godsgrace.holder = { add_to_temporary_list = greenblood_lords }
+        }
+        if = {
+            limit = {
+                exists = title:d_salt_shore.holder
+                title:d_salt_shore.holder = { is_independent_ruler = yes }
+            }
+            title:d_salt_shore.holder = { add_to_temporary_list = greenblood_lords }
+        }
+        if = {
+            limit = {
+                exists = title:d_lemonwood.holder
+                title:d_lemonwood.holder = { is_independent_ruler = yes }
+            }
+            title:d_lemonwood.holder = { add_to_temporary_list = greenblood_lords }
+        }
+        every_in_list = {
+            list = greenblood_lords
+            trigger_event = { id = nymeria_laamp_events.0010 days = 2 }
+        }
+    }
+}
+
+nymeria_laamp_events.0010 = { # A Greenblood lord answers the Rhoynar's letter
+    type = character_event
+    title = nymeria_laamp_events.0010.t
+    desc = nymeria_laamp_events.0010.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = anger
+    }
+    right_portrait = {
+        character = scope:rhoynar_queen
+        animation = personality_bold
+    }
+
+    option = { # Bend the knee to the Rhoynar
+        name = nymeria_laamp_events.0010.a
+        # A crowned lord will never bow - this option is barred to kings. - Kizan
+        trigger = {
+            NOT = { any_held_title = { tier = tier_kingdom } }
+        }
+        ai_chance = { base = 50 }
+
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = greenblood_fealty
+        }
+        root = {
+            change_liege = {
+                liege = scope:rhoynar_queen
+                change = scope:greenblood_fealty
+            }
+        }
+        resolve_title_and_vassal_change = scope:greenblood_fealty
+    }
+
+    option = { # Defy the spears
+        name = nymeria_laamp_events.0010.b
+        ai_chance = { base = 50 }
+
+        # Nymeria invades - the CB breaks the lord's crown first if he wears one. - Kizan
+        scope:rhoynar_queen = {
+            start_war = {
+                cb = nymeria_rhoynish_invasion
+                target = root
+                target_title = root.primary_title
+            }
+        }
+    }
+}
+
 # nymeria_laamp_events.0001 = {
 #     hidden = yes
 #     type = character_event

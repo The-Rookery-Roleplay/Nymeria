@@ -194,13 +194,21 @@ offer_vassalization_interaction = {
 
 	ai_accept = {
 		base = -50
-		modifier = { # Nymeria: Old Dornish refuse a non-Old-Dornish liege
+		modifier = { # Nymeria: Old Dornish refuse vassalage - always to foreigners, and to anyone-but-the-Emperor when historic is on
 			desc = nymeria_old_dornish_vassalage_refusal_tt
 			trigger = {
 				scope:recipient = { culture = culture:old_dornish }
-				NOT = { scope:actor = { culture = culture:old_dornish } }
+				# The Emperor of Dorne is always accepted.
+				NOT = { scope:actor = { has_title = title:e_dorne } }
+				OR = {
+					# A non-Old-Dornish liege is refused no matter the game rules. - Kizan
+					NOT = { scope:actor = { culture = culture:old_dornish } }
+					# When historic is on, even a fellow Old Dornish lord is refused. - Kizan
+					has_game_rule = nymeria_dorne_story_on
+				}
 			}
-			add = -1000
+			# Huge so it always dominates the military-strength / tier bonuses below.
+			add = -100000
 		}
 		modifier = { # Nymeria: Old Dornish rally to the Emperor of Dorne
 			desc = nymeria_old_dornish_emperor_vassalage_tt

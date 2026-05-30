@@ -8,3 +8,33 @@
  nymeria_unify_dorne_cb_white_peace_desc:0 "[defender.GetShortUIName] keeps their titles and remains independent."
  nymeria_unify_dorne_cb_defeat_desc:0 "[attacker.GetShortUIName] got humbled and bent the knee, swearing fealty to [defender.GetShortUIName]."
  nymeria_unify_dorne_destroy_tt:0 "The defeated Dornish crown is broken and cast down"
+
+ # --- Rhoynish Invasion / Subjugation (Settle Dorne conquest path) ---
+ NYMERIA_NY_SAR:0 "Ny Sar"
+ NYMERIA_NEW_NY_SAR:0 "New Ny Sar"
+ NYMERIA_RHOYNAR_KINGDOM:0 "the Rhoynar"
+ NYMERIA_RHOYNAR_KINGDOM_ADJ:0 "Rhoynish"
+
+ nymeria_rhoynish_invasion:0 "Rhoynish Invasion"
+ nymeria_rhoynish_invasion_break_crown_tt:0 "If [defender.GetShortUIName] wears a crown, it is broken and cast down before they kneel"
+ WAR_NAME_NYMERIA_RHOYNISH_INVASION:0 "Rhoynish Invasion of [DEFENDER.GetPrimaryTitle.GetNameNoTier]"
+ nymeria_rhoynish_invasion_victory_desc:0 "The Rhoynar prevail. Every county put to the spear takes up the ways of Mother Rhoyne, and [defender.GetShortUIName] bends the knee."
+ nymeria_rhoynish_invasion_defeat_desc:0 "The invasion is thrown back into the sea. [defender.GetShortUIName] holds, and the Rhoynar must lick their wounds."
+
+ nymeria_rhoynish_found_kingdom_tt:0 "#bold [attacker.GetShortUINameNoTooltip]#! takes up a crown and founds the #bold Kingdom of the Rhoynar#!"
+ nymeria_rhoynish_broken_arm_destroy_tt:0 "The #bold High Lordship of the Broken Arm#! is broken and cast down"
+ nymeria_rhoynish_invasion_broken_arm:0 "Rhoynish Invasion of the Broken Arm"
+ WAR_NAME_NYMERIA_RHOYNISH_INVASION_BROKEN_ARM:0 "Rhoynish Invasion of the Broken Arm"
+ nymeria_rhoynish_invasion_broken_arm_victory_desc:0 "The Broken Arm is broken anew. Torchwood falls and rises again as #bold Ny Sar#!, Rhoynish in blood and faith and the new seat of [attacker.GetShortUIName]. [defender.GetShortUIName] bends the knee."
+ nymeria_rhoynish_invasion_broken_arm_defeat_desc:0 "The spears of the Broken Arm hold firm. [attacker.GetShortUIName] is driven back from Torchwood."
+
+ nymeria_rhoynish_subjugation:0 "Rhoynish Subjugation"
+ WAR_NAME_NYMERIA_RHOYNISH_SUBJUGATION:0 "Rhoynish Subjugation of [DEFENDER.GetShortUIName]"
+ nymeria_rhoynish_subjugation_victory_desc:0 "[defender.GetShortUIName] bows to the Rhoynar, keeping their lands as [attacker.GetShortUINamePossessive] vassal."
+ nymeria_rhoynish_subjugation_white_peace_desc:0 "[defender.GetShortUIName] keeps their titles and remains free of [attacker.GetShortUINamePossessive] rule."
+ nymeria_rhoynish_subjugation_defeat_desc:0 "[attacker.GetShortUIName] fails to bring [defender.GetShortUIName] to heel."
+
+ nymeria_crush_rhoynar:0 "Crush the Rhoynar"
+ WAR_NAME_NYMERIA_CRUSH_RHOYNAR:0 "Dornish War to Crush the Rhoynar"
+ nymeria_crush_rhoynar_victory_desc:0 "The Rhoynar are thrown back into the sea. Ny Sar is #bold Torchwood#! once more and passes to [defender.GetShortUIName], while the conquered lords are parcelled out among the victors."
+ nymeria_crush_rhoynar_defeat_desc:0 "Dorne's lords have failed. [attacker.GetShortUIName] and their allies kneel before the Rhoynar, vassals of [defender.GetShortUIName]."

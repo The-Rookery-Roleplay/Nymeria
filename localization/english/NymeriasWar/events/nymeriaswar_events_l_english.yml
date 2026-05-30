@@ -8,9 +8,9 @@
  nymeria_dorne_events.0002.desc:0 "A messenger kneels in the hall of Blackmont. \"Your Grace, #bold Nymeria of the Rhoynar#! has landed in eastern Dorne. Thousands follow her.\"\n\nThe news does not surprise you. The dark gods you serve had already told you it would come.\n\nForeign queens, foreign gods, foreign banners, all of them reaching for your sands. But the Vulture King has never ruled alone, and his patrons are not done with Dorne yet.\n\nYou turn from the messenger and speak to the empty air beyond the walls."
  nymeria_dorne_events.0002.a:0 "\"Oh dark gods of the East... the Vulture King needs you.\""
 
- nymeria_dorne_events.0003.t:0 "Hello World"
- nymeria_dorne_events.0003.desc:0 "Hello World"
- nymeria_dorne_events.0003.a:0 "Hello World"
+ nymeria_dorne_events.0003.t:0 "King Vorian, The Sword of the Morning"
+ nymeria_dorne_events.0003.desc:0 "The training yard is loud with cheering and the clink of wagered coin. Your captain lasts three strikes before his sword skips across the stones. He laughs, raises his hands, and the men roar. No one in #bold Dorne#! has lasted longer against the #bold Sword of the Morning#!.\n\nThen a rider staggers in, grey with road-dust, and goes to one knee. #bold \"My king.\"#!\n\nYou read the scroll once. Twice. A woman called #bold Nymeria#! has beached her ships on the eastern shore with an army of #bold Rhoynar#! at her back. Conquest, some will whisper. Salvation, others. You care for neither.\n\nYou tighten your gauntlets. The yard falls quiet.\n\nPeace was beginning to bore you anyway."
+ nymeria_dorne_events.0003.a:0 "Finally, a worthy opponent!"
 
  nymeria_dorne_events.0004.t:0 "King Albin Manwoody"
  nymeria_dorne_events.0004.desc:0 "You stand over your war table at Kingsgrave. Riders speak of strangers upon Dorne's eastern shores, the #bold Rhoynar#!, led by a warrior queen named #bold Nymeria#!.\n\nTo most, it is an invasion. To you, it is an insult.\n\n\"So the sea dares spit out kings into my mountains,\" you mutter. Your messenger, #bold Garry#!, swallows hard and goes on: Nymeria is uniting the Dornish lords, speaking of refuge and a new order.\n\n\"Lies dressed as hope,\" you spit.\n\nThe Red Mountains, your Red Mountains, no longer seem as absolute as they once did. For a moment, you hesitate. Then the rage rises, and it must have somewhere to go.\n\nYou round on Garry, and your hands find his throat."
@@ -20,9 +20,9 @@
  nymeria_dorne_events.0005.desc:0 "Hello World"
  nymeria_dorne_events.0005.a:0 "Hello World"
 
- nymeria_dorne_events.0006.t:0 "Hello World"
- nymeria_dorne_events.0006.desc:0 "Hello World"
- nymeria_dorne_events.0006.a:0 "Hello World"
+ nymeria_dorne_events.0006.t:0 "King Lucifer Dryland, Last of His Ilk"
+ nymeria_dorne_events.0006.desc:0 "From the walls of the #bold Hellholt#! the Brimstone stretches out grey and burning, every dune and oasis and caravan road yours by right. A cruel kingdom, but yours.\n\nAnd no son to leave it to. The servants don't speak of it. Your bannermen don't ask. You are the last Dryland, and the years run faster than they used to.\n\nA messenger is brought in, half-dead from the saddle. News from the eastern coast: a woman named #bold Nymeria#! has landed with thousands of #bold Rhoynar#! behind her.\n\nLesser kings will hear a threat. You hear chaos, and chaos is a ladder. Old rivalries will reopen. Secure men will turn desperate, and desperate men are easy to steer.\n\nFriend or foe, there's no need to decide yet. Let the others bleed first."
+ nymeria_dorne_events.0006.a:0 "Every crisis is an opportunity waiting to be seized."
 
  nymeria_dorne_events.0007.t:0 "Hello World"
  nymeria_dorne_events.0007.desc:0 "Hello World"
@@ -58,6 +58,31 @@
  nymeria_laamp_events.0005.desc:0 "A letter has returned from #bold Mors Martell#!, lord among the Greenblood.\n\nHe offers the Rhoynar a place to settle in #bold the Mouth of the Greenblood#!, where the Greenblood meets the Summer Sea. In exchange, he asks for your support in the struggles of Dorne.\n\nYet his proposal carries one final condition, that you bind your fates together in marriage."
 
  nymeria_laamp_events.0005.a:0 "A tempting offer."
+
+ nymeria_laamp_events.0006.t:0 "A Crown in the Sand"
+ nymeria_laamp_events.0006.desc:0 "Word comes up the coast like a grass fire. A Rhoynish woman has landed, broken the #bold Broken Arm#!, and set a crown upon her own head. Torchwood flies foreign colours now, and calls itself #bold Ny Sar#!.\n\nGhost Hill will not stand alone against the spears of the Rhoynar. But #bold Mors Martell#! of the Greenblood commands swords enough to drown them. Pride is a luxury for the dead, and you would rather kneel beside Martell than burn before this #bold Princess#!.\n\nLet the raven fly to [GetTitleByKey('c_sunspear').GetNameNoTier]. Together, Dorne can cast these exiles back into the sea."
+ nymeria_laamp_events.0006.a:0 "Send the raven to Mors Martell."
+ nymeria_laamp_events.0006.b:0 "No. Ghost Hill stands alone."
+
+ nymeria_laamp_events.0007.t:0 "Ghost Hill's Raven"
+ nymeria_laamp_events.0007.desc:0 "A raven from #bold Lord Toland#! of Ghost Hill. He writes of the Rhoynar woman crowned in the ashes of the Broken Arm, and begs an alliance to throw her back into the sea before her roots take hold.\n\nThe Rhoynar are strong, and growing stronger. Crush them now, together, and Dorne is safe. Refuse, and Toland may well drown alone, leaving you to face the #bold Princess#! when her spears are sharper still."
+ nymeria_laamp_events.0007.a:0 "Bind our swords. We crush the Rhoynar together."
+ nymeria_laamp_events.0007.b:0 "Ghost Hill can drown on its own."
+
+ nymeria_laamp_events.0008.t:0 "Dorne Divided"
+ nymeria_laamp_events.0008.desc:0 "#bold Mors Martell#! has turned his back on Ghost Hill. The lords of Dorne will not march as one against you, and a realm divided is a realm to be devoured piece by piece.\n\nThe spears of the Rhoynar are rested and the sands lie open. The Tolands of #bold Ghost Hill#! or the Martells of #bold [GetTitleByKey('c_sunspear').GetNameNoTier]#!, one of them will be the next to kneel."
+ nymeria_laamp_events.0008.a:0 "March on the Tolands of Ghost Hill."
+ nymeria_laamp_events.0008.b:0 "March on the Martells of [GetTitleByKey('c_sunspear').GetNameNoTier]."
+ nymeria_laamp_events.0008.c:0 "Not yet. Let them wonder."
+
+ nymeria_laamp_events.0009.t:0 "Letters of Dominance"
+ nymeria_laamp_events.0009.desc:0 "Ghost Hill and [GetTitleByKey('c_sunspear').GetNameNoTier] have bent the knee, and word of it runs up the #bold Greenblood#! faster than any ship. The river lords, #bold Allyrion#! of Godsgrace, #bold Gargalen#! of Salt Shore, and #bold Dalt#! of Lemonwood, will have heard already.\n\nLet them hear it plainly, then. You put quill to parchment and write the same words to each: kneel, and keep your halls under the Rhoynar; refuse, and the spears will come. There is no third path."
+ nymeria_laamp_events.0009.a:0 "Send the letters up the river."
+
+ nymeria_laamp_events.0010.t:0 "A Letter from the Rhoynar"
+ nymeria_laamp_events.0010.desc:0 "A rider in foreign colours lays a sealed letter on your table. The words within are courteous, and they are not a request. #bold [rhoynar_queen.GetShortUINameNoTooltip]#! offers you a place at her side, your duchy intact, your hall your own, so long as you call her your liege.\n\nRefuse, and she promises the same spears that broke the Broken Arm and humbled [GetTitleByKey('c_sunspear').GetNameNoTier]. The ink is still wet, and the choice is yours."
+ nymeria_laamp_events.0010.a:0 "Better a living vassal than a dead lord. I kneel."
+ nymeria_laamp_events.0010.b:0 "Dorne is not hers to demand. Let her come."
 
 
 
