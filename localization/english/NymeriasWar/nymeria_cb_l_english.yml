@@ -1,9 +1,10 @@
 ﻿l_english:
 
+ nymeria_unify_dorne_cb:0 "Unify Dorne"
  NYMERIA_UNIFY_DORNE_CB_NAME:0 "Unify Dorne against [DEFENDER.GetShortUIName]"
  WAR_NAME_NYMERIA_UNIFY_DORNE:0 "[ConcatIfNeitherEmpty('$ORDER|q$', ' ')][ATTACKER.GetPrimaryTitle.GetPrefix]-[DEFENDER.GetPrimaryTitle.GetAdjective] War for Dornish Unity"
  WAR_NAME_NYMERIA_UNIFY_DORNE_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective] War for Dornish Unity"
  nymeria_unify_dorne_cb_victory_desc:0 "[defender.GetShortUIName] bends the knee. Any Dornish crown they held is broken, but they keep their lands as [attacker.GetShortUINamePossessive] vassal."
  nymeria_unify_dorne_cb_white_peace_desc:0 "[defender.GetShortUIName] keeps their titles and remains independent."
- nymeria_unify_dorne_cb_defeat_desc:0 "[defender.GetShortUIName] remains free of [attacker.GetShortUINamePossessive] rule."
+ nymeria_unify_dorne_cb_defeat_desc:0 "[attacker.GetShortUIName] got humbled and bent the knee, swearing fealty to [defender.GetShortUIName]."
  nymeria_unify_dorne_destroy_tt:0 "The defeated Dornish crown is broken and cast down"

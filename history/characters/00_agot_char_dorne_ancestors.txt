@@ -41240,6 +41240,7 @@ Blackmont_10 = {
 		birth = yes
 		make_trait_inactive = scripted_appearance
 		add_character_flag = canon_status_canon
+		add_character_flag = vulture_king
 	}
 	7278.1.1 = {
 		trait = knight
@@ -45141,6 +45142,18 @@ Manwoody_9 = {
 		}
 	}
 	7314.1.1 = { death = yes }
+}
+nymeria_garry = {
+	name = Garry # Courtier and messenger of Albin Manwoody
+
+	religion = fots_seven
+	culture = old_dornish
+
+	7272.1.1 = { birth = yes }
+	7290.1.1 = {
+		employer = Manwoody_9 # Albin Manwoody
+		give_nickname = nickname_the_messenger
+	}
 }
 Manwoody_106 = {
 	name = Edwyd

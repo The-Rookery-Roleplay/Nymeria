@@ -7,3 +7,10 @@
  nymeria_unify_dorne_decision_confirm:0 "Unify Dorne"
 
  nickname_the_unifier:0 "The Unifier"
+
+ nymeria_self_proclaim_kingdom_decision:0 "Proclaim Yourself King"
+ nymeria_self_proclaim_kingdom_decision_desc:0 "Why should the great houses hold all the crowns? Our duchy is ours by right, and our sword is as sharp as any king's. Let us take up a crown of our own and proclaim a kingdom in our own name, true to our #bold Andal roots#!.\n\nWe shall be a #bold King#! in name as well as deed, and bend the knee to no one."
+ nymeria_self_proclaim_kingdom_decision_tooltip:0 "Create a titular #bold Kingdom#! named after your duchy and crown yourself its King. The realm's de jure structure is unchanged, but all of #bold Dorne#! will hear of it."
+ nymeria_self_proclaim_kingdom_decision_confirm:0 "Take Up the Crown"
+ nymeria_self_proclaim_kingdom_decision_effect_tt:0 "Create a titular #bold Kingdom#! named after your duchy, crown yourself its #bold King#!, and let all of #bold Dorne#! hear of it. The realm's de jure structure is unchanged."
+ nymeria_self_proclaim_kingdom_decision_cb_tt:0 "Unlocks the [GetCasusBelliType('nymeria_unify_dorne_cb').GetName] Casus Belli"

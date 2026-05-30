@@ -4,6 +4,34 @@
  nymeria_dorne_events.0001.desc:0 "They call you the wisest man in Westeros, and you have used that wit to make House Fowler matter. Even your rivals come to Skyreach for counsel.\n\nWit cannot stop time, though.\n\nA messenger kneels before your throne with news from the east: a woman called #bold Nymeria of the Rhoynar#! has landed on Dorne's shores, and a host beyond counting follows her.\n\nYou understand at once what this could mean for Dorne.\n\nThen a sharp ache spreads across your back. You grip the armrest and wait for it to pass. It takes its time.\n\nThe messenger is still talking. You are no longer listening.\n\n#italic You are not the man you once were.#!"
  nymeria_dorne_events.0001.a:0 "\"I wish I'd live forever...\""
 
+ nymeria_dorne_events.0002.t:0 "Benedict Blackmont, the Vulture King"
+ nymeria_dorne_events.0002.desc:0 "A messenger kneels in the hall of Blackmont. \"Your Grace, #bold Nymeria of the Rhoynar#! has landed in eastern Dorne. Thousands follow her.\"\n\nThe news does not surprise you. The dark gods you serve had already told you it would come.\n\nForeign queens, foreign gods, foreign banners, all of them reaching for your sands. But the Vulture King has never ruled alone, and his patrons are not done with Dorne yet.\n\nYou turn from the messenger and speak to the empty air beyond the walls."
+ nymeria_dorne_events.0002.a:0 "\"Oh dark gods of the East... the Vulture King needs you.\""
+
+ nymeria_dorne_events.0003.t:0 "Hello World"
+ nymeria_dorne_events.0003.desc:0 "Hello World"
+ nymeria_dorne_events.0003.a:0 "Hello World"
+
+ nymeria_dorne_events.0004.t:0 "King Albin Manwoody"
+ nymeria_dorne_events.0004.desc:0 "You stand over your war table at Kingsgrave. Riders speak of strangers upon Dorne's eastern shores, the #bold Rhoynar#!, led by a warrior queen named #bold Nymeria#!.\n\nTo most, it is an invasion. To you, it is an insult.\n\n\"So the sea dares spit out kings into my mountains,\" you mutter. Your messenger, #bold Garry#!, swallows hard and goes on: Nymeria is uniting the Dornish lords, speaking of refuge and a new order.\n\n\"Lies dressed as hope,\" you spit.\n\nThe Red Mountains, your Red Mountains, no longer seem as absolute as they once did. For a moment, you hesitate. Then the rage rises, and it must have somewhere to go.\n\nYou round on Garry, and your hands find his throat."
+ nymeria_dorne_events.0004.a:0 "\"Kingsgrave does not bend. It breaks those who try.\""
+
+ nymeria_dorne_events.0005.t:0 "Hello World"
+ nymeria_dorne_events.0005.desc:0 "Hello World"
+ nymeria_dorne_events.0005.a:0 "Hello World"
+
+ nymeria_dorne_events.0006.t:0 "Hello World"
+ nymeria_dorne_events.0006.desc:0 "Hello World"
+ nymeria_dorne_events.0006.a:0 "Hello World"
+
+ nymeria_dorne_events.0007.t:0 "Hello World"
+ nymeria_dorne_events.0007.desc:0 "Hello World"
+ nymeria_dorne_events.0007.a:0 "Hello World"
+
+ nymeria_dorne_events.0008.opening:0 "To the lords and kings of #bold Dorne#!,"
+ nymeria_dorne_events.0008.desc:0 "Let it be known across the sands that I, #bold [new_king.GetShortUINameNoTooltip]#!, have this day taken up a crown of my own.\n\nI am a #bold King#! now, in name as in deed, and the equal of any who would call themselves my better. I shall bend the knee to no one.\n\nLet those who doubt it come and find my spears waiting."
+ nymeria_dorne_events.0008.a:0 "Another crown in the sand."
+
  nymeria_laamp_events.0002.t:0 "The Shores of Dorne"
  nymeria_laamp_events.0002.desc:0 "At last, our ships have reached the shores of a distant land known as #bold Dorne#!. Before us stretches a harsh and unforgiving country, its deserts vast, its mountains jagged, and its people hardened by the unforgiving sun.\n\nYet this land is far from united. The whispers of sailors and scouts alike speak of countless #bold lords and petty kings#!, each warring against the other for dominion over this parched realm.\n\nWhere others see a fractured and hostile land, I see opportunity. A land divided is a land that can be claimed.\n\nPerhaps the time has come to make this place the new home of the #bold Rhoynar#!."
  nymeria_laamp_events.0002.a:0 "Dorne shall become our home."

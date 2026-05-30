@@ -18,6 +18,9 @@ nymeria_unify_dorne_cb = {
         scope:attacker = {
             culture = culture:old_dornish
             is_independent_ruler = yes
+            # Only a crowned king (or higher) may wage the war for Dornish unity -
+            # a petty duke must first proclaim himself King to qualify.
+            highest_held_title_tier >= tier_kingdom
             capital_county = {
                 target_is_de_jure_liege_or_above = title:e_dorne
             }
@@ -168,6 +171,60 @@ nymeria_unify_dorne_cb = {
                 multiply = -1.0
             }
         }
+
+        # The war turns around - mirror of the victory outcome. The humbled
+        # attacker's Dorne crown(s) are stripped to the defender, the attacker
+        # (now crownless) swears fealty, and the vacant crowns are destroyed.
+
+        # Collect the attacker's Dorne kingdom-tier titles
+        scope:attacker = {
+            every_held_title = {
+                limit = {
+                    tier = tier_kingdom
+                    target_is_de_jure_liege_or_above = title:e_dorne
+                }
+                add_to_temporary_list = dorne_defeat_crowns
+            }
+        }
+
+        # Step 1: strip those crowns onto the defender
+        create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = unify_defeat_crown_change
+            add_claim_on_loss = no
+        }
+        every_in_list = {
+            list = dorne_defeat_crowns
+            change_title_holder = {
+                holder = scope:defender
+                change = scope:unify_defeat_crown_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:unify_defeat_crown_change
+
+        # Step 2: the now-crownless attacker swears fealty, keeping all remaining
+        # titles and sub-vassals
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = unify_defeat_fealty_change
+        }
+        scope:attacker = {
+            change_liege = {
+                liege = scope:defender
+                change = scope:unify_defeat_fealty_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:unify_defeat_fealty_change
+
+        # Step 3: destroy the now-vacant crowns
+        custom_tooltip = nymeria_unify_dorne_destroy_tt
+        every_in_list = {
+            list = dorne_defeat_crowns
+            scope:defender = {
+                destroy_title = prev
+            }
+        }
+
         add_truce_attacker_defeat_effect = yes
     }
 

@@ -1,6 +1,11 @@
-﻿# Nymeria's War override of AGOT offer_vassalization_interaction.
-# Only change vs AGOT: added Old Dornish vassalage refusal modifier in ai_accept.
-# If AGOT updates this interaction, re-copy from 00_character_interactions.txt and re-add that modifier.
+﻿###################################################################################
+# !!! NYMERIA OVERRIDE OF AGOT FILE — RE-SYNC ON AGOT UPDATE !!!
+# Source: AGOT common/character_interactions/00_character_interactions.txt
+# Only changes vs AGOT: in offer_vassalization_interaction ai_accept, added the
+#   Old Dornish vassalage refusal modifier and the Emperor-of-Dorne accept bonus.
+#   Search "# Nymeria:" to find them.
+# If AGOT updates this interaction, re-copy it and re-apply those modifiers.
+###################################################################################
 
 offer_vassalization_interaction = {
 	category = interaction_category_vassal

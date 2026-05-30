@@ -13,6 +13,24 @@ nymeria_dorne_test_event = {
             character:Fowler_11 = {
                 trigger_event = nymeria_dorne_events.0001
             }
+            character:Blackmont_10 = {
+                trigger_event = nymeria_dorne_events.0002
+            }
+            character:Dayne_17 = {
+                trigger_event = nymeria_dorne_events.0003
+            }
+            character:Manwoody_9 = {
+                trigger_event = nymeria_dorne_events.0004
+            }
+            character:Yronwood_16 = {
+                trigger_event = nymeria_dorne_events.0005
+            }
+            character:Dryland_1 = {
+                trigger_event = nymeria_dorne_events.0006
+            }
+            character:Martell_23 = {
+                trigger_event = nymeria_dorne_events.0007
+            }
         }
     }
 }

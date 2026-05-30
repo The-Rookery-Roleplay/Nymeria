@@ -1,4 +1,5 @@
 ﻿nickname_the_unifier = {}
+nickname_the_messenger = {}
 nickname_wyl_200 = { is_bad = yes }
 nickname_tyrell_200 = {}
 nickname_nymeros_1 = {}
