@@ -14,7 +14,7 @@ nymeria_unify_dorne_cb = {
     defender_score_from_battles_scale = 150
 
     allowed_for_character = {
-        # has_game_rule = nymeria_dorne_story_off # DEBUG: temporarily disabled so the CB is always available
+        # has_game_rule = nymeria_dorne_story_off # DEBUG: temporarily disabled so the CB is always available - Kizan
         scope:attacker = {
             culture = culture:old_dornish
             is_independent_ruler = yes
