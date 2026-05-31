@@ -209,3 +209,18 @@ nymeria_dorne_events.0009 = { # Hidden - Lord Harmen Uller takes no wife
         }
     }
 }
+
+nymeria_dorne_events.0010 = { # Hidden - keeps Lord Santagar from crowning himself king
+    hidden = yes
+    type = character_event
+
+    trigger = {
+        this = character:Santagar_200
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    immediate = {
+        # So he stays a duke for the Broken Arm war, not a king. - Kizan
+        add_character_flag = nymeria_cannot_proclaim_kingdom
+    }
+}

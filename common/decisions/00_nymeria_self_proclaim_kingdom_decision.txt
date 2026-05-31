@@ -23,11 +23,21 @@ nymeria_self_proclaim_kingdom_decision = {
 	is_shown = {
 		highest_held_title_tier = tier_duchy
 		is_independent_ruler = yes
+		# Must actually rule land inside Dorne. Stops a wandering landless adventurer who
+		# holds only a titular duchy, or some lord from beyond the red mountains, from
+		# crowning himself a king of Dorne. - Kizan
+		is_landed = yes
+		capital_county = { target_is_de_jure_liege_or_above = title:e_dorne }
+		# Santagar is flagged at game start (story on) so he stays a duke for the
+		# Broken Arm war instead of crowning himself. - Kizan
+		NOT = { has_character_flag = nymeria_cannot_proclaim_kingdom }
 	}
 
 	is_valid = {
 		highest_held_title_tier = tier_duchy
 		is_independent_ruler = yes
+		is_landed = yes
+		capital_county = { target_is_de_jure_liege_or_above = title:e_dorne }
 		is_imprisoned = no
 	}
 

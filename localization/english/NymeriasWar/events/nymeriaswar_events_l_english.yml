@@ -41,10 +41,10 @@
 
  nymeria_laamp_events.0003.t:0 "How Shall Dorne Be Claimed?"
  nymeria_laamp_events.0003.desc:0 "If Dorne is to become the home of the #bold Rhoynar#!, then the path must now be chosen. Its lords are divided, its petty kings proud, and its lands as hostile as its politics.\n\nI may extend open hands and honeyed words to the rulers of this land, or I may seize Dorne through blood and conquest."
- nymeria_laamp_events.0003.a:0 "Send letters to the local lords."
- nymeria_laamp_events.0003.b:0 "We shall conquer Dorne by force."
- nymeria_laamp_events.0003.a.tt:0 "You will attempt to approach the local lords through #bold diplomacy#!."
- nymeria_laamp_events.0003.b.tt:0 "You will seek to make Dorne your home through #bold conquest#!."
+ nymeria_laamp_events.0003.a:0 "#P ［Canon］#!Send letters to the local lords."
+ nymeria_laamp_events.0003.b:0 "#N ［Non Canon］#!We shall conquer Dorne by force."
+ nymeria_laamp_events.0003.a.tt:0 "#bold Not yet implemented, no effects!#!"
+ nymeria_laamp_events.0003.b.tt:0 "You will make Dorne your home through #bold conquest#!, the road against the Andals. In time you will work toward the total #bold Rhoynification#! of Dorne, casting out the Andal lords or bending them to the faith of Mother Rhoyne and the ways of the Rhoynar."
 
   #Mors receives Nymeria's letter
  nymeria_laamp_events.0004.t:0 "A Letter From Nymeria"
@@ -83,6 +83,14 @@
  nymeria_laamp_events.0010.desc:0 "A rider in foreign colours lays a sealed letter on your table. The words within are courteous, and they are not a request. #bold [rhoynar_queen.GetShortUINameNoTooltip]#! offers you a place at her side, your duchy intact, your hall your own, so long as you call her your liege.\n\nRefuse, and she promises the same spears that broke the Broken Arm and humbled [GetTitleByKey('c_sunspear').GetNameNoTier]. The ink is still wet, and the choice is yours."
  nymeria_laamp_events.0010.a:0 "Better a living vassal than a dead lord. I kneel."
  nymeria_laamp_events.0010.b:0 "Dorne is not hers to demand. Let her come."
+
+ nymeria_laamp_events.0011.t:0 "The Greenblood Made Whole"
+ nymeria_laamp_events.0011.desc:0 "From the mouth of the river to the Sea of Dorne, the Greenblood is hers. Godsgrace, Salt Shore and Lemonwood have all bent the knee, and the orphans of the Rhoyne look to her as one of their own.\n\nThe hasty crown Nymeria forged in the heat of conquest has served its purpose. Now she sets it aside and takes up the ancient crown of the Greenblood itself, and gives it a new name fit for her people: the #bold Kingdom of the Rhoynar#!. It carries the Greenblood's own colours still."
+ nymeria_laamp_events.0011.a:0 "Rise, Kingdom of the Rhoynar"
+
+ nymeria_laamp_events.0012.t:0 "The Greenblood Defiled"
+ nymeria_laamp_events.0012.desc:0 "Ill news from the river. [greenblood_reclaim_rival.GetTitledFirstName] has seized [greenblood_reclaim_duchy.GetName] before my letters could call its lord to my side, and now a foreign crown sits upon the sacred Greenblood. The Rhoyne will not be made whole while a thief holds its banks. My spears will take it back, and the river with it."
+ nymeria_laamp_events.0012.a:0 "The river will be made whole"
 
 
 
@@ -202,11 +210,10 @@
  nymeria_stormlands.0053.a: "The Reach has learned its place."
 
  nymeria_stormlands.0054.t: "A Declaration from Storm's End"
- nymeria_stormlands.0054.desc: "A raven bearing the black stag seal of House Durrandon arrives at court. The message within is brief and to the point:\n\n\"I, Durran of House Durrandon, Storm King of the Stormlands, do hereby declare that the lands of Blueburn, Tumbleton and Heartland Heights are rightfully mine by conquest and claim. Let no lord contest what the Stag has taken. The borderlands belong to Storm's End, now and forever.\"\n\n#weak — Durran Durrandon, the Bloody Stag, Storm King of the Stormlands#!"
+ nymeria_stormlands.0054.desc: "A raven bearing the black stag seal of House Durrandon arrives at court. The message within is brief and to the point:\n\n\"I, Durran of House Durrandon, Storm King of the Stormlands, do hereby declare that the lands of Blueburn, Tumbleton and Heartland Heights are rightfully mine by conquest and claim. Let no lord contest what the Stag has taken. The borderlands belong to Storm's End, now and forever.\"\n\n#weak Durran Durrandon, the Bloody Stag, Storm King of the Stormlands#!"
  nymeria_stormlands.0054.a: "Noted."
 
  nymeria_hook_conquest_invalidated_desc: "The war for the Hook has been invalidated."
- nymeria_blackwater_conquest_white_peace_desc: "The war for the Blackwater ends in a stalemate."
  nymeria_blackwater_conquest_invalidated_desc: "The war for the Blackwater has been invalidated."
  nymeria_duskwashes_conquest_invalidated_desc: "The war for Duskendale has been invalidated."
 

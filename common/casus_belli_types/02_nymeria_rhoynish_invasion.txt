@@ -44,37 +44,10 @@ nymeria_rhoynish_invasion = {
         # Every county the attacker sieged is Rhoynishized. - Kizan
         nymeria_rhoynish_convert_sieged_counties_effect = yes
 
-        # If the defender already wears a crown, break it first - a Queen cannot
-        # take a King as a vassal, so we strip him down to a Duke first. - Kizan
-        if = {
-            limit = { scope:defender = { any_held_title = { tier = tier_kingdom } } }
-            custom_tooltip = nymeria_rhoynish_invasion_break_crown_tt
-            hidden_effect = {
-                scope:defender = {
-                    every_held_title = {
-                        limit = { tier = tier_kingdom }
-                        add_to_temporary_list = invasion_crowns_to_destroy
-                    }
-                }
-                every_in_list = {
-                    list = invasion_crowns_to_destroy
-                    scope:defender = { destroy_title = prev }
-                }
-            }
-        }
-
-        # The defender bends the knee.
-        create_title_and_vassal_change = {
-            type = swear_fealty
-            save_scope_as = rhoynish_fealty_change
-        }
-        scope:defender = {
-            change_liege = {
-                liege = scope:attacker
-                change = scope:rhoynish_fealty_change
-            }
-        }
-        resolve_title_and_vassal_change = scope:rhoynish_fealty_change
+        # Subjugate the defender. King vs king borrows the Unify Dorne logic so his whole
+        # realm comes across, not just his person (see the effect). A duke or count simply
+        # bends the knee. - Kizan
+        nymeria_invasion_subjugate_defender_effect = yes
 
         # Route B: if Nymeria is still working through Toland & Martell, re-offer
         # the remaining target a few days on. - Kizan
@@ -260,7 +233,7 @@ nymeria_rhoynish_invasion_broken_arm = {
                     create_dynamic_title = {
                         tier = kingdom
                         name = NYMERIA_RHOYNAR_KINGDOM
-                        adjective = NYMERIA_RHOYNAR_KINGDOM_ADJ
+                        adj = NYMERIA_RHOYNAR_KINGDOM_ADJ
                     }
                 }
                 create_title_and_vassal_change = {
@@ -286,6 +259,12 @@ nymeria_rhoynish_invasion_broken_arm = {
                     set_primary_title_to = scope:new_title
                 }
             }
+        }
+
+        # Nymeria unlocks the Rhoynish internal migration - a perk of her and her
+        # direct heir ONLY, earned by taking the conquest path. - Kizan
+        scope:attacker = {
+            nymeria_rhoynish_migration_activate_effect = yes
         }
 
         # Step 4: Rhoynishize every other county sieged in the war.
@@ -452,18 +431,9 @@ nymeria_rhoynish_subjugation = {
             show_pow_release_message_effect = yes
             add_prestige = 300
         }
-        # The Old Dornish lord swears fealty, keeping his lands.
-        create_title_and_vassal_change = {
-            type = swear_fealty
-            save_scope_as = subjugation_fealty_change
-        }
-        scope:defender = {
-            change_liege = {
-                liege = scope:attacker
-                change = scope:subjugation_fealty_change
-            }
-        }
-        resolve_title_and_vassal_change = scope:subjugation_fealty_change
+        # The Old Dornish lord swears fealty, keeping all his lands. King vs king borrows
+        # the Unify Dorne logic first so the vassalage actually holds. - Kizan
+        nymeria_invasion_subjugate_defender_effect = yes
 
         hidden_effect = {
             scope:attacker = {
@@ -599,6 +569,101 @@ nymeria_crush_rhoynar = {
     on_defeat_desc = {
         first_valid = {
             triggered_desc = { desc = nymeria_crush_rhoynar_defeat_desc }
+        }
+    }
+
+    attacker_ticking_warscore = 0.1
+    defender_ticking_warscore = 0.1
+    full_occupation_by_attacker_gives_victory = yes
+    full_occupation_by_defender_gives_victory = yes
+    ticking_war_score_targets_entire_realm = yes
+    max_attacker_score_from_occupation = 150
+    max_defender_score_from_occupation = 150
+    max_attacker_score_from_battles = 100
+    max_defender_score_from_battles = 50
+
+    interface_priority = 120
+}
+
+############################################################
+# Anti-Rhoynish War (event-only) - Kizan
+# The four petty kings of the Anti-Rhoynish Coalition wage war on Nymeria as one bloc,
+# modelled on the Toland-Martell crush war: Dayne (Torrentine) is primary attacker, with
+# Fowler (Stone and Sky), Blackmont and Manwoody (Kingsgrave) joining as co-attackers.
+#   Attackers WIN  -> Nymeria's crown is shattered, she is cast all the way back.
+#   Attackers LOSE -> every coalition king takes the black, their heirs inherit.
+# No white peace either way. - Kizan
+############################################################
+nymeria_anti_rhoynish_war = {
+    group = conquest
+    icon = invasion
+
+    war_name = "WAR_NAME_NYMERIA_ANTI_RHOYNISH_WAR"
+    my_war_name = "WAR_NAME_NYMERIA_ANTI_RHOYNISH_WAR"
+
+    target_titles = none
+    white_peace_possible = no
+
+    valid_to_start = { always = no }
+    allowed_for_character = { always = no }
+    allowed_against_character = { always = no }
+
+    should_check_for_interface_availability = no
+    ai = no
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    transfer_behavior = transfer
+
+    on_declaration = { on_declared_war = yes }
+
+    # --- ATTACKERS WIN (Nymeria cast down) ---
+    on_victory = {
+        scope:defender = { show_pow_release_message_effect = yes }
+        nymeria_anti_rhoynish_war_attacker_victory_effect = yes
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = victory
+                }
+            }
+        }
+        agot_war_victory_effects = yes
+    }
+    on_victory_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_anti_rhoynish_war_victory_desc }
+        }
+    }
+
+    # --- ATTACKERS LOSE (the coalition takes the black) ---
+    on_defeat = {
+        scope:defender = {
+            show_pow_release_message_effect = yes
+            add_prestige = 500
+        }
+        nymeria_anti_rhoynish_war_attacker_defeat_effect = yes
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = defeat
+                }
+            }
+        }
+    }
+    on_defeat_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_anti_rhoynish_war_defeat_desc }
         }
     }
 

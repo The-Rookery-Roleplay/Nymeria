@@ -1,0 +1,274 @@
+####################################################################################
+# THE FATE OF DORNE  - Kizan
+# The grand finale. Once Nymeria has broken the Anti-Rhoynish Coalition, Yorick
+# Yronwood the Bloodroyal makes his last bid to destroy her, his vassal Wyl of the
+# Stoneway at his side.
+#   Yronwood WINS  -> Nymeria's realm falls to him, her special seat is razed.
+#   Yronwood LOSES -> he and Wyl take the black, his crown is broken and his house
+#                     reduced to the Duchy of Greenbelt, and Nymeria forges the Empire
+#                     of Dorne and proclaims it to all of Westeros.
+####################################################################################
+
+# Yronwood declares the Fate of Dorne war on Nymeria as one realm: he leads, Wyl of the
+# Stoneway joins as co-attacker. Called from the quarterly nymeria_check_fate_of_dorne and
+# from the decision, and self-guards so the war is only ever declared once. - Kizan
+nymeria_fate_of_dorne_declare_war_effect = {
+    if = {
+        limit = {
+            exists = title:k_yronwood.holder
+            exists = character:Nymeros_1
+            character:Nymeros_1 = { is_alive = yes }
+            NOT = { has_global_variable = nymeria_fate_of_dorne_declared }
+            title:k_yronwood.holder = { is_independent_ruler = yes }
+            NOT = { title:k_yronwood.holder = { is_at_war_with = character:Nymeros_1 } }
+        }
+        title:k_yronwood.holder = {
+            # Special soldiers: for his last war the Bloodroyal raises a host of 5000
+            # Dornish pass-pikes on top of his own levies, so he is a real threat. - Kizan
+            create_maa_regiment = {
+                type = pass_pikes
+                size = 50
+                check_can_recruit = no
+            }
+            start_war = {
+                cb = nymeria_fate_of_dorne
+                target = character:Nymeros_1
+                target_title = character:Nymeros_1.capital_county
+            }
+            every_character_war = {
+                limit = { using_cb = nymeria_fate_of_dorne }
+                if = {
+                    limit = { exists = title:d_the_stoneway.holder }
+                    add_attacker = title:d_the_stoneway.holder
+                }
+            }
+        }
+        set_global_variable = nymeria_fate_of_dorne_declared
+        # Tell Nymeria the Bloodroyal has come for her. - Kizan
+        character:Nymeros_1 ?= { trigger_event = nymeria_fate.0010 }
+    }
+}
+
+# YRONWOOD WINS: Nymeria is cast down. Her iron grip is broken, the heart of New Ny Sar is
+# razed, and every title she held passes to Yronwood, who consolidates his absolute rule
+# over Dorne. (No white peace ever led here, the CB forbids it.) - Kizan
+nymeria_fate_of_dorne_attacker_victory_effect = {
+    if = {
+        limit = { exists = title:k_yronwood.holder }
+        title:k_yronwood.holder = { save_scope_as = fate_yronwood_victor }
+    }
+    character:Nymeros_1 ?= {
+        if = {
+            limit = { has_character_modifier = nymeria_rhoynar_dominance_modifier }
+            remove_character_modifier = nymeria_rhoynar_dominance_modifier
+        }
+        # Tell her heir the tale before her realm is parcelled out. - Kizan
+        if = {
+            limit = { exists = primary_heir }
+            primary_heir = { trigger_event = nymeria_fate.0003 }
+        }
+    }
+    # Raze the heart of New Ny Sar, Nymeria's special seat. - Kizan
+    title:b_the_lantern.title_province ?= {
+        if = {
+            limit = { has_building = nym_new_ny_sar_1 }
+            remove_building = nym_new_ny_sar_1
+        }
+    }
+    # Yronwood seizes everything Nymeria held. - Kizan
+    if = {
+        limit = { exists = scope:fate_yronwood_victor }
+        create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = fate_nymeria_fall_change
+            add_claim_on_loss = no
+        }
+        character:Nymeros_1 ?= {
+            every_held_title = {
+                change_title_holder = {
+                    holder = scope:fate_yronwood_victor
+                    change = scope:fate_nymeria_fall_change
+                }
+            }
+        }
+        resolve_title_and_vassal_change = scope:fate_nymeria_fall_change
+    }
+}
+
+# YRONWOOD LOSES: he and Wyl take the black, his crown is shattered, and House Yronwood is
+# reduced to the Duchy of Greenbelt under Nymeria. Then she forges the Empire of Dorne. - Kizan
+nymeria_fate_of_dorne_attacker_defeat_effect = {
+    # Save the two leaders before any titles move. - Kizan
+    if = {
+        limit = { exists = title:k_yronwood.holder }
+        title:k_yronwood.holder = { save_scope_as = fate_yronwood_king }
+    }
+    if = {
+        limit = { exists = title:d_the_stoneway.holder }
+        title:d_the_stoneway.holder = { save_scope_as = fate_wyl }
+    }
+    # Break his crown and strip his realm down to the Greenbelt, the rest to Nymeria. - Kizan
+    nymeria_reduce_yronwood_to_greenbelt_effect = yes
+    # Yronwood takes the black, his heir keeps only the Greenbelt under Nymeria. - Kizan
+    if = {
+        limit = { exists = scope:fate_yronwood_king }
+        agot_send_to_nightswatch_effect = {
+            NIGHTSWATCH_CANDIDATE = scope:fate_yronwood_king
+            ACTOR = character:Nymeros_1
+        }
+    }
+    # Wyl of the Stoneway takes the black too. - Kizan
+    if = {
+        limit = {
+            exists = scope:fate_wyl
+            NOT = { scope:fate_wyl = scope:fate_yronwood_king }
+        }
+        agot_send_to_nightswatch_effect = {
+            NIGHTSWATCH_CANDIDATE = scope:fate_wyl
+            ACTOR = character:Nymeros_1
+        }
+    }
+    # Nymeria forges the Empire of Dorne (handled in the event so the player sees it). - Kizan
+    character:Nymeros_1 ?= { trigger_event = nymeria_fate.0001 }
+}
+
+# Strips Yronwood down to the Duchy of Greenbelt: his crown(s) pass to Nymeria carrying his
+# vassals (Wyl included), every other title except Greenbelt and its counties goes to her,
+# the crowns are destroyed, and he bends the knee as her Duke of Greenbelt. If he somehow
+# does not hold Greenbelt, it is handed to him so House Yronwood always keeps it. - Kizan
+nymeria_reduce_yronwood_to_greenbelt_effect = {
+    if = {
+        limit = {
+            exists = title:k_yronwood.holder
+            exists = character:Nymeros_1
+        }
+        title:k_yronwood.holder = { save_scope_as = fate_yronwood }
+        # 1. His crown(s) to Nymeria, carrying every vassal. - Kizan
+        scope:fate_yronwood = {
+            every_held_title = {
+                limit = { tier = tier_kingdom }
+                add_to_temporary_list = fate_yronwood_crowns
+            }
+        }
+        create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = fate_yw_crown_change
+            add_claim_on_loss = no
+        }
+        every_in_list = {
+            list = fate_yronwood_crowns
+            change_title_holder = {
+                holder = character:Nymeros_1
+                change = scope:fate_yw_crown_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:fate_yw_crown_change
+        # 2. Every other title except Greenbelt and its counties to Nymeria. - Kizan
+        create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = fate_yw_lands_change
+            add_claim_on_loss = no
+        }
+        scope:fate_yronwood = {
+            every_held_title = {
+                limit = {
+                    NOT = { tier = tier_kingdom }
+                    NOT = { this = title:d_greenbelt }
+                    NOT = {
+                        AND = {
+                            tier = tier_county
+                            de_jure_liege = title:d_greenbelt
+                        }
+                    }
+                }
+                change_title_holder = {
+                    holder = character:Nymeros_1
+                    change = scope:fate_yw_lands_change
+                }
+            }
+        }
+        resolve_title_and_vassal_change = scope:fate_yw_lands_change
+        # 3. Destroy the vacant crowns Nymeria briefly holds. - Kizan
+        every_in_list = {
+            list = fate_yronwood_crowns
+            character:Nymeros_1 = { destroy_title = prev }
+        }
+        # 4. Make sure he holds the Greenbelt, then bend him to Nymeria. - Kizan
+        if = {
+            limit = { NOT = { title:d_greenbelt.holder = scope:fate_yronwood } }
+            create_title_and_vassal_change = {
+                type = conquest
+                save_scope_as = fate_greenbelt_change
+                add_claim_on_loss = no
+            }
+            title:d_greenbelt = {
+                change_title_holder = {
+                    holder = scope:fate_yronwood
+                    change = scope:fate_greenbelt_change
+                }
+            }
+            resolve_title_and_vassal_change = scope:fate_greenbelt_change
+        }
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = fate_yw_fealty_change
+        }
+        scope:fate_yronwood = {
+            change_liege = {
+                liege = character:Nymeros_1
+                change = scope:fate_yw_fealty_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:fate_yw_fealty_change
+    }
+}
+
+# Nymeria forges the Empire of Dorne: she takes e_dorne, makes it her primary title, and her
+# old crowns dissolve into it. Then her proclamation goes out to every independent ruler in
+# Westeros. Run on Nymeria. - Kizan
+nymeria_forge_edorne_effect = {
+    if = {
+        limit = { NOT = { title:e_dorne.holder = character:Nymeros_1 } }
+        create_title_and_vassal_change = {
+            type = created
+            save_scope_as = fate_edorne_change
+            add_claim_on_loss = no
+        }
+        title:e_dorne = {
+            change_title_holder = {
+                holder = character:Nymeros_1
+                change = scope:fate_edorne_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:fate_edorne_change
+    }
+    character:Nymeros_1 ?= {
+        set_primary_title_to = title:e_dorne
+        # She is remembered ever after as the Mother of Dorne. - Kizan
+        give_nickname = nick_nymeria_mother_of_dorne
+        # Her old crowns dissolve into the empire. - Kizan
+        every_held_title = {
+            limit = {
+                tier = tier_kingdom
+            }
+            add_to_temporary_list = fate_nymeria_old_crowns
+        }
+    }
+    every_in_list = {
+        list = fate_nymeria_old_crowns
+        character:Nymeros_1 = { destroy_title = prev }
+    }
+    # The proclamation rides out to every independent crown and lord in Westeros. - Kizan
+    every_independent_ruler = {
+        limit = {
+            NOT = { this = character:Nymeros_1 }
+            capital_province = { geographical_region = world_westeros }
+        }
+        # The whole of Westeros marks her a foreign invader. - Kizan
+        add_opinion = {
+            target = character:Nymeros_1
+            modifier = nymeria_foreign_invader_opinion
+        }
+        trigger_event = nymeria_fate.0002
+    }
+}

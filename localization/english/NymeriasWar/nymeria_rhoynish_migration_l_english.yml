@@ -1,0 +1,36 @@
+﻿l_english:
+
+ #### Rhoynish internal migration - Kizan ####
+
+ # Intro event (fires once, after winning the conquest)
+ nymeria_rhoynish.0001.t:0 "The Rhoynar Settle Dorne"
+ nymeria_rhoynish.0001.desc:0 "Dorne is mine, and the Broken Arm is broken. Now the real work begins, for my people are coming home.\n\nFrom here on, more and more of Dorne will take up the culture of #bold Sarar#! and the faith of #bold Mother Rhoyne#!, and now and then a lord and his whole house will convert with them.\n\nThis is mine to decide, and my #bold direct heir's#! after me, no one else's. If I want it stopped, the decision #bold 'Prevent the Internal Migration of the Rhoynish in Dornish Lands'#! will halt it, and #bold 'Resume the Internal Migration of the Rhoynish'#! will start it again."
+ nymeria_rhoynish.0001.a:0 "Mother Rhoyne, guide them home"
+
+ # Toasts (slide-in notifications when something turns Rhoynar)
+ nymeria_rhoynish_county_toast:0 "[migrated_county.GetName] has taken up the culture and faith of the Rhoyne."
+ nymeria_rhoynish_lord_toast:0 "[converted_lord.GetTitledFirstName] and his household have turned to the Rhoyne."
+
+ # Decision: prevent the migration
+ nymeria_prevent_rhoynish_migration:0 "Prevent the Internal Migration of the Rhoynish in Dornish Lands"
+ nymeria_prevent_rhoynish_migration_desc:0 "Since the conquest, more and more of Dorne has turned Rhoynish, county after county taking up our culture and the faith of #bold Mother Rhoyne#!. I can put a stop to it here, and leave Dorne as it is now.\n\nOnly I and my #bold direct heir#! may decide this. Once my heir is gone, the migration ends for good."
+ nymeria_prevent_rhoynish_migration_tooltip:0 "Stop the spread of Rhoynish culture and faith through Dorne."
+ nymeria_prevent_rhoynish_migration_confirm:0 "Let it cease"
+ nymeria_prevent_rhoynish_migration_effect_tt:0 "#bold Stops#! the Rhoynish migration. No more Dornish counties or lords will turn to Sarar and Mother Rhoyne."
+
+ # Decision: resume the migration
+ nymeria_resume_rhoynish_migration:0 "Resume the Internal Migration of the Rhoynish"
+ nymeria_resume_rhoynish_migration_desc:0 "For now the Rhoynar have stopped spreading, held back by my word alone. I can let it go on, and see more of Dorne take up our culture and the faith of #bold Mother Rhoyne#!.\n\nOnly I and my #bold direct heir#! may decide this. Once my heir is gone, the migration ends for good."
+ nymeria_resume_rhoynish_migration_tooltip:0 "Let Rhoynish culture and faith spread through Dorne again."
+ nymeria_resume_rhoynish_migration_confirm:0 "Let them come"
+ nymeria_resume_rhoynish_migration_effect_tt:0 "#bold Resumes#! the Rhoynish migration. Dornish counties and lords will turn to Sarar and Mother Rhoyne once again."
+
+ # Event 0008 - the heir inherits the migration (and is the last)
+ nymeria_rhoynish.0008.t:0 "The Last of the Settling"
+ nymeria_rhoynish.0008.desc:0 "Great Nymeria is gone, but the Rhoynar still come to Dorne, and as her direct heir they answer to me.\n\nFewer ships arrive from the Rhoyne each year, though. When I am gone, there will be no more Rhoynar left to settle these lands. Mine is the #bold last#! generation that will see this migration."
+ nymeria_rhoynish.0008.a:0 "Then I shall make it count"
+
+ # Event 0009 - the migration ends for good
+ nymeria_rhoynish.0009.t:0 "No More Rhoynar to Settle"
+ nymeria_rhoynish.0009.desc:0 "The last of Nymeria's heirs to lead the migration has died. Across the narrow sea, every Rhoynar who would flee Valyria has already come to Dorne, and none are left to settle.\n\nThe Rhoynish migration is over. Dorne will stay as it is now."
+ nymeria_rhoynish.0009.a:0 "Our people are home"

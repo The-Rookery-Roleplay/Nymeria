@@ -38,3 +38,8 @@
  WAR_NAME_NYMERIA_CRUSH_RHOYNAR:0 "Dornish War to Crush the Rhoynar"
  nymeria_crush_rhoynar_victory_desc:0 "The Rhoynar are thrown back into the sea. Ny Sar is #bold Torchwood#! once more and passes to [defender.GetShortUIName], while the conquered lords are parcelled out among the victors."
  nymeria_crush_rhoynar_defeat_desc:0 "Dorne's lords have failed. [attacker.GetShortUIName] and their allies kneel before the Rhoynar, vassals of [defender.GetShortUIName]."
+
+ nymeria_anti_rhoynish_war:0 "Anti-Rhoynish War"
+ WAR_NAME_NYMERIA_ANTI_RHOYNISH_WAR:0 "Dornish War against the Rhoynar"
+ nymeria_anti_rhoynish_war_victory_desc:0 "The coalition prevails. [defender.GetShortUIName]'s crown is shattered and the Rhoynar are cast all the way back to where they began."
+ nymeria_anti_rhoynish_war_defeat_desc:0 "The coalition is broken. Its kings are marched to the Wall to take the black, their crowns shattered, and their heirs kneel to [defender.GetShortUIName] as her sworn vassals."

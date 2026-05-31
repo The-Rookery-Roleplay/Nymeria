@@ -267,8 +267,13 @@ nymeria_unify_dorne_cb = {
         }
 
         # Opportunism: pounce on a neighbour who is already tied up in another war.
+        # ONLY when the historic (Dorne story) setting is OFF, so it does not override
+        # the scripted path when that setting is on. - Kizan
         if = {
-            limit = { scope:defender = { is_at_war = yes } }
+            limit = {
+                scope:defender = { is_at_war = yes }
+                has_game_rule = nymeria_dorne_story_off
+            }
             multiply = 3.0
         }
 

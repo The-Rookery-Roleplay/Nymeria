@@ -6,3 +6,11 @@ nymeria_rhoynar_dominance_modifier = {
     vassal_opinion = 200
     dread_baseline_add = 100
 }
+
+# A surge of martial brilliance granted to Nymeria for her single combat against King
+# Lucifer Dryland, so she carries the duel and it shows in every blow. Added when the
+# duel event fires, stripped the instant it resolves. - Kizan
+nymeria_conqueror_duel_modifier = {
+    icon = prowess_positive
+    prowess = 30
+}

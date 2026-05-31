@@ -440,6 +440,55 @@ nymeria_laamp_events.0010 = { # A Greenblood lord answers the Rhoynar's letter
     }
 }
 
+nymeria_laamp_events.0011 = { # The Greenblood united - Nymeria forges the Kingdom of the Rhoynar
+    type = character_event
+    title = nymeria_laamp_events.0011.t
+    desc = nymeria_laamp_events.0011.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_bold
+    }
+
+    # Fire once. - Kizan
+    immediate = {
+        add_character_flag = nymeria_greenblood_consolidated
+    }
+
+    option = {
+        name = nymeria_laamp_events.0011.a
+        # Trade the hasty titular crown for the Greenblood's, rename it the Rhoynar. - Kizan
+        nymeria_consolidate_greenblood_into_rhoynar_effect = yes
+        # Chapter 4: about half a year on, Nymeria turns to the last great Dornish king,
+        # Lucifer Dryland. - Kizan
+        trigger_event = { id = nymeria_dryland.0010 days = 180 }
+    }
+}
+
+# FAILSAFE notice: a rival king seized a Greenblood duchy before Nymeria could letter its
+# lord, so she marches to reclaim it. The war is already declared in the failsafe effect,
+# this just tells the player why. Scopes carry from that effect. - Kizan
+nymeria_laamp_events.0012 = {
+    type = character_event
+    title = nymeria_laamp_events.0012.t
+    desc = nymeria_laamp_events.0012.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = anger
+    }
+    right_portrait = {
+        character = scope:greenblood_reclaim_rival
+        animation = scheme
+    }
+
+    option = {
+        name = nymeria_laamp_events.0012.a
+    }
+}
+
 # nymeria_laamp_events.0001 = {
 #     hidden = yes
 #     type = character_event

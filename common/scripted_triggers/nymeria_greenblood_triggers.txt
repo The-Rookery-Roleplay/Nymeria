@@ -1,0 +1,29 @@
+# Triggers for the Greenblood reclaim failsafe (Chapter 3). - Kizan
+
+# True when the given Greenblood duchy ($GB_DUCHY$) has been swallowed by a rival KING
+# before Nymeria could bring its lord into the fold, so the normal letters skipped it and
+# the consolidation gate would stall forever. It is stuck when:
+#   the duchy is held, but not by Nymeria nor anyone below her,
+#   its top liege is an independent king (a real rival realm, not a lone Greenblood duke
+#     the letters already handle, and not Nymeria herself),
+#   that king is NOT Lucifer Dryland (Chapter 4 dissolves his realm and delivers it),
+#   and Nymeria is not already at war with him.
+# - Kizan
+nymeria_greenblood_duchy_stuck_under_rival_trigger = {
+    exists = $GB_DUCHY$.holder
+    $GB_DUCHY$.holder = {
+        # Not already under Nymeria. - Kizan
+        NOT = { this = character:Nymeros_1 }
+        NOT = { is_vassal_or_below_of = character:Nymeros_1 }
+        # Swallowed into a rival king's realm. - Kizan
+        top_liege = {
+            highest_held_title_tier >= tier_kingdom
+            NOT = { this = character:Nymeros_1 }
+            NOT = { this = character:Dryland_1 }
+            # Not already fighting him, and not under a truce from a failed attempt
+            # (a scripted war would otherwise ignore the truce and spam). - Kizan
+            NOT = { is_at_war_with = character:Nymeros_1 }
+            NOT = { has_truce = character:Nymeros_1 }
+        }
+    }
+}

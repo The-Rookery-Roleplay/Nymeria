@@ -1,0 +1,94 @@
+############################################################
+# The Fate of Dorne (event-only) - Kizan
+# Yorick Yronwood the Bloodroyal's last bid to destroy Nymeria, his vassal Wyl of the
+# Stoneway joining as co-attacker. Fired from script once the coalition has fallen.
+#   Attackers WIN  -> Nymeria's realm falls to Yronwood, her special seat razed.
+#   Attackers LOSE -> Yronwood and Wyl take the black, his crown broken, his house cut
+#                     down to the Greenbelt, and Nymeria forges the Empire of Dorne.
+# No white peace either way. - Kizan
+############################################################
+nymeria_fate_of_dorne = {
+    group = conquest
+    icon = invasion
+
+    war_name = "WAR_NAME_NYMERIA_FATE_OF_DORNE"
+    my_war_name = "WAR_NAME_NYMERIA_FATE_OF_DORNE"
+
+    target_titles = none
+    white_peace_possible = no
+
+    valid_to_start = { always = no }
+    allowed_for_character = { always = no }
+    allowed_against_character = { always = no }
+
+    should_check_for_interface_availability = no
+    ai = no
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    transfer_behavior = transfer
+
+    on_declaration = { on_declared_war = yes }
+
+    # --- ATTACKERS WIN (Nymeria cast down) ---
+    on_victory = {
+        scope:defender = { show_pow_release_message_effect = yes }
+        nymeria_fate_of_dorne_attacker_victory_effect = yes
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = victory
+                }
+            }
+        }
+        agot_war_victory_effects = yes
+    }
+    on_victory_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_fate_of_dorne_victory_desc }
+        }
+    }
+
+    # --- ATTACKERS LOSE (Yronwood and Wyl to the Wall, Dorne made an empire) ---
+    on_defeat = {
+        scope:defender = {
+            show_pow_release_message_effect = yes
+            add_prestige = 1000
+        }
+        nymeria_fate_of_dorne_attacker_defeat_effect = yes
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = defeat
+                }
+            }
+        }
+    }
+    on_defeat_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_fate_of_dorne_defeat_desc }
+        }
+    }
+
+    attacker_ticking_warscore = 0.1
+    defender_ticking_warscore = 0.1
+    full_occupation_by_attacker_gives_victory = yes
+    full_occupation_by_defender_gives_victory = yes
+    ticking_war_score_targets_entire_realm = yes
+    max_attacker_score_from_occupation = 150
+    max_defender_score_from_occupation = 150
+    max_attacker_score_from_battles = 100
+    max_defender_score_from_battles = 50
+
+    interface_priority = 130
+}

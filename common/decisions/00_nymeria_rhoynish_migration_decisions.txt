@@ -1,0 +1,58 @@
+# Toggle the Rhoynish internal migration. Only ever visible to the migration-holders
+# (Nymeria + her direct heir), since the flags exist only on them. The flag check sits
+# in is_shown (silent visibility control) so it is NOT printed as an ugly "requirement"
+# with the raw flag name. - Kizan
+
+nymeria_prevent_rhoynish_migration = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	decision_group_type = major
+	# Player-only toggle (ai_potential = no), but the field must be set or the game
+	# warns and forces it to 0. - Kizan
+	ai_check_interval = 120
+
+	desc = nymeria_prevent_rhoynish_migration_desc
+	selection_tooltip = nymeria_prevent_rhoynish_migration_tooltip
+	confirm_text = nymeria_prevent_rhoynish_migration_confirm
+
+	is_shown = {
+		has_character_flag = nymeria_rhoynish_migration_active
+	}
+
+	ai_potential = { always = no }
+	ai_will_do = { base = 0 }
+
+	effect = {
+		custom_tooltip = nymeria_prevent_rhoynish_migration_effect_tt
+		remove_character_flag = nymeria_rhoynish_migration_active
+		add_character_flag = nymeria_rhoynish_migration_stopped
+	}
+}
+
+nymeria_resume_rhoynish_migration = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	decision_group_type = major
+	# Player-only toggle (ai_potential = no), but the field must be set or the game
+	# warns and forces it to 0. - Kizan
+	ai_check_interval = 120
+
+	desc = nymeria_resume_rhoynish_migration_desc
+	selection_tooltip = nymeria_resume_rhoynish_migration_tooltip
+	confirm_text = nymeria_resume_rhoynish_migration_confirm
+
+	is_shown = {
+		has_character_flag = nymeria_rhoynish_migration_stopped
+	}
+
+	ai_potential = { always = no }
+	ai_will_do = { base = 0 }
+
+	effect = {
+		custom_tooltip = nymeria_resume_rhoynish_migration_effect_tt
+		remove_character_flag = nymeria_rhoynish_migration_stopped
+		add_character_flag = nymeria_rhoynish_migration_active
+	}
+}

@@ -1,0 +1,83 @@
+namespace = nymeria_fate
+
+# The Bloodroyal marches. Fired to Nymeria the moment Yronwood declares the Fate of Dorne
+# (the war is already declared in nymeria_fate_of_dorne_declare_war_effect). - Kizan
+nymeria_fate.0010 = {
+    type = character_event
+    title = nymeria_fate.0010.t
+    desc = nymeria_fate.0010.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_bold
+    }
+    right_portrait = {
+        character = title:k_yronwood.holder
+        animation = scheme
+    }
+
+    option = {
+        name = nymeria_fate.0010.a
+    }
+}
+
+# Nymeria has won. She forges the Empire of Dorne and sends her proclamation across Westeros.
+# Fired to Nymeria from nymeria_fate_of_dorne_attacker_defeat_effect. - Kizan
+nymeria_fate.0001 = {
+    type = character_event
+    title = nymeria_fate.0001.t
+    desc = nymeria_fate.0001.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_bold
+    }
+
+    option = {
+        name = nymeria_fate.0001.a
+        # Forge e_dorne, dissolve her old crowns into it, and send the letter to every
+        # independent ruler in Westeros. - Kizan
+        nymeria_forge_edorne_effect = yes
+    }
+}
+
+# Nymeria's proclamation. Fired to every independent ruler in Westeros. Root is the
+# recipient, the letter comes from Nymeria. - Kizan
+nymeria_fate.0002 = {
+    type = character_event
+    title = nymeria_fate.0002.t
+    desc = nymeria_fate.0002.desc
+    theme = diplomacy
+
+    left_portrait = {
+        character = character:Nymeros_1
+        animation = personality_bold
+    }
+    right_portrait = {
+        character = root
+        animation = scared
+    }
+
+    option = {
+        name = nymeria_fate.0002.a
+    }
+}
+
+# Nymeria has lost. Fired to her heir as Yronwood consolidates his absolute rule. - Kizan
+nymeria_fate.0003 = {
+    type = character_event
+    title = nymeria_fate.0003.t
+    desc = nymeria_fate.0003.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = sadness
+    }
+
+    option = {
+        name = nymeria_fate.0003.a
+    }
+}

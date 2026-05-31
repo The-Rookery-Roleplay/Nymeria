@@ -1,0 +1,439 @@
+####################################################################################
+# CONQUEST OF THE DRYLANDS  - Kizan
+# When Nymeria's army engages King Dryland, a scripted death-duel fires (see
+# nymeria_dryland.0001). If she wins, his realm dissolves into hers and, since he
+# dies heirless, the other petty kings form the Anti-Rhoynish Coalition.
+####################################################################################
+
+# Run on Nymeria (root) the instant she wins the duel, while Dryland is STILL ALIVE.
+# Strips his whole realm to her, then slays him. - Kizan
+nymeria_dryland_realm_to_nymeria_effect = {
+    # 1. Every one of Dryland's vassals swears to Nymeria (Brimstone/Uller, Vaith,
+    #    Qorgyle and every small lord). - Kizan
+    create_title_and_vassal_change = {
+        type = swear_fealty
+        save_scope_as = dryland_fall_change
+        add_claim_on_loss = no
+    }
+    character:Dryland_1 = {
+        every_vassal = {
+            change_liege = {
+                liege = root
+                change = scope:dryland_fall_change
+            }
+        }
+    }
+    resolve_title_and_vassal_change = scope:dryland_fall_change
+
+    # 2. Uller takes the Duchy of Brimstone outright. - Kizan
+    if = {
+        limit = {
+            exists = character:Uller_200
+            NOT = { title:d_brimstone.holder = character:Uller_200 }
+        }
+        create_title_and_vassal_change = {
+            type = granted
+            save_scope_as = uller_brimstone_change
+            add_claim_on_loss = no
+        }
+        title:d_brimstone = {
+            change_title_holder = {
+                holder = character:Uller_200
+                change = scope:uller_brimstone_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:uller_brimstone_change
+    }
+    # Make sure Uller answers to Nymeria. - Kizan
+    if = {
+        limit = {
+            exists = character:Uller_200
+            NOT = { character:Uller_200 = { is_vassal_of = root } }
+        }
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = uller_fealty_change
+            add_claim_on_loss = no
+        }
+        character:Uller_200 = {
+            change_liege = {
+                liege = root
+                change = scope:uller_fealty_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:uller_fealty_change
+    }
+
+    # 2c. Dryland held the Brimstone duchy himself, so in step 1 its de jure counties
+    #     were flattened straight onto Nymeria. Move them back beneath their new duke,
+    #     Uller, so his duchy actually has its vassals. (Vaith and Qorgyle are already
+    #     their own dukes, so their counties were never flattened.) - Kizan
+    if = {
+        limit = { exists = character:Uller_200 }
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = brimstone_dejure_change
+            add_claim_on_loss = no
+        }
+        root = {
+            every_vassal = {
+                limit = {
+                    NOT = { this = character:Uller_200 }
+                    capital_county = { de_jure_liege = title:d_brimstone }
+                }
+                change_liege = {
+                    liege = character:Uller_200
+                    change = scope:brimstone_dejure_change
+                }
+            }
+        }
+        resolve_title_and_vassal_change = scope:brimstone_dejure_change
+    }
+
+    # 2d. Bloodbridge was Lucifer's own demesne, so it passes straight to its new duke
+    #     Uller as his direct holding, not to Nymeria. - Kizan
+    if = {
+        limit = {
+            exists = character:Uller_200
+            title:c_bloodbridge.holder = character:Dryland_1
+        }
+        create_title_and_vassal_change = {
+            type = granted
+            save_scope_as = bloodbridge_to_uller_change
+            add_claim_on_loss = no
+        }
+        title:c_bloodbridge = {
+            change_title_holder = {
+                holder = character:Uller_200
+                change = scope:bloodbridge_to_uller_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:bloodbridge_to_uller_change
+    }
+
+    # 3. Take Dryland's remaining demesne counties for Nymeria. - Kizan
+    create_title_and_vassal_change = {
+        type = conquest
+        save_scope_as = dryland_demesne_change
+        add_claim_on_loss = no
+    }
+    character:Dryland_1 = {
+        every_held_title = {
+            limit = { tier = tier_county }
+            change_title_holder = {
+                holder = root
+                change = scope:dryland_demesne_change
+            }
+        }
+    }
+    resolve_title_and_vassal_change = scope:dryland_demesne_change
+
+    # 4. Tear down the Kingdom of the Drylands. - Kizan
+    if = {
+        limit = { exists = title:k_the_drylands.holder }
+        title:k_the_drylands.holder = {
+            destroy_title = title:k_the_drylands
+        }
+    }
+
+    # 4b. The Hellholt is sacked in the taking. Its seat has already passed to the
+    #     Spearseat (landed_titles), and the old castle is left a ruin. - Kizan
+    nymeria_ruin_hellholt_effect = yes
+
+    # 5. Dryland, now landless, falls to Nymeria's blade. - Kizan
+    character:Dryland_1 = {
+        death = {
+            death_reason = death_duel
+            killer = root
+        }
+    }
+}
+
+# The four petty kings band together against the rising Rhoynar. Created by Dayne
+# (Torrentine), joined by Fowler (Stone and Sky), Blackmont and Manwoody. - Kizan
+nymeria_form_anti_rhoynish_coalition_effect = {
+    if = {
+        limit = {
+            exists = title:k_the_torrentine.holder
+            NOT = { has_global_variable = nymeria_anti_rhoynish_coalition_formed }
+        }
+        set_global_variable = nymeria_anti_rhoynish_coalition_formed
+        title:k_the_torrentine.holder = {
+            create_confederation = {
+                name = nymeria_anti_rhoynish_coalition
+            }
+            scope:new_confederation = {
+                set_variable = confederation_is_anti_rhoynish
+                add_confederation_member = title:k_the_torrentine.holder
+                if = {
+                    limit = { exists = title:k_stone_and_sky.holder }
+                    add_confederation_member = title:k_stone_and_sky.holder
+                }
+                if = {
+                    limit = { exists = title:k_blackmont.holder }
+                    add_confederation_member = title:k_blackmont.holder
+                }
+                if = {
+                    limit = { exists = title:k_kingsgrave.holder }
+                    add_confederation_member = title:k_kingsgrave.holder
+                }
+            }
+        }
+        # The bloc marches a season later. The actual declaration is driven by the
+        # quarterly nymeria_check_anti_rhoynish_war, so it fires reliably even if the
+        # coalition formed before this war logic existed. - Kizan
+    }
+}
+
+# Razes the Hellholt (b_hellholt) to a ruin by stripping its holding. The county seat has
+# already moved to the Spearseat in landed_titles, so c_hellholt keeps a valid capital.
+# Called on the Uller takeover, whether by the duel or by Lucifer's heirless death. - Kizan
+nymeria_ruin_hellholt_effect = {
+    title:b_hellholt.title_province ?= {
+        if = {
+            limit = { has_holding = yes }
+            hidden_effect = { remove_holding = yes }
+        }
+    }
+}
+
+# Lucifer Dryland dies with no heir (the common case, he is childless by design). House
+# Uller takes the Duchy of Brimstone, NOT the crown: the Kingdom of the Drylands dies with
+# him and Uller stands a free duke. Bloodbridge (Lucifer's own demesne) passes to Uller,
+# every other Brimstone lord (including the Hellholt count) answers to him, and the Hellholt
+# is left a ruin. Run from on_death on root = the dying Lucifer. - Kizan
+nymeria_dryland_heirless_death_effect = {
+    if = {
+        limit = {
+            exists = character:Uller_200
+            character:Uller_200 = { is_alive = yes }
+        }
+        # Uller takes the Duchy of Brimstone. - Kizan
+        if = {
+            limit = { NOT = { title:d_brimstone.holder = character:Uller_200 } }
+            create_title_and_vassal_change = {
+                type = granted
+                save_scope_as = heirless_brimstone_change
+                add_claim_on_loss = no
+            }
+            title:d_brimstone = {
+                change_title_holder = {
+                    holder = character:Uller_200
+                    change = scope:heirless_brimstone_change
+                }
+            }
+            resolve_title_and_vassal_change = scope:heirless_brimstone_change
+        }
+        # Bloodbridge, Lucifer's own demesne, passes to Uller as his direct holding. - Kizan
+        if = {
+            limit = { title:c_bloodbridge.holder = root }
+            create_title_and_vassal_change = {
+                type = granted
+                save_scope_as = heirless_bloodbridge_change
+                add_claim_on_loss = no
+            }
+            title:c_bloodbridge = {
+                change_title_holder = {
+                    holder = character:Uller_200
+                    change = scope:heirless_bloodbridge_change
+                }
+            }
+            resolve_title_and_vassal_change = scope:heirless_bloodbridge_change
+        }
+        # Every other Brimstone lord (incl. the Hellholt count) now answers to Uller. Vaith
+        # and Qorgyle sit in their own duchies, so they fall free instead. - Kizan
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = heirless_brimstone_vassals
+            add_claim_on_loss = no
+        }
+        root = {
+            every_vassal = {
+                limit = {
+                    NOT = { this = character:Uller_200 }
+                    capital_county = { de_jure_liege = title:d_brimstone }
+                }
+                change_liege = {
+                    liege = character:Uller_200
+                    change = scope:heirless_brimstone_vassals
+                }
+            }
+        }
+        resolve_title_and_vassal_change = scope:heirless_brimstone_vassals
+        # The Hellholt is left a ruin, its seat already moved to the Spearseat. - Kizan
+        nymeria_ruin_hellholt_effect = yes
+    }
+    # The Kingdom of the Drylands dies with Lucifer. - Kizan
+    if = {
+        limit = { exists = title:k_the_drylands.holder }
+        title:k_the_drylands.holder = { destroy_title = title:k_the_drylands }
+    }
+}
+
+# The Anti-Rhoynish Coalition declares war on Nymeria as one bloc: Dayne (Torrentine) leads
+# and the other three kings join as co-attackers, modelled on the Toland-Martell crush war.
+# Called from the quarterly nymeria_check_anti_rhoynish_war once the coalition has formed,
+# and self-guards so the war is only ever declared once. - Kizan
+nymeria_anti_rhoynish_coalition_declare_war_effect = {
+    if = {
+        limit = {
+            exists = title:k_the_torrentine.holder
+            exists = character:Nymeros_1
+            character:Nymeros_1 = { is_alive = yes }
+            # Declare it once. - Kizan
+            NOT = { has_global_variable = nymeria_anti_rhoynish_war_declared }
+            # And not if a war between them is somehow already running. - Kizan
+            NOT = { title:k_the_torrentine.holder = { is_at_war_with = character:Nymeros_1 } }
+        }
+        title:k_the_torrentine.holder = {
+            start_war = {
+                cb = nymeria_anti_rhoynish_war
+                target = character:Nymeros_1
+                target_title = character:Nymeros_1.capital_county
+            }
+            every_character_war = {
+                limit = { using_cb = nymeria_anti_rhoynish_war }
+                if = {
+                    limit = { exists = title:k_stone_and_sky.holder }
+                    add_attacker = title:k_stone_and_sky.holder
+                }
+                if = {
+                    limit = { exists = title:k_blackmont.holder }
+                    add_attacker = title:k_blackmont.holder
+                }
+                if = {
+                    limit = { exists = title:k_kingsgrave.holder }
+                    add_attacker = title:k_kingsgrave.holder
+                }
+            }
+        }
+        set_global_variable = nymeria_anti_rhoynish_war_declared
+        # Announce the march to Nymeria, the war is already declared above. - Kizan
+        character:Nymeros_1 ?= { trigger_event = nymeria_dryland.0005 }
+    }
+}
+
+# ATTACKERS WIN: the coalition casts Nymeria down. Her crown(s) are shattered and her iron
+# grip is broken, she is all the way back. (No white peace ever led here, the CB forbids it.)
+# - Kizan
+nymeria_anti_rhoynish_war_attacker_victory_effect = {
+    character:Nymeros_1 ?= {
+        # Her iron grip is broken with her crown. - Kizan
+        if = {
+            limit = { has_character_modifier = nymeria_rhoynar_dominance_modifier }
+            remove_character_modifier = nymeria_rhoynar_dominance_modifier
+        }
+        # Gather every crown she wears. - Kizan
+        every_held_title = {
+            limit = { tier = tier_kingdom }
+            add_to_temporary_list = anti_rhoynish_crowns_to_destroy
+        }
+    }
+    # Shatter them. - Kizan
+    every_in_list = {
+        list = anti_rhoynish_crowns_to_destroy
+        character:Nymeros_1 = { destroy_title = prev }
+    }
+    character:Nymeros_1 ?= {
+        trigger_event = nymeria_dryland.0007
+    }
+}
+
+# Subjugates the current holder of $GB_KINGDOM$ to Nymeria, the same way the king-vs-king
+# Rhoynish invasion does: their crown is stripped onto Nymeria (a conquest change, which
+# carries every vassal duke and count under her), they swear fealty keeping everything
+# below king tier, then the now-vacant crown is destroyed. Uses its own uniquely named
+# scopes so it never clobbers scope:attacker / scope:defender in the calling CB. - Kizan
+nymeria_subjugate_kingdom_to_nymeria_effect = {
+    if = {
+        limit = {
+            exists = character:Nymeros_1
+            exists = $GB_KINGDOM$.holder
+            NOT = { $GB_KINGDOM$.holder = character:Nymeros_1 }
+        }
+        $GB_KINGDOM$.holder = { save_scope_as = ar_subjugated_ruler }
+        # 1. Crown to Nymeria (conquest), carrying the ruler's vassals. - Kizan
+        create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = ar_crown_change
+            add_claim_on_loss = no
+        }
+        $GB_KINGDOM$ = {
+            change_title_holder = {
+                holder = character:Nymeros_1
+                change = scope:ar_crown_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:ar_crown_change
+        # 2. The crownless ruler swears fealty, keeping all below king tier. - Kizan
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = ar_ruler_fealty_change
+        }
+        scope:ar_subjugated_ruler = {
+            change_liege = {
+                liege = character:Nymeros_1
+                change = scope:ar_ruler_fealty_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:ar_ruler_fealty_change
+        # 3. Destroy the now-vacant crown Nymeria briefly holds. - Kizan
+        character:Nymeros_1 = { destroy_title = $GB_KINGDOM$ }
+    }
+}
+
+# ATTACKERS LOSE: every coalition king is subjugated, then takes the black. His crown is
+# shattered onto Nymeria and destroyed, he swears fealty keeping all below king tier, and
+# then he marches to the Wall, his heir inheriting that now-vassalised position. Doing the
+# subjugation BEFORE the Wall means we never depend on loan_inheritance handing the heir a
+# crown mid-effect, the heir simply inherits the lands already sworn to Nymeria. - Kizan
+nymeria_anti_rhoynish_war_attacker_defeat_effect = {
+    if = {
+        limit = { exists = title:k_the_torrentine.holder }
+        title:k_the_torrentine.holder = { save_scope_as = ar_king_torrentine }
+        # Vorian Dayne, beaten by Nymeria and his proud crown shattered, House Dayne brought
+        # from a kingdom to mere bannermen of a foreigner, is mockingly named the Sword of
+        # the Evening, the inverse of his house's Sword of the Morning. The Wall is the last
+        # honourable service left to him. (AGOT's own nickname, written for exactly this.) - Kizan
+        scope:ar_king_torrentine = {
+            give_nickname = nick_agot_historical_the_sword_of_the_evening
+        }
+        nymeria_subjugate_kingdom_to_nymeria_effect = { GB_KINGDOM = title:k_the_torrentine }
+        agot_send_to_nightswatch_effect = {
+            NIGHTSWATCH_CANDIDATE = scope:ar_king_torrentine
+            ACTOR = character:Nymeros_1
+        }
+    }
+    if = {
+        limit = { exists = title:k_stone_and_sky.holder }
+        title:k_stone_and_sky.holder = { save_scope_as = ar_king_stone_and_sky }
+        nymeria_subjugate_kingdom_to_nymeria_effect = { GB_KINGDOM = title:k_stone_and_sky }
+        agot_send_to_nightswatch_effect = {
+            NIGHTSWATCH_CANDIDATE = scope:ar_king_stone_and_sky
+            ACTOR = character:Nymeros_1
+        }
+    }
+    if = {
+        limit = { exists = title:k_blackmont.holder }
+        title:k_blackmont.holder = { save_scope_as = ar_king_blackmont }
+        nymeria_subjugate_kingdom_to_nymeria_effect = { GB_KINGDOM = title:k_blackmont }
+        agot_send_to_nightswatch_effect = {
+            NIGHTSWATCH_CANDIDATE = scope:ar_king_blackmont
+            ACTOR = character:Nymeros_1
+        }
+    }
+    if = {
+        limit = { exists = title:k_kingsgrave.holder }
+        title:k_kingsgrave.holder = { save_scope_as = ar_king_kingsgrave }
+        nymeria_subjugate_kingdom_to_nymeria_effect = { GB_KINGDOM = title:k_kingsgrave }
+        agot_send_to_nightswatch_effect = {
+            NIGHTSWATCH_CANDIDATE = scope:ar_king_kingsgrave
+            ACTOR = character:Nymeros_1
+        }
+    }
+    # The coalition is broken, which opens the Fate of Dorne, Yronwood's last bid. - Kizan
+    set_global_variable = nymeria_coalition_defeated
+    character:Nymeros_1 ?= {
+        trigger_event = nymeria_dryland.0006
+    }
+}

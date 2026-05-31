@@ -32272,6 +32272,14 @@ e_dorne = {
 			}
 			c_hellholt = {
 				color = { 223 116 87 }
+				# The Spearseat is listed first, so it is the county capital. The Ullers
+				# rule c_hellholt from here once they take Brimstone, after the Hellholt
+				# itself is razed to a ruin (see nymeria_ruin_hellholt_effect). - Kizan
+				b_the_spearseat = {
+					province = 5138
+					color = { 203 115 56 }
+					definite_form = yes
+				}
 				b_hellholt = {
 					province = 5135
 					color = { 225 111 35 }
@@ -32283,11 +32291,6 @@ e_dorne = {
 				b_fickle = {
 					province = 5137
 					color = { 221 108 33 }
-				}
-				b_the_spearseat = {
-					province = 5138
-					color = { 203 115 56 }
-					definite_form = yes
 				}
 				b_madness_tower = {
 					province = 5139
