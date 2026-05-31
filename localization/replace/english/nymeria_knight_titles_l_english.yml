@@ -1,0 +1,6 @@
+﻿l_english:
+
+ # The Ironborn knight word renders lowercase ("captain"); Kizan wants it capitalised.
+ # In the replace folder so it cleanly overrides AGOT (no duplicate-key conflict). - Kizan
+ knight_captain_no_tooltip_lowercase:0 "Captain"
+ knight_hero_no_tooltip_lowercase:0 "Captain"

@@ -1,0 +1,54 @@
+namespace = nymeria_rhoynish
+
+# Fires once, a couple of days after Nymeria wins the conquest and the Rhoynish begin
+# to settle. Pure flavour - it does nothing mechanically; it just announces the win and
+# explains the migration + how to switch it off / back on. - Kizan
+nymeria_rhoynish.0001 = {
+	type = character_event
+	title = nymeria_rhoynish.0001.t
+	desc = nymeria_rhoynish.0001.desc
+	theme = realm
+
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+
+	option = {
+		name = nymeria_rhoynish.0001.a
+	}
+}
+
+# Nymeria's direct heir inherits the migration - and is the LAST who ever will. - Kizan
+nymeria_rhoynish.0008 = {
+	type = character_event
+	title = nymeria_rhoynish.0008.t
+	desc = nymeria_rhoynish.0008.desc
+	theme = realm
+
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+
+	option = {
+		name = nymeria_rhoynish.0008.a
+	}
+}
+
+# The heir is dead; no Rhoynar remain across the narrow sea to settle. It ends. - Kizan
+nymeria_rhoynish.0009 = {
+	type = character_event
+	title = nymeria_rhoynish.0009.t
+	desc = nymeria_rhoynish.0009.desc
+	theme = realm
+
+	left_portrait = {
+		character = root
+		animation = sadness
+	}
+
+	option = {
+		name = nymeria_rhoynish.0009.a
+	}
+}

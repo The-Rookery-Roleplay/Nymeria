@@ -1,0 +1,5 @@
+# Marked on every ruler in Westeros toward Nymeria when she takes Dorne by force and sends
+# out her proclamation. A lasting grievance, the foreign conqueror beyond the mountains. - Kizan
+nymeria_foreign_invader_opinion = {
+	opinion = -10
+}

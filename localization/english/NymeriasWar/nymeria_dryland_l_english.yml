@@ -1,0 +1,43 @@
+﻿l_english:
+
+ #### Conquest of the Drylands - Kizan ####
+
+ # Confederation name
+ nymeria_anti_rhoynish_coalition:0 "Anti-Rhoynish Coalition"
+
+ # 0010 - kickstart: Nymeria turns to the Drylands
+ nymeria_dryland.0010.t:0 "Nymeria's First True Test"
+ nymeria_dryland.0010.desc:0 "The petty lords and wannabe kings of eastern Dorne have all submitted, and the Rhoynar stand united. Now comes my first true test. Lucifer Dryland, King of the Drylands and the last of his ancient line, is the first real foe I must face. It is time he answered to the Rhoyne, or fell."
+ nymeria_dryland.0010.a:0 "March on the Drylands"
+ nymeria_dryland.0010.b:0 "Not yet, let my people rest"
+ nymeria_dryland.0010.b.tt:0 "This postpones the march on the Drylands for six months."
+
+ # 0001 - the duel begins
+ nymeria_dryland.0001.t:0 "A King and a Conqueror"
+ nymeria_dryland.0001.desc:0 "Across the field stands Lucifer Dryland, King of the Drylands, the last of his ancient line. There is no need for ten thousand men to bleed into the sand today. I will face him myself, blade against blade, and let the river settle who rules here."
+ nymeria_dryland.0001.a:0 "Ride out and face him"
+
+ # 0003 - victory, the Drylands fall
+ nymeria_dryland.0003.t:0 "The Drylands Are Mine"
+ nymeria_dryland.0003.desc:0 "King Lucifer lies dead in the sand, and House Dryland dies with him, for he left no heir. His lords come forward to bend the knee, Lord Uller chief among them, raised now to Duke of Brimstone. Vaith, Qorgyle, and every petty lord besides answer to me, and the Kingdom of the Drylands is no more.\n\nYet word of his fall runs ahead of me, and the other kings of Dorne look to their walls."
+ nymeria_dryland.0003.a:0 "The Rhoynar grow stronger"
+
+ # 0004 - defeat, Nymeria falls (fires to her heir)
+ nymeria_dryland.0004.t:0 "The Conqueror Falls"
+ nymeria_dryland.0004.desc:0 "It should not have ended so. Great Nymeria, who carried our people across the sea and broke the Broken Arm, has fallen to Lucifer Dryland's blade in single combat. The Rhoynar are leaderless, and all of Dorne holds its breath to see what comes."
+ nymeria_dryland.0004.a:0 "We will not forget her"
+
+ # 0005 - the Anti-Rhoynish Coalition marches as one bloc
+ nymeria_dryland.0005.t:0 "The Anti-Rhoynish Coalition"
+ nymeria_dryland.0005.desc:0 "It has come, as I knew it must. The kings of eastern Dorne have set aside their own quarrels and bound themselves as one: Dayne of the Torrentine, Fowler of Stone and Sky, Blackmont, and Manwoody of Kingsgrave. Four crowns against one. They march on me together, sworn to drown the Rhoynar in the Greenblood. We did not cross the sea to kneel."
+ nymeria_dryland.0005.a:0 "Let them come"
+
+ # 0006 - the coalition broken, its kings take the black
+ nymeria_dryland.0006.t:0 "The Black Brothers of Dorne"
+ nymeria_dryland.0006.desc:0 "The coalition is shattered, and four proud kings kneel in the sand before me. I will not take their heads. I give them to the Wall instead, to live out their days in black amid the cold, far from the river they sought to poison. Their crowns I shatter, and their heirs bend the knee, sworn now to the Rhoynar. Dorne learns anew what it costs to march on Nymeria of the Rhoyne."
+ nymeria_dryland.0006.a:0 "The river endures"
+
+ # 0007 - Nymeria cast down, her crown shattered
+ nymeria_dryland.0007.t:0 "The Rhoynar Cast Down"
+ nymeria_dryland.0007.desc:0 "It is over. The coalition has done what Lucifer Dryland could not. My crown lies shattered in the sand, my kingdom torn from me, and the dream of a free Rhoynar fades upon the Greenblood. I am a queen of nothing now, cast all the way back to where I began. Yet I am not dead, and while I breathe, the river still runs."
+ nymeria_dryland.0007.a:0 "We begin again"

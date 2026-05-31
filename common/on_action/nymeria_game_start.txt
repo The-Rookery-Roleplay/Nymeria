@@ -1,7 +1,94 @@
 ﻿on_game_start_after_lobby = {
     on_actions = {
-        nymeria_dorne_events_cycle 
-        nymeria_stormlands_events_cycle 
+        nymeria_dorne_events_cycle
+        nymeria_stormlands_events_cycle
+        nymeria_dorne_test_event
+        nymeria_place_bookmark_artifacts
+        nymeria_setup_ai_nymeria
+    }
+}
+
+nymeria_dorne_test_event = {
+    effect = {
+        if = {
+            limit = { has_game_rule = nymeria_dorne_story_on }
+            character:Fowler_11 = {
+                trigger_event = nymeria_dorne_events.0001
+            }
+            character:Blackmont_10 = {
+                trigger_event = nymeria_dorne_events.0002
+            }
+            character:Dayne_17 = {
+                trigger_event = nymeria_dorne_events.0003
+            }
+            character:Manwoody_9 = {
+                trigger_event = nymeria_dorne_events.0004
+            }
+            character:Yronwood_16 = {
+                trigger_event = nymeria_dorne_events.0005
+            }
+            character:Dryland_1 = {
+                trigger_event = nymeria_dorne_events.0006
+            }
+            character:Martell_23 = {
+                trigger_event = nymeria_dorne_events.0007
+            }
+            # Hidden - gives Lord Uller the refusing_marriage trait. - Kizan
+            character:Uller_200 = {
+                trigger_event = nymeria_dorne_events.0009
+            }
+            # Hidden - stops Lord Santagar crowning himself before the Broken Arm war. - Kizan
+            character:Santagar_200 = {
+                trigger_event = nymeria_dorne_events.0010
+            }
+        }
+    }
+}
+
+# Re-gives the Valyrian-steel swords to the _200 bookmark lords at the Nymeria's War
+# (7299) start. AGOT's own scenario_artifacts only seeds these at later dates, so
+# without this they would not exist at our bookmark. Ported out of AGOT's
+# scenario_artifacts so we no longer override that whole file. - Kizan
+nymeria_place_bookmark_artifacts = {
+    effect = {
+        if = {
+            limit = { game_start_date = 7299.1.1 }
+            character:Dustin_200 ?= { agot_create_artifact_vs_wyrmfang_effect = { OWNER = THIS } }
+            character:Lydden_200 ?= { agot_create_artifact_vs_widestripe_effect = { OWNER = THIS } }
+            character:Hightower_200 ?= { agot_create_artifact_vs_vigilance_effect = { OWNER = THIS } }
+            character:Rogare_200 ?= { agot_create_artifact_vs_truth_effect = { OWNER = THIS } }
+            character:Brax_200 ?= { agot_create_artifact_vs_tranquility_effect = { OWNER = THIS } }
+            character:Swann_200 ?= { agot_create_artifact_vs_swansong_effect = { OWNER = THIS } }
+            character:Bar_Emmon_200 ?= { agot_create_artifact_vs_swordfish_effect = { OWNER = THIS } }
+            character:Serrett_200 ?= { agot_create_artifact_vs_supremacy_effect = { OWNER = THIS } }
+            character:Darklyn_200 ?= { agot_create_artifact_vs_stalwart_effect = { OWNER = THIS } }
+            character:Banefort_200 ?= { agot_create_artifact_vs_skullcleaver_effect = { OWNER = THIS } }
+            character:Velaryon_200 ?= { agot_create_artifact_vs_seafoam_effect = { OWNER = THIS } }
+            character:Cargyll_200 ?= { agot_create_artifact_vs_remige_effect = { OWNER = THIS } }
+            character:Reyne_200 ?= { agot_create_artifact_vs_red_rain_effect = { OWNER = THIS } }
+            character:Jast_200 ?= { agot_create_artifact_vs_pride_effect = { OWNER = THIS } }
+            character:Celtigar_200 ?= { agot_create_artifact_vs_pincer_effect = { OWNER = THIS } }
+            character:Roxton_200 ?= { agot_create_artifact_vs_orphan_maker_effect = { OWNER = THIS } }
+            character:Greyjoy_200 ?= { agot_create_artifact_vs_nightfall_effect = { OWNER = THIS } }
+            character:Mormont_200 ?= { agot_create_artifact_vs_longclaw_effect = { OWNER = THIS } }
+            character:Royce_200 ?= { agot_create_artifact_vs_lamentation_effect = { OWNER = THIS } }
+            character:Corbray_200 ?= { agot_create_artifact_vs_lady_forlorn_effect = { OWNER = THIS } }
+            character:Stark_200 ?= { agot_create_artifact_vs_ice_effect = { OWNER = THIS } }
+            character:Tarly_200 ?= { agot_create_artifact_vs_heartsbane_effect = { OWNER = THIS } }
+            character:Forrester_200 ?= { agot_create_artifact_vs_iron_will_effect = { OWNER = THIS } }
+            character:Rowan_200 ?= { agot_create_artifact_vs_evergold_effect = { OWNER = THIS } }
+            character:Ironsmith_200 ?= { agot_create_artifact_vs_defiance_effect = { OWNER = THIS } }
+            character:Teague_200 ?= { agot_create_artifact_vs_disputant_effect = { OWNER = THIS } }
+            character:Vyrwel_200 ?= { agot_create_artifact_vs_darktalon_effect = { OWNER = THIS } }
+            character:Targaryen_200 ?= { agot_create_artifact_vs_dark_sister_effect = { OWNER = THIS } }
+            character:Massey_200 ?= { agot_create_artifact_vs_dancer_effect = { OWNER = THIS } }
+            character:Adarys_200 ?= { agot_create_artifact_vs_cloudbreak_effect = { OWNER = THIS } }
+            # House Lannister are NOT supposed to have Brightroar (it is lost). - Kizan
+            # character:Lannister_155 ?= { agot_create_artifact_vs_brightroar_effect = { OWNER = THIS } }
+            character:Targaryen_200 ?= { agot_create_artifact_vs_blackfyre_effect = { OWNER = THIS } }
+            character:Wyl_200 ?= { agot_create_artifact_vs_adders_fang_effect = { OWNER = THIS } }
+            character:Beesbury_200 ?= { agot_create_artifact_bumblin_sword_effect = { OWNER = THIS } }
+        }
     }
 }
 
@@ -9,18 +96,72 @@ quarterly_playable_pulse = {
     on_actions = {
         nymeria_stormlands_events_cycle2
         nymeria_stormlands_events_cycle3
+        nymeria_rhoynish_migration_pulse
+        nymeria_check_greenblood_consolidation
+        nymeria_check_greenblood_reclaim
+        nymeria_check_anti_rhoynish_coalition
+        nymeria_check_anti_rhoynish_war
+        nymeria_check_fate_of_dorne
     }
 }
 
 on_game_start = {
     on_actions = {
         crackclaw_confed_on_game_start
+        nymeria_block_dragonstone_colonization
+    }
+}
+
+# If Nymeria is left to the AI (the player did not pick her), give her the trait that
+# blocks marriage, so the AI never weds her off and derails the Dornish story. A player
+# Nymeria is left free to marry as they like. - Kizan
+nymeria_setup_ai_nymeria = {
+    effect = {
+        if = {
+            limit = {
+                exists = character:Nymeros_1
+                character:Nymeros_1 = {
+                    is_ai = yes
+                    NOT = { has_trait = nymeria_refuses_marriage }
+                }
+            }
+            character:Nymeros_1 = { add_trait = nymeria_refuses_marriage }
+        }
+    }
+}
+
+nymeria_block_dragonstone_colonization = {
+    effect = {
+        if = {
+            limit = { NOT = { title:c_dragonstone = { has_county_modifier = block_settlement_ability } } }
+            title:c_dragonstone = { add_county_modifier = block_settlement_ability }
+        }
     }
 }
 
 on_death = {
     on_actions = {
         nymeria_stormlands_gardener_death
+        nymeria_rhoynish_migration_succession
+        nymeria_dryland_heirless_death
+    }
+}
+
+# Lucifer Dryland dies with no heir (the usual case, he is childless by design). House
+# Uller takes the Duchy of Brimstone, not the crown. Skipped if the storyline already
+# resolved him: the duel strips and destroys k_the_drylands before he dies, so the holder
+# check below no longer matches. - Kizan
+nymeria_dryland_heirless_death = {
+    trigger = {
+        this = character:Dryland_1
+        is_independent_ruler = yes
+        exists = title:k_the_drylands.holder
+        title:k_the_drylands.holder = this
+        # No heir at all: his line ends here. - Kizan
+        NOT = { exists = primary_heir }
+    }
+    effect = {
+        nymeria_dryland_heirless_death_effect = yes
     }
 }
 
@@ -41,6 +182,165 @@ nymeria_stormlands_gardener_death = {
             }
             character:Durrandon_62 = {
                 trigger_event = nymeria_stormlands.0050
+            }
+        }
+    }
+}
+
+# Fallback for the Anti-Rhoynish Coalition: if Lucifer Dryland's kingdom is gone and
+# Nymeria holds the Greenblood (Rhoynar) crown, the coalition still forms even if the
+# duel path never ran it (e.g. the war was won the ordinary way). The effect itself
+# only ever forms it once. - Kizan
+nymeria_check_anti_rhoynish_coalition = {
+    trigger = {
+        this = character:Nymeros_1
+        is_alive = yes
+        NOT = { has_global_variable = nymeria_anti_rhoynish_coalition_formed }
+        # The Kingdom of the Drylands no longer has a king. - Kizan
+        NOT = { exists = title:k_the_drylands.holder }
+        # Nymeria is Queen of the Greenblood (now Rhoynar) kingdom. - Kizan
+        title:k_the_greenblood.holder = this
+    }
+    effect = {
+        nymeria_form_anti_rhoynish_coalition_effect = yes
+    }
+}
+
+# Once the coalition has formed, the bloc marches the next season. This is decoupled from
+# the one-time formation effect so it fires reliably even if the coalition formed before
+# this war logic existed, and it retries each quarter until the war is actually declared
+# (the declare effect sets nymeria_anti_rhoynish_war_declared once it succeeds). - Kizan
+nymeria_check_anti_rhoynish_war = {
+    trigger = {
+        this = character:Nymeros_1
+        is_alive = yes
+        # The coalition has banded together... - Kizan
+        has_global_variable = nymeria_anti_rhoynish_coalition_formed
+        # ...but has not yet marched. - Kizan
+        NOT = { has_global_variable = nymeria_anti_rhoynish_war_declared }
+        # There is a leader to raise the banners, and Nymeria still wears a crown. - Kizan
+        exists = title:k_the_torrentine.holder
+        any_held_title = { tier = tier_kingdom }
+        NOT = { title:k_the_torrentine.holder = { is_at_war_with = character:Nymeros_1 } }
+    }
+    effect = {
+        nymeria_anti_rhoynish_coalition_declare_war_effect = yes
+    }
+}
+
+# Once the coalition has fallen, Yorick Yronwood the Bloodroyal makes his last bid to
+# destroy Nymeria (the Fate of Dorne). Guaranteed and retrying, like the coalition war, so
+# it fires reliably against an AI Yronwood. Fires once (the declare effect sets
+# nymeria_fate_of_dorne_declared). A visible decision offers the same to a player Yronwood. - Kizan
+nymeria_check_fate_of_dorne = {
+    trigger = {
+        this = character:Nymeros_1
+        is_alive = yes
+        # The coalition has fallen... - Kizan
+        has_global_variable = nymeria_coalition_defeated
+        # ...but Yronwood has not yet marched. - Kizan
+        NOT = { has_global_variable = nymeria_fate_of_dorne_declared }
+        # The Bloodroyal still stands a free king, and Nymeria still wears a crown. - Kizan
+        exists = title:k_yronwood.holder
+        title:k_yronwood.holder = { is_independent_ruler = yes }
+        any_held_title = { tier = tier_kingdom }
+        NOT = { title:k_yronwood.holder = { is_at_war_with = character:Nymeros_1 } }
+    }
+    effect = {
+        nymeria_fate_of_dorne_declare_war_effect = yes
+    }
+}
+
+# Once the Greenblood is united under Nymeria (all three Greenblood duchies are held by
+# her or her vassals), she forges the Kingdom of the Rhoynar from it. Nymeria only, fires
+# once. - Kizan
+nymeria_check_greenblood_consolidation = {
+    trigger = {
+        this = character:Nymeros_1
+        is_alive = yes
+        NOT = { has_character_flag = nymeria_greenblood_consolidated }
+        # She must still hold her hasty titular Rhoynar crown (took the conquest path). - Kizan
+        any_held_title = {
+            tier = tier_kingdom
+            has_variable = nymeria_rhoynar_princely_realm
+        }
+        # Every Greenblood duchy is hers or a vassal's. A duchy still inside Lucifer
+        # Dryland's realm is accepted here too, Chapter 4 dissolves him and delivers it,
+        # so the story never stalls waiting on land the duel will hand her. - Kizan
+        title:d_godsgrace.holder = { OR = { this = root  is_vassal_or_below_of = root  top_liege = character:Dryland_1 } }
+        title:d_salt_shore.holder = { OR = { this = root  is_vassal_or_below_of = root  top_liege = character:Dryland_1 } }
+        title:d_lemonwood.holder = { OR = { this = root  is_vassal_or_below_of = root  top_liege = character:Dryland_1 } }
+    }
+    effect = {
+        trigger_event = nymeria_laamp_events.0011
+    }
+}
+
+# FAILSAFE: if a rival king grabbed a Greenblood duchy before Nymeria could letter its
+# lord, the normal unification skips it and consolidation stalls. Each quarter, once the
+# letters are out and the Greenblood is not yet whole, march to reclaim any such duchy by
+# the sword. Dryland-held land is left to Chapter 4. - Kizan
+nymeria_check_greenblood_reclaim = {
+    trigger = {
+        this = character:Nymeros_1
+        is_alive = yes
+        has_character_flag = nymeria_greenblood_letters_sent
+        NOT = { has_character_flag = nymeria_greenblood_consolidated }
+        OR = {
+            nymeria_greenblood_duchy_stuck_under_rival_trigger = { GB_DUCHY = title:d_godsgrace }
+            nymeria_greenblood_duchy_stuck_under_rival_trigger = { GB_DUCHY = title:d_salt_shore }
+            nymeria_greenblood_duchy_stuck_under_rival_trigger = { GB_DUCHY = title:d_lemonwood }
+        }
+    }
+    effect = {
+        nymeria_greenblood_reclaim_failsafe_effect = yes
+    }
+}
+
+nymeria_rhoynish_migration_pulse = {
+    effect = {
+        if = {
+            limit = { has_character_flag = nymeria_rhoynish_migration_active }
+            nymeria_rhoynish_migration_pulse_effect = yes
+        }
+    }
+}
+
+# Carries the migration to Nymeria's DIRECT HEIR, then ends it when that heir dies. - Kizan
+nymeria_rhoynish_migration_succession = {
+    trigger = {
+        OR = {
+            has_character_flag = nymeria_rhoynish_migration_active
+            has_character_flag = nymeria_rhoynish_migration_stopped
+        }
+    }
+    effect = {
+        if = {
+            limit = { has_character_flag = nymeria_migration_founder }
+            # Nymeria (the founder) has died - the migration passes to her direct heir,
+            # who becomes the last ever to wield it. - Kizan
+            if = {
+                limit = { exists = primary_heir }
+                save_scope_as = migration_dead_founder
+                primary_heir = {
+                    add_character_flag = nymeria_migration_heir
+                    # Inherit whichever on/off state the founder left it in. - Kizan
+                    if = {
+                        limit = { scope:migration_dead_founder = { has_character_flag = nymeria_rhoynish_migration_stopped } }
+                        add_character_flag = nymeria_rhoynish_migration_stopped
+                    }
+                    else = {
+                        add_character_flag = nymeria_rhoynish_migration_active
+                    }
+                    trigger_event = nymeria_rhoynish.0008
+                }
+            }
+        }
+        else = {
+            # The direct heir has died - no more Rhoynar remain to settle. It ends. - Kizan
+            if = {
+                limit = { exists = primary_heir }
+                primary_heir = { trigger_event = nymeria_rhoynish.0009 }
             }
         }
     }

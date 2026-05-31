@@ -73,10 +73,10 @@
             }
         }
 
-        # Step 3: Keep d_massey_hook holder under Hook King
+        # Step 3: Keep d_masseys_hook holder under Hook King
         if = {
-            limit = { exists = title:d_massey_hook.holder }
-            title:d_massey_hook.holder = {
+            limit = { exists = title:d_masseys_hook.holder }
+            title:d_masseys_hook.holder = {
                 change_liege = {
                     liege = scope:defender
                     change = scope:fealty_change

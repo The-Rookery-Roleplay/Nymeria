@@ -1,0 +1,277 @@
+namespace = nymeria_dryland
+
+# Chapter 4: with the Rhoynar united, Nymeria turns to the last great Dornish king,
+# Lucifer Dryland. Fired ~6 months after the Greenblood is forged into the Kingdom of
+# the Rhoynar (nymeria_laamp_events.0011). Declaring war leads to the battle, which
+# fires the duel via on_combat_end_winner. - Kizan
+nymeria_dryland.0010 = {
+    type = character_event
+    title = nymeria_dryland.0010.t
+    desc = nymeria_dryland.0010.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_bold
+    }
+    right_portrait = {
+        character = character:Dryland_1
+        animation = scheme
+    }
+
+    trigger = {
+        exists = character:Dryland_1
+        character:Dryland_1 = { is_alive = yes }
+        NOT = { has_global_variable = nymeria_dryland_duel_scheduled }
+    }
+
+    option = { # March on the Drylands
+        name = nymeria_dryland.0010.a
+        ai_chance = { base = 100 }
+        # Declare the war. The duel normally fires the day after the FIRST time their two
+        # hosts personally clash on a field (scheduled in nymeria_combat_on_actions). - Kizan
+        start_war = {
+            cb = nymeria_rhoynish_invasion
+            target = character:Dryland_1
+            target_title = title:k_the_drylands
+        }
+        # FALLBACK: in AI vs AI wars the two rarely command a field battle in person, so the
+        # clash check above may never catch them and the duel would never fire. This forces
+        # it about six weeks into the war regardless. If a real clash triggers the duel
+        # first, the guard variable is already set and this quietly does nothing. - Kizan
+        trigger_event = { id = nymeria_dryland.0008 days = 45 }
+    }
+    option = { # Not yet, postpone the march for six months
+        name = nymeria_dryland.0010.b
+        ai_chance = { base = 0 }
+        custom_tooltip = nymeria_dryland.0010.b.tt
+        # Postpone for six months. - Kizan
+        trigger_event = { id = nymeria_dryland.0010 days = 180 }
+    }
+}
+
+# The armies meet and Nymeria challenges King Lucifer Dryland to single combat. - Kizan
+nymeria_dryland.0001 = {
+    type = character_event
+    title = nymeria_dryland.0001.t
+    desc = nymeria_dryland.0001.desc
+    theme = battle
+
+    left_portrait = {
+        character = root
+        animation = personality_bold
+    }
+    right_portrait = {
+        character = character:Dryland_1
+        animation = anger
+    }
+
+    # Still valid when it fires the day after the first clash (Dryland alive, war still
+    # on), otherwise the duel is quietly skipped. - Kizan
+    trigger = {
+        exists = character:Dryland_1
+        character:Dryland_1 = { is_alive = yes }
+        is_at_war_with = character:Dryland_1
+    }
+
+    option = {
+        name = nymeria_dryland.0001.a
+        # Grant Nymeria a temporary surge of prowess so she dominates the duel and the
+        # win looks the part. Stripped again the instant it resolves (0002 / 0009). - Kizan
+        add_character_modifier = { modifier = nymeria_conqueror_duel_modifier }
+        # Heavily weighted to Nymeria: 90% she wins, 10% she falls. FIXED forces the
+        # chosen outcome, FATALITY = no so we handle the killing blow ourselves. - Kizan
+        random_list = {
+            90 = {
+                configure_start_single_combat_effect = {
+                    SC_INITIATOR = root
+                    SC_ATTACKER = root
+                    SC_DEFENDER = character:Dryland_1
+                    FATALITY = no
+                    FIXED = sc_attacker
+                    LOCALE = battlefield
+                    OUTPUT_EVENT = nymeria_dryland.0002
+                    INVALIDATION_EVENT = nymeria_dryland.0009
+                }
+            }
+            10 = {
+                configure_start_single_combat_effect = {
+                    SC_INITIATOR = root
+                    SC_ATTACKER = root
+                    SC_DEFENDER = character:Dryland_1
+                    FATALITY = no
+                    FIXED = sc_defender
+                    LOCALE = battlefield
+                    OUTPUT_EVENT = nymeria_dryland.0002
+                    INVALIDATION_EVENT = nymeria_dryland.0009
+                }
+            }
+        }
+    }
+}
+
+# Duel result. scope:sc_victor is the winner. - Kizan
+nymeria_dryland.0002 = {
+    hidden = yes
+
+    immediate = {
+        # The duel is over, strip Nymeria's temporary combat buff either way. - Kizan
+        character:Nymeros_1 = { remove_character_modifier = nymeria_conqueror_duel_modifier }
+        if = {
+            limit = { scope:sc_victor = root }
+            # Nymeria won. Dryland still lives (FATALITY = no), so dissolve his realm
+            # into hers and slay him, then the petty kings form the coalition. - Kizan
+            nymeria_dryland_realm_to_nymeria_effect = yes
+            nymeria_form_anti_rhoynish_coalition_effect = yes
+            trigger_event = nymeria_dryland.0003
+        }
+        else = {
+            # Dryland won. Nymeria falls, her crown is shattered, and the war is lost. - Kizan
+            if = {
+                limit = { exists = primary_heir }
+                primary_heir = { trigger_event = nymeria_dryland.0004 }
+            }
+            # Her kingdom falls: every crown she held is destroyed. - Kizan
+            every_held_title = {
+                limit = { tier = tier_kingdom }
+                add_to_temporary_list = nymeria_fallen_crowns
+            }
+            every_in_list = {
+                list = nymeria_fallen_crowns
+                root = { destroy_title = prev }
+            }
+            # The invasion war dies with her, the Rhoynar are thrown back. - Kizan
+            every_character_war = {
+                limit = { using_cb = nymeria_rhoynish_invasion }
+                end_war = invalidated
+            }
+            death = {
+                death_reason = death_duel
+                killer = character:Dryland_1
+            }
+        }
+    }
+}
+
+# Victory. - Kizan
+nymeria_dryland.0003 = {
+    type = character_event
+    title = nymeria_dryland.0003.t
+    desc = nymeria_dryland.0003.desc
+    theme = battle
+
+    left_portrait = {
+        character = root
+        animation = happiness
+    }
+
+    option = {
+        name = nymeria_dryland.0003.a
+    }
+}
+
+# Defeat. Fires to Nymeria's heir. - Kizan
+nymeria_dryland.0004 = {
+    type = character_event
+    title = nymeria_dryland.0004.t
+    desc = nymeria_dryland.0004.desc
+    theme = battle
+
+    left_portrait = {
+        character = root
+        animation = sadness
+    }
+
+    option = {
+        name = nymeria_dryland.0004.a
+    }
+}
+
+# FALLBACK duel-forcer, fired 45 days after the war is declared (nymeria_dryland.0010.a).
+# In AI vs AI wars the two hosts rarely meet in a personally-led field battle, so the
+# on_combat_end_winner clash check never catches them and the duel would otherwise never
+# fire. This guarantees it. If a real clash already scheduled the duel, the guard variable
+# is set and this does nothing. Skipped if the war already ended or either party is gone,
+# so a war won the ordinary way is left alone. - Kizan
+nymeria_dryland.0008 = {
+    hidden = yes
+    trigger = {
+        exists = character:Nymeros_1
+        exists = character:Dryland_1
+        character:Nymeros_1 = { is_alive = yes }
+        character:Dryland_1 = { is_alive = yes }
+        NOT = { has_global_variable = nymeria_dryland_duel_scheduled }
+        character:Nymeros_1 = { is_at_war_with = character:Dryland_1 }
+    }
+    immediate = {
+        set_global_variable = nymeria_dryland_duel_scheduled
+        character:Nymeros_1 = {
+            trigger_event = { id = nymeria_dryland.0001 days = 1 }
+        }
+    }
+}
+
+# Duel could not take place (one party gone). Nothing happens. - Kizan
+nymeria_dryland.0009 = {
+    hidden = yes
+    immediate = {
+        # Duel invalidated, make sure the temporary buff doesn't linger. - Kizan
+        character:Nymeros_1 = { remove_character_modifier = nymeria_conqueror_duel_modifier }
+    }
+}
+
+# The Anti-Rhoynish Coalition marches on Nymeria as one bloc. Fired ~30 days after the
+# coalition forms. The immediate declares the war (Dayne leads, the other kings join). - Kizan
+nymeria_dryland.0005 = {
+    type = character_event
+    title = nymeria_dryland.0005.t
+    desc = nymeria_dryland.0005.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = anger
+    }
+    right_portrait = {
+        character = title:k_the_torrentine.holder
+        animation = scheme
+    }
+
+    option = {
+        name = nymeria_dryland.0005.a
+    }
+}
+
+# Nymeria breaks the coalition. Its kings take the black, their heirs inherit. - Kizan
+nymeria_dryland.0006 = {
+    type = character_event
+    title = nymeria_dryland.0006.t
+    desc = nymeria_dryland.0006.desc
+    theme = battle
+
+    left_portrait = {
+        character = root
+        animation = happiness
+    }
+
+    option = {
+        name = nymeria_dryland.0006.a
+    }
+}
+
+# Nymeria is cast down, her crown shattered, all the way back to where she began. - Kizan
+nymeria_dryland.0007 = {
+    type = character_event
+    title = nymeria_dryland.0007.t
+    desc = nymeria_dryland.0007.desc
+    theme = battle
+
+    left_portrait = {
+        character = root
+        animation = sadness
+    }
+
+    option = {
+        name = nymeria_dryland.0007.a
+    }
+}

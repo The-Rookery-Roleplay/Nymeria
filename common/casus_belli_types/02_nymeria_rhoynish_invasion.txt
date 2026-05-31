@@ -1,0 +1,681 @@
+﻿# Rhoynish Invasion casus belli - the alt-history conquest path of the Settle
+# Dorne story. These are EVENT-ONLY (valid_to_start / allowed_* = always no,
+# ai = no), fired from script via start_war. On victory every county the
+# attacker actually sieged (is_occupied) is converted to Rhoynish culture
+# (sarar) and faith (mother_rhoyne). - Kizan
+
+############################################################
+# Generic Rhoynish Invasion (event-only template) - Kizan
+############################################################
+nymeria_rhoynish_invasion = {
+    group = conquest
+    icon = invasion
+
+    war_name = "WAR_NAME_NYMERIA_RHOYNISH_INVASION"
+    my_war_name = "WAR_NAME_NYMERIA_RHOYNISH_INVASION"
+
+    target_titles = none
+    white_peace_possible = no
+
+    valid_to_start = { always = no }
+    allowed_for_character = { always = no }
+    allowed_against_character = { always = no }
+
+    should_check_for_interface_availability = no
+    ai = no
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    transfer_behavior = transfer
+
+    on_declaration = { on_declared_war = yes }
+
+    # --- WIN ---
+    on_victory = {
+        scope:attacker = {
+            show_pow_release_message_effect = yes
+            add_prestige = 300
+        }
+
+        # Every county the attacker sieged is Rhoynishized. - Kizan
+        nymeria_rhoynish_convert_sieged_counties_effect = yes
+
+        # Subjugate the defender. King vs king borrows the Unify Dorne logic so his whole
+        # realm comes across, not just his person (see the effect). A duke or count simply
+        # bends the knee. - Kizan
+        nymeria_invasion_subjugate_defender_effect = yes
+
+        # Route B: if Nymeria is still working through Toland & Martell, re-offer
+        # the remaining target a few days on. - Kizan
+        scope:attacker ?= {
+            if = {
+                limit = {
+                    has_character_flag = nymeria_route_b_active
+                    OR = {
+                        AND = { exists = character:Toland_200 character:Toland_200 = { is_independent_ruler = yes } }
+                        AND = { exists = character:Martell_23 character:Martell_23 = { is_independent_ruler = yes } }
+                    }
+                }
+                trigger_event = {
+                    id = nymeria_laamp_events.0008
+                    days = 5
+                }
+            }
+        }
+        # Both subdued? Then the Greenblood letters go out. - Kizan
+        nymeria_try_greenblood_letters_effect = yes
+
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = victory
+                }
+            }
+        }
+        agot_war_victory_effects = yes
+    }
+
+    on_victory_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_rhoynish_invasion_victory_desc }
+        }
+    }
+
+    # --- LOSE ---
+    on_defeat = {
+        scope:attacker = { add_prestige = -500 }
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = defeat
+                }
+            }
+        }
+    }
+    on_defeat_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_rhoynish_invasion_defeat_desc }
+        }
+    }
+
+    attacker_ticking_warscore = 0.1
+    defender_ticking_warscore = 0.1
+    full_occupation_by_attacker_gives_victory = yes
+    full_occupation_by_defender_gives_victory = yes
+    ticking_war_score_targets_entire_realm = yes
+    max_attacker_score_from_occupation = 150
+    max_defender_score_from_occupation = 150
+    max_attacker_score_from_battles = 100
+    max_defender_score_from_battles = 50
+
+    interface_priority = 120
+}
+
+############################################################
+# Rhoynish Invasion of the Broken Arm (the first war) - Kizan
+# Target: Santagar_200 (holder of d_broken_arm).
+# Win -> take c_torchwood as Nymeria's capital (renamed Ny Sar),
+# Santagar swears fealty, sieged counties Rhoynishized.
+############################################################
+nymeria_rhoynish_invasion_broken_arm = {
+    group = conquest
+    icon = invasion
+
+    war_name = "WAR_NAME_NYMERIA_RHOYNISH_INVASION_BROKEN_ARM"
+    my_war_name = "WAR_NAME_NYMERIA_RHOYNISH_INVASION_BROKEN_ARM"
+
+    target_titles = none
+    white_peace_possible = no
+
+    valid_to_start = { always = no }
+    allowed_for_character = { always = no }
+    allowed_against_character = { always = no }
+
+    should_check_for_interface_availability = no
+    ai = no
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    transfer_behavior = transfer
+
+    on_declaration = { on_declared_war = yes }
+
+    # --- WIN ---
+    on_victory = {
+        scope:attacker = {
+            show_pow_release_message_effect = yes
+            add_prestige = 500
+            # Permanent iron grip - her vassals will never rebel. Removed if she
+            # is ever crushed out of Dorne. - Kizan
+            if = {
+                limit = { NOT = { has_character_modifier = nymeria_rhoynar_dominance_modifier } }
+                add_character_modifier = { modifier = nymeria_rhoynar_dominance_modifier }
+            }
+        }
+
+        # Step 1: Seize c_torchwood for Nymeria.
+        create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = torchwood_change
+            add_claim_on_loss = no
+        }
+        title:c_torchwood = {
+            change_title_holder = {
+                holder = scope:attacker
+                change = scope:torchwood_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:torchwood_change
+
+        # Step 2: Reborn as Ny Sar - Rhoynish, and Nymeria's new capital. Its
+        # chief holding (b_the_lantern) becomes New Ny Sar. - Kizan
+        title:c_torchwood = {
+            set_title_name = NYMERIA_NY_SAR
+            set_county_culture = culture:sarar
+            set_county_faith = faith:mother_rhoyne
+        }
+        title:b_the_lantern = {
+            set_title_name = NYMERIA_NEW_NY_SAR
+        }
+        # Raise the heart of New Ny Sar - a special building in its own slot, so
+        # it doesn't need a free regular slot in the conquered holding. - Kizan
+        title:b_the_lantern.title_province ?= {
+            if = {
+                limit = { NOT = { has_building_or_higher = nym_new_ny_sar_1 } }
+                add_special_building_slot = nym_new_ny_sar_1
+                add_special_building = nym_new_ny_sar_1
+            }
+        }
+        # (Her realm capital follows her primary title - the kingdom founded below,
+        # whose capital is set to Ny Sar. set_capital_county is a title effect, not
+        # a character one, so we don't call it on scope:attacker here. - Kizan)
+
+        # Step 3: Nymeria founds her kingdom and takes the crown, so a Queen
+        # now stands over the Dornish dukes she means to bend. Hidden so the war
+        # outcome preview doesn't show a half-resolved "None of" line - the
+        # dynamic title doesn't exist until the war actually resolves. - Kizan
+        custom_tooltip = nymeria_rhoynish_found_kingdom_tt
+        hidden_effect = {
+            if = {
+                # Already crowned (e.g. via the Proclaim Yourself King decision):
+                # don't found a second kingdom - just adopt the existing one as the
+                # Rhoynar realm (capital, styling, primary). Founding is the fallback. - Kizan
+                limit = {
+                    scope:attacker = { any_held_title = { tier = tier_kingdom } }
+                }
+                scope:attacker = {
+                    random_held_title = {
+                        limit = { tier = tier_kingdom }
+                        save_scope_as = rhoynar_kingdom_existing
+                        set_capital_county = title:c_torchwood
+                        set_variable = nymeria_rhoynar_princely_realm
+                    }
+                    set_primary_title_to = scope:rhoynar_kingdom_existing
+                }
+            }
+            else = {
+                # Fallback: found a fresh titular Kingdom of the Rhoynar.
+                scope:attacker = {
+                    create_dynamic_title = {
+                        tier = kingdom
+                        name = NYMERIA_RHOYNAR_KINGDOM
+                        adj = NYMERIA_RHOYNAR_KINGDOM_ADJ
+                    }
+                }
+                create_title_and_vassal_change = {
+                    type = created
+                    save_scope_as = rhoynar_kingdom_change
+                    add_claim_on_loss = no
+                }
+                scope:new_title = {
+                    change_title_holder = {
+                        holder = scope:attacker
+                        change = scope:rhoynar_kingdom_change
+                    }
+                }
+                resolve_title_and_vassal_change = scope:rhoynar_kingdom_change
+                scope:new_title = {
+                    set_coa = scope:attacker.house
+                    set_color_from_title = title:d_laamp_Nymeria # Nymeria's own colour, not the fugly auto one. - Kizan
+                    set_capital_county = title:c_torchwood
+                    # Flag so apply_character_title_data styles the holder Prince/Princess, not King/Queen. - Kizan
+                    set_variable = nymeria_rhoynar_princely_realm
+                }
+                scope:attacker = {
+                    set_primary_title_to = scope:new_title
+                }
+            }
+        }
+
+        # Nymeria unlocks the Rhoynish internal migration - a perk of her and her
+        # direct heir ONLY, earned by taking the conquest path. - Kizan
+        scope:attacker = {
+            nymeria_rhoynish_migration_activate_effect = yes
+        }
+
+        # Step 4: Rhoynishize every other county sieged in the war.
+        nymeria_rhoynish_convert_sieged_counties_effect = yes
+
+        # Step 5: Strip Santagar of his ducal crown - the Broken Arm is broken,
+        # leaving him a mere lord. - Kizan
+        custom_tooltip = nymeria_rhoynish_broken_arm_destroy_tt
+        hidden_effect = {
+            if = {
+                limit = { exists = title:d_broken_arm.holder }
+                title:d_broken_arm.holder = { destroy_title = title:d_broken_arm }
+            }
+        }
+
+        # Step 6: Santagar and the Lord of Rockwell bend the knee - now Counts
+        # under Queen Nymeria. - Kizan
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = santagar_fealty_change
+        }
+        scope:defender = {
+            change_liege = {
+                liege = scope:attacker
+                change = scope:santagar_fealty_change
+            }
+        }
+        if = {
+            limit = {
+                exists = title:c_rockwell.holder
+                NOT = { title:c_rockwell.holder = scope:attacker }
+            }
+            title:c_rockwell.holder = {
+                change_liege = {
+                    liege = scope:attacker
+                    change = scope:santagar_fealty_change
+                }
+            }
+        }
+        resolve_title_and_vassal_change = scope:santagar_fealty_change
+
+        # Chapter 2: word reaches Ghost Hill, and Toland looks to rally Dorne. - Kizan
+        if = {
+            limit = {
+                exists = character:Toland_200
+                character:Toland_200 = { is_alive = yes }
+            }
+            character:Toland_200 = {
+                trigger_event = {
+                    id = nymeria_laamp_events.0006
+                    days = 5
+                }
+            }
+        }
+
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = victory
+                }
+            }
+        }
+        agot_war_victory_effects = yes
+    }
+
+    on_victory_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_rhoynish_invasion_broken_arm_victory_desc }
+        }
+    }
+
+    # --- LOSE ---
+    on_defeat = {
+        scope:attacker = { add_prestige = -500 }
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = defeat
+                }
+            }
+        }
+    }
+    on_defeat_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_rhoynish_invasion_broken_arm_defeat_desc }
+        }
+    }
+
+    attacker_ticking_warscore = 0.1
+    defender_ticking_warscore = 0.1
+    full_occupation_by_attacker_gives_victory = yes
+    full_occupation_by_defender_gives_victory = yes
+    ticking_war_score_targets_entire_realm = yes
+    max_attacker_score_from_occupation = 150
+    max_defender_score_from_occupation = 150
+    max_attacker_score_from_battles = 100
+    max_defender_score_from_battles = 50
+
+    interface_priority = 120
+}
+
+############################################################
+# Rhoynish Subjugation (declarable) - Kizan
+# Only usable BY a sarar-culture ruler AGAINST an independent
+# Old Dornish ruler. Vassalizes the target; no forced conversion.
+############################################################
+nymeria_rhoynish_subjugation = {
+    group = conquest
+    icon = invasion
+
+    war_name = "WAR_NAME_NYMERIA_RHOYNISH_SUBJUGATION"
+    my_war_name = "WAR_NAME_NYMERIA_RHOYNISH_SUBJUGATION"
+
+    target_titles = none
+    white_peace_possible = no
+
+    cost = {
+        prestige = {
+            value = 150
+            desc = CB_BASE_COST
+        }
+    }
+
+    # Only a Rhoynar (sarar) ruler may wage it.
+    allowed_for_character = {
+        scope:attacker = {
+            culture = culture:sarar
+            is_independent_ruler = yes
+        }
+    }
+    # Only against independent Old Dornish rulers.
+    allowed_against_character = {
+        scope:defender = {
+            is_independent_ruler = yes
+            culture = culture:old_dornish
+        }
+    }
+
+    should_invalidate = {
+        scope:defender = { is_independent_ruler = no }
+    }
+
+    ai = no
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    transfer_behavior = transfer
+
+    on_declaration = { on_declared_war = yes }
+
+    # --- WIN ---
+    on_victory = {
+        scope:attacker = {
+            show_pow_release_message_effect = yes
+            add_prestige = 300
+        }
+        # The Old Dornish lord swears fealty, keeping all his lands. King vs king borrows
+        # the Unify Dorne logic first so the vassalage actually holds. - Kizan
+        nymeria_invasion_subjugate_defender_effect = yes
+
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = victory
+                }
+            }
+        }
+        agot_war_victory_effects = yes
+    }
+    on_victory_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_rhoynish_subjugation_victory_desc }
+        }
+    }
+
+    # --- LOSE ---
+    on_defeat = {
+        scope:attacker = { add_prestige = -300 }
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = defeat
+                }
+            }
+        }
+    }
+    on_defeat_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_rhoynish_subjugation_defeat_desc }
+        }
+    }
+
+    on_white_peace_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_rhoynish_subjugation_white_peace_desc }
+        }
+    }
+
+    attacker_ticking_warscore = 0.1
+    defender_ticking_warscore = 0.1
+    full_occupation_by_attacker_gives_victory = yes
+    full_occupation_by_defender_gives_victory = yes
+    ticking_war_score_targets_entire_realm = yes
+    max_attacker_score_from_occupation = 150
+    max_defender_score_from_occupation = 150
+    max_attacker_score_from_battles = 100
+    max_defender_score_from_battles = 50
+
+    interface_priority = 110
+}
+
+############################################################
+# Crush the Rhoynar (event-only) - Kizan
+# Toland (primary attacker, + Martell ally) wage war to throw
+# Nymeria (defender) out of Dorne.
+#   Attackers WIN  -> Nymeria expelled, lands parcelled out.
+#   Attackers LOSE -> Toland & Martell become Nymeria's vassals.
+############################################################
+nymeria_crush_rhoynar = {
+    group = conquest
+    icon = invasion
+
+    war_name = "WAR_NAME_NYMERIA_CRUSH_RHOYNAR"
+    my_war_name = "WAR_NAME_NYMERIA_CRUSH_RHOYNAR"
+
+    target_titles = none
+    white_peace_possible = no
+
+    valid_to_start = { always = no }
+    allowed_for_character = { always = no }
+    allowed_against_character = { always = no }
+
+    should_check_for_interface_availability = no
+    ai = no
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    transfer_behavior = transfer
+
+    on_declaration = { on_declared_war = yes }
+
+    # --- ATTACKERS WIN (Nymeria crushed) ---
+    on_victory = {
+        scope:defender = { show_pow_release_message_effect = yes }
+        nymeria_crush_rhoynar_attacker_victory_effect = yes
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = victory
+                }
+            }
+        }
+        agot_war_victory_effects = yes
+    }
+    on_victory_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_crush_rhoynar_victory_desc }
+        }
+    }
+
+    # --- ATTACKERS LOSE (Toland & Martell vassalized) ---
+    on_defeat = {
+        scope:defender = {
+            show_pow_release_message_effect = yes
+            add_prestige = 500
+        }
+        nymeria_crush_rhoynar_attacker_defeat_effect = yes
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = defeat
+                }
+            }
+        }
+    }
+    on_defeat_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_crush_rhoynar_defeat_desc }
+        }
+    }
+
+    attacker_ticking_warscore = 0.1
+    defender_ticking_warscore = 0.1
+    full_occupation_by_attacker_gives_victory = yes
+    full_occupation_by_defender_gives_victory = yes
+    ticking_war_score_targets_entire_realm = yes
+    max_attacker_score_from_occupation = 150
+    max_defender_score_from_occupation = 150
+    max_attacker_score_from_battles = 100
+    max_defender_score_from_battles = 50
+
+    interface_priority = 120
+}
+
+############################################################
+# Anti-Rhoynish War (event-only) - Kizan
+# The four petty kings of the Anti-Rhoynish Coalition wage war on Nymeria as one bloc,
+# modelled on the Toland-Martell crush war: Dayne (Torrentine) is primary attacker, with
+# Fowler (Stone and Sky), Blackmont and Manwoody (Kingsgrave) joining as co-attackers.
+#   Attackers WIN  -> Nymeria's crown is shattered, she is cast all the way back.
+#   Attackers LOSE -> every coalition king takes the black, their heirs inherit.
+# No white peace either way. - Kizan
+############################################################
+nymeria_anti_rhoynish_war = {
+    group = conquest
+    icon = invasion
+
+    war_name = "WAR_NAME_NYMERIA_ANTI_RHOYNISH_WAR"
+    my_war_name = "WAR_NAME_NYMERIA_ANTI_RHOYNISH_WAR"
+
+    target_titles = none
+    white_peace_possible = no
+
+    valid_to_start = { always = no }
+    allowed_for_character = { always = no }
+    allowed_against_character = { always = no }
+
+    should_check_for_interface_availability = no
+    ai = no
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    transfer_behavior = transfer
+
+    on_declaration = { on_declared_war = yes }
+
+    # --- ATTACKERS WIN (Nymeria cast down) ---
+    on_victory = {
+        scope:defender = { show_pow_release_message_effect = yes }
+        nymeria_anti_rhoynish_war_attacker_victory_effect = yes
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = victory
+                }
+            }
+        }
+        agot_war_victory_effects = yes
+    }
+    on_victory_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_anti_rhoynish_war_victory_desc }
+        }
+    }
+
+    # --- ATTACKERS LOSE (the coalition takes the black) ---
+    on_defeat = {
+        scope:defender = {
+            show_pow_release_message_effect = yes
+            add_prestige = 500
+        }
+        nymeria_anti_rhoynish_war_attacker_defeat_effect = yes
+        hidden_effect = {
+            scope:attacker = {
+                add_truce_both_ways = {
+                    character = scope:defender
+                    days = 1825
+                    war = root.war
+                    result = defeat
+                }
+            }
+        }
+    }
+    on_defeat_desc = {
+        first_valid = {
+            triggered_desc = { desc = nymeria_anti_rhoynish_war_defeat_desc }
+        }
+    }
+
+    attacker_ticking_warscore = 0.1
+    defender_ticking_warscore = 0.1
+    full_occupation_by_attacker_gives_victory = yes
+    full_occupation_by_defender_gives_victory = yes
+    ticking_war_score_targets_entire_realm = yes
+    max_attacker_score_from_occupation = 150
+    max_defender_score_from_occupation = 150
+    max_attacker_score_from_battles = 100
+    max_defender_score_from_battles = 50
+
+    interface_priority = 120
+}

@@ -1,0 +1,19 @@
+# Given to Nymeria only when she is left to the AI, so the AI never weds her off and
+# derails the Dornish story. The can_not_marry flag blocks any marriage involving her. A
+# player-controlled Nymeria never receives it. - Kizan
+nymeria_refuses_marriage = {
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+
+	flag = can_not_marry
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { exists = this }
+				desc = chaste.dds
+			}
+			desc = chaste.dds
+		}
+	}
+}

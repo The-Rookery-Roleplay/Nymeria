@@ -1,5 +1,7 @@
 ﻿l_english:
 
+NEW_CREATED_TITLE_NAME:0 "[old_title.GetBaseNameNoTierNoTooltip]"
+NEW_CREATED_TITLE_ADJECTIVE:0 "[old_title.GetAdjectiveNoTooltip]"
 d_laamp_Nymeria:0 "the Rhoynar"
 d_misty_islands:0 "the Misty Isles"
 d_godsfort:0 "Godsfort"
@@ -21,19 +23,23 @@ b_sunship:0 "The Sandship"
 d_crackclaw_confederation:0 "The Crackclaw Confederation"
 
 
-# Flavorization
+# Title rank localization (overrides AGOT's apply_character_title_data fallback)
 
- hook_king_flavorization: "Hook King"
- hook_king_flavorization_female: "Hook Queen"
- hook_queen_consort_flavorization: "Hook Queen"
- hook_king_consort_flavorization: "Hook King Consort"
+ king_vulture:0 "Vulture King"
+ queen_vulture:0 "Vulture Queen"
 
- duskwashes_king_flavorization: "Shadow King"
- duskwashes_queen_flavorization: "Shadow Queen"
- duskwashes_queen_consort_flavorization: "Shadow Queen"
- duskwashes_king_consort_flavorization: "Shadow King Consort"
+ king_the_hook:0 "Hook King"
+ queen_the_hook:0 "Hook Queen"
 
- river_king_flavorization: "River King"
- river_queen_flavorization: "River Queen"
- river_queen_consort_flavorization: "River Queen"
- river_king_consort_flavorization: "River King Consort"
+ king_duskwashes:0 "Shadow King"
+ queen_duskwashes:0 "Shadow Queen"
+
+ king_river:0 "River King"
+ queen_river:0 "River Queen"
+
+ high_lord:0 "Lord"
+ high_lady:0 "Lady"
+ marcher_lord:0 "Lord"
+ marcher_lady:0 "Lady"
+ minor_lord:0 "Lord"
+ minor_lady:0 "Lady"

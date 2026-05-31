@@ -1,0 +1,42 @@
+# Schedules the Dryland duel 1 day after the FIRST time Nymeria's host and Dryland's
+# host actually fight a battle, both personally leading. Hooks on_combat_end_winner,
+# where side_commander is reliably the real field commander (at on_combat_start it is
+# not resolved yet, which is why earlier versions misfired or never fired). Merges with
+# AGOT's on_combat_end_winner. Root = the winning combat side. - Kizan
+on_combat_end_winner = {
+    on_actions = {
+        nymeria_dryland_duel_check
+    }
+}
+
+nymeria_dryland_duel_check = {
+    trigger = {
+        exists = character:Nymeros_1
+        exists = character:Dryland_1
+        character:Nymeros_1 = { is_alive = yes }
+        character:Dryland_1 = { is_alive = yes }
+        # Schedule it only once, off the first real clash. - Kizan
+        NOT = { has_global_variable = nymeria_dryland_duel_scheduled }
+        # It must be their war. - Kizan
+        character:Nymeros_1 = { is_at_war_with = character:Dryland_1 }
+        # The two commanders of the battle that just ended were Nymeria and Dryland
+        # themselves, so their own hosts fought, both personally leading. - Kizan
+        OR = {
+            AND = {
+                side_commander = character:Nymeros_1
+                enemy_side = { side_commander = character:Dryland_1 }
+            }
+            AND = {
+                side_commander = character:Dryland_1
+                enemy_side = { side_commander = character:Nymeros_1 }
+            }
+        }
+    }
+    effect = {
+        # The duel lands the day after that first clash. - Kizan
+        set_global_variable = nymeria_dryland_duel_scheduled
+        character:Nymeros_1 = {
+            trigger_event = { id = nymeria_dryland.0001 days = 1 }
+        }
+    }
+}

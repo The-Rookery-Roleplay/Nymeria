@@ -1,0 +1,26 @@
+﻿# The heart of New Ny Sar - raised when Nymeria makes Torchwood her seat, and
+# torn down again if Dorne crushes her. Script-only (never player-constructed),
+# added/removed via the Rhoynish Invasion effects. - Kizan
+nym_new_ny_sar_1 = {
+    type = special # Own slot - the conquered holding's regular slots are full. - Kizan
+    construction_time = slow_construction_time
+    type_icon = "icon_structure_konark_temple.dds"
+
+    # Never buildable by hand - it only exists where Nymeria plants her capital.
+    can_construct_potential = { always = no }
+    can_construct = { always = no }
+    is_enabled = { always = yes }
+
+    # Reduces the holder's Men-at-Arms upkeep and helps settle the new seat.
+    character_modifier = {
+        men_at_arms_maintenance = -0.25
+    }
+    county_modifier = {
+        monthly_county_control_growth_add = 0.5
+        development_growth = 0.15
+        tax_mult = 0.15
+    }
+    province_modifier = {
+        monthly_income = 5
+    }
+}

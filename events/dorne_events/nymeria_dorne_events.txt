@@ -1,0 +1,226 @@
+namespace = nymeria_dorne_events
+
+nymeria_dorne_events.0001 = { # Introduction Event - House Fowler
+    type = character_event
+    title = nymeria_dorne_events.0001.t
+    desc = nymeria_dorne_events.0001.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    trigger = {
+        this = character:Fowler_11
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = nymeria_dorne_events.0001.a
+        add_prestige = 500
+        add_trait = infirm
+    }
+}
+
+nymeria_dorne_events.0002 = { # Introduction Event - House Blackmont
+    type = character_event
+    title = nymeria_dorne_events.0002.t
+    desc = nymeria_dorne_events.0002.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    trigger = {
+        this = character:Blackmont_10
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    option = {
+        name = nymeria_dorne_events.0002.a
+        add_prestige = 100
+        add_piety = 500
+    }
+}
+
+nymeria_dorne_events.0003 = { # Introduction Event - House Dayne
+    type = character_event
+    title = nymeria_dorne_events.0003.t
+    desc = nymeria_dorne_events.0003.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_bold
+    }
+
+    trigger = {
+        this = character:Dayne_17
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    option = {
+        name = nymeria_dorne_events.0003.a
+        add_prestige = 100
+        add_prowess_skill = 2
+    }
+}
+
+nymeria_dorne_events.0004 = { # Introduction Event - House Manwoody
+    type = character_event
+    title = nymeria_dorne_events.0004.t
+    desc = nymeria_dorne_events.0004.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = anger
+    }
+
+    right_portrait = {
+        character = character:nymeria_garry
+        animation = fear
+    }
+
+    trigger = {
+        this = character:Manwoody_9
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    option = {
+        name = nymeria_dorne_events.0004.a
+        add_prestige = 100
+        add_dread = 100
+        character:nymeria_garry = {
+            death = {
+                death_reason = death_murder
+                killer = root
+            }
+        }
+    }
+}
+
+nymeria_dorne_events.0005 = { # Introduction Event - House Yronwood
+    type = character_event
+    title = nymeria_dorne_events.0005.t
+    desc = nymeria_dorne_events.0005.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    trigger = {
+        this = character:Yronwood_16
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    option = {
+        name = nymeria_dorne_events.0005.a
+        add_prestige = 100
+    }
+}
+
+nymeria_dorne_events.0006 = { # Introduction Event - House Dryland
+    type = character_event
+    title = nymeria_dorne_events.0006.t
+    desc = nymeria_dorne_events.0006.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = scheme
+    }
+
+    trigger = {
+        this = character:Dryland_1
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    immediate = {
+        # Why he is the Last of His Ilk - he will take no wife. - Kizan
+        if = {
+            limit = { NOT = { has_trait = refusing_marriage } }
+            add_trait = refusing_marriage
+        }
+    }
+
+    option = {
+        name = nymeria_dorne_events.0006.a
+        add_prestige = 100
+    }
+}
+
+nymeria_dorne_events.0007 = { # Introduction Event - House Martell
+    type = character_event
+    title = nymeria_dorne_events.0007.t
+    desc = nymeria_dorne_events.0007.desc
+    theme = realm
+
+    left_portrait = {
+        character = root
+        animation = personality_rational
+    }
+
+    trigger = {
+        this = character:Martell_23
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    option = {
+        name = nymeria_dorne_events.0007.a
+        add_prestige = 100
+    }
+}
+
+nymeria_dorne_events.0008 = { # Notification - a petty lord proclaims himself King
+    type = letter_event
+    opening = {
+        desc = nymeria_dorne_events.0008.opening
+    }
+    desc = nymeria_dorne_events.0008.desc
+    sender = scope:new_king
+
+    option = {
+        name = nymeria_dorne_events.0008.a
+    }
+}
+
+nymeria_dorne_events.0009 = { # Hidden - Lord Harmen Uller takes no wife
+    hidden = yes
+    type = character_event
+
+    trigger = {
+        this = character:Uller_200
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    immediate = {
+        if = {
+            limit = { NOT = { has_trait = refusing_marriage } }
+            add_trait = refusing_marriage
+        }
+    }
+}
+
+nymeria_dorne_events.0010 = { # Hidden - keeps Lord Santagar from crowning himself king
+    hidden = yes
+    type = character_event
+
+    trigger = {
+        this = character:Santagar_200
+        has_game_rule = nymeria_dorne_story_on
+    }
+
+    immediate = {
+        # So he stays a duke for the Broken Arm war, not a king. - Kizan
+        add_character_flag = nymeria_cannot_proclaim_kingdom
+    }
+}

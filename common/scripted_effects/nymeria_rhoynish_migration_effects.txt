@@ -1,0 +1,94 @@
+####################################################################################
+# RHOYNISH INTERNAL MIGRATION  - Kizan
+# Unlocked ONLY by taking the conquest path (granted when Nymeria founds the Rhoynar
+# realm by conquest). A perk of NYMERIA AND HER DIRECT HEIR ONLY - two generations.
+# When the heir dies, nymeria_rhoynish.0009 ("no more Rhoynar left to settle") fires
+# and it ends for good.
+# Toggle it with the prevent / resume decisions, which just swap the
+# nymeria_rhoynish_migration_active <-> nymeria_rhoynish_migration_stopped flag.
+####################################################################################
+
+# Granted to Nymeria (scope:attacker) the moment she founds the Rhoynar realm by conquest.
+nymeria_rhoynish_migration_activate_effect = {
+	add_character_flag = nymeria_rhoynish_migration_active
+	add_character_flag = nymeria_migration_founder
+	# One-off flavour pop-up that also explains the mechanic + how to toggle it. - Kizan
+	trigger_event = { id = nymeria_rhoynish.0001 days = 2 }
+}
+
+# Runs each quarter on a migration-holder (gated by the active flag in the on_action).
+# Works across her whole sub-realm (her counties + her vassals' + her vassal-vassals')
+# but ONLY inside Dorne. - Kizan
+nymeria_rhoynish_migration_pulse_effect = {
+	save_scope_as = migration_ruler
+	every_sub_realm_county = {
+		limit = {
+			# Only counties physically inside Dorne. - Kizan
+			title_province = { geographical_region = world_westeros_dorne }
+		}
+
+		# 1) The COUNTY itself may turn Rhoynar (if it hasn't already). - Kizan
+		if = {
+			limit = { NOT = { culture = culture:sarar } }
+			random = {
+				# County spread chance, per county PER QUARTER. Tune to taste. - Kizan
+				chance = 5
+				save_scope_as = migrated_county
+				set_county_culture = culture:sarar
+				set_county_faith = faith:mother_rhoyne
+				scope:migration_ruler = {
+					send_interface_toast = {
+						type = event_toast_effect_good
+						title = nymeria_rhoynish_county_toast
+						left_icon = scope:migrated_county
+						right_icon = scope:migration_ruler
+					}
+				}
+			}
+		}
+
+		# 2) The county's LORD and his whole direct family may turn too. Rolled on its
+		#    OWN each quarter (not only when the county flips), so lords actually convert
+		#    over time. Skips Nymeria herself. A lord holding several Dornish counties is
+		#    simply rolled once per county, so he turns a little faster. - Kizan
+		if = {
+			limit = {
+				exists = holder
+				holder = {
+					NOT = { culture = culture:sarar }
+					NOT = { this = scope:migration_ruler }
+				}
+			}
+			holder = {
+				random = {
+					# Lord conversion chance, per Dornish county he holds, per quarter. - Kizan
+					chance = 6
+					save_scope_as = converted_lord
+					nymeria_rhoynish_convert_lord_family_effect = yes
+					scope:migration_ruler = {
+						send_interface_toast = {
+							type = event_toast_effect_good
+							title = nymeria_rhoynish_lord_toast
+							left_icon = scope:converted_lord
+							right_icon = scope:migration_ruler
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Converts a lord and his direct family (himself, spouse(s) and children). - Kizan
+nymeria_rhoynish_convert_lord_family_effect = {
+	set_culture = culture:sarar
+	set_character_faith = faith:mother_rhoyne
+	every_spouse = {
+		set_culture = culture:sarar
+		set_character_faith = faith:mother_rhoyne
+	}
+	every_child = {
+		set_culture = culture:sarar
+		set_character_faith = faith:mother_rhoyne
+	}
+}

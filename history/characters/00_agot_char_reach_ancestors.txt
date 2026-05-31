@@ -1194,6 +1194,17 @@ Gardener_52 = {
 
 	7221.1.1 = { trait = knight }
 
+	7298.1.1 = {
+		effect = {
+			add_trait = infirm
+			add_trait_xp = {
+				trait = infirm
+				track = infirm
+				value = 100
+			}
+		}
+	}
+
 	7300.1.1 = { # Died at ninety six
 		trait = incapable
 		death = {
@@ -214794,9 +214805,21 @@ Tyrell_200 = {
 	trait = intellect_good_2
 
 	7276.1.1 = { birth = yes }
-	7286.1.1 = { 
+	7286.1.1 = {
 		trait = knight
-		give_nickname = nickname_tyrell_200 
+		give_nickname = nickname_tyrell_200
+	}
+	7292.1.1 = {
+		employer = Gardener_52 # Garth X Greybeard
+	}
+	7298.1.1 = {
+		effect = {
+			agot_appoint_as_regent_for_castle_history_effect = { CASTLE = title:e_the_reach }
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_reach
+				POSITION = councillor_castellan
+			}
+		}
 	}
 	7328.1.1 = {
 		death = { death_reason = death_natural_causes }

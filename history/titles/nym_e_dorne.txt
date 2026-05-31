@@ -193,6 +193,13 @@ d_godsgrace = {
     }
 }
 
+c_brimstone = {
+    7299.1.1 = {
+        liege = d_brimstone # Harmen Uller, vassal of King Lucifer Dryland - Kizan
+        holder = Uller_200
+    }
+}
+
 c_goldpeppers = {
     7299.1.1 = {
         liege = d_godsgrace
@@ -271,6 +278,16 @@ c_pronghorn = {
     7299.1.1 = {
         liege = k_the_drylands
         holder = Pronghorn_200
+    }
+    7300.1.1 = {
+        liege = d_brimstone
+    }
+}
+
+c_bloodbridge = {
+    7299.1.1 = {
+        liege = k_the_drylands
+        holder = Dryland_1 # Lucifer Dryland's own demesne, passes to Uller on his fall - Kizan
     }
     7300.1.1 = {
         liege = d_brimstone

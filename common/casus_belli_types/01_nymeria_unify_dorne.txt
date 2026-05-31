@@ -1,0 +1,291 @@
+# Player-usable CB to unify Dorne.
+# Available only to independent old_dornish rulers based in e_dorne, usable against
+# any independent ruler based in e_dorne.
+# On victory: strip & destroy the defender's Dorne kingdom-tier title(s); the defender
+# swears fealty and keeps everything below king tier (duchy/counties + sub-vassals).
+# If the defender is only a duke, he simply swears fealty.
+
+nymeria_unify_dorne_cb = {
+    icon = vassalization
+    group = subjugation
+
+    attacker_score_from_occupation_scale = 150
+    attacker_score_from_battles_scale = 150
+    defender_score_from_battles_scale = 150
+
+    allowed_for_character = {
+        # has_game_rule = nymeria_dorne_story_off # DEBUG: temporarily disabled so the CB is always available
+        scope:attacker = {
+            culture = culture:old_dornish
+            is_independent_ruler = yes
+            # Only a crowned king (or higher) may wage the war for Dornish unity -
+            # a petty duke must first proclaim himself King to qualify.
+            highest_held_title_tier >= tier_kingdom
+            capital_county = {
+                target_is_de_jure_liege_or_above = title:e_dorne
+            }
+        }
+    }
+
+    allowed_against_character = {
+        scope:defender = {
+            is_independent_ruler = yes
+            capital_county = {
+                target_is_de_jure_liege_or_above = title:e_dorne
+            }
+            # A lower-tier ruler can't declare on a higher-tier one
+            # (e.g. a duke can't attack a king).
+            highest_held_title_tier <= scope:attacker.highest_held_title_tier
+        }
+    }
+
+    should_invalidate = {
+        scope:defender = {
+            is_independent_ruler = no
+        }
+    }
+
+    cost = {
+        prestige = {
+            value = 150
+            desc = CB_BASE_COST
+        }
+    }
+
+    on_declaration = {
+        on_declared_war = yes
+    }
+
+    # The war for Dornish unity is fought to the end - no white peace for either
+    # side (so the AI can never weasel out with a status-quo peace). - Kizan
+    white_peace_possible = no
+
+    on_invalidated_desc = msg_subjugation_war_invalidated_message
+
+    on_victory_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = nymeria_unify_dorne_cb_victory_desc
+            }
+        }
+    }
+
+    on_victory = {
+        scope:attacker = {
+            show_pow_release_message_effect = yes
+            add_prestige = 300
+        }
+
+        # Collect the defender's Dorne kingdom-tier titles
+        scope:defender = {
+            every_held_title = {
+                limit = {
+                    tier = tier_kingdom
+                    target_is_de_jure_liege_or_above = title:e_dorne
+                }
+                add_to_temporary_list = dorne_crowns
+            }
+        }
+
+        # Step 1: strip those crowns onto the attacker
+        create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = unify_crown_change
+            add_claim_on_loss = no
+        }
+        every_in_list = {
+            list = dorne_crowns
+            change_title_holder = {
+                holder = scope:attacker
+                change = scope:unify_crown_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:unify_crown_change
+
+        # Step 2: defender swears fealty, keeping all remaining titles and sub-vassals
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = unify_fealty_change
+        }
+        scope:defender = {
+            change_liege = {
+                liege = scope:attacker
+                change = scope:unify_fealty_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:unify_fealty_change
+
+        # Step 3: destroy the now-vacant crowns
+        custom_tooltip = nymeria_unify_dorne_destroy_tt
+        every_in_list = {
+            list = dorne_crowns
+            scope:attacker = {
+                destroy_title = prev
+            }
+        }
+
+        scope:attacker = {
+            add_prestige_experience = {
+                value = major_prestige_value
+            }
+        }
+        scope:defender = {
+            add_prestige = {
+                value = major_prestige_value
+                multiply = -1.0
+            }
+        }
+
+        add_truce_attacker_victory_effect = yes
+        agot_war_victory_effects = yes
+    }
+
+    # White peace is disabled for this war (white_peace_possible = no), so these
+    # blocks can never fire - kept commented for reference. - Kizan
+    # on_white_peace_desc = {
+    #     first_valid = {
+    #         triggered_desc = {
+    #             desc = nymeria_unify_dorne_cb_white_peace_desc
+    #         }
+    #     }
+    # }
+
+    # on_white_peace = {
+    #     scope:attacker = {
+    #         show_pow_release_message_effect = yes
+    #         add_prestige = {
+    #             value = medium_prestige_value
+    #             multiply = -1.0
+    #         }
+    #     }
+    #     add_truce_white_peace_effect = yes
+    # }
+
+    on_defeat_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = nymeria_unify_dorne_cb_defeat_desc
+            }
+        }
+    }
+
+    on_defeat = {
+        scope:attacker = {
+            show_pow_release_message_effect = yes
+            add_prestige = {
+                value = major_prestige_value
+                multiply = -1.0
+            }
+        }
+
+        # The war turns around - mirror of the victory outcome. The humbled
+        # attacker's Dorne crown(s) are stripped to the defender, the attacker
+        # (now crownless) swears fealty, and the vacant crowns are destroyed.
+
+        # Collect the attacker's Dorne kingdom-tier titles
+        scope:attacker = {
+            every_held_title = {
+                limit = {
+                    tier = tier_kingdom
+                    target_is_de_jure_liege_or_above = title:e_dorne
+                }
+                add_to_temporary_list = dorne_defeat_crowns
+            }
+        }
+
+        # Step 1: strip those crowns onto the defender
+        create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = unify_defeat_crown_change
+            add_claim_on_loss = no
+        }
+        every_in_list = {
+            list = dorne_defeat_crowns
+            change_title_holder = {
+                holder = scope:defender
+                change = scope:unify_defeat_crown_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:unify_defeat_crown_change
+
+        # Step 2: the now-crownless attacker swears fealty, keeping all remaining
+        # titles and sub-vassals
+        create_title_and_vassal_change = {
+            type = swear_fealty
+            save_scope_as = unify_defeat_fealty_change
+        }
+        scope:attacker = {
+            change_liege = {
+                liege = scope:defender
+                change = scope:unify_defeat_fealty_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:unify_defeat_fealty_change
+
+        # Step 3: destroy the now-vacant crowns
+        custom_tooltip = nymeria_unify_dorne_destroy_tt
+        every_in_list = {
+            list = dorne_defeat_crowns
+            scope:defender = {
+                destroy_title = prev
+            }
+        }
+
+        add_truce_attacker_defeat_effect = yes
+    }
+
+    on_primary_attacker_death = inherit
+    on_primary_defender_death = inherit
+
+    attacker_allies_inherit = yes
+    defender_allies_inherit = yes
+
+    war_name = "WAR_NAME_NYMERIA_UNIFY_DORNE"
+    war_name_base = "WAR_NAME_NYMERIA_UNIFY_DORNE_BASE"
+    cb_name = "NYMERIA_UNIFY_DORNE_CB_NAME"
+    interface_priority = 60
+
+    ticking_war_score_targets_entire_realm = yes
+    max_defender_score_from_occupation = 150
+    max_attacker_score_from_occupation = 150
+    attacker_ticking_warscore = 0
+    attacker_wargoal_percentage = 0.8
+
+    ai_only_against_neighbors = yes
+    max_ai_diplo_distance_to_title = 500
+    ai_score_mult = {
+        value = 1
+
+        # Ambitious or brave rulers are far keener to unify Dorne by the sword.
+        if = {
+            limit = { scope:attacker = { has_trait = ambitious } }
+            multiply = 2.0
+        }
+        if = {
+            limit = { scope:attacker = { has_trait = brave } }
+            multiply = 2.0
+        }
+
+        # Opportunism: pounce on a neighbour who is already tied up in another war.
+        # ONLY when the historic (Dorne story) setting is OFF, so it does not override
+        # the scripted path when that setting is on. - Kizan
+        if = {
+            limit = {
+                scope:defender = { is_at_war = yes }
+                has_game_rule = nymeria_dorne_story_off
+            }
+            multiply = 3.0
+        }
+
+        # Don't suicide-declare: if the defender is roughly as strong or stronger
+        # than the attacker (defender's army > 80% of the attacker's), crush the score.
+        if = {
+            limit = {
+                scope:defender = {
+                    current_military_strength > scope:attacker.eighty_percent_of_current_military_strength
+                }
+            }
+            multiply = 0.1
+        }
+    }
+}

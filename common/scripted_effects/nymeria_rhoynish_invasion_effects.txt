@@ -1,0 +1,317 @@
+﻿# Run from a CB on_victory scope (scope:attacker / scope:defender exist).
+# Converts every county in the defender's realm that the attacker actually
+# sieged (is_occupied) over to Rhoynish culture (sarar) and faith
+# (mother_rhoyne). Counties never taken by the spear are left untouched. - Kizan
+nymeria_rhoynish_convert_sieged_counties_effect = {
+    scope:defender = {
+        every_sub_realm_county = {
+            # is_occupied is a province trigger, so check the county's own provinces
+            # rather than the county title itself (which logged a scope error). - Kizan
+            limit = { any_county_province = { is_occupied = yes } }
+            set_county_culture = culture:sarar
+            set_county_faith = faith:mother_rhoyne
+        }
+    }
+}
+
+# ===========================================================================
+# Crush the Rhoynar - run from nymeria_crush_rhoynar CB.
+# scope:attacker = Toland (primary), scope:defender = Nymeria. - Kizan
+# ===========================================================================
+
+# ATTACKERS WIN: Nymeria is crushed and expelled. Her crown is destroyed, Ny Sar
+# reverts to Torchwood (Dornish again) under Martell, and her two vassals are
+# parcelled out - Rockwell to Toland, Santagar to Martell. - Kizan
+nymeria_crush_rhoynar_attacker_victory_effect = {
+    # 0. Her iron grip is broken along with her crown. - Kizan
+    scope:defender = {
+        remove_character_modifier = nymeria_rhoynar_dominance_modifier
+    }
+
+    # 1. Strip Nymeria of any crown she holds - whether founded in the Broken Arm
+    # war or taken via the Proclaim Yourself King decision - so she's expelled
+    # back to her landless camp. If she holds none, the rest still runs. - Kizan
+    scope:defender = {
+        every_held_title = {
+            limit = { tier = tier_kingdom }
+            add_to_temporary_list = rhoynar_crowns_to_destroy
+        }
+    }
+    every_in_list = {
+        list = rhoynar_crowns_to_destroy
+        scope:defender = { destroy_title = prev }
+    }
+
+    # 2. Ny Sar becomes Torchwood once more - name, culture and faith restored,
+    # and the heart of New Ny Sar is torn down. - Kizan
+    title:c_torchwood = {
+        reset_title_name = yes
+        set_county_culture = culture:old_dornish
+        set_county_faith = faith:fots_seven
+    }
+    title:b_the_lantern = { reset_title_name = yes }
+    title:b_the_lantern.title_province ?= {
+        if = {
+            limit = { has_building = nym_new_ny_sar_1 }
+            remove_building = nym_new_ny_sar_1
+        }
+    }
+
+    # 3. Torchwood passes directly to Martell.
+    create_title_and_vassal_change = {
+        type = conquest
+        save_scope_as = crush_torchwood_change
+        add_claim_on_loss = no
+    }
+    title:c_torchwood = {
+        change_title_holder = {
+            holder = character:Martell_23
+            change = scope:crush_torchwood_change
+        }
+    }
+    resolve_title_and_vassal_change = scope:crush_torchwood_change
+
+    # 4. Santagar bends to Martell, the Lord of Rockwell to Toland.
+    create_title_and_vassal_change = {
+        type = swear_fealty
+        save_scope_as = crush_fealty_change
+    }
+    if = {
+        limit = {
+            exists = character:Santagar_200
+            character:Santagar_200 = { is_landed = yes }
+        }
+        character:Santagar_200 = {
+            change_liege = {
+                liege = character:Martell_23
+                change = scope:crush_fealty_change
+            }
+        }
+    }
+    if = {
+        limit = {
+            exists = title:c_rockwell.holder
+            NOT = { title:c_rockwell.holder = scope:attacker }
+        }
+        title:c_rockwell.holder = {
+            change_liege = {
+                liege = scope:attacker
+                change = scope:crush_fealty_change
+            }
+        }
+    }
+    resolve_title_and_vassal_change = scope:crush_fealty_change
+}
+
+# ATTACKERS LOSE: Toland and Martell both bend the knee to Queen Nymeria. - Kizan
+nymeria_crush_rhoynar_attacker_defeat_effect = {
+    create_title_and_vassal_change = {
+        type = swear_fealty
+        save_scope_as = crush_defeat_fealty
+    }
+    scope:attacker = { # Toland
+        change_liege = {
+            liege = scope:defender
+            change = scope:crush_defeat_fealty
+        }
+    }
+    if = {
+        limit = {
+            exists = character:Martell_23
+            character:Martell_23 = {
+                is_landed = yes
+                is_independent_ruler = yes
+                NOT = { this = scope:attacker }
+            }
+        }
+        character:Martell_23 = {
+            change_liege = {
+                liege = scope:defender
+                change = scope:crush_defeat_fealty
+            }
+        }
+    }
+    resolve_title_and_vassal_change = scope:crush_defeat_fealty
+
+    # Both coalition leaders are hers now - see if the Greenblood letters fire. - Kizan
+    nymeria_try_greenblood_letters_effect = yes
+}
+
+# Chapter 3 gate: once BOTH Toland and Martell are Nymeria's vassals (whether
+# crushed as a coalition or invaded one by one), Nymeria sends letters of
+# dominance to the remaining Greenblood lords. Fires once. - Kizan
+nymeria_try_greenblood_letters_effect = {
+    if = {
+        limit = {
+            exists = character:Nymeros_1
+            character:Nymeros_1 = {
+                is_alive = yes
+                NOT = { has_character_flag = nymeria_greenblood_letters_sent }
+            }
+            exists = character:Toland_200
+            exists = character:Martell_23
+            character:Toland_200 = { is_vassal_or_below_of = character:Nymeros_1 }
+            character:Martell_23 = { is_vassal_or_below_of = character:Nymeros_1 }
+        }
+        character:Nymeros_1 = {
+            add_character_flag = nymeria_greenblood_letters_sent
+            trigger_event = {
+                id = nymeria_laamp_events.0009
+                days = 5
+            }
+        }
+    }
+}
+
+# Once the Greenblood is united under Nymeria she sheds her hasty titular Rhoynar crown
+# and takes up the Greenblood's own, renaming it the Kingdom of the Rhoynar. It keeps
+# the Greenblood's own colour, so the Rhoynar crown ends up greenblood-coloured. Run on
+# Nymeria. - Kizan
+nymeria_consolidate_greenblood_into_rhoynar_effect = {
+    # Remember the old hasty titular kingdom so it can be destroyed afterwards. - Kizan
+    if = {
+        limit = {
+            any_held_title = { tier = tier_kingdom has_variable = nymeria_rhoynar_princely_realm }
+        }
+        random_held_title = {
+            limit = { tier = tier_kingdom has_variable = nymeria_rhoynar_princely_realm }
+            save_scope_as = old_titular_rhoynar
+        }
+    }
+
+    # 1. Take the Greenblood crown if she does not already hold it. - Kizan
+    if = {
+        limit = { NOT = { title:k_the_greenblood.holder = root } }
+        create_title_and_vassal_change = {
+            type = created
+            save_scope_as = greenblood_crown_change
+            add_claim_on_loss = no
+        }
+        title:k_the_greenblood = {
+            change_title_holder = {
+                holder = root
+                change = scope:greenblood_crown_change
+            }
+        }
+        resolve_title_and_vassal_change = scope:greenblood_crown_change
+    }
+
+    # 2. Rename it to the Kingdom of the Rhoynar and carry the princely styling onto it.
+    #    No colour change - it keeps the Greenblood's own gold. - Kizan
+    title:k_the_greenblood = {
+        set_title_name = NYMERIA_RHOYNAR_KINGDOM
+        set_variable = nymeria_rhoynar_princely_realm
+    }
+
+    # 3. Make the Greenblood-now-Rhoynar her primary title. - Kizan
+    set_primary_title_to = title:k_the_greenblood
+
+    # 4. Destroy the old hasty titular Rhoynar kingdom. - Kizan
+    if = {
+        limit = { exists = scope:old_titular_rhoynar }
+        destroy_title = scope:old_titular_rhoynar
+    }
+}
+
+# FAILSAFE (Chapter 3): a rival king (Yronwood, or any independent king other than
+# Nymeria) swallowed a Greenblood duchy before her letters could summon its lord, so the
+# normal unification skipped it and the consolidation gate would stall forever. Once the
+# letters have gone out, each quarter we look for such a duchy and march to take it back
+# by the sword. Lucifer Dryland is left out on purpose, Chapter 4 dissolves his realm and
+# delivers any Greenblood land he holds, so the consolidation gate simply accepts a
+# Dryland-held duchy instead of warring for it twice. Run on Nymeria. - Kizan
+nymeria_greenblood_reclaim_failsafe_effect = {
+    if = {
+        limit = { nymeria_greenblood_duchy_stuck_under_rival_trigger = { GB_DUCHY = title:d_godsgrace } }
+        title:d_godsgrace = { add_to_temporary_list = stuck_greenblood_duchies }
+    }
+    if = {
+        limit = { nymeria_greenblood_duchy_stuck_under_rival_trigger = { GB_DUCHY = title:d_salt_shore } }
+        title:d_salt_shore = { add_to_temporary_list = stuck_greenblood_duchies }
+    }
+    if = {
+        limit = { nymeria_greenblood_duchy_stuck_under_rival_trigger = { GB_DUCHY = title:d_lemonwood } }
+        title:d_lemonwood = { add_to_temporary_list = stuck_greenblood_duchies }
+    }
+
+    # March on one stuck duchy this quarter. One war often frees several, the invasion
+    # vassalises the whole rival, so the next quarter mops up anything still held. - Kizan
+    if = {
+        limit = { any_in_list = { list = stuck_greenblood_duchies } }
+        random_in_list = {
+            list = stuck_greenblood_duchies
+            save_scope_as = greenblood_reclaim_duchy
+        }
+        scope:greenblood_reclaim_duchy = {
+            holder = { top_liege = { save_scope_as = greenblood_reclaim_rival } }
+        }
+        start_war = {
+            cb = nymeria_rhoynish_invasion
+            target = scope:greenblood_reclaim_rival
+            target_title = scope:greenblood_reclaim_duchy
+        }
+        trigger_event = { id = nymeria_laamp_events.0012 days = 1 }
+    }
+}
+
+# Subjugates the defender of a Rhoynish invasion / subjugation war. Needs scope:attacker
+# and scope:defender.
+#
+# King vs king is the tricky case: you cannot take a fellow king as a vassal, and the old
+# way (destroy his crown while he still held it, then vassalise him) let his vassal dukes
+# break off as independents, so only the king himself bent the knee. Instead we borrow the
+# Unify Dorne logic: strip his crown(s) onto Nymeria FIRST via a conquest title change,
+# which carries every vassal under her, THEN he swears fealty keeping all below king tier,
+# THEN the vacant crowns are torn down. A mere duke or count just bends the knee. - Kizan
+nymeria_invasion_subjugate_defender_effect = {
+    # 1. King vs king: shatter his crown onto Nymeria first, carrying his whole realm. - Kizan
+    if = {
+        limit = { scope:defender = { any_held_title = { tier = tier_kingdom } } }
+        custom_tooltip = nymeria_rhoynish_invasion_break_crown_tt
+        hidden_effect = {
+            scope:defender = {
+                every_held_title = {
+                    limit = { tier = tier_kingdom }
+                    add_to_temporary_list = invasion_crowns_to_strip
+                }
+            }
+            create_title_and_vassal_change = {
+                type = conquest
+                save_scope_as = invasion_crown_change
+                add_claim_on_loss = no
+            }
+            every_in_list = {
+                list = invasion_crowns_to_strip
+                change_title_holder = {
+                    holder = scope:attacker
+                    change = scope:invasion_crown_change
+                }
+            }
+            resolve_title_and_vassal_change = scope:invasion_crown_change
+        }
+    }
+
+    # 2. The (now crownless) defender bends the knee, keeping everything below king tier. - Kizan
+    create_title_and_vassal_change = {
+        type = swear_fealty
+        save_scope_as = invasion_fealty_change
+    }
+    scope:defender = {
+        change_liege = {
+            liege = scope:attacker
+            change = scope:invasion_fealty_change
+        }
+    }
+    resolve_title_and_vassal_change = scope:invasion_fealty_change
+
+    # 3. Tear down the now-vacant crowns Nymeria briefly holds. - Kizan
+    if = {
+        limit = { any_in_list = { list = invasion_crowns_to_strip } }
+        hidden_effect = {
+            every_in_list = {
+                list = invasion_crowns_to_strip
+                scope:attacker = { destroy_title = prev }
+            }
+        }
+    }
+}

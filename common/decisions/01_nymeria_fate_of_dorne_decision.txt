@@ -1,0 +1,39 @@
+# Yronwood the Bloodroyal's decision to make his last bid against Nymeria once the coalition
+# has fallen. The quarterly nymeria_check_fate_of_dorne guarantees an AI Yronwood declares
+# anyway, this just makes it visible (and lets a player Yronwood do it). Both routes call the
+# same self-guarding effect, so the war is only ever declared once. - Kizan
+
+nymeria_fate_of_dorne_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	decision_group_type = major
+
+	ai_check_interval = 6
+
+	desc = nymeria_fate_of_dorne_decision_desc
+	selection_tooltip = nymeria_fate_of_dorne_decision_tooltip
+	confirm_text = nymeria_fate_of_dorne_decision_confirm
+
+	is_shown = {
+		# Only the Bloodroyal, after the coalition falls and before he has marched. - Kizan
+		exists = title:k_yronwood.holder
+		this = title:k_yronwood.holder
+		is_independent_ruler = yes
+		has_global_variable = nymeria_coalition_defeated
+		NOT = { has_global_variable = nymeria_fate_of_dorne_declared }
+		exists = character:Nymeros_1
+		character:Nymeros_1 = { is_alive = yes }
+	}
+
+	is_valid = {
+		NOT = { is_at_war_with = character:Nymeros_1 }
+	}
+
+	effect = {
+		nymeria_fate_of_dorne_declare_war_effect = yes
+	}
+
+	ai_potential = { always = yes }
+	ai_will_do = { base = 100 }
+}

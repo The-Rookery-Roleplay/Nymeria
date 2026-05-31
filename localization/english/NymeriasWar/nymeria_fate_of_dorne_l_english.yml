@@ -1,0 +1,42 @@
+﻿l_english:
+
+ #### The Fate of Dorne - Kizan ####
+
+ # CB
+ nymeria_fate_of_dorne:0 "The Fate of Dorne"
+ WAR_NAME_NYMERIA_FATE_OF_DORNE:0 "War for the Fate of Dorne"
+ nymeria_fate_of_dorne_victory_desc:0 "Yronwood the Bloodroyal has done what no other Dornish king could. Nymeria is cast down, her realm seized, and the Bloodroyal rules Dorne absolute."
+ nymeria_fate_of_dorne_defeat_desc:0 "The Bloodroyal is broken. Yronwood and Wyl are marched to the Wall in chains, House Yronwood cut down to a single duchy, and Dorne is [defender.GetShortUIName]'s from the mountains to the sea."
+
+ # Decision (Yronwood)
+ nymeria_fate_of_dorne_decision:0 "The Fate of Dorne"
+ nymeria_fate_of_dorne_decision_desc:0 "The Rhoynish woman has broken every king who dared stand against her, and her conquest stands all but complete. One throw of the dice remains to me. I will gather every spear left to House Yronwood and to my vassal Wyl of the Stoneway, and settle the fate of Dorne once and for all."
+ nymeria_fate_of_dorne_decision_tooltip:0 "Declare a final, total war on Nymeria to destroy her once and for all. Wyl of the Stoneway joins the war. There can be no white peace."
+ nymeria_fate_of_dorne_decision_confirm:0 "Dorne will be mine"
+
+ # 0010 - Yronwood declares
+ nymeria_fate.0010.t:0 "The Bloodroyal's Last Bid"
+ nymeria_fate.0010.desc:0 "Yorick Yronwood, the Bloodroyal, will not bend the knee. With the coalition broken he gambles everything on one last war, his vassal Wyl of the Stoneway marching at his side, sworn to drive the Rhoynar back into the sea or die in the trying. This is the last throw of the dice. Win here, and Dorne is mine entire."
+ nymeria_fate.0010.a:0 "Then let the spears decide"
+
+ # 0001 - Nymeria forges the Empire of Dorne
+ nymeria_fate.0001.t:0 "One Land, One Crown"
+ nymeria_fate.0001.desc:0 "It is done. The Bloodroyal kneels, his crown shattered, and the last free king of Dorne is bound in chains for the Wall, as so many proud lords before him. The Andal men who raised steel against me I have sent to the black, or laid beneath the sand. All the rest, Rhoynar and Andal and First Man alike, bent the knee willingly, and so they live.\n\nFrom the Broken Arm to the Sea of Dorne, from the deep sands to the red mountains, there is no hand left to rise against me. I will not be a queen of one kingdom among many. I take up a crown worthy of all we have bled for: the #bold Empire of Dorne#!, one realm and one people beneath a single throne at Sunspear. The spears of the Rhoyne have remade this land root and branch, in throne and in faith and in blood. It will never be the same again."
+ nymeria_fate.0001.a:0 "Forge the Empire of Dorne"
+
+ # 0002 - the proclamation, sent to every independent ruler in Westeros
+ nymeria_fate.0002.t:0 "A Letter from Sunspear"
+ nymeria_fate.0002.desc:0 "I am Nymeria, Princess of the Rhoynar, and Dorne is mine by right of conquest. I crossed the narrow sea with ten thousand ships and burned them upon the shore, so that my people would never again look back, and every king who dared bar our path now lies dead, or bound in chains for the Wall.\n\nHeed me well, lords of Westeros. The Andals are not welcome past the red mountains. Cross them, and you will find no soft green fields nor easy surrender, only the deadly sands and the spears of a people who do not forget and do not forgive. You will find only blood, and death, beside our burning sands."
+ nymeria_fate.0002.a:0 "Bold words from the sands"
+
+ # 0003 - Nymeria falls (to her heir)
+ nymeria_fate.0003.t:0 "The Rhoynar Undone"
+ nymeria_fate.0003.desc:0 "It is over, and we have lost. Great Nymeria has fallen, and with her the dream of a free Rhoynar. Yorick Yronwood the Bloodroyal has seized all she built and rules Dorne absolute, and our people are scattered to the four winds. The river remembers, but the river is all that remains to us now."
+ nymeria_fate.0003.a:0 "We will remember"
+
+ # Nickname earned by forging the Empire of Dorne
+ nick_nymeria_mother_of_dorne:0 "the Mother of Dorne"
+ nick_nymeria_mother_of_dorne_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat] crossed the narrow sea with ten thousand ships and forged the warring realms of Dorne into a single empire. The Andal men who raised steel against her she sent to the Wall in chains or laid beneath the sand, while all who bent the knee willingly were spared. She remade Dorne forever, in throne and in faith and in blood, and is remembered ever after as its mother."
+
+ # Opinion of the foreign conqueror, marked on all of Westeros
+ nymeria_foreign_invader_opinion:0 "Foreign Invader"
