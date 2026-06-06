@@ -1,0 +1,21 @@
+pdxmesh = {
+	name = "grandview_mesh"
+	file = "grandview.mesh"
+
+	meshsettings = {
+		name = "grandviewShape"
+		index = 0
+		texture_diffuse = "grandview_diffuse.dds"
+		texture_normal = "grandview_normal.dds"
+		texture_specular = "grandview_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+
+	}
+}
+
+entity = {
+	name = "grandview_entity"
+	pdxmesh = "grandview_mesh"
+}
+

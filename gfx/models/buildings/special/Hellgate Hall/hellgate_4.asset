@@ -1,0 +1,129 @@
+pdxmesh = {
+	name = "hellgate_4_mesh"
+	file = "hellgate_4.mesh"
+#	scale = 0.9
+	
+	
+	meshsettings = {
+		name = "casterlyrock_rockShape"
+		index = 0
+		texture_diffuse = "desert_rocks_diffuse.dds"
+		texture_normal = "desert_rocks_normal.dds"
+		texture_specular = "desert_rocks_properties.dds"
+		#texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "building_greek_academyShape"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_mediterranean_temple_pagan_01_bShape"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_mediterranean_temple_pagan_02_aShape"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_mediterranean_temple_pagan_02_a_ruinsShape"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_mediterranean_temple_pagan_02_bShape"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_special_shadow_city_lvl1Shape"
+		index = 0
+		texture_diffuse = "building_special_shadow_city_lvl1_diffuse.dds"
+		texture_normal = "building_special_shadow_city_lvl1_normal.dds"
+		texture_specular = "building_special_shadow_city_lvl1_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_special_sunspear1Shape"
+		index = 0
+		texture_diffuse = "building_special_sunspear1_diffuse.dds"
+		texture_normal = "building_special_sunspear1_normal.dds"
+		texture_specular = "building_special_sunspear1_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "building_special_sunspear2Shape"
+		index = 0
+		texture_diffuse = "building_special_sunspear2_diffuse.dds"
+		texture_normal = "building_special_sunspear2_normal.dds"
+		texture_specular = "building_special_sunspear2_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "building_special_sunShape"
+		index = 0
+		texture_diffuse = "building_special_sun_diffuse.dds"
+		texture_normal = "building_special_sun_normal.dds"
+		texture_specular = "building_special_sun_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "building_special_shadow_city_lvl2Shape"
+		index = 0
+		texture_diffuse = "building_special_shadow_city_lvl2_diffuse.dds"
+		texture_normal = "building_special_shadow_city_lvl2_normal.dds"
+		texture_specular = "building_special_shadow_city_lvl2_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	
+}
+
+entity = {
+	name = "hellgate_4_entity"
+	pdxmesh = "hellgate_4_mesh"
+}

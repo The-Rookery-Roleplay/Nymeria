@@ -1,0 +1,21 @@
+pdxmesh = {
+	name = "footly_hall_mesh"
+	file = "footly_hall.mesh"
+
+	meshsettings = {
+		name = "footly_hallShape"
+		index = 0
+		texture_diffuse = "footly_hall_diffuse.dds"
+		texture_normal = "footly_hall_normal.dds"
+		texture_specular = "footly_hall_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+
+	}
+}
+
+entity = {
+	name = "footly_hall_entity"
+	pdxmesh = "footly_hall_mesh"
+}
+

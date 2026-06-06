@@ -1,0 +1,39 @@
+pdxmesh = {
+	name = "fanghill_mesh"
+	file = "fanghill.mesh"
+
+	meshsettings = {
+		name = "lannisport_dgShape"
+		index = 0
+		texture_diffuse = "lannisport_dg_diffuse.dds"
+		texture_normal = "lannisport_dg_normal.dds"
+		texture_specular = "lannisport_dg_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "lannisport_lkShape"
+		index = 0
+		texture_diffuse = "lannisport_lk_diffuse.dds"
+		texture_normal = "lannisport_lk_normal.dds"
+		texture_specular = "lannisport_lk_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "lannisport_lpShape"
+		index = 0
+		texture_diffuse = "lannisport_lp_diffuse.dds"
+		texture_normal = "lannisport_lp_normal.dds"
+		texture_specular = "lannisport_lp_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "fanghill_entity"
+	pdxmesh = "fanghill_mesh"
+}

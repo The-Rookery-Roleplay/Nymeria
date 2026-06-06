@@ -1,0 +1,23 @@
+﻿amsb_thedarktower = {
+	trigger = {
+		capital_county = title:c_bloodstone
+	}
+}
+
+amsb_dragonkeep = {
+	trigger = {
+		always = no
+	}
+}
+
+amsb_lokiria = {
+	trigger = {
+		always = no
+	}
+}
+
+amsb_lyria = {
+	trigger = {
+		always = no
+	}
+}

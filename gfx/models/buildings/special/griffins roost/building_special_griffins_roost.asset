@@ -1,0 +1,62 @@
+pdxmesh = {
+	name = "building_special_griffins_roost_mesh"
+	file = "building_special_griffins_roost.mesh"
+
+	meshsettings = {
+		name = "building_griffin_roost_castle"
+		index = 0
+		texture_diffuse = "building_persia_atlas_b_diffuse.dds"
+		texture_normal = "building_persia_atlas_normal.dds"
+		texture_specular = "building_persia_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "griffin_roost_roof"
+		index = 0
+		texture_diffuse = "red_roof_atlas_diffuse.dds"
+		texture_normal = "red_roof_atlas_normal.dds"
+		texture_specular = "red_roof_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}	
+	
+	meshsettings = {
+		name = "griffin_roost_rockShape"
+		index = 0
+		texture_diffuse = "building_special_stormsend_castle_cliffs_diffuse.dds"
+		texture_normal = "building_special_stormsend_castle_cliffs_normal.dds"
+		texture_specular = "building_special_stormsend_castle_cliffs_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "griffin_roost_ground"
+		index = 0
+		texture_diffuse = "ep3_athos_monasteries_01_b_diffuse.dds"
+		texture_normal = "ep3_athos_monasteries_01_b_normal.dds"
+		texture_specular = "ep3_athos_monasteries_01_b_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "iron"
+		index = 0
+		texture_diffuse = "iron_m_diffuse.dds"
+		texture_normal = "iron_m_normal.dds"
+		texture_specular = "21_shades_of_metalness_roughness.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "building_special_griffins_roost_entity"
+	pdxmesh = "building_special_griffins_roost_mesh"
+}

@@ -1,0 +1,49 @@
+pdxmesh = {
+	name = "building_special_ironrath_mesh"
+	file = "building_special_ironrath.mesh"
+
+	meshsettings = {
+		name = "iron"
+		index = 0
+		texture_diffuse = "iron_m_diffuse.dds"
+		texture_normal = "iron_m_normal.dds"
+		texture_specular = "21_shades_of_metalness_roughness.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}	
+	meshsettings = {
+		name = "banner_main"
+		index = 0
+		texture_diffuse = "for_banner.dds"
+		texture_normal = "no_normal.dds"
+		texture_specular = "noproperties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "celtic_01"
+		index = 0
+		texture_diffuse = "building_celtic_01_diffuse.dds"
+		texture_normal = "building_celtic_01_normal.dds"
+		texture_specular = "building_celtic_01_properties.dds"
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_western"
+		index = 0
+		texture_diffuse = "building_western_atlas_diffuse.dds"
+		texture_normal = "building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+
+}
+
+entity = {
+	name = "building_special_ironrath_entity"
+	pdxmesh = "building_special_ironrath_mesh"
+}

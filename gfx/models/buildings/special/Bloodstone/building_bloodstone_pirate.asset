@@ -1,0 +1,58 @@
+pdxmesh = {
+	name = "building_bloodstone_pirate_mesh"
+	file = "building_bloodstone_pirate.mesh"
+	#scale = 0.4
+
+	meshsettings = {
+		name = "building_special_bloodstone_ruinShape"
+		index = 0
+		texture_diffuse = "building_special_bloodstone_ruin_diffuse.dds"
+		texture_normal = "building_special_bloodstone_ruin_normal.dds"
+		texture_specular = "building_special_bloodstone_ruin_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_bloodstone_ruin_wallsShape"
+		index = 0
+		texture_diffuse = "building_special_bloodstone_ruin_walls_diffuse.dds"
+		texture_normal = "building_special_bloodstone_ruin_walls_normal.dds"
+		texture_specular = "building_special_bloodstone_ruin_walls_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_stormsend_castle_cliffsShape"
+		index = 0
+		texture_diffuse = "building_special_stormsend_castle_cliffs_diffuse.dds"
+		texture_normal = "building_special_stormsend_castle_cliffs_normal.dds"
+		texture_specular = "building_special_stormsend_castle_cliffs_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "bloodstone_port_01"
+		index = 0
+		texture_diffuse = "lannisport_lp_diffuse.dds"
+		texture_normal = "lannisport_lp_normal.dds"
+		texture_specular = "lannisport_lp_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "bloodstone_bridge"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+
+entity = {
+	name = "building_bloodstone_pirate_entity"
+	pdxmesh = "building_bloodstone_pirate_mesh"
+}

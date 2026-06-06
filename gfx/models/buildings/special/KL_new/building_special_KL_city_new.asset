@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "building_special_KL_city_new_mesh"
+	file = "building_special_KL_city_new.mesh"
+	
+	meshsettings = {
+		name = "building_special_KL_cityShape"
+		index = 0
+		texture_diffuse = "building_KL_diffuse.dds"
+		texture_normal = "building_KL_normal.dds"
+		texture_specular = "building_KL_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "building_special_KL_city_new_entity"
+	pdxmesh = "building_special_KL_city_new_mesh"
+}

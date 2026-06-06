@@ -1,0 +1,64 @@
+pdxmesh = {
+	name = "hornhill_mesh"
+	file = "hornhill.mesh"
+
+	meshsettings = {
+		name = "building_hornhill_glass"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_hornhill_rainflute"
+		index = 0
+		texture_diffuse = "building_indian_atlas_diffuse.dds"
+		texture_normal = "building_indian_atlas_normal.dds"
+		texture_specular = "building_indian_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_hornhill_roof"
+		index = 0
+		texture_diffuse = "building_med_roof_atlas_diffuse.dds"
+		texture_normal = "building_med_roof_atlas_normal.dds"
+		texture_specular = "building_med_roof_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_hornhill_Shape"
+		index = 0
+		texture_diffuse = "building_persia_atlas_diffuse.dds"
+		texture_normal = "building_persia_atlas_normal.dds"
+		texture_specular = "building_persia_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "gate_bars"
+		index = 0
+		texture_diffuse = "building_celtic_01_diffuse.dds"
+		texture_normal = "building_celtic_01_normal.dds"
+		texture_specular = "building_celtic_01_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "hornhill_entity"
+	pdxmesh = "hornhill_mesh"
+}

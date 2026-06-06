@@ -1,0 +1,67 @@
+pdxmesh = {
+	name = "broadarch_mesh"
+	file = "broadarch.mesh"
+
+	meshsettings = {
+		name = "building_special_the_eyrie_1Shape"
+		index = 0
+		texture_diffuse = "building_special_the_eyrie_1_diffuse.dds"
+		texture_normal = "building_special_the_eyrie_1_normal.dds"
+		texture_specular = "building_special_the_eyrie_1_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_the_eyrie_2Shape"
+		index = 0
+		texture_diffuse = "building_special_the_eyrie_2_diffuse.dds"
+		texture_normal = "building_special_the_eyrie_2_normal.dds"
+		texture_specular = "building_special_the_eyrie_2_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_the_eyrie_4Shape"
+		index = 0
+		texture_diffuse = "building_special_the_eyrie_4_diffuse.dds"
+		texture_normal = "building_special_the_eyrie_4_normal.dds"
+		texture_specular = "building_special_the_eyrie_4_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}	
+	meshsettings = {
+		name = "casterlyrock_rockShape"
+		index = 0
+		texture_diffuse = "casterlyrock_rock_diffuse.dds"
+		texture_normal = "casterlyrock_rock_normal.dds"
+		texture_specular = "casterlyrock_rock_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_twinsShape"
+		index = 0
+		texture_diffuse = "atlas_riverlands_diffuse.dds"
+		texture_normal = "atlas_riverlands_normal.dds"
+		texture_specular = "atlas_riverlands_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_western_castle_0Shape4"
+		index = 0
+		texture_diffuse = "building_western_atlas_diffuse.dds"
+		texture_normal = "building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "building_western_castle_04_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+
+}
+
+entity = {
+	name = "broadarch_entity"
+	pdxmesh = "broadarch_mesh"
+}

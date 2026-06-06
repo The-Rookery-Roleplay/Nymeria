@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "flint_tower_mesh"
+	file = "flint_tower.mesh"
+	
+	meshsettings = {
+		name = "flint_tower"
+		index = 0
+		texture_diffuse = "building_western_atlas_diffuse.dds"
+		texture_normal = "building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "flint_tower_entity"
+	pdxmesh = "flint_tower_mesh"
+}

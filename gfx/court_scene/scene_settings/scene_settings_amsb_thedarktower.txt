@@ -1,0 +1,1115 @@
+name="Dark_Tower"
+culture=amsb_thedarktower
+visual_culture_level=1
+cubemap="gfx/portraits/environments/castle_interior_01_fire.dds"
+environment="gfx/court_scene/scene_environment/court_scene_environment.txt"
+audio_culture=1.000000
+camera={ {
+		description="Establishing Shot"
+		fov=49.000000
+		position={ -10.000000 246.000000 -1320.000000 }
+		pitch=0.000000
+		yaw=0.000000
+		camera_near_far={ 70.000000 5000.000000 }
+		is_camera_used_for_screenshots=yes
+		royal_court_camera_name_key="ROYAL_COURT_ESTABLISHING_VIEW_CAMERA"
+	}
+ {
+		description="Wall View"
+		fov=51.000000
+		position={ 435.200012 773.299988 -669.700012 }
+		pitch=27.000000
+		yaw=-35.000000
+		camera_near_far={ 70.000000 3350.000000 }
+		is_camera_used_for_screenshots=yes
+		royal_court_camera_name_key="ROYAL_COURT_WALL_VIEW_CAMERA"
+	}
+ {
+		description="Overhead View"
+		fov=50.000000
+		position={ -250.000015 760.000000 -819.000000 }
+		pitch=25.000000
+		yaw=5.000000
+		camera_near_far={ 70.000000 3730.000000 }
+		is_camera_used_for_screenshots=yes
+		royal_court_camera_name_key="ROYAL_COURT_COURT_VIEW_CAMERA"
+	}
+ {
+		description="Artifact View"
+		fov=61.000000
+		position={ -5.000000 195.000000 -1500.000000 }
+		pitch=0.000000
+		yaw=0.000000
+		camera_near_far={ 70.000000 4330.000000 }
+		is_camera_used_for_screenshots=yes
+		royal_court_camera_name_key="ROYAL_COURT_ARTIFACT_VIEW_CAMERA"
+	}
+ {
+		description="Throne View"
+		fov=50.000000
+		position={ 549.100037 250.699997 -96.300003 }
+		pitch=10.000000
+		yaw=-45.000000
+		camera_near_far={ 70.000000 3240.000000 }
+		is_camera_used_for_screenshots=yes
+		royal_court_camera_name_key="ROYAL_COURT_THRONE_VIEW_CAMERA"
+	}
+ {
+		description="Front Wall View"
+		fov=45.000000
+		position={ 0.000000 270.500000 -306.300018 }
+		pitch=-5.000000
+		yaw=0.000000
+		camera_near_far={ 70.000000 3060.000000 }
+		is_camera_used_for_screenshots=yes
+		royal_court_camera_name_key="ROYAL_COURT_BACK_WALL_VIEW_CAMERA"
+	}
+ {
+		description="Right Wall View"
+		fov=65.000000
+		position={ -482.224609 364.399994 -279.899994 }
+		pitch=10.000000
+		yaw=50.000000
+		camera_near_far={ 70.000000 3240.000000 }
+		is_camera_used_for_screenshots=yes
+		royal_court_camera_name_key="ROYAL_COURT_RIGHT_WALL_VIEW_CAMERA"
+	}
+ {
+		description="Petitioner View"
+		fov=50.000000
+		position={ -514.900024 394.600006 85.000000 }
+		pitch=22.000000
+		yaw=46.000000
+		camera_near_far={ 70.000000 3440.000000 }
+	}
+ {
+		description="character_group_1"
+		fov=50.000000
+		position={ 0.000000 325.000000 -280.000000 }
+		pitch=30.000000
+		yaw=-126.000000
+		camera_near_far={ 70.000000 3530.000000 }
+	}
+ {
+		description="character_group_2"
+		fov=50.000000
+		position={ 220.000000 485.000000 -434.000000 }
+		pitch=41.000000
+		yaw=-143.000000
+		camera_near_far={ 70.000000 3900.000000 }
+	}
+ {
+		description="character_group_3"
+		fov=50.000000
+		position={ -167.000000 365.000000 -1007.000000 }
+		pitch=33.000000
+		yaw=24.000000
+		camera_near_far={ 70.000000 4050.000000 }
+	}
+ {
+		description="artifact_pedestal_locator_1"
+		fov=50.000000
+		position={ 352.000000 235.000000 -40.000000 }
+		pitch=20.000000
+		yaw=0.000000
+		camera_near_far={ 70.000000 4600.000000 }
+	}
+ {
+		description="artifact_pedestal_locator_2"
+		fov=50.000000
+		position={ -352.000000 235.000000 -40.000000 }
+		pitch=20.000000
+		yaw=0.000000
+		camera_near_far={ 70.000000 4680.000000 }
+	}
+ {
+		description="artifact_pedestal_locator_3"
+		fov=50.000000
+		position={ 200.000000 325.000000 459.000000 }
+		pitch=20.000000
+		yaw=44.000000
+		camera_near_far={ 70.000000 4790.000000 }
+	}
+ {
+		description="artifact_pedestal_locator_4"
+		fov=50.000000
+		position={ -200.000000 325.000000 459.000000 }
+		pitch=20.000000
+		yaw=-44.000000
+		camera_near_far={ 70.000000 4830.000000 }
+	}
+ {
+		description="artifact_sculpture_1"
+		fov=50.000000
+		position={ 270.000000 411.000000 650.000000 }
+		pitch=31.000000
+		yaw=18.000000
+		camera_near_far={ 70.000000 4840.000000 }
+	}
+ {
+		description="artifact_sculpture_2"
+		fov=50.000000
+		position={ -270.000000 411.000000 650.000000 }
+		pitch=31.000000
+		yaw=-18.000000
+		camera_near_far={ 70.000000 4750.000000 }
+	}
+ {
+		description="artifact_bookshelf_1"
+		fov=50.000000
+		position={ 0.000000 350.000000 -765.000000 }
+		pitch=23.000000
+		yaw=90.000000
+		camera_near_far={ 70.000000 4990.000000 }
+	}
+ {
+		description="artifact_bookshelf_2"
+		fov=50.000000
+		position={ 0.000000 350.000000 -765.000000 }
+		pitch=23.000000
+		yaw=-90.000000
+		camera_near_far={ 70.000000 4770.000000 }
+	}
+ {
+		description="artifact_wall_small_1"
+		fov=50.000000
+		position={ 161.300003 400.000000 -48.400002 }
+		pitch=-10.000000
+		yaw=24.000000
+		camera_near_far={ 70.000000 4830.000000 }
+	}
+ {
+		description="artifact_wall_small_2"
+		fov=50.000000
+		position={ -161.300003 400.000000 -48.400002 }
+		pitch=-10.000000
+		yaw=-24.000000
+		camera_near_far={ 70.000000 4820.000000 }
+	}
+ {
+		description="artifact_wall_small_3"
+		fov=50.000000
+		position={ -0.000000 400.000000 448.899994 }
+		pitch=-10.000000
+		yaw=0.000000
+		camera_near_far={ 70.000000 4880.000000 }
+	}
+ {
+		description="artifact_wall_large_1"
+		fov=50.000000
+		position={ 0.000000 500.000000 575.000000 }
+		pitch=-16.000000
+		yaw=0.000000
+		camera_near_far={ 70.000000 4880.000000 }
+	}
+ {
+		description="artifact_wall_large_2"
+		fov=50.000000
+		position={ 0.000000 500.000000 575.000000 }
+		pitch=-16.000000
+		yaw=-20.000000
+		camera_near_far={ 70.000000 4860.000000 }
+	}
+ {
+		description="artifact_wall_large_3"
+		fov=50.000000
+		position={ 0.000000 500.000000 575.000000 }
+		pitch=-16.000000
+		yaw=20.000000
+		camera_near_far={ 70.000000 4910.000000 }
+	}
+ {
+		description="artifact_throne_1"
+		fov=50.000000
+		position={ 380.000000 325.000000 300.000000 }
+		pitch=14.108663
+		yaw=-33.000000
+		camera_near_far={ 70.000000 4880.000000 }
+	}
+ {
+		description="Room View 1"
+		fov=50.000000
+		position={ -540.600037 508.899994 -1014.500000 }
+		pitch=22.000000
+		yaw=46.000000
+		camera_near_far={ 70.000000 4730.000000 }
+		is_camera_used_for_screenshots=yes
+		royal_court_camera_name_key="Freecam"
+	}
+ {
+		description="Default View"
+		fov=51.000000
+		position={ 410.000000 779.000000 -1105.000000 }
+		pitch=30.000000
+		yaw=-33.000000
+		camera_near_far={ 70.000000 3350.000000 }
+		is_camera_used_for_screenshots=yes
+		royal_court_camera_name_key="Freecam"
+	}
+ }
+default_camera=0
+shadows_fade=1000.000000
+shadows_strength=-0.500000
+lights={ {
+		description="Fill light"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.000000
+			affected_by_shadow=no
+			radius=5000.000000
+			intensity=1275.000000
+			position={ 0.000000 305.799988 -301.399994 }
+			pitch=0.000000
+			yaw=0.000000
+			color={ 0.168627 0.160784 0.239216 }
+			position_variation=2.000000
+			position_variation_frequency=200.000000
+			intensity_variation=5.000000
+			intensity_variation_frequency=200.000000
+			type="spot_light"
+		}
+
+		shadow_camera={
+			fov=150.000000
+			position={ 0.000000 305.799988 -301.399994 }
+			pitch=90.000000
+			yaw=-180.000000
+			camera_near_far={ 10.000000 1000.000000 }
+			shadows_fade=4.000000
+		}
+	}
+ {
+		description="SkyLight"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.000000
+			cubemap_shadow=yes
+			radius=400.000000
+			intensity=27.000000
+			position={ 0.000000 1500.000000 619.799988 }
+			pitch=93.000000
+			yaw=0.000000
+			color={ 0.168627 0.160784 0.239216 }
+			position_variation=2.000000
+			position_variation_frequency=200.000000
+			intensity_variation=5.000000
+			intensity_variation_frequency=200.000000
+			enabled=no
+			type="disc_light"
+		}
+
+		shadow_camera={
+			fov=136.000000
+			position={ 0.000000 1500.000000 619.799988 }
+			pitch=90.000000
+			yaw=-180.000000
+			camera_near_far={ 1070.000000 4410.000000 }
+			shadows_fade=127.000000
+		}
+	}
+ {
+		description="Brazier Light SSW"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.900000
+			affected_by_shadow=no
+			radius=2000.000000
+			intensity=50.000000
+			position={ -791.000000 100.300003 -1086.800049 }
+			pitch=0.000000
+			yaw=0.000000
+			color={ 0.831373 0.254902 0.074510 }
+			position_variation=0.250000
+			position_variation_frequency=200.000000
+			intensity_variation=3.000000
+			intensity_variation_frequency=200.000000
+			animation=yes
+			type="point_light"
+		}
+
+		shadow_camera={
+			fov=1.000000
+			position={ -791.000000 100.300003 -1086.800049 }
+			pitch=90.000000
+			yaw=0.000000
+			camera_near_far={ 0.100000 1000.000000 }
+		}
+	}
+ {
+		description="Brazier Light NNE"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.900000
+			radius=1500.000000
+			intensity=150.000000
+			position={ 791.000000 100.000000 -1086.800049 }
+			pitch=0.000000
+			yaw=0.000000
+			color={ 0.835294 0.254902 0.074510 }
+			position_variation=0.250000
+			position_variation_frequency=200.000000
+			intensity_variation=3.000000
+			intensity_variation_frequency=200.000000
+			animation=yes
+			type="point_light"
+		}
+
+		shadow_camera={
+			fov=1.000000
+			position={ 791.000000 100.000000 -1086.800049 }
+			pitch=90.000000
+			yaw=0.000000
+			camera_near_far={ 0.100000 1000.000000 }
+		}
+	}
+ {
+		description="Brazier Light SW"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.900000
+			affected_by_shadow=no
+			radius=2000.000000
+			intensity=50.000000
+			position={ -791.000000 119.200005 -288.000000 }
+			pitch=0.000000
+			yaw=0.000000
+			color={ 0.835294 0.254902 0.074510 }
+			position_variation=0.250000
+			position_variation_frequency=200.000000
+			intensity_variation=3.000000
+			intensity_variation_frequency=200.000000
+			animation=yes
+			type="point_light"
+		}
+
+		shadow_camera={
+			fov=1.000000
+			position={ -791.000000 119.200005 -288.000000 }
+			pitch=90.000000
+			yaw=0.000000
+			camera_near_far={ 0.100000 1000.000000 }
+		}
+	}
+ {
+		description="Brazier Light NW"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.900000
+			affected_by_shadow=no
+			radius=2000.000000
+			intensity=50.000000
+			position={ -682.299988 153.000000 525.700012 }
+			pitch=-90.000000
+			yaw=0.000000
+			color={ 0.835294 0.254902 0.074510 }
+			position_variation=0.250000
+			position_variation_frequency=200.000000
+			intensity_variation=3.000000
+			intensity_variation_frequency=200.000000
+			animation=yes
+			type="point_light"
+		}
+
+		shadow_camera={
+			fov=1.000000
+			position={ -682.299988 153.000000 525.700012 }
+			pitch=90.000000
+			yaw=0.000000
+			camera_near_far={ 0.100000 1000.000000 }
+		}
+	}
+ {
+		description="Brazier Light NNW"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.900000
+			radius=1500.000000
+			intensity=150.000000
+			position={ -420.000000 190.000000 780.000000 }
+			pitch=-90.000000
+			yaw=0.000000
+			color={ 0.835294 0.254902 0.074510 }
+			position_variation=0.250000
+			position_variation_frequency=200.000000
+			intensity_variation=3.000000
+			intensity_variation_frequency=200.000000
+			animation=yes
+			type="point_light"
+		}
+
+		shadow_camera={
+			fov=1.000000
+			position={ -420.000000 190.000000 780.000000 }
+			pitch=90.000000
+			yaw=0.000000
+			camera_near_far={ 0.100000 1000.000000 }
+		}
+	}
+ {
+		description="Brazier Light NE"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.900000
+			affected_by_shadow=no
+			radius=2000.000000
+			intensity=50.000000
+			position={ 682.299988 153.000000 525.700012 }
+			pitch=0.000000
+			yaw=0.000000
+			color={ 0.835294 0.254902 0.074510 }
+			position_variation=0.250000
+			position_variation_frequency=200.000000
+			intensity_variation=3.000000
+			intensity_variation_frequency=200.000000
+			animation=yes
+			type="point_light"
+		}
+
+		shadow_camera={
+			fov=1.000000
+			position={ 682.299988 153.000000 525.700012 }
+			pitch=90.000000
+			yaw=0.000000
+			camera_near_far={ 0.100000 1000.000000 }
+		}
+	}
+ {
+		description="Brazier Light SE"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.900000
+			affected_by_shadow=no
+			radius=2000.000000
+			intensity=50.000000
+			position={ 791.000000 120.000000 -288.000000 }
+			pitch=0.000000
+			yaw=0.000000
+			color={ 0.835294 0.254902 0.074510 }
+			position_variation=0.250000
+			position_variation_frequency=200.000000
+			intensity_variation=3.000000
+			intensity_variation_frequency=200.000000
+			animation=yes
+			type="point_light"
+		}
+
+		shadow_camera={
+			fov=1.000000
+			position={ 791.000000 120.000000 -288.000000 }
+			pitch=90.000000
+			yaw=0.000000
+			camera_near_far={ 0.100000 1000.000000 }
+		}
+	}
+ {
+		description="Brazier Light SSE"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.900000
+			affected_by_shadow=no
+			radius=2000.000000
+			intensity=50.000000
+			position={ 523.000000 185.000000 -857.000000 }
+			pitch=0.000000
+			yaw=0.000000
+			color={ 0.835294 0.254902 0.074510 }
+			position_variation=0.250000
+			position_variation_frequency=200.000000
+			intensity_variation=3.000000
+			intensity_variation_frequency=200.000000
+			animation=yes
+			type="point_light"
+		}
+
+		shadow_camera={
+			fov=1.000000
+			position={ 523.000000 185.000000 -857.000000 }
+			pitch=90.000000
+			yaw=0.000000
+			camera_near_far={ 0.100000 1000.000000 }
+		}
+	}
+ {
+		description="Chandelier Light"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.900000
+			affected_by_shadow=no
+			radius=1000.000000
+			intensity=5000.000000
+			position={ 0.000000 590.000000 -790.000000 }
+			pitch=90.000000
+			yaw=0.000000
+			color={ 0.835294 0.254902 0.074510 }
+			position_variation=0.250000
+			position_variation_frequency=200.000000
+			intensity_variation=3.000000
+			intensity_variation_frequency=200.000000
+			animation=yes
+			enabled=no
+			type="spot_light"
+		}
+
+		shadow_camera={
+			fov=1.000000
+			position={ 0.000000 590.000000 -790.000000 }
+			pitch=90.000000
+			yaw=0.000000
+			camera_near_far={ 0.100000 1000.000000 }
+		}
+	}
+ {
+		description="SkyLight"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.000000
+			cubemap_shadow=yes
+			radius=5000.000000
+			intensity=10.000000
+			position={ 1277.000000 793.000000 -605.000000 }
+			pitch=100.000000
+			yaw=0.000000
+			color={ 0.168627 0.160784 0.239216 }
+			position_variation=2.000000
+			position_variation_frequency=200.000000
+			intensity_variation=5.000000
+			intensity_variation_frequency=200.000000
+			enabled=no
+			type="disc_light"
+		}
+
+		shadow_camera={
+			fov=136.000000
+			position={ 1277.000000 793.000000 -605.000000 }
+			pitch=90.000000
+			yaw=-180.000000
+			camera_near_far={ 100.000000 2000.000000 }
+			shadows_fade=127.000000
+		}
+	}
+ {
+		description="thronesun"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.000000
+			cubemap_shadow=yes
+			radius=1000.000000
+			intensity=15.000000
+			position={ 1277.000000 793.000000 -1288.700073 }
+			pitch=76.000000
+			yaw=-26.000000
+			color={ 0.438368 0.341456 0.236117 }
+			position_variation=2.000000
+			position_variation_frequency=200.000000
+			intensity_variation=5.000000
+			intensity_variation_frequency=200.000000
+			type="disc_light"
+		}
+
+		shadow_camera={
+			fov=136.000000
+			position={ 1277.000000 793.000000 -1288.700073 }
+			pitch=90.000000
+			yaw=-180.000000
+			camera_near_far={ 100.000000 2000.000000 }
+			shadows_fade=127.000000
+		}
+	}
+ {
+		description="window light"
+		light={
+			outer_cone_angle=1.000000
+			inner_cone_angle=0.000000
+			cubemap_shadow=yes
+			radius=1000.000000
+			intensity=50.000000
+			position={ 1277.000000 900.000000 -340.000000 }
+			pitch=100.000000
+			yaw=0.000000
+			color={ 0.164706 0.156863 0.239216 }
+			position_variation=2.000000
+			position_variation_frequency=200.000000
+			intensity_variation=5.000000
+			intensity_variation_frequency=200.000000
+			type="disc_light"
+		}
+
+		shadow_camera={
+			fov=136.000000
+			position={ 1277.000000 900.000000 -340.000000 }
+			pitch=90.000000
+			yaw=70.000000
+			camera_near_far={ 100.000000 2100.000000 }
+			shadows_fade=127.000000
+		}
+	}
+ }
+characters={ {
+		position={ 0.000000 395.000000 0.000000 }
+		locator="Ruler"
+		description="Ruler"
+		camera="Throne View"
+		roles={ ruler }
+	}
+ {
+		position={ -309.100006 94.000000 712.400024 }
+		direction=-31.000000
+		locator="character_spouse_standing"
+		description="Spouse"
+		roles={ standing_spouse }
+	}
+ {
+		position={ -121.000000 94.000000 831.000000 }
+		direction=-92.000000
+		locator="character_optional_adviser_heir"
+		description="Adviser"
+		roles={ adviser }
+	}
+ {
+		position={ -470.000000 66.000000 457.000000 }
+		direction=-42.000000
+		locator="character_flavor_jester"
+		description="Jester"
+		roles={ jester poet low_prio_lone_courtier }
+	}
+ {
+		position={ -310.000000 66.000000 605.000000 }
+		direction=-20.000000
+		locator="character_flavor_guard_1"
+		description="Guard 1"
+		roles={ special_guard knights }
+	}
+ {
+		position={ 310.000000 66.000000 605.000000 }
+		direction=80.000000
+		locator="character_flavor_guard_2"
+		description="Guard 2"
+		roles={ special_guard knights }
+	}
+ {
+		position={ 0.000000 21.000000 370.000000 }
+		locator="character_petitioner_kneeling"
+		description="Petitioner Kneeling"
+		roles={ kneeling }
+	}
+ {
+		position={ 130.000000 21.000000 370.000000 }
+		rotation={ 180.000000 -10.000000 180.000000 }
+		locator="character_petitioner_front_right"
+		description="Petitioner Front Right"
+		camera="Petitioner View"
+		roles={ petitioners_1 }
+	}
+ {
+		position={ -130.000000 21.000000 370.000000 }
+		rotation={ 180.000000 -43.000000 180.000000 }
+		locator="character_petitioner_front_left"
+		description="Petitioner Front Left"
+		camera="Petitioner View"
+		roles={ petitioners_1 }
+	}
+ {
+		position={ 100.900002 0.000000 50.000000 }
+		rotation={ 180.000000 -7.000000 180.000000 }
+		locator="character_petitioner_mid_right"
+		description="Petitioner Mid right"
+		camera="Petitioner View"
+		roles={ petitioners_2 }
+	}
+ {
+		position={ -73.299698 0.000000 50.000000 }
+		rotation={ 180.000000 -60.000000 180.000000 }
+		locator="character_petitioner_mid_left"
+		description="Petitioner Mid Left"
+		camera="Petitioner View"
+		roles={ petitioners_2 }
+	}
+ {
+		position={ 130.000000 0.000000 -150.000000 }
+		rotation={ 180.000000 -2.000000 180.000000 }
+		locator="character_petitioner_rear_right"
+		description="Petitioner Rear Right"
+		camera="Petitioner View"
+		roles={ petitioners_3 }
+	}
+ {
+		position={ -70.000000 0.000000 -150.000000 }
+		rotation={ 180.000000 -42.000000 180.000000 }
+		locator="character_petitioner_rear_left"
+		description="Petitioner Rear Left"
+		camera="Petitioner View"
+		roles={ petitioners_3 }
+	}
+ {
+		position={ -349.700012 0.000000 -601.200012 }
+		rotation={ 180.000000 16.000000 180.000000 }
+		locator="character_group_1_1"
+		description="Event group 1_1"
+		camera="character_group_1"
+		roles={ event_group_1 }
+	}
+ {
+		position={ -476.200012 0.000000 -540.100037 }
+		direction=-76.000000
+		locator="character_group_1_2"
+		description="Event group 1_2"
+		camera="character_group_1"
+		roles={ event_group_1 }
+	}
+ {
+		position={ -406.300018 0.000000 -444.500000 }
+		direction=-13.999993
+		locator="character_group_1_3"
+		description="Event group 1_3"
+		camera="character_group_1"
+		roles={ event_group_1 }
+	}
+ {
+		position={ -117.700005 0.000000 -792.400024 }
+		rotation={ 180.000000 -97.000000 180.000000 }
+		locator="character_group_2_1"
+		description="Event group 2_1"
+		camera="character_group_2"
+		roles={ event_group_2 }
+	}
+ {
+		position={ 45.200001 0.000000 -751.498291 }
+		direction=61.000000
+		locator="character_group_2_2"
+		description="Event group 2_2"
+		camera="character_group_2"
+		roles={ event_group_2 }
+	}
+ {
+		position={ 7.700000 0.000000 -887.299988 }
+		direction=-13.999993
+		locator="character_group_2_3"
+		description="Event group 2_3"
+		camera="character_group_2"
+		roles={ event_group_2 }
+	}
+ {
+		position={ -52.200001 0.000000 -522.700012 }
+		rotation={ 180.000000 -76.000000 180.000000 }
+		locator="character_group_3_1"
+		description="Event group 3_1"
+		camera="character_group_3"
+		roles={ event_group_3 }
+	}
+ {
+		position={ 90.300003 0.000000 -472.000000 }
+		direction=61.000011
+		locator="character_group_3_2"
+		description="Event group 3_2"
+		camera="character_group_3"
+		roles={ event_group_3 }
+	}
+ {
+		position={ 69.900002 0.000000 -593.500000 }
+		direction=154.000000
+		locator="character_group_3_3"
+		description="Event group 3_3"
+		camera="character_group_3"
+		roles={ event_group_3 }
+	}
+ {
+		position={ -403.000000 0.000000 110.000000 }
+		direction=-29.000000
+		locator="character_flavor_courtier_1"
+		description="BG Courtier 1"
+		roles={ low_prio_prisoners low_prio_clergy low_prio_warriors low_prio_intriguers low_prio_stewards low_prio_diplomats low_prio_courtiers }
+	}
+ {
+		position={ -405.000000 0.000000 -17.000000 }
+		direction=-146.000000
+		locator="character_flavor_courtier_2"
+		description="BG Courtier 2"
+		roles={ low_prio_prisoners low_prio_clergy low_prio_warriors low_prio_intriguers low_prio_stewards low_prio_diplomats low_prio_courtiers }
+	}
+ {
+		position={ -295.500000 0.000000 60.000000 }
+		direction=58.000000
+		locator="character_flavor_courtier_3"
+		description="BG Courtier 3"
+		roles={ low_prio_prisoners low_prio_clergy low_prio_warriors low_prio_intriguers low_prio_stewards low_prio_diplomats low_prio_courtiers }
+	}
+ {
+		position={ 349.500000 0.000000 -400.800018 }
+		rotation={ 180.000000 -55.000000 180.000000 }
+		locator="character_flavor_courtier_4"
+		description="BG Courtier 4"
+		roles={ inspired_person arguing_councillors schemers flirty_flirts low_prio_courtiers }
+	}
+ {
+		position={ 389.800018 0.000000 -277.600006 }
+		direction=21.000000
+		locator="character_flavor_courtier_5"
+		description="BG Courtier 5"
+		roles={ inspired_person arguing_councillors schemers flirty_flirts low_prio_courtiers }
+	}
+ {
+		position={ 470.399994 0.000000 -367.700012 }
+		direction=128.000000
+		locator="character_flavor_courtier_6"
+		description="BG Courtier 6"
+		roles={ secondary_spouses court_children family low_prio_courtiers }
+	}
+ {
+		position={ 470.000000 0.000000 37.000000 }
+		direction=180.000000
+		locator="character_flavor_courtier_7"
+		description="BG Courtier 7"
+		roles={ secondary_spouses court_children family low_prio_courtiers }
+	}
+ {
+		position={ 470.000000 0.000000 161.600006 }
+		direction=40.000000
+		locator="character_flavor_courtier_8"
+		description="BG Courtier 8"
+		roles={ secondary_spouses court_children family low_prio_courtiers }
+	}
+ {
+		position={ -417.000000 0.000000 -320.000000 }
+		direction=-127.000000
+		locator="character_flavor_courtier_9"
+		description="BG Courtier 9"
+		roles={ low_prio_prisoners low_prio_clergy low_prio_warriors low_prio_intriguers low_prio_stewards low_prio_diplomats low_prio_courtiers }
+	}
+ {
+		position={ -345.000000 0.000000 -210.000000 }
+		direction=50.000000
+		locator="character_flavor_courtier_10"
+		description="BG Courtier 10"
+		roles={ low_prio_prisoners low_prio_clergy low_prio_warriors low_prio_intriguers low_prio_stewards low_prio_diplomats low_prio_courtiers }
+	}
+ {
+		position={ 432.000000 66.000000 516.000000 }
+		direction=65.000000
+		locator="character_councillor_2"
+		description="character_councillor_2"
+		roles={ heir low_prio_lone_courtier }
+	}
+ {
+		position={ -400.000000 66.000000 510.000000 }
+		direction=-8.000000
+		locator="character_councillor_1"
+		description="character_councillor_1"
+		roles={ inspired_person antiquarian low_prio_lone_courtier }
+	}
+ }
+assets={ {
+		position={ 0.000000 -300.000000 925.000000 }
+		direction=0.000010
+		description="Throne"
+		asset="ep1_western_throne_fancy_01_a_entity"
+		roles=ruler_throne
+	}
+ {
+		position={ 0.200000 -305.100037 923.799988 }
+		direction=0.000010
+		description="Throne Spouse"
+		asset="ep1_western_throne_basic_01_b_entity"
+		roles=spouse_throne
+	}
+ {
+		direction=0.000010
+		scale=40.000000
+		description="Throneroom"
+		asset="amsb_the_dark_tower_entity"
+	}
+ {
+		direction=0.000010
+		scale=50.000000
+		description="Throneroom_HDRI"
+		asset="agot_court_dragonstone_hdri_entity"
+	}
+ {
+		position={ 0.000000 463.000000 51.200001 }
+		scale=0.000000
+		description="Dust_1"
+		asset="roco_dust_motes"
+	}
+ {
+		position={ -791.000000 59.000000 -288.000000 }
+		scale=0.500000
+		description="Brazier Logs SW"
+		asset="ep1_fireplace_logs_entity"
+	}
+ {
+		position={ 418.000000 160.000000 795.000000 }
+		scale=0.600000
+		description="Brazier Logs NNE"
+		asset="ep1_fireplace_logs_entity"
+	}
+ {
+		position={ -682.299988 128.800003 525.700012 }
+		scale=0.500000
+		description="Brazier Logs NW"
+		asset="ep1_fireplace_logs_entity"
+	}
+ {
+		position={ -418.000000 160.000000 795.000000 }
+		scale=0.600000
+		description="Brazier Logs NNW"
+		asset="ep1_fireplace_logs_entity"
+	}
+ {
+		position={ 682.299988 128.800003 525.700012 }
+		scale=0.500000
+		description="Brazier Logs NE"
+		asset="ep1_fireplace_logs_entity"
+	}
+ {
+		position={ 791.000000 59.000000 -287.700012 }
+		scale=0.300000
+		description="Brazier Logs SE"
+		asset="ep1_fireplace_logs_entity"
+	}
+ {
+		position={ 791.000000 59.000000 -1086.800049 }
+		scale=0.300000
+		description="Brazier Logs SSE"
+		asset="ep1_fireplace_logs_entity"
+	}
+ {
+		position={ -791.000000 59.000000 -1086.800049 }
+		scale=0.500000
+		description="Brazier Logs SSW"
+		asset="ep1_fireplace_logs_entity"
+	}
+ {
+		position={ -791.200012 59.000000 -287.700012 }
+		scale=0.600000
+		description="Brazier Logs SW"
+		asset="roco_fireplace"
+	}
+ {
+		position={ 420.000000 180.000000 780.000000 }
+		description="Brazier Logs NNE"
+		asset="roco_fireplace"
+	}
+ {
+		position={ -682.299988 153.000000 525.700012 }
+		description="Brazier Logs NW"
+		asset="roco_fireplace"
+	}
+ {
+		position={ -420.000000 190.000000 780.000000 }
+		description="Brazier Logs NNW"
+		asset="roco_fireplace"
+	}
+ {
+		position={ 682.299988 153.000000 525.700012 }
+		description="Brazier Logs NE"
+		asset="roco_fireplace"
+	}
+ {
+		position={ 791.000000 76.000000 -287.700012 }
+		scale=0.600000
+		description="Brazier Logs SE"
+		asset="roco_fireplace"
+	}
+ {
+		position={ 791.000000 76.000000 -1086.800049 }
+		scale=0.600000
+		description="Brazier Logs SSE"
+		asset="roco_fireplace"
+	}
+ {
+		position={ -791.000000 76.099998 -1086.800049 }
+		scale=0.600000
+		description="Brazier Logs SSW"
+		asset="roco_fireplace"
+	}
+ }
+artifacts={ {
+		locator="artifact_wall_large_1"
+		position={ 0.000000 765.000000 1100.000000 }
+		slot=wall_big_1
+	}
+ {
+		locator="artifact_wall_large_2"
+		position={ -245.000000 675.000000 1100.000000 }
+		slot=wall_big_2
+	}
+ {
+		locator="artifact_wall_large_3"
+		position={ 245.000000 675.000000 1100.000000 }
+		slot=wall_big_3
+	}
+ {
+		locator="artifact_wall_small_1"
+		position={ 465.000000 575.000000 541.500000 }
+		direction=90.000000
+		slot=wall_small_1
+	}
+ {
+		locator="artifact_wall_small_2"
+		position={ 0.000000 550.000000 1090.000000 }
+		slot=wall_small_2
+	}
+ {
+		locator="artifact_wall_small_3"
+		position={ -465.000000 575.000000 541.500000 }
+		direction=-90.000000
+		slot=wall_small_3
+	}
+ {
+		locator="artifact_bookshelf_1"
+		position={ 585.000000 16.000000 355.000000 }
+		direction=180.000000
+		slot=lectern_1
+	}
+ {
+		locator="artifact_bookshelf_2"
+		position={ -585.000000 16.000000 355.000000 }
+		slot=lectern_2
+	}
+ {
+		locator="artifact_throne_1"
+		position={ 0.000000 -295.000000 925.000000 }
+		direction=0.000010
+		slot=throne
+	}
+ {
+		locator="artifact_sculpture_1"
+		position={ 403.000000 94.000000 1022.000000 }
+		slot=sculpture_1
+	}
+ {
+		locator="artifact_sculpture_2"
+		position={ -403.000000 94.000000 1022.000000 }
+		slot=sculpture_2
+	}
+ {
+		locator="artifact_pedestal_locator_1"
+		position={ 400.000000 18.500000 360.000000 }
+		slot=pedestal_1
+	}
+ {
+		locator="artifact_pedestal_locator_2"
+		position={ -400.000000 18.500000 360.000000 }
+		direction=180.000000
+		slot=pedestal_2
+	}
+ {
+		locator="artifact_pedestal_locator_3"
+		position={ 525.000000 93.000000 720.000000 }
+		direction=180.000000
+		slot=pedestal_3
+	}
+ {
+		locator="artifact_pedestal_locator_4"
+		position={ -395.000000 93.000000 720.000000 }
+		slot=pedestal_4
+	}
+ }
+support_type={
+	lectern=ep1_western_lectern_01_a_entity
+	tall=ep1_western_pedestal_tall_01_a_entity
+	short_pillow=ep1_western_pedestal_short_pillow_01_a_entity
+	cradle=egg_cradle_pedestal_bronze_entity
+	tall_pillow=ep1_western_pedestal_tall_pillow_01_a_entity
+	armorstand=ep1_western_armorstand_01_entity
+	short=ep1_western_pedestal_short_01_a_entity
+}

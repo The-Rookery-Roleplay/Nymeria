@@ -1,0 +1,59 @@
+pdxmesh = {
+	name = "hightide_1_mesh"
+	file = "hightide_1.mesh"
+	
+	meshsettings = {
+		name = "silver_tops"
+		index = 0
+		texture_diffuse = "silver_m_diffuse.dds"
+		texture_normal = "silver_m_normal.dds"
+		texture_specular = "silver_m_gloss.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "building_special_the_eyrie_1Shape"
+		index = 0
+		texture_diffuse = "building_special_the_eyrie_1_diffuse.dds"
+		texture_normal = "building_special_the_eyrie_1_normal.dds"
+		texture_specular = "building_special_the_eyrie_1_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_the_eyrie_2Shape"
+		index = 0
+		texture_diffuse = "building_special_the_eyrie_2_diffuse.dds"
+		texture_normal = "building_special_the_eyrie_2_normal.dds"
+		texture_specular = "building_special_the_eyrie_2_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_the_eyrie_3Shape"
+		index = 0
+		texture_diffuse = "building_special_the_eyrie_3_diffuse.dds"
+		texture_normal = "building_special_the_eyrie_3_normal.dds"
+		texture_specular = "building_special_the_eyrie_3_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_the_eyrie_4Shape"
+		index = 0
+		texture_diffuse = "building_special_the_eyrie_4_diffuse.dds"
+		texture_normal = "building_special_the_eyrie_4_normal.dds"
+		texture_specular = "building_special_the_eyrie_4_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	
+
+}
+
+entity = {
+	name = "hightide_1_entity"
+	pdxmesh = "hightide_1_mesh"
+}

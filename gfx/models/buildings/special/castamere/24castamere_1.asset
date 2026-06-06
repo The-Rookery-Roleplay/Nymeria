@@ -1,0 +1,49 @@
+pdxmesh = {
+	name = "24castamere_1_mesh"
+	file = "24castamere_1.mesh"	
+
+	meshsettings = {
+		name = "mountains"
+		index = 0
+		texture_diffuse = "castamere_rock_diffuse.dds"
+		texture_normal = "casterlyrock_rock_normal.dds"
+		texture_specular = "casterlyrock_rock_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "square_tower"
+		index = 0
+		texture_diffuse = "lannisport_lk_diffuse.dds"
+		texture_normal = "lannisport_lk_normal.dds"
+		texture_specular = "lannisport_lk_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "dock"
+		index = 0
+		texture_diffuse = "lannisport_lp_diffuse.dds"
+		texture_normal = "lannisport_lp_normal.dds"
+		texture_specular = "lannisport_lp_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "gold_tower"
+		index = 0
+		texture_diffuse = "lannisport_dg_diffuse.dds"
+		texture_normal = "lannisport_dg_normal.dds"
+		texture_specular = "lannisport_dg_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "24castamere_1_entity"
+	pdxmesh = "24castamere_1_mesh"
+}

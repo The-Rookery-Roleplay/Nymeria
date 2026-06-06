@@ -1,0 +1,65 @@
+pdxmesh = {
+	name = "building_special_bloodstone_test_mesh"
+	file = "building_special_bloodstone_test.mesh"
+
+	meshsettings = {
+		name = "building_special_bloodstone_testShape"
+		index = 0
+		texture_diffuse = "building_special_bloodstone_test_diffuse.dds"
+		texture_normal = "building_special_bloodstone_test_normal.dds"
+		texture_specular = "building_special_bloodstone_test_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_bloodstone_walls_testShape"
+		index = 0
+		texture_diffuse = "building_special_bloodstone_walls_test_diffuse.dds"
+		texture_normal = "building_special_bloodstone_walls_test_normal.dds"
+		texture_specular = "building_special_bloodstone_walls_test_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_bloodstone_pirate"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_stormsend_castle_cliffsShape"
+		index = 0
+		texture_diffuse = "building_special_stormsend_castle_cliffs_diffuse.dds"
+		texture_normal = "building_special_stormsend_castle_cliffs_normal.dds"
+		texture_specular = "building_special_stormsend_castle_cliffs_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "bloodstone_port_01"
+		index = 0
+		texture_diffuse = "lannisport_lp_diffuse.dds"
+		texture_normal = "lannisport_lp_normal.dds"
+		texture_specular = "lannisport_lp_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "bloodstone_bridge"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "building_special_bloodstone_test_entity"
+	pdxmesh = "building_special_bloodstone_test_mesh"
+}

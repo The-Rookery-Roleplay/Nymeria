@@ -1,0 +1,33 @@
+pdxmesh = {
+	name = "deepwood_motte_mesh"
+	file = "deepwood_motte.mesh"
+
+	meshsettings = {
+		name = "main_castle"
+		index = 0
+		texture_diffuse = "building_celtic_01_diffuse.dds"
+		texture_normal = "building_celtic_01_normal.dds"
+		texture_specular = "building_celtic_01_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	
+	meshsettings = {
+		name = "the_ground"
+		index = 0
+		texture_diffuse = "building_celtic_decal_01_diffuse.dds"
+		texture_normal = "building_celtic_decal_01_normal.dds"
+		texture_specular = "building_celtic_decal_01_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+}
+
+entity = {
+	name = "deepwood_motte_entity"
+	pdxmesh = "deepwood_motte_mesh"
+}

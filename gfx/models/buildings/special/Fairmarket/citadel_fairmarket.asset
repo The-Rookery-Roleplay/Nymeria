@@ -1,0 +1,75 @@
+pdxmesh = {
+	name = "citadel_fairmarket_mesh"
+	file = "citadel_fairmarket.mesh"
+
+	meshsettings = {
+		name = "western_walls_07_london"
+		index = 0
+		texture_diffuse = "building_western_atlas_diffuse.dds"
+		texture_normal = "building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	#meshsettings = { <- Model aint showing up in-game, gotta fix later.
+	#	name = "cobblestone_decal"
+	#	index = 0
+	#	texture_diffuse = "gravel_diffuse.dds"
+	#	texture_normal = "gravel_normal.dds"
+	#	texture_specular = "gravel_properties.dds"
+	#	shader = "decal_local" 
+	#	shader_file = "gfx/FX/pdxmesh_decal.shader"
+	#	subpass = "LocalDecals"
+	#}
+
+	meshsettings = {
+		name = "building_western_castle_0Shape4"
+		index = 0
+		texture_diffuse = "building_western_atlas_diffuse.dds"
+		texture_normal = "building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "western_walls_04_a1Shape1"
+		index = 0
+		texture_diffuse = "building_western_atlas_diffuse.dds"
+		texture_normal = "building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "lannisport_lpShape"
+		index = 0
+		texture_diffuse = "lannisport_lp_diffuse.dds"
+		texture_normal = "lannisport_lp_normal.dds"
+		texture_specular = "lannisport_lp_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "lift"
+		index = 0
+		texture_diffuse = "building_lift_diffuse.dds"
+		texture_normal = "building_backup_atlas_normal.dds"
+		texture_specular = "building_backup_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+}
+
+entity = {
+	name = "citadel_fairmarket_entity"
+	pdxmesh = "citadel_fairmarket_mesh"
+}
