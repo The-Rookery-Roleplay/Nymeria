@@ -1,0 +1,24 @@
+pdxmesh = {
+	name = "f_asoiaf_septa_wimple_mesh"
+	file = "f_asoiaf_septa_wimple.mesh"
+
+	blend_shape = { id = "female_headgear_asoiaf_septa_wimple_bs_fat"			type = "f_asoiaf_septa_wimple_bs_fat.mesh" }
+	blend_shape = { id = "female_headgear_asoiaf_septa_wimple_bs_old"			type = "f_asoiaf_septa_wimple_bs_old.mesh" }
+
+	meshsettings = {
+		name = "f_asoiaf_septa_wimpleShape"
+		index = 0
+		texture_diffuse = "f_asoiaf_septa_wimple_diffuse.dds"
+		texture_normal = "f_asoiaf_septa_wimple_normal.dds"
+		texture_specular = "f_asoiaf_septa_wimple_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+entity = {
+	name = "female_headgear_asoiaf_septa_wimple_entity"
+	pdxmesh = "f_asoiaf_septa_wimple_mesh"
+
+	attribute = { name = "bs_fat_1"				blend_shape = "female_headgear_asoiaf_septa_wimple_bs_fat" }
+    attribute = { name = "bs_old_1"				blend_shape = "female_headgear_asoiaf_septa_wimple_bs_old" }
+}

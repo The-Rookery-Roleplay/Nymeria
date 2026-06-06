@@ -1,0 +1,74 @@
+pdxmesh = {
+	name = "amsb_the_dark_tower_mesh"
+	file = "amsb_the_dark_tower.mesh"
+
+	meshsettings = {
+		name = "dark_tower_ceilingShape"
+		index = 0
+		texture_diffuse = "dark_tower_ceiling_diffuse.dds"
+		texture_normal = "dark_tower_ceiling_normal.dds"
+		texture_specular = "dark_tower_ceiling_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "dark_tower_glyphsShape"
+		index = 0
+		texture_diffuse = "dark_tower_glyphs_diffuse.dds"
+		texture_normal = "dark_tower_glyphs_normal.dds"
+		texture_specular = "dark_tower_glyphs_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "dark_tower_pillarsShape"
+		index = 0
+		texture_diffuse = "dark_tower_pillars_diffuse.dds"
+		texture_normal = "dark_tower_pillars_normal.dds"
+		texture_specular = "dark_tower_pillars_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "dark_tower_throneShape"
+		index = 0
+		texture_diffuse = "dark_tower_throne_diffuse.dds"
+		texture_normal = "dark_tower_throne_normal.dds"
+		texture_specular = "dark_tower_throne_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "dark_tower_wallsShape"
+		index = 0
+		texture_diffuse = "dark_tower_walls_diffuse.dds"
+		texture_normal = "dark_tower_walls_normal.dds"
+		texture_specular = "dark_tower_walls_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "dark_tower_windowsShape"
+		index = 0
+		texture_diffuse = "dark_tower_windows_diffuse.dds"
+		texture_normal = "dark_tower_windows_normal.dds"
+		texture_specular = "dark_tower_windows_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+		meshsettings = {
+		name = "bloodstone_throne_brazier"
+		index = 0
+		texture_diffuse = "bloodstone_throne_brazier_diffuse.dds"
+		texture_normal = "bloodstone_throne_brazier_normal.dds"
+		texture_specular = "bloodstone_throne_brazier_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+
+entity = {
+	name = "amsb_the_dark_tower_entity"
+	pdxmesh = "amsb_the_dark_tower_mesh"
+}

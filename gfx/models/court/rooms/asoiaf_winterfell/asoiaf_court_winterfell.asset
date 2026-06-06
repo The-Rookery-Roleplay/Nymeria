@@ -1,0 +1,201 @@
+pdxmesh = {
+	name = "asoiaf_court_winterfell_mesh"
+	file = "asoiaf_court_winterfell.mesh"
+
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 0
+		texture_diffuse = "asoiaf_winterfell_texture_1_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_1_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_1_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 1
+		texture_diffuse = "asoiaf_winterfell_texture_2_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_2_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_2_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 2
+		texture_diffuse = "asoiaf_winterfell_texture_3_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_3_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_3_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 3
+		texture_diffuse = "asoiaf_winterfell_texture_4_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_4_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_4_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 4
+		texture_diffuse = "asoiaf_winterfell_texture_5_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_5_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_5_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 5
+		texture_diffuse = "asoiaf_winterfell_texture_6_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_6_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_6_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 6
+		texture_diffuse = "asoiaf_winterfell_texture_7_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_7_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_7_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 7
+		texture_diffuse = "asoiaf_winterfell_texture_8_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_8_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_8_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 8
+		texture_diffuse = "asoiaf_winterfell_texture_9_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_9_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_9_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 9
+		texture_diffuse = "asoiaf_winterfell_texture_10_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_10_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_10_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 10
+		texture_diffuse = "asoiaf_winterfell_texture_11_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_11_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_11_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 11
+		texture_diffuse = "asoiaf_winterfell_texture_12_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_12_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_12_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 12
+		texture_diffuse = "asoiaf_winterfell_texture_13_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_13_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_13_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 13
+		texture_diffuse = "asoiaf_winterfell_texture_14_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_14_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_14_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 14
+		texture_diffuse = "asoiaf_winterfell_texture_15_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_15_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_15_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 15
+		texture_diffuse = "asoiaf_winterfell_texture_16_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_16_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_16_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 16
+		texture_diffuse = "asoiaf_winterfell_texture_17_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_17_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_17_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 17
+		texture_diffuse = "asoiaf_winterfell_texture_18_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_18_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_18_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 18
+		texture_diffuse = "asoiaf_winterfell_texture_19_diffuse.dds"
+		texture_normal = "asoiaf_winterfell_texture_19_normal.dds"
+		texture_specular = "asoiaf_winterfell_texture_19_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_winterfellShape"
+		index = 19
+		texture_diffuse = "asoiaf_red_keep_texture_11_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_11_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_11_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	
+	#WINDOWS
+	meshsettings = {
+		name = "asoiaf_winterfell_windowsShape"
+		index = 0
+		texture_diffuse = "asoiaf_red_keep_texture_7_diffuse.dds"
+		texture_normal = "eyrie_hdri_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_7_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+entity = {
+	name = "asoiaf_court_winterfell_entity"
+	pdxmesh = "asoiaf_court_winterfell_mesh"
+}

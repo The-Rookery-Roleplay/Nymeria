@@ -1,0 +1,219 @@
+pdxmesh = {
+	name = "asoiaf_court_red_keep_mesh"
+	file = "asoiaf_court_red_keep.mesh"
+
+	#THRONE
+	meshsettings = {
+		name = "asoiaf_red_keep_throneShape"
+		index = 0
+		texture_diffuse = "asoiaf_red_keep_texture_19_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_19_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_19_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_throneShape"
+		index = 1
+		texture_diffuse = "asoiaf_red_keep_texture_15_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_15_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_15_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_throneShape"
+		index = 2
+		texture_diffuse = "asoiaf_red_keep_texture_14_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_14_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_14_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_throneShape"
+		index = 3
+		texture_diffuse = "asoiaf_red_keep_texture_16_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_16_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_16_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_throneShape"
+		index = 4
+		texture_diffuse = "asoiaf_red_keep_texture_17_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_17_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_17_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_throneShape"
+		index = 5
+		texture_diffuse = "asoiaf_red_keep_texture_18_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_18_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_18_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_throneShape"
+		index = 6
+		texture_diffuse = "asoiaf_red_keep_texture_20_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_20_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_20_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	#FLOOR
+	meshsettings = {
+		name = "asoiaf_red_keep_floorShape"
+		index = 0
+		texture_diffuse = "asoiaf_red_keep_texture_10_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_10_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_10_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_floorShape"
+		index = 1
+		texture_diffuse = "asoiaf_red_keep_texture_9_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_9_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_9_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_floorShape"
+		index = 2
+		texture_diffuse = "asoiaf_red_keep_texture_6_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_6_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_6_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_floorShape"
+		index = 3
+		texture_diffuse = "asoiaf_red_keep_texture_5_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_5_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_5_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_floorShape"
+		index = 4
+		texture_diffuse = "asoiaf_storms_end_texture_8_diffuse.dds"
+		texture_normal = "asoiaf_storms_end_texture_8_normal.dds"
+		texture_specular = "asoiaf_storms_end_texture_8_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	#CANDLES
+	meshsettings = {
+		name = "asoiaf_red_keep_candlesShape"
+		index = 0
+		texture_diffuse = "asoiaf_red_keep_texture_11_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_11_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_11_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	#COLUMNS
+	meshsettings = {
+		name = "asoiaf_red_keep_columnsShape"
+		index = 0
+		texture_diffuse = "asoiaf_red_keep_texture_3_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_3_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_3_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	#WALLS
+	meshsettings = {
+		name = "asoiaf_red_keep_wallsShape"
+		index = 0
+		texture_diffuse = "asoiaf_red_keep_texture_12_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_12_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_12_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_wallsShape"
+		index = 1
+		texture_diffuse = "asoiaf_red_keep_texture_1_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_1_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_1_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_wallsShape"
+		index = 2
+		texture_diffuse = "asoiaf_red_keep_texture_2_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_2_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_2_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_wallsShape"
+		index = 3
+		texture_diffuse = "asoiaf_red_keep_texture_9_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_9_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_9_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_wallsShape"
+		index = 4
+		texture_diffuse = "asoiaf_red_keep_texture_13_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_13_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_13_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_wallsShape"
+		index = 5
+		texture_diffuse = "asoiaf_red_keep_texture_8_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_8_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_8_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_red_keep_wallsShape"
+		index = 6
+		texture_diffuse = "asoiaf_red_keep_texture_14_diffuse.dds"
+		texture_normal = "asoiaf_red_keep_texture_14_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_14_properties.dds"
+		shader = "court_alpha_to_coverage"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	#WINDOW BACKLIGHTS
+	meshsettings = {
+		name = "asoiaf_red_keep_window_backlightsShape"
+		index = 0
+		texture_diffuse = "asoiaf_red_keep_texture_7_diffuse.dds"
+		texture_normal = "eyrie_hdri_normal.dds"
+		texture_specular = "asoiaf_red_keep_texture_7_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+entity = {
+	name = "asoiaf_court_red_keep_entity"
+	pdxmesh = "asoiaf_court_red_keep_mesh"
+}
