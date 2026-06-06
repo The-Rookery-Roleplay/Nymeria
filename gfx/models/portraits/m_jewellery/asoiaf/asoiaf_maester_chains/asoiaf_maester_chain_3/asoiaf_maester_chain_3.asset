@@ -1,0 +1,32 @@
+pdxmesh = {
+	name = "asoiaf_maester_chain_3_mesh"
+	file = "asoiaf_maester_chain_3.mesh"
+
+	blend_shape = { id = "male_jewellery_asoiaf_maester_chain_3_bs_fat"			type = "asoiaf_maester_chain_3_bs_fat.mesh" }
+	blend_shape = { id = "male_jewellery_asoiaf_maester_chain_3_bs_gaunt"		type = "asoiaf_maester_chain_3_bs_gaunt.mesh" }
+	blend_shape = { id = "male_jewellery_asoiaf_maester_chain_3_bs_muscular"	type = "asoiaf_maester_chain_3_bs_muscular.mesh" }
+	blend_shape = { id = "male_jewellery_asoiaf_maester_chain_3_bs_old"			type = "asoiaf_maester_chain_3_bs_old.mesh" }
+	blend_shape = { id = "male_jewellery_asoiaf_maester_chain_3_bs_dwarf"		type = "asoiaf_maester_chain_3_bs_dwarf.mesh" }
+	blend_shape = { id = "male_jewellery_asoiaf_maester_chain_3_bs_infant"		type = "asoiaf_maester_chain_3_bs_infant.mesh" }
+
+	meshsettings = {
+		name = "asoiaf_maester_chain_3Shape"
+		index = 0
+		texture_diffuse = "asoiaf_maester_chains_diffuse.dds"
+		texture_normal = "asoiaf_maester_chains_normal.dds"
+		texture_specular = "asoiaf_maester_chains_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+entity = {
+	name = "male_jewellery_asoiaf_maester_chain_3_entity"
+	pdxmesh = "asoiaf_maester_chain_3_mesh"
+
+	attribute = { name = "bs_body_fat_1"				blend_shape = "male_jewellery_asoiaf_maester_chain_3_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"				blend_shape = "male_jewellery_asoiaf_maester_chain_3_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"			blend_shape = "male_jewellery_asoiaf_maester_chain_3_bs_muscular" }
+    attribute = { name = "bs_body_old_1"				blend_shape = "male_jewellery_asoiaf_maester_chain_3_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"				blend_shape = "male_jewellery_asoiaf_maester_chain_3_bs_dwarf" }
+	attribute = { name = "bs_body_infant_1"				blend_shape = "male_jewellery_asoiaf_maester_chain_3_bs_infant" }
+}

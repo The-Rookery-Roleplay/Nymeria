@@ -1,0 +1,18 @@
+pdxmesh = {
+	name = "asoiaf_nights_watch_coif_mesh"
+	file = "asoiaf_nights_watch_coif.mesh"
+
+	meshsettings = {
+		name = "asoiaf_nights_watch_coifShape"
+		index = 0
+		texture_diffuse = "asoiaf_nights_watch_coif_diffuse.dds"
+		texture_normal = "asoiaf_nights_watch_coif_normal.dds"
+		texture_specular = "asoiaf_nights_watch_coif_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+entity = {
+	name = "male_headgear_asoiaf_nights_watch_coif_entity"
+	pdxmesh = "asoiaf_nights_watch_coif_mesh"
+}

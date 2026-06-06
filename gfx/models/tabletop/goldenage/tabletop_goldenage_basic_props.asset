@@ -1,0 +1,363 @@
+pdxmesh = {
+	name = "tabletop_goldenage_basic_props_mesh"
+	file = "tabletop_goldenage_basic_props.mesh"
+
+	cull_distance = 50000
+
+	meshsettings = {
+		name = "ep1_western_scroll_01_a_02Shape"
+		index = 0
+		texture_diffuse = "ep1_western_scroll_01_a_diffuse.dds"
+		texture_normal = "ep1_western_scroll_01_a_normal.dds"
+		texture_specular = "ep1_western_scroll_01_a_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "quill"
+		index = 0
+		texture_diffuse = "ep1_tool_quill_diffuse.dds"
+		texture_normal = "ep1_tool_quill_normal.dds"
+		texture_specular = "ep1_tool_quill_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "writing_tools_meshShape"
+		index = 0
+		texture_diffuse = "tabletop_western_writing_tools_diffuse.dds"
+		texture_normal = "tabletop_western_writing_tools_normal.dds"
+		texture_specular = "tabletop_western_writing_tools_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "ep1_western_book_verybig_01_a_Shape"
+		index = 0
+		texture_diffuse = "ep1_western_book_verybig_01_a_diffuse.dds"
+		texture_normal = "ep1_western_book_verybig_01_a_normal.dds"
+		texture_specular = "ep1_western_book_verybig_01_a_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "ep1_western_book_big_01_aShape"
+		index = 0
+		texture_diffuse = "ep1_western_book_big_01_a_diffuse.dds"
+		texture_normal = "ep1_western_book_big_01_a_normal.dds"
+		texture_specular = "ep1_western_book_big_01_a_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "openbookcover"
+		index = 0
+		texture_diffuse = "ep1_western_book_big_01_a_diffuse.dds"
+		texture_normal = "ep1_western_book_big_01_a_normal.dds"
+		texture_specular = "ep1_western_book_big_01_a_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "bookOpenPages"
+		index = 0
+		texture_diffuse = "bookOpenPages_diffuse.dds"
+		texture_normal = "bookOpenPages_normal.dds"
+		texture_specular = "bookOpenPages_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "gold_rings"
+		index = 0
+		texture_diffuse = "gold_rings_diffuse.dds"
+		texture_normal = "gold_rings_normal.dds"
+		texture_specular = "gold_rings_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "whiteBookCover"
+		index = 0
+		texture_diffuse = "white_book_diffuse.dds"
+		texture_normal = "white_book_normal.dds"
+		texture_specular = "white_book_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}	
+	
+	meshsettings = {
+		name = "whiteBookPages"
+		index = 0
+		texture_diffuse = "bookOpenPages_diffuse.dds"
+		texture_normal = "whitebook_page_normal.dds"
+		texture_specular = "bookOpenPages_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}	
+	
+	meshsettings = {
+		name = "whiteBookLeftPage"
+		index = 0
+		texture_diffuse = "lucamorelusty_diffuse.dds"
+		texture_normal = "whitebook_page_normal.dds"
+		texture_specular = "whitebook_page_properties.dds"
+		shader = "standard_map_decoration_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}	
+	
+	meshsettings = {
+		name = "whiteBookRightPage"
+		index = 0
+		texture_diffuse = "rymanredwyne_diffuse.dds"
+		texture_normal = "whitebook_page_normal.dds"
+		texture_specular = "whitebook_page_properties.dds"
+		shader = "standard_map_decoration_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "ep2_crossbow_02Shape"
+		index = 0
+		texture_diffuse = "ep2_crossbow_01_a_diffuse.dds"
+		texture_normal = "ep2_crossbow_01_a_normal.dds"
+		texture_specular = "ep2_crossbow_01_a_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "letters"
+		index = 0
+		texture_diffuse = "letter_diffuse.dds"
+		texture_normal = "letter_normal.dds"
+		texture_specular = "letter_properties.dds"
+		shader = "standard_map_decoration_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "seal1"
+		index = 0
+		texture_diffuse = "targaryen_seal_diffuse.dds"
+		texture_normal = "targaryen_seal_normal.dds"
+		texture_specular = "seal_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "seal2"
+		index = 0
+		texture_diffuse = "fots_seal_diffuse.dds"
+		texture_normal = "fots_seal_normal.dds"
+		texture_specular = "seal_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "scroll"
+		index = 0
+		texture_diffuse = "scroll_diffuse.dds"
+		texture_normal = "scroll_normal.dds"
+		texture_specular = "scroll_properties.dds"
+		shader = "standard_map_decoration_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "text1"
+		index = 0
+		texture_diffuse = "highsepton_doctrone_01_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "noproperties.dds"
+		shader = "standard_map_decoration_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "text2"
+		index = 0
+		texture_diffuse = "highsepton_doctrone_02_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "noproperties.dds"
+		shader = "standard_map_decoration_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "journal_page_left"
+		index = 0
+		texture_diffuse = "septonbarthjournal_01_diffuse.dds"
+		texture_normal = "journal_page_normal.dds"
+		texture_specular = "journal_page_properties.dds"
+		shader = "standard_map_decoration_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}	
+	
+	meshsettings = {
+		name = "journal_page_right"
+		index = 0
+		texture_diffuse = "septonbarthjournal_02_diffuse.dds"
+		texture_normal = "journal_page_normal.dds"
+		texture_specular = "journal_page_properties.dds"
+		shader = "standard_map_decoration_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "JaehaerysCrownShape" #Should be 'JaehaerysICrownShape', but fixing the inconsistency breaks the headgear in-game.
+		index = 0
+		texture_diffuse = "jaehaerysI_crown_diffuse.dds"
+		texture_normal = "jaehaerysI_crown_normal.dds"
+		texture_specular = "jaehaerysI_crown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	
+	meshsettings = {
+		name = "female_alysanne_crown_01" 
+		index = 0
+		texture_diffuse = "agot_alysannecrown_diffuse.dds"
+		texture_normal = "agot_alysannecrown_normal.dds"
+		texture_specular = "agot_alysannecrown_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	
+	meshsettings = {
+		name = "male_headgear_maester_chain_1" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the crown doesn't load into the game.
+		index = 0
+		texture_diffuse = "male_headgear_maester_chain_1_diffuse.dds"
+		texture_normal = "male_headgear_maester_chain_1_normal.dds"
+		texture_specular = "male_headgear_maester_chain_1_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	
+	meshsettings = {
+		name = "female_faithofseven_necklace_02Shape" #Name is a carryover from how Maddie had her headgears formatted. If it's removed, the necklace doesn't load into the game.
+		index = 0
+		texture_diffuse = "female_faithofseven_necklace_02_diffuse.dds"
+		texture_normal = "female_faithofseven_necklace_02_normal.dds"
+		texture_specular = "female_faithofseven_necklace_02_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	
+	meshsettings = {
+		name = "artifact_viserra_mirrorShape"
+		index = 0
+		texture_diffuse = "artifact_viserra_mirror_diffuse.dds"
+		texture_normal = "artifact_viserra_mirror_normal.dds"
+		texture_specular = "artifact_viserra_mirror_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "asoiaf_sword_dark_sisterShape"
+		index = 0
+		texture_diffuse = "asoiaf_sword_dark_sister_diffuse.dds"
+		texture_normal = "asoiaf_sword_dark_sister_normal.dds"
+		texture_specular = "asoiaf_sword_dark_sister_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "blackfyre"
+		index = 0
+		texture_diffuse = "asoiaf_blackfyre_diffuse.dds"	
+		texture_normal = "asoiaf_blackfyre_normal.dds"
+		texture_specular = "asoiaf_blackfyre_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	
+	meshsettings = {
+		name = "pearl2"
+		index = 0
+		texture_diffuse = "pearl_blue_diffuse.dds"
+		texture_normal = "pearl_normal.dds"
+		texture_specular = "pearl_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "gem1"
+		index = 0
+		texture_diffuse = "gem_01_diffuse.dds"
+		texture_normal = "gem_normal.dds"
+		texture_specular = "gem_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}	
+	
+	meshsettings = {
+		name = "gem2"
+		index = 0
+		texture_diffuse = "gem_02_diffuse.dds"
+		texture_normal = "gem_normal.dds"
+		texture_specular = "gem_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "silver_dragon_map_markerShape"
+		index = 0
+		texture_diffuse = "silver_dragon_map_marker_diffuse.dds"
+		texture_normal = "dragon_map_marker_normal.dds"
+		texture_specular = "dragon_map_marker_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "bronze_dragon_map_markerShape"
+		index = 0
+		texture_diffuse = "bronze_dragon_map_marker_diffuse.dds"
+		texture_normal = "dragon_map_marker_normal.dds"
+		texture_specular = "dragon_map_marker_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "dragon_doll"
+		index = 0
+		texture_diffuse = "dragon_doll_03_diffuse.dds"
+		texture_normal = "dragon_doll_normal.dds"
+		texture_specular = "dragon_doll_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	
+	meshsettings = {
+		name = "arryn_brooch"
+		index = 0
+		texture_diffuse = "arryn_brooch_diffuse.dds"
+		texture_normal = "arryn_brooch_normal.dds"
+		texture_specular = "arryn_brooch_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}	
+	
+
+}
+
+entity = {
+	name = "tabletop_goldenage_basic_props_entity"
+	pdxmesh = "tabletop_goldenage_basic_props_mesh"
+}

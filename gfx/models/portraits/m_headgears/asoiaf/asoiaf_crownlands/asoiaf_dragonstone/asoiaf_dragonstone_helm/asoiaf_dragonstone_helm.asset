@@ -1,0 +1,18 @@
+pdxmesh = {
+	name = "asoiaf_dragonstone_helm_mesh"
+	file = "asoiaf_dragonstone_helm.mesh"
+
+	meshsettings = {
+		name = "asoiaf_dragonstone_helmShape"
+		index = 0
+		texture_diffuse = "asoiaf_dragonstone_helm_diffuse.dds"
+		texture_normal = "asoiaf_dragonstone_helm_normal.dds"
+		texture_specular = "asoiaf_dragonstone_helm_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+entity = {
+	name = "male_headgear_asoiaf_dragonstone_helm_entity"
+	pdxmesh = "asoiaf_dragonstone_helm_mesh"
+}

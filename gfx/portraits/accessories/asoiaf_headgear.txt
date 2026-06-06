@@ -1,0 +1,274 @@
+﻿## these assets are then used in the genes (game/common/genes/..) at the bottom of the file. 
+
+#####################################
+#									#
+# 			ASOIAF  Headgears		#
+#									#
+#####################################
+
+## Crownlands ##
+male_headgear_asoiaf_gold_cloak_helm = {
+	set_tags = "no_hair,helmet"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_gold_cloak_helm_entity }
+}
+female_headgear_asoiaf_gold_cloak_helm = {
+	set_tags = "no_hair,helmet"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_gold_cloak_helm_entity }
+}
+
+## Crownlands ##
+male_headgear_asoiaf_dragonstone_helm = {
+	set_tags = "no_hair,helmet"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_dragonstone_helm_entity }
+}
+female_headgear_asoiaf_dragonstone_helm = {
+	set_tags = "no_hair,helmet"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_dragonstone_helm_entity }
+}
+
+male_headgear_asoiaf_dragonstone_helm_2 = {
+	set_tags = "no_hair,no_beard,helmet"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_dragonstone_helm_2_entity }
+}
+female_headgear_asoiaf_dragonstone_helm_2 = {
+	set_tags = "no_hair,no_beard,helmet"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_dragonstone_helm_2_entity }
+}
+
+## North ##
+male_headgear_asoiaf_north_helm_high = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_north_helm_high_entity }
+}
+female_headgear_asoiaf_north_helm_high = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_north_helm_high_entity }
+}
+
+male_headgear_asoiaf_north_helm_low = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_north_helm_low_entity }
+}
+female_headgear_asoiaf_north_helm_low = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_north_helm_low_entity }
+}
+
+male_headgear_asoiaf_stark_helm_high = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_stark_helm_high_entity }
+}
+female_headgear_asoiaf_stark_helm_high = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_stark_helm_high_entity }
+}
+
+male_headgear_asoiaf_stark_helm_low = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_stark_helm_low_entity }
+}
+female_headgear_asoiaf_stark_helm_low = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_stark_helm_low_entity }
+}
+
+male_headgear_asoiaf_manderly_helm_low = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_manderly_helm_low_entity }
+}
+female_headgear_asoiaf_manderly_helm_low = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_manderly_helm_low_entity }
+}
+male_headgear_asoiaf_manderly_helm_low_coa = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_manderly_helm_low_coa_entity }
+}
+female_headgear_asoiaf_manderly_helm_low_coa = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_manderly_helm_low_coa_entity }
+}
+
+male_headgear_asoiaf_bolton_helm_high = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_bolton_helm_high_entity }
+}
+female_headgear_asoiaf_bolton_helm_high = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_bolton_helm_high_entity }
+}
+
+male_headgear_asoiaf_bolton_helm_low = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_bolton_helm_low_entity }
+}
+female_headgear_asoiaf_bolton_helm_low = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_bolton_helm_low_entity }
+}
+
+male_headgear_asoiaf_umber_helm_dynast = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_umber_helm_dynast_entity }
+}
+female_headgear_asoiaf_umber_helm_dynast = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_umber_helm_dynast_entity }
+}
+male_headgear_asoiaf_umber_helm_dynast_coa = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_umber_helm_dynast_coa_entity }
+}
+female_headgear_asoiaf_umber_helm_dynast_coa = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_umber_helm_dynast_coa_entity }
+}
+
+male_headgear_asoiaf_umber_helm_low = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_umber_helm_low_entity }
+}
+female_headgear_asoiaf_umber_helm_low = {
+	set_tags = "helmet,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_umber_helm_low_entity }
+}
+
+## Westerlands ##
+male_headgear_secular_asoiaf_lannister_plate_2_helm = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_secular_asoiaf_lannister_plate_2_helm_entity }
+}
+male_headgear_secular_asoiaf_lannister_plate_2_helm_open = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_secular_asoiaf_lannister_plate_2_helm_open_entity }
+}
+male_headgear_secular_asoiaf_lannister_plate_2_helm_closed = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_secular_asoiaf_lannister_plate_2_helm_closed_entity }
+}
+
+male_headgear_asoiaf_hound_helm = {
+	set_tags = "helmet,snug_headgear,no_hair,no_beard"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_hound_helm_entity }
+}
+female_headgear_asoiaf_hound_helm = {
+	set_tags = "helmet,snug_headgear,no_hair,no_beard"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_hound_helm_entity }
+}
+
+## Reach ##
+female_headgear_asoiaf_reach_headdress_1 = {
+	set_tags = "snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_reach_headdress_1 }
+}
+
+male_headgear_asoiaf_tyrell_helm_dynast = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_tyrell_helm_dynast_entity }
+}
+male_headgear_asoiaf_tyrell_helm_high = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_tyrell_helm_high_entity }
+}
+male_headgear_asoiaf_tyrell_helm_low = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_tyrell_helm_low_entity }
+}
+
+## Iron Isles ##
+male_headgear_asoiaf_greyjoy_helm_high = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_greyjoy_helm_high_entity }
+}
+female_headgear_asoiaf_greyjoy_helm_high = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_greyjoy_helm_high_entity }
+}
+
+male_headgear_asoiaf_ironborn_helm_high_coa = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_ironborn_helm_high_coa_entity }
+}
+female_headgear_asoiaf_ironborn_helm_high_coa = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_ironborn_helm_high_coa_entity }
+}
+
+## Kingsguard ##
+male_headgear_asoiaf_kingsguard_helm_default = {
+	set_tags = "helmet,snug_headgear,no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_kingsguard_helm_default_entity }
+}
+
+## Crowns ##
+male_headgear_secular_asoiaf_crown_aerys_II = {
+	set_tags = "crown"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_secular_asoiaf_crown_aerys_II_entity }
+}
+female_headgear_secular_asoiaf_crown_aerys_II = {
+	set_tags = "crown,fit_over_headgear"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_secular_asoiaf_crown_aerys_II_entity }
+}
+
+male_headgear_secular_asoiaf_crown_robert_I = {
+	set_tags = "crown"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_secular_asoiaf_crown_robert_I_entity }
+}
+female_headgear_secular_asoiaf_crown_robert_I = {
+	set_tags = "crown,fit_over_headgear"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_secular_asoiaf_crown_robert_I_entity }
+}
+
+male_headgear_secular_asoiaf_crown_renly = {
+	set_tags = "crown"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_secular_asoiaf_crown_renly_entity }
+}
+female_headgear_secular_asoiaf_crown_renly = {
+	set_tags = "crown,fit_over_headgear"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_secular_asoiaf_crown_renly_entity }
+}
+
+male_headgear_secular_asoiaf_crown_baratheon_tyrell = {
+	set_tags = "crown"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_secular_asoiaf_crown_baratheon_tyrell_entity }
+}
+female_headgear_secular_asoiaf_crown_baratheon_tyrell = {
+	set_tags = "crown,fit_over_headgear"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_secular_asoiaf_crown_baratheon_tyrell_entity }
+}
+
+male_headgear_secular_asoiaf_crown_joffrey_I = {
+	#set_tags = "crown"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_secular_asoiaf_crown_joffrey_I_entity }
+}
+female_headgear_secular_asoiaf_crown_joffrey_I = {
+	set_tags = "crown,fit_over_headgear"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_secular_asoiaf_crown_joffrey_I_entity }
+}
+#asoiaf_crown_joffrey_I_prop = {
+#	entity = { required_tags = "" node = "bn_l_prop" entity = asoiaf_crown_joffrey_I_prop_entity }
+#}
+
+## Night's Watch ###
+male_headgear_asoiaf_nights_watch_hood = {
+	set_tags = "helmet,cap,snug_headgear"
+	set_tags = "no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_nights_watch_hood_entity }
+}
+male_headgear_asoiaf_nights_watch_coif = {
+	set_tags = "helmet,cap,snug_headgear"
+	set_tags = "no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = male_headgear_asoiaf_nights_watch_coif_entity }
+}
+
+## Religious ##
+female_headgear_asoiaf_septa_wimple = {
+	set_tags = "cap,snug_headgear"
+	set_tags = "no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_septa_wimple_entity }
+}
+female_headgear_asoiaf_silent_sister_hood = {
+	set_tags = "cap,snug_headgear"
+	set_tags = "no_hair"
+	entity = { required_tags = ""		shared_pose_entity = head		entity = female_headgear_asoiaf_silent_sister_hood }
+}

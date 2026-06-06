@@ -1,0 +1,1691 @@
+﻿asoiaf_headgear_death_crowns = {
+
+	usage = game
+	selection_behavior = weighted_random
+	priority = 5
+
+	asoiaf_aegon_I_crown_vanilla = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = aegonIcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_aegon_I_crown_death_trait
+				NAND = {
+					is_lotd_loaded_trigger = yes #player has LOTD enabled
+					OR = {
+						has_game_rule = hotd_visuals #and player has HOTD visuals enabled
+						has_game_rule = crown_only_visuals
+					}
+				}
+			}
+		}
+	}
+	asoiaf_aegon_I_crown_lotd = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = lotd_unique_crowns
+				accessory = male_aegoncrown_02
+            }
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_aegon_I_crown_lotd_death_trait
+				AND = {
+					is_lotd_loaded_trigger = yes #player has LOTD enabled
+					OR = {
+						has_game_rule = hotd_visuals #and player has HOTD visuals enabled
+						has_game_rule = crown_only_visuals
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_lotd_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_visenya_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = visenya_circlet
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_visenya_crown_death_trait
+			}
+		}
+	}
+	asoiaf_rhaenys_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = rhaenys_circlet
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_rhaenys_crown_death_trait
+			}
+		}
+	}
+	asoiaf_aenys_I_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = aenysIcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_aenys_I_crown_death_trait
+			}
+		}
+	}
+	asoiaf_jaehaerys_I_crown_vanilla = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = jaehaerysIcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_jaehaerys_I_crown_death_trait
+				NAND = {
+					is_lotd_loaded_trigger = yes #player has LOTD enabled
+					OR = {
+						has_game_rule = hotd_visuals #and player has HOTD visuals enabled
+						has_game_rule = crown_only_visuals
+					}
+				}
+			}
+		}
+	}
+	asoiaf_jaehaerys_I_crown_lotd = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = lotd_unique_crowns
+				accessory = male_viserys_crown_01
+            }
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_jaehaerys_I_crown_death_trait
+				AND = {
+					is_lotd_loaded_trigger = yes #player has LOTD enabled
+					OR = {
+						has_game_rule = hotd_visuals #and player has HOTD visuals enabled
+						has_game_rule = crown_only_visuals
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_lotd_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_alysanne_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = alysannecrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_alysanne_crown_death_trait
+			}
+		}
+	}
+	asoiaf_daemon_stepstones_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = daemon_stepstone_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_daemon_stepstone_crown_death_trait
+			}
+		}
+	}
+	asoiaf_daemon_queen_stepstones_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = daemon_queen_stepstone_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_daemon_queen_stepstone_crown_death_trait
+			}
+		}
+	}
+	asoiaf_aegon_III_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = aegonIIIcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_aegon_III_crown_death_trait
+			}
+		}
+	}
+	asoiaf_baelor_I_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = florealcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_baelor_I_crown_death_trait
+			}
+		}
+	}
+	asoiaf_aegon_IV_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = aegonIVcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_aegon_IV_crown_death_trait
+			}
+		}
+	}
+	asoiaf_maekar_I_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = maekarIcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_maekar_crown_death_trait
+			}
+		}
+	}
+	asoiaf_aerys_II_crown_male = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = asoiaf_unique_headgears
+				accessory = male_headgear_secular_asoiaf_crown_aerys_II
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				is_male = yes
+				has_inactive_trait = asoiaf_aerys_II_crown_death_trait
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_aerys_II_crown_female = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = asoiaf_unique_headgears
+				accessory = female_headgear_secular_asoiaf_crown_aerys_II
+				type = female
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				is_female = yes
+				has_inactive_trait = asoiaf_aerys_II_crown_death_trait
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_robert_I_crown_male = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = asoiaf_unique_headgears
+				accessory = male_headgear_secular_asoiaf_crown_robert_I
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				is_male = yes
+				has_inactive_trait = asoiaf_robert_I_crown_death_trait
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_robert_I_crown_female = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = asoiaf_unique_headgears
+				accessory = female_headgear_secular_asoiaf_crown_robert_I
+				type = female
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				is_female = yes
+				has_inactive_trait = asoiaf_robert_I_crown_death_trait
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_robert_I_crown_vanilla = { #Vanilla AGOT version of Joffrey I's crown
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = robertIcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_robert_I_crown_vanilla_death_trait
+			}
+		}
+	}
+	asoiaf_joffrey_I_crown_male = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = asoiaf_unique_headgears
+				accessory = male_headgear_secular_asoiaf_crown_joffrey_I
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				is_male = yes
+				has_inactive_trait = asoiaf_joffrey_I_crown_death_trait
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_joffrey_I_crown_female = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = asoiaf_unique_headgears
+				accessory = female_headgear_secular_asoiaf_crown_joffrey_I
+				type = female
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				is_female = yes
+				has_inactive_trait = asoiaf_joffrey_I_crown_death_trait
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_joffrey_I_crown_vanilla = { #Vanilla AGOT version of Joffrey I's crown
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = joffreyIcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_joffrey_I_crown_vanilla_death_trait
+			}
+		}
+	}
+	asoiaf_stannis_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = stanniscrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_stannis_crown_death_trait #only triggers if the crown he was wearing on death DIDN'T have the Aerys II variable (i.e., it's the vanilla Stannis crown, NOT the Aerys II crown which also has the Stannis crown variable in it)
+				NOT = { has_inactive_trait = asoiaf_aerys_II_crown_death_trait }
+			}
+		}
+	}
+	asoiaf_renly_crown_male = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = asoiaf_unique_headgears
+				accessory = male_headgear_secular_asoiaf_crown_renly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				is_male = yes
+				has_inactive_trait = asoiaf_renly_crown_death_trait
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_renly_crown_female = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = asoiaf_unique_headgears
+				accessory = female_headgear_secular_asoiaf_crown_renly
+				type = female
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				is_female = yes
+				has_inactive_trait = asoiaf_renly_crown_death_trait
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_renly_crown_vanilla = { #vanilla AGOT version of Renly's crown
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = renlycrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_renly_crown_vanilla_death_trait
+			}
+		}
+	}
+	asoiaf_daenerys_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = daeneryscrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_daenerys_crown_death_trait
+			}
+		}
+	}
+	#
+	asoiaf_driftwood_1_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = driftwoodcrown1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_driftwood_1_crown_death_trait
+			}
+		}
+	}
+	asoiaf_valyrian_2_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = valyrian_crown2
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_valyrian_2_crown_death_trait
+			}
+		}
+	}
+	asoiaf_westerosi_valyrian_1_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = westerosi_valyrian_crown1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_westerosi_valyrian_1_crown_death_trait
+			}
+		}
+	}
+	asoiaf_westerosi_valyrian_2_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = westerosi_valyrian_crown2
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_westerosi_valyrian_2_crown_death_trait
+			}
+		}
+	}
+	asoiaf_beyond_the_wall_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = beyondthewallcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_beyondthewall_crown_death_trait
+			}
+		}
+	}
+	asoiaf_iron_isles_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = ironislescrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_iron_isles_crown_death_trait
+			}
+		}
+	}
+	asoiaf_riverlands_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = riverlandscrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_riverlands_crown_death_trait
+			}
+		}
+	}
+	asoiaf_blackwood_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = blackwood_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_blackwood_crown_death_trait
+			}
+		}
+	}
+	asoiaf_bolton_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = bolton_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_bolton_crown_death_trait
+			}
+		}
+	}
+	asoiaf_cargyll_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = cargyll_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_cargyll_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_winter_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crownofwinter
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_winter_crown_death_trait
+			}
+		}
+	}
+	asoiaf_dayne_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = dayne_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_dayne_crown_death_trait
+			}
+		}
+	}
+	asoiaf_dorne_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = dornecrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_dorne_crown_death_trait
+			}
+		}
+	}
+	asoiaf_dustin_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = dustin_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_dustin_crown_death_trait
+			}
+		}
+	}
+	asoiaf_falcon_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = falcon_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_falcon_crown_death_trait
+			}
+		}
+	}
+	asoiaf_florent_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = florent_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_florent_crown_death_trait
+			}
+		}
+	}
+	asoiaf_frey_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = frey_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_frey_crown_death_trait
+			}
+		}
+	}
+	asoiaf_greyjoy_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = greyjoy_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_greyjoy_crown_death_trait
+			}
+		}
+	}
+	asoiaf_harlaw_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = harlaw_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_harlaw_crown_death_trait
+			}
+		}
+	}
+	asoiaf_hightower_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = hightower_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_hightower_crown_death_trait
+			}
+		}
+	}
+	asoiaf_iron_stag_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = ironstagcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_iron_stag_crown_death_trait
+			}
+		}
+	}
+	asoiaf_manderly_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = manderly_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_manderly_crown_death_trait
+			}
+		}
+	}
+	asoiaf_reach_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = reach_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_reach_crown_death_trait
+			}
+		}
+	}
+	asoiaf_redwyne_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = redwyne_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_redwyne_crown_death_trait
+			}
+		}
+	}
+	asoiaf_reed_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = reed_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_reed_crown_death_trait
+			}
+		}
+	}
+	asoiaf_royce_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = royce_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_royce_crown_death_trait
+			}
+		}
+	}
+	asoiaf_stormlands_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = stormlandscrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_stormlands_crown_death_trait
+			}
+		}
+	}
+	asoiaf_tarly_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = tarly_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_tarly_crown_death_trait
+			}
+		}
+	}
+	asoiaf_tarth_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = tarth_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_tarth_crown_death_trait
+			}
+		}
+	}
+	asoiaf_tully_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = tully_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_tully_crown_death_trait
+			}
+		}
+	}
+	asoiaf_umber_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = umber_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_umber_crown_death_trait
+			}
+		}
+	}
+	asoiaf_westerlands_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = westerlandscrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_westerlands_crown_death_trait
+			}
+		}
+	}
+	asoiaf_westerlands_2_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = westerlands2crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_westerlands_2_crown_death_trait
+			}
+		}
+	}
+	asoiaf_wall_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_wall
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_wall_crown_death_trait
+			}
+		}
+	}
+	asoiaf_westerling_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_westerling
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_westerling_crown_death_trait
+			}
+		}
+	}
+	asoiaf_tides_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_tides
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_tides_crown_death_trait
+			}
+		}
+	}
+	asoiaf_gardener_peace_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_gardener_peace
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_gardener_peace_crown_death_trait
+			}
+		}
+	}
+	asoiaf_gardener_war_iron_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_gardener_war_iron
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_gardener_war_iron_crown_death_trait
+			}
+		}
+	}
+	asoiaf_mudd_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_mudd
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_mudd_crown_death_trait
+			}
+		}
+	}
+	asoiaf_grey_king_rusted_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_grey_king_rusted
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_grey_king_rusted_crown_death_trait
+			}
+		}
+	}
+	asoiaf_nights_king_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_nights_king
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_nights_king_crown_death_trait
+			}
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_nights_king_replica_crown_death_trait
+			}
+		}
+	}
+	asoiaf_true_winter_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_true_winter
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_true_winter_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_the_seven_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_seven
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_the_seven_crown_death_trait
+			}
+		}
+	}
+	asoiaf_old_gods_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_old_gods
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_old_gods_crown_death_trait
+			}
+		}
+	}
+	asoiaf_rhllor_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_rhllor
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_rhllor_crown_death_trait
+			}
+		}
+	}
+	asoiaf_circlet_of_rhllor_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = circlet_of_rhllor
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_circlet_of_rhllor_crown_death_trait
+			}
+		}
+	}
+	asoiaf_hugor_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crownofhugor
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_hugor_crown_death_trait
+			}
+		}
+	}
+	asoiaf_jeyne_westerling_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_jeyne_westerling
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_jeyne_westerling_crown_death_trait
+			}
+		}
+	}
+	asoiaf_winter_roses_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = crown_of_winter_roses
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_winter_roses_crown_death_trait
+			}
+		}
+	}
+	asoiaf_qolab_generic_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = western_wedding
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_qolab_generic_crown_death_trait
+			}
+		}
+	}
+	asoiaf_qolab_baelor_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = florealcrown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_qolab_baelor_crown_death_trait
+			}
+		}
+	}
+	asoiaf_qolab_gardener_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_gardener_peace
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_qolab_gardener_crown_death_trait
+			}
+		}
+	}
+	asoiaf_qolab_03_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_qolab_03_crown_death_trait
+			}
+		}
+	}
+	asoiaf_qolab_04_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_04
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_qolab_04_crown_death_trait
+			}
+		}
+	}
+	asoiaf_qolab_05_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_05
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_qolab_05_crown_death_trait
+			}
+		}
+	}
+	asoiaf_qolab_06_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = qolab_crown_06
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_qolab_06_crown_death_trait
+			}
+		}
+	}
+	asoiaf_qolab_winter_roses_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = crown_of_winter_roses
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_qolab_winter_roses_crown_death_trait
+			}
+		}
+	}
+	asoiaf_deep_winter_roses_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_qolab
+				accessory = crown_of_deep_winter_roses
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_deep_winter_roses_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_bear_island_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_bear_island
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_bear_island_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_hearts_home_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_hearts_home
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_hearts_home_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_darklyn_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_darklyn
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_darklyn_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_dondarrion_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_dondarrion
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_dondarrion_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_castamere_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_castamere
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_castamere_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_deep_den_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_deep_den
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_deep_den_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_hellholt_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_hellholt
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_hellholt_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_the_banefort_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_the_banefort
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_the_banefort_crown_death_trait
+			}
+		}
+	}
+	asoiaf_crown_of_crakehall_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = agot_crowns
+				accessory = crown_of_crakehall
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_inactive_trait = asoiaf_crown_of_crakehall_crown_death_trait
+			}
+		}
+	}
+}
