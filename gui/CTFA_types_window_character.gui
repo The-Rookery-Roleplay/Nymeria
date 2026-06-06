@@ -1,0 +1,277 @@
+﻿types CTFA_types_window_character
+{
+	# Based on vanilla vbox_titles_claims_box and replaces it for VT-holder characters.
+	# The only major difference is that on-character CTFA_held_non_vanity_titles
+	# list is used as title list datamodel, instead of the built-in CharacterWindow.GetTitles.
+	type CTFA_vbox_titles_claims_box_base = vbox {
+		## Titles
+		hbox = {
+			name = "titles"
+			visible = "[And( GetScriptedGui('CTFA_sgui_has_vanity_title').IsValid(GuiScope.SetRoot(Character.MakeScope).End), Not( IsDataModelEmpty( CharacterWindow.GetCharacter.MakeScope.GetList('CTFA_held_non_vanity_titles') ) ) )]"
+			layoutpolicy_horizontal = expanding
+
+			background = {
+				margin_left = 6
+				margin_top = -15
+				margin_bottom = -15
+				using = Background_Area_Titles
+			}
+
+			hbox = {
+				minimumsize = { 60 0 }
+				text_single = {
+					visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetCharacter.MakeScope.GetList('CTFA_held_non_vanity_titles')), '(int32)1' )]"
+					align = nobaseline
+					text = "CTFA_CV_TITLES"
+				}
+
+				text_single = {
+					visible = "[Not(GreaterThan_int32( GetDataModelSize(CharacterWindow.GetCharacter.MakeScope.GetList('CTFA_held_non_vanity_titles')), '(int32)1' ))]"
+					align = nobaseline
+					text = "CTFA_CV_TITLES_SINGULAR"
+				}
+
+				expand = {}
+			}
+
+			button_standard_hover = {
+				size = { 25 25 }
+
+				onclick = "[CharacterWindow.ToggleExpandedTitles]"
+				down = "[CharacterWindow.AreTitlesExpanded]"
+				tooltip = "[SelectLocalization( CharacterWindow.AreTitlesExpanded, 'CV_TITLES_HIDE_TT', 'CV_TITLES_SHOW_TT' )]"
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					text_single = {
+						margin_bottom = 5
+						align = center
+						default_format = "#weak"
+						layoutpolicy_horizontal = expanding
+
+						visible = "[LessThan_int32( GetDataModelSize(CharacterWindow.GetCharacter.MakeScope.GetList('CTFA_held_non_vanity_titles')), '(int32)9' )]"
+						text = "KEY_KP_PLUS"
+					}
+					text_single = {
+						margin_bottom = 5
+						align = center
+						default_format = "#weak"
+						layoutpolicy_horizontal = expanding
+
+						visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetCharacter.MakeScope.GetList('CTFA_held_non_vanity_titles')), '(int32)8' )]"
+						text = "[GetNumberAbove_int32( GetDataModelSize(CharacterWindow.GetCharacter.MakeScope.GetList('CTFA_held_non_vanity_titles')), '(int32)8' )|=]"
+					}
+				}
+			}
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+
+				fixedgridbox = {
+					datamodel = "[CharacterWindow.GetCharacter.MakeScope.GetList('CTFA_held_non_vanity_titles')]"
+					flipdirection = yes
+					addrow = 60
+					addcolumn = 38
+					maxverticalslots = 1
+
+					block "titles_max_slots" {
+						datamodel_wrap = 0
+					}
+
+					item = {
+						coa_title_tiny_crown = {
+							datacontext = "[Scope.Title]"
+							using = tooltip_ne
+
+							icon = {
+								name = "has_laws"
+								visible = "[Title.HasLaws]"
+								parentanchor = bottom|right
+								size = { 25 25 }
+								position = { 5 0 }
+								texture = "gfx/interface/icons/title_status/icon_title_law.dds"
+							}
+						}
+					}
+				}
+				expand = {}
+			}
+		}
+
+		## Claims
+		hbox = {
+			name = "claims"
+			visible = "[And(GetScriptedGui('CTFA_sgui_has_vanity_title').IsValid(GuiScope.SetRoot(Character.MakeScope).End), Not(IsDataModelEmpty(CharacterWindow.GetClaims)))]"
+			layoutpolicy_horizontal = expanding
+
+			background = {
+				margin_left = 6
+				margin_top = -15
+				margin_bottom = -15
+				using = Background_Area_Titles
+			}
+
+			hbox = {
+				minimumsize = { 60 0 }
+
+				text_single = {
+					visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetClaims), '(int32)1' )]"
+					align = nobaseline
+					text = "CV_CLAIMS"
+				}
+
+				text_single = {
+					visible = "[Not(GreaterThan_int32( GetDataModelSize(CharacterWindow.GetClaims), '(int32)1' ))]"
+					align = nobaseline
+					text = "CV_CLAIMS_SINGULAR"
+				}
+
+				expand = {}
+			}
+
+			button_standard_hover = {
+				size = { 25 25 }
+
+				onclick = "[CharacterWindow.ToggleExpandedClaims]"
+				down = "[CharacterWindow.AreClaimsExpanded]"
+				tooltip = "[SelectLocalization( CharacterWindow.AreClaimsExpanded, 'CV_CLAIMS_HIDE_TT', 'CV_CLAIMS_SHOW_TT' )]"
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					text_single = {
+						align = nobaseline
+						default_format = "#weak"
+
+						visible = "[LessThan_int32( GetDataModelSize(CharacterWindow.GetClaims), '(int32)9' )]"
+						text = "KEY_KP_PLUS"
+					}
+					text_single = {
+						align = nobaseline
+						default_format = "#weak"
+
+						visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetClaims), '(int32)8' )]"
+						text = "[GetNumberAbove_int32(GetDataModelSize(CharacterWindow.GetClaims), '(int32)8' )|=]"
+					}
+				}
+			}
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+
+				fixedgridbox = {
+					name = "claims_box"
+					datamodel = "[CharacterWindow.GetClaims]"
+					flipdirection = yes
+					addrow = 60
+					addcolumn = 38
+					maxverticalslots = 1
+
+					block "titles_max_slots" {
+						datamodel_wrap = 0
+					}
+
+					item = {
+						container = {
+							datacontext = "[Claim.GetTitle]"
+							using = tooltip_ne
+							tooltip = "CHARACTER_WINDOW_CLAIM_TOOLTIP"
+
+							coa_title_tiny_crown = {
+								name = "claim"
+								tooltip_visible = no
+
+
+								highlight_icon = {
+									name = "pressed_claim"
+									visible = "[And(Claim.IsPressed, Not(Claim.IsImplicit))]"
+									texture = "gfx/interface/icons/title_status/icon_claim_pressed.dds"
+									size = { 24 24 }
+									parentanchor = bottom|right
+								}
+
+								highlight_icon = {
+									name = "unpressed_claim"
+									visible = "[And(Not(Claim.IsPressed), Not(Claim.IsImplicit))]"
+									texture = "gfx/interface/icons/title_status/icon_claim_unpressed.dds"
+									size = { 24 24 }
+									parentanchor = bottom|right
+								}
+
+								highlight_icon = {
+									name = "implicit_claim"
+									visible = "[Claim.IsImplicit]"
+									texture = "gfx/interface/icons/title_status/icon_claim_implicit.dds"
+									size = { 24 24 }
+									parentanchor = bottom|right
+								}
+							}
+						}
+					}
+				}
+				expand = {}
+			}
+		}
+		expand = {}
+	}
+
+	# Contains overrides to match the one usage of vanilla vbox_titles_claims_box in window_character.gui,
+	# so that the look is consistent with vanilla's box.
+	type CTFA_vbox_titles_claims_box = CTFA_vbox_titles_claims_box_base {
+		visible = "[And(Not( Character.GetPrimaryTitle.HasFaction ), GetScriptedGui('CTFA_sgui_has_vanity_title').IsValid(GuiScope.SetRoot(Character.MakeScope).End))]"
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+
+		using = Animation_Character_Window_Refresh
+
+		blockoverride "titles_max_slots"
+		{
+			datamodel_wrap = 8
+		}
+
+		blockoverride "claims_extra_items"
+		{
+			visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetClaims), '(int32)8' )]"
+			text = "[GetNumberAbove_int32(GetDataModelSize(CharacterWindow.GetClaims), '(int32)8' )|=]"
+		}
+
+		blockoverride "claims_max_slots"
+		{
+			datamodel_wrap = 8
+		}
+	}
+
+	# Expandable title list
+	type CTFA_fixedgridbox_titles_box_bishop = fixedgridbox {
+		name = "CTFA_titles_box_bishop"
+		datacontext = "[CharacterWindow.GetCharacter]"
+		flipdirection = yes
+		addrow = 90
+		addcolumn = 270
+		datamodel_wrap = 2
+
+		using = CTFA_hide_if_has_no_vanity_title
+
+		datamodel = "[CharacterWindow.GetCharacter.MakeScope.GetList('CTFA_held_non_vanity_titles')]"
+
+		item = {
+			flowcontainer = {
+				datacontext = "[Scope.Title]"
+				spacing = 5
+
+				coa_title_small_crown = {
+					using = tooltip_ne
+				}
+
+				text_multi = {
+					text = "[Title.GetNameNoTooltip]"
+					parentanchor = vcenter
+					autoresize = yes
+					default_format = "#high"
+					using = Font_Size_Medium
+					max_width = 190
+					margin_top = 5
+				}
+			}
+		}
+	}
+}

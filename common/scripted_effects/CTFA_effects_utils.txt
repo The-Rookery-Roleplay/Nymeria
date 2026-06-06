@@ -1,0 +1,60 @@
+﻿# All CTFA mod-initiated title destructions should be performed through this scripted_effect.
+# (It currently contains additional logic ensuring correct behavior on VT destruction.)
+#
+# Scope: Title - Title to destroy, if it currently has a holder
+CTFA_try_destroy_title = {
+	if = {
+		limit = {
+			exists = holder
+		}
+
+		# This is a part of an ugly workaround to prevent
+		# king-level AI vassals from destroying their held VTs.
+		# This variable allows to distinguish between mod-initiated
+		# and AI-initiated VT destruction, so as to revert the latter
+		# in on_title_destroyed on_action.
+		if = {
+			limit = {
+				CTFA_is_vanity_title = yes
+			}
+
+			holder = {
+				add_character_flag = {
+					flag = CTFA_vt_destruction_allowed
+				}
+			}
+		}
+
+		holder = {
+			destroy_title = PREV
+		}
+	}
+}
+
+# Scope: Title - Vanity Title to give to TARGET_CHARACTER
+# TARGET_CHARACTER: Character - VT recipient
+# CHANGE_TYPE: type for create_title_and_vassal_change
+CTFA_give_vanity_title = {
+	create_title_and_vassal_change = {
+		type = $CHANGE_TYPE$
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+
+	change_title_holder = {
+		holder = $TARGET_CHARACTER$
+		change = scope:change
+	}
+
+	resolve_title_and_vassal_change = scope:change
+
+	$TARGET_CHARACTER$ = {
+		assert_if = {
+			limit = { has_character_modifier = CTFA_held_vanity_title_modifier }
+
+			text = "did not expect character to already have CTFA_held_vanity_title_modifier"
+		}
+
+		add_character_modifier = CTFA_held_vanity_title_modifier
+	}
+}

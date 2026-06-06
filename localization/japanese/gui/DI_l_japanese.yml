@@ -1,7 +1,7 @@
 ﻿l_japanese:
  ### Main Window ###
- DI_button_tt: "Divine Intervention Menu"
- DI_VIEW_TITLE: "Divine Intervention Cheat Menu"
+ DI_button_tt: "Citadel Menu"
+ DI_VIEW_TITLE: "Citadel Cheat Menu"
  DI_loading: "Window Loading..."
  # buttons
  DI_char_editor_tt: "Opens a menu to edit various aspects of all pinned characters. This includes the present menu." 
@@ -704,7 +704,7 @@
  DI_fe_replace_tenet_tooltip: "Click to choose a replacement for this doctrine group (if available)."
  DI_other_tenets_heading: "Other Doctrines"
  ### INTERACTIONS ###
- interaction_category_cheat_menu: "Divine Intervention" # category name
+ interaction_category_cheat_menu: "Citadel" # category name
  DI_open_cheat_menu: "#color_yellow #bold (DI)#!#! Interactions On"
  DI_close_cheat_menu: "#color_yellow #bold (DI)#!#! Interactions Off"
  DI_cheat_menu_desc: "Toggle the cheat interaction options on or off, needed for pinning characters."
@@ -953,7 +953,7 @@
  DI_custom_text: "[GetPlayer.GetLocalizedText( 'saved_text' )]"
  houseName: "Set House Name"
  DI_get_house_name: "[recipient.GetDynastyHouseNameNoTooltip]"
- CHEAT_ACTIONS: "Divine Intervention actions"
+ CHEAT_ACTIONS: "Citadel actions"
  all_loc: "Toggle All"
  hide_loc: "Toggle Hide"
  capital_loc: "Check Capitals"

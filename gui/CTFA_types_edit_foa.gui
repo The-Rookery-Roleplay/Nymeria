@@ -17,7 +17,8 @@
         button_icon = {
             using = CTFA_edit_title_foa_immediate_outer
             using = CTFA_edit_title_foa_immediate_inner
-            visible = "[InDebugMode]" #Hambone
+            visible = "[InDebugMode]"
+
             texture = "gfx/interface/icons/flat_icons/CTFA_edit_foa.dds"
         }
 
@@ -28,7 +29,8 @@
     type CTFA_flowcontainer_edit_character_foa = flowcontainer {
         button_normal = {
             size = { 35 35 }
-            visible = "[InDebugMode]" #Hambone
+            visible = "[InDebugMode]"
+
             using = tooltip_es
 
             using = CTFA_edit_character_foa_immediate_outer
@@ -40,7 +42,8 @@
 
             button_icon = {
                 using = CTFA_edit_character_foa_immediate_inner
-                visible = "[InDebugMode]" #Hambone
+                visible = "[InDebugMode]"
+
                 size = { 25 25 }
                 parentanchor = center
 

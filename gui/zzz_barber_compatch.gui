@@ -1,0 +1,14 @@
+# these are types added by other mods
+# since this files starts with zzz, other files that come first alphabetically will overwrite it
+# this is to avoid errors and to tell people about the color picker
+types BARBER {
+  type UniUI_IMHO_button = container {
+    visible = no
+  }
+  type UniUI_IMHO_PoV = container {
+    visible = no
+  }
+  type ccp_clothes_color_picker = container {
+    visible = no
+  }
+}

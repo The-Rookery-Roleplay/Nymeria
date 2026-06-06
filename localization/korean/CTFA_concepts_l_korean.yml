@@ -1,0 +1,9 @@
+﻿l_korean:
+ #
+ # Form of Address
+ #
+
+ game_concept_CTFA_form_of_address:0 "칭호"
+ game_concept_CTFA_forms_of_address:0 "칭호"
+ game_concept_CTFA_foa:0 "칭호"
+ game_concept_CTFA_form_of_address_desc:0 "\"Duke\", \"High Queen\", \"Kaiser\" 또는 다른 칭호로 바꿀 수 있고, $game_concept_CTFA_form_of_address$은(는) [ruler|E]가 소유하고 있는 가장 중요한 [title|E], 일반적으로 [primary_title|E]을(를) 기반으로 처리되거나 참조되는 방식입니다.\n\n플레이어가 적어도 [duchy|E] [title_tier|E]을(를) 소유하고 있다면, 자신, 혹은 봉신의 [primary_title|E]에 관한 $game_concept_CTFA_form_of_address$을(를) 사용자 정의할 수 있습니다.\n사용자 정의 $game_concept_CTFA_form_of_address$은(는) 설정된 [primary_title|E]에 연결되어 있으며 함께 상속됩니다. 이 작위가 더 이상 기본 작위가 아닌 경우 [holder|E]은(는) 해당 사용자 정의 $game_concept_CTFA_form_of_address$ 사용을 중단하고 새 작위에 대한 적절한 $game_concept_CTFA_foa$(으)로 전환합니다."

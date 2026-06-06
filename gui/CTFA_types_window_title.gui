@@ -1,0 +1,30 @@
+﻿types CTFA_types_window_title
+{
+    type CTFA_flowcontainer_title_foa = flowcontainer {
+        layoutpolicy_horizontal = expanding
+        layoutpolicy_vertical = expanding
+        ignoreinvisible = yes
+
+        visible = "[And(And(TitleViewWindow.GetTitle.CanPlayerCustomizeTitle, Not(GetScriptedGui('CTFA_sgui_is_vanity_title').IsValid(GuiScope.SetRoot(Title.MakeScope).End))), Not(TitleViewWindow.GetTitle.GetHolder.GetGovernment.IsType('landless_adventurer_government')))]"
+
+        text_multi = {
+            visible = "[ObjectsEqual( Title.GetHolder.GetPrimaryTitle, Title.Self )]"
+
+            autoresize = yes
+            max_width = 300
+            text = "CTFA_TITLE_FOA_PRIMARY"
+        }
+
+        text_multi = {
+            visible = "[Not( ObjectsEqual( Title.GetHolder.GetPrimaryTitle, Title.Self ) )]"
+
+            autoresize = yes
+            max_width = 300
+            text = "CTFA_TITLE_FOA_NON_PRIMARY"
+        }
+
+        CTFA_flowcontainer_edit_title_foa_inline = {
+            margin_top = -5
+        }
+    }
+}

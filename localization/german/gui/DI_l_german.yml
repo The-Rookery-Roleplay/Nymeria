@@ -1,7 +1,7 @@
 ﻿l_german:
  ### Main Window ###
- DI_button_tt: "Divine Intervention Menü"
- DI_VIEW_TITLE: "Divine Intervention Cheat Menü"
+ DI_button_tt: "Citadel Menü"
+ DI_VIEW_TITLE: "Citadel Cheat Menü"
  DI_loading: "Window Loading..."
  # buttons
  DI_char_editor_tt: "Öffnet ein Menü, um verschiedene Aspekte aller angehefteten Charaktere zu bearbeiten. Dies beinhaltet das Geschenk-Menü."
@@ -953,7 +953,7 @@
  DI_custom_text: "[GetPlayer.GetLocalizedText( 'saved_text' )]"
  houseName: "Setze Hausnamen"
  DI_get_house_name: "[recipient.GetDynastyHouseNameNoTooltip]"
- CHEAT_ACTIONS: "Divine Intervention Aktionen"
+ CHEAT_ACTIONS: "Citadel Aktionen"
  all_loc: "Alles umschalten"
  hide_loc: "Alles ausblenden"
  capital_loc: "Checke Hauptstädte"

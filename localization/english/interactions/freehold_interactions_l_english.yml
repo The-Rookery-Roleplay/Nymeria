@@ -1,7 +1,7 @@
 ﻿l_english:
   
- interaction_category_freeholdrp:0 "#difficulty_hard Freehold Interactions#"
- AGOT_FREEHOLD_ACTIONS:0 "Freehold Interactions" 
+ interaction_category_freeholdrp:0 "#difficulty_hard Citadel Interactions#"
+ AGOT_FREEHOLD_ACTIONS:0 "Citadel Interactions" 
  freehold_brand_criminal_interaction:0 "#N Denounce and Attaint Criminal# "
  freehold_brand_criminal_interaction_desc:0 "I, [actor.GetTitledFirstName], denounce [recipient.GetTitledFirstName], and strip them of all rank and titles, of all lands and incomes and holdings, and do sentence them to death."
  
@@ -17,10 +17,10 @@
  freehold_break_alliance_interaction:0 "#Y Remove Alliance# "
  freehold_break_alliance_interaction_desc:0 "[recipient.GetShortUINameNoTooltip|U] will no longer be your Ally"
  
- freehold_alliance_interaction_notification_title:0 "Freehold RP Action Used"
+ freehold_alliance_interaction_notification_title:0 "Citadel RP Action Used"
  freehold_alliance_interaction_toast:0 "[actor.GetTitledFirstName] forged an alliance with [recipient.GetTitledFirstName]."
  
- freehold_break_alliance_interaction_notification_title:0 "Freehold RP Action Used"
+ freehold_break_alliance_interaction_notification_title:0 "Citadel RP Action Used"
  freehold_break_alliance_interaction_toast:0 "[actor.GetTitledFirstName] broke an alliance with [recipient.GetTitledFirstName]."
  
  freehold_send_courtier_interaction:0 "Send Courtier"
@@ -29,25 +29,25 @@
  freehold_offer_fealty_interaction:0 "#Y Offer Fealty# "
  freehold_offer_fealty_interaction_desc:0 "Offer Fealty"
  
- freehold_offer_fealty_interaction_notification_title:0 "Freehold RP Action Used"
+ freehold_offer_fealty_interaction_notification_title:0 "Citadel RP Action Used"
  freehold_offer_fealty_interaction_toast:0 "[actor.GetTitledFirstName] swore fealty to [recipient.GetTitledFirstName]."
  
  freehold_grant_titles_interaction:0 "#Y Grant Title# "
  freehold_grant_titles_interaction_desc:0 "Grant Title"
  
- freehold_grant_titles_interaction_notification_title:0 "Freehold RP Action Used"
+ freehold_grant_titles_interaction_notification_title:0 "Citadel RP Action Used"
  freehold_grant_titles_interaction_toast:0 "[actor.GetTitledFirstName] granted a title to [recipient.GetTitledFirstName]."
  
  freehold_grant_vassal_interaction:0 "#Y Grant Vassal# "
  freehold_grant_vassal_interaction_desc:0 "Grant Vassal"
  
- freehold_grant_vassal_interaction_notification_title:0 "Freehold RP Action Used"
+ freehold_grant_vassal_interaction_notification_title:0 "Citadel RP Action Used"
  freehold_grant_vassal_interaction_toast:0 "[actor.GetTitledFirstName] granted a vassal to [recipient.GetTitledFirstName]."
  
  freehold_grant_independence_interaction:0 "#Y Grant Independence# "
  freehold_grant_independence_interaction_desc:0 "Grant Independence"
  
- freehold_grant_independence_interaction_notification_title:0 "Freehold RP Action Used"
+ freehold_grant_independence_interaction_notification_title:0 "Citadel RP Action Used"
  freehold_grant_independence_interaction_toast:0 "[actor.GetTitledFirstName] granted independence to [recipient.GetTitledFirstName]."
  
  actor_secondary_freehold_send_courtier_interaction:0 "Courtier"
@@ -56,7 +56,7 @@
  freehold_grant_claim_interaction_desc:0 "Grant a claim to your vassal"
  actor_secondary_freehold_grant_claim_interaction:0 "Target"
  
- freehold_grant_claim_interaction_notification_title:0 "Freehold RP Action Used"
+ freehold_grant_claim_interaction_notification_title:0 "Citadel RP Action Used"
  freehold_grant_claim_interaction_toast:0 "[actor.GetTitledFirstName] granted a claim to [recipient.GetTitledFirstName]."
  
 
