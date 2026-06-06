@@ -1,0 +1,52 @@
+﻿l_english:
+ asoiaf_sword_ice_description:0 "Used for both war and ceremonial occasions, the Valyrian steel greatsword Ice has passed through House Stark for generations, kept in a wolf pelt scabbard. Its blade has the faint rippling pattern of Valyrian steel, while the cross-guard is made of a simple dark alloy. The sword's pommel is likewise humble and unassuming, with only minimal carving, while the grip is made of polished ironwood."
+
+ asoiaf_sword_heartsbane_description:0 "The pride of House Tarly, this bastard Valyrian steel sword has been passed down the family since 300 years before the Conquest, representing their marshal prowess. Its faded gold hilt is wrought in the shape of a bow and arrow, with the pommel fashioned as arrow fletching and the cross-guard forming the bow's limbs. The hilt is elaborately decorated with hunting scenes of wild boar and deer, and the grip is carved of a sturdy aged wood."
+
+ asoiaf_sword_longclaw_description:0 "The ancestral Valyrian steel blade of House Mormont, this bastard sword is of modest make, with an unadorned steel cross-guard and wrapped black leather grip. Its pommel was originally a carved albino bear's head, until it was refitted with a wolf's head by Jeor Mormont in 298 AC as a gift for Jon Snow."
+
+ asoiaf_sword_oathkeeper_description:0 "One of the two Valyrian steel blades reforged from the greatsword Ice, this longsword is lavishly decorated. Its cross-guard, grip, and pommel are solid gold carved with a lion's fur motif, flaring to cup the blade like a protruding claw. The gold pommel is shaped into a snarling lion's head, and the ends of the cross-guard are likewise adorned with carved lion's heads. At its centre is a modest cut ruby surrounded by four small pearls."
+
+ asoiaf_sword_widows_wail_description:0 "One of the two Valyrian steel blades reforged from the greatsword Ice, this longsword, though shorter than its counterpart Oathkeeper, is no less ornate. Its gold pommel is dotted with rubies and pearls, each held by silver settings. The grip is shaped from wrapped gold layers, and the cross-guard is likewise wrought of solid gold. Carved antlers reach across the guard and meet in the centre at a stag's head cupping a large cut ruby in its antlers."
+
+ asoiaf_jaimes_sword_name:0 "Jaime's Sword"
+ asoiaf_jaimes_sword_description:0 "Forged for Ser Jaime Lannister after being knighted, this bastard sword is an elegant reminder of Jaime's grace in battle. The pommel is shaped into the head of a lion, and the cross-guard is inlaid with an intricate floral motif twisting around it, ending on either side with a blossoming flower."
+ 
+ asoiaf_targaryen_falchion_name:0 "Targaryen Falchion"
+ asoiaf_targaryen_falchion_description:0 "Forged for Prince Rhaegar Targaryen after commencing his training in warfare, this falchion bears a rounded steel pommel topped by a dragon's head. Its grip and guard — made of simple polished dark oak and bent steel — are far simpler than those of other swords, offering less ornamentation yet providing a firmer grip."
+ 
+ asoiaf_sword_krakenfall_name:0 "Krakenfall"
+ asoiaf_sword_krakenfall_description:0 "This bastard sword was presented to King Robert I Baratheon shortly after his victory in the Greyjoy Rebellion. Its grip is made of polished oak and birch, topped by a long pommel shaped into a kraken's head with two amber gems. The guard is made of simple polished steel, engraved in the centre and ending on either side with gold semi-spheres."
+
+ asoiaf_sword_dark_sister_description:0 "One of the two Valyrian steel blades of House Targaryen, this bastard sword is slender and elegant, designed for a woman's hand. Its guard is shaped into dragon wings of dulled gold with minor dragon scale engravings, meeting in the centre at a styalised dragon head. The grip is wrapped in black leather and topped by a pommel resembling a dragon's egg."
+ 
+ asoiaf_red_priest_necklace_name:0 "Melisandre's Amulet"
+ asoiaf_red_priest_necklace_description:0 "This amulet, fashioned in the hexagonal motif of Asshai, is warm to the touch and bears a single red ruby. It is fashioned by hollow hexagonal shapes reaching around to the back of the amulet. Melisandre of Asshai was known to wear it, granting her an unnervingly youthful visage. Its use by vain sorcerers, however, comes at a price."
+
+ asoiaf_aerys_II_crown_name:0 "Crown of Aerys II"
+ asoiaf_aerys_II_crown_description:0 "Wrought of dulled and darkened gold, this crown was forged for the young and ambitious King Aerys II Targaryen early in his reign. Its metal is shaped into twisting licks of flame swirling around the wearer's head. The crown eventually came to reflect the Mad King's unnatural obsession with fire, staining it with a sinister reputation."
+
+ asoiaf_robert_I_crown_description:0 "Commissioned for King Robert I Baratheon upon taking the throne, this crown is made of gold antlers curved around the wearer's head, above an intricately-engraved gold band. Polished ambers decorate the top of the band, each with their own set of protruding antlers, with two large amber gems embedded in the crown's front."
+
+ asoiaf_renly_crown_description:0 "Shaped into sinewy gold antlers reaching towards the sky, this crown embodies the essense of stag imagery. The branches meet at a thin gold band carved with the textured, ossified look of antler. While not as polished or gem-encrusted as other regalia, this crown gives a strong and noble silhouette nonetheless."
+
+ asoiaf_joffrey_I_crown_description:0 "This crown's elegant gold antlers rest atop a decorated band of bright gold. Their many thin branches frame the wearer's head and reach upwards, some meeting in the front and back to grasp brilliant amber gems. Commissioned for King Joffrey I Baratheon, it continues the royal stag motif introduced by his father, yet with nods towards his Lannister heritage through its bright Lannister gold and regal silhouette."
+
+ asoiaf_stark_throne_name:0 "Throne of Winter"
+ asoiaf_stark_throne_description:0 "While simpler than those of southern kings, this carved ironwood throne has served as House Stark's seat for generations. Made of carved and polished ironwood, it bears a painted pattern of pine trees and snarling wolves on its back. The throne's protruding ears are carved into the heads of fierce direwolves bearing their teeth towards the sky."
+
+ asoiaf_radzig_sword_name:0 "Ser [recipient.GetFirstNamePossessive] Sword"
+ asoiaf_radzig_sword_description:0 "Originally forged for [recipient.GetFullName], this bastard sword came to be a symbol of death and vengence. It was forged by the blacksmith [creator.GetFirstName] the same day [creator.GetHerHis] village was raided, resulting in [creator.GetHerHis] death along with [creator.GetHerHis] wife, and orphaning [creator.GetHerHis] adopted son [henry.GetFirstName]. Its hilt is richly carved with floral motifs, while the octagonal pommel bears the sigil of House [recipient.GetDynastyHouseName]. On the blade is inscribed the [recipient.GetDynastyHouseNameNoTooltip] words: #italic King, Family, Vengeance#!."
+
+ asoiaf_hound_armour_name:0 "The Hound's Armour"
+ asoiaf_hound_armour_description:0 "Created for Sandor Clegane, this battle-scarred suit of armour is dominated by an ominous steel helm fashioned in the likeness of a snarling hound. The arms and shoulders are well-protected under segmented steel plates laying on top of a chainmail hauberk, itself worn under a studded leather sleeveless tunic. A dagger is hung from the belt for quick access in emergencies, but the battle of courage will already be won with the fearsome hound helm, sure to intimidate any opponent."
+
+ asoiaf_needle_name:0 "Needle"
+ asoiaf_needle_description:0 "Originally a gift from Jon Snow, this short rapier was forged specifically for the smaller proportions of Arya Stark. Its hilt is made of engraved bronze-gold with the guard vaguely resembling weirwood branches, while the grip is wrapped in a dark brown leather. The sword's sowing-needle-like blade is notably of castle-forged steel, distinguishing it from lesser-made weapons."
+
+ asoiaf_hearteater_name:0 "Hearteater"
+ asoiaf_hearteater_description:0 "This bastard sword was forged for King Joffrey I Baratheon shortly after his crowning. Its gold guard is fashioned into the shape of a stag's antlers, with the grip carved of antler bone, polished for a smoother finish. The hilt is topped by a carved gold pommel with a crown engraving, symbolising the wielder's royal authority."
+ asoiaf_hearteater_dynamic_description:0 "This bastard sword was forged for [owner.GetTitledFirstNameRegnal] shortly after [owner.GetHerHis] ascent to [owner.GetPrimaryTitle.GetNameNoTier]. Its gold guard is fashioned into the shape of a stag's antlers, with the grip carved of antler bone, polished for a smoother finish. The hilt is topped by a carved gold pommel with a crown engraving, symbolising the wielder's royal authority."
+
+ asoiaf_red_vipers_spear_name:0 "Red Viper's Spear"
+ asoiaf_red_vipers_spear_description:0 "Decorated with a distinct serpant motif, this spear embodies the precise and single-minded passion of its wielders, most notably Oberyn Martell himself. The shaft is made of unadorned sandbeggar wood, contrasting against the elegant flame-bladed spearhead with a bronze viper coiling around its base. The head connects to the shaft with a decorative leather tassel, but is otherwise devoid of any unnecessary embellishments that would hinder combat."

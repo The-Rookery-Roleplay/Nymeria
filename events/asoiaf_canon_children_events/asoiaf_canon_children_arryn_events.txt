@@ -1,0 +1,49 @@
+﻿namespace = asoiaf_canon_children_arryn_events
+
+asoiaf_canon_children_arryn_events.301 = { #children of Jon Arryn (son of Jasper) by his Royce wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Arryn_7_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Arryn_7_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_arryn_events.302 = { #children of Jon Arryn (son of Jasper) by his Tully wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Arryn_8_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Arryn_8_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Arryn_3_2_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Arryn_3_2_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Arryn_3_1_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Arryn_3_1_birth_effect = yes
+		}
+	}
+}

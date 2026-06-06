@@ -1,0 +1,54 @@
+﻿asoiaf_sexuality_remove_flags_effect = {
+	if = {
+		limit = { has_character_flag = sexuality_ensure_heterosexual }
+		remove_character_flag = sexuality_ensure_heterosexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_ensure_homosexual }
+		remove_character_flag = sexuality_ensure_homosexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_ensure_bisexual }
+		remove_character_flag = sexuality_ensure_bisexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_ensure_asexual }
+		remove_character_flag = sexuality_ensure_asexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_ensure_equal_chance }
+		remove_character_flag = sexuality_ensure_equal_chance
+	}
+	if = {
+		limit = { has_character_flag = sexuality_ensure_not_heterosexual }
+		remove_character_flag = sexuality_ensure_not_heterosexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_ensure_not_homosexual }
+		remove_character_flag = sexuality_ensure_not_homosexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_ensure_not_bisexual }
+		remove_character_flag = sexuality_ensure_not_bisexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_ensure_not_asexual }
+		remove_character_flag = sexuality_ensure_not_asexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_raise_chance_heterosexual }
+		remove_character_flag = sexuality_raise_chance_heterosexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_raise_chance_homosexual }
+		remove_character_flag = sexuality_raise_chance_homosexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_raise_chance_bisexual }
+		remove_character_flag = sexuality_raise_chance_bisexual
+	}
+	if = {
+		limit = { has_character_flag = sexuality_raise_chance_asexual }
+		remove_character_flag = sexuality_raise_chance_asexual
+	}
+}

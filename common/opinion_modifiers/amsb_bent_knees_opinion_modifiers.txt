@@ -1,0 +1,12 @@
+﻿amsb_bent_knees_refusal_opinion = {
+	opinion = -50
+	imprisonment_reason = yes
+	banish_reason = yes
+	decaying = no
+}
+
+amsb_bent_knees_opinion = {
+	opinion = -20
+	decaying = yes
+	years = 5
+}

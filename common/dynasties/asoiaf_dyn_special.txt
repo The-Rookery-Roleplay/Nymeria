@@ -1,0 +1,5 @@
+﻿dynn_Most_Devout = {
+	name = "dynn_Most_Devout"
+	prefix = "dynnp_of_the" #AGOT+ added
+	culture = "reachman"
+}

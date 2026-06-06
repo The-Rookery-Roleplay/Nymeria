@@ -1,0 +1,280 @@
+﻿namespace = amsb_harrenhal
+
+#Harrenhal Start Event
+amsb_harrenhal.0001 = {
+	type = character_event
+	content_source = dlc_AMSB
+	title = amsb_harrenhal.0001.t
+	desc = amsb_harrenhal.0001.desc
+
+	theme = crown
+
+	override_background = {
+		reference = throne_room_west
+	}
+
+	right_portrait = {
+		character = root
+		animation = thinking #survey
+	}
+	left_portrait = {
+		character = scope:councillor
+		animation = throne_room_writer
+	}
+	immediate = {
+		root = { save_scope_as = harrenhal_builder }
+		random_councillor = {
+			limit = {
+				is_available = yes
+				NOT = { #Better to grab a real councillor
+					is_kingsguard_trigger = yes
+				}
+			}
+			save_scope_as = councillor
+		}
+	}
+
+	option = {
+		name = amsb_harrenhal.0001.a
+
+		trigger = {
+			NOT = { culture = culture:ironborn }
+		}
+		title:c_ruins.holder = {
+			trigger_event = {
+				id = amsb_harrenhal.9000
+				days = { 3500 4000 }
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = agot_nonhistoric_outcome_3
+			}
+		}
+	}
+	option = {
+		name = amsb_harrenhal.0001.b
+
+		trigger = {
+			culture = culture:ironborn
+		}
+		title:c_ruins.holder = {
+			trigger_event = {
+				id = amsb_harrenhal.9000
+				days = { 3000 3500 }
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = agot_nonhistoric_outcome_3
+			}
+		}
+	}
+
+}
+
+#Harrenhal Completion
+amsb_harrenhal.9000 = {
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				title:c_harrenhal.holder = {
+					NOR = {
+						culture = culture:ironborn
+						dynasty = dynasty:dynn_Hoare
+					}
+				}
+			}
+			title:c_harrenhal.holder = {
+				trigger_event = amsb_harrenhal.9997
+			}
+		}
+		else_if = {
+			limit = {
+				title:c_harrenhal.holder = {
+					NOR = {
+						culture = culture:riverlander
+					}
+				}
+			}
+			title:c_harrenhal.holder = {
+				trigger_event = amsb_harrenhal.9997
+			}
+		}
+		else = {
+			title:c_harrenhal.holder = {
+				trigger_event = amsb_harrenhal.9998
+			}
+		}
+	}
+}
+
+#Harrenhal finished as Riverlander
+amsb_harrenhal.9997 = {
+	type = character_event
+	content_source = dlc_AMSB
+	title = amsb_harrenhal.9997.t
+	desc = amsb_harrenhal.9997.desc
+
+	theme = crown
+	override_effect_2d = legend_glow
+
+	override_background = {
+		reference = amsb_harrenhal
+	}
+
+	right_portrait = {
+		character = root
+		animation = survey
+	}
+
+	immediate = {
+		title:c_harrenhal = {
+			remove_county_modifier = harrenhal_construction
+			change_development_level = { add = 15 }
+		}
+		title:b_harrenhal.title_province = {
+			set_holding_type = castle_holding
+			add_building = castle_05
+			add_special_building = generic_harrenhal_01
+		}
+	}
+
+	option = {
+		name = amsb_harrenhal.9997.a
+
+		title:c_harrenhal.holder = {
+			add_character_modifier = {
+				modifier = godsfort_constructed
+			}
+		}
+		title:c_harrenhal = {
+			title:b_harrenhal = { set_capital_barony = yes }
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = agot_nonhistoric_outcome_3
+			}
+		}
+	}
+	option = {
+		name = amsb_harrenhal.9997.b
+		trigger = {
+			root = {
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		title:c_harrenhal.holder = {
+			add_character_modifier = {
+				modifier = godsfort_constructed
+			}
+		}
+		title:c_harrenhal = {
+			title:b_harrenhal = { set_capital_barony = yes }
+		}
+		set_realm_capital = title:c_harrenhal
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = agot_nonhistoric_outcome_3
+			}
+		}
+	}
+}
+
+#Harrenhal finished as Ironborn/Hoare
+amsb_harrenhal.9998 = {
+	type = character_event
+	content_source = dlc_AMSB
+	title = amsb_harrenhal.9998.t
+	desc = amsb_harrenhal.9998.desc
+
+	theme = crown
+	override_effect_2d = rain
+
+	override_background = {
+		reference = amsb_harrenhal
+	}
+
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+
+	immediate = {
+		title:c_harrenhal = {
+			remove_county_modifier = harrenhal_construction
+			change_development_level = { add = 15 }
+		}
+		title:b_harrenhal.title_province = {
+			set_holding_type = castle_holding
+			add_building = castle_05
+			add_special_building = harrenhal_01
+		}
+		hidden_effect = {
+			title:d_harrenhal = {
+				reset_title_name = yes
+			}
+			title:c_harrenhal = {
+				reset_title_name = yes
+			}
+			title:b_harrenhal = {
+				reset_title_name = yes
+			}
+			title:b_harrentown = {
+				reset_title_name = yes
+			}
+			title:b_hoarespring = {
+				reset_title_name = yes
+			}
+		}
+	}
+
+	option = {
+		name = amsb_harrenhal.9998.a
+
+		title:c_harrenhal.holder = {
+			add_character_modifier = {
+				modifier = harrenhal_constructed
+			}
+		}
+		title:c_harrenhal = {
+			title:b_harrenhal = { set_capital_barony = yes }
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = agot_nonhistoric_outcome_3
+			}
+		}
+	}
+	option = {
+		name = amsb_harrenhal.9998.b
+
+		trigger = {
+			root = {
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		title:c_harrenhal.holder = {
+			add_character_modifier = {
+				modifier = harrenhal_constructed
+			}
+		}
+		title:c_harrenhal = {
+			title:b_harrenhal = { set_capital_barony = yes }
+		}
+		set_realm_capital = title:c_harrenhal
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = agot_nonhistoric_outcome_3
+			}
+		}
+	}
+}

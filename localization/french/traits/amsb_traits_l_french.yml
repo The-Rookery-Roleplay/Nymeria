@@ -1,0 +1,5 @@
+﻿l_french:
+ #Traits
+ trait_amsb_abdicated:0 "A Abdiqué"
+ trait_amsb_abdicated_desc:0 "Ce personnage a choisi de se retirer de sa position d'autorité, renonçant à son droit de détenir des titres."
+ trait_amsb_abdicated_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] a choisi de se retirer de sa position d'autorité, renonçant à son droit de détenir des titres."

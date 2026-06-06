@@ -1,0 +1,47 @@
+﻿namespace = agot_castamere_ruins
+
+# Ruin is finished - Choose holding type
+agot_castamere_ruins.1000 = {
+	type = character_event
+	title = agotcities_ruins.1000.t
+	desc = agotcities_ruins.1000.d
+
+	theme = stewardship_domain_focus
+	override_background = { reference = army_camp }
+
+	left_portrait = {
+		character = root
+		animation = chancellor
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_realm_province = {
+				limit = {
+					AND = {
+						has_holding_type = ruin_holding
+						has_building_or_higher = medium_ruin_03
+						has_building_or_higher = agot_castamere_ruins_02
+					}
+				}
+				save_scope_as = completed_ruin_castamere
+			}	
+		}
+	}
+
+	option = {
+		name = agotcities_ruins.1000.a
+		trigger = {
+			scope:completed_ruin_castamere = title:b_castamere.title_province
+		}
+
+		add_prestige = 1000
+		scope:completed_ruin_castamere = {
+			remove_building = agot_castamere_ruins_02			
+			add_special_building_slot = 24castamere_01
+			add_special_building = 24castamere_01
+			set_holding_type = castle_holding
+			add_building = castle_02
+		}
+	}
+}

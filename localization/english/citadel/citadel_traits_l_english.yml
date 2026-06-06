@@ -1,0 +1,19 @@
+﻿l_english:
+
+# amoral
+trait_amoral:0 "Amoral"
+trait_amoral_desc:0 "Amoral"
+trait_amoral_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] cannot, for the good of them, tell what is right or good. Such questions rarely trouble them, and this lack of moral certainty does not seem to bother [ROOT.GetCharacter.GetFirstNameNoTooltip] at all."
+
+# honorable
+trait_honorable:0 "Honorable"
+trait_honorable_desc:0 "Honorable"
+trait_honorable_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] keeps to a code of honor, holding oaths sacred and dealing fairly even when treachery would profit them more. [ROOT.GetCharacter.GetFirstNameNoTooltip] would sooner lose with honor than win by deceit."
+
+# ruthless
+trait_ruthless:0 "Ruthless"
+trait_ruthless_desc:0 "Ruthless"
+trait_ruthless_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] does whatever must be done, untroubled by mercy or scruple. Those who stand against [ROOT.GetCharacter.GetFirstNameNoTooltip] learn that no oath, no kinship, and no pity will stay their hand."
+
+
+# Cool stuff: [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] if it's possession.

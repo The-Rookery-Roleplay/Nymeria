@@ -1,0 +1,1147 @@
+﻿agot_vassal_contracts = {
+	# Lower titles are usually targeted intentionally, so they work in multiple scenarios
+	effect = {
+		### LORDS PARAMOUNT
+		if = {
+			limit = { game_start_date > 8000.12.1 }
+			title:e_the_north.holder ?= {
+				set_variable = mw_obl_feudal_tax_low
+				set_variable = mw_obl_feudal_levies_exempt
+				set_variable = mw_obl_religious_rights_protected
+				set_variable = mw_obl_special_contract_march
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+		}
+		if = {
+			limit = { game_start_date > 8000.12.15 }
+			title:e_the_vale.holder ?= {
+				set_variable = mw_obl_feudal_levies_exempt
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+		}
+		if = {
+			limit = { game_start_date > 7999.8.15 }
+			title:e_the_riverlands.holder ?= {
+				set_variable = mw_obl_feudal_levies_exempt
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+			title:e_the_iron_islands.holder ?= {
+				set_variable = mw_obl_feudal_tax_low
+				set_variable = mw_obl_feudal_levies_exempt
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+		}
+		if = {
+			limit = { game_start_date > 8000.5.2 }
+			title:e_the_westerlands.holder ?= {
+				set_variable = mw_obl_feudal_tax_high
+				set_variable = mw_obl_feudal_levies_exempt
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+		}
+		if = {
+			limit = { game_start_date > 8000.5.1 }
+			title:e_the_reach.holder ?= {
+				set_variable = mw_obl_feudal_tax_high
+				set_variable = mw_obl_feudal_levies_exempt
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+		}
+		if = {
+			limit = { game_start_date > 7999.9.15 }
+			title:e_the_stormlands.holder ?= {
+				set_variable = mw_obl_feudal_levies_exempt
+				set_variable = mw_obl_fortification_rights_granted
+				set_variable = mw_obl_special_contract_march
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+		}
+		if = {
+			limit = { game_start_date > 8187.6.1 }
+			title:e_dorne.holder ?= {
+				set_variable = mw_obl_feudal_levies_exempt
+				set_variable = mw_obl_feudal_tax_low
+				set_variable = mw_obl_special_contract_palatinate
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+		}
+		else_if = {
+			limit = {
+				game_start_date > 8158.1.3
+				game_start_date < 8160.1.4
+			}
+			title:e_dorne.holder ?= {
+				set_variable = mw_obl_feudal_levies_exempt
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+		}
+
+		### THE CROWNLANDS
+		title:k_dragonstone.holder ?= {
+			set_variable = mw_obl_feudal_levies_exempt
+			set_variable = mw_obl_feudal_tax_exempt
+			set_variable = mw_obl_title_revocation_rights_protected
+
+			if = {
+				limit = { game_start_date < 8283.6.1 }
+				set_variable = mw_obl_special_contract_palatinate
+			}
+
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_duskendale.holder ?= {
+			set_variable = mw_obl_feudal_levies_high
+			set_variable = mw_obl_feudal_tax_high
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_rosby.holder ?= {
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_feudal_tax_high
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_driftmark.holder ?= {
+			set_variable = mw_obl_council_rights_guaranteed
+			set_variable = mw_obl_vassal_contract_war_override
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_claw_isle.holder ?= {
+			set_variable = mw_obl_council_rights_guaranteed
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_the_scales.holder ?= {
+			set_variable = mw_obl_coinage_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_yellowstars.holder ?= {
+			set_variable = mw_obl_feudal_tax_high
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_shadowshield.holder ?= {
+			set_variable = mw_obl_feudal_tax_high
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_spinney.holder ?= {
+			set_variable = mw_obl_feudal_tax_high
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_darkwoods_mull.holder ?= {
+			set_variable = mw_obl_feudal_tax_high
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+
+		### THE NORTH
+		title:k_the_white_knife.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_religious_rights_protected
+			set_variable = mw_obl_coinage_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_flints_finger.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_stony_shore.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_bear_island.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_last_lands.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		if = {
+			limit = { game_start_date > 8227.1.1 }
+			title:c_wolf_branch.holder ?= {
+				set_variable = mw_obl_council_rights_guaranteed
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+		}
+		title:c_branchside.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_eagle_cross.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_ramsgate.holder ?= {
+			if = {
+				limit = { NOT = { THIS.religion = THIS.liege.religion } }
+				set_variable = mw_obl_religious_rights_protected
+			}
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_woodward.holder ?= {
+			if = {
+				limit = { NOT = { THIS.religion = THIS.liege.religion } }
+				set_variable = mw_obl_religious_rights_protected
+			}
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_silverfield.holder ?= {
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_feudal_tax_high
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		### Mountain Clans
+		title:d_the_northern_mountains = {
+			every_de_jure_county_holder = {
+				if = {
+					limit = { culture = culture:northern_clan }
+					set_variable = mw_obl_feudal_levies_low
+					set_variable = mw_obl_feudal_tax_low
+					set_variable = mw_obl_title_revocation_rights_protected
+					add_character_flag = {
+						flag = startup_contracts
+						days = 1
+					}
+					agot_mw_reset_vassal_contract = yes
+				}
+			}
+		}
+		### Skagosi
+		title:d_skagos = {
+			every_de_jure_county_holder = {
+				if = {
+					limit = { culture = culture:skagosi }
+					set_variable = mw_obl_feudal_levies_exempt
+					set_variable = mw_obl_feudal_tax_exempt
+					set_variable = mw_obl_title_revocation_rights_protected
+					add_character_flag = {
+						flag = startup_contracts
+						days = 1
+					}
+					agot_mw_reset_vassal_contract = yes
+				}
+			}
+		}
+		### The Neck
+		title:d_the_neck.holder ?= {
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_the_neck = {
+			every_de_jure_county_holder = {
+				if = {
+					limit = { culture = culture:crannogman }
+					set_variable = mw_obl_feudal_tax_low
+					set_variable = mw_obl_feudal_levies_low
+					set_variable = mw_obl_title_revocation_rights_protected
+					add_character_flag = {
+						flag = startup_contracts
+						days = 1
+					}
+					agot_mw_reset_vassal_contract = yes
+				}
+			}
+		}
+		title:d_fever = {
+			every_de_jure_county_holder = {
+				if = {
+					limit = { culture = culture:crannogman }
+					set_variable = mw_obl_feudal_tax_low
+					set_variable = mw_obl_feudal_levies_low
+					set_variable = mw_obl_title_revocation_rights_protected
+					add_character_flag = {
+						flag = startup_contracts
+						days = 1
+					}
+					agot_mw_reset_vassal_contract = yes
+				}
+			}
+		}
+		title:d_silvereed = {
+			every_de_jure_county_holder = {
+				if = {
+					limit = { culture = culture:crannogman }
+					set_variable = mw_obl_feudal_tax_low
+					set_variable = mw_obl_feudal_levies_low
+					set_variable = mw_obl_title_revocation_rights_protected
+					add_character_flag = {
+						flag = startup_contracts
+						days = 1
+					}
+					agot_mw_reset_vassal_contract = yes
+				}
+			}
+		}
+
+		### THE VALE
+		title:d_gulltown.holder ?= {
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_grimholm.holder ?= {
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_the_sisters.holder ?= {
+			set_variable = mw_obl_feudal_levies_exempt
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_moongates.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_port_of_arryn.holder ?= {
+			set_variable = mw_obl_feudal_levies_exempt
+			set_variable = mw_obl_feudal_tax_high
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_osgoodswell.holder ?= {
+			set_variable = mw_obl_feudal_tax_high
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_gullview.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_witch_isle.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_coldwater_burn.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_gulltown.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_runestone.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+
+		### THE RIVERLANDS
+		title:d_maidenpool.holder ?= {
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_cape_of_eagles.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_fairmarket.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_blackwood_vale = {
+			every_de_jure_county_holder = {
+				if = {
+					limit = {
+						culture = culture:riverman_main
+						NOT = { THIS.religion = THIS.liege.religion }
+					}
+					set_variable = mw_obl_religious_rights_protected
+					set_variable = mw_obl_title_revocation_rights_protected
+					add_character_flag = {
+						flag = startup_contracts
+						days = 1
+					}
+					agot_mw_reset_vassal_contract = yes
+				}
+			}
+		}
+		title:d_southstone.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_cape_of_eagles.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_blackwood_vale.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_harrenhal.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_lakehaven.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_wayfarers_rest.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_atranta.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_pinkmaiden.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_the_crossing.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_maidenpool.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		### THE IRON ISLANDS
+		title:e_the_iron_islands = {
+			every_de_jure_county_holder = {
+				if = {
+					limit = {
+						culture = culture:ironborn
+						primary_title.tier <= tier_duchy
+					}
+					set_variable = mw_obl_feudal_tax_low
+					set_variable = mw_obl_feudal_levies_high
+					set_variable = mw_obl_vassal_contract_war_override
+					set_variable = mw_obl_fortification_rights_granted
+					set_variable = mw_obl_title_revocation_rights_protected
+					add_character_flag = {
+						flag = startup_contracts
+						days = 1
+					}
+					agot_mw_reset_vassal_contract = yes
+				}
+			}
+		}
+		title:d_lonely_light.holder ?= {
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:c_iron_holt.holder ?= {
+			set_variable = mw_obl_council_rights_guaranteed
+			set_variable = mw_obl_feudal_levies_exempt
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		
+		### THE WESTERLANDS
+		title:d_withermoore.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_the_golden_tooth.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_crakehall.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_sterling.holder ?= {
+			set_variable = mw_obl_feudal_tax_high
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		if = {
+			limit = {
+				exists = title:d_castamere.holder
+				game_start_date < 8261.11.1
+			}
+			title:d_castamere.holder ?= {
+				set_variable = mw_obl_special_contract_palatinate
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+			if = {
+				limit = { game_start_date > 8250.1.1 }
+				title:d_castamere.holder ?= {
+					set_variable = mw_obl_feudal_levies_low
+					set_variable = mw_obl_feudal_tax_low
+					set_variable = mw_obl_fortification_rights_granted
+					set_variable = mw_obl_coinage_rights_granted
+					set_variable = mw_obl_title_revocation_rights_protected
+					add_character_flag = {
+						flag = startup_contracts
+						days = 1
+					}
+					agot_mw_reset_vassal_contract = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = title:d_tarrich.holder
+				game_start_date > 8250.1.1
+				game_start_date < 8261.11.1
+			}
+			title:d_tarrich.holder ?= {
+				set_variable = mw_obl_feudal_levies_low
+				set_variable = mw_obl_feudal_tax_low
+				set_variable = mw_obl_fortification_rights_granted
+				set_variable = mw_obl_coinage_rights_granted
+				set_variable = mw_obl_title_revocation_rights_protected
+				add_character_flag = {
+					flag = startup_contracts
+					days = 1
+				}
+				agot_mw_reset_vassal_contract = yes
+			}
+		}
+
+		### THE REACH
+		title:k_the_arbor.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:k_oldtown.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_shield_islands.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		### The Northmarch
+		title:d_goldengrove.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_red_front.holder ?= {
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_the_northmarch.holder ?= {
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		### Marchers
+		title:d_the_westmarch.holder ?= {
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_palemarch.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_palemarch = {
+			every_de_jure_county_holder = {
+				if = {
+					limit = { culture = culture:marcher }
+					set_variable = mw_obl_fortification_rights_granted
+					set_variable = mw_obl_title_revocation_rights_protected
+					add_character_flag = {
+						flag = startup_contracts
+						days = 1
+					}
+					agot_mw_reset_vassal_contract = yes
+				}
+			}
+		}
+
+		### The Stormlands
+		title:e_the_stormlands = {
+			every_de_jure_county_holder = {
+				if = {
+					limit = {
+						OR = {
+							culture = culture:marcher
+							culture = culture:stormlander_main
+						}
+						primary_title.tier <= tier_duchy
+					}
+					set_variable = mw_obl_fortification_rights_granted
+					set_variable = mw_obl_title_revocation_rights_protected
+					add_character_flag = {
+						flag = startup_contracts
+						days = 1
+					}
+					agot_mw_reset_vassal_contract = yes
+				}
+			}
+		}
+		title:d_tarth.holder ?= {
+			set_variable = mw_obl_special_contract_palatinate
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		### Marchers
+		title:d_red_watch.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_blackhaven.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_whentway.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_marchfields.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_nightsong.holder ?= {
+			set_variable = mw_obl_fortification_rights_granted
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+
+		### DORNE
+		title:d_blackmont.holder ?= {
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_torrentine.holder ?= {
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_the_princes_pass.holder ?= {
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_redmarch.holder ?= {
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:d_the_stoneway.holder ?= {
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+		title:k_yronwood.holder ?= {
+			set_variable = mw_obl_feudal_levies_low
+			set_variable = mw_obl_feudal_tax_low
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_special_contract_march
+			set_variable = mw_obl_title_revocation_rights_protected
+			add_character_flag = {
+				flag = startup_contracts
+				days = 1
+			}
+			agot_mw_reset_vassal_contract = yes
+		}
+
+		### BRAAVOS
+		if = {
+			limit = { has_dlc_feature = admin_gov }
+			title:d_teggarlozar.holder ?= {
+				if = {
+					limit = {
+						is_independent_ruler = no
+						any_sub_realm_county = {
+							is_coastal_county = yes
+						}
+					}
+					vassal_contract_set_obligation_level = {
+						type = administrative_themes
+						level = 5
+					}
+				}
+			}
+			title:d_braavosian_coastlands.holder ?= {
+				if = {
+					limit = {
+						is_independent_ruler = no
+						any_sub_realm_county = {
+							any_neighboring_county = {
+								holder = {
+									NOT = { top_liege = title:d_braavosian_coastlands.holder.top_liege }
+								}
+							}
+						}
+					}
+					vassal_contract_set_obligation_level = {
+						type = administrative_themes
+						level = 3
+					}
+				}
+			}
+			title:d_inkolantibyr.holder ?= {
+				if = {
+					limit = {
+						is_independent_ruler = no
+						any_sub_realm_county = {
+							is_coastal_county = yes
+						}
+					}
+					vassal_contract_set_obligation_level = {
+						type = administrative_themes
+						level = 5
+					}
+				}
+			}
+			title:d_lunar_bay_hills.holder ?= {
+				if = {
+					limit = {
+						is_independent_ruler = no
+						any_sub_realm_county = {
+							is_coastal_county = yes
+						}
+					}
+					vassal_contract_set_obligation_level = {
+						type = administrative_themes
+						level = 5
+					}
+				}
+			}
+			title:d_mothers_crown.holder ?= {
+				if = {
+					limit = {
+						is_independent_ruler = no
+						any_sub_realm_county = {
+							any_neighboring_county = {
+								holder = {
+									NOT = { top_liege = title:d_mothers_crown.holder.top_liege }
+								}
+							}
+						}
+					}
+					vassal_contract_set_obligation_level = {
+						type = administrative_themes
+						level = 3
+					}
+				}
+			}
+			title:d_sweetwater.holder ?= {
+				if = {
+					limit = {
+						is_independent_ruler = no
+					}
+					vassal_contract_set_obligation_level = {
+						type = administrative_themes
+						level = 1
+					}
+				}
+			}
+		}
+
+		### SMALL COUNCIL
+		if = {
+			limit = {
+				exists = title:h_the_iron_throne.holder
+			}
+			title:h_the_iron_throne.holder = {
+				every_councillor = {
+					limit = { has_variable = small_council }
+					vassal_contract_set_obligation_level = {
+						type = special_contract
+						level = 5
+					}
+					set_vassal_contract_modification_blocked = yes
+				}
+			}
+		}
+	}
+}

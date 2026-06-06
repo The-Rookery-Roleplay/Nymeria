@@ -1,0 +1,5 @@
+﻿# Additional Models & Special Buildings
+royal_court_change = {
+	sort_order = 157
+	gui_tags = { big_button }
+}

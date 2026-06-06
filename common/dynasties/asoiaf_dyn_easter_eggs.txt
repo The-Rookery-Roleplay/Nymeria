@@ -1,0 +1,17 @@
+﻿
+#KCD easter egg dynasties
+dynn_Kobyla = {
+	name = "dynn_Kobyla"
+	culture = "westerman_main"
+	motto = dynn_Kobyla_motto
+}
+dynn_Ronov = {
+	name = "dynn_Ronov"
+	culture = "westerman_main"
+	motto = dynn_Ronov_motto
+}
+dynn_Toth = {
+	name = "dynn_Toth"
+	culture = "valeman_main"
+	motto = dynn_Toth_motto
+}

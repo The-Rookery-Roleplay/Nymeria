@@ -1,0 +1,48 @@
+﻿# decision_amsb_form_kingsguard = {
+# 	picture = {
+# 		reference = "gfx/interface/illustrations/decisions/decision_recruitment.dds"
+# 	}
+
+# 	title = decision_amsb_form_kingsguard
+# 	desc = decision_amsb_form_kingsguard_desc
+# 	decision_group_type = royal_court_change
+# 	ai_check_interval = 0
+
+# 	confirm_text = decision_amsb_form_kingsguard_confirm
+
+# 	ai_potential = {
+# 		always = no
+# 	}
+
+# 	cost = {
+# 		gold = 3000
+# 		prestige = 1500
+# 	}
+
+# 	is_shown = {
+# 		has_title = title:h_the_iron_throne
+# 		title:h_the_iron_throne = {
+# 			NOT = { has_variable = kingsguard }
+# 		}
+# 	}
+
+# 	is_valid = {
+# 		title:h_the_iron_throne.holder = {
+# 			prestige_level >= 4
+# 		}
+# 		has_title = title:h_the_iron_throne
+# 		is_ruler = yes
+# 		is_landed = yes
+# 		is_imprisoned = no
+# 		is_at_war = no
+# 	}
+
+# 	effect = {
+# 		custom_tooltip = {
+# 			text = decision_amsb_form_kingsguard_tooltip
+# 			title:h_the_iron_throne = {
+# 				set_variable = { name = kingsguard value = yes }
+# 			}
+# 		}
+# 	}
+# }

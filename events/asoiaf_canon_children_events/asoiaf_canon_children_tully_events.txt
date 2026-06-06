@@ -1,0 +1,57 @@
+﻿namespace = asoiaf_canon_children_tully_events
+
+asoiaf_canon_children_tully_events.101 = { #children of Hoster Tully (son of Luthor) by his Whent wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Tully_8_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Tully_8_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Tully_7_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Tully_7_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Tully_6_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Tully_6_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Tully_4_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Tully_4_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Tully_3_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Tully_3_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Tully_2_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Tully_2_birth_effect = yes
+		}
+	}
+}

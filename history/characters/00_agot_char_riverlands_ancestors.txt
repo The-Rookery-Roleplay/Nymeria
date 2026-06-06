@@ -134957,7 +134957,7 @@ Weeping_9 = {
 
 
 Teague_200 = {
-	name = Lorimer
+	name = Gogana
 	dynasty = dynn_Teague
 	random_traits = yes
 	dna = nymeriaswar_lorimer_teague

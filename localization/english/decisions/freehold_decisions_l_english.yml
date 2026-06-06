@@ -1,0 +1,13 @@
+﻿l_english:
+  
+ freehold_rp_decision_on:0 "#R Freehold RP Interactions On#"
+ freehold_rp_decision_on_desc:0 "Turn on Freehold RP Interactions. Only to be used with staff permission."
+ freehold_rp_on_decision_tooltip:0 "Admin Permission Required"
+ freehold_rp_decision_on_tooltip_confirm_text_desc:0 "Freehold RP Interactions On"
+
+ 
+ freehold_rp_decision_off:0 "#R Freehold RP Interactions Off#"
+ freehold_rp_decision_off_desc:0 "Turn off Freehold RP Interactions"
+ freehold_rp_off_decision_tooltip:0 "Freehold RP Interactions"
+ freehold_rp_decision_off_tooltip_confirm_text_desc:0 "Freehold RP Interactions"
+

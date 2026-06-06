@@ -1,0 +1,26 @@
+﻿l_french:
+ #event for vassal choice
+ amsb_bent_knees.0001.t:0 "Convoqué[ROOT.Char.GetCharacterFeminineForm|E] pour Plier le Genou"
+ amsb_bent_knees.0001.desc:0 "J'ai reçu un corbeau de [actor.GetName] de la Maison [actor.GetHouse.GetBaseNameNoTooltip] me demandant de me rendre à [actor.GetHerHis] cour afin de plier le genou et déclarer loyauté au trône pour l'éternité. Bien que cela soit manifestement hors de l'ordinaire, je dois décider si j'accepterai cette requête ou si je refuserai en risquant les conséquences potentielles d'un tel refus..."
+ amsb_bent_knees.0001.a:0 "Je dois me rendre à la cour de [actor.GetName] pour prêter serment de féauté."
+ amsb_bent_knees.0001.b:0 "Je ne me soumettrai pas, moi ou ma maison, à de telles exigences !"
+
+ #Ruler Event for bending of limbs
+ amsb_bent_knees.0002.t:0 "Plier le Genou"
+ amsb_bent_knees.0002.desc:0 "Lord [bent_knees.GetFirstName] [bent_knees.GetDynasty.GetName] pénètre dans la salle du trône et s'avance lentement vers moi.\n\n\"Vous êtes venu[bent_knees.GetCharacterFeminineForm|E] plier le genou, Lord [bent_knees.GetFirstNameNoTooltip] ?\"\n\n\"En effet, Votre Grâce,\" dit [bent_knees.GetSheHe] en s'agenouillant devant moi.\n\n#bold \"Moi, [bent_knees.GetFirstNameBase] de la Maison [bent_knees.GetDynasty.GetNameNoTooltip], jure ma loyauté à [ruler.GetFirstNameNoTooltip] de la Maison [ruler.GetHouse.GetBaseNameNoTooltip], [Select_CString( ruler.IsFemale, 'Reine', 'Roi' )] des Andals, des Rhoynars et des Premiers Hommes, Seigneur des Sept Couronnes et Protecteur du Royaume.\"#!\n\nAprès quelques secondes, [bent_knees.GetHerHis] tête se relève, quêtant ma réponse."
+ amsb_bent_knees.0002.a:0 "@prestige_icon! J'accepte votre serment de féauté."
+ amsb_bent_knees.0002.a_tt:0 "Empêché[bent_knees.GetCharacterFeminineForm|E] de rejoindre une faction contre vous pendant 10 ans."
+ amsb_bent_knees.0002.a_title.desc:0 "[bent_knees.GetName] a plié le genou et juré loyauté à la couronne."
+ amsb_bent_knees.0002.a_title:0 "Le Vassal Plie le Genou"
+ amsb_bent_knees.0002.b:0 "@dread_icon! À la réflexion, savourez les cellules noires !"
+ amsb_bent_knees.0002.c:0 "@death_icon! Désolé[ROOT.Char.GetCharacterFeminineForm|E], mais je vous ai fait venir ici pour mourir."
+
+#  #Vassal Accepts
+#  amsb_bent_knees.0003.t:0 "Vassal Accepts The Decree"
+#  amsb_bent_knees.0003.desc:0 "..."
+#  amsb_bent_knees.0003.a:0 "I shall await their arrival"
+
+ #Vassal Refuses
+ amsb_bent_knees.0004.t:0 "Le Vassal Refuse le Décret"
+ amsb_bent_knees.0004.desc:0 "Je fixe le parchemin du corbeau avec une incrédulité totale. Le message de [bent_knees.GetName] se froisse aisément en une boule de papier serrée dans ma paume tandis que la colère monte en moi.\n\n\"Je ne tolérerai pas ce manque de respect !\" criai-je à personne en particulier, sachant qu'il n'y avait pas grand-chose que je puisse faire sans drastiquement envenimer la situation.\n\nMais peut-être est-ce ce qui est nécessaire... peut-être faut-il faire un exemple pour que les seigneurs restants du royaume apprennent leur place..."
+ amsb_bent_knees.0004.a:0 "C'est inacceptable !"

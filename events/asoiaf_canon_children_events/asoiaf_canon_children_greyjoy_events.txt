@@ -1,0 +1,41 @@
+﻿namespace = asoiaf_canon_children_greyjoy_events
+
+asoiaf_canon_children_greyjoy_events.0051 = { #children of Balon Greyjoy (son of Quellon) by his Harlaw wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Greyjoy_14_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Greyjoy_14_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Greyjoy_13_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Greyjoy_13_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Greyjoy_12_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Greyjoy_12_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Greyjoy_11_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Greyjoy_11_birth_effect = yes
+		}
+	}
+}

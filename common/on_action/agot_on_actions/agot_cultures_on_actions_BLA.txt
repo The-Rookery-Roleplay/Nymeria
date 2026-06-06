@@ -1,0 +1,630 @@
+﻿agot_set_cultures_BLA = {
+	on_actions = {
+		agot_set_BLA_cultures
+	}
+}
+# agot_set_BLA_cultures = {
+	effect = {
+		if = {
+			limit = { has_game_rule = agot_BLA_cultures_enabled }
+
+			# ----------------------------
+			# HIGH VALYRIAN 
+			# ----------------------------
+			every_ruler = {
+				limit = {
+					exists = dynasty
+					culture = { this = culture:high_valyrian }
+				}
+
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+
+						# lock FIRST so the same dynasty can’t be hit again
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 1 } 
+
+						add_dynasty_prestige = 31200
+						agot_safe_add_dynasty_perk_history_effect = { PERK = high_valyrian_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = high_valyrian_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = high_valyrian_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = high_valyrian_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = high_valyrian_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# WESTEROSI VALYRIAN
+			# ----------------------------
+			every_ruler = {
+				limit = {
+					exists = dynasty
+					culture = { this = culture:westerosi_valyrian }
+				}
+
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 2 } 
+
+						add_dynasty_prestige = 16200
+						agot_safe_add_dynasty_perk_history_effect = { PERK = westerosi_valyrian_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = westerosi_valyrian_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = westerosi_valyrian_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = westerosi_valyrian_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = westerosi_valyrian_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# ESSOSI VALYRIAN
+			# ----------------------------
+			every_ruler = {
+				limit = {
+					exists = dynasty
+					culture = { this = culture:essosi_valyrian }
+				}
+
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 3 } 
+
+						add_dynasty_prestige = 16000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = essosi_valyrian_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = essosi_valyrian_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = essosi_valyrian_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = essosi_valyrian_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = essosi_valyrian_legacy_5 }
+					}
+				}
+			}
+		# ----------------------------
+			# WILDLING (tradition-based)
+			# ----------------------------
+			every_ruler = {
+				limit = {
+					exists = dynasty
+					culture = { has_cultural_tradition = agot_tradition_wildling }
+				}
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 10 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = wildling_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = wildling_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = wildling_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = wildling_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = wildling_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# SISTERMAN
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:sisterman } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 11 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = sisterman_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = sisterman_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = sisterman_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = sisterman_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = sisterman_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# SKAGOSI
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:skagosi } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 12 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = skagosi_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = skagosi_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = skagosi_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = skagosi_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = skagosi_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# BRAAVOSI
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:braavosi } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 13 }
+
+						add_dynasty_prestige = 8000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = braavosi_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = braavosi_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = braavosi_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = braavosi_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = braavosi_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# PENTOSHI
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:pentoshi } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 14 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = pentoshi_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = pentoshi_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = pentoshi_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = pentoshi_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = pentoshi_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# MYRISH
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:myrish } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 15 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = myrish_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = myrish_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = myrish_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = myrish_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = myrish_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# TYROSHI
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:tyroshi } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 16 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = tyroshi_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = tyroshi_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = tyroshi_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = tyroshi_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = tyroshi_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# LYSENI
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:lyseni } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 17 }
+
+						add_dynasty_prestige = 10000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = lyseni_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = lyseni_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = lyseni_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = lyseni_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = lyseni_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# VOLANTENE
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:volantene } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 18 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = volantene_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = volantene_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = volantene_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = volantene_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = volantene_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# NORVOSHI
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:norvoshi } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 19 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = norvoshi_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = norvoshi_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = norvoshi_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = norvoshi_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = norvoshi_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# HARTALARI
+			# ----------------------------
+			every_ruler = {
+				limit = {
+					exists = dynasty
+					culture = {
+						OR = {
+							this = culture:hartalari 
+						}
+						NOT = {
+						OR = {
+							culture = { this = culture:myrish }
+							culture = { this = culture:tyroshi }
+						}
+						}
+					}
+				}
+
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 20 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = hartalari_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = hartalari_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = hartalari_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = hartalari_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = hartalari_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# RHOYNISH 
+			# ----------------------------
+			every_ruler = {
+				limit = {
+					exists = dynasty
+					culture = {
+						OR = {
+							this = culture:rhoynar_original
+							this = culture:greenblood
+						}
+						NOT = {
+						OR = {
+							culture = { this = culture:stone_dornish }
+							culture = { this = culture:sand_dornish }
+							culture = { this = culture:salt_dornish }
+						}
+						}
+					}
+				}
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 21 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = rhoynish_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = rhoynish_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = rhoynish_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = rhoynish_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = rhoynish_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# ANDALOSI
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:andalosi } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 22 }
+
+						add_dynasty_prestige = 7000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = andalosi_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = andalosi_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = andalosi_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = andalosi_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = andalosi_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# CLAWMAN
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:clawman } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 23 }
+
+						add_dynasty_prestige = 8500
+						agot_safe_add_dynasty_perk_history_effect = { PERK = clawman_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = clawman_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = clawman_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = clawman_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = clawman_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# VALEMAN
+			# ----------------------------
+			every_ruler = {
+				limit = {
+					exists = dynasty
+					culture = {
+						OR = {
+							this = culture:valeman_main
+							this = culture:valeman_upper
+							this = culture:valeman_finger
+						}
+					}
+				}
+
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 24 }
+
+						add_dynasty_prestige = 26000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = valeman_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = valeman_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = valeman_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = valeman_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = valeman_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# NORTHMAN 
+			# ----------------------------
+			every_ruler = {
+				limit = {
+					exists = dynasty
+					culture = {
+						OR = {
+							this = culture:northman
+							this = culture:barrowman
+							this = culture:crannogman
+							this = culture:harborman
+							this = culture:bearman
+							this = culture:wolfswood_clansman
+							this = culture:krakenman
+							this = culture:hill_clansman
+						}
+					}
+				}
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 25 }
+
+						add_dynasty_prestige = 26300
+						agot_safe_add_dynasty_perk_history_effect = { PERK = north_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = north_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = north_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = north_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = north_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# DORNISH (stone/sand/salt)
+			# ----------------------------
+			every_ruler = {
+				limit = {
+					exists = dynasty
+					culture = {
+						OR = {
+							this = culture:stone_dornish
+							this = culture:sand_dornish
+							this = culture:salt_dornish
+						}
+					}
+				}
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 26 }
+
+						add_dynasty_prestige = 26300
+						agot_safe_add_dynasty_perk_history_effect = { PERK = dornish_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = dornish_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = dornish_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = dornish_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = dornish_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# WESTERMAN
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:westerman_main } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 27 }
+
+						add_dynasty_prestige = 28400
+						agot_safe_add_dynasty_perk_history_effect = { PERK = westerman_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = westerman_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = westerman_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = westerman_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = westerman_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# RIVERLANDER
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:riverman_main } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 28 }
+
+						add_dynasty_prestige = 21000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = riverlander_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = riverlander_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = riverlander_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = riverlander_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = riverlander_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# STORMLANDER
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:stormlander_main } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 29 }
+
+						add_dynasty_prestige = 23000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = stormlander_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = stormlander_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = stormlander_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = stormlander_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = stormlander_legacy_5 }
+					}
+				}
+			}
+
+			# ----------------------------
+			# IRONBORN
+			# ----------------------------
+			every_ruler = {
+				limit = { exists = dynasty culture = { this = culture:ironborn } }
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 27 }
+
+						add_dynasty_prestige = 16000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = ironborn_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = ironborn_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = ironborn_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = ironborn_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = ironborn_legacy_5 }
+					}
+				}
+			}
+
+
+			# ----------------------------
+			# REACHMAN
+			# ----------------------------
+			every_ruler = {
+				limit = {
+					exists = dynasty
+					culture = {
+						OR = {
+							this = culture:reachman
+							this = culture:shieldman
+							this = culture:honeywiner
+							this = culture:vineman
+						}
+					}
+				}
+
+				dynasty = {
+					if = {
+						limit = { NOT = { has_variable = bla_culture_set_locked } }
+						set_variable = { name = bla_culture_set_locked value = 1 }
+						set_variable = { name = bla_culture_set_id value = 30 }
+
+						add_dynasty_prestige = 24000
+						agot_safe_add_dynasty_perk_history_effect = { PERK = reachman_legacy_1 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = reachman_legacy_2 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = reachman_legacy_3 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = reachman_legacy_4 }
+						agot_safe_add_dynasty_perk_history_effect = { PERK = reachman_legacy_5 }
+					}
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,6 @@
+﻿#asoiaf_targaryen_invasion_claimants_trigger = {
+#	OR = {
+#		has_game_rule = asoiaf_targaryen_invasion_claimants_no_dragon_bonding
+#		has_game_rule = asoiaf_targaryen_invasion_claimants_dragon_bonded
+#	}
+#}

@@ -1,0 +1,65 @@
+﻿amsb_player_abdicate_age = {
+    default = amsb_player_abdicate_age_60
+
+    categories = {
+        amsb_game_rules
+    }
+
+    amsb_player_abdicate_age_60 = {
+        flag = amsb_player_abdicate_age_60
+    }
+    amsb_player_abdicate_age_70 = {
+        flag = amsb_player_abdicate_age_70
+    }
+    amsb_player_abdicate_age_80 = {
+        flag = amsb_player_abdicate_age_80
+    }
+}
+
+amsb_abdicate_restrictions = {
+    default = amsb_abdicate_restricted
+
+    categories = {
+        amsb_game_rules
+    }
+
+    amsb_abdicate_no_restriction = {
+        flag = amsb_abdicate_no_restriction
+    }
+    amsb_abdicate_restricted = {
+        flag = amsb_abdicate_restricted
+    }
+    amsb_abdicate_disabled = {
+        flag = amsb_abdicate_disabled
+    }
+}
+
+amsb_ai_abdicate_usage = {
+    default = amsb_ai_abdicate_disabled
+
+    categories = {
+        amsb_game_rules
+    }
+
+    amsb_ai_abdicate_disabled = {
+        flag = amsb_ai_abdicate_disabled
+    }
+    amsb_ai_abdicate_enabled = {
+        flag = amsb_ai_abdicate_enabled
+    }
+}
+
+amsb_dragonstone_throne_room = {
+    default = amsb_dragonstone_throne_room_no
+
+    categories = {
+        amsb_game_rules
+    }
+
+    amsb_dragonstone_throne_room_no = {
+        flag = amsb_dragonstone_throne_room_no
+    }
+    amsb_dragonstone_throne_room_yes = {
+        flag = amsb_dragonstone_throne_room_yes
+    }
+}

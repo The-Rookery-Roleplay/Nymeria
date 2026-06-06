@@ -1,0 +1,91 @@
+﻿namespace = asoiaf_contract_events
+
+asoiaf_contract_events.1 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_north_contract_effect = yes
+	}
+}
+
+asoiaf_contract_events.2 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_riverlands_contract_effect = yes
+	}
+}
+
+asoiaf_contract_events.3 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_vale_contract_effect = yes
+	}
+}
+
+asoiaf_contract_events.4 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_iron_islands_contract_effect = yes
+	}
+}
+
+asoiaf_contract_events.5 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_westerlands_contract_effect = yes
+	}
+}
+
+asoiaf_contract_events.6 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_crownlands_contract_effect = yes
+	}
+}
+
+asoiaf_contract_events.7 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_dragonstone_contract_effect = yes
+	}
+}
+
+asoiaf_contract_events.8 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_reach_contract_effect = yes
+	}
+}
+
+asoiaf_contract_events.9 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_stormlands_contract_effect = yes
+	}
+}
+
+asoiaf_contract_events.10 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_dorne_contract_effect = yes
+	}
+}

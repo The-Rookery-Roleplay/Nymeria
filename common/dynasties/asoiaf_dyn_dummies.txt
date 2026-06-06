@@ -1,0 +1,20 @@
+﻿dynn_Dummies = { #ONLY for dummy characters
+	name = "dynn_Dummies"
+	motto = dynn_Dummies_motto
+}
+
+dynn_Galgaeryn = { #dummy dynasty for Brightlames' new House
+	name = "dynn_Galgaeryn"
+}
+
+dynn_Belerys = { #dummy dynasty for Maegor Targaryen (founder of Targ dynasty)'s wife to prevent tree duplication
+	name = "dynn_Belerys"
+}
+
+asoiaf_dynn_Xaq = { #dummy dynasty for Corlys Velaryon (HBO)'s mother
+	name = "dynn_Xaq"
+}
+
+asoiaf_dynn_Malazos = { #dummy dynasty for Daena Blackfyre
+	name = "dynn_Malazos"
+}

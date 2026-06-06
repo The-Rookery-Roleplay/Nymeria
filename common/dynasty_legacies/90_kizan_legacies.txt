@@ -1,0 +1,67 @@
+# KIZAN LEGACIES
+
+clawman_legacy_track = {
+	is_shown = {
+		OR = { 
+			culture = {
+				OR = {
+					this = culture:clawman
+					any_parent_culture_or_above = {
+						this = culture:clawman
+					}
+				}
+			}
+			dynasty = { has_dynasty_perk = clawman_legacy_1 }
+		}
+	}
+}
+
+honeywiner_legacy_track = {
+	is_shown = {
+		OR = { 
+			culture = {
+				OR = {
+					this = culture:honeywiner
+					any_parent_culture_or_above = {
+						this = culture:honeywiner
+					}
+				}
+			}
+			dynasty = { has_dynasty_perk = honeywiner_legacy_1 }
+		}
+	}
+}
+
+crownlander_legacy_track = {
+	is_shown = {
+		OR = { 
+			culture = {
+				OR = {
+					this = culture:crownlander
+					any_parent_culture_or_above = {
+						this = culture:crownlander
+					}
+				}
+			}
+			dynasty = { has_dynasty_perk = crownlander_legacy_1 }
+		}
+	}
+}
+
+sisterman_legacy_track = {
+	is_shown = {
+		OR = { 
+			culture = {
+				OR = {
+					this = culture:sisterman
+					any_parent_culture_or_above = {
+						this = culture:sisterman
+					}
+				}
+			}
+			dynasty = { has_dynasty_perk = sisterman_legacy_1 }
+		}
+	}
+}
+
+# END KIZAN LEGACIES

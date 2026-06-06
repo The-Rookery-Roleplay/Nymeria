@@ -1,0 +1,450 @@
+﻿# Console Commands:
+
+
+# Character Modifiers Commands:
+
+# effect title:c_winterfell = { add_county_modifier = { modifier = citadel_construction_t1 years = 10 } } - Give a specific holding a Modifier.
+# effect this = { add_character_modifier = { modifier = citadel_construction_t1 years = 10 } } - Give the character you playing as a Modifier.
+
+# Give yourself and all your vassals the modifier for 10 years:
+# effect this = { add_character_modifier = { modifier = citadel_construction_t1 days = -1 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_construction_t1 days = -1 } } } 
+# This command removes the modifier:
+# effect this = { remove_character_modifier = citadel_construction_t1 every_vassal_or_below = { remove_character_modifier = citadel_construction_t1 } }
+
+# County Modifiers Commands:
+
+# Apply County Modifier to all holdings ONLY YOU hold, not your vassals !
+# effect this = { every_held_title = { limit = { is_county = yes } add_county_modifier = { modifier = citadel_fort_t1 years = 10 } } }
+# Remove County Modifier ONLY FROM YOU:
+# effect this = { every_held_title = { limit = { is_county = yes } remove_county_modifier = citadel_fort_t1 } }
+
+# Apply County Modifier to all holdings your vassals hold, YOU NEED TO APPLY IT AGAIN FOR YOURSELF !
+# effect this = { every_vassal_or_below = { limit = { is_landed = yes } every_held_title = { limit = { is_county = yes } add_county_modifier = { modifier = citadel_fort_t1 years = 10 } } } }
+
+# Remove County Modifiers from you and your vassals:
+# effect this = { every_held_title = { limit = { is_county = yes } remove_county_modifier = citadel_fort_t1 } every_vassal_or_below = { limit = { is_landed = yes } every_held_title = { limit = { is_county = yes } remove_county_modifier = citadel_fort_t1 } } }
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Character Modifiers:
+
+# Construction Cost & Speed - Character Modifier
+
+citadel_construction_t1 = {
+        holding_build_speed = -0.05
+        holding_build_gold_cost = -0.05
+}
+
+citadel_construction_t2 = {
+    holding_build_speed = -0.10
+    holding_build_gold_cost = -0.10
+}
+
+citadel_construction_t3 = {
+    holding_build_speed = -0.15
+    holding_build_gold_cost = -0.15
+}
+
+# Fertility & Health 
+
+citadel_health_t1 = {
+    icon = health_positive
+    fertility = 0.05
+    health = 0.05
+}
+
+citadel_health_t2 = {
+    icon = health_positive
+    fertility = 0.10
+    health = 0.10
+}
+
+citadel_health_t3 = {
+    icon = health_positive
+    fertility = 0.15
+    health = 0.20
+}
+
+# Army Maintenance 
+
+citadel_army_maintenance_t1 = {
+    icon = martial_positive
+    army_maintenance_mult = -0.05
+}
+
+citadel_army_maintenance_t2 = {
+    icon = martial_positive
+    army_maintenance_mult = -0.10
+}
+
+citadel_army_maintenance_t3 = {
+    icon = martial_positive
+    army_maintenance_mult = -0.15
+}
+
+# Men At Arms Maintenance
+
+citadel_maa_upkeep_t1 = {
+    icon = army_maintenance
+    men_at_arms_maintenance_mult = -0.05
+}
+
+citadel_maa_upkeep_t2 = {
+    icon = army_maintenance
+    men_at_arms_maintenance_mult = -0.10
+}
+
+citadel_maa_upkeep_t3 = {
+    icon = army_maintenance
+    men_at_arms_maintenance_mult = -0.15
+}
+
+# Public Image
+
+citadel_public_image_t1 = {
+    icon = diplomacy_positive
+    general_opinion = 5
+    stewardship = 1
+}
+
+citadel_public_image_t2 = {
+    icon = diplomacy_positive
+    general_opinion = 10
+    stewardship = 2
+}
+
+citadel_public_image_t3 = {
+    icon = diplomacy_positive
+    general_opinion = 15
+    stewardship = 3
+}
+
+# Vassal Opinion
+
+citadel_vassal_t1 = {
+    icon = county_modifier_opinion_positive
+    vassal_opinion = 5
+}
+
+citadel_vassal_t2 = {
+    icon = county_modifier_opinion_positive
+    vassal_opinion = 10
+}
+
+citadel_vassal_t3 = {
+    icon = county_modifier_opinion_positive
+    vassal_opinion = 15
+}
+
+# County Modifiers: -----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Garrison & Fortification Level
+
+citadel_fort_t1 = {
+    icon = fort_level
+    garrison_size = 0.10
+}
+
+citadel_fort_t2 = {
+    icon = fort_level
+    garrison_size = 0.10
+    fort_level = 1
+}
+
+citadel_fort_t3 = {
+    icon = fort_level
+    garrison_size = 0.20
+    fort_level = 2
+}
+
+# Travel Safety & Speed
+
+citadel_travel_t1 = { 
+    icon = travel_positive
+    travel_speed = 5
+    travel_safety = 5
+}
+
+citadel_travel_t2 = { 
+    icon = travel_positive
+    travel_speed = 10
+    travel_safety = 10
+}
+
+citadel_travel_t3 = { 
+    icon = travel_positive
+    travel_speed = 15
+    travel_safety = 15
+}
+
+# Ship Cost Reduction
+
+citadel_ship_cost_t1 = { 
+    icon = grandeur_positive
+}
+
+citadel_ship_cost_t2 = {
+    icon = grandeur_positive
+}
+
+citadel_ship_cost_t3 = {
+    icon = grandeur_positive
+}
+
+# Siege MAA Bonus
+
+citadel_siege_t1 = {
+    icon = martial_positive
+    stationed_maa_siege_value_add = 0.3
+}
+
+citadel_siege_t2 = {
+    icon = martial_positive
+    stationed_maa_siege_value_add = 0.6
+}
+
+citadel_siege_t3 = {
+    icon = martial_positive
+    stationed_maa_siege_value_add = 0.9
+}
+
+# Men At Arms Bonus
+
+citadel_maa_t1 = {
+    icon = martial_positive
+    stationed_archers_toughness_mult = 0.05
+	stationed_archers_damage_mult = 0.05
+    stationed_skirmishers_toughness_mult = 0.05
+	stationed_skirmishers_damage_mult = 0.05
+}
+
+citadel_maa_t2 = {
+    icon = martial_positive
+    stationed_archers_toughness_mult = 0.1
+	stationed_archers_damage_mult = 0.1
+    stationed_skirmishers_toughness_mult = 0.1
+	stationed_skirmishers_damage_mult = 0.1
+}
+
+citadel_maa_t3 = {
+    icon = martial_positive
+    stationed_archers_toughness_mult = 0.15
+	stationed_archers_damage_mult = 0.15
+    stationed_skirmishers_toughness_mult = 0.15
+	stationed_skirmishers_damage_mult = 0.15
+}
+
+# Development Growth
+
+citadel_development_t1 = {
+    icon = county_modifier_development_positive
+    development_growth = 0.05
+}
+
+citadel_development_t2 = {
+    icon = county_modifier_development_positive
+    development_growth = 0.10
+}
+
+citadel_development_t3 = {
+    icon = county_modifier_development_positive
+    development_growth = 0.15
+}
+
+# Levy Reinforcement
+
+citadel_levy_t1 = {
+    icon = martial_positive
+    levy_reinforcement_rate = 0.05
+}
+
+citadel_levy_t2 = {
+    icon = martial_positive
+    levy_reinforcement_rate = 0.10
+}
+
+citadel_levy_t3 = {
+    icon = martial_positive
+    levy_reinforcement_rate = 0.15
+}
+
+# Heavy Infantry & Cavalry Bonus
+
+citadel_heavy_t1 = {
+    icon = martial_positive
+    stationed_heavy_infantry_damage_mult = 0.05
+    stationed_heavy_cavalry_damage_mult = 0.02
+}
+
+citadel_heavy_t2 = {
+    icon = martial_positive
+    stationed_heavy_infantry_damage_mult = 0.10
+    stationed_heavy_cavalry_damage_mult = 0.04
+}
+
+citadel_heavy_t3 = {
+    icon = martial_positive
+    stationed_heavy_infantry_damage_mult = 0.15
+    stationed_heavy_cavalry_damage_mult = 0.06
+}
+
+# Popular Opinion & Control Growth
+
+citadel_popular_t1 = {
+    icon = county_modifier_opinion_positive
+    county_opinion_add = 5
+    monthly_county_control_growth_factor = 0.02
+}
+
+citadel_popular_t2 = {
+    icon = county_modifier_opinion_positive
+    county_opinion_add = 10
+    monthly_county_control_growth_factor = 0.04
+}
+
+citadel_popular_t3 = {
+    icon = county_modifier_opinion_positive
+    county_opinion_add = 15
+    monthly_county_control_growth_factor = 0.06
+}
+
+# Food Deficit NORMAL
+
+citadel_food_deficit_t1 = {
+    icon = food_negative
+    development_growth = -0.10
+    levy_reinforcement_rate = -0.05
+    county_opinion_add = -25
+}
+
+citadel_food_deficit_t2 = {
+    icon = food_negative
+    development_growth = -0.30
+    levy_reinforcement_rate = -0.15
+    control_growth = -0.2
+    county_opinion_add = -25
+}
+
+citadel_food_deficit_t3 = {
+    icon = food_negative
+    development_growth = -0.50
+    levy_reinforcement_rate = -0.50
+    control_growth = -0.5
+    supply_limit_mult = -0.25
+    county_opinion_add = -50
+}
+
+# Food Deficit MAJOR
+
+citadel_food_deficit_major_t1 = {
+    icon = food_negative
+    development_growth = -0.20
+    levy_reinforcement_rate = -0.10
+    county_opinion_add = -50
+}
+
+citadel_food_deficit_major_t2 = {
+    icon = food_negative
+    development_growth = -0.60
+    levy_reinforcement_rate = -0.30
+    control_growth = -0.4
+    county_opinion_add = -75
+}
+
+citadel_food_deficit_major_t3 = { 
+    icon = food_negative
+    development_growth = -1.00
+    levy_reinforcement_rate = -1.00
+    control_growth = -1.0
+    supply_limit_mult = -0.50
+    county_opinion_add = -200
+}
+
+# Wood Deficit
+
+citadel_wood_deficit_t1 = {
+    icon = county_modifier_control_negative
+    holding_build_speed = 0.10
+    holding_build_gold_cost = 0.05
+}
+
+citadel_wood_deficit_t2 = {
+    icon = county_modifier_control_negative
+    holding_build_speed = 0.25
+    holding_build_gold_cost = 0.10
+    #holding_tax_mult = -0.05 # holding_tax_mult is not a valid modifier in 1.19, commented to clear the parse error - Kizan
+}
+
+citadel_wood_deficit_t3 = {
+    icon = county_modifier_control_negative
+    holding_build_speed = 0.40
+    holding_build_gold_cost = 0.20
+    #holding_tax_mult = -0.20 # holding_tax_mult is not a valid modifier in 1.19, commented to clear the parse error - Kizan
+}
+
+# Stone Deficit
+
+citadel_stone_deficit_t1 = {
+    icon = rock_negative
+    garrison_size = -0.10
+    fort_level = -1
+}
+
+citadel_stone_deficit_t2 = {
+    icon = rock_negative
+    fort_level = -3
+    garrison_size = -0.20
+    holding_build_gold_cost = 0.10
+}
+
+citadel_stone_deficit_t3 = {
+    icon = rock_negative
+    fort_level = -5
+    garrison_size = -0.40
+    holding_build_gold_cost = 0.30
+}
+
+# Luxury Deficit
+
+citadel_luxury_deficit_t1 = {
+    icon = legend_negative
+    monthly_prestige_gain_mult = -0.10
+    vassal_opinion = -10
+}
+
+citadel_luxury_deficit_t2 = {
+    icon = legend_negative
+    monthly_prestige_gain_mult = -0.20
+    monthly_dynasty_renown = -0.5
+    vassal_opinion = -20
+}
+
+citadel_luxury_deficit_t3 = {
+    icon = legend_negative
+    monthly_prestige_gain_mult = -0.50
+    monthly_dynasty_renown = -1.5
+    vassal_opinion = -40
+}
+
+# Iron Deficit
+
+citadel_iron_deficit_t1 = {
+    icon = martial_negative
+    army_maintenance_mult = 0.10
+    army_damage_mult = -0.10
+}
+
+citadel_iron_deficit_t2 = {
+    icon = martial_negative
+    army_maintenance_mult = 0.20
+    army_damage_mult = -0.20
+}
+
+citadel_iron_deficit_t3 = {
+    icon = martial_negative
+    army_maintenance_mult = 0.35
+    army_damage_mult = -0.35
+    combat_advantage = -10
+}

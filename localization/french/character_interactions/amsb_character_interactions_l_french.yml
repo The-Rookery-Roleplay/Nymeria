@@ -1,0 +1,30 @@
+﻿l_french:
+
+ amsb_bent_knees_vassal_interaction:0 "Convoquer pour Plier le Genou"
+ amsb_bent_knees_vassal_interaction_desc:0 "Échangez prestige et opinion pour que ce vassal se rende à [actor.GetCapitalLocation.GetName] afin de publiquement plier le genou et prêter serment de féauté à la Maison [actor.GetHouse.GetBaseName] de [actor.GetPrimaryTitle.GetNameNoTier]."
+
+ amsb_bent_knees_refusal_opinion:0 "A refusé de plier le genou"
+ amsb_bent_knees_opinion:0 "M'a demandé de plier le genou"
+
+ amsb_bent_knees_vassal_interaction_refusal_msg_title:0 "Refus de Plier le Genou !"
+ amsb_bent_knees_vassal_interaction_refusal_msg_desc:0 "[recipient.GetFirstName] a refusé de plier le genou et peut désormais être emprisonné[recipient.GetCharacterFeminineForm|E] !"
+
+
+ #bend the knee
+ amsb_bent_knees_vassal_interaction_accept_desc_a:0 "Se rend à [actor.GetCapitalLocation.GetName] avec l'intention de plier le genou. Mais vous pourriez décider que vous avez d'autres projets une fois qu'[recipient.GetSheHe] sera arrivé[recipient.GetCharacterFeminineForm|E]..."
+ amsb_bent_knees_vassal_interaction_accept_desc_b:0  "Si vous acceptez [recipient.GetHerHis] serment, [recipient.GetFirstName] :\n $EFFECT_LIST_BULLET$ Ne peut rejoindre une faction contre vous pendant 10 ans.\n $EFFECT_LIST_BULLET$ Perd #N 20 #! points d'opinion de vous."
+
+ #Take the Black
+ amsb_take_the_black_vassal_interaction:0 "Exiger que Votre Héritier Rejoigne la Garde de Nuit"
+ amsb_take_the_black_vassal_interaction_desc:0 "Exiger que [recipient.GetFirstName] prenne le noir ou périsse par l'épée."
+
+ amsb_take_the_black_vassal_interaction_accept_desc_a:0 "[recipent.GetName] choisit de prendre les vœux d'un[recipent.GetCharacterFeminineForm|E] frère[recipent.GetCharacterFeminineForm|E] noir[recipent.GetCharacterFeminineForm|E] et de consacrer le reste de [recipent.GetHerHis] vie à servir le royaume à [GetTitleByKey('k_the_wall').GetNameNoTier]"
+ amsb_take_the_black_vassal_interaction_accept_desc_b:0 "[recipent.GetName] voyage vers le Mur pour servir le royaume"
+
+ amsb_take_the_black.decline:0 "[recipient.GetName] choisit de défier vos exigences injustes et vous défie en duel à mort"
+
+ #Flags
+ refused_to_bend_knees:0 "A Refusé de Plier le Genou"
+
+ #Tooltips
+ amsb_WE_ARE_FRIENDS:0 "Nous ne sommes #Bold pas #!amis"

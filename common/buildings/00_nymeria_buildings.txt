@@ -18,7 +18,7 @@ nym_new_ny_sar_1 = {
     county_modifier = {
         monthly_county_control_growth_add = 0.5
         development_growth = 0.15
-        tax_mult = 0.15
+        #tax_mult = 0.15
     }
     province_modifier = {
         monthly_income = 5

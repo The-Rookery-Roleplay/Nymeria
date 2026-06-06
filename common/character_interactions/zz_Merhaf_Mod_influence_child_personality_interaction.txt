@@ -1,0 +1,2598 @@
+﻿##성격특성 4개
+### Trait interaction for guardians
+# actor = guardian
+# recipient = ward/hostage
+# This has to be update every time a new trait is added to the game, otherwise you won't be able to pass it down
+influence_child_personality_interaction = {
+	category = interaction_category_friendly
+	common_interaction = yes
+	interface_priority = 60
+	icon = child
+	ai_maybe = yes
+	ai_min_reply_days = 4
+	ai_max_reply_days = 9
+	can_send_despite_rejection = yes
+	popup_on_receive = yes
+	pause_on_receive = yes
+
+	pre_answer_maybe_key = ANSWER_MIGHT_SUCCEED
+	pre_answer_no_key = ANSWER_CANT_SUCCEED
+	pre_answer_yes_key = ANSWER_WILL_SUCCEED
+	pre_answer_maybe_breakdown_key = ANSWER_SUM_CHANCE
+
+	desc = influence_child_personality_interaction_desc
+
+	is_shown = { #any  ai ward/hostage
+		has_bp2_dlc_trigger = yes
+		scope:recipient = {
+			is_ai = yes
+			is_adult = no
+			OR = {
+				scope:actor = { has_relation_ward = scope:recipient }
+				is_hostage_of = scope:actor
+			}
+		}
+		#AGOT Added, no non-human interactions
+		scope:actor = { is_human = yes }
+		scope:recipient = { is_human = yes }
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = { #be old enough to talk and have some room for new personlaity traits
+			age >= 4
+			custom_description = {
+				text = influence_child_personality_interaction_trait_limit
+				number_of_personality_traits < 4
+			}
+			#checking all trait individually through the set scope in order to catch if all of your traits are either the same or opposite
+			custom_description = {
+				text = influence_child_personality_interaction_all_same_traits
+				switch = {
+					trigger = yes
+					scope:lustful = {
+						scope:recipient = { NOT = { has_trait = lustful } }
+					}
+					scope:chaste = {
+						scope:recipient = { NOT = { has_trait = chaste } }
+					}
+					scope:gluttonous = {
+						scope:recipient = { NOT = { has_trait = gluttonous } }
+					}
+					scope:temperate = {
+						scope:recipient = { NOT = { has_trait = temperate } }
+					}
+					scope:greedy = {
+						scope:recipient = { NOT = { has_trait = greedy } }
+					}
+					scope:generous = {
+						scope:recipient = { NOT = { has_trait = generous } }
+					}
+					scope:lazy = {
+						scope:recipient = { NOT = { has_trait = lazy } }
+					}
+					scope:diligent = {
+						scope:recipient = { NOT = { has_trait = diligent } }
+					}
+					scope:wrathful = {
+						scope:recipient = { NOT = { has_trait = wrathful } }
+					}
+					scope:calm = {
+						scope:recipient = { NOT = { has_trait = calm } }
+					}
+					scope:patient = {
+						scope:recipient = { NOT = { has_trait = patient } }
+					}
+					scope:impatient = {
+						scope:recipient = { NOT = { has_trait = impatient } }
+					}
+					scope:arrogant = {
+						scope:recipient = { NOT = { has_trait = arrogant } }
+					}
+					scope:humble = {
+						scope:recipient = { NOT = { has_trait = humble } }
+					}
+					scope:deceitful = {
+						scope:recipient = { NOT = { has_trait = deceitful } }
+					}
+					scope:honest = {
+						scope:recipient = { NOT = { has_trait = honest } }
+					}
+					scope:craven = {
+						scope:recipient = { NOT = { has_trait = craven } }
+					}
+					scope:brave = {
+						scope:recipient = { NOT = { has_trait = brave } }
+					}
+					scope:shy = {
+						scope:recipient = { NOT = { has_trait = shy } }
+					}
+					scope:gregarious = {
+						scope:recipient = { NOT = { has_trait = gregarious } }
+					}
+					scope:ambitious = {
+						scope:recipient = { NOT = { has_trait = ambitious } }
+					}
+					scope:content = {
+						scope:recipient = { NOT = { has_trait = content } }
+					}
+					scope:arbitrary = {
+						scope:recipient = { NOT = { has_trait = arbitrary } }
+					}
+					scope:just = {
+						scope:recipient = { NOT = { has_trait = just } }
+					}
+					scope:cynical = {
+						scope:recipient = { NOT = { has_trait = cynical } }
+					}
+					scope:zealous = {
+						scope:recipient = { NOT = { has_trait = zealous } }
+					}
+					scope:paranoid = {
+						scope:recipient = { NOT = { has_trait = paranoid } }
+					}
+					scope:trusting = {
+						scope:recipient = { NOT = { has_trait = trusting } }
+					}
+					scope:compassionate = {
+						scope:recipient = { NOT = { has_trait = compassionate } }
+					}
+					scope:callous = {
+						scope:recipient = { NOT = { has_trait = callous } }
+					}
+					scope:sadistic = {
+						scope:recipient = { NOT = { has_trait = sadistic } }
+					}
+					scope:stubborn = {
+						scope:recipient = { NOT = { has_trait = stubborn } }
+					}
+					scope:fickle = {
+						scope:recipient = { NOT = { has_trait = fickle } }
+					}
+					scope:eccentric = {
+						scope:recipient = { NOT = { has_trait = eccentric } }
+					}
+					scope:vengeful = {
+						scope:recipient = { NOT = { has_trait = vengeful } }
+					}
+					scope:forgiving = {
+						scope:recipient = { NOT = { has_trait = forgiving } }
+					}
+					#AGOT Added
+					scope:authoritative = {
+						scope:recipient = { NOT = { has_trait = authoritative } }
+					}
+					scope:rude = {
+						scope:recipient = { NOT = { has_trait = rude } }
+					}
+					scope:inquisitive = {
+						scope:recipient = { NOT = { has_trait = inquisitive } }
+					}
+					scope:honorable = {
+						scope:recipient = { NOT = { has_trait = honorable } }
+					}
+					scope:ruthless = {
+						scope:recipient = { NOT = { has_trait = ruthless } }
+					}
+					scope:amoral = {
+						scope:recipient = { NOT = { has_trait = amoral } }
+					}
+				}
+			}
+		}
+		scope:actor = {
+			is_adult = yes
+			number_of_personality_traits >= 1 #just in case you have to have at least some personality
+		}
+	}
+
+	cooldown_against_recipient = { years = 3 }
+
+	can_send = {
+	}
+	#each option is shown if the actor has the corresponding trait and valid if recipient don't have it yet or don't have an opposite trait
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = lustful }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = lustful
+					trait:lustful = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+					has_sexuality = none
+					has_sexuality = asexual
+				}
+			}
+		}
+		flag = lustful
+		localization = trait_lustful
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = chaste }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = chaste
+					trait:chaste = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+					has_sexuality = none
+					has_sexuality = asexual
+				}
+			}
+		}
+		flag = chaste
+		localization = trait_chaste
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = gluttonous }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = gluttonous
+					trait:gluttonous = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = gluttonous
+		localization = trait_gluttonous
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = temperate }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = temperate
+					trait:temperate = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = temperate
+		localization = trait_temperate
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = greedy }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = greedy
+					trait:greedy = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = greedy
+		localization = trait_greedy
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = generous }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = generous
+					trait:generous = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = generous
+		localization = trait_generous
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = lazy }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = lazy
+					trait:lazy = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = lazy
+		localization = trait_lazy
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = diligent }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = diligent
+					trait:diligent = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = diligent
+		localization = trait_diligent
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = wrathful }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = wrathful
+					trait:wrathful = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = wrathful
+		localization = trait_wrathful
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = calm }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = calm
+					trait:calm = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = calm
+		localization = trait_calm
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = patient }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = patient
+					trait:patient = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = patient
+		localization = trait_patient
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = impatient }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = impatient
+					trait:impatient = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = impatient
+		localization = trait_impatient
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = arrogant }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = arrogant
+					trait:arrogant = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = arrogant
+		localization = trait_arrogant
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = humble }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = humble
+					trait:humble = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = humble
+		localization = trait_humble
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = deceitful }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = deceitful
+					trait:deceitful = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = deceitful
+		localization = trait_deceitful
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = honest }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = honest
+					trait:honest = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = honest
+		localization = trait_honest
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = craven }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = craven
+					trait:craven = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = craven
+		localization = trait_craven
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = brave }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = brave
+					trait:brave = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = brave
+		localization = trait_brave
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = shy }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = shy
+					trait:shy = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = shy
+		localization = trait_shy
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = gregarious }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = gregarious
+					trait:gregarious = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = gregarious
+		localization = trait_gregarious
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = ambitious }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = ambitious
+					trait:ambitious = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = ambitious
+		localization = trait_ambitious
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = content }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = content
+					trait:content = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = content
+		localization = trait_content
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = arbitrary }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = arbitrary
+					trait:arbitrary = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = arbitrary
+		localization = trait_arbitrary
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = just }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = just
+					trait:just = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = just
+		localization = trait_just
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = cynical }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = cynical
+					trait:cynical = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = cynical
+		localization = trait_cynical
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = zealous }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = zealous
+					trait:zealous = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = zealous
+		localization = trait_zealous
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = paranoid }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = paranoid
+					trait:paranoid = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = paranoid
+		localization = trait_paranoid
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = trusting }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = trusting
+					trait:trusting = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = trusting
+		localization = trait_trusting
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = compassionate }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = compassionate
+					trait:compassionate = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = compassionate
+		localization = trait_compassionate
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = callous }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = callous
+					trait:callous = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = callous
+		localization = trait_callous
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = sadistic }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = sadistic
+					trait:sadistic = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = sadistic
+		localization = trait_sadistic
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = stubborn }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = stubborn
+					trait:stubborn = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = stubborn
+		localization = trait_stubborn
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = fickle }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = fickle
+					trait:fickle = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = fickle
+		localization = trait_fickle
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = eccentric }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = eccentric
+					trait:eccentric = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = eccentric
+		localization = trait_eccentric
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = vengeful }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = vengeful
+					trait:vengeful = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = vengeful
+		localization = trait_vengeful
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = forgiving }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = forgiving
+					trait:forgiving = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		}
+		flag = forgiving
+		localization = trait_forgiving
+	}
+	#AGOT Added
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = authoritative }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = authoritative
+					trait:authoritative = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		} 
+		flag = authoritative
+		localization = trait_authoritative
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = rude }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = rude
+					trait:rude = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		} 
+		flag = rude
+		localization = trait_rude
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = inquisitive }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = inquisitive
+					trait:inquisitive = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		} 
+		flag = inquisitive
+		localization = trait_inquisitive
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = honorable }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = honorable
+					trait:honorable = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		} 
+		flag = honorable
+		localization = trait_honorable
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = ruthless }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = ruthless
+					trait:ruthless = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		} 
+		flag = ruthless
+		localization = trait_ruthless
+	}
+	send_option = {
+		is_shown = {
+			scope:actor = { has_trait = amoral }
+		}
+		is_valid = {
+			scope:recipient = {
+				NOR = {
+					has_trait = amoral
+					trait:amoral = {
+						any_opposite_trait = {
+							scope:recipient = { has_trait = prev }
+						}
+					}
+				}
+			}
+		} 
+		flag = amoral
+		localization = trait_amoral
+	}
+
+	send_options_exclusive = yes
+
+	on_send = {
+		switch = {#save which trait was chosen as scope:target_trait
+			trigger = yes
+			scope:lustful = {
+				trait:lustful = { save_scope_as = target_trait }
+			}
+			scope:chaste = {
+				trait:chaste = { save_scope_as = target_trait }
+			}
+			scope:gluttonous = {
+				trait:gluttonous = { save_scope_as = target_trait }
+			}
+			scope:temperate = {
+				trait:temperate = { save_scope_as = target_trait }
+			}
+			scope:greedy = {
+				trait:greedy = { save_scope_as = target_trait }
+			}
+			scope:generous = {
+				trait:generous = { save_scope_as = target_trait }
+			}
+			scope:lazy = {
+				trait:lazy = { save_scope_as = target_trait }
+			}
+			scope:diligent = {
+				trait:diligent = { save_scope_as = target_trait }
+			}
+			scope:wrathful = {
+				trait:wrathful = { save_scope_as = target_trait }
+			}
+			scope:calm = {
+				trait:calm = { save_scope_as = target_trait }
+			}
+			scope:patient = {
+				trait:patient = { save_scope_as = target_trait }
+			}
+			scope:impatient = {
+				trait:impatient = { save_scope_as = target_trait }
+			}
+			scope:arrogant = {
+				trait:arrogant = { save_scope_as = target_trait }
+			}
+			scope:humble = {
+				trait:humble = { save_scope_as = target_trait }
+			}
+			scope:deceitful = {
+				trait:deceitful = { save_scope_as = target_trait }
+			}
+			scope:honest = {
+				trait:honest = { save_scope_as = target_trait }
+			}
+			scope:craven = {
+				trait:craven = { save_scope_as = target_trait }
+			}
+			scope:brave = {
+				trait:brave = { save_scope_as = target_trait }
+			}
+			scope:shy = {
+				trait:shy = { save_scope_as = target_trait }
+			}
+			scope:gregarious = {
+				trait:gregarious = { save_scope_as = target_trait }
+			}
+			scope:ambitious = {
+				trait:ambitious = { save_scope_as = target_trait }
+			}
+			scope:content = {
+				trait:content = { save_scope_as = target_trait }
+			}
+			scope:arbitrary = {
+				trait:arbitrary = { save_scope_as = target_trait }
+			}
+			scope:just = {
+				trait:just = { save_scope_as = target_trait }
+			}
+			scope:cynical = {
+				trait:cynical = { save_scope_as = target_trait }
+			}
+			scope:zealous = {
+				trait:zealous = { save_scope_as = target_trait }
+			}
+			scope:paranoid = {
+				trait:paranoid = { save_scope_as = target_trait }
+			}
+			scope:trusting = {
+				trait:trusting = { save_scope_as = target_trait }
+			}
+			scope:compassionate = {
+				trait:compassionate = { save_scope_as = target_trait }
+			}
+			scope:callous = {
+				trait:callous = { save_scope_as = target_trait }
+			}
+			scope:sadistic = {
+				trait:sadistic = { save_scope_as = target_trait }
+			}
+			scope:stubborn = {
+				trait:stubborn = { save_scope_as = target_trait }
+			}
+			scope:fickle = {
+				trait:fickle = { save_scope_as = target_trait }
+			}
+			scope:eccentric = {
+				trait:eccentric = { save_scope_as = target_trait }
+			}
+			scope:vengeful = {
+				trait:vengeful = { save_scope_as = target_trait }
+			}
+			scope:forgiving = {
+				trait:forgiving = { save_scope_as = target_trait }
+			}
+			#AGOT Added
+			scope:authoritative = {
+				trait:authoritative = { save_scope_as = target_trait }
+			}
+			scope:rude = {
+				trait:rude = { save_scope_as = target_trait }
+			}
+			scope:inquisitive = {
+				trait:inquisitive = { save_scope_as = target_trait }
+			}
+			scope:honorable = {
+				trait:honorable = { save_scope_as = target_trait }
+			}
+			scope:ruthless = {
+				trait:ruthless = { save_scope_as = target_trait }
+			}
+			scope:amoral = {
+				trait:amoral = { save_scope_as = target_trait }
+			}
+			fallback = {
+				scope:actor = {
+					random_character_trait = {
+						limit = { has_trait_category = personality }
+						save_scope_as = target_trait
+					}
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			# Trait you're trying to make your ward gained is saved as scope:target_trait
+			trigger_event = bp2_character_interaction.1001
+			show_as_tooltip = {
+				add_prestige = minor_prestige_loss
+				add_stress = minor_stress_gain
+				add_opinion = {
+					target = scope:recipient
+					modifier = pleased_opinion
+					opinion = 20
+				}
+			}
+		}
+		scope:recipient = {
+			show_as_tooltip = {
+				switch = {#save which trait was chosen as scope:target_trait
+					trigger = yes
+					scope:lustful = {
+						trait:lustful = { save_scope_as = target_trait }
+					}
+					scope:chaste = {
+						trait:chaste = { save_scope_as = target_trait }
+					}
+					scope:gluttonous = {
+						trait:gluttonous = { save_scope_as = target_trait }
+					}
+					scope:temperate = {
+						trait:temperate = { save_scope_as = target_trait }
+					}
+					scope:greedy = {
+						trait:greedy = { save_scope_as = target_trait }
+					}
+					scope:generous = {
+						trait:generous = { save_scope_as = target_trait }
+					}
+					scope:lazy = {
+						trait:lazy = { save_scope_as = target_trait }
+					}
+					scope:diligent = {
+						trait:diligent = { save_scope_as = target_trait }
+					}
+					scope:wrathful = {
+						trait:wrathful = { save_scope_as = target_trait }
+					}
+					scope:calm = {
+						trait:calm = { save_scope_as = target_trait }
+					}
+					scope:patient = {
+						trait:patient = { save_scope_as = target_trait }
+					}
+					scope:impatient = {
+						trait:impatient = { save_scope_as = target_trait }
+					}
+					scope:arrogant = {
+						trait:arrogant = { save_scope_as = target_trait }
+					}
+					scope:humble = {
+						trait:humble = { save_scope_as = target_trait }
+					}
+					scope:deceitful = {
+						trait:deceitful = { save_scope_as = target_trait }
+					}
+					scope:honest = {
+						trait:honest = { save_scope_as = target_trait }
+					}
+					scope:craven = {
+						trait:craven = { save_scope_as = target_trait }
+					}
+					scope:brave = {
+						trait:brave = { save_scope_as = target_trait }
+					}
+					scope:shy = {
+						trait:shy = { save_scope_as = target_trait }
+					}
+					scope:gregarious = {
+						trait:gregarious = { save_scope_as = target_trait }
+					}
+					scope:ambitious = {
+						trait:ambitious = { save_scope_as = target_trait }
+					}
+					scope:content = {
+						trait:content = { save_scope_as = target_trait }
+					}
+					scope:arbitrary = {
+						trait:arbitrary = { save_scope_as = target_trait }
+					}
+					scope:just = {
+						trait:just = { save_scope_as = target_trait }
+					}
+					scope:cynical = {
+						trait:cynical = { save_scope_as = target_trait }
+					}
+					scope:zealous = {
+						trait:zealous = { save_scope_as = target_trait }
+					}
+					scope:paranoid = {
+						trait:paranoid = { save_scope_as = target_trait }
+					}
+					scope:trusting = {
+						trait:trusting = { save_scope_as = target_trait }
+					}
+					scope:compassionate = {
+						trait:compassionate = { save_scope_as = target_trait }
+					}
+					scope:callous = {
+						trait:callous = { save_scope_as = target_trait }
+					}
+					scope:sadistic = {
+						trait:sadistic = { save_scope_as = target_trait }
+					}
+					scope:stubborn = {
+						trait:stubborn = { save_scope_as = target_trait }
+					}
+					scope:fickle = {
+						trait:fickle = { save_scope_as = target_trait }
+					}
+					scope:eccentric = {
+						trait:eccentric = { save_scope_as = target_trait }
+					}
+					scope:vengeful = {
+						trait:vengeful = { save_scope_as = target_trait }
+					}
+					scope:forgiving = {
+						trait:forgiving = { save_scope_as = target_trait }
+					}
+					#AGOT Added
+					scope:authoritative = {
+						trait:authoritative = { save_scope_as = target_trait }
+					}
+					scope:rude = {
+						trait:rude = { save_scope_as = target_trait }
+					}
+					scope:inquisitive = {
+						trait:inquisitive = { save_scope_as = target_trait }
+					}
+					scope:honorable = {
+						trait:honorable = { save_scope_as = target_trait }
+					}
+					scope:ruthless = {
+						trait:ruthless = { save_scope_as = target_trait }
+					}
+					scope:amoral = {
+						trait:amoral = { save_scope_as = target_trait }
+					}
+				}
+				if = {
+					limit = { exists = scope:target_trait }
+					add_trait = scope:target_trait
+				}
+				add_opinion = {
+					target = scope:actor
+					modifier = admiration_opinion
+					opinion = 20
+				}
+			}
+		}
+	}
+
+	on_decline = {
+		scope:actor = {
+			# Trait you're trying to make your ward gained is saved as scope:target_trait
+			trigger_event = bp2_character_interaction.1002
+			show_as_tooltip = {
+				add_prestige = minor_prestige_loss
+				add_stress = medium_stress_gain
+				add_opinion = {
+					target = scope:recipient
+					modifier = disappointed_opinion
+					opinion = -20
+				}
+			}
+		}
+		scope:recipient = {
+			show_as_tooltip = {
+				add_opinion = {
+					target = scope:actor
+					modifier = confused_opinion
+					opinion = -20
+				}
+			}
+		}
+	}
+
+	auto_accept = no
+
+	ai_accept = {
+		base = 0 # Try to make it 0 for most interactions
+		opinion_modifier = { # Opinion Factor
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 0.5
+			desc = AI_OPINION_REASON
+		}
+
+		modifier = { # Perk boost
+			desc = influence_children_groomed_to_rule_perk_tt
+			trigger = {
+				scope:actor = { has_perk = groomed_to_rule_perk }
+			}
+			add = groomed_to_rule_value
+		}
+
+		modifier = { #more likely if you already have something in common
+			add = {
+				value = 5
+				if = {
+					limit = {
+						number_of_personality_traits_in_common = {
+							target = scope:recipient
+							value = 2
+						}
+					}
+					multiply = 2
+				}
+				else_if = {
+					limit = {
+						number_of_personality_traits_in_common = {
+							target = scope:recipient
+							value = 3
+						}
+					}
+					multiply = 3
+				}
+			}
+			number_of_personality_traits_in_common = {
+				target = scope:recipient
+				value >= 1
+			}
+			desc = we_are_alike_tt
+		}
+
+		modifier = { #less likely if you already have opposite traits
+			add = {
+				value = -5
+				if = {
+					limit = {
+						scope:recipient = {
+							number_of_opposing_personality_traits = {
+								target = scope:actor
+								value = 2
+							}
+						}
+					}
+					multiply = 2
+				}
+				else_if = {
+					limit = {
+						scope:recipient = {
+							number_of_opposing_personality_traits = {
+								target = scope:actor
+								value = 3
+							}
+						}
+					}
+					multiply = 3
+				}
+			}
+			scope:recipient = {
+				number_of_opposing_personality_traits = {
+					target = scope:actor
+					value >= 1
+				}
+			}
+			desc = we_are_NOT_alike_tt
+		}
+
+		modifier = { #adding your knowledge
+			add = {
+				value = scope:actor.learning
+				multiply = 0.5
+			}
+			desc = HAS_LEARNING_SKILL_REASON
+		}
+
+		modifier = { #adding your oratory skills
+			add = {
+				value = scope:actor.diplomacy
+				multiply = 0.5
+			}
+			desc = HAS_DIPLOMACY_SKILL_REASON
+		}
+
+		modifier = { #more likely with a Wet Nurse employed
+			exists = scope:actor.court_position:wet_nurse_court_position
+			add = 10
+			desc = HAS_WET_NURSE_REASON
+		}
+
+		modifier = { #more likely if chosen trait is a virtue in recipients faith
+			add = 10
+			switch = {
+				trigger = yes
+				scope:sadistic = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:sadistic
+					}
+				}
+				scope:lustful = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:lustful
+					}
+				}
+				scope:chaste = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:chaste
+					}
+				}
+				scope:gluttonous = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:gluttonous
+					}
+				}
+				scope:temperate = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:temperate
+					}
+				}
+				scope:greedy = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:greedy
+					}
+				}
+				scope:generous = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:generous
+					}
+				}
+				scope:lazy = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:lazy
+					}
+				}
+				scope:diligent = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:diligent
+					}
+				}
+				scope:wrathful = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:wrathful
+					}
+				}
+				scope:calm = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:calm
+					}
+				}
+				scope:patient = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:patient
+					}
+				}
+				scope:impatient = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:impatient
+					}
+				}
+				scope:arrogant = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:arrogant
+					}
+				}
+				scope:humble = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:humble
+					}
+				}
+				scope:deceitful = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:deceitful
+					}
+				}
+				scope:honest = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:honest
+					}
+				}
+				scope:craven = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:craven
+					}
+				}
+				scope:brave = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:brave
+					}
+				}
+				scope:shy = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:shy
+					}
+				}
+				scope:gregarious = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:gregarious
+					}
+				}
+				scope:ambitious = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:ambitious
+					}
+				}
+				scope:content = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:content
+					}
+				}
+				scope:arbitrary = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:arbitrary
+					}
+				}
+				scope:just = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:just
+					}
+				}
+				scope:cynical = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:cynical
+					}
+				}
+				scope:zealous = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:zealous
+					}
+				}
+				scope:paranoid = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:paranoid
+					}
+				}
+				scope:trusting = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:trusting
+					}
+				}
+				scope:compassionate = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:compassionate
+					}
+				}
+				scope:callous = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:callous
+					}
+				}
+				scope:stubborn = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:stubborn
+					}
+				}
+				scope:fickle = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:fickle
+					}
+				}
+				scope:eccentric = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:eccentric
+					}
+				}
+				scope:vengeful = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:vengeful
+					}
+				}
+				scope:forgiving = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:forgiving
+					}
+				}
+				#AGOT Added
+				scope:authoritative = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:authoritative
+					}
+				}
+				scope:rude = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:rude
+					}
+				}
+				scope:inquisitive = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:inquisitive
+					}
+				}
+				scope:honorable = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:honorable
+					}
+				}
+				scope:ruthless = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:ruthless
+					}
+				}
+				scope:amoral = {
+					scope:recipient.faith = {
+						trait_is_virtue = trait:amoral
+					}
+				}
+			}
+			desc = selected_virtuous_trait_tt
+		}
+
+		modifier = { #more likely if chosen trait is compatible with recipients childhood personality
+			add = 15
+			switch = {
+				trigger = yes
+				scope:sadistic = {
+					scope:recipient = {
+						OR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:lustful = {
+					scope:recipient = {
+						OR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:chaste = {
+					scope:recipient = {
+						has_trait = pensive
+					}
+				}
+				scope:gluttonous = {
+					scope:recipient = {
+						OR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:temperate = {
+					scope:recipient = {
+						OR = {
+							has_trait = pensive
+							has_trait = charming
+						}
+					}
+				}
+				scope:greedy = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:generous = {
+					scope:recipient = {
+						OR = {
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				scope:lazy = {
+					scope:recipient = {
+						has_trait = rowdy
+					}
+				}
+				scope:diligent = {
+					scope:recipient = {
+						OR = {
+							has_trait = pensive
+							has_trait = curious
+						}
+					}
+				}
+				scope:wrathful = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:calm = {
+					scope:recipient = {
+						has_trait = pensive
+					}
+				}
+				scope:patient = {
+					scope:recipient = {
+						has_trait = pensive
+					}
+				}
+				scope:impatient = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:arrogant = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:humble = {
+					scope:recipient = {
+						has_trait = pensive
+					}
+				}
+				scope:deceitful = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = charming
+						}
+					}
+				}
+				scope:honest = {
+					scope:recipient = {
+						OR = {
+							has_trait = pensive
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:craven = {
+					scope:recipient = {
+						has_trait = pensive
+					}
+				}
+				scope:brave = {
+					scope:recipient = {
+						OR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:shy = {
+					scope:recipient = {
+						has_trait = pensive
+					}
+				}
+				scope:gregarious = {
+					scope:recipient = {
+						OR = {
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				scope:ambitious = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = curious
+						}
+					}
+				}
+				scope:content = {
+					scope:recipient = {
+						OR = {
+							has_trait = pensive
+							has_trait = charming
+						}
+					}
+				}
+				scope:arbitrary = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:just = {
+					scope:recipient = {
+						OR = {
+							has_trait = pensive
+							has_trait = charming
+						}
+					}
+				}
+				scope:cynical = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = pensive
+						}
+					}
+				}
+				scope:zealous = {
+					scope:recipient = {
+						OR = {
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				scope:paranoid = {
+					scope:recipient = {
+						OR = {
+							has_trait = pensive
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:trusting = {
+					scope:recipient = {
+						OR = {
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				scope:compassionate = {
+					scope:recipient = {
+						OR = {
+							has_trait = charming
+							has_trait = pensive
+						}
+					}
+				}
+				scope:callous = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:stubborn = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = curious
+						}
+					}
+				}
+				scope:fickle = {
+					scope:recipient = {
+						OR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:eccentric = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				scope:vengeful = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:forgiving = {
+					scope:recipient = {
+						OR = {
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				#AGOT Added
+				scope:authoritative = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:rude = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:inquisitive = {
+					scope:recipient = {
+						OR = {
+							has_trait = curious
+							has_trait = pensive
+						}
+					}
+				}
+				scope:honorable = {
+					scope:recipient = {
+						OR = {
+							has_trait = pensive
+							has_trait = charming
+						}
+					}
+				}
+				scope:ruthless = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:amoral = {
+					scope:recipient = {
+						OR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+			}
+			desc = has_compatible_personality_tt
+		}
+
+		modifier = { #less likely if chosen trait is incompatible with recipients childhood personality
+			add = -15
+			switch = {
+				trigger = yes
+				scope:sadistic = {
+					scope:recipient = {
+						NOR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:lustful = {
+					scope:recipient = {
+						NOR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:chaste = {
+					scope:recipient = {
+						NOT = { has_trait = pensive }
+					}
+				}
+				scope:gluttonous = {
+					scope:recipient = {
+						NOR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:temperate = {
+					scope:recipient = {
+						NOR = {
+							has_trait = pensive
+							has_trait = charming
+						}
+					}
+				}
+				scope:greedy = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:generous = {
+					scope:recipient = {
+						NOR = {
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				scope:lazy = {
+					scope:recipient = {
+						NOT = { has_trait = rowdy }
+					}
+				}
+				scope:diligent = {
+					scope:recipient = {
+						NOR = {
+							has_trait = pensive
+							has_trait = curious
+						}
+					}
+				}
+				scope:wrathful = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:calm = {
+					scope:recipient = {
+						NOT = { has_trait = pensive }
+					}
+				}
+				scope:patient = {
+					scope:recipient = {
+						NOT = { has_trait = pensive }
+					}
+				}
+				scope:impatient = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:arrogant = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:humble = {
+					scope:recipient = {
+						NOT = { has_trait = pensive }
+					}
+				}
+				scope:deceitful = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = charming
+						}
+					}
+				}
+				scope:honest = {
+					scope:recipient = {
+						NOR = {
+							has_trait = pensive
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:craven = {
+					scope:recipient = {
+						NOT = { has_trait = pensive }
+					}
+				}
+				scope:brave = {
+					scope:recipient = {
+						NOR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:shy = {
+					scope:recipient = {
+						NOT = { has_trait = pensive }
+					}
+				}
+				scope:gregarious = {
+					scope:recipient = {
+						NOR = {
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				scope:ambitious = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = curious
+						}
+					}
+				}
+				scope:content = {
+					scope:recipient = {
+						NOR = {
+							has_trait = pensive
+							has_trait = charming
+						}
+					}
+				}
+				scope:arbitrary = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:just = {
+					scope:recipient = {
+						NOR = {
+							has_trait = pensive
+							has_trait = charming
+						}
+					}
+				}
+				scope:cynical = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = pensive
+						}
+					}
+				}
+				scope:zealous = {
+					scope:recipient = {
+						NOR = {
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				scope:paranoid = {
+					scope:recipient = {
+						NOR = {
+							has_trait = pensive
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:trusting = {
+					scope:recipient = {
+						NOR = {
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				scope:compassionate = {
+					scope:recipient = {
+						NOR = {
+							has_trait = charming
+							has_trait = pensive
+						}
+					}
+				}
+				scope:callous = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:stubborn = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = curious
+						}
+					}
+				}
+				scope:fickle = {
+					scope:recipient = {
+						NOR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:eccentric = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				scope:vengeful = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:forgiving = {
+					scope:recipient = {
+						NOR = {
+							has_trait = charming
+							has_trait = curious
+						}
+					}
+				}
+				#AGOT Added
+				scope:authoritative = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:rude = {
+					scope:recipient = {
+						NOR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:inquisitive = {
+					scope:recipient = {
+						NOR = {
+							has_trait = curious
+							has_trait = pensive
+						}
+					}
+				}
+				scope:honorable = {
+					scope:recipient = {
+						OR = {
+							has_trait = pensive
+							has_trait = charming
+						}
+					}
+				}
+				scope:ruthless = {
+					scope:recipient = {
+						OR = {
+							has_trait = bossy
+							has_trait = rowdy
+						}
+					}
+				}
+				scope:amoral = {
+					scope:recipient = {
+						OR = {
+							has_trait = curious
+							has_trait = rowdy
+						}
+					}
+				}
+			}
+			desc = has_incompatible_personality_tt
+		}
+
+		modifier = { #less likely if chosen trait is a sin in recipients faith
+			add = -10
+			switch = {
+				trigger = yes
+				scope:sadistic = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:sadistic
+					}
+				}
+				scope:lustful = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:lustful
+					}
+				}
+				scope:chaste = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:chaste
+					}
+				}
+				scope:gluttonous = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:gluttonous
+					}
+				}
+				scope:temperate = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:temperate
+					}
+				}
+				scope:greedy = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:greedy
+					}
+				}
+				scope:generous = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:generous
+					}
+				}
+				scope:lazy = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:lazy
+					}
+				}
+				scope:diligent = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:diligent
+					}
+				}
+				scope:wrathful = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:wrathful
+					}
+				}
+				scope:calm = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:calm
+					}
+				}
+				scope:patient = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:patient
+					}
+				}
+				scope:impatient = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:impatient
+					}
+				}
+				scope:arrogant = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:arrogant
+					}
+				}
+				scope:humble = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:humble
+					}
+				}
+				scope:deceitful = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:deceitful
+					}
+				}
+				scope:honest = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:honest
+					}
+				}
+				scope:craven = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:craven
+					}
+				}
+				scope:brave = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:brave
+					}
+				}
+				scope:shy = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:shy
+					}
+				}
+				scope:gregarious = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:gregarious
+					}
+				}
+				scope:ambitious = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:ambitious
+					}
+				}
+				scope:content = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:content
+					}
+				}
+				scope:arbitrary = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:arbitrary
+					}
+				}
+				scope:just = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:just
+					}
+				}
+				scope:cynical = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:cynical
+					}
+				}
+				scope:zealous = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:zealous
+					}
+				}
+				scope:paranoid = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:paranoid
+					}
+				}
+				scope:trusting = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:trusting
+					}
+				}
+				scope:compassionate = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:compassionate
+					}
+				}
+				scope:callous = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:callous
+					}
+				}
+				scope:stubborn = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:stubborn
+					}
+				}
+				scope:fickle = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:fickle
+					}
+				}
+				scope:eccentric = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:eccentric
+					}
+				}
+				scope:vengeful = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:vengeful
+					}
+				}
+				scope:forgiving = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:forgiving
+					}
+				}
+				#AGOT Added
+				scope:authoritative = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:authoritative
+					}
+				}
+				scope:rude = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:rude
+					}
+				}
+				scope:inquisitive = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:inquisitive
+					}
+				}
+				scope:honorable = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:honorable
+					}
+				}
+				scope:ruthless = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:ruthless
+					}
+				}
+				scope:amoral = {
+					scope:recipient.faith = {
+						trait_is_sin = trait:amoral
+					}
+				}
+			}
+			desc = selected_sinful_trait_tt
+		}
+
+		modifier = { #more likely if actor is afraid of you
+			add = intimidated_halved_reason_value
+			scope:recipient = {
+				target_is_liege_or_above = scope:actor
+				has_dread_level_towards = {
+					target = scope:actor
+					level = 1
+				}
+			}
+			desc = INTIMIDATED_REASON
+		}
+		modifier = { #more likely if actor is afraid of you
+			add = cowed_halved_reason_value
+			scope:recipient = {
+				target_is_liege_or_above = scope:actor
+				has_dread_level_towards = {
+					target = scope:actor
+					level = 2
+				}
+			}
+			desc = COWED_REASON
+		}
+		modifier = { #less likely if actor already has 3 personality traits
+			add = -50
+			scope:recipient = {
+				number_of_personality_traits = 3
+			}
+			desc = has_three_traits_already
+		}
+	}
+
+	# AI
+	ai_potential = {
+		any_relation = { type = ward }
+	}
+	ai_frequency_by_tier = {
+		barony = 0
+		county = 36
+		duchy = 12
+		kingdom = 12
+		empire = 12
+		hegemony = 12
+	}
+	ai_targets = {
+		ai_recipients = courtiers
+	}
+	ai_will_do = {
+		base = -100
+		modifier = { # If the recipient is a player, do not bother sending
+			factor = 0
+			scope:recipient = {
+				is_ai = no
+			}
+		}
+		modifier = { #we don't want characters running around with 4 traits
+			add = -100
+			scope:recipient = {
+				number_of_personality_traits = 4
+			}
+		}
+		modifier = {
+			add = 50
+			ai_honor > 0
+		}
+		modifier = {
+			add = 50
+			ai_compassion > 0
+		}
+		modifier = {
+			add = 50
+			ai_sociability > 0
+		}
+		modifier = {
+			add = 50
+			ai_boldness > 0
+		}
+		modifier = {
+			add = 50
+			scope:paranoid = yes
+		}
+	}
+}

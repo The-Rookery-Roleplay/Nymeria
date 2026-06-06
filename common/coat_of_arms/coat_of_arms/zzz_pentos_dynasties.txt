@@ -1,0 +1,200 @@
+﻿# ### Pentos
+# dynn_Myrakis = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_teal"
+# 	color2 = "agot_white"
+# 	color3 = "agot_yellow"
+# 	colored_emblem = {
+# 		texture = "ce_oak_leaf.dds"
+# 		color1 = "agot_white"
+# 		instance = {
+# 			scale = { 0.700000 0.700000 }
+# 		}
+# 	}
+# }
+
+# dynn_Draz = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_teal"
+# 	color2 = "agot_white"
+# 	color3 = "agot_yellow"
+# 	colored_emblem = {
+# 		texture = "ce_hand.dds"
+# 		color1 = "agot_white"
+# 		instance = {
+# 			scale = { 0.700000 0.700000 }
+# 		}
+# 	}
+# }
+# house_Red_Draz = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_teal"
+# 	color2 = "agot_white"
+# 	color3 = "agot_yellow"
+# 	colored_emblem = {
+# 		texture = "ce_hand.dds"
+# 		color1 = "agot_red"
+# 		instance = {
+# 			scale = { 0.700000 0.700000 }
+# 		}
+# 	}
+# }
+# house_Gold_Draz = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_teal"
+# 	color2 = "agot_white"
+# 	color3 = "agot_yellow"
+# 	colored_emblem = {
+# 		texture = "ce_hand.dds"
+# 		color1 = "agot_yellow"
+# 		instance = {
+# 			scale = { 0.700000 0.700000 }
+# 		}
+# 	}
+# }
+
+# dynn_Haratis = {
+# 	pattern = "pattern_horizontal_split_02.dds"
+# 	color1 = "agot_blue_grey"
+# 	color2 = "agot_white"
+# 	color3 = "agot_yellow"
+# }
+
+# dynn_Estatis = {
+# 	pattern = "pattern__solid_designer.dds"
+# 	color1 = "agot_green"
+# 	color2 = "agot_white"
+# 	color3 = "agot_black"
+# 	colored_emblem = {
+# 		texture = "ce_tower.dds"
+# 		color1 = "agot_white"
+# 		color2 = "agot_black"
+# 		instance = {
+# 			scale = { 0.880000 0.880000 }
+# 		}
+# 	}
+# }
+
+# dynn_Quaranis = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_indigo"
+# 	color2 = "agot_white"
+# 	color3 = "black"
+# 	colored_emblem = {
+# 		texture = "ce_horse_shoe.dds"
+# 		color1 = "agot_white"
+# 		color2 = "black"
+# 		instance = {
+# 			position = { 0.500000 0.700000 }
+# 			scale = { 0.500000 0.500000 }
+# 		}
+# 		instance = {
+# 			position = { 0.700000 0.300000 }
+# 			scale = { 0.500000 0.500000 }
+# 			depth = 1.010000
+# 		}
+# 		instance = {
+# 			position = { 0.300000 0.300000 }
+# 			scale = { 0.500000 0.500000 }
+# 			depth = 2.010000
+# 		}
+# 	}
+# }
+
+# dynn_Narratys = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_indigo"
+# 	color2 = "agot_white"
+# 	color3 = "agot_yellow"
+# 	colored_emblem = {
+# 		texture = "ce_sword_simple.dds"
+# 		color1 = "white"
+# 		color2 = "agot_white"
+# 		instance = {
+# 			scale = { 0.930000 0.930000 }
+# 		}
+# 	}
+# }
+
+# dynn_Togaraz = {
+# 	pattern = "pattern__solid_designer.dds"
+# 	color1 = "agot_teal"
+# 	color2 = "agot_white"
+# 	color3 = "agot_black"
+# 	colored_emblem = {
+# 		texture = "ce_horn.dds"
+# 		color1 = "agot_white"
+# 		color2 = "agot_blue_dark"
+# 		instance = {
+# 			scale = { 0.880000 0.880000 }
+# 		}
+# 	}
+# }
+
+# dynn_Garvanis = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_teal"
+# 	color2 = "white"
+# 	color3 = "agot_blue_dark"
+# 	colored_emblem = {
+# 		texture = "ce_fess_checky.dds"
+# 		color1 = "white"
+# 		color2 = "agot_blue_dark"
+# 	}
+# }
+
+# dynn_Rotilys = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_blue_grey"
+# 	color2 = "white"
+# 	color3 = "blue"
+# 	colored_emblem = {
+# 		texture = "ce_per_bend_nebuly.dds"
+# 		color1 = "white"
+# 		color2 = "agot_blue_grey"
+# 	}
+# }
+
+# dynn_Samalaz = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_blue_dark"
+# 	color2 = "white"
+# 	color3 = "agot_yellow"
+# 	colored_emblem = {
+# 		texture = "ce_fish.dds"
+# 		color1 = "white"
+# 		color2 = "agot_yellow"
+# 		instance = {
+# 			scale = { 0.700000 0.700000 }
+# 		}
+# 	}
+# }
+
+# dynn_Diluzis = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_blue_dark"
+# 	color2 = "white"
+# 	color3 = "yellow"
+# 	colored_emblem = {
+# 		texture = "ce_ant.dds"
+# 		color1 = "white"
+# 		instance = {
+# 			scale = { 0.700000 0.700000 }
+# 		}
+# 	}
+# }
+
+# dynn_Iturraz = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_blue"
+# 	color2 = "agot_white"
+# 	color3 = "yellow"
+# 	colored_emblem = {
+# 		texture = "ce_grape_tree.dds"
+# 		color1 = "agot_white"
+# 		color2 = "agot_white"
+# 		instance = {
+# 			scale = { 0.700000 0.700000 }
+# 		}
+# 	}
+# }

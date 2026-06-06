@@ -1,0 +1,1000 @@
+﻿#########################################
+# Check for other mod through existence of modded trait
+# Set a global flag if installed
+check_if_trait_mod_installed = {
+	if = {
+		limit = { is_ai= no } #for player only
+		if = {
+			limit = {
+				NOT = { exists = global_var:$MODNAME$_mod_installed }
+				exists = trait:$TRAITNAME$
+			}
+			set_global_variable = {
+				name = $MODNAME$_mod_installed
+				value = yes
+			}
+		}
+		else_if = {
+			limit = { 
+				exists = global_var:$MODNAME$_mod_installed
+				NOT = { exists = trait:$TRAITNAME$ }
+			}
+			remove_global_variable = $MODNAME$_mod_installed
+		}	
+	}
+}
+########################################
+adjust_skill = {
+	#Init
+	if = {
+		limit = { NOT = {has_variable = $SKILL$_adjustment } }
+		set_variable = {
+			name = $SKILL$_adjustment
+			value = 0
+			}
+	}
+	set_variable = {
+	   name = $SKILL$_raw
+	   value = {
+		  value = $SKILL$
+		  add = var:$SKILL$_adjustment #0 if not defined
+	   }
+	}
+	## Recalculate adjustment
+	if = { #Remove old modifier
+		limit = { has_character_modifier = $SKILL$_adjustment_modifier }
+		remove_character_modifier = $SKILL$_adjustment_modifier
+	}
+	else_if = { #edge case for mod updating from previous version (i.e., when adjustment>0 but no modifier)
+		limit = { var:$SKILL$_adjustment > 0 }
+		add_$SKILL$_skill = var:$SKILL$_adjustment
+	}
+	#Reset adjustment
+	set_variable = {
+		name = $SKILL$_adjustment
+		value = 0
+		}
+	if = {
+		limit = { 
+			NOT = { exists = global_var:no_more_gods_disable_flag } #Check if adjustments are disabled
+			OR = {
+				is_ai = no #Player always gets adjustment
+				NOR = { 
+					exists = global_var:no_more_gods_player_only_flag #Check if adjustments are restricted to player only
+					AND = {
+						NOT = {exists = global_var:no_more_gods_no_exceptions_flag} # This optional flag would disable the exceptions below 
+						OR = { 
+							has_trait = conqueror #No adjustment for the conquerors
+							has_character_modifier = the_great_khan_modifier # No adjustment for the Great Khan
+							has_trait = greatest_of_khans #Definitely no adjustment for the Greatest of Khans
+						}
+					}
+				}
+			}
+		}
+		#Every point after the threshold is worth only a half
+		set_local_variable = { 		#Local variable for skill efficiency thresholds
+			name = threshold
+			value = var:$SKILL$_threshold
+		}
+		if = {
+			limit = { var:$SKILL$_raw > local_var:threshold }
+			#Every point after the threshold worth only a half (1 - 1/2)
+			change_variable = {
+				name = $SKILL$_adjustment
+				add = {
+					value = var:$SKILL$_raw
+					subtract = local_var:threshold
+					divide = 2
+				}
+			}
+		}
+		#Every point after (threshold + 2*softness) is worth only a third (1 - 1/2 - 1/6)
+		change_local_variable  = {
+			name = threshold
+			add = {
+					value = global_var:no_more_gods_softness
+					multiply = 2
+				}
+		}
+		if = {
+			limit = { var:$SKILL$_raw > local_var:threshold }
+			#Every point after the threshold worth only a third (1 - 1/2 - 1/6)
+			change_variable = {
+				name = $SKILL$_adjustment
+				add = {
+					value = var:$SKILL$_raw
+					subtract = local_var:threshold
+					divide = 6
+				}
+			}
+		}
+		#Every point after (threshold + (2+3)*softness) worth only a fourth (1 - 1/2 - 1/6 - 1/12)
+		change_local_variable  = {
+			name = threshold
+			add = {
+					value = global_var:no_more_gods_softness
+					multiply = 3
+				}
+		}
+		if = {
+			limit = { var:$SKILL$_raw > local_var:threshold }
+			#Every point after the threshold worth only a fourth (1 - 1/2 - 1/6 - 1/12)
+			change_variable = {
+				name = $SKILL$_adjustment
+				add = {
+					value = var:$SKILL$_raw
+					subtract = local_var:threshold
+					divide = 12
+				}
+			}
+		}
+		#Every point after (threshold + (2+3+4)*softness) worth only a tenth (1 - 1/2 - 1/6 - 1/12 - 3/20)
+		change_local_variable  = {
+			name = threshold
+			add = {
+					value = global_var:no_more_gods_softness
+					multiply = 4
+				}
+		}
+		if = {
+			limit = { var:$SKILL$_raw > local_var:threshold }
+			#Every point after the threshold worth only a tenth (1 - 1/2 - 1/6 - 1/12 - 3/20)
+			change_variable = {
+				name = $SKILL$_adjustment
+				add = {
+					value = var:$SKILL$_raw
+					subtract = local_var:threshold
+					multiply = 3
+					divide = 20
+				}
+			}
+		}
+		remove_local_variable = threshold #cleanup
+	}
+	#Ensure that an adjustment can't increase the skill
+	clamp_variable = {name = $SKILL$_adjustment max = 100 min = 0}
+	#Round to integer
+	set_variable = {
+		name = $SKILL$_adjustment
+		value = {
+			value = var:$SKILL$_adjustment
+			round = yes
+		}
+	}
+	
+	if = {
+		limit = { var:$SKILL$_adjustment > 0 }
+		add_character_modifier = $SKILL$_adjustment_modifier
+	}
+	
+}
+
+adjust_skill_threshold = {
+	#Initialize global softness value if it doesn't exist
+	if = {
+		limit = { NOT = { exists = global_var:no_more_gods_softness } }
+		set_global_variable = {
+			name = no_more_gods_softness
+			value = 5
+		}
+	}
+	## Basic mode where the thresholds are constant
+	if = {
+		limit = { exists = global_var:no_more_gods_basic_only_flag }
+		set_variable = {
+		   name = $SKILL$_threshold
+		   value = 12
+		   }
+	}
+	else = {
+		## Advanced mode where the thresholds depend on education, perks and traits
+		###Init
+		set_variable = {
+		   name = $SKILL$_threshold
+		   value = {
+			  value = 6
+			  add = {
+				  value = var:education_level
+				  multiply  = 0.5
+			   }
+		   }
+		}
+		####Having relevant education counts as a bonus
+		if = {
+			#limit = { check_trait_modded = { TRAIT = education_$SKILL$ } }
+			limit = { 
+				#exists = education_$SKILL$
+				AND = {
+					NOT = {$SKILL$ = prowess}
+					has_trait = education_$SKILL$
+				}
+			}
+			set_variable = {
+			   name = $SKILL$_threshold
+			   value = {
+				  value = var:$SKILL$_threshold
+				  add = {
+					  value = var:education_level
+					  multiply  = 1.0
+				   }
+			   }
+			}
+		}
+		####Lifestyle experience matters
+		if = {
+			limit = { 
+				NOT = {$SKILL$ = prowess}
+				has_variable = $SKILL$_lifestyle_perks
+				var:$SKILL$_lifestyle_perks > 0
+			}
+			set_variable = {
+			   name = $SKILL$_threshold
+			   value = {
+				  value = var:$SKILL$_threshold
+				  add = {
+					  value = var:$SKILL$_lifestyle_perks
+					  multiply  = 0.2
+				   }
+			   }
+			}
+		}
+		#####Deal with cross-skill interactions, including hybrid lifestyles from More Lifestyles (these get slightly higher total, but are also less specialized)
+		
+		####Prowess lifestyle experience
+		if = {
+			limit = { 
+				exists = global_var:more_lifestyles_mod_installed
+				var:prowess_lifestyle_perks > 0
+				OR = {
+					$SKILL$ = prowess
+					$SKILL$ = martial
+				}
+			}
+			if = {
+				limit = { $SKILL$ = prowess}
+				set_local_variable = {
+					name = lifestyle_factor
+					value = 0.75
+				}
+			}
+			else = {
+				set_local_variable = {
+					name = lifestyle_factor
+					value = 0.5
+				}
+			}	
+			set_variable = {
+			   name = $SKILL$_threshold
+			   value = {
+				  value = var:$SKILL$_threshold
+				  add = {
+					  value = var:prowess_lifestyle_perks 
+					  multiply  = 0.2
+					  multiply  = local_var:lifestyle_factor
+				   }
+			   }
+			}
+		}
+		
+		####Leadership lifestyle experience
+		if = {
+			limit = { 
+				exists = global_var:more_lifestyles_mod_installed
+				var:leadership_lifestyle_perks > 0
+				OR = {
+					$SKILL$ = diplomacy
+					$SKILL$ = stewardship
+				}
+			}
+			if = {
+				limit = { $SKILL$ = stewardship}
+				set_local_variable = {
+					name = lifestyle_factor
+					value = 0.75
+				}
+			}
+			else = {
+				set_local_variable = {
+					name = lifestyle_factor
+					value = 0.5
+				}
+			}	
+			set_variable = {
+			   name = $SKILL$_threshold
+			   value = {
+				  value = var:$SKILL$_threshold
+				  add = {
+					  value = var:leadership_lifestyle_perks 
+					  multiply  = 0.2
+					  multiply  = local_var:lifestyle_factor
+				   }
+			   }
+			}
+		}
+						
+		
+		#Major education contribution (3/4 weight)
+		if = {
+			limit = {
+				exists = global_var:more_lifestyles_mod_installed
+				OR = {
+					AND = {
+					   $SKILL$ = stewardship
+					   has_trait = education_nht_leadership
+					}
+					AND = {
+					   $SKILL$ = prowess
+					   has_trait = education_nht_prowess
+					   
+					}
+				}
+			}
+			set_variable = {
+			   name = $SKILL$_threshold
+			   value = {
+				  value = var:$SKILL$_threshold
+				  add = {
+					  value = var:education_level
+					  multiply  = 0.75
+				   }
+			   }
+			}
+		}
+		#Middle education contribution (1/2 weight)
+		if = {
+			limit = {
+				exists = global_var:more_lifestyles_mod_installed
+				OR = {
+					AND = {
+					   $SKILL$ = diplomacy
+					   #check_trait_modded = { TRAIT = education_nht_leadership }
+					   #exists = education_nht_leadership
+					   has_trait = education_nht_leadership
+					   
+					}
+					AND = {
+					   $SKILL$ = martial
+					   #check_trait_modded = { TRAIT = education_nht_prowess }
+					   #exists = education_nht_prowess
+					   has_trait = education_nht_prowess
+					   
+					}
+				}
+			}
+			set_variable = {
+			   name = $SKILL$_threshold
+			   value = {
+				  value = var:$SKILL$_threshold
+				  add = {
+					  value = var:education_level
+					  multiply  = 0.50
+				   }
+			   }
+			}
+		}
+		#Minor education contribution (1/3 weight)
+		if = {
+			limit = {
+				AND = {
+				   has_trait = education_martial
+				   $SKILL$ = prowess
+				}
+			}
+			set_variable = {
+			   name = $SKILL$_threshold
+			   value = {
+				  value = var:$SKILL$_threshold
+				  add = {
+					  value = var:education_level
+					  multiply  = 0.33
+				   }
+			   }
+			}
+		}
+		###Effect of Traits
+		#Intellect has a mild effect on all mental skills, maluses are stronger
+		if = {
+			limit = {
+				OR = {
+				   $SKILL$ = diplomacy
+				   $SKILL$ = martial
+				   $SKILL$ = stewardship
+				   $SKILL$ = intrigue
+				   $SKILL$ = learning
+				}
+			}
+			#Genius
+			if = {
+				limit = { has_trait = intellect_good_3 }
+				change_variable = { name = $SKILL$_threshold   add = 2.25 }
+			}
+			#Intelligent
+			else_if = {
+				limit = { has_trait = intellect_good_2 }
+				change_variable = { name = $SKILL$_threshold   add = 1.5 }
+			}
+			#Quick
+			else_if = {
+				limit = { has_trait = intellect_good_1 }
+				change_variable = { name = $SKILL$_threshold   add = 0.75 }
+			}
+			#Slow
+			else_if = {
+				limit = { has_trait = intellect_bad_1 }
+				change_variable = { name = $SKILL$_threshold   subtract = 1.5 }
+			}
+			#Stupid
+			else_if = {
+				limit = { has_trait = intellect_bad_2 }
+				change_variable = { name = $SKILL$_threshold   subtract = 3 }
+			}
+			#Imbecile
+			else_if = {
+				limit = { has_trait = intellect_bad_3 }
+				change_variable = { name = $SKILL$_threshold   subtract = 4.5 }
+			}
+			#Shrewd
+			if = {
+				limit = { has_trait = shrewd }
+				change_variable = { name = $SKILL$_threshold   add = 0.5 }
+			}
+			#Dull
+			else_if = {
+				limit = { has_trait = dull }
+				change_variable = { name = $SKILL$_threshold   subtract = 1 }
+			}
+			#Blind (doing anything is harder when blind)
+			if = {
+				limit = { has_trait = blind }
+				change_variable = { name = $SKILL$_threshold   subtract = 1 }
+			}
+		}
+		# Physique has a large contribution to prowess
+		if = {
+			limit = { $SKILL$ = prowess }
+			#Amazonian
+			if = {
+				limit = { has_trait = physique_good_3 }
+					change_variable = { name = $SKILL$_threshold   add = 4.5 }
+			}
+			#Robust
+			else_if = {
+				limit = { has_trait = physique_good_2 }
+					change_variable = { name = $SKILL$_threshold   add = 3.0 }
+			}
+			#Hale
+			else_if = {
+				limit = { has_trait = physique_good_1 }
+					change_variable = { name = $SKILL$_threshold   add = 1.5 }
+			}
+			#Feeble
+			else_if = {
+				limit = { has_trait = physique_bad_1 }
+				change_variable = { name = $SKILL$_threshold   subtract = 2.5 }
+			}
+			#Frail
+			else_if = {
+				limit = { has_trait = physique_bad_2 }
+				change_variable = { name = $SKILL$_threshold   subtract = 5.0 }
+			}
+			#Delicate
+			else_if = {
+				limit = { has_trait = physique_bad_3 }
+				change_variable = { name = $SKILL$_threshold   subtract = 7.5 }
+			}
+			#Giant
+			if = {
+				limit = { has_trait = giant }
+					change_variable = { name = $SKILL$_threshold   add = 3.0 }
+			}
+			#Strong
+			if = {
+				limit = { has_trait = strong }
+					change_variable = { name = $SKILL$_threshold   add = 1.0 }
+			}
+			#Weak
+			else_if = {
+				limit = { has_trait = weak }
+				change_variable = { name = $SKILL$_threshold   subtract = 1.5 }
+			}
+			#Men are stronger
+			if = {
+				limit = { is_male = no } 
+				change_variable = { name = $SKILL$_threshold   subtract = 2.5 }
+			}
+			#Older people are weaker
+			if = {
+				limit = { age > 40 }
+				#temporary variable for how many decades the character is above the age threshold
+				set_local_variable = {
+				   name = age_delta
+				   value = {
+					  value = age
+					  subtract = 40
+					  divide = 10
+				   }
+			   }
+				set_variable = {
+				   name = $SKILL$_threshold
+				   value = {
+					  value = var:$SKILL$_threshold
+					  subtract = { value = local_var:age_delta   multiply = local_var:age_delta} #threshold decreased by dt^2
+				   }
+				}
+			}
+			#One-legged
+			if = {
+				limit = { has_trait = one_legged }
+				change_variable = { name = $SKILL$_threshold   subtract = 2 }
+			}
+			#Gout ridden
+			if = {
+				limit = { has_trait = gout_ridden }
+				change_variable = { name = $SKILL$_threshold   subtract = 1 }
+			}
+			#Brave
+			if = {
+				limit = { has_trait = brave }
+				change_variable = { name = $SKILL$_threshold   add = 1.5 }
+			}	
+			#Craven
+			else_if = {
+				limit = { has_trait = craven }
+				change_variable = { name = $SKILL$_threshold   subtract = 2.0 }
+			}
+			#Clouded eyes
+			if = {
+				limit = { has_trait = clouded_eyes }
+				change_variable = { name = $SKILL$_threshold   subtract = 2.0 }
+				if = {
+					limit = { has_trait_xp = { trait = clouded_eyes  value >= 50 } }
+					change_variable = { name = $SKILL$_threshold   subtract = 2.0 }
+				}
+			}
+			#Faltering heart
+			if = {
+				limit = { has_trait = faltering_heart }
+				change_variable = { name = $SKILL$_threshold   subtract = 2.0 }
+				if = {
+					limit = { has_trait_xp = { trait = faltering_heart  value >= 50 } }
+					change_variable = { name = $SKILL$_threshold   subtract = 2.0 }
+				}
+			}
+			#Fragile bones
+			if = {
+				limit = { has_trait = fragile_bones }
+				change_variable = { name = $SKILL$_threshold   subtract = 2.0 }
+				if = {
+					limit = { has_trait_xp = { trait = fragile_bones  value >= 50 } }
+					change_variable = { name = $SKILL$_threshold   subtract = 2.0 }
+				}
+			}
+			#Blindness sets prowess threshold to zero
+			if = {
+				limit = { has_trait = blind }
+				set_variable = {
+				   name = $SKILL$_threshold
+				   value = 0
+				}
+			}
+		}
+		
+		#Beauty has an effect on diplomacy, maluses are stronger
+		if = {
+			limit = { $SKILL$ = diplomacy }
+			#Beautiful
+			if = {
+				limit = { has_trait = beauty_good_3 }
+					change_variable = { name = $SKILL$_threshold   add = 3.0 }
+			}
+			#Attractive
+			else_if = {
+				limit = { has_trait = beauty_good_2 }
+				change_variable = { name = $SKILL$_threshold   add = 2.0 }
+			}
+			#Comely
+			else_if = {
+				limit = { has_trait = beauty_good_1 }
+				change_variable = { name = $SKILL$_threshold   add = 1.0 }
+			}
+			#Homely
+			else_if = {
+				limit = { has_trait = beauty_bad_1 }
+				change_variable = { name = $SKILL$_threshold   subtract = 2 }
+			}
+			#Ugly
+			else_if = {
+				limit = { has_trait = beauty_bad_2 }
+				change_variable = { name = $SKILL$_threshold   subtract = 4 }
+			}
+			#Hideous
+			else_if = {
+				limit = { has_trait = beauty_bad_3 }
+				change_variable = { name = $SKILL$_threshold   subtract = 6.0 }
+			}
+			#Disfigured
+			if = {
+				limit = { has_trait = disfigured }
+				change_variable = { name = $SKILL$_threshold   subtract = 3 }
+			}
+			#Lisping
+			if = {
+				limit = { has_trait = lisping }
+				change_variable = { name = $SKILL$_threshold   subtract = 1.5 }
+			}
+			#Stuttering
+			if = {
+				limit = { has_trait = stuttering }
+				change_variable = { name = $SKILL$_threshold   subtract = 3 }
+			}
+			#Gregarious
+			if = {
+				limit = { has_trait = gregarious }
+					change_variable = { name = $SKILL$_threshold   add = 1.0 }
+			}
+			#Shy
+			else_if = {
+				limit = { has_trait = shy }
+				change_variable = { name = $SKILL$_threshold   subtract = 1 }
+			}
+		}
+		
+		#Inbred lowers all thresholds
+		if = {
+			limit = { has_trait = inbred}
+			change_variable = { name = $SKILL$_threshold   subtract = 5.0 }
+		}
+		
+		
+		#Maimed lowers all thresholds and has larger effect on prowess
+		if = {
+			limit = { has_trait = maimed}
+			change_variable = { name = $SKILL$_threshold   subtract = 2.0 }
+			#Prowess treated separately
+			if = {
+				limit = { $SKILL$ = prowess }
+				change_variable = { name = $SKILL$_threshold   subtract = 5.0 }
+			}
+		}
+		
+		#Infirm lowers all thresholds and sets prowess threshold to zero at higher XP
+		if = {
+			limit = { has_trait = infirm}
+			#Initial
+				change_variable = { name = $SKILL$_threshold   subtract = 3 }
+			#Advanced infirmity
+			if = {
+				limit = { has_trait_xp = { trait = infirm  value >= 30 } }
+				change_variable = { name = $SKILL$_threshold   subtract = 3 }
+			}
+			#Serious infirmity
+			if = {
+				limit = { has_trait_xp = { trait = infirm  value >= 60 } }
+				change_variable = { name = $SKILL$_threshold   subtract = 3 }
+			}
+			#Prowess treated separately
+			if = {
+				limit = { 
+					$SKILL$ = prowess 
+					has_trait_xp = { trait = infirm  value >= 30 }
+				}
+				set_variable = {
+				   name = $SKILL$_threshold
+				   value = 0.0
+				}
+			}
+		}
+		
+		#Incapable sets all thresholds to zero
+		if = {
+			limit = { has_trait = incapable}
+			set_variable = {
+			   name = $SKILL$_threshold
+			   value = 0.0
+			}
+		}	
+	}
+	
+	#Ensure that threshold is at least 0
+	clamp_variable = {name = $SKILL$_threshold max = 100 min = 0}	
+}
+
+#Force update all character skills
+adjust_skill_for_all = {
+	every_living_character = {
+		trigger_event = { on_action = on_action_adjust_skills }
+	}
+}
+
+#Get Education Level
+get_education_level = {
+	if = {
+		limit = { 
+			OR = {
+			   has_trait = education_diplomacy_1
+			   has_trait = education_martial_1
+			   has_trait = education_stewardship_1
+			   has_trait = education_learning_1
+			   has_trait = education_intrigue_1
+			   #has_trait = education_martial_prowess_1 
+			   #has_trait = education_republican_knowledge_1
+			   trigger_if = {
+					limit = { exists = global_var:more_lifestyles_mod_installed }
+					OR = {
+						has_trait = education_nht_prowess_1 
+						has_trait = education_nht_leadership_1 
+					}
+			   }
+			}
+		}
+		set_variable = {
+		   name = education_level
+		   value = 1
+		}
+	}
+	else_if = {
+		limit = { 
+			OR = {
+			   has_trait = education_diplomacy_2
+			   has_trait = education_martial_2
+			   has_trait = education_stewardship_2
+			   has_trait = education_learning_2
+			   has_trait = education_intrigue_2
+			   #has_trait = education_martial_prowess_2 
+			   #has_trait = education_republican_knowledge_2 
+			   trigger_if = {
+					limit = { exists = global_var:more_lifestyles_mod_installed }
+					OR = {
+						has_trait = education_nht_prowess_2 
+						has_trait = education_nht_leadership_2 
+					}
+			   }
+			}
+		}
+		set_variable = {
+		   name = education_level
+		   value = 2
+		}
+	}
+	else_if = {
+		limit = { 
+			OR = {
+			   has_trait = education_diplomacy_3
+			   has_trait = education_martial_3
+			   has_trait = education_stewardship_3
+			   has_trait = education_learning_3
+			   has_trait = education_intrigue_3
+			   #has_trait = education_martial_prowess_3 
+			   #has_trait = education_republican_knowledge_3 
+			   trigger_if = {
+					limit = { exists = global_var:more_lifestyles_mod_installed }
+					OR = {
+						has_trait = education_nht_prowess_3 
+						has_trait = education_nht_leadership_3
+					}
+			   }
+			}
+		}
+		set_variable = {
+		   name = education_level
+		   value = 3
+		}
+	}
+	else_if = {
+		limit = { 
+			OR = {
+			   has_trait = education_diplomacy_4
+			   has_trait = education_martial_4
+			   has_trait = education_stewardship_4
+			   has_trait = education_learning_4
+			   has_trait = education_intrigue_4
+			   #has_trait = education_martial_prowess_4 
+			   #has_trait = education_republican_knowledge_4 
+			   trigger_if = {
+					limit = { exists = global_var:more_lifestyles_mod_installed }
+					OR = {
+						has_trait = education_nht_prowess_4 
+						has_trait = education_nht_leadership_4 
+					}
+			   }
+			}
+		}
+		set_variable = {
+		   name = education_level
+		   value = 4
+		}
+	}
+	else_if = {
+		limit = { 
+			OR = {
+			   has_trait = education_diplomacy_5
+			   has_trait = education_martial_5
+			   has_trait = education_stewardship_5
+			   has_trait = education_learning_5
+			   has_trait = education_intrigue_5
+			   #has_trait = education_martial_prowess_5 
+			   #has_trait = education_republican_knowledge_5 
+			   trigger_if = {
+					limit = { exists = global_var:more_lifestyles_mod_installed }
+					OR = {
+						has_trait = education_nht_prowess_5 
+						has_trait = education_nht_leadership_5 
+					}
+			   }
+			}
+		}
+		set_variable = {
+		   name = education_level
+		   value = 5
+		}
+	}
+	else = {
+		#Default value used if education type is unknown
+		set_variable = {
+		   name = education_level
+		   value = 3
+		}	
+	}	
+}
+
+
+
+### Count number of taken perks for More Lifestyles (vanilla ones are tracked by default)
+get_more_lifestyles_perk_count = {
+	###Defaults
+	set_variable = {
+	   name = diplomacy_lifestyle_perks 
+	   value = diplomacy_lifestyle_perks
+	}
+	set_variable = {
+	   name = stewardship_lifestyle_perks 
+	   value = stewardship_lifestyle_perks
+	}
+	set_variable = {
+	   name = martial_lifestyle_perks 
+	   value = martial_lifestyle_perks
+	}
+	set_variable = {
+	   name = intrigue_lifestyle_perks 
+	   value = intrigue_lifestyle_perks
+	}
+	set_variable = {
+	   name = learning_lifestyle_perks 
+	   value = learning_lifestyle_perks
+	}
+	
+	
+	
+	#I haven't figured out a neat way to do this, so we will do it brute force
+	set_variable = {
+	   name = prowess_lifestyle_perks 
+	   value = 0
+	}
+	set_variable = {
+	   name = leadership_lifestyle_perks 
+	   value = 0
+	}
+	if = {
+		limit = { exists = global_var:more_lifestyles_mod_installed }
+		###Prowess
+		# Commander
+		if = { limit = {has_perk = nht_perpetual_mastery_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_controlled_supplies_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_master_of_logistics_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }	
+		if = { limit = {has_perk = nht_vanguard_inspiration_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_thrifty_operations_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_border_buards_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_resolute_vassals_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_noble_allegiance_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_commander_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		# Vanguard
+		if = { limit = {has_perk = nht_ruthless_assault_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_orderly_maneuvers_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_rallying_call_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_spoils_of_war_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_inspire_fear_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_unrelenting_pursuit_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_half_grip_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_ambush_expert_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_vanguard_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		# Sentinel
+		if = { limit = {has_perk = nht_shieldbearer_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_cartographer_eye_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_scouting_the_path_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_stonemasons_grace_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_tactical_retreat_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_swordsmanship_teaching_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_defensive_maneuvers_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_shield_of_ingenuity_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_sentinel_perk}
+		change_variable = { name = prowess_lifestyle_perks add = 1 } }
+	
+		
+		###Leadership
+		# Visionary
+		if = { limit = {has_perk = nht_leading_by_example_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_impressed_court_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_visionary_admirer_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }	
+		if = { limit = {has_perk = nht_regal_prosperity_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_serenity_embrace_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_effective_architecture_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_agile_construction_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_on_grand_course_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_visionary_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		# Cosmopolitan
+		if = { limit = {has_perk = nht_pluralistic_unity_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_covenant_of_faith_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_cultural_ascendancy_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_faith_celerity_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_unity_through_diversity_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_joint_forces_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_tithes_of_difference_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_sacred_tithe_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_charismatic_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		# Founder
+		if = { limit = {has_perk = nht_eloquent_authority_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_commerce_maestro_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_family_ties_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_mesmerizing_aura_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_fortunate_predisposition_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_destiny_balance_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_inheritance_instinct_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_serendipity_touch_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+		if = { limit = {has_perk = nht_founder_perk}
+		change_variable = { name = leadership_lifestyle_perks add = 1 } }
+	}
+
+}

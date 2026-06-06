@@ -1,0 +1,144 @@
+﻿## root: The province in which the building was completed
+# character: The character that paid for the construction, if available
+# on_building_completed = {
+# 	effect = {
+
+
+
+# 	}
+# }
+
+# root: The province in which the building was started
+# character: The character that paid for the construction, if available
+# on_building_started = {
+# 	effect = {
+
+# 	}
+# }
+
+# root: The province in which the building was cancelled
+# character: The character that paid for the construction, if available
+# on_building_cancelled = {
+# 	effect = {
+
+# 	}
+# }
+on_game_start = {
+    on_actions = {
+        amsb_game_start
+        set_kl_buildings
+        set_special_buildings
+    }
+}
+on_game_start_after_lobby = {
+    on_actions = {
+        amsb_game_start_after_lobby
+    }
+}
+amsb_game_start = {
+    effect = {
+        set_global_variable = {
+            name = AMSB_is_loaded
+            value = yes
+        }
+        title:c_triarchs_fall = {
+            set_county_culture = culture:summer_valyrian
+            set_county_faith = faith:valyrian_pan_freehold
+        }
+        character:Vaelaror_1.house.house_head ?= {
+            get_title = title:c_triarchs_fall
+        }
+    }
+}
+set_kl_buildings = {
+    effect = {
+        if = {
+            limit = {
+                game_start_date > 7890.1.1
+                game_start_date < 8000.1.6
+            }
+            title:b_the_red_keep.title_province = {
+                set_holding_type = castle_holding
+                add_building = castle_01
+                add_special_building_slot = the_red_keep_01
+            }
+        }
+        title:b_rhaenyss_hill.title_province = {
+            if = {
+                limit = {
+                    game_start_date > 8010.1.1
+                    game_start_date < 8042.4.1
+                }
+                set_holding_type = church_holding
+                add_building = temple_02
+            }
+            if = {
+                limit = {
+                    game_start_date > 8042.4.1
+                    game_start_date < 8055.1.1
+                }
+                set_holding_type = church_holding
+                add_building = temple_02
+            }
+            if = {
+                limit = {
+                    game_start_date > 8055.1.1
+                    game_start_date < 8130.10.9
+                }
+                set_holding_type = castle_holding
+                add_building = castle_02
+            }
+            if = {
+                limit = {
+                    game_start_date > 8130.10.9
+                }
+                set_holding_type = castle_holding
+                add_building = castle_02
+            }
+        }
+        if = {
+            limit = { game_start_date > 8030.1.1 }
+            title:b_hookmarket.title_province = {
+                add_special_building = river_gate_01
+            }
+        }
+    }
+}
+
+set_special_buildings = {
+    effect = {
+        title:b_hellgate_hall.title_province = {
+            if = {
+                limit = {
+                    has_building_or_higher = agot_ruins_hellgate_hall_01
+                }
+                remove_building = agot_ruins_hellgate_hall_01
+            }
+            add_special_building = amsb_ruins_hellgate_hall_01
+        }
+        title:b_bloodstone_lair.title_province = {
+            if = {
+                limit = {
+                    has_building_or_higher = agot_racallios_fort_01
+                }
+                remove_building = agot_racallios_fort_01
+            }
+            add_special_building = bloodstone_special_01
+        }
+        title:b_hookmarket.title_province = {
+            add_special_building_slot = river_gate_01
+        }
+    }
+}
+
+amsb_game_start_after_lobby = {
+    effect = {
+        character:Hoare_31 = {
+            if = {
+                limit = { is_alive = yes }
+                add_character_modifier = { modifier = harrenhal_constructed }
+            }
+        }
+    }
+}
+

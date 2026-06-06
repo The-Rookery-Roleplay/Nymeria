@@ -1,0 +1,3 @@
+﻿NCharacterOpinion = {
+	COUNT_LIEGE_HOLDS_MY_DUCHY = 0 #vassal counts no longer get angry at you for holding the duchy
+}

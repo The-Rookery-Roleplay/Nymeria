@@ -1,0 +1,8 @@
+﻿DI_citadel_duration = {
+	value = 3650000
+	if = {
+		limit = { exists = scope:di_applier.var:DI_citadel_years scope:di_applier.var:DI_citadel_years > 0 }
+		value = scope:di_applier.var:DI_citadel_years
+		multiply = 365
+	}
+}

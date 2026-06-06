@@ -1,0 +1,11 @@
+﻿namespace = asoiaf_canon_children_pregnancy_events
+
+asoiaf_canon_children_pregnancy_events.1 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		pregnancy_cleanup_effect = yes
+		remove_character_flag = birth_will_be_scaly
+	}
+}

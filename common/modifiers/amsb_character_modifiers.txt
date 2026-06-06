@@ -1,0 +1,32 @@
+﻿harrenhal_restoration_1 = {
+	icon = diplomacy_negative
+	riverman_main_opinion = -5
+}
+harrenhal_restoration_2 = {
+	icon = diplomacy_negative
+	riverman_main_opinion = -10
+}
+harrenhal_restoration_3 = {
+	icon = diplomacy_negative
+	riverman_main_opinion = -15
+}
+harrenhal_restoration_4 = {
+	icon = diplomacy_negative
+	riverman_main_opinion = -20
+}
+harrenhal_restoration_5 = {
+	icon = diplomacy_negative
+	riverman_main_opinion = -25
+}
+harrenhal_restored = {
+	icon = diplomacy_negative
+	riverman_main_opinion = -30
+}
+harrenhal_constructed = {
+	icon = diplomacy_negative
+	riverman_main_opinion = -35
+}
+godsfort_constructed = {
+	icon = diplomacy_positive
+	riverman_main_opinion = 25
+}

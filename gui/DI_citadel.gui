@@ -1,0 +1,553 @@
+﻿window = {
+	name = "DI_citadel_window"
+	parentanchor = center
+	layer = hud_layer
+	filter_mouse = all
+	allow_outside = yes
+	alwaystransparent = no
+	using = Window_Background
+	using = Window_Decoration
+	movable = yes
+	visible = "[GetVariableSystem.Exists('DI_citadel_window_visible')]"
+	vbox = {
+		using = Window_Margins
+		restrictparent_min = yes
+		header_pattern = {
+			layoutpolicy_horizontal = expanding
+			blockoverride "header_text" { text = DI_citadel_menu_title }
+			blockoverride "button_close" { onclick = "[GetVariableSystem.Toggle('DI_citadel_window_visible')]" }
+		}
+		widget = {
+			size = { 600 720 }
+			vbox = {
+				layoutpolicy_horizontal = expanding
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			spacing = 6
+			margin = { 6 6 }
+			button_standard = { layoutpolicy_horizontal = expanding text = DI_citadel_mode_realm onclick = "[GetVariableSystem.Set('DI_cit_mode', 'realm')]" down = "[Not( GetVariableSystem.HasValue('DI_cit_mode', 'char') )]" }
+			button_standard = { layoutpolicy_horizontal = expanding text = DI_citadel_mode_char onclick = "[GetVariableSystem.Set('DI_cit_mode', 'char')]" down = "[GetVariableSystem.HasValue('DI_cit_mode', 'char')]" }
+		}
+		text_single = { margin = { 6 2 } text = DI_citadel_depth_label }
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			spacing = 6
+			margin = { 6 2 }
+			button_standard = { layoutpolicy_horizontal = expanding text = DI_citadel_depth_self_btn onclick = "[GetScriptedGui('DI_citadel_depth_self').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" onclick = "[GetVariableSystem.Set('DI_cit_depth_ui', 'self')]" down = "[GetVariableSystem.HasValue('DI_cit_depth_ui', 'self')]" }
+			button_standard = { layoutpolicy_horizontal = expanding text = DI_citadel_depth_direct_btn onclick = "[GetScriptedGui('DI_citadel_depth_direct').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" onclick = "[GetVariableSystem.Set('DI_cit_depth_ui', 'direct')]" down = "[GetVariableSystem.HasValue('DI_cit_depth_ui', 'direct')]" }
+			button_standard = { layoutpolicy_horizontal = expanding text = DI_citadel_depth_realm_btn onclick = "[GetScriptedGui('DI_citadel_depth_realm').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" onclick = "[GetVariableSystem.Set('DI_cit_depth_ui', 'realm')]" down = "[GetVariableSystem.HasValue('DI_cit_depth_ui', 'realm')]" }
+		}
+		text_single = { margin = { 6 2 } text = DI_citadel_years_label }
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			spacing = 5
+			margin = { 6 2 }
+			button_round = { size = { 30 30 } onclick = "[GetScriptedGui('DI_citadel_year_sub5').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" button_minus_small = { parentanchor = center alwaystransparent = yes } }
+			button_round = { size = { 30 30 } onclick = "[GetScriptedGui('DI_citadel_year_sub').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" button_minus_small = { parentanchor = center alwaystransparent = yes } }
+			text_label_center = { minimumsize = { 160 -1 } text = DI_citadel_years_display default_format = "#low" }
+			button_round = { size = { 30 30 } onclick = "[GetScriptedGui('DI_citadel_year_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" button_plus_small = { parentanchor = center alwaystransparent = yes } }
+			button_round = { size = { 30 30 } onclick = "[GetScriptedGui('DI_citadel_year_add5').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" button_plus_small = { parentanchor = center alwaystransparent = yes } }
+			button_standard = { text = DI_citadel_years_reset_btn onclick = "[GetScriptedGui('DI_citadel_year_reset').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+		}
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			
+			visible = "[Not( GetVariableSystem.HasValue('DI_cit_mode', 'char') )]"
+			scrollbox = { size = { 540 470 } blockoverride "scrollbox_content" { vbox = { margin_top = 10
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_construction_t1')]" text = citadel_construction_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_construction_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_construction_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_construction_t2')]" text = citadel_construction_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_construction_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_construction_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_construction_t3')]" text = citadel_construction_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_construction_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_construction_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_fort_t1')]" text = citadel_fort_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_fort_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_fort_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_fort_t2')]" text = citadel_fort_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_fort_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_fort_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_fort_t3')]" text = citadel_fort_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_fort_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_fort_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_siege_t1')]" text = citadel_siege_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_siege_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_siege_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_siege_t2')]" text = citadel_siege_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_siege_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_siege_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_siege_t3')]" text = citadel_siege_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_siege_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_siege_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_maa_t1')]" text = citadel_maa_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_maa_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_maa_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_maa_t2')]" text = citadel_maa_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_maa_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_maa_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_maa_t3')]" text = citadel_maa_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_maa_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_maa_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_development_t1')]" text = citadel_development_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_development_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_development_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_development_t2')]" text = citadel_development_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_development_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_development_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_development_t3')]" text = citadel_development_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_development_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_development_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_levy_t1')]" text = citadel_levy_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_levy_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_levy_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_levy_t2')]" text = citadel_levy_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_levy_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_levy_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_levy_t3')]" text = citadel_levy_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_levy_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_levy_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_heavy_t1')]" text = citadel_heavy_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_heavy_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_heavy_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_heavy_t2')]" text = citadel_heavy_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_heavy_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_heavy_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_heavy_t3')]" text = citadel_heavy_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_heavy_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_heavy_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_popular_t1')]" text = citadel_popular_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_popular_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_popular_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_popular_t2')]" text = citadel_popular_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_popular_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_popular_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_popular_t3')]" text = citadel_popular_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_popular_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_popular_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_food_deficit_t1')]" text = citadel_food_deficit_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_food_deficit_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_food_deficit_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_food_deficit_t2')]" text = citadel_food_deficit_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_food_deficit_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_food_deficit_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_food_deficit_t3')]" text = citadel_food_deficit_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_food_deficit_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_food_deficit_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_food_deficit_major_t1')]" text = citadel_food_deficit_major_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_food_deficit_major_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_food_deficit_major_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_food_deficit_major_t2')]" text = citadel_food_deficit_major_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_food_deficit_major_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_food_deficit_major_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_food_deficit_major_t3')]" text = citadel_food_deficit_major_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_food_deficit_major_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_food_deficit_major_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_wood_deficit_t1')]" text = citadel_wood_deficit_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_wood_deficit_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_wood_deficit_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_wood_deficit_t2')]" text = citadel_wood_deficit_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_wood_deficit_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_wood_deficit_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_wood_deficit_t3')]" text = citadel_wood_deficit_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_wood_deficit_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_wood_deficit_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_stone_deficit_t1')]" text = citadel_stone_deficit_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_stone_deficit_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_stone_deficit_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_stone_deficit_t2')]" text = citadel_stone_deficit_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_stone_deficit_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_stone_deficit_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_stone_deficit_t3')]" text = citadel_stone_deficit_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_stone_deficit_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_stone_deficit_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+
+			} } }
+		}
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			
+			visible = "[GetVariableSystem.HasValue('DI_cit_mode', 'char')]"
+			scrollbox = { size = { 540 470 } blockoverride "scrollbox_content" { vbox = { margin_top = 10
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_health_t1')]" text = citadel_health_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_health_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_health_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_health_t2')]" text = citadel_health_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_health_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_health_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_health_t3')]" text = citadel_health_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_health_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_health_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_army_maintenance_t1')]" text = citadel_army_maintenance_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_army_maintenance_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_army_maintenance_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_army_maintenance_t2')]" text = citadel_army_maintenance_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_army_maintenance_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_army_maintenance_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_army_maintenance_t3')]" text = citadel_army_maintenance_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_army_maintenance_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_army_maintenance_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_maa_upkeep_t1')]" text = citadel_maa_upkeep_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_maa_upkeep_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_maa_upkeep_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_maa_upkeep_t2')]" text = citadel_maa_upkeep_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_maa_upkeep_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_maa_upkeep_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_maa_upkeep_t3')]" text = citadel_maa_upkeep_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_maa_upkeep_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_maa_upkeep_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_public_image_t1')]" text = citadel_public_image_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_public_image_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_public_image_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_public_image_t2')]" text = citadel_public_image_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_public_image_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_public_image_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_public_image_t3')]" text = citadel_public_image_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_public_image_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_public_image_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_vassal_t1')]" text = citadel_vassal_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_vassal_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_vassal_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_vassal_t2')]" text = citadel_vassal_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_vassal_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_vassal_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_vassal_t3')]" text = citadel_vassal_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_vassal_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_vassal_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_ship_cost_t1')]" text = citadel_ship_cost_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_ship_cost_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_ship_cost_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_ship_cost_t2')]" text = citadel_ship_cost_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_ship_cost_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_ship_cost_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_ship_cost_t3')]" text = citadel_ship_cost_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_ship_cost_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_ship_cost_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_luxury_deficit_t1')]" text = citadel_luxury_deficit_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_luxury_deficit_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_luxury_deficit_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_luxury_deficit_t2')]" text = citadel_luxury_deficit_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_luxury_deficit_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_luxury_deficit_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_luxury_deficit_t3')]" text = citadel_luxury_deficit_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_luxury_deficit_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_luxury_deficit_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_iron_deficit_t1')]" text = citadel_iron_deficit_t1 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_iron_deficit_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_iron_deficit_t1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_iron_deficit_t2')]" text = citadel_iron_deficit_t2 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_iron_deficit_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_iron_deficit_t2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					margin = { 4 3 }
+					text_single = { layoutpolicy_horizontal = expanding datacontext = "[GetModifier('citadel_iron_deficit_t3')]" text = citadel_iron_deficit_t3 tooltip = "[StaticModifier.GetDescWithEffects]" }
+					button_standard = { text = DI_citadel_apply_btn onclick = "[GetScriptedGui('DI_citadel_apply_citadel_iron_deficit_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+					button_standard = { text = DI_citadel_remove_btn onclick = "[GetScriptedGui('DI_citadel_remove_citadel_iron_deficit_t3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" }
+				}
+
+			} } }
+		}
+	
+			}
+		}
+	}
+}

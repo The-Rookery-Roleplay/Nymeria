@@ -1,0 +1,52 @@
+﻿l_english:
+ ASOIAF_CANON_CHILDREN_CHARACTER_TOOLTIP: "#T [asoiaf_canon_child_concept|E]#!\n\n#high [Character.Custom('asoiafCanonChildrenCharacterDesc')]#!\n\n#weak [asoiaf_canon_children_concept|E] are born using natural pregnancy/birth cycles, so may deviate from their historical birth dates by significant margins.#!"
+
+ historical_character.asoiaf_Stark_84:0 "#bold Rickon Stark#! was Lord of Winterfell until his death some years prior to the Dance of the Dragons. He was succeeded by his son, Cregan Stark.\n\n#help Rickon must have children with a wife of the #bold Glover dynasty#! and/or a woman of a #bold First Man#! cultural heritage group out of wedlock to continue his line.#!"
+
+ historical_character.asoiaf_Stark_86:0 "#bold Cregan Stark#!, called #italic the Wolf of the North#!, was a stern and rigidly honourable Lord of Winterfell. He took his family's oaths seriously, duitifully striving to fulfil them while also protecting the realm from the threat beyond the Wall. His sense of duty and eagerness to remain watchful of his northern border led him to avoid southron politicking as much as possible.\n\n#help Cregan must have children with a wife of the #bold Norrey dynasty#!, the #bold Blackwood dynasty#!, and/or #bold House Stark#! to continue his line.#!"
+
+ historical_character.asoiaf_Stark_87:0 "#bold Bennard Stark#! was the second child of Rickon Stark and Gilliane Glover, who died of an illness while young."
+
+ historical_character.asoiaf_Stark_88:0 "#bold Sara Snow#! was allegedly the bastard daughter of Rickard Stark, said to have been a pretty girl with a charming personality. It is unknown if she ever truly existed."
+
+ historical_character.asoiaf_Stark_94:0 "#bold Rickon Stark#! was the eldest son of Cregan Stark by his first wife, yet didn't live long enough to inherit Winterfell. He fought bravely and fiercely during the Conquest of Dorne, and had a fondness for song. However, his sudden death in a battle outside Sunspear cast the North into turmoil for years to come.\n\n#help Rickon must have children with a wife of the #bold Manderly dynasty#! to continue his line.#!\n\n@warning_icon! #X Rickard's children will be available [asoiaf_canon_children_concept|E] at a later time.#!"
+
+ historical_character.asoiaf_Stark_95:0 "#bold Sarra Stark#! was the firstborn child of Cregan Stark by his second wife, Alysanne Blackwood."
+
+ historical_character.asoiaf_Stark_96:0 "#bold Alys Stark#! was the secondborn child of Cregan Stark by his second wife, Alysanne Blackwood."
+
+ historical_character.asoiaf_Stark_97:0 "#bold Raya Stark#! was the thirdborn child of Cregan Stark by his second wife, Alysanne Blackwood."
+
+ historical_character.asoiaf_Stark_98:0 "#bold Mariah Stark#! was the fourthborn child of Cregan Stark by his second wife, Alysanne Blackwood."
+
+ historical_character.asoiaf_Stark_99:0 "#bold Jonnel Stark#!, called #italic Jonnel One-Eye#!, was the firstborn child of Cregan Stark by his third wife, Lynara Stark, eventually becoming Lord of Winterfell after the passing of his father. His was an uneventful period in history, yet plagued by failed attempts at fathering heirs with two wives."
+
+ historical_character.asoiaf_Stark_100:0 "#bold Edric Stark#! was the secondborn child of Cregan Stark by his third wife, Lynara Stark.\n\n#help Edric must have children with a wife of #bold House Stark#! to continue his line.#!\n\n@warning_icon! #X Edric's children will be available [asoiaf_canon_children_concept|E] at a later time.#!"
+
+ historical_character.asoiaf_Stark_101:0 "#bold Lyanna Stark#! was the thirdborn child of Cregan Stark by his third wife, Lynara Stark."
+
+ historical_character.asoiaf_Stark_102:0 "#bold Barthogan Stark#!, called #italic Barth Blacksword#!, was a Lord of Winterfell who bravely led an army to Skagos to put down an uprising on the island. His eagerness to boldly put down the revolt led to his untimely death in battle."
+
+ historical_character.asoiaf_Stark_103:0 "#bold Brandon Stark#! was the fifthborn child of Cregan Stark by his third wife, Lynara Stark.\n\n#help Brandon must have children with a woman of the #bold Fenn dynasty#! and/or a wife of #bold House Karstark#! to continue his line.#!\n\n@warning_icon! #X Brandon's children will be available [asoiaf_canon_children_concept|E] at a later time.#!"
+
+ historical_character.asoiaf_Stark_1:0 "#bold Rickard Stark#! was a stern and dignified Lord of Winterfell known for his calm demeanour yet commanding presence. Considered ambitious by some, he made a point of bringing the North out of its isolation by betrothing his children to prominent southrons. He eventually met his doom after riding south to seek justice for the apparent kidnapping of his daughter, for which his King had him executed.\n\n#help Rickard must have children with a wife of #bold House Stark#! to continue his line.#!"
+
+ historical_character.asoiaf_Stark_2:0 "#bold Brandon Stark#! was tall, handsome, and hot-blooded young man, often acting first and thinking later. He was an excellent jouster and skilled swordsman, honing his sword for hours to maintain its deadly edge. He loved to take long rides on his horse, and wasn't shy about taking what he wanted, including women."
+
+ historical_character.asoiaf_Stark_3:0 "#bold Eddard Stark#!, better known as #italic Ned#!, was Lord of Winterfell after the death of his father and brother. He is a man of honour and duty, but his adherence to the old ways of the North often put him at odds with the schemers of southron courts. Above all he detests the murder of children and the innocent.\n\n#help Eddard must have children with a wife of the #bold Tully dynasty#! to continue his line.#!"
+
+ historical_character.asoiaf_Stark_5:0 "#bold Lyanna Stark#! was a strong-willed young woman with a wild beauty about her. She was an excellent rider, and even practiced at tilting when she could. Flowers always drew her fondness, especially the scent of fresh winter roses. Her independent streak shaped much of her life, eventually leading her to elope with the Crown Prince, indirectly causing a bloody civil war in her name."
+
+ historical_character.asoiaf_Stark_4:0 "#bold Benjen Stark#! was a tall and stern man, though also genial with a hint of laughter in his eyes. He was dutiful, closely observant, and idealistic, eventually becoming a skilled ranger in the Night's Watch. His character and skill commanded the respect of his peers, who learned to rely on his abilities and counsel."
+
+ historical_character.asoiaf_Stark_6:0 "#bold Robb Stark#!, known as #italic the Young Wolf#!, was the King in the North who led a rebellion against the Iron Throne following the execution of his father. He was a brave and charismatic leader who valued his family and duty, but his honour cost him the support of his bannermen and ultimately his life."
+
+ historical_character.asoiaf_Stark_7:0 "#bold Jon Snow#! was the bastard of Winterfell, often seen brooding and solitary. Despite his grim outer appearance, he was kind-hearted and honourable, with a deep sense of justice and duty. He was loyal to his friends and family, yet never knew the true identity of his own mother."
+
+ historical_character.asoiaf_Stark_8:0 "#bold Sansa Stark#! was a beautiful and fitting lady, but also a naive and romantic one. She dreamed of knights, songs, and true love, but her idealism was shattered by the harsh realities of the world. She was manipulated by various factions and forced to endure many hardships, slowly learning to survive the game of thrones."
+
+ historical_character.asoiaf_Stark_9:0 "#bold Arya Stark#! was a wilful and wild young girl who rejected society's mores, prefering swordplay to needlework. She deeply valued her family and friends, and detested any who did them harm. When her family was torn away and she lost everything, vengence became her tool of justice... and her silent prayer."
+
+ historical_character.asoiaf_Stark_10:0 "#bold Brandon Stark#! was a brave and daring boy who loved stories full of fright and magic. He had dreams of knighthood, battle, and glory, but they were shattered along with his legs. In their place stirred the greensight, and deeper powers besides."
+
+ historical_character.asoiaf_Stark_11:0 "#bold Rickon Stark#! was the youngest and wildest of the Stark children, enjoying the play of swords and games of battle. He was a tempermental and stubborn boy, yet also playful and protective of his family and friends."

@@ -1,0 +1,850 @@
+﻿###### HOUSE VAELAROR (id = dynn_Vaelaror)
+############################
+
+Vaelaror_1 = {
+	name = Aegor
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 13
+	stewardship = 11
+	intrigue = 10
+	learning = 13
+	diplomacy = 11
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_martial_5
+	trait = brave
+	trait = diligent
+	trait = arrogant
+
+	7828.1.1 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	7848.9.4 = { add_spouse = Vaelaror_1_p }
+
+    7899.8.14 = { death = { death_reason = death_doom } } # Doom of Valyria
+}
+Vaelaror_2 = {
+	name = Valarr
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 13
+	stewardship = 11
+	intrigue = 10
+	learning = 13
+	diplomacy = 11
+
+	father = Vaelaror_1
+	mother = Vaelaror_1_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_martial_5
+	trait = greedy
+	trait = just
+	trait = diligent
+
+	7855.9.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	7871.8.12 = { add_spouse = Vaelaror_2_p }
+
+	7925.12.19 = {
+		death = yes
+	}
+}
+Vaelaror_3 = {
+	name = Vaemond
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 13
+	stewardship = 11
+	intrigue = 10
+	learning = 13
+	diplomacy = 11
+
+	father = Vaelaror_2
+	mother = Vaelaror_2_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_martial_5
+	trait = greedy
+	trait = just
+	trait = diligent
+
+	7875.9.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	7895.8.12 = { add_spouse = Vaelaror_3_p }
+
+	7955.12.19 = {
+		death = yes
+	}
+}
+Vaelaror_4 = {
+	name = Corlys
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 13
+	stewardship = 11
+	intrigue = 10
+	learning = 13
+	diplomacy = 11
+
+	father = Vaelaror_3
+	mother = Vaelaror_3_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_martial_5
+	trait = greedy
+	trait = just
+	trait = diligent
+
+	7896.9.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	7920.8.12 = { add_spouse = Vaelaror_4_p }
+
+	7975.4.5 = {
+		give_nickname = nick_the_old
+	}
+
+	7995.12.19 = {
+		death = yes
+	}
+}
+Vaelaror_5 = {
+	name = Rhaegar
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 13
+	stewardship = 11
+	intrigue = 10
+	learning = 13
+	diplomacy = 11
+
+	father = Vaelaror_4
+	mother = Vaelaror_4_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_martial_5
+	trait = greedy
+	trait = just
+	trait = diligent
+
+	7935.9.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	7954.8.12 = { add_spouse = Vaelaror_5_p }
+
+
+	8000.12.19 = {
+		death = yes
+	}
+}
+Vaelaror_6 = {
+	name = Maegor
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 13
+	stewardship = 11
+	intrigue = 10
+	learning = 13
+	diplomacy = 11
+
+	father = Vaelaror_5
+	mother = Vaelaror_5_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_martial_5
+	trait = greedy
+	trait = just
+	trait = diligent
+
+	7955.9.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	7971.8.12 = { add_spouse = Vaelaror_6_p }
+
+	8025.12.19 = {
+		death = yes
+	}
+}
+Vaelaror_7 = {
+	name = Baelor
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 13
+	stewardship = 11
+	intrigue = 10
+	learning = 13
+	diplomacy = 11
+
+	father = Vaelaror_6
+	mother = Vaelaror_6_p
+
+	disallow_random_traits = yes
+	trait = pensive
+
+	trait = temperate
+	trait = shy
+	trait = calm
+
+	7975.2.8 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	8000.1.9 = { add_spouse = Vaelaror_7_p }
+
+	8025.12.8 = {
+		effect = { add_trait = deceitful }
+	}
+
+
+	8033.12.1 = {
+		death = {
+			death_reason = death_lost_at_sea
+		}
+	}
+}
+Vaelaror_8 = {
+	name = Maekar
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 13
+	stewardship = 11
+	intrigue = 10
+	learning = 13
+	diplomacy = 11
+
+	father = Vaelaror_7
+	mother = Vaelaror_7_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_martial_5
+	trait = diligent
+	trait = greedy
+	trait = wrathful
+
+
+	8030.8.7 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	8050.1.8 = { add_spouse = Vaelaror_8_p }
+
+	8103.7.8 = {
+		death = {
+			death_reason = death_bloody_flux
+		}
+	}
+}
+Vaelaror_9 = {
+	name = Maegor
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 18
+	stewardship = 11
+	intrigue = 8
+	learning = 12
+	diplomacy = 4
+
+	father = Vaelaror_8
+	mother = Vaelaror_8_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_martial_3
+	trait = wrathful
+	trait = sadistic
+	trait = vengeful
+
+	8055.9.4 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	8075.3.1 = { add_spouse = Vaelaror_9_p }
+
+	8119.2.7 = {
+		death = {
+			death_reason = death_hacked_to_pieces
+		}
+	}
+}
+Vaelaror_10 = {
+	name = Maelys
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 18
+	stewardship = 11
+	intrigue = 8
+	learning = 12
+	diplomacy = 4
+
+	father = Vaelaror_9
+	mother = Vaelaror_9_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_martial_4
+	trait = brave
+	trait = lustful
+	trait = strong
+
+	8080.9.2 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	8101.3.7 = { add_spouse = Vaelaror_10_p }
+
+	8190.1.18 = {
+		death = yes
+	}
+}
+Vaelaror_11 = {
+	name = Aegon
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 10
+	stewardship = 11
+	intrigue = 14
+	learning = 10
+	diplomacy = 12
+
+	father = Vaelaror_10
+	mother = Vaelaror_10_p
+
+	disallow_random_traits = yes
+	trait = charming
+
+	trait = education_intrigue_4
+	trait = lustful
+	trait = lifestyle_poet
+	trait = seducer
+
+	8104.6.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	8121.8.5 = { add_spouse = Vaelaror_11_p }
+
+	8190.1.18 = {
+		death = {
+			death_reason = death_fell_bedchamber
+		}
+	}
+}
+Vaelaror_12 = {
+	name = Maekar
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 10
+	stewardship = 11
+	intrigue = 14
+	learning = 10
+	diplomacy = 12
+
+	father = Vaelaror_11
+	mother = Vaelaror_11_p
+
+	disallow_random_traits = yes
+	trait = charming
+
+	trait = education_intrigue_4
+	trait = deceitful
+	trait = shy
+	trait = chaste
+
+	8125.3.9 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	8145.9.1 = { add_spouse = Vaelaror_12_p }
+
+	8203.7.8 = {
+		death = yes
+	}
+}
+Vaelaror_13 = {
+	name = Aegor
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 10
+	stewardship = 11
+	intrigue = 14
+	learning = 10
+	diplomacy = 12
+
+	father = Vaelaror_12
+	mother = Vaelaror_12_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_stewardship_4
+	trait = temperate
+	trait = lustful
+	trait = shrewd
+
+	8166.9.8 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	8185.1.12 = { add_spouse = Vaelaror_13_p }
+
+	8238.7.2 = {
+		death = {
+			death_reason = death_attempted_treatment
+		}
+	}
+}
+Vaelaror_14 = {
+	name = Maegor
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 10
+	stewardship = 11
+	intrigue = 14
+	learning = 10
+	diplomacy = 12
+
+	father = Vaelaror_13
+	mother = Vaelaror_13_p
+
+	disallow_random_traits = yes
+	trait = rowdy
+
+	trait = education_martial_4
+	trait = brave
+	trait = wrathful
+	trait = sadistic
+
+	8202.7.8 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	8220.8.7 = { add_spouse = Vaelaror_14_p }
+
+	8278.2.8 = {
+		death = {
+			death_reason = death_sacrificed_to_gods
+		}
+	}
+}
+Vaelaror_15 = {
+	name = Vaemionor
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 16
+	stewardship = 13
+	intrigue = 12
+	learning = 11
+	diplomacy = 12
+
+	father = Vaelaror_14
+	mother = Vaelaror_14_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = education_martial_5
+	trait = brave
+	trait = lustful
+	trait = zealous
+
+	8225.8.9 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	8248.8.7 = { add_spouse = Vaelaror_15_p }
+
+}
+Vaelaror_16 = {
+	name = Maenor
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 16
+	stewardship = 13
+	intrigue = 12
+	learning = 11
+	diplomacy = 12
+
+	father = Vaelaror_15
+	mother = Vaelaror_15_p
+
+	disallow_random_traits = yes
+	trait = bossy
+
+	trait = lustful
+	trait = shrewd
+	trait = physique_good_1
+
+	8249.1.8 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+	8269.1.9 = { add_spouse = Vaelaror_16_p }
+}
+Vaelaror_17 = {
+	name = Olyon
+	dynasty = dynn_Vaelaror
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+
+	martial = 10
+	stewardship = 15
+	intrigue = 11
+	learning = 13
+	diplomacy = 8
+
+	father = Vaelaror_15
+	mother = Vaelaror_15_p
+
+	disallow_random_traits = yes
+	trait = pensive
+
+	trait = education_stewardship_4
+	trait = temperate
+	trait = chaste
+	trait = strong
+
+	8252.11.19 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+}
+
+### Spouses
+
+Vaelaror_1_p = {
+	name = Alayaya
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	7826.3.10 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+    7899.8.14 = { death = { death_reason = death_doom } } # Doom of Valyria
+}
+Vaelaror_2_p = {
+	name = Kojja
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	7855.9.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	7910.7.22 = {
+		death = yes
+	}
+}
+Vaelaror_3_p = {
+	name = Xanda
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	7875.9.12  = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	7959.7.22 = {
+		death = yes
+	}
+}
+Vaelaror_4_p = {
+	name = Helaena
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	7896.9.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	7975.12.19 = {
+		death = {
+			death_reason = death_greyscale
+		}
+	}
+}
+Vaelaror_5_p = {
+	name = Jaenara
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	7935.9.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	8001.10.17 = {
+		death = yes
+	}
+}
+Vaelaror_6_p = {
+	name = Jaehaera
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	7955.9.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	8025.11.17 = {
+		death = yes
+	}
+}
+Vaelaror_7_p = {
+	name = Rhaella
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	7975.2.8 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	8053.12.1 = {
+		death = {
+			death_reason = death_vanished_slave_trade
+		}
+	}
+}
+Vaelaror_8_p = {
+	name = Elaena
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	8030.8.7 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	8103.7.8 = {
+		death = {
+			death_reason = death_bloody_flux
+		}
+	}
+}
+Vaelaror_9_p = {
+	name = Daenaera
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	8055.9.4 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	8123.2.7 = {
+		death = yes
+	}
+}
+Vaelaror_10_p = {
+	name = Shaera
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	8080.2.7 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	8151.8.7 = {
+		death = yes
+	}
+}
+Vaelaror_11_p = {
+	name = Viserra
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	8104.6.12 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	8188.7.1 = { death = yes }
+}
+Vaelaror_12_p = {
+	name = Naerys
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	8125.3.9 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	8204.1.8 = {
+		death = yes
+	}
+}
+Vaelaror_13_p = {
+	name = Caenelys
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	8166.9.8 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	8238.7.3 = {
+		death = yes
+	}
+}
+Vaelaror_14_p = {
+	name = Daeryssa
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	8202.7.8 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+
+	8278.2.8 = { death = yes }
+}
+Vaelaror_15_p = {
+	name = Alysanne
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	8225.8.9 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+
+}
+Vaelaror_16_p = {
+	name = Rhaenys
+	religion = valyrian_pan_freehold
+	culture = summer_valyrian
+	female = yes
+	8259.11.19 = {
+		birth = yes
+		make_trait_inactive = cool_silver_hair
+		make_trait_inactive = purple_eyes_3
+	}
+}

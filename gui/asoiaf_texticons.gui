@@ -1,0 +1,63 @@
+﻿texticon = {
+	icon = asoiaf_icon
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/asoiaf_icon.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = asoiaf_icon_dayne
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/asoiaf_icon_dayne.dds"
+		size = { 35 35 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = asoiaf_icon_dayne_alt
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/asoiaf_icon_dayne_alt.dds"
+		size = { 35 35 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = asoiaf_icon_arryn
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/asoiaf_icon_arryn.dds"
+		size = { 35 35 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = asoiaf_icon_arryn_alt
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/asoiaf_icon_arryn_alt.dds"
+		size = { 35 35 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = asoiaf_icon_krakenfall
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/asoiaf_icon_krakenfall.dds"
+		size = { 35 35 }
+		offset = { 10 12 }
+		fontsize = 16
+	}
+}
+texticon = {
+	icon = asoiaf_icon_hearteater
+	iconsize = {
+		texture = "gfx/interface/icons/text_icons/asoiaf_icon_hearteater.dds"
+		size = { 35 35 }
+		offset = { 10 12 }
+		fontsize = 16
+	}
+}

@@ -1,0 +1,21 @@
+﻿l_english:
+ #Descs
+ asoiaf_kingsguard_dismissal_memory:0 "Dismissed from the Kingsguard"
+ asoiaf_kingsguard_dismissal_memory_desc:0 "I was forcibly dismissed from [king.GetTitledFirstNamePossessive] Kingsguard"
+ asoiaf_kingsguard_dismissal_memory_desc_second_perspective_1:0 "You were forcibly dismissed from [king.GetTitledFirstNamePossessive] Kingsguard"
+ asoiaf_kingsguard_dismissal_memory_desc_third_perspective_1:0 "[recipient.GetName] was forcibly dismissed from [king.GetTitledFirstNamePossessive] Kingsguard"
+
+ asoiaf_Targaryen_8_traits_change_memory:0 "Overcome by Pressure"
+ asoiaf_Targaryen_8_traits_change_memory_desc:0 "Burdened by intense pressures, my personality took a turn for the worse"
+ asoiaf_Targaryen_8_traits_change_memory_desc_second_perspective_1:0 "Burdened by intense pressures, your personality took a turn for the worse"
+ asoiaf_Targaryen_8_traits_change_memory_desc_third_perspective_1:0 "Burdened by intense pressures, [asoiaf_Targaryen_8.GetNamePossessive] personality took a turn for the worse"
+
+ asoiaf_Targaryen_9_traits_change_memory:0 "Forged in Fire"
+ asoiaf_Targaryen_9_traits_change_memory_desc:0 "My marriage helped me become a stronger person"
+ asoiaf_Targaryen_9_traits_change_memory_desc_second_perspective_1:0 "Your marriage helped you become a stronger person"
+ asoiaf_Targaryen_9_traits_change_memory_desc_third_perspective_1:0 "[asoiaf_Targaryen_9.GetNamePossessive] marriage helped [asoiaf_Targaryen_9.HerHim] become a stronger person"
+
+ asoiaf_mance_rayder_desertion_memory:0 "Deserted & Crowned"
+ asoiaf_mance_rayder_desertion_memory_desc:0 "I deserted from the Night's Watch and declared myself King-Beyond-the-Wall"
+ asoiaf_mance_rayder_desertion_memory_desc_second_perspective_1:0 "You deserted from the Night's Watch and declared yourself King-Beyond-the-Wall"
+ asoiaf_mance_rayder_desertion_memory_desc_third_perspective_1:0 "Mance Rayder deserted from the Night's Watch and declared himself King-Beyond-the-Wall"

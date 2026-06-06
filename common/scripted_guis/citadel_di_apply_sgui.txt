@@ -1,0 +1,600 @@
+﻿DI_citadel_apply_citadel_construction_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_construction_t1 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_construction_t1 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_construction_t1 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_construction_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_construction_t2 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_construction_t2 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_construction_t2 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_construction_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_construction_t3 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_construction_t3 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_construction_t3 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_health_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_health_t1 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_health_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_health_t1 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_health_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_health_t2 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_health_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_health_t2 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_health_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_health_t3 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_health_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_health_t3 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_army_maintenance_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_army_maintenance_t1 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_army_maintenance_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_army_maintenance_t1 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_army_maintenance_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_army_maintenance_t2 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_army_maintenance_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_army_maintenance_t2 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_army_maintenance_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_army_maintenance_t3 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_army_maintenance_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_army_maintenance_t3 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_maa_upkeep_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_maa_upkeep_t1 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_maa_upkeep_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_maa_upkeep_t1 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_maa_upkeep_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_maa_upkeep_t2 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_maa_upkeep_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_maa_upkeep_t2 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_maa_upkeep_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_maa_upkeep_t3 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_maa_upkeep_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_maa_upkeep_t3 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_public_image_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_public_image_t1 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_public_image_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_public_image_t1 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_public_image_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_public_image_t2 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_public_image_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_public_image_t2 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_public_image_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_public_image_t3 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_public_image_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_public_image_t3 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_vassal_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_vassal_t1 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_vassal_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_vassal_t1 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_vassal_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_vassal_t2 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_vassal_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_vassal_t2 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_vassal_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_vassal_t3 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_vassal_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_vassal_t3 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_fort_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_fort_t1 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_fort_t1 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_fort_t1 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_fort_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_fort_t2 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_fort_t2 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_fort_t2 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_fort_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_fort_t3 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_fort_t3 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_fort_t3 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_ship_cost_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_ship_cost_t1 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_ship_cost_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_ship_cost_t1 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_ship_cost_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_ship_cost_t2 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_ship_cost_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_ship_cost_t2 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_ship_cost_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_ship_cost_t3 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_ship_cost_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_ship_cost_t3 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_siege_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_siege_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_siege_t1 days = DI_citadel_duration } } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_siege_t1 days = DI_citadel_duration } } } } }
+	}
+}
+DI_citadel_apply_citadel_siege_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_siege_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_siege_t2 days = DI_citadel_duration } } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_siege_t2 days = DI_citadel_duration } } } } }
+	}
+}
+DI_citadel_apply_citadel_siege_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_siege_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_siege_t3 days = DI_citadel_duration } } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_siege_t3 days = DI_citadel_duration } } } } }
+	}
+}
+DI_citadel_apply_citadel_maa_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_maa_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_maa_t1 days = DI_citadel_duration } } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_maa_t1 days = DI_citadel_duration } } } } }
+	}
+}
+DI_citadel_apply_citadel_maa_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_maa_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_maa_t2 days = DI_citadel_duration } } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_maa_t2 days = DI_citadel_duration } } } } }
+	}
+}
+DI_citadel_apply_citadel_maa_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_maa_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_maa_t3 days = DI_citadel_duration } } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_maa_t3 days = DI_citadel_duration } } } } }
+	}
+}
+DI_citadel_apply_citadel_development_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_development_t1 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_development_t1 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_development_t1 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_development_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_development_t2 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_development_t2 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_development_t2 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_development_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_development_t3 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_development_t3 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_development_t3 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_levy_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_levy_t1 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_levy_t1 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_levy_t1 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_levy_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_levy_t2 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_levy_t2 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_levy_t2 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_levy_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_levy_t3 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_levy_t3 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_levy_t3 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_heavy_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_heavy_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_heavy_t1 days = DI_citadel_duration } } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_heavy_t1 days = DI_citadel_duration } } } } }
+	}
+}
+DI_citadel_apply_citadel_heavy_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_heavy_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_heavy_t2 days = DI_citadel_duration } } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_heavy_t2 days = DI_citadel_duration } } } } }
+	}
+}
+DI_citadel_apply_citadel_heavy_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_heavy_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_heavy_t3 days = DI_citadel_duration } } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_barony } title_province = { add_province_modifier = { modifier = citadel_heavy_t3 days = DI_citadel_duration } } } } }
+	}
+}
+DI_citadel_apply_citadel_popular_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_popular_t1 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_popular_t1 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_popular_t1 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_popular_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_popular_t2 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_popular_t2 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_popular_t2 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_popular_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_popular_t3 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_popular_t3 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_popular_t3 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_food_deficit_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_t1 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_t1 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_t1 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_food_deficit_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_t2 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_t2 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_t2 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_food_deficit_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_t3 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_t3 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_t3 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_food_deficit_major_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_major_t1 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_major_t1 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_major_t1 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_food_deficit_major_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_major_t2 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_major_t2 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_major_t2 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_food_deficit_major_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_major_t3 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_major_t3 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_food_deficit_major_t3 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_wood_deficit_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_wood_deficit_t1 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_wood_deficit_t1 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_wood_deficit_t1 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_wood_deficit_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_wood_deficit_t2 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_wood_deficit_t2 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_wood_deficit_t2 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_wood_deficit_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_wood_deficit_t3 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_wood_deficit_t3 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_wood_deficit_t3 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_stone_deficit_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_stone_deficit_t1 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_stone_deficit_t1 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_stone_deficit_t1 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_stone_deficit_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_stone_deficit_t2 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_stone_deficit_t2 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_stone_deficit_t2 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_stone_deficit_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_stone_deficit_t3 days = DI_citadel_duration } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_stone_deficit_t3 days = DI_citadel_duration } } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { every_held_title = { limit = { tier = tier_county } add_county_modifier = { modifier = citadel_stone_deficit_t3 days = DI_citadel_duration } } } }
+	}
+}
+DI_citadel_apply_citadel_luxury_deficit_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_luxury_deficit_t1 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_luxury_deficit_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_luxury_deficit_t1 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_luxury_deficit_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_luxury_deficit_t2 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_luxury_deficit_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_luxury_deficit_t2 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_luxury_deficit_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_luxury_deficit_t3 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_luxury_deficit_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_luxury_deficit_t3 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_iron_deficit_t1 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_iron_deficit_t1 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_iron_deficit_t1 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_iron_deficit_t1 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_iron_deficit_t2 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_iron_deficit_t2 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_iron_deficit_t2 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_iron_deficit_t2 days = DI_citadel_duration } } }
+	}
+}
+DI_citadel_apply_citadel_iron_deficit_t3 = {
+	is_shown = { always = yes }
+	is_valid = { always = yes }
+	effect = {
+		save_scope_as = di_applier
+		add_character_modifier = { modifier = citadel_iron_deficit_t3 days = DI_citadel_duration }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 2 } every_vassal = { add_character_modifier = { modifier = citadel_iron_deficit_t3 days = DI_citadel_duration } } }
+		if = { limit = { exists = var:DI_citadel_depth var:DI_citadel_depth = 3 } every_vassal_or_below = { add_character_modifier = { modifier = citadel_iron_deficit_t3 days = DI_citadel_duration } } }
+	}
+}

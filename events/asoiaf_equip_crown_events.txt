@@ -1,0 +1,100 @@
+﻿namespace = asoiaf_equip_crown_events
+
+asoiaf_equip_crown_events.1 = { #Aegon I crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_aegon_I_crown_artefact_effect = yes
+	}
+}
+
+asoiaf_equip_crown_events.2 = { #Aenys I crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_aenys_I_crown_artefact_effect = yes
+	}
+}
+
+asoiaf_equip_crown_events.3 = { #Jaehaerys I crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_jaehaerys_I_crown_artefact_effect = yes
+	}
+}
+
+asoiaf_equip_crown_events.4 = { #Aegon III crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_aegon_III_crown_artefact_effect = yes
+	}
+}
+
+asoiaf_equip_crown_events.5 = { #Baelor I crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_baelor_I_crown_artefact_effect = yes
+	}
+}
+
+asoiaf_equip_crown_events.6 = { #Aegon IV crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_aegon_IV_crown_artefact_effect = yes
+	}
+}
+
+asoiaf_equip_crown_events.7 = { #Maekar I crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_maekar_I_crown_artefact_effect = yes
+	}
+}
+
+asoiaf_equip_crown_events.8 = { #Aerys II crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_aerys_II_crown_artefact_effect = yes
+	}
+}
+
+asoiaf_equip_crown_events.9 = { #Robert I crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_robert_I_crown_artefact_effect = yes
+	}
+}
+
+asoiaf_equip_crown_events.10 = { #Joffrey I crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_joffrey_I_crown_artefact_effect = yes
+	}
+}
+
+asoiaf_equip_crown_events.11 = { #Renly crown
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_equip_renly_crown_artefact_effect = yes
+	}
+}

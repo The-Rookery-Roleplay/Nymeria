@@ -1,0 +1,139 @@
+﻿namespace = amsb_court_event
+
+amsb_court_event.0001 = {
+	type = court_event
+	content_source = dlc_AMSB
+	title = amsb_court_event.0001.t
+	desc = amsb_court_event.0001.desc
+
+	theme = crown
+
+	court_scene = {
+		button_position_character = scope:bent_knees
+		court_event_force_open = yes
+		show_timeout_info = no
+		should_pause_time = yes
+		roles = {
+			scope:bent_knees = {
+				group = petitioners_group
+				animation = throne_room_kneel_1
+			}
+		}
+	}
+
+	widget = {
+	}
+
+	trigger = {
+	}
+
+	immediate = {
+		scope:actor = {
+			save_scope_as = ruler
+		}
+		scope:recipient = {
+			save_scope_as = bent_knees
+		}
+	}
+
+	option = { # Accept fealty
+		name = amsb_court_event.0001.a
+		scope:ruler = {
+			send_interface_message = {
+				type = msg_vassal_decision_good
+				title = amsb_court_event.0001.a_title
+				desc = amsb_court_event.0001.a_title.desc
+				right_icon = scope:bent_knees
+				scope:bent_knees = {
+					custom_tooltip = amsb_court_event.0001.a_tt
+					add_opinion = {
+						target = scope:ruler
+						modifier = amsb_bent_knees_opinion
+					}
+					add_character_flag = {
+						flag = joining_faction_block
+						years = 5
+					}
+				}
+			}
+		}
+		scope:ruler = {
+			if = {
+				limit = {
+					NOT = {
+						primary_title = {
+							var:new_house_progress = 100
+						}
+					}
+				}
+				primary_title = {
+					save_scope_as = ruler_primary_title
+				}
+				agot_add_new_house_progress = {
+					TITLE = scope:ruler_primary_title
+					CHANGE = 5
+				}
+			}
+		}
+	}
+
+	option = { # Imprison Lord
+		name = amsb_court_event.0001.b
+		imprison_character_effect_ignore_reason = {
+			TARGET = scope:bent_knees
+			IMPRISONER = scope:ruler
+		}
+		scope:ruler = {
+			add_tyranny = 15
+		}
+		scope:ruler = {
+			if = {
+				primary_title = {
+					save_scope_as = ruler_primary_title
+				}
+				agot_add_new_house_progress = {
+					TITLE = scope:ruler_primary_title
+					CHANGE = -5
+				}
+			}
+		}
+		scope:bent_knees = {
+			add_opinion = {
+				target = scope:ruler
+				modifier = amsb_bent_knees_opinion
+			}
+		}
+	}
+
+	option = { # Excecute Lord
+		name = amsb_court_event.0001.c
+		add_internal_flag = dangerous
+		agot_filler_execute_character_effect = {
+			VICTIM = scope:bent_knees
+			EXECUTIONER = scope:ruler
+		}
+		scope:ruler = {
+			add_tyranny = 60
+		}
+		scope:ruler = {
+			if = {
+				primary_title = {
+					save_scope_as = ruler_primary_title
+				}
+				agot_add_new_house_progress = {
+					TITLE = scope:ruler_primary_title
+					CHANGE = -15
+				}
+			}
+		}
+	}
+	after = {
+		scope:actor = {
+			remove_character_flag = holding_court_character_flag
+			close_view = {
+				view = royal_court
+				player = scope:actor
+			}
+		}
+	}
+}

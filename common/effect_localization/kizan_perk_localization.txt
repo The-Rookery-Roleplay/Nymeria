@@ -1,0 +1,34 @@
+# KIZAN ADDITIONS
+
+#Baelish
+
+baelish_legacy_1_effect = {
+	global =  BAELISH_1
+	first =  BAELISH_1
+	third =  BAELISH_1
+}
+
+baelish_legacy_2_effect = {
+	global =  BAELISH_2
+	first =  BAELISH_2
+	third =  BAELISH_2
+}
+
+baelish_legacy_3_effect = {
+	global =  BAELISH_3
+	first =  BAELISH_3
+	third =  BAELISH_3
+
+}
+
+baelish_legacy_4_effect = {
+	global =  BAELISH_4
+	first =  BAELISH_4
+	third =  BAELISH_4
+}
+
+baelish_legacy_5_effect = {
+	global =  BAELISH_5
+	first =  BAELISH_5
+	third =  BAELISH_5
+}

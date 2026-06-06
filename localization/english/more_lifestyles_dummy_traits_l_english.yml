@@ -1,0 +1,61 @@
+﻿l_english:
+
+
+ ##############################
+ ##### Lifestyles & Focus #####
+ ##############################
+ no_more_gods_more_lifestyles_warning: "Move the More Lifestyles and More Lifestyles Educations mods below No More Gods, Only Man in your load order"
+
+ #Prowess Education Focus
+ education_nht_prowess_loc:0 "$no_more_gods_more_lifestyles_warning$"
+ education_nht_prowess:0 "$no_more_gods_more_lifestyles_warning$"
+ education_nht_prowess_desc:0 "$no_more_gods_more_lifestyles_warning$"
+ education_nht_prowess_tt.affinity:0 "$no_more_gods_more_lifestyles_warning$"
+ education_nht_prowess_tt.disaffinity:0 "$no_more_gods_more_lifestyles_warning$"
+ education_nht_prowess_effect_desc:0 "$no_more_gods_more_lifestyles_warning$"
+
+ #Leadership Education Focus
+ education_nht_leadership:0 "$no_more_gods_more_lifestyles_warning$"
+ education_nht_leadership_loc:0 "$no_more_gods_more_lifestyles_warning$"
+ education_nht_leadership_desc:0 "$no_more_gods_more_lifestyles_warning$"
+ education_nht_leadership_tt.affinity:0 "$no_more_gods_more_lifestyles_warning$"
+ education_nht_leadership_tt.disaffinity:0 "$no_more_gods_more_lifestyles_warning$"
+ education_nht_leadership_effect_desc:0 "$no_more_gods_more_lifestyles_warning$"
+ 
+ #Education Groups
+ trait_education_nht_leadership: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess: "$no_more_gods_more_lifestyles_warning$"
+ 
+ # Prowess Education Traits
+ trait_education_nht_prowess_1: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_1_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_1_character_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_2: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_2_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_2_character_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_3: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_3_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_3_character_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_4: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_4_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_4_character_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_5: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_5_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_prowess_5_character_desc: "$no_more_gods_more_lifestyles_warning$"
+
+ # Leadership Education Traits
+ trait_education_nht_leadership_1: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_1_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_1_character_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_2: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_2_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_2_character_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_3: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_3_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_3_character_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_4: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_4_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_4_character_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_5: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_5_desc: "$no_more_gods_more_lifestyles_warning$"
+ trait_education_nht_leadership_5_character_desc: "$no_more_gods_more_lifestyles_warning$"

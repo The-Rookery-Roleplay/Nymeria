@@ -1,0 +1,62 @@
+﻿l_english:
+ decision_group_type_royal_court_change:0 "#D AM&SB#! Royal Court Decisions"
+
+ #Pirate to Feudal
+ amsb_pirate_to_feudal_king_decision:0 "Convert Pirate Dens to Feudalism"
+ amsb_pirate_to_feudal_king_decision_confirm:0 "Convert to Feudal Ways"
+ amsb_pirate_to_feudal_king_decision_tooltip:0 "Change government type by becoming [GetGovernment( 'lp_feudal_government' ).GetName] or [GetGovernment( 'feudal_government' ).GetName]"
+
+ #Royal Court Change
+ ##Dragonhall
+ high_valyrian_dragon_court_decision:0 "Change your Royal Court to the Dragonhall"
+ high_valyrian_dragon_court_decision_desc:0 "Hidden deep within the library of [ROOT.Char.GetCapitalLocation.GetName] you stumble across dusty drawings that appear to show plans for a royal audience chamber in a High Valyrian style. It's now up to you to decide if you want to pay the gold to have this court constructed or of you wish to put the plans back on the shelf and wait for another day..."
+ high_valyrian_dragon_court_decision_confirm:0 "Begin construction of the Dragonhall"
+ high_valyrian_dragon_court_decision_tooltip:0 "Alter [ROOT.Char.GetCapitalLocation.GetName]'s court to resemble the audience chamber of the Dragonlords of Old Valyria"
+
+ high_valyrian_dragon_court_removal_decision:0 "Remove the Dragonhall Royal Court"
+ high_valyrian_dragon_court_removal_desc:0 "You have come to the conclusion that you wish to restore your audience chamber back to it's former glory"
+ high_valyrian_dragon_court_removal_decision_confirm:0 "Revert the Dragonhall back to my former court"
+ high_valyrian_dragon_court_removal_decision_tooltip:0 "Change your royal throneroom back to its original audience chamber"
+
+ #Abdicate
+ amsb_abdicate_throne:0 "Abdicate the Throne"
+ amsb_abdicate_throne_tooltip:0 "The time has come to pass the Throne of [ROOT.Char.GetPrimaryTitle.GetNameNoTier] onto my heir"
+ amsb_abdicate_throne_desc:0 "The time has come for my reign of [ROOT.Char.GetPrimaryTitle.GetNameNoTier] to end... the weight of the crown has become too heavy for my head to bear..."
+ amsb_abdicate_decision_effect_tooltip:0 "You relinquish your crown and all it represents to your player heir"
+ amsb_abdicate_throne_confirm:0 "Relinquish the Crown"
+
+ amsb_step_down_from_power:0 "Step Down From Power"
+ amsb_step_down_from_power_tooltip:0 "The Time Has Come For me to Resign From The Leadership of [ROOT.Char.GetPrimaryTitle.GetNameNoTier]"
+ amsb_step_down_from_power_desc:0 "I have decided that it is time for me to resign from public office and step down from the leadership of [ROOT.Char.GetPrimaryTitle.GetNameNoTier]."
+ amsb_step_down_from_power_effect_tooltip:0 "You relinquish your position to the next administration"
+ amsb_step_down_from_power_confirm:0 "Resign from Office"
+
+ #Bend the Knee
+ amsb_summon_realm_bend_knees:0 "Summon Your Vassals To Bend The Knee"
+ amsb_summon_realm_bend_knees_tooltip:0 "It is time for my vassals to come pay homage"
+ amsb_summon_realm_bend_knees_desc:0 "I have decided to send ravens to the vassals of [ROOT.Char.GetPrimaryTitle.GetNameNoTier] demanding for them to make the pilgramage to [ROOT.Char.GetCapitalLocation.GetName] to reaffirm their loyalty to House [ROOT.Char.GetHouse.GetBaseName]. Should they refuse this demand I will have all the reason I require to imprison them for the good of the realm."
+ amsb_summon_realm_bend_knees_confirm:0 "Send the Ravens"
+
+ #Take the Black
+ amsb_take_the_black:0 "Join The Night's Watch"
+ amsb_take_the_black_tooltip:0 "I choose to take the black"
+ amsb_take_the_black_desc:0 "The time has come for me to take the vows and become a black brother of [GetTitleByKey('k_the_wall').GetNameNoTier]"
+ amsb_take_the_black_confirm:0 "Take the Black"
+
+ #Kingsguard
+ decision_amsb_form_kingsguard:0 "Form The Kingsguard"
+ decision_amsb_form_kingsguard_desc:0 "The time has come to form a Kingsguard to protect myself from any threats that lurk within the shadows now that I have united [GetTitleByKey('h_the_iron_throne').GetNameNoTier]"
+ decision_amsb_form_kingsguard_confirm:0 "Form the Kingsguard"
+ decision_amsb_form_kingsguard_tooltip:0 "Form a Kingsguard of seven knights who will dedicate their lives to protecting the King of [GetTitleByKey('h_the_iron_throne').GetNameNoTier]"
+
+ #Harrenhal Construction
+ amsb_build_harrenhal_decision:0 "Construct The Mighty Harrenhal"
+ amsb_build_harrenhal_decision_desc:0 "You demand plans be drawn up to create the largest castle in Westeros upon the northern shore of the God's Eye and begin a decade-long project to construct [GetBuilding('harrenhal_01').GetName]\n\nWhen this construction completes you will gain the special building and a level 5 castle"
+ amsb_build_harrenhal_decision_confirm:0 "Begin planning the construction of Harrenhal"
+ amsb_build_harrenhal_decision_tooltip:0 "Begin planning the construction of Harrenhal"
+
+ #The Black Castle Construction
+ amsb_build_godsfort_decision:0 "Construct The Black Castle"
+ amsb_build_godsfort_decision_desc:0 "You demand plans be drawn up to create the largest castle in Westeros upon the northern shore of the God's Eye and begin a decade-long project to construct [GetBuilding('generic_harrenhal_01').GetName]\n\nWhen this construction completes you will gain the special building and a level 5 castle"
+ amsb_build_godsfort_decision_confirm:0 "Begin planning the construction of The Black Castle"
+ amsb_build_godsfort_decision_tooltip:0 "Begin planning the construction of The Black Castle"

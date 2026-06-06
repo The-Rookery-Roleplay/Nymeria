@@ -1,0 +1,4736 @@
+﻿###########
+## Citadel Buildings (Kizan)
+###########
+
+#dragonfire = { #Dragonfire Test <- Do NOT touch this please ! - K.
+#	is_graphical_background = yes
+
+	# asset = {
+	# 	type = entity
+	# 	name = "seagull_port_entity"
+	# }
+
+#	asset = {
+#		type = entity
+#		name = "env_smoke01"
+#	}
+
+	#type = special
+#}
+
+
+# test_duskendale = { # Duskendale, needs to be properly modelled, not finished.
+# 	construction_time = very_slow_construction_time
+
+# 	type_icon = "icon_structure_walls_of_genoa.dds"
+	
+# 	asset = {
+# 		type = entity
+# 		name = "test_duskendale_entity"
+# 	}
+
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
+	
+# 	cost_gold = 2500
+# 	max_garrison = 1000
+# 	county_modifier = {
+# 		development_growth = 0.5
+# 		development_growth_factor = 0.25
+# 		defender_holding_advantage = 10
+# 		hostile_raid_time = 0.5
+# 	}
+	
+# 	province_modifier = {
+# 		garrison_size = 2.5
+# 		fort_level = 10
+# 		monthly_income = 7
+# 		travel_danger = -20
+# 	}
+	
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { 
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
+	
+# 	type = special
+
+# 	flag = travel_point_of_interest_martial
+# }
+
+citadel_vineyard = { # Create at least 6 Levels for this, first one is just the Foundation. - Kizan
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_vineyard.dds"
+	
+	asset = {
+		type = pdxmesh
+		name = "citadel_vineyard_mesh"
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 2500
+	max_garrison = 1000
+	
+	province_modifier = {
+		monthly_income = 4
+		travel_danger = -20
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_martial
+}
+
+# valyrian_dragonpit = {
+# 	construction_time = very_slow_construction_time
+
+# 	can_construct_potential = {
+# 		agot_can_build_or_restore_dragonpits = yes
+# 	}
+
+# 	asset = {
+# 		type = entity
+# 		name = "valyrian_dragonpit_entity"
+# 	}
+# 	can_construct_showing_failures_only = {
+# 		building_requirement_tribal = no
+# 	}
+
+# 	effect_desc = building_dragonpit_effect
+
+# 	on_complete = {
+# 		county.holder = {
+# 			trigger_event = agot_dragon_pits.0005
+# 		}
+# 	}
+
+# 	cost_gold = expensive_building_tier_8_cost
+
+# 	province_modifier = {
+# 		monthly_income = -0.5
+# 	}
+# 	county_modifier = {
+# 		county_opinion_add = -10
+# 	}
+# 	character_modifier = {
+# 		dread_gain_mult = 0.5
+# 		monthly_dynasty_prestige_mult = 0.1
+# 		owned_legend_spread_mult  = 0.15
+# 		intimidated_vassal_tax_contribution_mult  = 0.2
+# 	}
+# 	county_holder_character_modifier = {
+# 		dread_gain_mult = 0.10
+# 		monthly_dynasty_prestige_mult = 0.05
+# 		owned_legend_spread_mult  = 0.05
+# 		intimidated_vassal_tax_contribution_mult  = 0.05
+# 	}
+# 	type_icon = "icon_dragonpit.dds"
+
+# 	ai_value = {
+# 		base = 100
+# 		modifier = { 
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
+
+# 	type = special
+# }
+
+# citadel_ten_towers = { - Building not needed anymore.
+# 	construction_time = very_slow_construction_time
+
+# 	type_icon = "icon_structure_visegrad_castle.dds"
+	
+# 	asset = {
+# 		type = entity
+# 		name = "citadel_ten_towers_entity"
+# 	}
+
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
+	
+# 	cost_gold = 2500
+# 	max_garrison = 500
+# 	county_modifier = {
+# 		development_growth = 0.08
+# 		development_growth_factor = 0.1
+# 		defender_holding_advantage = 2
+# 	}
+
+# 	province_modifier = {
+# 		fort_level = 2
+# 		monthly_income = 1.8
+# 		embarkation_cost_mult = -0.25
+# 	}
+	
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
+	
+# 	type = special
+
+# 	flag = travel_point_of_interest_martial
+# }
+
+# citadel_ten_towers_noport = {
+# 	construction_time = very_slow_construction_time
+
+# 	type_icon = "icon_structure_visegrad_castle.dds"
+	
+# 	asset = {
+# 		type = entity
+# 		name = "citadel_ten_towers_noport_entity"
+# 	}
+
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
+	
+# 	cost_gold = 1500
+# 	max_garrison = 250
+# 	county_modifier = {
+# 		development_growth = 0.04
+# 		development_growth_factor = 0.05
+# 	}
+	
+# 	province_modifier = {
+# 		fort_level = 1
+# 		monthly_income = 0.8
+# 		embarkation_cost_mult = -0.15
+# 	}
+
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { 
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
+	
+# 	next_building = citadel_ten_towers
+
+# 	type = special
+
+# 	flag = travel_point_of_interest_martial
+# }
+
+citadel_blackglassport = { #Model Exists, but we won't use the building.
+	construction_time = very_slow_construction_time
+
+	type_icon = "citadel_harbor.dds"
+	
+	asset = {
+		type = entity
+		name = "blackglassport_entity"
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 2500
+	max_garrison = 1000
+	county_modifier = {
+		development_growth = 0.5
+		development_growth_factor = 0.25
+		defender_holding_advantage = 10
+		hostile_raid_time = 0.5
+	}
+	
+	province_modifier = {
+		garrison_size = 2.5
+		fort_level = 10
+		monthly_income = 7
+		travel_danger = -20
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_martial
+}
+
+# citadel_brothersport = {	#Model not finished. - Kizan
+# 	construction_time = very_slow_construction_time
+
+# 	type_icon = "citadel_harbor.dds"
+	
+# 	asset = {
+# 		type = entity
+# 		name = "brothersport_entity"
+# 	}
+
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
+	
+# 	cost_gold = 3500
+# 	max_garrison = 1000
+# 	county_modifier = {
+# 		development_growth = 0.5
+# 		development_growth_factor = 0.25
+# 		defender_holding_advantage = 10
+# 		hostile_raid_time = 0.5
+# 	}
+	
+# 	province_modifier = {
+# 		garrison_size = 2.5
+# 		fort_level = 10
+# 		monthly_income = 7
+# 		travel_danger = -20
+# 	}
+	
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { 
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
+	
+# 	type = special
+
+# 	flag = travel_point_of_interest_martial
+# }
+
+
+# citadel_fairmarket1 = {	#LAST UPGRADE Bugged for now - Kizan
+# 	construction_time = 13500
+
+# 	type_icon = "icon_building_grand_market.dds"
+	
+# 	asset = {
+# 		type = entity
+# 		name = "citadel_fairmarket_entity"
+# 	}
+
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
+	
+# 	cost_gold = 8000
+# 	max_garrison = 1000
+# 	levy = 4000
+# 	county_modifier = {
+# 		development_growth = 0.5
+# 		development_growth_factor = 0.25
+# 		defender_holding_advantage = 10
+# 		hostile_raid_time = 0.5
+# 		levy_size = 0.3
+# 	}
+	
+
+# 	province_modifier = {
+# 		fort_level = 5
+# 		monthly_income = 10
+# 		travel_danger = -20
+# 	}
+	
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { # Fill all building slots before going for special buildings
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
+	
+# 	type = special
+
+# 	flag = travel_point_of_interest_martial
+# }
+
+# citadel_fairmarket2 = {	#SECOND UPGRADE.
+# 	construction_time = very_slow_construction_time
+
+# 	type_icon = "icon_building_grand_market.dds"
+	
+# 	asset = {
+# 		type = entity
+# 		name = "citadel_fairmarket2_entity" 
+# 	}
+
+# 	# can_construct = {
+# 	# 	custom_tooltip = {
+# 	# 		text = HOLDER_SHAWNEY_ONLY
+# 	# 		OR = {
+# 	# 			scope:holder = dynasty:dynn_Shawney
+# 	# 		}
+# 	# 	}
+# 	# 	has_holding_type = castle_holding
+# 	# }
+	
+# 	cost_gold = 2500
+# 	max_garrison = 500
+# 	levy = 550
+# 	county_modifier = {
+# 		development_growth = 0.35
+# 		development_growth_factor = 0.15
+# 		defender_holding_advantage = 5
+# 		hostile_raid_time = 0.25
+# 		levy_size = 0.2
+# 	}
+	
+
+# 	province_modifier = {
+# 		fort_level = 3
+# 		monthly_income = 5
+# 		travel_danger = -10
+# 	}
+	
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { 
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
+	
+# 	type = special
+# 	next_building = citadel_fairmarket1
+# 	flag = travel_point_of_interest_martial
+# }
+
+# citadel_fairmarket3 = {	#FIRST ONE.
+# 	construction_time = very_slow_construction_time
+
+# 	type_icon = "icon_building_grand_market.dds"
+	
+# 	asset = {
+# 		type = entity
+# 		name = "citadel_fairmarket3_entity" # NEEDS CHANGED!
+# 	}
+
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
+	
+# 	cost_gold = 500
+# 	max_garrison = 150
+# 	county_modifier = {
+# 		defender_holding_advantage = 2
+# 		hostile_raid_time = 0.1
+# 		levy_size = 0.1
+# 	}
+
+# 	province_modifier = {
+# 		fort_level = 1
+# 		monthly_income = 1
+# 	}
+	
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 		modifier = { 
+# 			factor = 0
+# 			free_building_slots > 0
+# 		}
+# 	}
+	
+# 	type = special
+# 	next_building = citadel_fairmarket2
+# 	flag = travel_point_of_interest_martial
+# }
+
+# ----------------------------------------------
+
+citadel_wesselvare = {	#House Varner - Reach.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_cereal_fields.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 500  
+	max_garrison = 150
+	levy = 200
+	county_modifier = {
+		levy_size = 0.1
+		development_growth_factor = 0.15
+	}
+
+	character_modifier = {
+		monthly_prestige  = 1
+	}
+
+	province_modifier = {
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+
+citadel_martell_pleasure_den = {	#House Martell - Dorne.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_pleasureden.dds"
+
+	can_construct_potential = {
+		barony = title:b_sunspear
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+
+	character_modifier = {
+		intrigue = 1
+		stress_gain_mult = -0.25
+		attraction_opinion = 20
+		enemy_hostile_scheme_success_chance_add = -5
+		max_hostile_schemes_add = 1
+		fertility = 0.15
+		monthly_piety = -1
+		clergy_opinion = -30
+	}
+
+	province_modifier = {
+		monthly_income = 1.59
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = duchy_capital
+}
+
+citadel_fowler_olives = {	#House Fowler - Dorne.
+	construction_time = very_slow_construction_time
+
+	type_icon = "citadel_building_olive.dds"
+
+	can_construct_potential = {
+		barony = title:b_skyreach
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+
+	character_modifier = {
+	}
+
+	province_modifier = {
+		monthly_income = 1.5
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = duchy_capital
+	next_building = citadel_fowler_olives2
+}
+
+citadel_fowler_olives2 = {	#House Fowler - Dorne.
+	construction_time = very_slow_construction_time
+
+	type_icon = "citadel_building_olive.dds"
+
+	can_construct_potential = {
+		barony = title:b_skyreach
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+		development_growth_factor = 0.4
+	}
+
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.5
+	}
+
+	province_modifier = {
+		monthly_income = 2.5
+		build_gold_cost = -0.05
+		build_speed = -0.05
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = duchy_capital
+	next_building = citadel_fowler_olives3
+}
+
+citadel_fowler_olives3 = {	#House Fowler - Dorne.
+	construction_time = very_slow_construction_time
+
+	type_icon = "citadel_building_olive.dds"
+
+	can_construct_potential = {
+		barony = title:b_skyreach
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+		development_growth_factor = 0.4
+	}
+
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.15
+	}
+
+	province_modifier = {
+		monthly_income = 3.5
+		build_gold_cost = -0.1
+		build_speed = -0.05
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = duchy_capital
+	next_building = citadel_fowler_olives4
+}
+
+citadel_fowler_olives4 = {	#House Fowler - Dorne.
+	construction_time = very_slow_construction_time
+
+	type_icon = "citadel_building_olive.dds"
+
+	can_construct_potential = {
+		barony = title:b_skyreach
+		building_requirement_tribal = no
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+		development_growth_factor = 0.4
+	}
+
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.15
+	}
+
+	province_modifier = {
+		monthly_income = 5
+		build_gold_cost = -0.2
+		build_speed = -0.2
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = duchy_capital
+}
+
+citadel_princesspath = {	#House Fowler - Dorne.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_cilician_gates.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+		culture = {
+		}
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+		hostile_raid_time = 0.4
+		defender_holding_advantage = 2
+	}
+
+	character_modifier = {
+	}
+
+	province_modifier = {
+		fort_level = 4
+		defender_holding_advantage = 4
+		supply_limit_mult = -0.5
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+}
+
+citadel_dornishdunes = {	#Dornish Dunes.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_sea.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+		travel_danger = 10
+		supply_limit_mult = -0.25
+		development_growth = -0.01
+	}
+
+	character_modifier = {
+	}
+
+	province_modifier = {
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+}
+
+
+citadel_singingcliffs = {	#Singing Cliffs - House Bulwer .
+	construction_time = very_slow_construction_time
+
+	type_icon = "gibraltar.dds"
+	asset = {
+		type = pdxmesh
+		name = "blackcrown_mesh"
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 500
+	cost_gold = 1000
+	county_modifier = {
+		hostile_raid_time = 0.25
+		fort_level = 2
+	}
+
+	character_modifier = {
+		monthly_prestige = 0.1
+        monthly_income = 1
+	}
+
+	province_modifier = {
+		travel_danger = 10
+		defender_holding_advantage = 5
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+}
+
+citadel_bandallon = {	#Bandallon - House Blackbar / Reach .
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_hill_farms.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+		monthly_income = 0.5
+	}
+
+	character_modifier = {
+		fertility = 0.05
+		personal_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+		attraction_opinion = 10
+	}
+
+	province_modifier = {
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+}
+
+citadel_saltcliffe = {	# Saltcliffe - Iron Islands.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_hightide.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+	}
+
+	character_modifier = {
+		embarkation_cost_mult = -0.15
+		sea_travel_danger = low_sea_danger_reduction
+	}
+
+	province_modifier = {
+		stationed_heavy_infantry_toughness_mult = 0.15
+		stationed_heavy_infantry_damage_mult = 0.15
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+}
+
+citadel_blacktyde = {	# Blacktyde - Iron Islands.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_lands_end.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+	}
+
+	character_modifier = {
+		intrigue = 2
+		monthly_intrigue_lifestyle_xp_gain_mult = 0.1
+		embarkation_cost_mult = -0.15
+		max_loot_mult = 0.15
+	}
+
+	province_modifier = {
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+}
+
+citadel_crackclaw_mountains = {	# Crackclaw Mountains - Crownlands.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_gibraltar.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	county_modifier = {
+		defender_holding_advantage = 5
+		hostile_raid_time = 0.25
+		travel_danger = 10
+		development_growth = -0.01
+		supply_limit = -15
+		supply_limit_mult = -0.25
+	}
+
+	character_modifier = {
+		general_opinion = -5
+	}
+
+	province_modifier = {
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+}
+
+citadel_whispers_ruin = {	# The Whispers (Ruin) - Crownlands.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_pirate_economic.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"hadrians_wall_01_a_mesh"
+		}
+		illustration = @holding_illustration_ruin
+	}
+
+	cost_gold = 1000
+	county_modifier = {
+		defender_holding_advantage = 5
+		hostile_raid_time = 0.25
+		travel_danger = 10
+		development_growth = -0.01
+		supply_limit = -15
+		supply_limit_mult = -0.25
+	}
+
+	character_modifier = {
+		general_opinion = -5
+	}
+
+	province_modifier = {
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	next_building = citadel_whispers
+}
+
+citadel_whispers = {	# The Whispers - Crownlands.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_pirate_economic.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	max_garrison = 250
+	county_modifier = {
+		defender_holding_advantage = 5
+		hostile_raid_time = 0.5
+	}
+
+	character_modifier = {
+		general_opinion = -15
+		active_accolades = 1
+		dread_gain_mult = 0.3
+		dread_baseline_add = 10
+		knight_effectiveness_per_dread = 0.0025
+		owned_legend_spread_mult = 0.1
+	}
+
+	province_modifier = {
+		defender_holding_advantage = 2
+		fort_level = 4
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+}
+
+citadel_castle_stokeworth = {	# Castle Stokeworth - Crownlands.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_ub_cesis_castle.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	max_garrison = 150
+	county_modifier = {
+	}
+
+	character_modifier = {
+		opinion_of_liege = 15
+		archers_recruitment_cost_mult = -0.05
+	}
+
+	province_modifier = {
+		fort_level = 2
+		stationed_archers_damage_mult = 0.10
+		stationed_archers_toughness_mult = 0.10
+		stationed_archers_pursuit_mult = 0.10
+		stationed_archers_screen_mult = 0.10
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+}
+
+citadel_antlers = {	# Antlers - Crownlands.
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_ub_panemune_castle.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = 1000
+
+	county_modifier = {
+		monthly_income = 0.5
+	}
+
+	character_modifier = {
+		lifestyle_hunter_xp_gain_mult = 0.2
+		parochial_opinion = 5
+		parochial_tax_contribution_mult = 0.1
+		monthly_prestige_gain_mult = 0.05
+		stress_gain_mult = -0.15
+		stress_loss_mult = 0.15
+		court_grandeur_baseline_add = 4
+	}
+
+	province_modifier = {
+		travel_danger = -5
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+
+citadel_maston = {	# fair isle port
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_great_harbor.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = 1000
+	levy = 150
+
+	character_modifier = {
+		stewardship = 3
+	}
+
+	county_holder_character_modifier = {
+		stewardship = 1
+		monthly_prestige  = 1
+		monthly_dynasty_prestige_mult = 0.1
+	}
+
+	province_modifier = {
+		monthly_income = 2
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+
+citadel_grand_markets_of_fairisle = { # Grand Market of Fairisle - Westerlands.
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_tax_assessor.dds"
+
+	can_construct_potential = {
+		barony = title:b_faircastle
+		building_requirement_tribal = no
+	}
+
+	cost_gold = 2000
+
+	province_modifier = {
+		monthly_income = 1.5
+	}
+
+	county_holder_character_modifier = {
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+
+	type = duchy_capital
+}
+
+
+citadel_westerling_mine_dry = { # Dried out Mine.
+
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = { 
+		building_requirement_tribal = no
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+
+	cost_gold = expensive_building_tier_3_cost
+	
+	province_modifier = {
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.02
+	}	
+
+	next_building = citadel_westerling_mine1
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_westerling_mine1 = { # Mine building taken from Flumph, so they should be standarized stats for everyone.
+
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = { 
+		building_requirement_tribal = no
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+
+	cost_gold = expensive_building_tier_3_cost
+	
+	max_garrison = 250
+	
+	province_modifier = {
+		monthly_income = silver_mine_building_tax_tier_1
+		fort_level = 4
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.02
+	}	
+
+	next_building = citadel_westerling_mine2
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_westerling_mine2 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+	
+	max_garrison = 250
+	
+	province_modifier = {
+		monthly_income = silver_mine_building_tax_tier_2
+		fort_level = 4
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.03
+	}	
+
+	next_building = citadel_westerling_mine3
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_westerling_mine3 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+
+	cost_gold = expensive_building_tier_5_cost
+	
+	max_garrison = 250
+	
+	province_modifier = {
+		monthly_income = silver_mine_building_tax_tier_3
+		fort_level = 4
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.15
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.04
+	}	
+	next_building = citadel_westerling_mine4
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_westerling_mine4 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = expensive_building_tier_6_cost
+	
+	max_garrison = 250
+	
+	province_modifier = {
+		monthly_income = silver_mine_building_tax_tier_4
+		fort_level = 4
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.05
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+# --------------------------------------------
+
+citadel_ashemark_mine1 = { # Mine building taken from Flumph, so they should be standarized stats for everyone.
+
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = { 
+		building_requirement_tribal = no
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+
+	cost_gold = expensive_building_tier_3_cost
+	
+	max_garrison = 250
+	
+	province_modifier = {
+		monthly_income = silver_mine_building_tax_tier_1
+		fort_level = 4
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.02
+	}	
+
+	next_building = citadel_ashemark_mine2
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_ashemark_mine2 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+	
+	max_garrison = 250
+	
+	province_modifier = {
+		monthly_income = silver_mine_building_tax_tier_2
+		fort_level = 4
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.03
+	}	
+
+	next_building = citadel_ashemark_mine3
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_ashemark_mine3 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+
+	cost_gold = expensive_building_tier_5_cost
+	
+	max_garrison = 250
+	
+	province_modifier = {
+		monthly_income = silver_mine_building_tax_tier_3
+		fort_level = 4
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.15
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.04
+	}	
+	next_building = citadel_ashemark_mine4
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_ashemark_mine4 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	cost_gold = expensive_building_tier_6_cost
+	
+	max_garrison = 250
+	
+	province_modifier = {
+		monthly_income = silver_mine_building_tax_tier_4
+		fort_level = 4
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.05
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+
+citadel_fisher = { # Fisher - The North
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_dunmore_cave.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = expensive_building_tier_6_cost
+	
+	max_garrison = 350
+	
+	province_modifier = {
+		fort_level = 2
+		monthly_income = 1.25
+	}
+	county_modifier = {
+		hostile_raid_time = 0.25
+	}
+	character_modifier = {
+		ironborn_opinion = -25
+		prowess = 1
+		coastal_advantage = 5
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_martial
+}
+
+citadel_spearwatch_island = { # Spearwatch Island - The North
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_skull.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = expensive_building_tier_6_cost
+	
+	province_modifier = {
+		defender_holding_advantage = 5
+		development_growth = -0.15
+		travel_danger = 30
+	}
+	county_modifier = {
+		hostile_raid_time = 0.3
+	}
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_martial
+}
+
+citadel_deepwood_motte = { # Deepwood Motte - The North
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_skye_fairy_pool.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = expensive_building_tier_6_cost
+	
+	province_modifier = {
+		fort_level = 4
+		monthly_income = 0.5
+		stationed_pikemen_damage_mult = 0.3
+		stationed_pikemen_pursuit_mult = 0.3
+		stationed_pikemen_screen_mult = 0.3
+		stationed_pikemen_toughness_mult = 0.3
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		ironborn_opinion = -25
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_martial
+}
+
+citadel_blackpool = { # Blackpool - The North
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ub_bran_castle.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = expensive_building_tier_6_cost
+	
+	max_garrison = 150
+	
+	province_modifier = {
+		fort_level = 1
+		defender_holding_advantage = 2
+		stationed_pikemen_damage_mult = 0.15
+		stationed_pikemen_pursuit_mult = 0.15
+		stationed_pikemen_screen_mult = 0.15
+		stationed_pikemen_toughness_mult = 0.15
+	}
+	county_modifier = {
+		hostile_raid_time = 0.15
+	}
+	character_modifier = {
+		ironborn_opinion = -25
+		martial = 1
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_martial
+}
+
+citadel_castle_cerwyn = { # Castle Cerwyn - The North
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_curtain_walls.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = expensive_building_tier_6_cost
+	levy = 250
+	province_modifier = {
+		fort_level = 5
+		defender_holding_advantage = 2
+		stationed_maa_damage_mult = 0.1
+		stationed_maa_toughness_mult = 0.1
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_martial
+}
+
+citadel_haystack_hall = { # Haystack Hall - The Stormlands
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_cereal_fields.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = expensive_building_tier_6_cost
+	levy = 250
+	province_modifier = {
+		monthly_income = 1
+		development_growth = 0.2
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_martial
+}
+
+citadel_dulver_mine1 = { # Dulver Mine - Westerlands
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = { 
+		building_requirement_tribal = no
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+
+	cost_gold = expensive_building_tier_3_cost
+	
+	province_modifier = {
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.02
+	}	
+
+	next_building = citadel_dulver_mine2
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_dulver_mine2 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+	
+	max_garrison = 250
+	
+	province_modifier = {
+		monthly_income = 2
+		fort_level = 4
+		defender_holding_advantage = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_dynasty_prestige_mult = 0.03
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_saan_estate = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ub_bidar_port.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+		OR = {
+			county.holder = {
+				government_has_flag = government_is_pirate
+			}
+		}
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		stationed_heavy_infantry_toughness_mult = 0.15
+		stationed_heavy_infantry_damage_mult = 0.25
+		stationed_heavy_infantry_pursuit_mult = 0.25
+		stationed_heavy_infantry_screen_mult = 0.15
+		hostile_raid_time = 0.5
+	}
+	county_modifier = {
+		development_growth_factor = -0.1
+	}
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.03
+		monthly_prestige = 0.25
+		intimidated_vassal_tax_contribution_mult = 0.15
+		max_loot_mult = 0.15
+		intrigue = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_three_towers = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ub_beni_hammad.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	levy = 400
+	cost_gold = expensive_building_tier_4_cost
+	
+	max_garrison = 250
+	
+	province_modifier = {
+		stationed_heavy_cavalry_toughness_mult = 0.05
+		stationed_heavy_cavalry_damage_mult = 0.05
+		stationed_heavy_cavalry_pursuit_mult = 0.05
+		stationed_heavy_cavalry_screen_mult = 0.05
+		knight_effectiveness_mult = 0.3
+		levy_size = 0.1
+	}
+	county_modifier = {
+		monthly_income = 2
+	}
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.03
+		monthly_prestige = 0.25
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_skullhammer = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_planky_town - Copy.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+		OR = {
+			county.holder = {
+				government_has_flag = government_is_pirate
+			}
+		}
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 2
+		monthly_barter_goods = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		stewardship = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_morrefall = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_hellgate.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+		OR = {
+			county.holder = {
+				government_has_flag = government_is_pirate
+			}
+		}
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		stationed_archers_damage_mult = 0.3
+		stationed_archers_toughness_mult = 0.3
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		monthly_prestige = 0.35
+		army_maintenance_mult = -0.2
+		martial = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_vinetown = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_vineyard.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 7
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		liege_opinion = 15
+		stewardship = 1
+		naval_movement_speed_mult = 0.15
+		embarkation_cost_mult = -0.25
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_the_ring = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ub_cothon.dds"
+	asset = {
+		type = pdxmesh
+		name = "the_ring_mesh"
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 400
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 2
+		levy_size = 0.2
+		stationed_heavy_cavalry_damage_mult = 0.1
+		stationed_heavy_cavalry_toughness_mult = 0.1
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		martial = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_newkeep = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ub_bamburg.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 500
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 1
+		levy_size = 0.2
+		stationed_heavy_cavalry_damage_mult = 0.1
+		stationed_heavy_cavalry_toughness_mult = 0.1
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		martial = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_hearts_home = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ub_mt_sinai.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 650
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 2
+		levy_size = 0.2
+		stationed_skirmishers_damage_mult = 0.5
+		stationed_skirmishers_toughness_mult = 0.5
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		martial = 1
+		monthly_piety = 1.5
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_snakewood = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_byzantine.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 800
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	effect_desc = ep2_activities_legacy_4_hunts_up_legendary_hunt_sightings_effect 
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 2
+		levy_size = 0.2
+		stationed_skirmishers_damage_mult = 0.25
+		stationed_skirmishers_toughness_mult = 0.25
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		prowess = 2
+		lifestyle_hunter_xp_gain_mult = 0.25
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_silverhall = { # Hambone adjust building
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 250
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 4
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		stewardship = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	next_building = citadel_silverhall2
+	flag = travel_point_of_interest_economic
+}
+
+citadel_silverhall2 = { # Hambone adjust building
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 250
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = 3000
+
+	province_modifier = {
+		monthly_income = 8
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		stewardship = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+citadel_new_barrel = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "new_barrel.dds"
+	asset = {
+		type = pdxmesh
+		name = "fp4_legendary_hunting_lodge_01_a_mesh"
+	}
+	effect_desc = feast_cost_discount_max_desc
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 200
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = 1200
+
+	province_modifier = {
+		levy_size = 0.1
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		diplomacy = 1
+		monthly_diplomacy_lifestyle_xp_gain_mult = 0.15
+		negate_health_penalty_add = 0.3
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+citadel_sweetport = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "citadel_harbor.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 200
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = 1200
+
+	province_modifier = {
+		levy_size = 0.1
+		monthly_income = 0.5
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		stewardship = 1
+		monthly_stewardship_lifestyle_xp_gain_mult = 0.15
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+citadel_starfish_vineyards = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_vineyard.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 5
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		liege_opinion = 15
+		stewardship = 1
+		embarkation_cost_mult = -0.25
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_peachtree_vineyards = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_vineyard.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 5
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		liege_opinion = 15
+		stewardship = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_stoneclaw_vineyards = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_vineyard.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 5
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		liege_opinion = 15
+		stewardship = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_northmarch = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ub_riga_castle.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 1500
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 4
+		levy_size = 0.3
+	}
+	county_modifier = {
+		army_maintenance_mult = 0.1
+	}
+	character_modifier = {
+		westerman_main_opinion = -10
+		Western_Valelanders_opinion = -10
+		martial = 2
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_woodbine = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_morne.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		stationed_heavy_cavalry_damage_mult = 0.05
+		stationed_heavy_cavalry_pursuit_mult = 0.05
+	}
+	county_modifier = {
+		army_maintenance_mult = 0.1
+	}
+	character_modifier = {
+		prowess = 1
+		monthly_prestige = 0.25
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_westtwin = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_the_twins.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	levy = 150
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		defender_holding_advantage = 6
+		fort_level = 16
+		monthly_income = 1
+		levy_size = 0.1
+	}
+	county_modifier = {
+		travel_danger = -10
+	}
+	character_modifier = {
+		movement_speed = -0.1
+		personal_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_golden_vines = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ma_castle_ferrara.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 400
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 2
+		levy_size = 0.2
+		stationed_skirmishers_damage_mult = 0.1
+		stationed_skirmishers_toughness_mult = 0.1
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		stewardship = 1
+		opinion_of_liege = 15
+		liege_opinion = 15
+		vassal_tax_contribution_mult = 0.1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_stillhouse_vineyards = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_vineyard.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 10
+	}
+	county_modifier = {
+	}
+	county_holder_character_modifier = {
+		prestige = 0.2
+		stewardship = 2
+	}
+	character_modifier = {
+		liege_opinion = 15
+		stewardship = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_longcove_center = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_military_camps.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 500
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 2
+	}
+	county_modifier = {
+		levy_size = 0.2
+	}
+	county_holder_character_modifier = {
+		martial = 1
+	}
+	character_modifier = {
+		liege_opinion = 15
+		martial = 2
+	}	
+
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_footway = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_military_camps.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 800
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+	}
+	county_modifier = {
+		levy_size = 0.2
+	}
+	county_holder_character_modifier = {
+		intrigue = 1
+	}
+	character_modifier = {
+		liege_opinion = 15
+		intrigue = 2
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_hayholt = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_grand_market.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+	}
+	county_modifier = {
+		hostile_raid_time = -0.25
+	}
+	character_modifier = {
+		liege_opinion = 15
+		martial = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_gallow_cove = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_pirate_economic.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 200
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		stationed_skirmishers_damage_mult = 3
+		stationed_skirmishers_toughness_mult = 3
+	}
+	county_modifier = {
+		hostile_raid_time = -0.25
+	}
+	character_modifier = {
+		prowess = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_maidenpool = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "citadel_harbor.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 2
+		travel_danger = -15
+		hostile_raid_time = -0.1
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		stewardship = 2
+	}	
+	county_holder_character_modifier = {
+		stewardship = 1
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_lakehaven = {
+
+	construction_time = slow_construction_time
+	
+	type_icon = "icon_structure_al_qarawiyyin_university.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 100
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		stationed_skirmishers_damage_mult = 1
+		stationed_skirmishers_toughness_mult = 1
+		stationed_skirmishers_pursuit_mult = 1
+		stationed_skirmishers_screen_mult = 1
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		diplomacy = 1
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_willow_wood_1 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_palace_of_the_conclave.dds"
+	next_building = citadel_willow_wood_2
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = -250
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	max_garrison = -500
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+
+	}
+	county_modifier = {
+		travel_danger = 5
+	}
+	character_modifier = {
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_willow_wood_2 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_palace_of_the_conclave.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 500
+	max_garrison = 500
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = 1200
+
+	province_modifier = {
+		stationed_archers_damage_mult = 0.2
+		stationed_archers_toughness_mult = 0.2
+		stationed_archers_pursuit_mult = 0.2
+		stationed_archers_screen_mult = 0.2
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+		levy_size = 0.1
+	}
+	character_modifier = {
+		martial = 2
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_starpike_2 = {
+
+	construction_time = slow_construction_time
+	asset = {
+        type = pdxmesh
+        name = "starpike_mesh"
+    }
+	type_icon = "icon_structure_hotin_fortress.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 750
+	max_garrison = 500
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = 1500
+
+	province_modifier = {
+		stationed_heavy_cavalry_damage_mult = 0.2
+		stationed_heavy_cavalry_toughness_mult = 0.2
+		stationed_heavy_cavalry_pursuit_mult = 0.2
+		stationed_heavy_cavalry_screen_mult = 0.2
+		fort_level = 5
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+		levy_size = 0.2
+	}
+	character_modifier = {
+		martial = 2
+		prowess = 2
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+# casterly_rock_02 = { #Taken out for now, as the name collides with the newly added GOT ones.
+
+# 	construction_time = 20000
+
+# 	type_icon = "icon_casterly_rock.dds"
+# 	next_building = casterly_rock_03
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
+
+# 	asset = {
+# 		type = pdxmesh
+# 		name = "casterlyrock_mesh"
+# 	}
+
+# 	is_enabled = {
+# 		agot_generic_is_special_building_enabled = yes
+# 	}
+
+# 	cost_gold = 4250
+
+# 	character_modifier = {
+# 		court_grandeur_baseline_add = 5
+# 		legitimacy_gain_mult = 0.1
+# 		owned_legend_spread_mult = 0.1
+# 		dynasty_opinion = 10
+# 		stewardship = 3
+# 	}
+
+# 	max_garrison = normal_building_max_garrison_tier_10
+
+# 	province_modifier = {
+# 		defender_holding_advantage = 20
+# 		fort_level = 22
+# 		monthly_income = 15
+# 	}
+
+# 	county_modifier = {
+# 		development_growth_factor = 0.2
+# 	}
+
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 	}
+
+# 	type = special
+
+# 	flag = travel_point_of_interest_economic
+# 	flag = special_building_enabled_in_ruin_county
+# }
+
+# casterly_rock_03 = { # Hambone adjust building | I think the price & time is already good? But you can take a look.
+
+# 	construction_time = 25000
+
+# 	type_icon = "icon_casterly_rock.dds"
+
+# 	can_construct_potential = {
+# 		building_requirement_tribal = no
+# 	}
+
+# 	asset = {
+# 		type = pdxmesh
+# 		name = "casterlyrock_mesh"
+# 	}
+
+# 	is_enabled = {
+# 		agot_generic_is_special_building_enabled = yes
+# 	}
+
+# 	cost_gold = 6000
+
+# 	character_modifier = {
+# 		court_grandeur_baseline_add = 5
+# 		legitimacy_gain_mult = 0.1
+# 		owned_legend_spread_mult = 0.1
+# 		dynasty_opinion = 10
+# 		stewardship = 3
+# 	}
+
+# 	max_garrison = normal_building_max_garrison_tier_10
+
+# 	province_modifier = {
+# 		defender_holding_advantage = 20
+# 		fort_level = 24
+# 		monthly_income = 20
+# 	}
+
+# 	county_modifier = {
+# 		development_growth_factor = 0.2
+# 	}
+
+# 	ai_value = {
+# 		base = 100
+# 		culture_likely_to_fortify_modifier = yes
+# 	}
+
+# 	type = special
+
+# 	flag = travel_point_of_interest_economic
+# 	flag = special_building_enabled_in_ruin_county
+# }
+
+citadel_uplands = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_palace_of_the_conclave.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	max_garrison = 500
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		stationed_pikemen_damage_mult = 0.15
+		stationed_pikemen_toughness_mult = 0.15
+		stationed_pikemen_pursuit_mult = 0.15
+		stationed_pikemen_screen_mult = 0.15
+	}
+	county_modifier = {
+		travel_danger = -5
+	}
+	character_modifier = {
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_castle_darry = {
+
+	construction_time = slow_construction_time
+	next_building = citadel_castle_darry_02
+	type_icon = "icon_morne.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		travel_danger = 5
+		monthly_income = -1
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		monthly_prestige = -0.1
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_castle_darry_02 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_morne.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	max_garrison = 500
+	cost_gold = 1500
+	levy = 500
+	province_modifier = {
+		stationed_pikemen_damage_mult = 0.1
+		stationed_pikemen_toughness_mult = 0.1
+		stationed_pikemen_pursuit_mult = 0.1
+		stationed_pikemen_screen_mult = 0.1
+		monthly_income = 2
+	}
+	county_modifier = {
+		levy_size = 0.2
+	}
+	character_modifier = {
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_northern_steppes_01 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_horse_pastures.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = 1500
+	province_modifier = {
+		stationed_heavy_cavalry_damage_mult = 0.1
+		stationed_heavy_cavalry_toughness_mult = 0.1
+		stationed_heavy_cavalry_pursuit_mult = 0.1
+		stationed_heavy_cavalry_screen_mult = 0.1
+		stationed_light_cavalry_damage_mult = 0.25
+		stationed_light_cavalry_toughness_mult = 0.25
+		stationed_light_cavalry_pursuit_mult = 0.25
+		stationed_light_cavalry_screen_mult = 0.25
+	}
+	county_modifier = {
+		county_fertility_growth_mult = 0.5
+	}
+	character_modifier = {
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_flints_finger = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ma_castle_ferrara.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = 1500
+	province_modifier = {
+		stationed_heavy_infantry_damage_mult = 0.2
+		stationed_heavy_infantry_toughness_mult = 0.2
+		hostile_raid_time = 0.25
+	}
+	county_modifier = {
+		monthly_county_control_growth_add = 0.3
+		county_opinion_add = 15
+	}
+	character_modifier = {
+		ironborn_opinion = -25
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_ramsgate = {
+
+	construction_time = slow_construction_time
+	
+	type_icon = "icon_ma_castle_ferrara.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = 1500
+	province_modifier = {
+		stationed_heavy_infantry_damage_mult = 0.2
+		stationed_heavy_infantry_toughness_mult = 0.2
+		hostile_raid_time = 0.25
+	}
+	county_modifier = {
+		monthly_county_control_growth_add = 0.3
+		county_opinion_add = 15
+	}
+	character_modifier = {
+		sisterman_opinion = -25
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_wyverns_rest = {
+
+    type = special
+
+    can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+    cost_gold = expensive_building_tier_3_cost
+    construction_time = slow_construction_time
+
+    type_icon = "icon_structure_kassiopi_castle.dds"
+
+    character_modifier = {
+	monthly_prestige = 0.15
+	intrigue = 1
+        knight_effectiveness_mult = 0.10
+        army_maintenance_mult = -0.05  
+	monthly_intrigue_lifestyle_xp_gain_mult = 0.10
+    }
+
+    province_modifier = {
+	fort_level = 2
+	garrison_size = 0.10
+
+    }
+
+    county_modifier = {
+        defender_holding_advantage = 3
+    }
+
+    ai_value = {
+        base = 100
+    }
+
+    flag = travel_point_of_interest_martial
+}
+
+citadel_sarsfield_1 = {
+
+    type = special
+	next_building = citadel_sarsfield_2
+    can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+    cost_gold = expensive_building_tier_3_cost
+    construction_time = slow_construction_time
+
+    type_icon = "icon_building_horse_pastures.dds"
+
+    character_modifier = {
+    }
+
+    province_modifier = {
+		stationed_archer_cavalry_damage_mult = 0.1
+		stationed_archer_cavalry_toughness_mult = 0.1
+    }
+
+    county_modifier = {
+    }
+
+    ai_value = {
+        base = 100
+    }
+
+    flag = travel_point_of_interest_martial
+}
+
+citadel_sarsfield_2 = {
+
+    type = special
+	next_building = citadel_sarsfield_3
+    can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+    cost_gold = expensive_building_tier_3_cost
+    construction_time = slow_construction_time
+
+    type_icon = "icon_building_horse_pastures.dds"
+
+    character_modifier = {
+    }
+
+    province_modifier = {
+		stationed_archer_cavalry_damage_mult = 0.15
+		stationed_archer_cavalry_toughness_mult = 0.15
+		stationed_archer_cavalry_pursuit_mult = 0.15
+		stationed_archer_cavalry_screen_mult = 0.15
+    }
+
+    county_modifier = {
+    }
+
+    ai_value = {
+        base = 100
+    }
+
+    flag = travel_point_of_interest_martial
+}
+
+citadel_sarsfield_3 = {
+
+    type = special
+    can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+    cost_gold = expensive_building_tier_3_cost
+    construction_time = slow_construction_time
+
+    type_icon = "icon_building_horse_pastures.dds"
+
+    character_modifier = {
+    }
+
+    province_modifier = {
+		stationed_archer_cavalry_damage_mult = 0.25
+		stationed_archer_cavalry_toughness_mult = 0.25
+		stationed_archer_cavalry_pursuit_mult = 0.25
+		stationed_archer_cavalry_screen_mult = 0.25
+    }
+
+    county_modifier = {
+    }
+
+    ai_value = {
+        base = 100
+    }
+
+    flag = travel_point_of_interest_martial
+}
+
+citadel_barrowton = {
+
+    type = special
+    can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+    cost_gold = expensive_building_tier_3_cost
+    construction_time = slow_construction_time
+	levy = 800
+    type_icon = "icon_ub_merca.dds"
+
+    character_modifier = {
+		stewardship = 1
+    }
+
+    province_modifier = {
+		monthly_income = 3
+    }
+
+    county_modifier = {
+		levy_size = 0.2
+    }
+	county_holder_character_modifier = {
+		martial = 1
+	}
+
+    ai_value = {
+        base = 100
+    }
+
+    flag = travel_point_of_interest_martial
+}
+
+citadel_old_anchor = {
+
+    type = special
+    can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	
+    cost_gold = expensive_building_tier_3_cost
+    construction_time = slow_construction_time
+	levy = 400
+    type_icon = "citadel_harbor.dds"
+
+    character_modifier = {
+		stewardship = 1
+		embarkation_cost_mult = -0.05
+		monthly_stewardship_lifestyle_xp_gain_mult = 0.05
+    }
+
+    province_modifier = {
+		monthly_income = 0.5
+    }
+
+    county_modifier = {
+		levy_size = 0.1
+    }
+
+    ai_value = {
+        base = 100
+    }
+
+    flag = travel_point_of_interest_martial
+}
+
+citadel_longbow_hall = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ub_cagliari_cathedral.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 500
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	effect_desc = ep2_activities_legacy_4_hunts_up_legendary_hunt_sightings_effect 
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 1
+		levy_size = 0.1
+		stationed_archers_damage_mult = 0.35
+		stationed_archers_toughness_mult = 0.35
+		stationed_archers_pursuit_mult = 0.1
+		stationed_archers_screen_mult = 0.1
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		prowess = 2
+		lifestyle_hunter_xp_gain_mult = 0.3
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_longbow_hall = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_ub_cagliari_cathedral.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 500
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	effect_desc = ep2_activities_legacy_4_hunts_up_legendary_hunt_sightings_effect 
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 1
+		levy_size = 0.1
+		stationed_archers_damage_mult = 0.35
+		stationed_archers_toughness_mult = 0.35
+		stationed_archers_pursuit_mult = 0.1
+		stationed_archers_screen_mult = 0.1
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		prowess = 2
+		lifestyle_hunter_xp_gain_mult = 0.3
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_ironoaks_quarry1 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_quarries.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	next_building = citadel_ironoaks_quarry2
+	flag = travel_point_of_interest_economic
+}
+
+citadel_ironoaks_quarry2 = {
+
+	construction_time = slow_construction_time
+	type_icon = "icon_building_quarries.dds"
+	next_building = citadel_ironoaks_quarry3
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = 200
+
+	province_modifier = {
+		monthly_income = 0.5
+		build_gold_cost = -0.1
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+citadel_ironoaks_quarry3 = {
+
+	construction_time = slow_construction_time
+	type_icon = "icon_building_quarries.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = 500
+
+	province_modifier = {
+		monthly_income = 1.25
+		build_gold_cost = -0.15
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		stewardship = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+
+citadel_ninestars = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_dreadfort.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	levy = 650
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		levy_size = 0.2
+		stationed_heavy_cavalry_damage_mult = 0.05
+		stationed_maa_damage_mult_per_piety_level = 0.05
+		stationed_maa_toughness_mult_per_piety_level = 0.05
+		stationed_heavy_cavalry_toughness_mult = 0.05
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		counter_resistance = 0.25
+		monthly_piety = 1.5
+		attacker_advantage = 5
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_greenstone = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_hellgate.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	garrison_size = 250
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 0.5
+	}
+
+	county_modifier = {
+		hostile_raid_time = 0.2
+	}
+	character_modifier = {
+		embarkation_cost_mult = -0.15
+		diplomatic_range_mult = 0.15
+		monthly_prestige_gain_mult = 0.1
+		vassal_opinion = 5
+		general_opinion = 5
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_harrentown = {
+
+    type = special
+    can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	
+    cost_gold = expensive_building_tier_3_cost
+    construction_time = slow_construction_time
+    type_icon = "icon_ub_merca.dds"
+
+    character_modifier = {
+		stewardship = 2
+    }
+
+    province_modifier = {
+		monthly_income = 4
+    }
+
+    county_modifier = {
+    }
+	county_holder_character_modifier = {
+		vassal_tax_contribution_mult = 0.1
+	}
+
+    ai_value = {
+        base = 100
+    }
+
+    flag = travel_point_of_interest_martial
+}
+
+citadel_whitehills_01 = {
+
+	construction_time = 3500
+
+	type_icon = "icon_building_ironwoods.dds"
+	next_building = citadel_whitehills_02
+	can_construct = {
+		scope:holder = {
+			stewardship >= 15
+			dynasty = dynasty:dynn_Whitehill
+		}
+	}
+	levy = 500
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+	asset = {
+		type = pdxmesh
+		name = "blackcrown_mesh"
+	}
+	cost_gold = 500
+
+	character_modifier = {
+		army_maintenance_mult = -0.05
+		monthly_dynasty_prestige_mult = 0.05
+		stewardship = 2
+	}
+	province_modifier = {
+		defender_holding_advantage = 2
+		fort_level = 3
+		monthly_income = 2
+		levy_size = 0.1
+	}
+	county_modifier = {
+		# tax_mult = low_building_tax_mult_tier_1
+		development_growth_factor = 0.1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+	type = special
+
+	flag = special_building_enabled_in_ruin_county
+}
+
+citadel_whitehills_02 = {
+
+	construction_time = 5000
+
+	type_icon = "icon_building_ironwoods.dds"
+	asset = {
+		type = pdxmesh
+		name = "blackcrown_mesh"
+	}
+	can_construct = {
+		scope:holder = {
+			dynasty = dynasty:dynn_Whitehill
+		}
+	}
+	levy = 750
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+
+	cost_gold = 500
+
+	character_modifier = {
+		army_maintenance_mult = -0.1
+		monthly_dynasty_prestige_mult = 0.1
+		stewardship = 2
+	}
+	province_modifier = {
+		defender_holding_advantage = 4
+		fort_level = 5
+		monthly_income = 5
+		levy_size = 0.2
+	}
+	county_modifier = {
+		# tax_mult = low_building_tax_mult_tier_1
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+	type = special
+
+	flag = special_building_enabled_in_ruin_county
+}
+
+citadel_ironrath_01 = {
+
+	construction_time = 3500
+	asset = {
+        type = pdxmesh
+        name = "building_special_ironrath_mesh"
+    }
+	type_icon = "icon_building_ironwoods.dds"
+	next_building = citadel_ironrath_02
+	can_construct = {
+		scope:holder = {
+			stewardship >= 15
+			dynasty = dynasty:dynn_Forrester
+		}
+	}
+	levy = 250
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+
+	cost_gold = 500
+
+	max_garrison = 400
+    province_modifier = {
+        defender_holding_advantage = 10
+        fort_level = 8
+        monthly_income = 2.5
+    }
+    county_modifier = {
+        # tax_mult = 0.3
+        #development_growth = 0.1
+        levy_size = 0.1
+    }
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+	type = special
+
+	flag = special_building_enabled_in_ruin_county
+}
+
+citadel_ironrath_02 = {
+
+	construction_time = 5000
+	asset = {
+        type = pdxmesh
+        name = "building_special_ironrath_mesh"
+    }
+	type_icon = "icon_building_ironwoods.dds"
+	levy = 500
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+	can_construct = {
+		scope:holder = {
+			dynasty = dynasty:dynn_Forrester
+		}
+	}
+	cost_gold = 500
+
+	max_garrison = 400
+    province_modifier = {
+        defender_holding_advantage = 12
+        fort_level = 10
+        monthly_income = 5.5
+    }
+    county_modifier = {
+        # tax_mult = 0.3
+        development_growth_factor = 0.3
+        #development_growth = 0.1
+        levy_size = 0.2
+    }
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+	type = special
+
+	flag = special_building_enabled_in_ruin_county
+}
+
+citadel_pebbleton_tower = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_booming_tower.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		movement_speed_land_raiding = 0.2
+		raid_speed = 0.2
+		no_water_crossing_penalty = yes
+		hostile_county_attrition_raiding = -0.2
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+citadel_pronged_port = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "citadel_harbor.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 5
+		travel_danger = -15
+		hostile_raid_time = -0.1
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		stewardship = 2
+	}	
+	county_holder_character_modifier = {
+		stewardship = 1
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_pronged_port = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "citadel_harbor.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 5
+		travel_danger = -15
+		hostile_raid_time = -0.1
+	}
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		stewardship = 2
+	}	
+	county_holder_character_modifier = {
+		stewardship = 1
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
+	flag = travel_point_of_interest_economic
+
+}
+
+citadel_hornvale_mines = { #Hambone adjust building
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 2
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		stewardship = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	next_building = citadel_hornvale_mines2
+	flag = travel_point_of_interest_economic
+}
+
+citadel_hornvale_mines2 = { #Hambone adjust building
+
+	construction_time = 2500
+
+	type_icon = "icon_structure_mines.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = 1250
+
+	province_modifier = {
+		monthly_income = 4
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		stewardship = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	next_building = citadel_hornvale_mines3
+	flag = travel_point_of_interest_economic
+}
+
+citadel_hornvale_mines3 = { #Hambone adjust building
+
+	construction_time = 5000
+
+	type_icon = "icon_structure_mines.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = 2000
+
+	province_modifier = {
+		monthly_income = 6
+	}
+	county_modifier = {
+	}
+	character_modifier = {
+		stewardship = 1
+	}	
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+# Deep Den
+agot_deep_den_02 = { # Hambone adjust building 
+	construction_time = 4500
+	next_building = agot_deep_den_03
+	type_icon = "icon_building_badger.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	province_modifier = {
+		fort_level = 4
+		defender_holding_advantage = 4
+		monthly_income = 7
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.1
+		travel_danger = -10
+	}
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+
+	cost_gold = 2500
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_martial
+}
+
+agot_deep_den_03 = { # Hambone adjust building 
+	construction_time = 5500
+	type_icon = "icon_building_badger.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	province_modifier = {
+		fort_level = 4
+		defender_holding_advantage = 4
+		monthly_income = 10
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.1
+		travel_danger = -10
+	}
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+
+	cost_gold = 4000
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_martial
+}
+
+citadel_lords_mill = { 
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_watermills.dds"
+	asset = {
+		type = pdxmesh
+		name = "inn_01_mesh"
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		defender_holding_advantage = 2
+		development_growth_factor = 0.1
+	}
+	county_modifier = {
+		travel_danger = 5
+	}
+	character_modifier = {
+		stewardship = 2
+	}	
+	county_holder_character_modifier = {
+		men_at_arms_maintenance = -0.05
+		men_at_arms_recruitment_cost = -0.1
+		monthly_martial_lifestyle_xp_gain_mult = 0.1
+	}
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+citadel_greenblood = { 
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_planky_town - Copy.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 1.5
+	}
+	county_modifier = {
+		supply_limit_mult = 0.25
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+citadel_sapphire_port_01 = { 
+
+	construction_time = slow_construction_time
+
+	type_icon = "citadel_harbor.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 2
+	}
+	county_modifier = {
+		supply_limit_mult = 0.15
+		development_growth_factor = 0.05
+	}
+	character_modifier = {
+		embarkation_cost_mult = -0.05
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+	next_building = citadel_sapphire_port_02
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+citadel_sapphire_port_02 = { 
+
+	construction_time = slow_construction_time
+
+	type_icon = "citadel_harbor.dds"
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = expensive_building_tier_4_cost
+
+	province_modifier = {
+		monthly_income = 4
+	}
+	county_modifier = {
+		supply_limit_mult = 0.25
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		embarkation_cost_mult = -0.15
+	}	
+	county_holder_character_modifier = {
+	}
+
+	ai_value = {
+		base = 100
+	}
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+citadel_pinkmaiden = {	
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_ub_cesis_castle.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	max_garrison = 150
+	county_modifier = {
+	}
+
+	character_modifier = {
+		opinion_of_liege = 15
+		heavy_infantry_recruitment_cost_mult = -0.05
+	}
+
+	province_modifier = {
+		fort_level = 2
+		stationed_heavy_infantry_damage_mult = 0.10
+		stationed_heavy_infantry_toughness_mult = 0.10
+		stationed_heavy_infantry_pursuit_mult = 0.10
+		stationed_heavy_infantry_screen_mult = 0.10
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { 
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+}
+
+# 3D MODELS !
+
+im_footly_hall = {
+	construction_time = slow_construction_time
+	type = special
+	type_icon = "icon_building_byzantine.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "footly_hall_mesh"
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	character_modifier = {
+		learning = 2
+		monthly_dynasty_prestige_mult = 0.05
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+		republic_government_tax_contribution_mult = 0.1
+	}
+
+	county_modifier = {
+		development_growth_mult = 0.15
+	}
+
+	province_modifier = {
+	}
+
+	ai_value = {
+		base = 90
+	}
+
+	flag = travel_point_of_interest_civic
+}

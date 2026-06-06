@@ -1,0 +1,22 @@
+baelish_franchise_enable_income_popup = {
+    picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
+	}
+    desc = baelish_franchise_enable_income_popup_desc
+    selection_tooltip = form_oldtown_kingdom_decision_tooltip
+	decision_group_type = major
+
+    is_shown = {
+        has_character_flag = baelish_franchise_suppress_income_popup
+    }
+
+    is_valid = {
+        always = yes
+    }
+
+    effect = {
+        remove_character_flag = baelish_franchise_suppress_income_popup
+    }
+
+    ai_check_interval = 0
+}

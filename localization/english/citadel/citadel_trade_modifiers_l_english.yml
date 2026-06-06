@@ -1,0 +1,87 @@
+﻿l_english:
+ citadel_construction_t1:0 "Construction Cost & Speed I"
+ citadel_construction_t2:0 "Construction Cost & Speed II"
+ citadel_construction_t3:0 "Construction Cost & Speed III"
+
+ citadel_fort_t1:0 "Garrison & Fortification I"
+ citadel_fort_t2:0 "Garrison & Fortification II"
+ citadel_fort_t3:0 "Garrison & Fortification III"
+
+ citadel_travel_t1:0 "Travel Safety & Speed I"
+ citadel_travel_t2:0 "Travel Safety & Speed II"
+ citadel_travel_t3:0 "Travel Safety & Speed III"
+
+ citadel_ship_cost_t1:0 "Ship Cost Reduction I"
+ citadel_ship_cost_t2:0 "Ship Cost Reduction II"
+ citadel_ship_cost_t3:0 "Ship Cost Reduction III"
+ citadel_ship_cost_t1_desc:0 "This modifier provides a 10% reduction to ship costs as long as this country borders a sea province.#weak \n\nOpen a ticket on our Discord to claim it."
+ citadel_ship_cost_t2_desc:0 "This modifier provides a 20% reduction to ship costs as long as this country borders a sea province.#weak \n\nOpen a ticket on our Discord to claim it."
+ citadel_ship_cost_t3_desc:0 "This modifier provides a 30% reduction to ship costs as long as this country borders a sea province.#weak \n\nOpen a ticket on our Discord to claim it."
+ 
+ citadel_siege_t1:0 "Siege MAA I"
+ citadel_siege_t2:0 "Siege MAA II"
+ citadel_siege_t3:0 "Siege MAA III"
+
+ citadel_maa_t1:0 "Archers & Skirmishers I"
+ citadel_maa_t2:0 "Archers & Skirmishers II"
+ citadel_maa_t3:0 "Archers & Skirmishers III"
+
+ citadel_development_t1:0 "Development Growth I"
+ citadel_development_t2:0 "Development Growth II"
+ citadel_development_t3:0 "Development Growth III"
+
+ citadel_health_t1:0 "Fertility & Health  I"
+ citadel_health_t2:0 "Fertility & Health  II"
+ citadel_health_t3:0 "Fertility & Health  III"
+
+ citadel_levy_t1:0 "Conscription I"
+ citadel_levy_t2:0 "Conscription II"
+ citadel_levy_t3:0 "Conscription III"
+
+ citadel_army_maintenance_t1:0 "Efficient Rationing I"
+ citadel_army_maintenance_t2:0 "Efficient Rationing II"
+ citadel_army_maintenance_t3:0 "Efficient Rationing III"
+
+ citadel_heavy_t1:0 "Standing Army I"
+ citadel_heavy_t2:0 "Standing Army II"
+ citadel_heavy_t3:0 "Standing Army III"
+
+ citadel_maa_upkeep_t1:0 "Inspired Patriotism I"
+ citadel_maa_upkeep_t2:0 "Inspired Patriotism II"
+ citadel_maa_upkeep_t3:0 "Inspired Patriotism III"
+
+ citadel_popular_t1:0 "Bread and Games I"
+ citadel_popular_t2:0 "Bread and Games II"
+ citadel_popular_t3:0 "Bread and Games III"
+
+ citadel_public_image_t1:0 "Public Image I"
+ citadel_public_image_t2:0 "Public Image II"
+ citadel_public_image_t3:0 "Public Image III"
+
+ citadel_vassal_t1:0 "Courtly Investments I"
+ citadel_vassal_t2:0 "Courtly Investments II"
+ citadel_vassal_t3:0 "Courtly Investments III"
+
+ citadel_food_deficit_t1:0 "Minor Food Shortage"
+ citadel_food_deficit_t2:0 "Widespread Hunger"
+ citadel_food_deficit_t3:0 "Great Famine"
+
+ citadel_food_deficit_major_t1:0 "Minor Food Shortage (Major City)"
+ citadel_food_deficit_major_t2:0 "Widespread Hunger (Major City)"
+ citadel_food_deficit_major_t3:0 "Great Famine (Major City)"
+
+ citadel_wood_deficit_t1:0 "Timber Scarcity"
+ citadel_wood_deficit_t2:0 "Wood Shortage"
+ citadel_wood_deficit_t3:0 "Severe Timber Crisis"
+
+ citadel_stone_deficit_t1:0 "Cracked Walls"
+ citadel_stone_deficit_t2:0 "Crumbling Defenses"
+ citadel_stone_deficit_t3:0 "Ruined Fortifications"
+
+ citadel_luxury_deficit_t1:0 "Fading Splendor"
+ citadel_luxury_deficit_t2:0 "Tarnished Name"
+ citadel_luxury_deficit_t3:0 "House in Disgrace"
+
+ citadel_iron_deficit_t1:0 "Scarcity of Steel"
+ citadel_iron_deficit_t2:0 "Rusty Mail"
+ citadel_iron_deficit_t3:0 "Disarmed"

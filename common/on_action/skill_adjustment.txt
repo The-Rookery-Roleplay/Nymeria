@@ -1,0 +1,90 @@
+﻿on_birthday_adulthood = { 
+	on_actions = { # "On_actions" inside on_action are appended
+		on_action_skill_adjustment_check_other_mods # Check for other mods
+		on_action_adjust_skills 
+	} 
+}
+
+quarterly_playable_pulse = { 
+	on_actions = { # "On_actions" inside on_action are appended
+		on_action_adjust_skills 
+	} 
+}
+
+five_year_everyone_pulse = { #no need to do this very often for non-playable characters
+	on_actions = { # "On_actions" inside on_action are appended
+		on_action_adjust_skills
+	} 
+}
+
+on_action_skill_adjustment_check_other_mods = {
+	effect = {
+		#Councilor's experience trait
+		check_if_trait_mod_installed = { TRAITNAME = education_nht_prowess_1
+										 MODNAME   = more_lifestyles 		}
+	}
+} 
+
+### Skill adjustment
+on_action_adjust_skills = {
+	effect = {
+		if = {
+			limit = {is_ai = no}
+			force_character_skill_recalculation = yes #ensure we use up-to-date values for player
+		}
+		
+		#Something weird is happening with scopes here, so I am just hardcoding them
+		save_scope_as  = adjust_skills_scope
+		### Count number of taken perks for More Lifestyles (vanilla ones are tracked by default)
+		scope:adjust_skills_scope = { get_more_lifestyles_perk_count }
+		
+		### Get Education Level
+		scope:adjust_skills_scope = { get_education_level }
+		
+		### Skill thresholds
+		adjust_skill_threshold = {
+			SKILL = diplomacy
+		}
+		adjust_skill_threshold = {
+			SKILL = martial
+		}
+		adjust_skill_threshold = {
+			SKILL = stewardship
+		}
+		adjust_skill_threshold = {
+			SKILL = intrigue
+		}
+		adjust_skill_threshold = {
+			SKILL = learning
+		}
+		adjust_skill_threshold = {
+			SKILL = prowess
+		}
+		
+		### Adjust Skill Values
+		adjust_skill = {
+			SKILL = diplomacy
+		}
+		adjust_skill = {
+			SKILL = martial
+		}
+		adjust_skill = {
+			SKILL = stewardship
+		}
+		adjust_skill = {
+			SKILL = intrigue
+		}
+		adjust_skill = {
+			SKILL = learning
+		}
+		adjust_skill = {
+			SKILL = prowess
+		}
+		#Update shown values immediately for player
+		if = {
+			limit = {is_ai = no}
+			force_character_skill_recalculation = yes #ensure we use up-to-date values for player
+		}
+	}
+} 
+

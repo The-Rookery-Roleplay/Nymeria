@@ -1,0 +1,181 @@
+﻿# @fairmarket_project_icon = "gfx/interface/icons/great_projects/_default.dds"
+# @fairmarket_project_illustration = "gfx/interface/illustrations/great_projects/asia_great_project_default.dds"
+
+# citadel_fairmarket_project = {
+# 	icon = { reference = @fairmarket_project_icon }
+# 	illustration = { reference = @fairmarket_project_illustration }
+
+# 	province_filter = realm
+
+# 	can_start_planning = {
+# 		NOT = {
+# 			is_planning_great_project = citadel_fairmarket_project
+# 		}
+# 		custom_tooltip = {
+# 			text = only_single_great_project_type_allowed
+# 			NOT = {
+# 				any_great_project = {
+# 					great_project_type = citadel_fairmarket_project
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	is_shown = {
+# 		# Only the holder of Fairmarket can see this
+# 		has_title = title:d_fairmarket
+
+# 		# Their capital must NOT already have the building
+# 		capital_province = {
+# 			NOT = {
+# 				has_building = citadel_fairmarket3
+# 			}
+# 		}
+# 	}
+
+
+# 	is_location_valid = {
+# 		scope:province = {
+# 			this = scope:owner.capital_province
+# 		}
+# 	}
+
+		
+	
+
+# 	cost = {
+# 		treasury_or_gold = {
+# 			value = great_project_base_starting_cost
+# 			multiply = 1
+# 		}
+# 	}
+
+# 	construction_time = {
+# 		value = great_project_base_construction_time
+# 		multiply = common_great_project_construction_time_multiplier_value
+# 	}
+
+# 	contributor_cooldown = standard_contributor_cooldown_value
+
+# 	allowed_contributor_filter = {
+# 		vassals = yes
+# 		liege = yes
+# 		top_liege = yes
+# 	}
+
+# 	on_plan_build = { }
+
+# 	on_start_build = { }
+
+# 	on_complete = {
+# 		scope:owner = {
+# 			capital_province = {
+# 				add_special_building_slot = citadel_fairmarket3
+# 				add_building = citadel_fairmarket3
+# 			}
+# 		}
+# 	}
+
+# 	on_cancel = { }
+
+# 	project_contributions = {
+# 		materials = {
+# 			cost = {
+# 				treasury_or_gold = {
+# 					value = great_project_base_contribution_cost
+# 					multiply = 1
+# 				}
+# 			}
+
+# 			contributor_cooldown = individual_contribution_cooldown_value
+
+# 			is_required = yes
+
+# 			on_complete = {
+# 				great_project_reward_contribution_completion_notification_effect = {
+# 					LEVEL = minor
+# 					NON_OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+# 					OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+# 				}
+# 			}
+
+# 			on_contribution_funded = {
+# 				great_project_notify_contribution = yes
+# 				great_project_contribution_catalyst_effect = yes
+# 			}
+
+# 			ai_will_do = {
+# 				value = 100
+# 			}
+
+# 			ai_check_interval_by_tier = {
+# 				barony = 0
+# 				county = 12
+# 				duchy = 9
+# 				kingdom = 6
+# 				empire = 6
+# 				hegemony = 6
+# 			}
+# 		}
+
+# 		workforce = {
+# 			cost = {
+# 				treasury_or_gold = {
+# 					value = great_project_base_contribution_cost
+# 					multiply = 1
+# 				}
+# 			}
+
+# 			contributor_cooldown = individual_contribution_cooldown_value
+
+# 			is_required = no
+
+# 			on_complete = {
+# 				great_project_reward_contribution_completion_notification_effect = {
+# 					LEVEL = minor
+# 					NON_OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+# 					OWNER_REWARD_EFFECT = great_project_reward_contribution_completion_null
+# 				}
+# 			}
+
+# 			on_contribution_funded = {
+# 				great_project_notify_contribution = yes
+# 				great_project_contribution_catalyst_effect = yes
+# 			}
+
+# 			ai_will_do = {
+# 				value = 80
+# 			}
+
+# 			ai_check_interval_by_tier = {
+# 				barony = 0
+# 				county = 12
+# 				duchy = 9
+# 				kingdom = 6
+# 				empire = 6
+# 				hegemony = 6
+# 			}
+# 		}
+# 	}
+
+# 	ai_target_quick_trigger = {
+# 		adult = yes
+# 	}
+
+# 	ai_check_interval_by_tier = {
+# 		barony = 0
+# 		county = 0
+# 		duchy = 0
+# 		kingdom = 0
+# 		empire = 6
+# 		hegemony = 6
+# 	}
+
+# 	ai_will_do = {
+# 		value = 100
+# 		if = {
+# 			limit = { is_at_war = yes }
+# 			multiply = 0
+# 		}
+# 	}
+# }

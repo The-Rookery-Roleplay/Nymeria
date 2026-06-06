@@ -1,0 +1,19 @@
+﻿l_english:
+
+ d_new_barrel:0 "New Barrel"
+ d_new_barrel_adj:0 "New Barrel"
+ d_cider_hall2:0 "Cider Hall"
+ d_cider_hall2_adj:0 "Cider Hall"
+ 
+ citadel_interaction500_notification_title:0 "Money Sent. IRS Has Been Notified!"
+ citadel_interaction500_toast:0 "[actor.GetTitledFirstName] has sent [recipient.GetTitledFirstName] 500 gold. The Maester IRS is and always will be watching."
+
+ citadel_interaction100_notification_title:0 "Money Sent. IRS Has Been Notified!"
+ citadel_interaction100_toast:0 "[actor.GetTitledFirstName] has sent [recipient.GetTitledFirstName] 100 gold. The Maester IRS is and always will be watching."
+
+ citadel_interaction50_notification_title:0 "Money Sent. IRS Has Been Notified!"
+ citadel_interaction50_toast:0 "[actor.GetTitledFirstName] has sent [recipient.GetTitledFirstName] 50 gold. The Maester IRS is and always will be watching."
+
+#  councillor_steward_modifier:0 "Liege's Steward"
+#  councillor_marshal_modifier:0 "Liege's Marshal"
+
