@@ -1,0 +1,21 @@
+pdxmesh = {
+	name = "mlw_goldengrove_mesh"
+	file = "mlw_goldengrove.mesh"
+
+	meshsettings = {
+		name = "mlw_goldengroveShape"
+		index = 0
+		texture_diffuse = "mlw_goldengrove_diffuse.dds"
+		texture_normal = "mlw_goldengrove_normal.dds"
+		texture_specular = "mlw_goldengrove_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+
+	}
+}
+
+entity = {
+	name = "mlw_goldengrove_entity"
+	pdxmesh = "mlw_goldengrove_mesh"
+}
+

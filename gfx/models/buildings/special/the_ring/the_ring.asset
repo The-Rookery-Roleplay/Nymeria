@@ -1,0 +1,21 @@
+pdxmesh = {
+	name = "the_ring_mesh"
+	file = "the_ring.mesh"
+
+	meshsettings = {
+		name = "the_ringShape"
+		index = 0
+		texture_diffuse = "the_ring_diffuse.dds"
+		texture_normal = "the_ring_normal.dds"
+		texture_specular = "the_ring_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+
+	}
+}
+
+entity = {
+	name = "the_ring_entity"
+	pdxmesh = "the_ring_mesh"
+}
+

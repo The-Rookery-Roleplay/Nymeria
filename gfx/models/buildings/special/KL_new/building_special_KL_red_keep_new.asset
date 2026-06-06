@@ -1,0 +1,119 @@
+pdxmesh = {
+	name = "building_special_KL_red_keep_new_mesh"
+	file = "building_special_KL_red_keep_new.mesh"
+
+	meshsettings = {
+		name = "building_special_KL_WallsShape"
+		index = 0
+		texture_diffuse = "building_special_KL_Walls_diffuse.dds"
+		texture_normal = "building_special_KL_Walls_normal.dds"
+		texture_specular = "building_special_KL_Walls_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_special_KL_GardensShape"
+		index = 0
+		texture_diffuse = "building_special_KL_Gardens_diffuse.dds"
+		texture_normal = "building_special_KL_Gardens_normal.dds"
+		texture_specular = "building_special_KL_Gardens_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+		
+	meshsettings = {
+		name = "building_special_KL_MaegorsShape"
+		index = 0
+		texture_diffuse = "building_special_KL_Maegors_diffuse.dds"
+		texture_normal = "building_special_KL_Maegors_normal.dds"
+		texture_specular = "building_special_KL_Maegors_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+			
+	meshsettings = {
+		name = "building_special_KL_RedKeepShape"
+		index = 0
+		texture_diffuse = "building_special_KL_RedKeep_diffuse.dds"
+		texture_normal = "building_special_KL_RedKeep_normal.dds"
+		texture_specular = "building_special_KL_RedKeep_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+				
+	meshsettings = {
+		name = "building_special_KL_TowerTopsShape"
+		index = 0
+		texture_diffuse = "building_special_KL_TowerTops_diffuse.dds"
+		texture_normal = "building_special_KL_TowerTops_normal.dds"
+		texture_specular = "building_special_KL_TowerTops_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+					
+	meshsettings = {
+		name = "building_special_KL_WhiteSwordTowerShape"
+		index = 0
+		texture_diffuse = "building_special_KL_WhiteSwordTower_diffuse.dds"
+		texture_normal = "building_special_KL_WhiteSwordTower_normal.dds"
+		texture_specular = "building_special_KL_WhiteSwordTower_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+						
+	meshsettings = {
+		name = "building_special_RoyalSeptShape"
+		index = 0
+		texture_diffuse = "building_special_KL_RoyalSept_diffuse.dds"
+		texture_normal = "building_special_KL_RoyalSept_normal.dds"
+		texture_specular = "building_special_KL_RoyalSept_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+							
+	meshsettings = {
+		name = "building_special_KL_RoyalHallShape"
+		index = 0
+		texture_diffuse = "building_special_KL_RoyalHall_diffuse.dds"
+		texture_normal = "building_special_KL_RoyalHall_normal.dds"
+		texture_specular = "building_special_KL_RoyalHall_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "building_special_KL_Trees2Shape"
+		index = 0
+		texture_diffuse = "tree_leaf_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_leaf_01_properties.dds"
+		texture = { file = "tree_jungle_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+	meshsettings = {
+		name = "building_special_KL_Trees1Shape"
+		index = 0
+		texture_diffuse = "tree_pine_01_diffuse.dds"
+		texture_normal = "tree_leaf_01_normal.dds"
+		texture_specular = "tree_pine_01_properties.dds"
+		texture = { file = "tree_pine_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+	meshsettings = {
+		name = "building_special_kl_cityShape"
+		index = 0
+		texture_diffuse = "building_KL_diffuse.dds"
+		texture_normal = "building_KL_normal.dds"
+		texture_specular = "building_KL_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "building_special_KL_red_keep_new_entity"
+	pdxmesh = "building_special_KL_red_keep_new_mesh"
+}

@@ -1,0 +1,50 @@
+pdxmesh = {
+	name = "cow_building_special_ten_towers_mesh"
+	file = "cow_building_special_ten_towers.mesh"
+
+	meshsettings = {
+		name = "iron"
+		index = 0
+		texture_diffuse = "iron_m_diffuse.dds"
+		texture_normal = "iron_m_normal.dds"
+		texture_specular = "21_shades_of_metalness_roughness.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "celtic_01"
+		index = 0
+		texture_diffuse = "building_celtic_01_diffuse.dds"
+		texture_normal = "building_celtic_01_normal.dds"
+		texture_specular = "building_celtic_01_properties.dds"
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_western"
+		index = 0
+		texture_diffuse = "building_western_atlas_diffuse.dds"
+		texture_normal = "building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "polySurface10Shape"
+		index = 0
+		texture_diffuse = "building_special_mines_unique_diffuse.dds"
+		texture_normal = "building_special_mines_unique_normal.dds"
+		texture_specular = "building_special_mines_unique_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+
+}
+
+entity = {
+	name = "cow_building_special_ten_towers_entity"
+	pdxmesh = "cow_building_special_ten_towers_mesh"
+}

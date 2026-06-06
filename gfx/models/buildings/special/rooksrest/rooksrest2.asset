@@ -1,0 +1,63 @@
+pdxmesh = {
+	name = "rooksrest2_mesh"
+	file = "rooksrest2.mesh"
+
+
+	meshsettings = {
+		name = "rooksrest_roof"
+		index = 0
+		texture_diffuse = "cow_crownlands_roof_diffuse.dds"
+		texture_normal = "cow_crownlands_roof_normal.dds"
+		texture_specular = "cow_crownlands_roof_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "iron"
+		index = 0
+		texture_diffuse = "iron_m_diffuse.dds"
+		texture_normal = "iron_m_normal.dds"
+		texture_specular = "21_shades_of_metalness_roughness.dds"
+		texture = { file = "building_x_AO_placeholder.dds" index = 5 }
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+
+	meshsettings = {
+		name = "rooksrest_stone"
+		index = 0
+		texture_diffuse = "cow_crownlands_diffuse.dds"
+		texture_normal = "cow_crownlands_normal.dds"
+		texture_specular = "cow_crownlands_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "rooksrest_stone_ground"
+		index = 0
+		texture_diffuse = "stone_crag_diffuse.dds"
+		texture_normal = "stone_crag_properties.dds"
+		texture_specular = "stone_crag_normal.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+
+	}
+
+	meshsettings = {
+		name = "rooksrest_windows"
+		index = 0
+		texture_diffuse = "building_western_atlas_diffuse.dds"
+		texture_normal = "building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "rooksrest2_entity"
+	pdxmesh = "rooksrest2_mesh"
+}

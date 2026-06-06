@@ -1,0 +1,117 @@
+pdxmesh = {
+	name = "warg_king_castle_03_mesh"
+	file = "warg_king_castle_03.mesh"
+	
+	meshsettings = {
+		name = "building_special_warg_kings_castle_keepShape"
+		index = 0
+		texture_diffuse = "building_special_warg_kings_castle_keep_diffuse.dds"
+		texture_normal = "building_special_warg_kings_castle_keep_normal.dds"
+		texture_specular = "building_special_warg_kings_castle_keep_properties.dds"
+		texture = { file = "building_special_warg_kings_castle_keep_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_warg_kings_castle_wallsShape"
+		index = 0
+		texture_diffuse = "building_special_warg_kings_castle_walls_diffuse.dds"
+		texture_normal = "building_special_warg_kings_castle_walls_normal.dds"
+		texture_specular = "building_special_warg_kings_castle_walls_properties.dds"
+		texture = { file = "building_special_warg_kings_castle_walls_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "tree_pine_single_02Shape"
+		index = 0
+		texture_diffuse = "tree_pine_01_diffuse.dds"
+		texture_normal = "tree_pine_01_normal.dds"
+		texture_specular = "tree_pine_01_properties.dds"
+		texture = { file = "tree_pine_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+
+	meshsettings = {
+		name = "mapitem_trees_weirwood_01Shape"
+		index = 0
+		texture_diffuse = "weirwood_bark_diffuse.dds"
+		texture_normal = "weirwood_bark_normal.dds"
+		texture_specular = "weirwood_bark_properties.dds"
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+	meshsettings = {
+		name = "mapitem_trees_weirwood_01leavesShape"
+		index = 0
+		texture_diffuse = "weirwood_leaves_diffuse.dds"
+		texture_normal = "weirwood_leaves_normal.dds"
+		texture_specular = "weirwood_leaves_properties.dds"
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+
+	meshsettings = {
+		name = "wolfstatue2Shape"
+		index = 0
+		texture_diffuse = "wolfstatue2_diffuse.dds"
+		texture_normal = "wolfstatue2_normal.dds"
+		texture_specular = "wolfstatue2_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "lannisport_lpShape"
+		index = 0
+		texture_diffuse = "lannisport_lp_diffuse.dds"
+		texture_normal = "lannisport_lp_normal.dds"
+		texture_specular = "lannisport_lp_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_warg_kings_castle_cityShape"
+		index = 0
+		texture_diffuse = "building_celtic_01_diffuse.dds"
+		texture_normal = "building_celtic_01_normal.dds"
+		texture_specular = "building_celtic_01_properties.dds"
+		texture = { file = "building_celtic_city_02_unique.dds" index = 5 }
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "winterfell_new_innerShape"
+		index = 0
+		texture_diffuse = "winterfell_new_inner_diffuse.dds"
+		texture_normal = "winterfell_new_inner_normal.dds"
+		texture_specular = "winterfell_new_inner_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "building_special_warg_kings_docksShape"
+		index = 0
+		texture_diffuse = "lannisport_lp_diffuse.dds"
+		texture_normal = "lannisport_lp_normal.dds"
+		texture_specular = "lannisport_lp_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal_keepShape"
+		index = 0
+		texture_diffuse = "PDXmat_decal_keepShape_diffuse.dds"
+		texture_normal = "PDXmat_decal_keepShape_normal.dds"
+		texture_specular = "PDXmat_decal_keepShape_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+	}
+}
+
+entity = {
+	name = "warg_king_castle_03_entity"
+	pdxmesh = "warg_king_castle_03_mesh"
+}

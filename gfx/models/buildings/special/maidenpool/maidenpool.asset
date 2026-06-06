@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "maidenpool_mesh"
+	file = "maidenpool.mesh"
+
+	meshsettings = {
+		name = "maidenpool_walls"
+		index = 0
+		texture_diffuse = "atlas_maidenpool_diffuse.dds"
+		texture_normal = "atlas_maidenpool_normal.dds"
+		texture_specular = "atlas_maidenpool_properties.dds"
+		shader = "standard_winter"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "maidenpool_entity"
+	pdxmesh = "maidenpool_mesh"
+}
