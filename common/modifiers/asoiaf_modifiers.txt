@@ -1,0 +1,33 @@
+﻿asoiaf_fertility_health_boost = {
+	icon = fertility_positive
+	fertility = 100
+	health = 3
+	stress_gain_mult = -0.5
+	stress_loss_mult = 0.5
+	travel_danger = -50
+	#hostile_scheme_resistance_mult = 1.5 #adds more time to the scheme
+	#enemy_hostile_scheme_success_chance_add = -90 #reduces success chance of scheme
+	#hard_casualty_modifier = -0.95 #this doesn't reduce knight deaths like I thought
+}
+
+asoiaf_health_boost = {
+	icon = health_positive
+	health = 1.5
+}
+
+agot_rr_cersei_infertility = { #overwrite base AGOT
+	icon = health_negative
+	fertility = -10000
+}
+
+agot_rr_lyanna_infertility = { #overwrite base AGOT
+	icon = health_negative
+	fertility = -10000
+}
+
+asoiaf_stress_jarred_children = {
+	icon = stress_negative
+	general_opinion = -10
+	monthly_prestige_gain_mult = -0.25
+	monthly_piety_gain_mult = -0.25
+}

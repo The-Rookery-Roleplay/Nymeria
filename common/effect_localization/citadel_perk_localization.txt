@@ -1,0 +1,29 @@
+﻿dulver_legacy_1_effect = {
+	global = DULVER_1
+	first = DULVER_1
+	third = DULVER_1
+}
+
+dulver_legacy_2_effect = {
+	global = DULVER_2
+	first = DULVER_2
+	third = DULVER_2
+}
+
+dulver_legacy_3_effect = {
+	global = DULVER_3
+	first = DULVER_3
+	third = DULVER_3
+}
+
+dulver_legacy_4_effect = {
+	global = DULVER_4
+	first = DULVER_4
+	third = DULVER_4
+}
+
+dulver_legacy_5_effect = {
+	global = DULVER_5
+	first = DULVER_5
+	third = DULVER_5
+}

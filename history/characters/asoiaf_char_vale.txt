@@ -1,0 +1,44 @@
+﻿###################
+### HOUSE ARRYN ###
+###################
+
+Arryn_asoiaf_3_1 = {
+	name = Cariah
+	#dna = Arryn_asoiaf_3_1
+	dynasty = dynn_Arryn
+	female = yes
+	
+	trait = physique_bad_1
+
+	religion = fots_seven
+	culture = valeman_main
+	
+	father = Arryn_3 #Jon Arryn (son of Jasper)
+	mother = Tully_6 #Lysa Tully (daughter of Hoster)
+
+	8285.2.1 = {
+		birth = yes
+		effect = { make_unprunable = yes }
+		trait = sickly
+		death = { death_reason = death_stillborn }
+	}
+}
+
+Arryn_asoiaf_3_2 = {
+	name = Eldric
+	#dna = Arryn_asoiaf_3_2
+	dynasty = dynn_Arryn
+
+	religion = fots_seven
+	culture = valeman_main
+	
+	father = Arryn_3 #Jon Arryn (son of Jasper)
+	mother = Tully_6 #Lysa Tully (daughter of Hoster)
+
+	8287.1.1 = {
+		birth = yes
+		effect = { make_unprunable = yes }
+		trait = sickly
+		death = { death_reason = death_stillborn }
+	}
+}

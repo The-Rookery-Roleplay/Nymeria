@@ -1,0 +1,5 @@
+﻿l_english:
+ ### Maester Decisions/Events ###
+ decision_employ_maester:0 "Send for a Maester"
+ decision_employ_maester_desc:0 "Renowned throughout the known world as the centre of Westerosi scholarship, the Citadel of Oldtown provides every keep in Westeros with a trained man of learning. Perhaps I should send for one."
+ tooltip_employ_maester:0 "Must not have any capable maesters in my court."

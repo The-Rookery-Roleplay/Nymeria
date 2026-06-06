@@ -1,0 +1,52 @@
+﻿theocracy_government_obligations = {
+  obligation_levels = {
+    default = {
+      levies = {
+        scope:liege = {
+          if = {
+            limit = { scope:liege.faith != scope:vassal.faith }
+            value = { add = 1.0 }
+          }
+          else = {
+            value = {
+              add = 0.1
+              multiply = scope:liege.piety_level
+            }
+          }
+        }
+      }
+
+      tax = {
+        scope:liege = {
+          if = {
+            limit = { scope:liege.faith != scope:vassal.faith }
+            value = { add = 0.1 }
+          }
+          else_if = {
+            limit = { scope:liege.piety_level >= 1 }
+            value = {
+              add = 0.05
+              add = {
+                value = 0.1
+                multiply = scope:liege.piety_level
+              }
+            }
+          }
+          else = {
+            value = { add = 0.0 }
+          }
+        }
+      }
+
+      contribution_desc = {
+        first_valid = {
+          triggered_desc = {
+            trigger = { scope:liege.faith != scope:vassal.faith }
+            desc = "theocracy_government_vassal_contribution_wrong_faith"
+          }
+          desc = "theocracy_government_vassal_contribution_piety_level"
+        }
+      }
+    }
+  }
+}

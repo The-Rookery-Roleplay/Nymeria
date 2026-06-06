@@ -1,0 +1,31 @@
+﻿
+l_english:
+
+ amsb_bent_knees_vassal_interaction:0 "Summon To Bend The Knee"
+ amsb_bent_knees_vassal_interaction_desc:0 "Exchange prestige and opinion for this vassal to travel to [actor.GetCapitalLocation.GetName] so they can publicly bend the knee and swear fealty to House [actor.GetHouse.GetBaseName] of [actor.GetPrimaryTitle.GetNameNoTier]."
+
+ amsb_bent_knees_refusal_opinion:0 "Refused to bend the knee"
+ amsb_bent_knees_opinion:0 "Asked me to bend the knee"
+
+ amsb_bent_knees_vassal_interaction_refusal_msg_title:0 "Bend the Knee Refusal!"
+ amsb_bent_knees_vassal_interaction_refusal_msg_desc:0 "[recipient.GetFirstName] has refused to bend the knee and may now be imprisoned!"
+
+
+ #bend the knee
+ amsb_bent_knees_vassal_interaction_accept_desc_a:0 "Travels to to [actor.GetCapitalLocation.GetName] with the intention of bending the knee. But you may decide you have other plans once they arrive... "
+ amsb_bent_knees_vassal_interaction_accept_desc_b:0  "If you accept his oath, [recipient.GetFirstName]:\n $EFFECT_LIST_BULLET$ Cannot join a faction against you for 10 years.\n $EFFECT_LIST_BULLET$ Loses #N 20 #!opinion of you."
+
+ #Take the Black
+ amsb_take_the_black_vassal_interaction:0 "Demand Your Heir Join The Night's Watch"
+ amsb_take_the_black_vassal_interaction_desc:0 "Demand that [recipient.GetFirstName] takes the Black or perishes by the sword."
+
+ amsb_take_the_black_vassal_interaction_accept_desc_a:0 "[recipent.GetName] chooses to take the vows of a black brother and spend the rest of their life serving the realm at [GetTitleByKey('k_the_wall').GetNameNoTier]"
+ amsb_take_the_black_vassal_interaction_accept_desc_b:0 "[recipent.GetName] travels to the wall to serve the realm"
+
+ amsb_take_the_black.decline:0 "[recipient.GetName] chooses to defy your unjust demands and challenges you to a duel to the death"
+
+ #Flags
+ refused_to_bend_knees:0 "Refused To Bend The Knee"
+
+ #Tooltips
+ amsb_WE_ARE_FRIENDS:0 "We are #Bold not #!friends"

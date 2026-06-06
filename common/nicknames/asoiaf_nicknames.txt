@@ -1,0 +1,11 @@
+﻿nick_the_late_prefix = { is_prefix = yes }
+nick_bastard_prefix = { is_prefix = yes }
+nick_the_old_man = {}
+nick_fat_prefix = { is_prefix = yes }
+nick_the_heir_for_a_day = {}
+nick_homeless_prefix = { is_prefix = yes }
+nick_red_prefix = { is_prefix = yes }
+nick_the_anvil = {}
+nick_the_black_queen = {}
+nick_ironrod = {}
+nick_the_iron_one = {}

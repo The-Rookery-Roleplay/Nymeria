@@ -1,0 +1,8 @@
+﻿death_self_defence = {
+	public_knowledge = yes
+	icon = "death_murder.dds"
+}
+death_fake_murder = {
+	public_knowledge = yes
+	icon = "death_murder.dds"
+}

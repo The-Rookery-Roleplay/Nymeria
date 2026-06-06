@@ -1,0 +1,4 @@
+baelish_franchise_bordello_modifier = {
+    icon = learning_negative
+    county_opinion_add = -10
+}

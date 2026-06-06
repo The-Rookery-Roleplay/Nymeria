@@ -1,0 +1,2241 @@
+﻿mapper = {
+	
+	category = commander
+	enemy_terrain_advantage = -0.05
+	movement_speed = 0.05
+
+	ruler_designer_cost = 20
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = mapper
+							value >= 100
+						}
+					}
+					desc = trait_mapper_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = mapper
+							value >= 66
+						}
+					}
+					desc = trait_mapper_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = mapper
+							value >= 33
+						}
+					}
+					desc = trait_mapper_1
+				}
+				desc = trait_mapper
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_mapper_desc
+			}
+			desc = trait_mapper_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			enemy_terrain_advantage = -0.05
+			movement_speed = 0.05
+		}
+
+		66 = {
+			enemy_terrain_advantage = -0.05
+			movement_speed = 0.05
+		}
+
+		100 = {
+			enemy_terrain_advantage = -0.05
+			movement_speed = 0.05
+			martial = 1
+		}		
+	}
+}
+
+observant_pathfinder = {
+	
+	category = commander
+	min_combat_roll = 1
+	plains_max_combat_roll = 2
+	pursue_efficiency = 0.1
+	
+	ruler_designer_cost = 20
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = observant_pathfinder
+							value >= 100
+						}
+					}
+					desc = trait_observant_pathfinder_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = observant_pathfinder
+							value >= 66
+						}
+					}
+					desc = trait_observant_pathfinder_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = observant_pathfinder
+							value >= 33
+						}
+					}
+					desc = trait_observant_pathfinder_1
+				}
+				desc = trait_observant_pathfinder
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_observant_pathfinder_desc
+			}
+			desc = trait_observant_pathfinder_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			min_combat_roll = 1
+			plains_max_combat_roll = 2
+			pursue_efficiency = 0.1
+		}
+
+		66 = {
+			min_combat_roll = 1
+			plains_max_combat_roll = 2
+			pursue_efficiency = 0.1
+		}
+
+		100 = {
+			min_combat_roll = 1
+			plains_max_combat_roll = 2
+			pursue_efficiency = 0.1
+			martial = 1
+		}
+	}
+}
+
+respected_leader = {
+	
+	category = commander
+	hard_casualty_modifier = -0.05
+	advantage = 1
+	
+	ruler_designer_cost = 20
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = respected_leader
+							value >= 100
+						}
+					}
+					desc = trait_respected_leader_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = respected_leader
+							value >= 66
+						}
+					}
+					desc = trait_respected_leader_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = respected_leader
+							value >= 33
+						}
+					}
+					desc = trait_respected_leader_1
+				}
+				desc = trait_respected_leader
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_respected_leader_desc
+			}
+			desc = trait_respected_leader_character_desc
+		}
+	}
+	track = {
+		33 = {
+			hard_casualty_modifier = -0.05
+			advantage = 1
+		}
+
+		66 = {
+			hard_casualty_modifier = -0.05
+			advantage = 1
+		}
+
+		100 = {
+			hard_casualty_modifier = -0.05
+			advantage = 1
+			martial = 1
+		}		
+	}
+}
+
+sea_raider = {
+	
+	category = commander
+	no_disembark_penalty = yes
+	supply_duration = 0.1
+	prowess = 2
+	raid_speed = 0.15
+	
+	ruler_designer_cost = 20
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = sea_raider
+							value >= 100
+						}
+					}
+					desc = trait_sea_raider_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = sea_raider
+							value >= 66
+						}
+					}
+					desc = trait_sea_raider_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = sea_raider
+							value >= 33
+						}
+					}
+					desc = trait_sea_raider_1
+				}
+				desc = trait_sea_raider
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_sea_raider_desc
+			}
+			desc = trait_sea_raider_character_desc
+		}
+	}
+	track = {
+		33 = {
+			supply_duration = 0.1
+			prowess = 2
+			raid_speed = 0.15
+		}
+
+		66 = {
+			supply_duration = 0.1
+			prowess = 2
+			raid_speed = 0.15
+		}
+
+		100 = {
+			supply_duration = 0.1
+			prowess = 2
+			raid_speed = 0.15
+			martial = 1
+		}		
+	}
+}
+
+seasoned_rover = {
+	opposites = {
+		resolute_localist
+	}
+	category = commander
+	flag = cmd_plus_advantage_enemy_territory_flag
+	flag = cmd_plus_disadvantage_own_territory_flag
+	flag = seasoned_rover_flag
+	supply_duration = 0.25
+	
+	ruler_designer_cost = 20
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = seasoned_rover
+							value >= 100
+						}
+					}
+					desc = trait_seasoned_rover_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = seasoned_rover
+							value >= 66
+						}
+					}
+					desc = trait_seasoned_rover_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = seasoned_rover
+							value >= 33
+						}
+					}
+					desc = trait_seasoned_rover_1
+				}
+				desc = trait_seasoned_rover
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_seasoned_rover_desc
+			}
+			desc = trait_seasoned_rover_character_desc
+		}
+	}
+	track = {
+		33 = {
+			supply_duration = 0.25
+		}
+
+		66 = {
+			supply_duration = 0.25
+		}
+
+		100 = {
+			supply_duration = 0.25
+			martial = 1
+		}		
+	}
+	
+	ai_energy = 50
+}
+
+resolute_localist = {
+	opposites = {
+		seasoned_rover
+	}
+	category = commander
+	flag = cmd_plus_advantage_own_territory_flag
+	flag = cmd_plus_disadvantage_enemy_territory_flag
+	flag = resolute_localist_flag
+	same_heritage_county_advantage_add = 1
+	
+	ruler_designer_cost = 20
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = resolute_localist
+							value >= 100
+						}
+					}
+					desc = trait_resolute_localist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = resolute_localist
+							value >= 66
+						}
+					}
+					desc = trait_resolute_localist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = resolute_localist
+							value >= 33
+						}
+					}
+					desc = trait_resolute_localist_1
+				}
+				desc = trait_resolute_localist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_resolute_localist_desc
+			}
+			desc = trait_resolute_localist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			same_heritage_county_advantage_add = 1
+		}
+
+		66 = {
+			same_heritage_county_advantage_add = 1
+		}
+
+		100 = {
+			same_heritage_county_advantage_add = 1
+			martial = 1
+		}		
+	}
+
+	ai_honor = 40
+}
+
+relentless_pursuer = {
+	opposites = {
+		cautious_leader
+		unyielding_defender
+		cautious_planner
+	}
+	category = commander
+	flag = cmd_plus_army_speed_per_win_flag
+	flag = cmd_plus_pursue_efficiency_per_win_flag
+	flag = relentless_pursuer_flag
+	attacker_advantage = 1
+	supply_duration = -0.1
+	
+	ruler_designer_cost = 20
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = relentless_pursuer
+							value >= 100
+						}
+					}
+					desc = trait_relentless_pursuer_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = relentless_pursuer
+							value >= 66
+						}
+					}
+					desc = trait_relentless_pursuer_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = relentless_pursuer
+							value >= 33
+						}
+					}
+					desc = trait_relentless_pursuer_1
+				}
+				desc = trait_relentless_pursuer
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_relentless_pursuer_desc
+			}
+			desc = trait_relentless_pursuer_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			attacker_advantage = 1
+		}
+
+		66 = {
+			attacker_advantage = 1
+		}
+
+		100 = {
+			attacker_advantage = 1
+			martial = 1
+		}		
+	}
+
+	ai_energy = 20
+	ai_boldness = 20
+}
+
+infiltration_specialist = {
+
+	opposites = {
+		dauntless_leader
+		aggressive_attacker
+		zealot
+		reaver
+	}
+	category = commander
+	flag = cmd_plus_infiltration_specialist_flag
+	flag = cmd_plus_infiltration_specialist2_flag
+	enemy_terrain_advantage = -0.05
+	
+	ruler_designer_cost = 20
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = infiltration_specialist
+							value >= 100
+						}
+					}
+					desc = trait_infiltration_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = infiltration_specialist
+							value >= 66
+						}
+					}
+					desc = trait_infiltration_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = infiltration_specialist
+							value >= 33
+						}
+					}
+					desc = trait_infiltration_specialist_1
+				}
+				desc = trait_infiltration_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_infiltration_specialist_desc
+			}
+			desc = trait_infiltration_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			enemy_terrain_advantage = -0.05
+		}
+
+		66 = {
+			enemy_terrain_advantage = -0.05
+		}
+
+		100 = {
+			enemy_terrain_advantage = -0.05
+			martial = 1
+		}		
+	}
+
+	ai_energy = 20
+}
+
+battlefield_medic = {
+
+	category = commander
+	ruler_designer_cost = 20
+	hard_casualty_modifier = -0.04
+	army_screen_mult = 0.1
+	epidemic_resistance = 2
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = battlefield_medic
+							value >= 100
+						}
+					}
+					desc = trait_battlefield_medic_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = battlefield_medic
+							value >= 66
+						}
+					}
+					desc = trait_battlefield_medic_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = battlefield_medic
+							value >= 33
+						}
+					}
+					desc = trait_battlefield_medic_1
+				}
+				desc = trait_battlefield_medic
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_battlefield_medic_desc
+			}
+			desc = trait_battlefield_medic_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			hard_casualty_modifier = -0.04
+			army_screen_mult = 0.1
+			epidemic_resistance = 2
+		}
+
+		66 = {
+			hard_casualty_modifier = -0.04
+			army_screen_mult = 0.1
+			epidemic_resistance = 2
+		}
+
+		100 = {
+			hard_casualty_modifier = -0.04
+			army_screen_mult = 0.1
+			epidemic_resistance = 2
+			martial = 1
+		}		
+	}
+}
+
+dauntless_leader = {
+
+	category = commander
+	opposites = {
+		cautious_leader
+		cautious_planner
+		unyielding_defender
+	}
+	ruler_designer_cost = 20
+	hard_casualty_modifier = 0.01
+	enemy_hard_casualty_modifier = 0.04
+	pursue_efficiency = 0.05
+	flag = higher_chance_of_dying_in_battle
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = dauntless_leader
+							value >= 100
+						}
+					}
+					desc = trait_dauntless_leader_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = dauntless_leader
+							value >= 66
+						}
+					}
+					desc = trait_dauntless_leader_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = dauntless_leader
+							value >= 33
+						}
+					}
+					desc = trait_dauntless_leader_1
+				}
+				desc = trait_dauntless_leader
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_dauntless_leader_desc
+			}
+			desc = trait_dauntless_leader_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			hard_casualty_modifier = 0.01
+			enemy_hard_casualty_modifier = 0.04
+			pursue_efficiency = 0.05
+		}
+
+		66 = {
+			hard_casualty_modifier = 0.01
+			enemy_hard_casualty_modifier = 0.04
+			pursue_efficiency = 0.05
+		}
+
+		100 = {
+			hard_casualty_modifier = 0.01
+			enemy_hard_casualty_modifier = 0.04
+			pursue_efficiency = 0.05
+			martial = 1
+		}		
+	}
+}
+
+crafty_commander = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_supply_duration_scaling
+	hostile_county_attrition = -0.15
+	min_combat_roll = 1
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = crafty_commander
+							value >= 100
+						}
+					}
+					desc = trait_crafty_commander_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = crafty_commander
+							value >= 66
+						}
+					}
+					desc = trait_crafty_commander_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = crafty_commander
+							value >= 33
+						}
+					}
+					desc = trait_crafty_commander_1
+				}
+				desc = trait_crafty_commander
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_crafty_commander_desc
+			}
+			desc = trait_crafty_commander_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			hostile_county_attrition = -0.15
+			min_combat_roll = 1
+		}
+
+		66 = {
+			hostile_county_attrition = -0.15
+			min_combat_roll = 1
+		}
+
+		100 = {
+			hostile_county_attrition = -0.15
+			min_combat_roll = 1
+			martial = 1
+		}		
+	}
+}
+
+cautious_planner = {
+
+	category = commander
+	opposites = {
+		dauntless_leader
+		aggressive_attacker
+		relentless_pursuer
+		reckless
+	}
+	ruler_designer_cost = 20
+	movement_speed = -0.05
+	army_damage_mult = -0.02
+	army_toughness_mult = 0.05
+	defender_advantage = 2
+	retreat_losses = -0.1
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = cautious_planner
+							value >= 100
+						}
+					}
+					desc = trait_cautious_planner_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = cautious_planner
+							value >= 66
+						}
+					}
+					desc = trait_cautious_planner_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = cautious_planner
+							value >= 33
+						}
+					}
+					desc = trait_cautious_planner_1
+				}
+				desc = trait_cautious_planner
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_cautious_planner_desc
+			}
+			desc = trait_cautious_planner_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			movement_speed = -0.05
+			army_damage_mult = -0.02
+			army_toughness_mult = 0.05
+			defender_advantage = 2
+			retreat_losses = -0.1
+		}
+
+		66 = {
+			movement_speed = -0.05
+			army_damage_mult = -0.02
+			army_toughness_mult = 0.05
+			defender_advantage = 2
+			retreat_losses = -0.1
+		}
+
+		100 = {
+			movement_speed = -0.05
+			army_damage_mult = -0.02
+			army_toughness_mult = 0.05
+			defender_advantage = 2
+			retreat_losses = -0.1
+			martial = 1
+		}		
+	}
+}
+
+bannerlord = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_bannerlord
+	monthly_prestige = 0.1
+	glory_hound_levy_contribution_add = 0.05
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = bannerlord
+							value >= 100
+						}
+					}
+					desc = trait_bannerlord_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = bannerlord
+							value >= 66
+						}
+					}
+					desc = trait_bannerlord_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = bannerlord
+							value >= 33
+						}
+					}
+					desc = trait_bannerlord_1
+				}
+				desc = trait_bannerlord
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_bannerlord_desc
+			}
+			desc = trait_bannerlord_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			monthly_prestige = 0.1
+			glory_hound_levy_contribution_add = 0.05
+		}
+
+		66 = {
+			monthly_prestige = 0.1
+			glory_hound_levy_contribution_add = 0.05
+
+		}
+
+		100 = {
+			monthly_prestige = 0.1
+			glory_hound_levy_contribution_add = 0.05
+			martial = 1
+		}		
+	}
+}
+
+focus_specialist = {
+
+	category = commander
+	ruler_designer_cost = 20
+	counter_efficiency = 0.05
+	siege_morale_loss = 0.1
+	flag = cmd_plus_focus_specialist
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = focus_specialist
+							value >= 100
+						}
+					}
+					desc = trait_focus_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = focus_specialist
+							value >= 66
+						}
+					}
+					desc = trait_focus_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = focus_specialist
+							value >= 33
+						}
+					}
+					desc = trait_focus_specialist_1
+				}
+				desc = trait_focus_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_focus_specialist_desc
+			}
+			desc = trait_focus_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			counter_efficiency = 0.05
+			siege_morale_loss = 0.1
+		}
+
+		66 = {
+			counter_efficiency = 0.05
+			siege_morale_loss = 0.1
+		}
+
+		100 = {
+			counter_efficiency = 0.05
+			siege_morale_loss = 0.1
+			martial = 1
+		}		
+	}
+}
+
+master_ambusher = {
+
+	category = commander
+	ruler_designer_cost = 20
+	wetlands_advantage = 1
+	mountains_advantage = 1
+	jungle_advantage = 1
+	forest_advantage = 1
+	taiga_bog_advantage = 1
+	the_bog_advantage = 1
+	army_damage_mult = 0.01
+	flag = cmd_plus_master_ambusher
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = master_ambusher
+							value >= 100
+						}
+					}
+					desc = trait_master_ambusher_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = master_ambusher
+							value >= 66
+						}
+					}
+					desc = trait_master_ambusher_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = master_ambusher
+							value >= 33
+						}
+					}
+					desc = trait_master_ambusher_1
+				}
+				desc = trait_master_ambusher
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_master_ambusher_desc
+			}
+			desc = trait_master_ambusher_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			wetlands_advantage = 1
+			mountains_advantage = 1
+			jungle_advantage = 1
+			forest_advantage = 1
+			taiga_bog_advantage = 1
+			the_bog_advantage = 1
+			army_damage_mult = 0.01
+		}
+
+		66 = {
+			wetlands_advantage = 1
+			mountains_advantage = 1
+			jungle_advantage = 1
+			forest_advantage = 1
+			taiga_bog_advantage = 1
+			the_bog_advantage = 1
+			army_damage_mult = 0.01
+		}
+
+		100 = {
+			wetlands_advantage = 1
+			mountains_advantage = 1
+			jungle_advantage = 1
+			forest_advantage = 1
+			taiga_bog_advantage = 1
+			the_bog_advantage = 1
+			army_damage_mult = 0.01
+			martial = 1
+		}		
+	}
+}
+
+navigator = {
+
+	category = commander
+	ruler_designer_cost = 20
+	no_water_crossing_penalty = yes
+	no_disembark_penalty = yes
+	naval_movement_speed_mult = 0.1
+	embarkation_cost_mult = -0.2
+	wetlands_advantage = 1
+	floodplains_advantage = 1
+	coastal_advantage = 2
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = navigator
+							value >= 100
+						}
+					}
+					desc = trait_navigator_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = navigator
+							value >= 66
+						}
+					}
+					desc = trait_navigator_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = navigator
+							value >= 33
+						}
+					}
+					desc = trait_navigator_1
+				}
+				desc = trait_navigator
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_navigator_desc
+			}
+			desc = trait_navigator_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			naval_movement_speed_mult = 0.1
+			embarkation_cost_mult = -0.2
+			wetlands_advantage = 1
+			floodplains_advantage = 1
+			coastal_advantage = 2
+		}
+
+		66 = {
+			naval_movement_speed_mult = 0.1
+			embarkation_cost_mult = -0.2
+			wetlands_advantage = 1
+			floodplains_advantage = 1
+			coastal_advantage = 2
+			
+		}
+
+		100 = {
+			naval_movement_speed_mult = 0.1
+			embarkation_cost_mult = -0.2
+			wetlands_advantage = 1
+			floodplains_advantage = 1
+			coastal_advantage = 2
+			martial = 1
+		}		
+	}
+}
+
+zealot = {
+
+	category = commander
+	ruler_designer_cost = 20
+	prowess = 1
+	hostile_county_attrition = -0.05
+	raid_speed = 0.05
+	tolerance_advantage_mod = 3
+	same_faith_opinion = 3
+	different_faith_opinion = -10
+	opinion_of_different_faith = -20
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = zealot
+							value >= 100
+						}
+					}
+					desc = trait_zealot_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = zealot
+							value >= 66
+						}
+					}
+					desc = trait_zealot_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = zealot
+							value >= 33
+						}
+					}
+					desc = trait_zealot_1
+				}
+				desc = trait_zealot
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_zealot_desc
+			}
+			desc = trait_zealot_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			prowess = 1
+			hostile_county_attrition = -0.05
+			raid_speed = 0.05
+			tolerance_advantage_mod = 3
+			same_faith_opinion = 3
+			different_faith_opinion = -10
+			opinion_of_different_faith = -20
+		}
+
+		66 = {
+			prowess = 1
+			hostile_county_attrition = -0.05
+			raid_speed = 0.05
+			tolerance_advantage_mod = 3
+			same_faith_opinion = 3
+			different_faith_opinion = -10
+			opinion_of_different_faith = -20
+		}
+
+		100 = {
+			prowess_per_piety_level = 1
+			hostile_county_attrition = -0.05
+			raid_speed = 0.05
+			tolerance_advantage_mod = 3
+			same_faith_opinion = 3
+			different_faith_opinion = -10
+			opinion_of_different_faith = -20
+			martial = 1
+		}		
+	}
+}
+
+patriot = {
+
+	category = commander
+	ruler_designer_cost = 20
+	independent_primary_defender_advantage_add = 3
+	independent_primary_attacker_advantage_add = 1
+	led_by_owner_extra_advantage_add = 1
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = patriot
+							value >= 100
+						}
+					}
+					desc = trait_patriot_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = patriot
+							value >= 66
+						}
+					}
+					desc = trait_patriot_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = patriot
+							value >= 33
+						}
+					}
+					desc = trait_patriot_1
+				}
+				desc = trait_patriot
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_patriot_desc
+			}
+			desc = trait_patriot_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			independent_primary_defender_advantage_add = 3
+			independent_primary_attacker_advantage_add = 1
+			led_by_owner_extra_advantage_add = 1
+		}
+
+		66 = {
+			independent_primary_defender_advantage_add = 3
+			independent_primary_attacker_advantage_add = 1
+			led_by_owner_extra_advantage_add = 1
+		}
+
+		100 = {
+			independent_primary_defender_advantage_add = 3
+			independent_primary_attacker_advantage_add = 1
+			led_by_owner_extra_advantage_add = 1
+			martial = 1
+		}		
+	}
+}
+
+military_savior = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_military_savior
+	movement_speed = 0.03
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = military_savior
+							value >= 100
+						}
+					}
+					desc = trait_military_savior_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = military_savior
+							value >= 66
+						}
+					}
+					desc = trait_military_savior_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = military_savior
+							value >= 33
+						}
+					}
+					desc = trait_military_savior_1
+				}
+				desc = trait_military_savior
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_military_savior_desc
+			}
+			desc = trait_military_savior_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			movement_speed = 0.03
+		}
+
+		66 = {
+			movement_speed = 0.03
+		}
+
+		100 = {
+			movement_speed = 0.03
+			martial = 1
+		}		
+	}
+}
+
+combined_arms = {
+
+	category = commander
+	ruler_designer_cost = 20
+	counter_efficiency = 0.02
+	flag = cmd_plus_combined_arms
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = combined_arms
+							value >= 100
+						}
+					}
+					desc = trait_combined_arms_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = combined_arms
+							value >= 66
+						}
+					}
+					desc = trait_combined_arms_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = combined_arms
+							value >= 33
+						}
+					}
+					desc = trait_combined_arms_1
+				}
+				desc = trait_combined_arms
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_combined_arms_desc
+			}
+			desc = trait_combined_arms_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			counter_efficiency = 0.02
+		}
+
+		66 = {
+			counter_efficiency = 0.02
+		}
+
+		100 = {
+			counter_efficiency = 0.02
+			martial = 1
+		}		
+	}
+}
+
+levies_specialist = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_levies_specialist
+	levy_reinforcement_rate = 0.02
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = levies_specialist
+							value >= 100
+						}
+					}
+					desc = trait_levies_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = levies_specialist
+							value >= 66
+						}
+					}
+					desc = trait_levies_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = levies_specialist
+							value >= 33
+						}
+					}
+					desc = trait_levies_specialist_1
+				}
+				desc = trait_levies_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_levies_specialist_desc
+			}
+			desc = trait_levies_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			levy_reinforcement_rate = 0.02
+		}
+
+		66 = {
+			levy_reinforcement_rate = 0.02
+		}
+
+		100 = {
+			levy_reinforcement_rate = 0.02
+			martial = 1
+		}		
+	}
+}
+
+skirmishers_specialist = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_skirmishers_specialist
+	enemy_terrain_advantage = -0.02
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = skirmishers_specialist
+							value >= 100
+						}
+					}
+					desc = trait_skirmishers_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = skirmishers_specialist
+							value >= 66
+						}
+					}
+					desc = trait_skirmishers_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = skirmishers_specialist
+							value >= 33
+						}
+					}
+					desc = trait_skirmishers_specialist_1
+				}
+				desc = trait_skirmishers_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_skirmishers_specialist_desc
+			}
+			desc = trait_skirmishers_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			enemy_terrain_advantage = -0.02
+		}
+
+		66 = {
+			enemy_terrain_advantage = -0.02
+		}
+
+		100 = {
+			enemy_terrain_advantage = -0.02
+			martial = 1
+		}		
+	}
+}
+
+archers_specialist = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_archers_specialist
+	max_combat_roll = 1
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = archers_specialist
+							value >= 100
+						}
+					}
+					desc = trait_archers_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = archers_specialist
+							value >= 66
+						}
+					}
+					desc = trait_archers_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = archers_specialist
+							value >= 33
+						}
+					}
+					desc = trait_archers_specialist_1
+				}
+				desc = trait_archers_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_archers_specialist_desc
+			}
+			desc = trait_archers_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			max_combat_roll = 1
+		}
+
+		66 = {
+			max_combat_roll = 1
+		}
+
+		100 = {
+			max_combat_roll = 1
+			martial = 1
+		}		
+	}
+}
+
+heavy_cav_specialist = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_heavy_cav_specialist
+	attacker_advantage = 1
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = heavy_cav_specialist
+							value >= 100
+						}
+					}
+					desc = trait_heavy_cav_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = heavy_cav_specialist
+							value >= 66
+						}
+					}
+					desc = trait_heavy_cav_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = heavy_cav_specialist
+							value >= 33
+						}
+					}
+					desc = trait_heavy_cav_specialist_1
+				}
+				desc = trait_heavy_cav_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_heavy_cav_specialist_desc
+			}
+			desc = trait_heavy_cav_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			attacker_advantage = 1
+		}
+
+		66 = {
+			attacker_advantage = 1
+		}
+
+		100 = {
+			attacker_advantage = 1
+			martial = 1
+		}		
+	}
+}
+
+light_cav_specialist = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_light_cav_specialist
+	pursue_efficiency = 0.02
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = light_cav_specialist
+							value >= 100
+						}
+					}
+					desc = trait_light_cav_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = light_cav_specialist
+							value >= 66
+						}
+					}
+					desc = trait_light_cav_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = light_cav_specialist
+							value >= 33
+						}
+					}
+					desc = trait_light_cav_specialist_1
+				}
+				desc = trait_light_cav_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_light_cav_specialist_desc
+			}
+			desc = trait_light_cav_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			pursue_efficiency = 0.02
+		}
+
+		66 = {
+			pursue_efficiency = 0.02
+		}
+
+		100 = {
+			pursue_efficiency = 0.02
+			martial = 1
+		}		
+	}
+}
+
+heavy_infantry_specialist = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_heavy_infantry_specialist
+	defender_advantage = 1
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = heavy_infantry_specialist
+							value >= 100
+						}
+					}
+					desc = trait_heavy_infantry_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = heavy_infantry_specialist
+							value >= 66
+						}
+					}
+					desc = trait_heavy_infantry_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = heavy_infantry_specialist
+							value >= 33
+						}
+					}
+					desc = trait_heavy_infantry_specialist_1
+				}
+				desc = trait_heavy_infantry_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_heavy_infantry_specialist_desc
+			}
+			desc = trait_heavy_infantry_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			defender_advantage = 1
+		}
+
+		66 = {
+			defender_advantage = 1
+		}
+
+		100 = {
+			defender_advantage = 1
+			martial = 1
+		}		
+	}
+}
+
+archer_cav_specialist = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_archer_cav_specialist
+	movement_speed = 0.02
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = archer_cav_specialist
+							value >= 100
+						}
+					}
+					desc = trait_archer_cav_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = archer_cav_specialist
+							value >= 66
+						}
+					}
+					desc = trait_archer_cav_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = archer_cav_specialist
+							value >= 33
+						}
+					}
+					desc = trait_archer_cav_specialist_1
+				}
+				desc = trait_archer_cav_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_archer_cav_specialist_desc
+			}
+			desc = trait_archer_cav_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			movement_speed = 0.02
+		}
+
+		66 = {
+			movement_speed = 0.02
+		}
+
+		100 = {
+			movement_speed = 0.02
+			martial = 1
+		}		
+	}
+}
+
+pikemen_specialist = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_pikemen_specialist
+	hard_casualty_modifier = -0.01
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = pikemen_specialist
+							value >= 100
+						}
+					}
+					desc = trait_pikemen_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = pikemen_specialist
+							value >= 66
+						}
+					}
+					desc = trait_pikemen_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = pikemen_specialist
+							value >= 33
+						}
+					}
+					desc = trait_pikemen_specialist_1
+				}
+				desc = trait_pikemen_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_pikemen_specialist_desc
+			}
+			desc = trait_pikemen_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			hard_casualty_modifier = -0.01
+		}
+
+		66 = {
+			hard_casualty_modifier = -0.01
+		}
+
+		100 = {
+			hard_casualty_modifier = -0.01
+			martial = 1
+		}		
+	}
+}
+
+knights_specialist = {
+
+	category = commander
+	ruler_designer_cost = 20
+	flag = cmd_plus_knights_specialist
+	accolade_glory_gain_mult = 0.05
+	name = {
+		desc = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = knights_specialist
+							value >= 100
+						}
+					}
+					desc = trait_knights_specialist_3
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = knights_specialist
+							value >= 66
+						}
+					}
+					desc = trait_knights_specialist_2
+				}
+				triggered_desc = {
+					trigger = {
+						exists = this
+						has_trait_xp = {
+							trait = knights_specialist
+							value >= 33
+						}
+					}
+					desc = trait_knights_specialist_1
+				}
+				desc = trait_knights_specialist
+			}
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_knights_specialist_desc
+			}
+			desc = trait_knights_specialist_character_desc
+		}
+	}
+
+	track = {
+		33 = {
+			accolade_glory_gain_mult = 0.05
+		}
+
+		66 = {
+			accolade_glory_gain_mult = 0.05
+		}
+
+		100 = {
+			accolade_glory_gain_mult = 0.05
+			martial = 1
+		}		
+	}
+}

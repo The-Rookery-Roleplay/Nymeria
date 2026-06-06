@@ -1,0 +1,238 @@
+tradition_citadel_raid = {
+
+        category = combat
+
+        layers = {
+            0 = martial
+            1 = eastern
+            4 = soldiers4.dds
+        }
+
+		is_shown = {
+			always = no
+		}
+
+        can_pick = {
+            scope:character = {
+                any_held_county = {
+                    title_province = {
+                        OR = {
+                            geographical_region = world_westeros_the_reach
+                            geographical_region = world_westeros_the_stormlands
+                            geographical_region = world_westeros_dorne 
+                        }
+                    }
+                }
+            }
+	    }
+
+        parameters = {
+            culture_can_raid_over_land_even_if_feudal_no_restrictions = yes 
+            vengeful_trait_more_common = yes
+            gain_gold_from_battles = yes
+        }
+
+        character_modifier = {
+            supply_capacity_mult = 0.25
+			martial = 1
+			diplomacy = -1
+			hills_advantage = 2
+			desert_mountains_advantage = 2
+			mountains_advantage = 2
+        }
+
+        cost = {
+            prestige = {
+                add = {
+                    value = tradition_base_cost
+                    desc = based
+                    format = "BASE_VALUE_FORMAT"
+                }
+                multiply = tradition_replacement_cost_if_relevant
+            }
+        }
+
+        air_will_do = {
+            value = 0 #So the AI doesn't pick the Tradition.
+        }
+}
+
+# tradition_citadel_sistermen = {
+
+#         category = combat
+
+#         layers = {
+#             0 = martial
+#             1 = mediterranean
+#             4 = swords.dds
+# 	    }   
+
+#         can_pick = {
+#             scope:character = {
+#                 any_held_county = {
+#                     title_province = {
+#                         OR = {
+#                             geographical_region = world_westeros_the_vale
+#                         }
+#                     }
+#                 }
+#             }
+# 	    }
+
+#         parameters = {
+# 		    culture_can_raid_at_sea_even_if_feudal_no_restrictions = yes
+#             gain_gold_from_battles = yes
+#             disloyal_trait_more_common = yes
+#             expensive_convert_to_local_culture = yes
+#             harder_to_hybridize = yes
+#             unlock_maa_sistermen_pirates = yes
+#             the_mark_trait_gives_bonuses = yes
+#         }
+
+#         character_modifier = {
+#             max_loot_mult = 0.5
+#             embarkation_cost_mult = -0.5
+#         }
+
+#         cost = {
+#             prestige = {
+#                 add = {
+#                     value = tradition_base_cost
+#                     desc = based
+#                     format = "BASE_VALUE_FORMAT"
+#                 }
+#                 multiply = tradition_replacement_cost_if_relevant
+#             }
+#         }
+
+#         air_will_do = {
+#             value = 0 #So the AI doesn't pick the Tradition.
+#         }
+# }
+
+tradition_citadel_horse = {
+	category = regional
+
+	layers = {
+		0 = martial
+		1 = mena
+		4 = horses.dds
+	}
+
+	is_shown = {
+        always = no
+		# OR = {
+			#AGOT Modified
+			# has_cultural_pillar = heritage_mongolic
+			# has_cultural_pillar = heritage_turkic
+			# has_cultural_pillar = heritage_dothraki
+		# }
+	}
+
+	can_pick = {
+		#AGOT Modified
+		# custom_description = {
+		# 	text = culture_in_steppe_desc
+		# 	any_culture_county = {
+		# 		percent >= 0.4
+		# 		any_county_province = {
+		# 			geographical_region = world_steppe
+		# 		}
+		# 	}
+		# }
+		always = no
+	}
+
+	parameters = {
+		unlock_maa_sanddornish_horse_archers = yes
+		can_recruit_open_specialist = yes
+		desert_hunt_success_chance = yes
+		#AGOT DISABLED
+		#unlock_voluntary_laampdom = yes
+	}
+
+	character_modifier = {
+		archer_cavalry_pursuit_mult = 0.1
+		archer_cavalry_screen_mult = 0.1
+		archer_cavalry_recruitment_cost_mult = -0.1
+		supply_duration = 0.25
+		movement_speed = 0.15
+		character_travel_speed_mult = 0.1
+		character_travel_safety_mult = 0.1
+		provisions_use_mult = -0.25
+		#AGOT Added
+	}
+
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bellicose = { is_in_list = traits }
+						culture_pillar:ethos_communal = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_or_communal_desc
+				}
+			}
+
+			multiply = tradition_replacement_cost_if_relevant
+			#if = {
+			#	limit = {
+			#		NOR = {
+			#			has_cultural_pillar = heritage_turkic
+			#			has_cultural_pillar = heritage_mongolic
+			#		}
+			#	}
+			#	add = {
+			#		value = tradition_unfulfilled_criteria_penalty
+			#		desc = steppe_heritage_reduction_desc
+			#	}
+			#}
+		}
+	}
+
+	ai_will_do = {
+		value = 400
+	}
+}
+
+# tradition_citadel_smuggle = {
+
+#         category = combat
+
+#         layers = {
+#             0 = martial
+#             1 = eastern
+#             4 = soldiers4.dds
+#         }
+
+# 		is_shown = {
+# 			always = no
+# 		}
+
+#         can_pick = {
+#             always = no
+# 	    }
+
+#         parameters = {
+#             can_culturally_barter = yes
+#         }
+
+#         character_modifier = {
+#         }
+
+#         cost = {
+#         }
+
+#         ai_will_do = {
+#             value = 0 #So the AI doesn't pick the Tradition.
+#         }
+# }

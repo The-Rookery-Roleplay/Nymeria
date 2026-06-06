@@ -1,0 +1,398 @@
+﻿asoiaf_crown_death_trait_assignment_effect = {
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_aegon_i_artifact } }
+		make_trait_inactive = asoiaf_aegon_I_crown_death_trait
+	}
+	if = {
+		limit = {
+			OR = {
+				agot_has_artifact_equipped = { ARTIFACT_VARIABLE = aegoncrown }
+				agot_has_artifact_equipped = { ARTIFACT_VARIABLE = aegoncrown_nogems }
+			}
+		}
+		make_trait_inactive = asoiaf_aegon_I_crown_lotd_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = circlet_visenya_artifact } }
+		make_trait_inactive = asoiaf_visenya_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = circlet_rhaenys_artifact } }
+		make_trait_inactive = asoiaf_rhaenys_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_aenys_artifact } }
+		make_trait_inactive = asoiaf_aenys_I_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_jaehaerys_artifact } }
+		make_trait_inactive = asoiaf_jaehaerys_I_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_alysanne_artifact } }
+		make_trait_inactive = asoiaf_alysanne_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = daemon_stepstone_crown_artifact } }
+		make_trait_inactive = asoiaf_daemon_stepstone_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = daemon_queen_stepstone_crown_artifact } }
+		make_trait_inactive = asoiaf_daemon_queen_stepstone_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_aegon_iii_artifact } }
+		make_trait_inactive = asoiaf_aegon_III_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_baelor_artifact } }
+		make_trait_inactive = asoiaf_baelor_I_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_aegon_iv_artifact } }
+		make_trait_inactive = asoiaf_aegon_IV_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_daemonblackfyre_artifact } }
+		make_trait_inactive = asoiaf_daemonblackfyre_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = necklace_shieraseastar_artifact } }
+		make_trait_inactive = asoiaf_necklace_shieraseastar_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_maekar_artifact } }
+		make_trait_inactive = asoiaf_maekar_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = asoiaf_aerys_II_crown_artefact } }
+		make_trait_inactive = asoiaf_aerys_II_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_rhaella_artifact } }
+		make_trait_inactive = asoiaf_rhaella_crown_death_trait
+	}
+	if = {
+		limit = {
+			agot_has_artifact_equipped = { ARTIFACT_VARIABLE = robertI_crown_artifact }
+			has_game_rule = asoiaf_new_clothes_stormlands_rule_on
+		}
+		make_trait_inactive = asoiaf_robert_I_crown_death_trait
+	}
+	if = {
+		limit = {
+			agot_has_artifact_equipped = { ARTIFACT_VARIABLE = robertI_crown_artifact }
+			NOT = { has_game_rule = asoiaf_new_clothes_stormlands_rule_on }
+		}
+		make_trait_inactive = asoiaf_robert_I_crown_vanilla_death_trait
+	}
+	if = {
+		limit = {
+			agot_has_artifact_equipped = { ARTIFACT_VARIABLE = joffreyI_crown_artifact }
+			has_game_rule = asoiaf_new_clothes_crownlands_rule_on
+		}
+		make_trait_inactive = asoiaf_joffrey_I_crown_death_trait
+	}
+	if = {
+		limit = {
+			agot_has_artifact_equipped = { ARTIFACT_VARIABLE = joffreyI_crown_artifact }
+			NOT = { has_game_rule = asoiaf_new_clothes_crownlands_rule_on }
+		}
+		make_trait_inactive = asoiaf_joffrey_I_crown_vanilla_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = stannis_crown_artifact } }
+		make_trait_inactive = asoiaf_stannis_crown_death_trait
+	}
+	if = {
+		limit = {
+			agot_has_artifact_equipped = { ARTIFACT_VARIABLE = renly_crown_artifact }
+			has_game_rule = asoiaf_new_clothes_stormlands_rule_on
+		}
+		make_trait_inactive = asoiaf_renly_crown_death_trait
+	}
+	if = {
+		limit = {
+			agot_has_artifact_equipped = { ARTIFACT_VARIABLE = renly_crown_artifact }
+			NOT = { has_game_rule = asoiaf_new_clothes_stormlands_rule_on }
+		}
+		make_trait_inactive = asoiaf_renly_crown_vanilla_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = daenerys_crown_artifact } }
+		make_trait_inactive = asoiaf_daenerys_crown_death_trait
+	}
+	#
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = driftwood_crown_1_artifact } }
+		make_trait_inactive = asoiaf_driftwood_1_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = valyrian_crown2_artifact } }
+		make_trait_inactive = asoiaf_valyrian_2_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = westerosi_valyrian_crown1_artifact } }
+		make_trait_inactive = asoiaf_westerosi_valyrian_1_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = westerosi_valyrian_crown2_artifact } }
+		make_trait_inactive = asoiaf_westerosi_valyrian_2_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = beyondthewall_crown_artifact } }
+		make_trait_inactive = asoiaf_beyondthewall_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = iron_isles_crown_artifact } }
+		make_trait_inactive = asoiaf_iron_isles_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = riverlands_crown_artifact } }
+		make_trait_inactive = asoiaf_riverlands_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = blackwood_crown_artifact } }
+		make_trait_inactive = asoiaf_blackwood_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = bolton_crown_artifact } }
+		make_trait_inactive = asoiaf_bolton_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = cargyll_crown_artifact } }
+		make_trait_inactive = asoiaf_cargyll_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_winter_artifact } }
+		make_trait_inactive = asoiaf_crown_of_winter_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = dayne_crown_artifact } }
+		make_trait_inactive = asoiaf_dayne_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = dorne_crown_artifact } }
+		make_trait_inactive = asoiaf_dorne_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = dustin_crown_artifact } }
+		make_trait_inactive = asoiaf_dustin_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = falcon_crown_artifact } }
+		make_trait_inactive = asoiaf_falcon_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = florent_crown_artifact } }
+		make_trait_inactive = asoiaf_florent_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = frey_crown_artifact } }
+		make_trait_inactive = asoiaf_frey_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = greyjoy_crown_artifact } }
+		make_trait_inactive = asoiaf_greyjoy_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = harlaw_crown_artifact } }
+		make_trait_inactive = asoiaf_harlaw_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = hightower_crown_artifact } }
+		make_trait_inactive = asoiaf_hightower_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = iron_stag_crown_artifact } }
+		make_trait_inactive = asoiaf_iron_stag_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = manderly_crown_artifact } }
+		make_trait_inactive = asoiaf_manderly_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = reach_crown_artifact } }
+		make_trait_inactive = asoiaf_reach_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = redwyne_crown_artifact } }
+		make_trait_inactive = asoiaf_redwyne_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = reed_crown_artifact } }
+		make_trait_inactive = asoiaf_reed_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = royce_crown_artifact } }
+		make_trait_inactive = asoiaf_royce_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = stormlands_crown_artifact } }
+		make_trait_inactive = asoiaf_stormlands_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = tarly_crown_artifact } }
+		make_trait_inactive = asoiaf_tarly_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = tarth_crown_artifact } }
+		make_trait_inactive = asoiaf_tarth_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = tully_crown_artifact } }
+		make_trait_inactive = asoiaf_tully_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = umber_crown_artifact } }
+		make_trait_inactive = asoiaf_umber_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = westerlands_crown_artifact } }
+		make_trait_inactive = asoiaf_westerlands_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = westerlands2_crown_artifact } }
+		make_trait_inactive = asoiaf_westerlands_2_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_the_wall_artifact } }
+		make_trait_inactive = asoiaf_wall_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_westerling_artifact } }
+		make_trait_inactive = asoiaf_westerling_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_the_tides_artifact } }
+		make_trait_inactive = asoiaf_tides_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_gardener_peace_artifact } }
+		make_trait_inactive = asoiaf_gardener_peace_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_gardener_war_iron_artifact } }
+		make_trait_inactive = asoiaf_gardener_war_iron_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_mudd_artifact } }
+		make_trait_inactive = asoiaf_mudd_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_the_grey_king_rusted_artifact } }
+		make_trait_inactive = asoiaf_grey_king_rusted_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_the_nights_king_artifact } }
+		make_trait_inactive = asoiaf_nights_king_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_the_nights_king_replica_artifact } }
+		make_trait_inactive = asoiaf_nights_king_replica_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_true_winter_artifact } }
+		make_trait_inactive = asoiaf_true_winter_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_the_seven_artifact } }
+		make_trait_inactive = asoiaf_crown_of_the_seven_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_the_old_gods_artifact } }
+		make_trait_inactive = asoiaf_old_gods_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_rhllor_artifact } }
+		make_trait_inactive = asoiaf_rhllor_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = circlet_of_rhllor_artifact } }
+		make_trait_inactive = asoiaf_circlet_of_rhllor_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_hugor_artifact } }
+		make_trait_inactive = asoiaf_hugor_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_jeyne_westerling_artifact } }
+		make_trait_inactive = asoiaf_jeyne_westerling_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_winter_roses_artifact } }
+		make_trait_inactive = asoiaf_winter_roses_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_qolab_generic_artifact } }
+		make_trait_inactive = asoiaf_qolab_generic_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_qolab_baelor_artifact } }
+		make_trait_inactive = asoiaf_qolab_baelor_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_qolab_gardener_artifact } }
+		make_trait_inactive = asoiaf_qolab_gardener_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = qolab_crown_03_artifact } }
+		make_trait_inactive = asoiaf_qolab_03_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = qolab_crown_04_artifact } }
+		make_trait_inactive = asoiaf_qolab_04_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = qolab_crown_05_artifact } }
+		make_trait_inactive = asoiaf_qolab_05_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = qolab_crown_06_artifact } }
+		make_trait_inactive = asoiaf_qolab_06_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_qolab_winter_roses_artifact } }
+		make_trait_inactive = asoiaf_qolab_winter_roses_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_deep_winter_roses_artifact } }
+		make_trait_inactive = asoiaf_deep_winter_roses_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_bear_island_artifact } }
+		make_trait_inactive = asoiaf_crown_of_bear_island_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_hearts_home_artifact } }
+		make_trait_inactive = asoiaf_crown_of_hearts_home_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_darklyn_artifact } }
+		make_trait_inactive = asoiaf_crown_of_darklyn_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_dondarrion_artifact } }
+		make_trait_inactive = asoiaf_crown_of_dondarrion_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_castamere_artifact } }
+		make_trait_inactive = asoiaf_crown_of_castamere_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_deep_den_artifact } }
+		make_trait_inactive = asoiaf_crown_of_deep_den_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_hellholt_artifact } }
+		make_trait_inactive = asoiaf_crown_of_hellholt_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_the_banefort_artifact } }
+		make_trait_inactive = asoiaf_crown_of_the_banefort_crown_death_trait
+	}
+	if = {
+		limit = { agot_has_artifact_equipped = { ARTIFACT_VARIABLE = crown_of_crakehall_artifact } }
+		make_trait_inactive = asoiaf_crown_of_crakehall_crown_death_trait
+	}
+}

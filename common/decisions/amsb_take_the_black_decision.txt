@@ -1,0 +1,51 @@
+﻿amsb_take_the_black = {
+    picture = {
+        reference = "gfx/interface/illustrations/event_scenes/beyondwall/throneroom_beyond_wall_high.dds"
+    }
+
+    decision_group_type = royal_court_change
+
+    is_shown = {
+        location = { geographical_region = world_westeros_seven_kingdoms_without_wall }
+        is_male = yes
+        age >= 15
+        culture = { agot_is_wildling_culture = no }
+        religion = religion:the_pact_religion
+    }
+
+    is_valid = {
+        is_male = yes
+        age >= 10
+        #OR = {
+        is_at_war = no
+        #is_imprisoned = yes
+        #}
+    }
+
+    effect = {
+        agot_add_to_nightswatch_effect = yes
+        title:k_the_wall.holder = {
+            trigger_event = agot_nights_watch.0100
+            add_courtier = root
+        }
+        root = {
+            if = {
+                limit = {
+                    AND = {
+                        religion = religion:the_pact_religion
+                        is_imprisoned = no
+                    }
+                }
+                add_dynasty_prestige = 500
+            }
+        }
+    }
+    ai_potential = {
+        always = no
+    }
+
+    ai_will_do = {
+        base = 0
+    }
+    ai_check_interval = 10
+}

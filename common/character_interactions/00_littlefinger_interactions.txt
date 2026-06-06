@@ -1,0 +1,90 @@
+﻿offer_bordello_interaction = {
+    category = interaction_category_diplomacy
+    desc = offer_bordello_interaction_desc
+    icon = icon_gold
+    is_shown = {
+        scope:actor = {
+            is_ai = no
+            dynasty = dynasty:dynn_Baelish
+            dynasty = { has_dynasty_perk = baelish_legacy_1 }
+        }
+        scope:recipient = {
+            NOT = { this = scope:actor }
+            is_landed = yes
+        }
+    }
+
+    is_valid = {
+        scope:actor = {
+            # dynasty = dynasty:dynn_Baelish
+            dynasty = { has_dynasty_perk = baelish_legacy_1 }
+            gold >= 400
+            NOT = { has_character_flag = baelish_franchise_used_5 }
+        }
+
+        scope:recipient = {
+            capital_province = {
+                NOT = { has_building = bordello_littlefinger }
+                NOT = { has_province_modifier = baelish_franchise_bordello_modifier }
+            }
+        }
+    }
+
+    ai_accept = { base = 5 }
+
+    on_accept = {
+        scope:actor = {
+            add_character_flag = baelish_franchise_founder
+
+            if = {
+                limit = { NOT = { has_character_flag = baelish_franchise_used_1 } }
+                add_character_flag = baelish_franchise_used_1
+            }
+            else_if = {
+                limit = { NOT = { has_character_flag = baelish_franchise_used_2 } }
+                add_character_flag = baelish_franchise_used_2
+            }
+            else_if = {
+                limit = { NOT = { has_character_flag = baelish_franchise_used_3 } }
+                add_character_flag = baelish_franchise_used_3
+            }
+            else_if = {
+                limit = { NOT = { has_character_flag = baelish_franchise_used_4 } }
+                add_character_flag = baelish_franchise_used_4
+            }
+            else_if = {
+                limit = { NOT = { has_character_flag = baelish_franchise_used_5 } }
+                add_character_flag = baelish_franchise_used_5
+            }
+        }
+
+        scope:recipient = {
+            capital_province = {
+                county = {
+                    set_variable = {
+                        name = baelish_franchise_owner
+                        value = scope:actor
+                    }
+                }
+
+                add_province_modifier = extra_building_slot
+                add_province_modifier = baelish_franchise_bordello_modifier
+                add_building = bordello_littlefinger
+            }
+        }
+    }
+
+    on_decline = {
+        scope:actor = {
+            gold = {
+                value = 400
+            }
+        }
+    }
+    cost = {
+        gold = {
+            value = 400
+        }
+    }
+}
+

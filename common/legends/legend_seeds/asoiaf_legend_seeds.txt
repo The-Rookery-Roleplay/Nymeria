@@ -1,0 +1,21 @@
+﻿#TARGARYEN LEGENDS
+#asoiaf_aegon_I_targaryen = {
+#	type = legitimizing
+#	quality = illustrious
+#	is_shown = {
+#		has_dlc_feature = legends
+#		game_start_date >= 8037.9.9 #Aegon's death date
+#		capital_county ?= { #later add an OR statement to account for unlanded characters
+#			geographical_region = world_westeros
+#		}
+#	}
+#	is_valid = {
+#		prestige_level >= high_prestige_level
+#		dynasty = dynasty:dynn_Targaryen
+#	}
+#	chronicle = asoiaf_aegon_the_conqueror
+#	chronicle_properties = {
+#		ancestor = character:Targaryen_27 #Aegon I Targaryen
+#		title = title:h_the_iron_throne
+#	}
+#}

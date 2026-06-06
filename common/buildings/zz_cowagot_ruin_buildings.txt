@@ -1,0 +1,206 @@
+﻿@holding_illustration_ruin = "gfx/interface/illustrations/holding_types/ruin_generic.dds"
+
+# Main Holding
+ruin_01 = {
+	construction_time = 1800
+
+	asset = {
+		type = pdxmesh
+		name = "agot_building_western_ruin_mesh"
+		illustration = @holding_illustration_ruin
+		graphical_regions = { graphical_western }
+	}
+	asset = {
+		type = pdxmesh
+		name = "agot_building_western_ruin_mesh"
+		illustration = @holding_illustration_ruin
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "agot_building_mena_ruin_mesh"
+		illustration = @holding_illustration_ruin
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "agot_building_mena_ruin_mesh"
+		illustration = @holding_illustration_ruin
+		graphical_regions = { graphical_india }
+	}
+	asset = {
+		type = pdxmesh
+		name = "agot_building_western_ruin_mesh"
+		illustration = @holding_illustration_ruin
+		graphical_regions = { graphical_steppe }
+	}
+	asset = {
+		type = pdxmesh
+		name = "agot_building_western_ruin_mesh"
+		illustration = @holding_illustration_ruin
+		graphical_regions = { graphical_siberia }
+	}
+
+	asset = {
+		type = pdxmesh
+		name = "empty_mesh"
+		illustration = @holding_illustration_ruin
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 0 } }
+		provinces = { 3180 }
+	}
+
+	asset = {
+		type = pdxmesh
+		name = "empty_mesh"		
+		illustration = @holding_illustration_ruin
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 0 } }
+		provinces = { 1737 6028 }
+	}
+
+
+	can_construct_potential = {
+		always = no
+	}
+
+	can_construct = {
+		always = no
+	}
+
+	cost_gold = 1000
+
+	province_terrain_modifier = {
+		build_speed = 0.3
+	}
+
+	character_modifier = {
+		#domain_limit = 1
+	}
+
+	flag = ruin_building
+	type_icon = "icon_ruin.dds"
+
+}
+small_ruin_04 = {
+	construction_time = 2190
+
+	can_construct_potential = {
+		has_building = small_ruin_03
+		scope:holder = {
+			NOT = {
+				has_trait = ruin
+			}
+		}
+	}
+
+	
+	
+	can_construct_showing_failures_only = {			
+		custom_tooltip = {
+			text = "REBUILD_FIST_FIRST"
+			NOR = { 
+				has_building = agot_ruins_fist_of_the_first_men_01 
+				has_building = agot_ruins_fist_of_the_first_men_02 
+				has_building = agot_ruins_fist_of_the_first_men_03 
+			}
+		}				
+	}
+
+	on_complete = {
+		save_scope_as = completed_ruin
+		county.holder = { trigger_event = agot_ruins.1000 }
+	}
+
+	cost_gold = 600
+
+	character_modifier = {
+		monthly_income = -2
+	}
+
+	province_modifier = {
+		fort_level = 2
+	}
+
+	levy = 300
+	max_garrison = 300
+	garrison_reinforcement_factor = 0.09
+
+	type_icon = "icon_ruin.dds"
+}
+
+medium_ruin_04 = {
+	construction_time = 2920
+
+	can_construct_potential = {
+		has_building = medium_ruin_03
+		custom_tooltip = {
+			text = "RUIN_MUST_BEGIN_CONSTRUCTION"
+			NOT = {
+				scope:holder = {
+					has_trait = ruin
+				}
+			}
+		}
+	}	
+
+	can_construct_showing_failures_only = {
+		custom_tooltip = {
+			text = "REBUILD_CASTAMERE_FIRST"
+			NOT = { has_building = agot_castamere_ruins_01 }
+		}
+	}
+	cost_gold = 800
+	character_modifier = {
+		monthly_income = -4
+	}
+	province_modifier = {
+		fort_level = 3
+	}
+	levy = 400
+	max_garrison = 400
+	garrison_reinforcement_factor = 0.09
+	type_icon = "icon_ruin.dds"
+	on_complete = {
+		save_scope_as = completed_ruin
+		county.holder = { trigger_event = agot_ruins.1000 }
+	}
+}
+
+large_ruin_04 = {
+	construction_time = 5475
+
+	can_construct_potential = {
+		has_building = large_ruin_03
+		custom_tooltip = {
+			text = "RUIN_MUST_BEGIN_CONSTRUCTION"
+			NOT = {
+				scope:holder = {
+					has_trait = ruin
+				}
+			}
+		}
+	}
+	
+	
+	on_complete = {
+		save_scope_as = completed_ruin
+		county.holder = { trigger_event = agot_ruins.1000 }
+	}
+	can_construct_showing_failures_only = {			
+		custom_tooltip = {
+			text = "REBUILD_OLDSTONES_FIRST"
+			NOT = { has_building = agot_oldstones_01 }
+		}				
+	}
+	cost_gold = 800
+	character_modifier = {
+		monthly_income = -6
+	}
+	province_modifier = {
+		fort_level = 4
+	}
+	levy = 500
+	max_garrison = 500
+	garrison_reinforcement_factor = 0.09
+
+	type_icon = "icon_ruin.dds"
+}

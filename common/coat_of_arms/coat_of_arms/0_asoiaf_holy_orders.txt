@@ -1,0 +1,40 @@
+ho_warriors_sons = {
+	pattern = "pattern_solid.dds"	
+	color1 = "asoiaf_white"
+	color2 = "asoiaf_white"
+	colored_emblem = {
+		texture = "historical_plain.dds"
+		color1 = "asoiaf_black"
+		instance = { position = { 0.5 0.5 } scale = { 2.0 2.0 }  }
+	}
+	textured_emblem = {
+		texture = "asoiaf_sword_rainbow.dds"
+		instance = { position = { 0.5 0.49 } scale = { 0.9 0.9 }  }			
+	}
+}
+
+ho_poor_fellows = {
+	pattern = "pattern_solid.dds"	
+	color1 = "asoiaf_brown_dark"
+	color2 = "asoiaf_brown_dark"
+	colored_emblem = {
+		texture = "historical_plain.dds"
+		color1 = "asoiaf_white_dark"
+		instance = { position = { 0.5 0.5 } scale = { 2.0 2.0 }  }
+	}
+	colored_emblem = {
+		texture = "asoiaf_star_seven_pointed_linked.dds"
+		color1 = "asoiaf_red"
+		instance = { position = { 0.5 0.45 } scale = { 0.7 0.7 }  }			
+	}
+}
+
+ho_brotherhood_without_banners = {
+	pattern = "pattern_solid.dds"	
+	color1 = "asoiaf_black_alt"
+	color2 = "asoiaf_brown_dark"
+	textured_emblem = {
+		texture = "asoiaf_stitched_field.dds"
+		instance = { position = { 0.5 0.495 } scale = { 2.0 2.0 }  }
+	}
+}

@@ -1,0 +1,1374 @@
+﻿namespace = asoiaf_maintenance_events
+
+asoiaf_maintenance_events.0001 = { #Viserys event to change his traits in exile
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0001
+	#window = big_event_window
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					character:Targaryen_9 ?= { is_alive = yes }
+				}
+				desc =  asoiaf_maintenance_events_0001_a_desc
+			}
+			triggered_desc = {
+				trigger = {
+					character:Targaryen_9 ?= { is_alive = no }
+				}
+				desc =  asoiaf_maintenance_events_0001_b_desc
+			}
+		}
+	}
+
+	trigger = {
+		exists = global_var:asoiaf_Targaryen_8_pending_traits_change_variable
+	}
+	
+	theme = mental_break
+
+	#left_portrait = {
+	#	character = character:Targaryen_8
+	#	animation = assassin
+	#	hide_info = yes
+	#}
+	left_portrait = {
+		character = scope:asoiaf_Targaryen_8
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:asoiaf_Targaryen_9
+		triggered_animation = {
+			trigger = { scope:asoiaf_Targaryen_9 ?= { is_alive = yes } }
+			animation = paranoia
+		}
+		triggered_animation = {
+			trigger = { scope:asoiaf_Targaryen_9 ?= { is_alive = no } }
+			animation = dead
+		}
+	}
+
+	immediate = {
+		remove_global_variable = asoiaf_Targaryen_8_pending_traits_change_variable #so it never triggers again
+		dynasty:dynn_Targaryen = {
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_9_trait } #Daenerys Targaryen (daughter of Aerys II)
+				save_scope_as = asoiaf_Targaryen_9
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_8_trait } #Viserys Targaryen (son of Aerys II)
+				save_scope_as = asoiaf_Targaryen_8
+				hidden_effect = { asoiaf_clear_personality_traits_effect = yes }
+				add_trait = arrogant
+				add_trait = impatient
+				add_trait = wrathful
+				add_trait = ambitious
+				add_trait = irritable
+				create_character_memory = { type = asoiaf_Targaryen_8_traits_change_memory }
+			}
+		}
+	}
+	option = {
+		name = asoiaf_maintenance_events.0001.a
+		add_stress = 100
+	}
+}
+
+asoiaf_maintenance_events.0002 = { #Daenerys event FOR DAENERYS to change her traits upon marriage
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0002
+	#window = big_event_window
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { #Viserys alive and spouse alive
+					character:Targaryen_8 ?= { is_alive = yes }
+				}
+				desc =  asoiaf_maintenance_events_0002_a_desc
+			}
+			triggered_desc = {
+				trigger = { #Viserys dead and spouse alive
+					character:Targaryen_8 ?= { is_alive = no }
+				}
+				desc =  asoiaf_maintenance_events_0002_b_desc
+			}
+		}
+	}
+
+	trigger = {
+		NOT = { exists = global_var:asoiaf_Targaryen_9_traits_change_variable }
+		character:Targaryen_9 ?= { is_married = yes } #only triggers if she is still married 6 months after wedding; she needs time to grow her confidence, less than 6 months isn't enough
+	}
+	
+	theme = marriage
+
+	left_portrait = {
+		character = scope:asoiaf_Targaryen_9_spouse
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:asoiaf_Targaryen_9
+		animation = personality_bold
+	}
+	lower_center_portrait = {
+		character = character:Targaryen_8
+	}
+
+	immediate = {
+		dynasty:dynn_Targaryen = {
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_9_trait } #Daenerys Targaryen (daughter of Aerys II)
+				save_scope_as = asoiaf_Targaryen_9
+				hidden_effect = { asoiaf_clear_personality_traits_effect = yes }
+				add_trait = authoritative
+				add_trait = ambitious
+				add_trait = just
+				add_trait = wrathful
+				create_character_memory = { type = asoiaf_Targaryen_9_traits_change_memory }
+				primary_spouse = {
+					save_scope_as = asoiaf_Targaryen_9_spouse
+					trigger_event = asoiaf_maintenance_events.0004 #exposition for Daenerys' spouse about Daenerys growing more independent
+				}
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_8_trait } #Viserys Targaryen (son of Aerys II)
+				trigger_event = asoiaf_maintenance_events.0003 #exposition for Viserys about Daenerys growing more independent
+			}
+			if = {
+				limit = {
+					scope:asoiaf_Targaryen_9 = { is_married = yes } #if Daenerys is still married after 6 months...
+				}
+				set_global_variable = asoiaf_Targaryen_9_traits_change_variable #...set global variable so it never triggers again, then proceed with the event
+			}
+		}
+	}
+	option = {
+		name = asoiaf_maintenance_events.0002.a
+		add_prestige = 300
+		add_stress = -25
+	}
+}
+
+asoiaf_maintenance_events.0003 = { #Daenerys event FOR VISERYS to change her traits upon marriage
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0003
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0003_desc
+	
+	theme = mental_break
+
+	left_portrait = {
+		character = scope:asoiaf_Targaryen_9
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:asoiaf_Targaryen_8
+		animation = stress
+	}
+	lower_center_portrait = {
+		character = scope:asoiaf_Targaryen_9_spouse
+	}
+
+	immediate = {
+		dynasty:dynn_Targaryen = {
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_8_trait } #Viserys Targaryen (son of Aerys II)
+				save_scope_as = asoiaf_Targaryen_8
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_9_trait } #Daenerys Targaryen (daughter of Aerys II)
+				save_scope_as = asoiaf_Targaryen_9
+				primary_spouse = { save_scope_as = asoiaf_Targaryen_9_spouse }
+			}
+		}
+	}
+	option = {
+		name = asoiaf_maintenance_events.0003.a
+		add_prestige = -300
+		add_stress = 100
+	}
+}
+
+asoiaf_maintenance_events.0004 = { #Daenerys event FOR SPOUSE to change her traits upon marriage
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0004
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0004_desc
+	
+	theme = marriage
+
+	left_portrait = {
+		character = scope:asoiaf_Targaryen_9
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:asoiaf_Targaryen_9_spouse
+		animation = personality_content
+	}
+
+	immediate = {
+		dynasty:dynn_Targaryen = {
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_9_trait } #Daenerys Targaryen (daughter of Aerys II)
+				save_scope_as = asoiaf_Targaryen_9
+				primary_spouse = { save_scope_as = asoiaf_Targaryen_9_spouse }
+			}
+		}
+	}
+	option = {
+		name = asoiaf_maintenance_events.0004.a
+	}
+}
+
+asoiaf_maintenance_events.0005 = { #Option for Aerys II Targaryen (if he's a player) to declare Viserys his heir after Rhaegar dies
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0005
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0005_desc
+	
+	theme = death
+	override_background = { reference = throne_room }
+
+	left_portrait = {
+		character = scope:asoiaf_Targaryen_3 #Rhaegar
+		animation = dead
+	}
+	right_portrait = {
+		character = scope:asoiaf_Targaryen_1 #Aerys II
+		animation = paranoia
+	}
+	lower_left_portrait = {
+		character = scope:asoiaf_Targaryen_11 #Aegon
+	}
+	lower_right_portrait = {
+		character = scope:asoiaf_Targaryen_8 #Viserys
+	}
+
+	immediate = {
+		hidden_effect = {
+			character:Targaryen_1 ?= { #Aerys II
+				add_courtier = character:Martell_7 #Elia Martell must be at King's Landing after Rhaegar's death
+			}
+		}
+		character:Targaryen_1 ?= { #Aerys II
+			save_scope_as = asoiaf_Targaryen_1
+		}
+		character:Targaryen_3 ?= { #Rhaegar
+			save_scope_as = asoiaf_Targaryen_3
+		}
+		character:Targaryen_11 ?= { #Aegon
+			save_scope_as = asoiaf_Targaryen_11
+		}
+		character:Targaryen_8 ?= { #Viserys
+			save_scope_as = asoiaf_Targaryen_8
+		}
+		character:Baratheon_2 ?= { #Robert
+			save_scope_as = asoiaf_Baratheon_2
+		}
+		character:Martell_2 ?= { #Lewyn
+			save_scope_as = asoiaf_Martell_2
+		}
+	}
+	option = {
+		name = asoiaf_maintenance_events.0005.a
+	}
+	option = {
+		name = asoiaf_maintenance_events.0005.b
+		set_designated_heir = character:Targaryen_8 #Viserys
+		reverse_add_opinion = {
+			target = character:Targaryen_8
+			modifier = grateful_opinion
+			opinion = 50
+		}
+		reverse_add_opinion = {
+			target = character:Targaryen_11
+			modifier = passed_me_over_for_heir_opinion
+			opinion = -50
+		}
+		if = {
+			limit = { character:Martell_7 ?= { is_alive = yes } }
+			reverse_add_opinion = {
+				target = character:Martell_7
+				modifier = passed_over_my_child_for_heir_opinion
+				opinion = -50
+			}
+		}
+	}
+}
+
+asoiaf_maintenance_events.0006 = { #PART 1: Rhaenyra imprisons her brothers and their children upon ascending the Iron Throne
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0006
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0006_desc
+	
+	theme = realm
+	override_background = { reference = agot_iron_throne }
+
+	left_portrait = {
+		character = scope:asoiaf_rhaenyra.father #Rhaenyra's father, who is dead
+		triggered_animation = {
+			trigger = { scope:asoiaf_rhaenyra.father ?= { is_alive = no } }
+			animation = dead
+		}
+		triggered_animation = {
+			trigger = { scope:asoiaf_rhaenyra.father ?= { is_alive = yes } }
+			animation = personality_content
+		}
+	}
+	right_portrait = {
+		character = scope:asoiaf_rhaenyra #Rhaenyra; root
+		animation = stress
+	}
+	lower_left_portrait = {
+		character = scope:asoiaf_aegon #Aegon
+		trigger = {
+			scope:asoiaf_aegon = { exists = yes }
+		}
+	}
+	lower_center_portrait = {
+		character = scope:asoiaf_aemond #Aemond
+		trigger = {
+			scope:asoiaf_aemond = { exists = yes }
+		}
+	}
+	lower_right_portrait = {
+		character = scope:asoiaf_daeron #Daeron
+		trigger = {
+			scope:asoiaf_daeron = { exists = yes }
+		}
+	}
+
+	immediate = {
+		dynasty:dynn_Targaryen = {
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_63_trait } #Rhaenyra Targaryen (daughter of Viserys I)
+				save_scope_as = asoiaf_rhaenyra
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_65_trait } #Aegon II Targaryen
+				save_scope_as = asoiaf_aegon
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_67_trait } #Aemond Targaryen (son of Viserys I)
+				save_scope_as = asoiaf_aemond
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_68_trait } #Daeron Targaryen (son of Viserys I)
+				save_scope_as = asoiaf_daeron
+			}
+			
+		}
+	}
+	option = { #imprison brothers and their children
+		name = asoiaf_maintenance_events.0006.a
+		scope:asoiaf_rhaenyra = {
+			trigger_event = { id = asoiaf_maintenance_events.0007 days = 7 } #trigger part 2 for executionss
+			add_dread = major_dread_gain
+		}
+		custom_tooltip = {
+			text = asoiaf_maintenance_events.0006.a.tt
+			scope:asoiaf_rhaenyra = { #IMPRISONMENT EFFECT
+				every_sibling = { #brothers
+					limit = {
+						father = { has_inactive_trait = asoiaf_Targaryen_60_trait }
+						is_male = yes
+						dynasty = scope:asoiaf_rhaenyra.dynasty
+						is_courtier_of = scope:asoiaf_rhaenyra
+						location ?= title:h_the_iron_throne.holder.capital_province #they're in the capital and not away
+						NOR = {
+							has_trait = maester
+							has_trait = archmaester
+							has_trait = kingsguard
+							has_trait = most_devout_member
+							has_trait = septon
+							has_trait = silent_sister
+							has_trait = devoted
+							has_trait = red_priest
+							has_trait = drowned_man
+							has_trait = nightswatch
+							has_trait = bastard
+						}
+					}
+					save_scope_as = asoiaf_rhaenyra_brothers
+					imprison_character_effect = {
+						TARGET = scope:asoiaf_rhaenyra_brothers
+						IMPRISONER = scope:asoiaf_rhaenyra
+					}
+					change_prison_type = dungeon
+					every_spouse = { #spouses of brothers who are pregnant
+						limit = {
+							has_trait = pregnant
+							is_courtier_of = scope:asoiaf_rhaenyra
+							location ?= title:h_the_iron_throne.holder.capital_province #they're in the capital and not away
+						}
+						save_scope_as = asoiaf_rhaenyra_brothers_spouses
+						imprison_character_effect = {
+							TARGET = scope:asoiaf_rhaenyra_brothers_spouses
+							IMPRISONER = scope:asoiaf_rhaenyra
+						}
+						change_prison_type = dungeon
+					}
+					every_child = { #children of brothers
+						limit = {
+							dynasty = scope:asoiaf_rhaenyra.dynasty
+							is_courtier_of = scope:asoiaf_rhaenyra
+							location ?= title:h_the_iron_throne.holder.capital_province #they're in the capital and not away
+							NOR = {
+								has_trait = maester
+								has_trait = archmaester
+								has_trait = kingsguard
+								has_trait = most_devout_member
+								has_trait = septon
+								has_trait = silent_sister
+								has_trait = devoted
+								has_trait = red_priest
+								has_trait = drowned_man
+								has_trait = nightswatch
+								has_trait = bastard
+							}
+						}
+						save_scope_as = asoiaf_rhaenyra_brothers_children
+						imprison_character_effect = {
+							TARGET = scope:asoiaf_rhaenyra_brothers_children
+							IMPRISONER = scope:asoiaf_rhaenyra
+						}
+						change_prison_type = dungeon
+						every_spouse = { #spouses of children of brothers who are pregnant
+							limit = {
+								has_trait = pregnant
+								is_courtier_of = scope:asoiaf_rhaenyra
+								location ?= title:h_the_iron_throne.holder.capital_province #they're in the capital and not away
+							}
+							save_scope_as = asoiaf_rhaenyra_brothers_children_spouses
+							imprison_character_effect = {
+								TARGET = scope:asoiaf_rhaenyra_brothers_children_spouses
+								IMPRISONER = scope:asoiaf_rhaenyra
+							}
+							change_prison_type = dungeon
+						}
+						every_child = { #grandchildren of brothers
+							limit = {
+								dynasty = scope:asoiaf_rhaenyra.dynasty
+								is_courtier_of = scope:asoiaf_rhaenyra
+								location ?= title:h_the_iron_throne.holder.capital_province #they're in the capital and not away
+								NOR = {
+									has_trait = maester
+									has_trait = archmaester
+									has_trait = kingsguard
+									has_trait = most_devout_member
+									has_trait = septon
+									has_trait = silent_sister
+									has_trait = devoted
+									has_trait = red_priest
+									has_trait = drowned_man
+									has_trait = nightswatch
+									has_trait = bastard
+								}
+							}
+							save_scope_as = asoiaf_rhaenyra_brothers_grandchildren
+							imprison_character_effect = {
+								TARGET = scope:asoiaf_rhaenyra_brothers_grandchildren
+								IMPRISONER = scope:asoiaf_rhaenyra
+							}
+							change_prison_type = dungeon
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_game_rule = agot_story_historical_events_historical_outcomes #historical events + historical outcomes = guarantee to choose this option
+			}
+			modifier = {
+				add = 1
+				has_game_rule = agot_story_historical_events_weighted_outcomes #historical events + weighted outcomes = 2:1 in favour of it happening
+			}
+			#all other history rules just make the selection random
+		}
+	}
+	option = { #do nothing
+		name = asoiaf_maintenance_events.0006.b
+		scope:asoiaf_rhaenyra = { add_legitimacy = -2000 }
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 1000
+				any_sibling = { #if an eligible brother for imprisonment (copied criteria from title on_action) is her lover or best friend, she'll tend not to go through with imprisonment
+					is_male = yes
+					is_alive = yes
+					NOR = {
+						has_trait = maester
+						has_trait = archmaester
+						has_trait = kingsguard
+						has_trait = most_devout_member
+						has_trait = septon
+						has_trait = devoted
+						has_trait = red_priest
+						has_trait = drowned_man
+						has_trait = nightswatch
+						has_trait = bastard
+					}
+					OR = {
+						has_relation_lover = root
+						has_relation_best_friend = root
+					}
+				}
+			}
+		}
+	}
+}
+
+asoiaf_maintenance_events.0007 = { #PART 2: Rhaenyra executes her brothers and their children upon ascending the Iron Throne
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0007
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0007_desc
+	
+	theme = dread
+	override_background = { reference = dungeon }
+
+	left_portrait = {
+		character = scope:asoiaf_alicent #Alicent (if applicable)
+		animation = fear
+		trigger = {
+			scope:asoiaf_alicent = { exists = yes }
+		}
+	}
+	right_portrait = {
+		character = scope:asoiaf_rhaenyra #Rhaenyra; root
+		animation = stress
+	}
+	lower_left_portrait = {
+		character = scope:asoiaf_aegon #Aegon
+		trigger = {
+			scope:asoiaf_aegon = {
+				exists = yes
+				is_imprisoned_by = scope:asoiaf_rhaenyra
+			}
+		}
+	}
+	lower_center_portrait = {
+		character = scope:asoiaf_aemond #Aemond
+		trigger = {
+			scope:asoiaf_aemond = {
+				exists = yes
+				is_imprisoned_by = scope:asoiaf_rhaenyra
+			}
+		}
+	}
+	lower_right_portrait = {
+		character = scope:asoiaf_daeron #Daeron
+		trigger = {
+			scope:asoiaf_daeron = {
+				exists = yes
+				is_imprisoned_by = scope:asoiaf_rhaenyra
+			}
+		}
+	}
+
+	immediate = {
+		dynasty:dynn_Targaryen = {
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_63_trait } #Rhaenyra Targaryen (daughter of Viserys I)
+				save_scope_as = asoiaf_rhaenyra
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_65_trait } #Aegon II Targaryen
+				save_scope_as = asoiaf_aegon
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_67_trait } #Aemond Targaryen (son of Viserys I)
+				save_scope_as = asoiaf_aemond
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_68_trait } #Daeron Targaryen (son of Viserys I)
+				save_scope_as = asoiaf_daeron
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					exists = scope:asoiaf_aegon
+					exists = scope:asoiaf_aemond
+					exists = scope:asoiaf_daeron
+				}
+			}
+			scope:asoiaf_aegon.mother = { save_scope_as = asoiaf_alicent }
+		}
+	}
+	option = { #kills brothers and their children
+		name = asoiaf_maintenance_events.0007.a
+		scope:asoiaf_rhaenyra = {
+			add_stress = 100
+			add_legitimacy = 2000
+		}
+		scope:asoiaf_rhaenyra = {
+			add_dread = massive_dread_gain
+		}
+		custom_tooltip = {
+			text = asoiaf_maintenance_events.0007.a.tt
+			scope:asoiaf_rhaenyra = { #EXECUTION EFFECT
+				give_nickname = nick_the_black_queen
+				every_sibling = { #brothers
+					limit = {
+						father = { has_inactive_trait = asoiaf_Targaryen_60_trait }
+						is_male = yes
+						dynasty = scope:asoiaf_rhaenyra.dynasty
+						is_courtier_of = scope:asoiaf_rhaenyra
+						is_imprisoned_by = scope:asoiaf_rhaenyra
+						NOR = {
+							has_trait = maester
+							has_trait = archmaester
+							has_trait = kingsguard
+							has_trait = most_devout_member
+							has_trait = septon
+							has_trait = silent_sister
+							has_trait = devoted
+							has_trait = red_priest
+							has_trait = drowned_man
+							has_trait = nightswatch
+							has_trait = bastard
+						}
+					}
+					save_scope_as = asoiaf_rhaenyra_brothers
+					execute_prisoner_effect = {
+						VICTIM = scope:asoiaf_rhaenyra_brothers
+						EXECUTIONER = scope:asoiaf_rhaenyra
+					}
+					every_child = { #children of brothers
+						limit = {
+							dynasty = scope:asoiaf_rhaenyra.dynasty
+							is_courtier_of = scope:asoiaf_rhaenyra
+							is_imprisoned_by = scope:asoiaf_rhaenyra
+							NOR = {
+								has_trait = maester
+								has_trait = archmaester
+								has_trait = kingsguard
+								has_trait = most_devout_member
+								has_trait = septon
+								has_trait = silent_sister
+								has_trait = devoted
+								has_trait = red_priest
+								has_trait = drowned_man
+								has_trait = nightswatch
+								has_trait = bastard
+							}
+						}
+						save_scope_as = asoiaf_rhaenyra_brothers_children
+						execute_prisoner_effect = {
+							VICTIM = scope:asoiaf_rhaenyra_brothers_children
+							EXECUTIONER = scope:asoiaf_rhaenyra
+						}
+						every_child = { #grandchildren of brothers
+							limit = {
+								dynasty = scope:asoiaf_rhaenyra.dynasty
+								is_courtier_of = scope:asoiaf_rhaenyra
+								is_imprisoned_by = scope:asoiaf_rhaenyra
+								NOR = {
+									has_trait = maester
+									has_trait = archmaester
+									has_trait = kingsguard
+									has_trait = most_devout_member
+									has_trait = septon
+									has_trait = silent_sister
+									has_trait = devoted
+									has_trait = red_priest
+									has_trait = drowned_man
+									has_trait = nightswatch
+									has_trait = bastard
+								}
+							}
+							save_scope_as = asoiaf_rhaenyra_brothers_children
+							execute_prisoner_effect = {
+								VICTIM = scope:asoiaf_rhaenyra_brothers_children
+								EXECUTIONER = scope:asoiaf_rhaenyra
+							}
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			scope:asoiaf_rhaenyra = {
+				if = {
+					limit = {
+						OR = {
+							has_trait = kinslayer_1 #Dynastic Kinslayer
+							has_trait = kinslayer_2 #Familial Kinslayer
+						}
+					}
+					remove_trait = kinslayer_1
+					remove_trait = kinslayer_2
+					add_trait = kinslayer_3 #Kinslayer
+				}
+			}
+		}
+		scope:asoiaf_alicent = {
+			set_relation_grudge = { reason = asoiaf_alicent_rhaenyra_grudge_2_desc target = scope:asoiaf_rhaenyra } #grudge against Rhaenyra for killing her children
+		}
+		hidden_effect = {
+			scope:asoiaf_rhaenyra = {
+				every_vassal_or_below = {
+					trigger_event = asoiaf_maintenance_events.0008 #the realm is informed of Rhaenyra's actions
+				}
+			}
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_game_rule = agot_story_historical_events_historical_outcomes #historical events + historical outcomes = guarantee to choose this option
+				add = 1000
+			}
+			modifier = {
+				has_game_rule = agot_story_historical_events_weighted_outcomes #historical events + weighted outcomes = 2:1 in favour of it happening
+				add = 1
+			}
+			#all other history rules just make the selection random
+		}
+	}
+	option = { #do nothing
+		name = asoiaf_maintenance_events.0007.b
+		scope:asoiaf_rhaenyra = {
+			add_dread = -75
+			add_legitimacy = -2000
+		}
+		custom_tooltip = {
+			text = asoiaf_maintenance_events.0007.b.tt
+			scope:asoiaf_rhaenyra = { #RELEASE FROM PRISON EFFECT
+				every_sibling = { #brothers
+					limit = {
+						father = { has_inactive_trait = asoiaf_Targaryen_60_trait }
+						is_male = yes
+						dynasty = scope:asoiaf_rhaenyra.dynasty
+						is_courtier_of = scope:asoiaf_rhaenyra
+						is_imprisoned_by = scope:asoiaf_rhaenyra
+						NOR = {
+							has_trait = maester
+							has_trait = archmaester
+							has_trait = kingsguard
+							has_trait = most_devout_member
+							has_trait = septon
+							has_trait = silent_sister
+							has_trait = devoted
+							has_trait = red_priest
+							has_trait = drowned_man
+							has_trait = nightswatch
+							has_trait = bastard
+						}
+					}
+					release_from_prison = yes
+					add_opinion = {
+						target = scope:asoiaf_rhaenyra
+						modifier = spared_my_life_opinion
+						opinion = 50
+					}
+					every_spouse = { #spouses of brothers who are pregnant
+						limit = {
+							has_trait = pregnant
+							is_courtier_of = scope:asoiaf_rhaenyra
+							is_imprisoned_by = scope:asoiaf_rhaenyra
+						}
+						release_from_prison = yes
+						add_opinion = {
+							target = scope:asoiaf_rhaenyra
+							modifier = spared_my_life_opinion
+							opinion = 50
+						}
+					}
+					every_child = { #children of brothers
+						limit = {
+							dynasty = scope:asoiaf_rhaenyra.dynasty
+							is_courtier_of = scope:asoiaf_rhaenyra
+							is_imprisoned_by = scope:asoiaf_rhaenyra
+							NOR = {
+								has_trait = maester
+								has_trait = archmaester
+								has_trait = kingsguard
+								has_trait = most_devout_member
+								has_trait = septon
+								has_trait = silent_sister
+								has_trait = devoted
+								has_trait = red_priest
+								has_trait = drowned_man
+								has_trait = nightswatch
+								has_trait = bastard
+							}
+						}
+						release_from_prison = yes
+						add_opinion = {
+							target = scope:asoiaf_rhaenyra
+							modifier = spared_my_life_opinion
+							opinion = 50
+						}
+						every_spouse = { #spouses of children of brothers who are pregnant
+							limit = {
+								has_trait = pregnant
+								is_courtier_of = scope:asoiaf_rhaenyra
+								is_imprisoned_by = scope:asoiaf_rhaenyra
+							}
+							release_from_prison = yes
+							add_opinion = {
+								target = scope:asoiaf_rhaenyra
+								modifier = spared_my_life_opinion
+								opinion = 50
+							}
+						}
+						every_child = { #grandchildren of brothers
+							limit = {
+								dynasty = scope:asoiaf_rhaenyra.dynasty
+								is_courtier_of = scope:asoiaf_rhaenyra
+								is_imprisoned_by = scope:asoiaf_rhaenyra
+								NOR = {
+									has_trait = maester
+									has_trait = archmaester
+									has_trait = kingsguard
+									has_trait = most_devout_member
+									has_trait = septon
+									has_trait = silent_sister
+									has_trait = devoted
+									has_trait = red_priest
+									has_trait = drowned_man
+									has_trait = nightswatch
+									has_trait = bastard
+								}
+							}
+							release_from_prison = yes
+							add_opinion = {
+								target = scope:asoiaf_rhaenyra
+								modifier = spared_my_life_opinion
+								opinion = 50
+							}
+						}
+					}
+				}
+			}
+			scope:asoiaf_alicent = {
+				add_opinion = {
+					target = scope:asoiaf_rhaenyra
+					modifier = spared_my_childrens_lives_opinion
+					opinion = 50
+				}
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+asoiaf_maintenance_events.0008 = { #PART 2 (follow-up): The realm learns of Rhaenyra's actions — players are informed
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0008
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0008_desc
+	
+	theme = death
+	override_background = { reference = agot_iron_throne }
+
+	left_portrait = {
+		character = scope:asoiaf_alicent #Alicent (if applicable)
+		animation = fear
+		trigger = {
+			scope:asoiaf_alicent = { exists = yes }
+		}
+	}
+	right_portrait = {
+		character = scope:asoiaf_rhaenyra #Rhaenyra; root
+		animation = stress
+	}
+	lower_left_portrait = {
+		character = scope:asoiaf_aegon #Aegon
+		trigger = {
+			scope:asoiaf_aegon = {
+				exists = yes
+				is_alive = no
+			}
+			scope:asoiaf_rhaenyra = {
+				any_killed_character = { this = scope:asoiaf_aegon }
+			}
+		}
+	}
+	lower_center_portrait = {
+		character = scope:asoiaf_aemond #Aemond
+		trigger = {
+			scope:asoiaf_aemond = {
+				exists = yes
+				is_alive = no
+			}
+			scope:asoiaf_rhaenyra = {
+				any_killed_character = { this = scope:asoiaf_aemond }
+			}
+		}
+	}
+	lower_right_portrait = {
+		character = scope:asoiaf_daeron #Daeron
+		trigger = {
+			scope:asoiaf_daeron = {
+				exists = yes
+				is_alive = no
+			}
+			scope:asoiaf_rhaenyra = {
+				any_killed_character = { this = scope:asoiaf_daeron }
+			}
+		}
+	}
+
+	immediate = {
+		dynasty:dynn_Targaryen = {
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_63_trait } #Rhaenyra Targaryen (daughter of Viserys I)
+				save_scope_as = asoiaf_rhaenyra
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_65_trait } #Aegon II Targaryen
+				save_scope_as = asoiaf_aegon
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_67_trait } #Aemond Targaryen (son of Viserys I)
+				save_scope_as = asoiaf_aemond
+			}
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_68_trait } #Daeron Targaryen (son of Viserys I)
+				save_scope_as = asoiaf_daeron
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					exists = scope:asoiaf_aegon
+					exists = scope:asoiaf_aemond
+					exists = scope:asoiaf_daeron
+				}
+			}
+			scope:asoiaf_aegon.mother = { save_scope_as = asoiaf_alicent }
+		}
+	}
+	option = {
+		name = asoiaf_maintenance_events.0008.a
+	}
+}
+
+asoiaf_maintenance_events.0009 = { #Mance Rayder becomes King-Beyond-the-Wall - Westeros-wide event
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0009
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0009_desc
+	
+	theme = realm
+	override_effect_2d = legend_glow
+	override_background = { reference = terrain_scope }
+
+	left_portrait = {
+		character = character:Rayder_1 #Mance Rayder
+		animation = marshal
+	}
+
+	option = {
+		name = asoiaf_maintenance_events.0009.a
+	}
+	option = { #play as Mance
+		name = asoiaf_maintenance_events.0009.b
+		add_internal_flag = dangerous
+		flavor = danger_dynasty_abandon_tt
+		trigger = {
+			character:Rayder_1 = { is_ai = yes }
+			has_multiple_players = no #can't have multiple players clicking on the option to play him
+		}
+		set_player_character = character:Rayder_1
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+asoiaf_maintenance_events.0010 = { #Iron Throne monarch gets Krakenfall
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0010
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0010_desc
+	
+	theme = crown
+	override_background = { reference = agot_iron_throne }
+
+	right_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	left_portrait = {
+		character = scope:asoiaf_swordsmith
+		animation = throne_room_messenger_3
+		outfit_tags = { asoiaf_smith }
+		hide_info = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				gender = male
+				age = 40
+				culture = culture:crownlander
+				faith = faith:fots_seven
+				location = root.location
+				
+				save_scope_as = asoiaf_swordsmith
+			}
+		}
+	}
+
+	option = {
+		name = asoiaf_maintenance_events.0010.a
+		asoiaf_create_artifact_krakenfall_effect = { OWNER = root }
+		capital_county = {
+			add_county_modifier = {
+				modifier = asoiaf_generous_taxes_county_modifier
+				years = 5
+			}
+		}
+		hidden_effect = {
+			scope:asoiaf_swordsmith = {
+				death = { death_reason = death_natural_causes }
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = asoiaf_maintenance_events.0010.b
+		asoiaf_create_artifact_krakenfall_effect = { OWNER = root }
+		capital_county = {
+			add_county_modifier = {
+				modifier = asoiaf_spurned_smiths_county_modifier
+				years = 5
+			}
+		}
+		hidden_effect = {
+			scope:asoiaf_swordsmith = {
+				death = { death_reason = death_natural_causes }
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = asoiaf_maintenance_events.0010.c
+		hidden_effect = {
+			scope:asoiaf_swordsmith = {
+				death = { death_reason = death_natural_causes }
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+asoiaf_maintenance_events.0011 = { #Roose legitimises Ramsay on his deathbed
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0011
+	#window = big_event_window
+	
+	theme = bastardy
+	override_background = { reference = bedchamber }
+
+	right_portrait = {
+		character = character:Bolton_1 #Roose
+		animation = dead
+	}
+	left_portrait = {
+		character = character:Bolton_5 #Ramsay
+		animation = chancellor
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					character:Bolton_5 ?= { #Ramsay's top liege gets scoped, if they exist
+						is_landed = yes
+						NOT = { is_independent_ruler = yes } #if he's not independent, he requires a king's decree
+					}
+				}
+				character:Bolton_5 = {
+					top_liege ?= { save_scope_as = asoiaf_top_liege }
+				}
+			}
+		}
+		custom_tooltip = {
+			text = asoiaf_maintenance_events.0011.tt
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { #if Ramsay is NOT independent, Roose requires a royal's decree
+					character:Bolton_5 ?= { #Ramsay
+						is_landed = yes
+						NOT = { is_independent_ruler = yes }
+					}
+				}
+				desc =  asoiaf_maintenance_events_0011_a_desc
+			}
+			triggered_desc = {
+				trigger = { #if Ramsay is independent, Roose needs no royal approval
+					character:Bolton_5 ?= { #Ramsay
+						is_landed = yes
+						is_independent_ruler = yes
+					}
+				}
+				desc =  asoiaf_maintenance_events_0011_b_desc
+			}
+		}
+	}
+
+	option = {
+		name = asoiaf_maintenance_events.0011.a
+		add_prestige = 500
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+asoiaf_maintenance_events.0012 = { #event for Alicent becoming rival with Rhaenyra
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0012
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0012_desc
+	
+	theme = rival_relation
+	override_background = { reference = bedchamber }
+
+	right_portrait = {
+		character = scope:asoiaf_rhaenyra #Rhaenyra
+		animation = personality_bold
+	}
+	left_portrait = {
+		character = scope:mother #Alicent
+		animation = war_over_win
+	}
+	lower_center_portrait = {
+		character = scope:child #newborn Aegon
+	}
+
+	trigger = { #Everyone involved needs to still be alive and Rhaenyra needs to still be the declared heir
+		scope:mother = { is_alive = yes }
+		scope:child = { is_alive = yes }
+		scope:asoiaf_rhaenyra = { is_alive = yes }
+		OR = {
+			scope:asoiaf_rhaenyra = { is_heir_of = scope:asoiaf_rhaenyra.father } #either Rhaenyra is still the heir of Viserys...
+			scope:asoiaf_rhaenyra = { has_title = title:h_the_iron_throne } #or Rhaenyra ascended between Aegon's birth and the 2-year timer, in which case Alicent still develops the rivalry due to supporting her son's claim (assuming Rhaenyra didn't execute him already)
+		}
+		scope:mother = {
+			NOT = { has_relation_nemesis = scope:asoiaf_rhaenyra } #stops the event from firing twice from another birth that happened in the 2-year window
+		}
+	}
+
+	immediate = {
+		dynasty:dynn_Targaryen = {
+			every_dynasty_member = {
+				limit = { has_inactive_trait = asoiaf_Targaryen_63_trait } #Rhaenyra Targaryen (daughter of Viserys I)
+				save_scope_as = asoiaf_rhaenyra
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_relation_friend = scope:asoiaf_rhaenyra } #Rhaenyra Targaryen (daughter of Viserys I)
+				remove_relation_friend = scope:asoiaf_rhaenyra
+			}
+			if = {
+				limit = {
+					scope:asoiaf_rhaenyra ?= { is_alive = yes }
+				}
+				set_relation_nemesis = { reason = asoiaf_alicent_rhaenyra_rival_desc target = scope:asoiaf_rhaenyra } #Rhaenyra Targaryen (daughter of Viserys I)
+			}
+			scope:asoiaf_rhaenyra ?= {
+				if = {
+					limit = { is_alive = yes }
+					trigger_event = asoiaf_maintenance_events.0013 #event for Rhaenyra informing her of their rivalry
+				}
+			}
+		}
+		custom_tooltip = {
+			text = asoiaf_maintenance_events.0012.tt
+		}
+	}
+
+	option = {
+		name = asoiaf_maintenance_events.0012.a
+		add_stress = 30
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+asoiaf_maintenance_events.0013 = { #event for Rhaenyra informing her of Alicent's rivalry
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0013
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0013_desc
+	
+	theme = rival_relation
+	override_background = { reference = bedchamber }
+
+	right_portrait = {
+		character = root #Rhaenyra
+		animation = worry
+	}
+	left_portrait = {
+		character = scope:mother #Alicent
+		animation = war_over_win
+	}
+	lower_center_portrait = {
+		character = scope:child #newborn Aegon
+	}
+
+	immediate = {
+		custom_tooltip = {
+			text = asoiaf_maintenance_events.0013.tt
+		}
+	}
+
+	option = {
+		name = asoiaf_maintenance_events.0013.a
+		add_stress = 30
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+asoiaf_maintenance_events.0014 = { #New 'Baratheon of King's Landing' ruler gets Hearteater - PT 01
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0014
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0014_desc
+	
+	theme = crown
+	override_background = {
+		trigger = {
+			capital_county = title:c_kings_landing
+			is_travelling = no
+		}
+		reference = agot_iron_throne
+	}
+	override_background = {
+		trigger = {
+			capital_county = title:c_casterly_rock
+			is_travelling = no
+		}
+		reference = agot_casterly_rock
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	lower_right_portrait = {
+		character = scope:asoiaf_swordsmith
+		outfit_tags = { asoiaf_smith }
+		hide_info = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				gender = male
+				age = 40
+				culture = culture:crownlander
+				faith = faith:fots_seven
+				location = root.location
+				
+				save_scope_as = asoiaf_swordsmith
+			}
+		}
+	}
+
+	option = {
+		name = asoiaf_maintenance_events.0014.a
+		custom_tooltip = asoiaf_maintenance_events.0014.a.tt
+		trigger_event = { id = asoiaf_maintenance_events.0015 days = 14 } #smiths complete the work in a fortnight
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = asoiaf_maintenance_events.0014.b
+		hidden_effect = {
+			scope:asoiaf_swordsmith = {
+				death = { death_reason = death_natural_causes }
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+asoiaf_maintenance_events.0015 = { #New 'Baratheon of King's Landing' ruler gets Hearteater - PT 02
+	type = character_event
+	content_source = dlc_asoiaf
+	title = asoiaf_maintenance_events_0015
+	#window = big_event_window
+	desc = asoiaf_maintenance_events_0015_desc
+	
+	theme = crown
+	override_background = { reference = armory }
+
+	left_portrait = {
+		character = scope:asoiaf_swordsmith
+		animation = throne_room_messenger_3
+		outfit_tags = { asoiaf_smith }
+		hide_info = yes
+	}
+	right_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = asoiaf_maintenance_events.0015.a
+		asoiaf_create_artifact_hearteater_effect = { OWNER = root }
+		remove_short_term_gold = 300
+		hidden_effect = {
+			scope:asoiaf_swordsmith = {
+				death = { death_reason = death_natural_causes }
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+	option = {
+		name = asoiaf_maintenance_events.0015.b
+		hidden_effect = {
+			scope:asoiaf_swordsmith = {
+				death = { death_reason = death_natural_causes }
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}

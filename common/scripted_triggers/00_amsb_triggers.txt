@@ -1,0 +1,37 @@
+﻿amsb_has_throne_room = {
+    OR = {
+        capital_county = title:c_bloodstone
+    }
+}
+
+amsb_can_build_red_keep = {
+    OR = {
+        county.holder = {
+            highest_held_title_tier >= tier_kingdom # LPs and Above!
+            capital_county = title:c_kings_landing
+            has_trait = ambitious
+            culture = {
+                has_cultural_pillar = heritage_valyrian
+            }
+        }
+    }
+}
+
+amsb_can_restore_bloodstone = {
+    OR = {
+        county.holder = {
+            # custom_tooltip = {
+            #     text = has_a_relation_dragon_trigger_tooltip
+            #     any_relation = { # You have a tamed dragon
+            #         type = agot_dragon
+            #     }
+            # }
+            has_trait = dragonrider
+            capital_county = title:c_bloodstone
+            has_title = title:k_the_stepstones
+            culture = {
+                has_cultural_pillar = heritage_valyrian
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+﻿# Citadel custom modifier preserved from 00_basic_modifiers.txt during the 1.19 update.
+# AGOT 00_basic_modifiers.txt now loads from the base mod.
+
+intrigue_modifier_with_offset = { #Hambone
+	intimidated_vassal_tax_contribution_mult = 0.005
+	cowed_vassal_tax_contribution_mult = 0.01
+	army_screen_mult = 0.01
+}
+
+# Citadel tier based domain limit. The engine auto applies these by a ruler's tier,
+# so this is fully static, no dynamic or scripted modifiers.
+# Holdings per tier: Count 3, Duke 2, King 1, Emperor 1, Hegemon 1.
+# Blocks copied from AGOT 1.19's 00_basic_modifiers.txt, only domain_limit changed,
+# so they override AGOT's values (this file loads after 00_basic_modifiers.txt).
+
+count_modifier = {
+	domain_limit = 3
+	knight_limit = 5
+	accolades = -2
+	tax_slot_add = 1
+	ai_war_chance = -0.9
+	monthly_treasury_from_liege_mult = -0.4
+}
+
+duke_modifier = {
+	domain_limit = 2
+	knight_limit = 6
+	vassal_limit = 20
+	tax_slot_add = 1
+	mercenary_hire_cost_mult = 0.1
+	enemy_scheme_secrecy_add = -10
+	monthly_treasury_from_liege_mult = -0.3
+}
+
+king_modifier = {
+	domain_limit = 1
+	knight_limit = 10
+	vassal_limit = 60
+	accolades = 1
+	tax_slot_add = 2
+	mercenary_hire_cost_mult = 0.3
+	enemy_scheme_secrecy_add = -20
+	county_fertility_growth_mult = 0.25
+	monthly_merit_mult = 0.5
+	monthly_treasury_from_liege_mult = -0.15
+}
+
+emperor_modifier = {
+	domain_limit = 1
+	knight_limit = 15
+	vassal_limit = 80
+	ai_amenity_target_baseline = 0.4
+	accolades = 2
+	tax_slot_add = 2
+	mercenary_hire_cost_mult = 0.6
+	enemy_scheme_secrecy_add = -30
+	county_fertility_growth_mult = 0.5
+	monthly_merit_mult = 1
+}
+
+hegemon_modifier = {
+	domain_limit = 1
+	knight_limit = 20
+	vassal_limit = 100
+	ai_amenity_target_baseline = 0.4
+	accolades = 2
+	tax_slot_add = 2
+	mercenary_hire_cost_mult = 0.8
+	enemy_scheme_secrecy_add = -40
+	county_fertility_growth_mult = 0.65
+}

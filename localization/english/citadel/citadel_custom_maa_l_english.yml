@@ -1,0 +1,150 @@
+﻿l_english:
+ 
+ 
+ temp_star_knights: "Star Knights of Templeton"
+ temp_star_knights_flavor: "Elite horsemen of House Templeton, riding black steeds under yellow banners, their star helms gleaming as they charge into battle."
+ whent_batmen: "The Black Bat Guards"
+ whent_batmen_flavor: "Trained in the shadow of Harrenhal's towering ruins, these steadfast spearmen serve House Whent with unwavering loyalty. Hardened by curses and centuries of dark tales, they stand as vigilant guardians of their lord's domain, fearing neither man nor myth."
+ celtigar_crossbowmen: "Celtigar Crossbowmen"
+ celtigar_crossbowmen_flavor: "The Celtigar Crossbowmen are crossbowmen from Celtigar Island, trained for skirmishes in the thick woods and marshes of the Clawmen peninsula. While not as heavily equipped as regular crossbowmen, they are more agile and can move quickly through mud and underbrush. They drill in the wet terrain, learning to fire swift volleys and withdraw before the enemy can react."
+ amber_knights: "Honey Knights"
+ amber_knights_flavor: "Light equipped cavalry armed with honey gilded lances and flowing bee embroidered banners. Their mounts are bred on wildflower meadows, giving them remarkable endurance and a striking golden appearance."
+ sanddornish_horse_archers: "Sand Steed Archers"
+ sanddornish_horse_archers_flavor: "Those who face the Sand Steed Archers in the open desert or upon the wide plains soon learn their mistake. Swift as the wind and relentless beneath the blazing sun, their arrows fall without mercy. To meet them in open ground is to invite near certain death, for few can escape their hunt, and the sands remember only the bones they leave behind."
+ dulver_skirmishers: "Grudgebearers"
+ dulver_skirmishers_flavor: "The skirmishers of House Dulver are far more accustomed to fighting in the hills and mountains than most of their Westerlands counterparts. Hardened by steep passes and rocky ground, they move with confidence where heavier troops struggle. Whether guarding Goldmarch Pass or patrolling the rugged heights of the Westerlands, they are an excellent choice for holding the high ground."
+
+
+ stark_winterfell_swornswords_flavor:0 "Within the ancient walls of Winterfell, sworn swords gather beneath the direwolf banner. Hardened by northern winters and bound by old oaths, they stand ready in the Great Keep’s shadow, their loyalty as unyielding as the frozen earth itself."
+
+ # Dayne Heavy Infantry
+ dayne_heavy_infantry: "Elite Starfall Knights"
+ dayne_heavy_infantry_flavor: "The Elite Starfall Knights are counted among the most elite troops in all of Westeros. Though few in number, their discipline, skill, and unbreakable spirit make them a formidable force upon any battlefield."
+
+ # Blackwood Archers
+ citadel_raventree_bows: "Raventree Bows"
+ citadel_raventree_bows_flavor: "Famed archers of House Blackwood, the Raventree Bows are raised among deep woods and ancient weirwoods. Their skill with the bow is renowned across the Riverlands, striking true with deadly precision long before their enemies can close the distance."
+
+ # Stormlands Pikemen
+ Stormbreakers_unit: "Stormbreakers"
+ Stormbreakers_unit_flavor: "Feared across the Stormlands, the Stormbreakers form an unyielding wall of pikes that turns cavalry charges into slaughter. Drilled to hold their line through wind, rain, and chaos, they break the enemy’s momentum and leave only splintered spears and broken banners behind."
+
+ # Stormbows Bows
+ storm_bows_unit: "Storm Bows"
+ storm_bows_unit_flavor: "Drawn from the windswept marches of the Stormlands, the Storm Bows are disciplined archers trained to loose volleys even in rain and heavy wind. Their arrows fall like a gathering storm, softening enemy lines long before steel meets steel."
+
+ # Marcher Footmen
+ marcher_heavy_infantry: "Marcher Footmen"
+ marcher_heavy_infantry_flavor: "Hardened by constant skirmishes along the Dornish Marches, these heavy infantry are accustomed to harsh terrain and sudden raids. Disciplined and resilient, the Marcher Footmen hold the line where others would break, standing as steadfast defenders of the borderlands."
+
+ # Honeywine Footmen
+ honeywine_footmen: "Honeywine Footmen"
+ honeywine_footmen_flavor: "Drawn from the rich lands along the Honeywine, these armored footmen fight with steady discipline and well maintained equipment. Accustomed to defending fertile fields and busy river roads, they form a reliable line of steel that can hold firm against both raiders and rival hosts."
+
+ # Honeywine Spearmen
+ honeywine_spears: "Honeywine Spears"
+ honeywine_spears_flavor: "Raised along the fertile banks of the Honeywine, these spearmen fight in tight ranks with long reach and steady discipline. Trained to defend fields, roads, and river crossings, they form a stubborn wall of spears that few enemies can break."
+
+ # Reach Spearman
+ reach_footmen: "Reach Footmen"
+ reach_footmen_flavor: "Drawn from the fertile fields and prosperous towns of the Reach, these soldiers fight with discipline born of wealth and tradition. Well supplied and steady in formation, the Reach Footmen form the dependable backbone of many southern armies."
+
+ # Reach Militia
+ reach_militia: "Reach Militia"
+ reach_militia_flavor: "The vast and fertile lands of the Reach provide no shortage of men to call upon, making these levies cheap and easy to raise. Though numerous, the Reach Militia lack proper training and discipline, serving best as a simple mass of bodies rather than skilled soldiers. However, raising the Militia will drastically drain our coffins."
+
+ # Reach Spearmen
+ reach_spears: "Reach Spears"
+ reach_spears_flavor: "Raised from the fertile heartlands of the Reach, these spearmen fight in orderly ranks with long ash shafts and steady discipline. While not famed for ferocity, their cohesion and numbers make them a reliable wall of steel on the battlefield."
+
+ # Reach Bowmen
+ reach_bowmen: "Reach Bowmen"
+ reach_bowmen_flavor: "Drawn from the fertile fields and wooded vales of the Reach, these archers are well supplied and carefully trained. Fighting in disciplined ranks, the Reach Bowmen loose steady volleys that darken the sky before the clash of armies begins."
+
+ # Reach Crossbowmen
+ reach_crossbow: "Reach Crossbowmen"
+ reach_crossbow_flavor: "Equipped with sturdy crossbows forged in the prosperous towns of the Reach, these soldiers deliver powerful, armor-piercing volleys. Though slower to reload than traditional bowmen, their disciplined formations and steady aim make them a dangerous presence on the battlefield."
+
+ # Westerlands Footmen
+ westerlands_footmen: "Westerlands Footmen"
+ westerlands_footmen_flavor: "Armored and disciplined, the Westerlands Footmen are equipped through the wealth of their gold rich homeland. Trained to fight in tight formations, these heavy infantry form a stubborn core that advances steadily behind shield and steel."
+
+ # Westerlands Spearmen
+ westerlands_spears: "Western Billmen"
+ westerlands_spears_flavor: "Armed with long hooked bills, these soldiers of the Westerlands are trained to drag riders from the saddle and break enemy lines. Though less heavily armored than noble retinues, their discipline and brutal weapons make them dangerous opponents in close battle."
+
+ # Westerlands Bowmen
+ westerlands_bowmen: "Westerlands Bowmen"
+ westerlands_bowmen_flavor: "Recruited from the hills and valleys of the Westerlands, these bowmen are valued for their steady aim and disciplined volleys. Well supplied by their wealthy homeland, they rain arrows upon the enemy before the clash of steel begins."
+
+ # Westerlands Skirmishers
+ westerlands_skirmishers: "Westerlands Skirmishers"
+ westerlands_skirmishers_flavor: "Lightly armed and quick on their feet, the Westerlands Skirmishers are used to fighting across rocky hills and uneven ground. They harass the enemy with hit-and-run tactics, softening formations before the heavy troops advance."
+
+ #Saltbow Raiders
+ ironisland_bows_unit: "Saltbow Raiders"
+ ironisland_bows_unit_flavor: "Iron Island raiders armed with bows and hardened by wind and salt, the Saltbow Raiders strike swiftly from ship and shore alike. Accustomed to coastal skirmishes and sudden assaults, they loose deadly volleys before closing in like true reavers of the Iron Isles."
+
+ # Iron Pikes
+ iron_pikes_unit: "Iron Pike Reavers"
+ iron_pikes_unit_flavor: "Forged in the harsh ways of the Iron Isles, the Iron Pike Reavers fight as relentless boarding spearmen and coastal defenders. Their long pikes hold firm against cavalry and shield walls alike, turning narrow decks and rocky shores into killing grounds where the drowned god’s chosen thrive."
+
+ # Iron Riders
+ iron_riders: "Iron Riders"
+ iron_riders_flavor: "Hardened by harsh lands and harder lives, the Iron Riders strike fast and without mercy. Skilled in sudden charges and brutal skirmishes, they rely on aggression and resolve rather than elegance, breaking weaker lines through sheer force."
+
+ # Riverlands Heavy Inf
+ river_footmen: "Riverlands Footmen"
+ river_footmen_flavor: "Drawn from the many rivers and fertile fields of the Trident, these heavy foot soldiers are equipped to endure long campaigns and shifting fronts. Seasoned by the constant wars that sweep through the Riverlands, they stand firm as a sturdy core of any host."
+
+ # Riverlands Light Horse
+ river_light_horsemen: "Trident Outriders"
+ river_light_horsemen_flavor: "Used to the shifting battlefields of the Riverlands, the Trident Outriders ride swift horses along riverbanks and open plains. They excel at scouting, raiding, and striking where the enemy is weakest before vanishing back into the countryside."
+
+ # Stone Hedge - Riverlands
+ stone_hedge_footmen: "Stone Hedge Footmen"
+ stone_hedge_footmen_flavor: "Raised from the lands of House Bracken, the Stone Hedge Footmen are sturdy soldiers shaped by generations of rivalry and border conflict. Well armed and stubborn in battle, they form a reliable line of steel beneath the banners of Stone Hedge."
+
+ # Light Cavalry Vale
+ vale_light_riders: "Windward Lancers"
+ vale_light_riders_flavor: "While counted as light cavalry, the riders of the Vale are trained and equipped to a standard few in Westeros can match. Swift across mountain paths yet fierce in open battle, the Windward Lancers strike with a force that rivals heavier horse, making them among the most dangerous foes a commander can face."
+
+ # Vale Pikemen
+ vale_pike_unit: "Highpass Pikemen"
+ vale_pike_unit_flavor: "Drawn from the valleys and mountain passes of the Vale, the Highpass Pikemen are drilled to hold firm against charges and block narrow approaches. Fighting in disciplined ranks, their long pikes turn steep ground and tight formations into deadly defensive walls."
+
+ # Vale Archers
+ vale_bows_unit: "Eyrie Longbows"
+ vale_bows_unit_flavor: "Trained among the high valleys and wind swept ridges of the Vale, the Eyrie Longbows are known for their steady aim and discipline. From elevated ground they rain arrows upon their foes, breaking formations long before the enemy can close for battle."
+
+ # North Archers:
+ north_bows_unit: "Winterwood Archers"
+ north_bows_unit_flavor: "Raised among the deep forests and frozen fields of the North, the Winterwood Archers are patient hunters turned soldiers. Hardened by harsh winters and long watches, they loose steady volleys that wear down even the hardiest foes before steel is ever crossed."
+
+ # North Knights:
+ northern_knights: "Wintersteel Riders"
+ northern_knights_flavor: "Though rare compared to the south, the knights of the North are seasoned riders forged by harsh winters and hard war. Clad in heavy armor and bound by stern honor, the Wintersteel Riders strike with relentless force, proving that northern steel can rival any chivalric host in Westeros."
+
+ # North Skirmishers
+ northern_skirmishers: "Northern Skirmishers"
+ northern_skirmishers_flavor: "Hardened by the cold and vast wilderness of the North, these skirmishers fight with patience and endurance. Moving swiftly through forests and rough terrain, they strike from cover before fading back into the wild."
+
+ # North Light Cavalry
+ north_light_riders: "Northern Light Riders"
+ north_light_riders_flavor: "Mounted scouts and raiders from the wide lands of the North, these riders favor speed and endurance over heavy armor. Accustomed to long distances and harsh conditions, they harry the enemy with swift strikes before disappearing beyond reach."
+
+ # Stormland Skirmishers
+ stormlands_skirmishers: "Stormlands Skirmishers"
+ stormlands_skirmishers_flavor: "Though called light troops, the skirmishers of the Stormlands are among the fiercest warriors in the realm. Hardened by harsh weather and constant conflict, they fight with relentless aggression and should never be underestimated."
+
+ # Crownlands Knights
+ knight_of_blackwater: "Knights of Blackwater"
+ knight_of_blackwater_flavor: "Drawn from the Crownlands surrounding Blackwater Bay, these knights are sworn to defend the heart of the realm. Well equipped and proud, they combine courtly discipline with battlefield experience gained from guarding the roads and shores near the capital."
+
+ # Stepstones Firearchers
+ pirate_firebow: "Firearchers of the Stepstones"
+ pirate_firebow_flavor: "‘Dragons are gods,’ some say. The pirates of the Stepstones answer with fire. If their enemies fight with ruthless tactics, so will they. During the Stepstones Wars, these archers loosed flaming arrows into sky and sail alike, forcing even Daemon Targaryen and Caraxes to hesitate before diving into the fray. Smoke and flame turned the air into a weapon, making any direct assault from above a dangerous gamble."
+
+ # Stepstones Bowmen
+ pirate_bows_unit: "Stepstones Bowmen"
+ pirate_bows_unit_flavor: "Drawn from the lawless crews of the Stepstones, these pirate archers favor speed and surprise over discipline. Fighting from decks, cliffs, and hidden coves, they loose quick volleys before melting away into smoke, surf, and shadow."

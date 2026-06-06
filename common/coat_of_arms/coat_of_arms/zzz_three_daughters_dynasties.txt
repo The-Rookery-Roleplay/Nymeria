@@ -1,0 +1,321 @@
+﻿### Tyrosh
+# dynn_Basetys = {
+# 	pattern = "pattern__solid_designer.dds"
+# 	color1 = "agot_blue_dark"
+# 	color2 = "agot_pink"
+# 	color3 = "agot_white"
+# 	colored_emblem = {
+# 		texture = "ce_clam.dds"
+# 		color1 = "agot_white"
+# 		instance = {
+# 			scale = { 0.700000 0.700000 }
+# 		}
+# 	}
+# }
+
+# dynn_Camardoon = {
+# 	pattern = "pattern_shield_02.dds"
+# 	color1 = "agot_indigo"
+# 	color2 = "agot_white"
+# 	color3 = "agot_pink"
+# 	colored_emblem = {
+# 		texture = "ce_shrub.dds"
+# 		color1 = "agot_indigo"
+# 		color2 = "agot_white"
+# 		instance = {
+# 			scale = { 0.640000 0.640000 }
+# 		}
+# 	}
+# }
+
+# dynn_Adarys = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_teal"
+# 	color2 = "agot_white"
+# 	color3 = "agot_grey_light"
+# 	colored_emblem = {
+# 		texture = "ce_keys_crossed.dds"
+# 		color1 = "agot_white"
+# 		color2 = "agot_grey_light"
+# 		instance = {
+# 			position = { 0.500000 0.390000 }
+# 			scale = { 0.980000 -0.980000 }
+# 		}
+# 	}
+# }
+
+# dynn_Atuhoris = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_burgundy"
+# 	color2 = "agot_white"
+# 	color3 = "agot_pink"
+# 	colored_emblem = {
+# 		texture = "ce_crossbow.dds"
+# 		color1 = "agot_white"
+# 	}
+# }
+
+# ### Lys
+
+dynn_Rogare = {
+	pattern = "pattern_solid.dds"
+	color1 = "asoiaf_black"
+	color2 = "asoiaf_yellow"
+	colored_emblem = {
+		texture = "ce_mena_sun.dds"
+		color1 = "asoiaf_yellow"
+		color2 = "asoiaf_yellow"
+		instance = { position = { 0.5 0.48 } scale = { 1.05 1.05 }  }
+	}
+	colored_emblem = {
+		texture = "ce_circle_mask.dds"
+		color1 = "asoiaf_black"
+		instance = { position = { 0.5 0.475 } scale = { 0.37 0.37 }  }
+	}
+	colored_emblem = {
+		texture = "ce_circle_mask.dds"
+		color1 = "asoiaf_yellow"
+		instance = { position = { 0.5 0.475 } scale = { 0.31 0.31 }  }
+	}
+	colored_emblem = {
+		texture = "asoiaf_star_four_pointed.dds"
+		color1 = "asoiaf_black_deep"
+		instance = { position = { 0.5 0.48 } scale = { 0.32 0.32 }  }
+	}
+	colored_emblem = {
+		texture = "asoiaf_star_four_pointed.dds"
+		color1 = "asoiaf_yellow"
+		instance = { position = { 0.5 0.48 } scale = { 0.2 0.2 }  }
+	}
+}
+
+# dynn_Bazanne = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_yellow"
+# 	color2 = "agot_purple"
+# 	color3 = "agot_white"
+# 	colored_emblem = {
+# 		texture = "ce_ship_lymphad.dds"
+# 		color1 = "agot_purple"
+# 		color2 = "agot_purple"
+# 		color3 = "agot_purple"
+# 		instance = {
+# 			scale = { 0.890000 0.890000 }
+# 		}
+# 	}
+# }
+
+# dynn_Gaembutys = {
+# 	pattern = "pattern_vertical_split_01.dds"
+# 	color1 = "agot_green"
+# 	color2 = "agot_red_dark"
+# 	color3 = "white"
+# 	colored_emblem = {
+# 		texture = "re_tyrell.dds"
+# 		color1 = "white"
+# 		instance = {
+# 			position = { 0.700000 0.500000 }
+# 			scale = { 0.580000 0.580000 }
+# 		}
+# 		instance = {
+# 			position = { 0.300000 0.500000 }
+# 			scale = { 0.580000 0.580000 }
+# 			depth = 1.010000
+# 		}
+# 	}
+# }
+
+# dynn_Haen = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_lilac"
+# 	color2 = "yellow"
+# 	color3 = "agot_purple"
+# 	colored_emblem = {
+# 		texture = "ce_tree.dds"
+# 		color1 = "agot_purple"
+# 		color2 = "agot_purple"
+# 		instance = {
+# 			scale = { 0.840000 0.840000 }
+# 		}
+# 	}
+# }
+
+# ### Generic
+# dynn_Cithien = {
+# 	pattern = "pattern_per_bend_rayonny_sinister.dds"
+# 	color1 = "agot_yellow"
+# 	color2 = "agot_teal"
+# 	color3 = "agot_white"
+# }
+
+# dynn_Saan = {
+# 	pattern = "pattern__solid_designer.dds"
+# 	color1 = "agot_burgundy"
+# 	color2 = "agot_red_dark"
+# 	color3 = "agot_white"
+# 	colored_emblem = {
+# 		texture = "ce_peacock.dds"
+# 		color1 = "agot_white"
+# 		color2 = "agot_green_light"
+# 		instance = {
+# 			scale = { 0.940000 0.940000 }
+# 		}
+# 	}
+# }
+
+dynn_Vunatis = {
+	pattern = "pattern_solid.dds"
+	color1 = "agot_sand"
+	color2 = "agot_grey_dark"
+	colored_emblem = {
+		texture = "re_vulantis.dds"
+		color1 = "agot_grey_dark"
+		color2 = "asoiaf_black"
+		instance = { position = { 0.5 0.5 } scale = { 0.92 0.92 } }
+	}
+}
+
+# dynn_Vynenohr = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_green_grey"
+# 	color2 = "agot_white"
+# 	color3 = "agot_red"
+# 	colored_emblem = {
+# 		texture = "ce_snake.dds"
+# 		color1 = "agot_black"
+# 		color2 = "agot_red"
+# 		color3 = "agot_white"
+# 		instance = {
+# 			scale = { 0.900000 0.900000 }
+# 		}
+# 	}
+# }
+
+# dynn_Quaynis = {
+# 	pattern = "pattern__solid_designer.dds"
+# 	color1 = "agot_red_dark"
+# 	color2 = "agot_burgundy"
+# 	color3 = "white"
+# 	colored_emblem = {
+# 		texture = "ce_spearhead.dds"
+# 		color1 = "white"
+# 	}
+# }
+
+# dynn_Caharis = {
+# 	pattern = "pattern__solid_designer.dds"
+# 	color1 = "agot_teal"
+# 	color2 = "agot_white"
+# 	color3 = "agot_indigo"
+# 	colored_emblem = {
+# 		texture = "ce_dolphin.dds"
+# 		color1 = "agot_white"
+# 		color2 = "agot_indigo"
+# 		color3 = "agot_indigo"
+# 		instance = {
+# 			scale = { 0.870000 0.870000 }
+# 		}
+# 	}
+# }
+
+dynn_Mirtayne = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 117 85 56 }
+	color2 = "asoiaf_green"
+	colored_emblem = {
+		texture = "st_estermont.dds"
+		color1 = "asoiaf_green"
+		instance = { position = { 0.5 0.75 } scale = { 0.4 0.4 } }
+		instance = { position = { 0.63 0.5 } scale = { 0.4 0.4 } }
+		instance = { position = { 0.37 0.5 } scale = { 0.4 0.4 } }
+		instance = { position = { 0.75 0.25 } scale = { 0.4 0.4 } }
+		instance = { position = { 0.5 0.25 } scale = { 0.4 0.4 } }
+		instance = { position = { 0.25 0.25 } scale = { 0.4 0.4 } }
+	}
+}
+
+# dynn_Dagareon = {
+# 	pattern = "pattern__solid_designer.dds"
+# 	color1 = "agot_green"
+# 	color2 = "agot_black"
+# 	color3 = "agot_orange_light"
+# 	colored_emblem = {
+# 		texture = "ce_tiger.dds"
+# 		color1 = "agot_orange_light"
+# 		color2 = "agot_black"
+# 		color3 = "agot_black"
+# 		instance = {
+# 			scale = { 0.700000 0.700000 }
+# 		}
+# 	}
+# }
+
+# dynn_Erosenes = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_purple"
+# 	color2 = "agot_yellow"
+# 	color3 = "agot_black"
+# 	colored_emblem = {
+# 		texture = "ce_wheel.dds"
+# 		color1 = "agot_yellow"
+# 		color2 = "agot_black"
+# 		instance = {
+# 			scale = { 0.900000 0.900000 }
+# 		}
+# 	}
+# }
+
+# dynn_Sellos = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_yellow"
+# 	color2 = "agot_indigo"
+# 	color3 = "agot_blue_dark"
+# 	colored_emblem = {
+# 		texture = "ce_eastern_sun.dds"
+# 		color1 = "agot_indigo"
+# 		color2 = "agot_blue_dark"
+# 		instance = {
+# 			scale = { 0.860000 0.860000 }
+# 		}
+# 	}
+# }
+
+# ### Myr
+
+# dynn_Drahar = {
+# 	pattern = "pattern_solid.dds"
+# 	color1 = "agot_green"
+# 	color2 = "yellow"
+# 	color3 = "black"
+# 	colored_emblem = {
+# 		texture = "ce_lobster.dds"
+# 		color1 = "agot_yellow"
+# 		color2 = "agot_white"
+# 		instance = {
+# 			scale = { 0.940000 0.940000 }
+# 		}
+# 	}
+# }
+
+dynn_Drahar = {
+	pattern="val_pattern_11.dds"
+	color1 = rgb { 160 138 97 }
+	color2 = "asoiaf_red"
+	color3 = "asoiaf_black"
+	colored_emblem = {
+		texture = "ce_circle_mask.dds"
+		color1 = "asoiaf_black"
+		instance = { position = { 0.5 0.475 } scale = { 0.7 0.7 } }
+	}
+	colored_emblem = {
+		texture = "ce_circle_mask.dds"
+		color1 = rgb { 160 138 97 }
+		instance = { position = { 0.5 0.475 } scale = { 0.65 0.65 } }
+	}
+	colored_emblem = {
+		texture = "asoiaf_crab.dds"
+		color1= "asoiaf_red"
+		color2= "asoiaf_black"
+		instance = { position = { 0.5 0.475 } scale = { 0.675 0.675 } }
+	}
+}

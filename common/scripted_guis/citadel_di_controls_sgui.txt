@@ -1,0 +1,9 @@
+﻿DI_citadel_year_add = { is_shown = { always = yes } is_valid = { always = yes } effect = { if = { limit = { NOT = { exists = var:DI_citadel_years } } set_variable = { name = DI_citadel_years value = 0 } } change_variable = { name = DI_citadel_years add = 1 } } }
+DI_citadel_year_add5 = { is_shown = { always = yes } is_valid = { always = yes } effect = { if = { limit = { NOT = { exists = var:DI_citadel_years } } set_variable = { name = DI_citadel_years value = 0 } } change_variable = { name = DI_citadel_years add = 5 } } }
+DI_citadel_year_sub = { is_shown = { always = yes } is_valid = { always = yes } effect = { if = { limit = { exists = var:DI_citadel_years var:DI_citadel_years > 0 } change_variable = { name = DI_citadel_years subtract = 1 } } } }
+DI_citadel_year_sub5 = { is_shown = { always = yes } is_valid = { always = yes } effect = { if = { limit = { exists = var:DI_citadel_years var:DI_citadel_years >= 5 } change_variable = { name = DI_citadel_years subtract = 5 } } } }
+DI_citadel_year_reset = { is_shown = { always = yes } is_valid = { always = yes } effect = { set_variable = { name = DI_citadel_years value = 0 } } }
+DI_citadel_depth_self = { is_shown = { always = yes } is_valid = { always = yes } effect = { set_variable = { name = DI_citadel_depth value = 1 } } }
+DI_citadel_depth_direct = { is_shown = { always = yes } is_valid = { always = yes } effect = { set_variable = { name = DI_citadel_depth value = 2 } } }
+DI_citadel_depth_realm = { is_shown = { always = yes } is_valid = { always = yes } effect = { set_variable = { name = DI_citadel_depth value = 3 } } }
+DI_citadel_init = { is_shown = { always = yes } is_valid = { always = yes } effect = { if = { limit = { NOT = { exists = var:DI_citadel_years } } set_variable = { name = DI_citadel_years value = 0 } } if = { limit = { NOT = { exists = var:DI_citadel_depth } } set_variable = { name = DI_citadel_depth value = 1 } } } }

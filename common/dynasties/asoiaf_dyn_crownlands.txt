@@ -1,0 +1,6 @@
+﻿#dynn_Tall = {
+#	name = "dynn_Tall"
+#	prefix = "dynnp_the" #AGOT+ added; handled by nickname instead so the House can just be "Tall" like House Strong
+#	culture = "crownlander"
+#	motto = dynn_Tall_motto
+#}

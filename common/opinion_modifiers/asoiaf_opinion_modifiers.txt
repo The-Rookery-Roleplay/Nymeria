@@ -1,0 +1,23 @@
+﻿passed_me_over_for_heir_opinion = {
+	opinion = -50
+	years = 30
+}
+
+passed_over_my_child_for_heir_opinion = {
+	opinion = 50
+	years = 30
+	#monthly_change = 0.1
+	decaying = yes
+}
+
+spared_my_life_opinion = {
+	opinion = 50
+	monthly_change = 1.2
+	decaying = yes
+}
+
+spared_my_childrens_lives_opinion = {
+	opinion = 50
+	monthly_change = 1.2
+	decaying = yes
+}

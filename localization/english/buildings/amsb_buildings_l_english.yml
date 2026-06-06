@@ -1,0 +1,48 @@
+﻿l_english:
+#  building_type_godsfort_01:0 "The Godsfort"
+#  building_godsfort_01:0 "The Godsfort"
+#  building_type_godsfort_01_desc:0 "The Godsfort stands as a testament to the ingenuity and power of the Riverlands. Said to be the greatest castle in Westeros, though this is disputed by those in the Westerlands, it is a clear statement of control and prominence of the Riverlanders over not only their realm, but the surrounding lands as well."
+#  building_godsfort_01_desc:0 "The Godsfort stands as a testament to the ingenuity and power of the Riverlands. Said to be the greatest castle in Westeros, though this is disputed by those in the Westerlands, it is a clear statement of control and prominence of the Riverlanders over not only their realm, but the surrounding lands as well."
+
+ building_type_river_gate_01:0 "The River Gate"
+ building_type_river_gate_01_desc:0 "The River Gate is near the center of the southeast wall and connects Fishmonger's Square and the wharfs on the Blackwater Rush. The Street of Steel begins at the market square beside the River Gate, and the River Row runs from the River Gate to the King's Gate. The fish market is found outside of the gate."
+ building_river_gate_01:0 "$building_type_river_gate_01$"
+ building_river_gate_01_desc:0 "$building_type_river_gate_01_desc$"
+
+ building_type_amsb_hellgate_hall_01:0 "Hellgate Hall"
+ building_type_amsb_hellgate_hall_01_desc:0 "The ancestral seat of House Dryland, it is from this fearsome castle that they ruled as Kings of the Brimstone."
+
+ building_type_amsb_ruins_hellgate_hall_01:0 "$building_type_agot_hellgate_hall_01$"
+ building_type_amsb_ruins_hellgate_hall_01_desc:0 "$building_type_agot_hellgate_hall_01_desc$"
+ building_amsb_ruins_hellgate_hall_01:0 "Lucifer's Folly"
+ building_amsb_ruins_hellgate_hall_01_desc:0 "Old, broken ruins are all that remains of Hellgate Hall, once the mightiest of the castles that called the deep dunes of Dorne home, Hellgate Hall and House Dryland were laid low in the Dornish Unification Wars under Nymeria and House Martell. Today the ruins stand as a testament to those who defy the Sun and Spear as the last King of the Brimstone did."
+
+ building_amsb_ruins_hellgate_hall_02:0 "A City Restored"
+ building_amsb_ruins_hellgate_hall_02_desc:0 "Too long has the ancient seat of Brimstone stood silent.\n\nThough the peaks above still speak to the horrors visited to these lands by the Martells long ago, the long journey of restoring this once magnificient achievement of manking has begun."
+
+ building_amsb_ruins_hellgate_hall_03:0 "Grandeur and Grace"
+ building_amsb_ruins_hellgate_hall_03_desc:0 "Though slow moving, Hellgate Hall mountain is being reclaimed.\n\nTowering over the city below, the upper slopes of Hellgate Hall now boast pleasure palaces, Temples, and other high society must haves.\n\nThough built in the footprints of the ruins already carved into the mountain, these new designs are modeled after the Rhoynish architecture of Sunspear."
+
+ building_amsb_ruins_hellgate_hall_04:0 "The Golden Tower"
+ building_amsb_ruins_hellgate_hall_04_desc:0 "Though terribly expensive, you have completed restoring the peak of Hellgate Hall.\n\nYour new Keep rivals any in the land and Hellgate Hall once more stands strong high above all the lands of Dorne."
+
+ building_type_bloodstone_special_01:0 "The Black Tower of Bloodstone"
+ building_type_bloodstone_special_01_desc:0 "The Black Tower of Bloodstone"
+ building_bloodstone_special_01:0 "The Black Tower"
+ building_bloodstone_special_01_desc:0 "Sitting upon Bloodstone, the largest of the Stepstones, is a long forgotten Valyrian outpost that has fallen into ruin. Once a citadel on the same level as Dragonstone years of abandonment and neglect have caused this tower to become damaged to a point where it is a mere shadow of what it once was.\n\nKnown as "the Black Tower to the pirates and corsairs that ply these waters this ruin has served countless pirate lords since it was abandoned by the Valyrian Freehold."
+ building_bloodstone_special_02:0 "The Black Tower Restored"
+ building_bloodstone_special_02_desc:0 "With the aide of dragonfire and ancient knowledge the Black Tower has been restored to the state that it was in when the Valyrian Freehold once occupied it. This three pronged fortress now stands once more as both a watch tower and citadel to guard over the waters of the Stepstones."
+ building_bloodstone_special_03:0 "The Citadel and Curtain Walls"
+ building_bloodstone_special_03_desc:0 "Once more the ruined walls of the Valyrian Tower stand in protection of the citadel restoring this once proud outpost into a worthy seat of any would-be king."
+ building_bloodstone_special_04:0 "The Black Tower of Bloodstone"
+ building_bloodstone_special_04_desc:0 "Restored with the aid of dragonfire, The Black Tower of Bloodstone boasts the same Valyrian architectural stylings seen at Dragonstone, however, is not as strong due to the knowledge of Valyrian masonry being lost to time.\n\nThough smaller than Dragonstone, The Black Tower of Bloodstone was clearly constructed with the aid of dragon fire and many elements of the castle are clearly dragon-oriented including the walls modeled after Dragonstone itself. \n\nThough great cost and time investment Bloodstone has become a hub of trade in the Narrow Sea between Westeros and Essos with the ruler of the Stepstones extracting a toll on all traffic passing through thanks to a massive port expansion."
+
+ building_agot_warg_king_03:0 "The Warg King's Port"
+ building_agot_warg_king_03_desc:0 "The port which was once burned by House Stark after Brandon "The Shipwright" was lost sailing West has been restored to it's former glory."
+ building_agot_warg_king_04:0 "The Warg King's Fortress"
+ building_agot_warg_king_04_desc:0 "Rebuilt from the ruins, the Warg King's Castle is once again a formidable fortress. Where once stood nothing but ruins now stands a formidable keep and surrounding city."
+
+ building_agot_sept_of_remembrance_02:0 "$building_type_dragonpit_01$"
+ building_agot_sept_of_remembrance_02_desc:0 "$building_type_dragonpit_01_desc$"
+
+ #has_a_relation_dragon_trigger_tooltip:0 "Has a [tamed_dragon|E]"

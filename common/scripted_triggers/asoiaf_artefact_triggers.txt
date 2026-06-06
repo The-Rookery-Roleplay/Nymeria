@@ -1,0 +1,82 @@
+﻿asoiaf_aegon_I_targaryen_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = crown_aegon_i_artifact }
+	}
+}
+
+asoiaf_aenys_I_targaryen_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = crown_aenys_artifact }
+	}
+}
+#agot_aenys_crown_trigger = { #a cleaner way of doing it (modifying vanilla AGOT's triggers for the crown event), but theirs doesn't auto-equp the new crown, which is essential
+#	OR = {
+#		AND = {
+#			exists = character:Targaryen_30 # Aenys I
+#			this = character:Targaryen_30 # Aenys I
+#		}
+#		this = {
+#			has_inactive_trait = asoiaf_Targaryen_30_trait
+#			NOT = { this = character:Targaryen_30 }
+#		}
+#	}
+#	NOT = {
+#		any_artifact = {
+#			has_variable = crown_aenys_artifact
+#		}
+#	}
+#}
+
+asoiaf_jaehaerys_I_targaryen_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = crown_jaehaerys_artifact }
+	}
+}
+
+asoiaf_aegon_III_targaryen_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = crown_aegon_iii_artifact }
+	}
+}
+
+asoiaf_baelor_I_targaryen_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = crown_baelor_artifact }
+	}
+}
+
+asoiaf_aegon_IV_targaryen_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = crown_aegon_iv_artifact }
+	}
+}
+
+asoiaf_maekar_I_targaryen_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = crown_maekar_artifact }
+	}
+}
+
+asoiaf_aerys_II_targaryen_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = asoiaf_aerys_II_crown_artefact }
+	}
+}
+
+asoiaf_robert_I_baratheon_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = robertI_crown_artifact }
+	}
+}
+
+asoiaf_joffrey_I_baratheon_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = joffreyI_crown_artifact }
+	}
+}
+
+asoiaf_renly_baratheon_crown_trigger = {
+	NOT = {
+		any_artifact = { has_variable = renly_crown_artifact }
+	}
+}

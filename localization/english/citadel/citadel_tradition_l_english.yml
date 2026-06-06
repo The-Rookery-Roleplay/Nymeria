@@ -1,0 +1,13 @@
+﻿l_english:
+
+# Marches
+
+tradition_citadel_raid_name:0 "Feuds of the Red Hills"
+tradition_citadel_raid_desc:0 "For centuries the Marchers and the Stone Dornish have tested one another in steel and blood. Raids were not acts of conquest, but rituals of defiance. Cattle were driven off beneath the rising sun, keeps were burned under the cover of night, and banners vanished into the passes before retaliation could come."
+
+# Sand Dornish
+
+tradition_citadel_horse_name:0 "Riders of the Burning Dunes"
+tradition_citadel_horse_desc:0 "Raised beneath relentless heat, this culture thrives in the desert. Invaders weaken quickly, but its warriors remain deadly."
+
+culture_parameter_unlock_maa_sanddornish_horse_archers:0 "Can recruit [GetMaA('sanddornish_horse_archers').GetName]"

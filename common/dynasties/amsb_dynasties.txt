@@ -1,0 +1,5 @@
+﻿dynn_Vaelaror = {
+	name = "dynn_Vaelaror"
+	culture = "summer_valyrian"
+	motto = dynn_Vaelaror_motto # 
+}

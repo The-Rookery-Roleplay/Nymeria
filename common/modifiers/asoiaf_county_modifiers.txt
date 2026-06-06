@@ -1,0 +1,10 @@
+﻿asoiaf_generous_taxes_county_modifier = {
+	icon = economy_mixed
+	county_opinion_add = 10
+	#tax_mult = -0.25
+}
+asoiaf_spurned_smiths_county_modifier = {
+	icon = county_modifier_opinion_negative
+	county_opinion_add = -20
+	monthly_county_control_growth_factor = -0.05
+}

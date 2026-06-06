@@ -1,0 +1,44 @@
+﻿l_english:
+
+  # abdicate Rules
+  rule_amsb_abdicate_restrictions:0 "#D AM&SB:#! Abdication Restrictions#!"
+  rule_amsb_abdicate_restrictions_desc:0 "Controls whether abdicate has no restrictions, limited restrictions, or is disabled"
+  setting_amsb_abdicate_no_restriction:0 "#P No Restrictions#!"
+  setting_amsb_abdicate_no_restriction_desc:0 "Abdication is allowed without any conditions"
+  setting_amsb_abdicate_restricted:0 "#Y Restricted Abdication#!"
+  setting_amsb_abdicate_restricted_desc:0 "Abdication is allowed with restrictions based on age or health"
+  setting_amsb_abdicate_disabled:0 "#R Abdication Disabled#!"
+  setting_amsb_abdicate_disabled_desc:0 "Abdication is completely disabled"
+
+  # Minimum abdicate Age for Players
+  rule_amsb_player_abdicate_age:0 "#D AM&SB:#! Player Abdication Age#!"
+  rule_amsb_player_abdicate_age_desc:0 "Defines the minimum age at which players can abdicate"
+  setting_amsb_player_abdicate_age_60:0 "60 Years#!"
+  setting_amsb_player_abdicate_age_60_desc:0 "Players can abdicate starting at the age of 60"
+  setting_amsb_player_abdicate_age_70:0 "70 Years"
+  setting_amsb_player_abdicate_age_70_desc:0 "Players can abdicate starting at the age of 70"
+  setting_amsb_player_abdicate_age_80:0 "80 Years"
+  setting_amsb_player_abdicate_age_80_desc:0 "Players can abdicate starting at the age of 80"
+
+  # AI abdicate Rules
+  rule_amsb_ai_abdicate_usage:0 "#D AM&SB:#! AI Abdication#!"
+  rule_amsb_ai_abdicate_usage_desc:0 "Determines whether AI rulers can use the abdicate decision"
+  setting_amsb_ai_abdicate_disabled:0 "#R Disabled#!"
+  setting_amsb_ai_abdicate_disabled_desc:0 "AI rulers cannot use the abdicate decision"
+  setting_amsb_ai_abdicate_enabled:0 "#P Enabled#!"
+  setting_amsb_ai_abdicate_enabled_desc:0 "AI rulers can use the abdicate decision"
+
+  # Dragonstone Court Rules
+  rule_amsb_dragonstone_throne_room:0 "#D AM&SB:#! Dragonstone Throne Room#!"
+  rule_amsb_dragonstone_throne_room_desc:0 "Determines if Dragonstone will start with the AGOT Throne Room or the TV Show Throne Room"
+  setting_amsb_dragonstone_throne_room_no:0 "#R Disabled#!"
+  setting_amsb_dragonstone_throne_room_no_desc:0 "Dragonstone will use the AGOT Throne Room"
+  setting_amsb_dragonstone_throne_room_yes:0 "#P Enabled#!"
+  setting_amsb_dragonstone_throne_room_yes_desc:0 "Dragonstone will use the TV Show Throne Room"
+
+  # Game Rule Category
+  game_rule_category_amsb_game_rules:0 "#D AM&SB Rules#!"
+  game_rule_category_amsb_game_rules_desc:0 "#D All game rules related to Additional Mechanics & Special Buildings#!"
+
+  dlc_AMSB:0 "Additional Models & Special Buildings"
+  dlc_AMSB_desc:0 "A CK3AGOT expansion that adds new special buildings, models, mechanics and royal courts\n\nTHIS MOD WILL SHOW AS DISABLED BUT IS LOADED"

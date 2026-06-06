@@ -1,0 +1,35 @@
+# Preserved from the old 00_agot_traits.txt during the CK3 1.19 / AGOT update.
+# high_septon is Citadel-only (current AGOT no longer defines it) and is still used by
+# common/council_positions/00_council_positions.txt, so it is kept here. Removing the
+# stale 00_agot_traits.txt clobber would otherwise delete it.
+
+high_septon = {
+	physical = no
+	category = fame
+
+	#don't hardcode this; depends on clerical doctrine for heresies
+	#flag = can_not_marry
+	inheritance_blocker = all
+	claim_inheritance_blocker = all
+
+	same_faith_opinion = 30
+	monthly_piety = 2
+	clergy_opinion = 20
+	learning = 2
+
+	shown_in_ruler_designer = no
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_high_septon
+			}
+			triggered_desc = {
+				trigger = { is_female = yes }
+				desc = trait_high_septon_female
+			}
+			desc = trait_high_septon_male
+		}
+	}
+}

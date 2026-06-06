@@ -1,0 +1,16 @@
+﻿#########################
+### CLOTHING TRIGGERS ###
+#########################
+
+### Northern Culture + First Man
+portrait_the_north_clothing_trigger = {
+	scope:culture = {
+		portrait_the_north_clothing_contents_trigger = yes
+	}
+	scope:faith = {
+		OR = {
+			this = faith:old_gods_wnw
+			this = faith:fots_seven #AGOT+ changed; Manderlys and similar lords get included too
+		}
+	}
+}

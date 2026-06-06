@@ -1,0 +1,6 @@
+citadel_northmarch_trigger = {
+	first = citadel_northmarch_enabled_loc
+	first_not = citadel_northmarch_disabled_loc
+	third = citadel_northmarch_enabled_loc
+	third_not = citadel_northmarch_disabled_loc
+}

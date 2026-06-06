@@ -1,0 +1,49 @@
+﻿namespace = asoiaf_canon_children_velaryon_events
+
+asoiaf_canon_children_velaryon_events.3101 = { #children of Corlys Velaryon (the Sea Snake) by his Targaryen wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Velaryon_35_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Velaryon_35_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Velaryon_34_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Velaryon_34_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_velaryon_events.3102 = { #children of Corlys Velaryon (the Sea Snake) by his lowborn lover
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Velaryon_44_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Velaryon_44_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Velaryon_43_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Velaryon_43_birth_effect = yes
+		}
+	}
+}

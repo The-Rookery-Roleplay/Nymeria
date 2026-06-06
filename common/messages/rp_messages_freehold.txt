@@ -1,0 +1,7 @@
+﻿event_freehold_neutral_text = {
+	icon = "agotessos"
+	title = event_message_title
+	desc = event_message_text
+	style = neutral
+	soundeffect = @msg_neutral_soundeffect
+}

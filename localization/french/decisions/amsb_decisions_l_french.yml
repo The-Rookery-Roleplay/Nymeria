@@ -1,0 +1,62 @@
+﻿l_french:
+ decision_group_type_royal_court_change:0 "#D AM&SB#! Décisions de Cour Royale"
+
+ #Pirate to Feudal
+ amsb_pirate_to_feudal_king_decision:0 "Convertir les Repaires de Pirates en Féodalisme"
+ amsb_pirate_to_feudal_king_decision_confirm:0 "Se Convertir aux Voies Féodales"
+ amsb_pirate_to_feudal_king_decision_tooltip:0 "Changer de type de gouvernement en devenant [GetGovernment( 'lp_feudal_government' ).GetName] ou [GetGovernment( 'feudal_government' ).GetName]"
+
+ #Royal Court Change
+ ##Dragonhall
+ high_valyrian_dragon_court_decision:0 "Transformer votre Cour Royale en Salle des Dragons"
+ high_valyrian_dragon_court_decision_desc:0 "Enfouis dans les profondeurs de la bibliothèque de [ROOT.Char.GetCapitalLocation.GetName], vous tombez sur de vieux parchemins poussiéreux qui semblent montrer les plans d'une salle d'audience royale dans le style haut valyrien. Il vous appartient désormais de décider si vous souhaitez payer l'or nécessaire pour faire construire cette cour ou si vous préférez remettre les plans sur l'étagère en attendant des jours meilleurs..."
+ high_valyrian_dragon_court_decision_confirm:0 "Commencer la construction de la Salle des Dragons"
+ high_valyrian_dragon_court_decision_tooltip:0 "Modifier la cour de [ROOT.Char.GetCapitalLocation.GetName] pour qu'elle ressemble à la salle d'audience des Seigneurs Dragons de l'Ancienne Valyria"
+
+ high_valyrian_dragon_court_removal_decision:0 "Supprimer la Cour Royale Salle des Dragons"
+ high_valyrian_dragon_court_removal_desc:0 "Vous êtes parvenu à la conclusion que vous souhaitez restaurer votre salle d'audience dans sa gloire d'antan"
+ high_valyrian_dragon_court_removal_decision_confirm:0 "Restaurer la Salle des Dragons à son état antérieur"
+ high_valyrian_dragon_court_removal_decision_tooltip:0 "Rétablir votre salle du trône royale dans sa salle d'audience d'origine"
+
+ #Abdicate
+ amsb_abdicate_throne:0 "Abdiquer du Trône"
+ amsb_abdicate_throne_tooltip:0 "L'heure est venue de transmettre le Trône de [ROOT.Char.GetPrimaryTitle.GetNameNoTier] à mon héritier"
+ amsb_abdicate_throne_desc:0 "L'heure est venue pour mon règne sur [ROOT.Char.GetPrimaryTitle.GetNameNoTier] de prendre fin... le poids de la couronne est devenu trop lourd à porter pour ma tête..."
+ amsb_abdicate_decision_effect_tooltip:0 "Vous renoncez à votre couronne et tout ce qu'elle représente au profit de votre héritier joueur"
+ amsb_abdicate_throne_confirm:0 "Renoncer à la Couronne"
+
+ amsb_step_down_from_power:0 "Se Retirer du Pouvoir"
+ amsb_step_down_from_power_tooltip:0 "L'Heure est Venue pour moi de Démissionner du Commandement de [ROOT.Char.GetPrimaryTitle.GetNameNoTier]"
+ amsb_step_down_from_power_desc:0 "J'ai décidé qu'il était temps pour moi de démissionner de ma charge publique et de me retirer du commandement de [ROOT.Char.GetPrimaryTitle.GetNameNoTier]."
+ amsb_step_down_from_power_effect_tooltip:0 "Vous renoncez à votre position au profit de la prochaine administration"
+ amsb_step_down_from_power_confirm:0 "Démissionner de ma Charge"
+
+ #Bend the Knee
+ amsb_summon_realm_bend_knees:0 "Convoquer vos Vassaux pour Plier le Genou"
+ amsb_summon_realm_bend_knees_tooltip:0 "Il est temps que mes vassaux viennent me rendre hommage"
+ amsb_summon_realm_bend_knees_desc:0 "J'ai décidé d'envoyer des corbeaux aux vassaux de [ROOT.Char.GetPrimaryTitle.GetNameNoTier] pour exiger qu'ils entreprennent le pèlerinage vers [ROOT.Char.GetCapitalLocation.GetName] afin de réaffirmer leur loyauté envers la Maison [ROOT.Char.GetHouse.GetBaseName]. S'ils refusent cette exigence, j'aurai toutes les raisons nécessaires pour les emprisonner pour le bien du royaume."
+ amsb_summon_realm_bend_knees_confirm:0 "Envoyer les Corbeaux"
+
+ #Take the Black
+ amsb_take_the_black:0 "Rejoindre la Garde de Nuit"
+ amsb_take_the_black_tooltip:0 "Je choisis de prendre le noir"
+ amsb_take_the_black_desc:0 "L'heure est venue pour moi de prononcer les vœux et de devenir un frère noir de [GetTitleByKey('k_the_wall').GetNameNoTier]"
+ amsb_take_the_black_confirm:0 "Prendre le Noir"
+
+ #Kingsguard
+ decision_amsb_form_kingsguard:0 "Former la Garde Royale"
+ decision_amsb_form_kingsguard_desc:0 "L'heure est venue de former une Garde Royale pour me protéger de toute menace tapie dans l'ombre maintenant que j'ai unifié [GetTitleByKey('h_the_iron_throne').GetNameNoTier]"
+ decision_amsb_form_kingsguard_confirm:0 "Former la Garde Royale"
+ decision_amsb_form_kingsguard_tooltip:0 "Former une Garde Royale de sept chevaliers qui consacreront leur vie à protéger le Roi de [GetTitleByKey('h_the_iron_throne').GetNameNoTier]"
+
+ #Harrenhal Construction
+ amsb_build_harrenhal_decision:0 "Construire le Puissant Harrenhal"
+ amsb_build_harrenhal_decision_desc:0 "Vous exigez que des plans soient établis pour créer le plus vaste château de Westeros sur la rive septentrionale de l'Œildieu et entamez un projet de dix années pour construire [GetBuilding('harrenhal_01').GetName]\n\nQuand cette construction s'achèvera, vous obtiendrez le bâtiment spécial et un château de niveau 5"
+ amsb_build_harrenhal_decision_confirm:0 "Commencer la planification de la construction d'Harrenhal"
+ amsb_build_harrenhal_decision_tooltip:0 "Commencer la planification de la construction d'Harrenhal"
+
+ #The Black Castle Construction
+ amsb_build_godsfort_decision:0 "Construire le Château Noir"
+ amsb_build_godsfort_decision_desc:0 "Vous exigez que des plans soient établis pour créer le plus vaste château de Westeros sur la rive septentrionale de l'Œildieu et entamez un projet de dix années pour construire [GetBuilding('generic_harrenhal_01').GetName]\n\nQuand cette construction s'achèvera, vous obtiendrez le bâtiment spécial et un château de niveau 5"
+ amsb_build_godsfort_decision_confirm:0 "Commencer la planification de la construction du Château Noir"
+ amsb_build_godsfort_decision_tooltip:0 "Commencer la planification de la construction du Château Noir"

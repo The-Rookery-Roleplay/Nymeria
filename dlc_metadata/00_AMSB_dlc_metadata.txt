@@ -1,0 +1,5 @@
+﻿dlc_AMSB = {
+    key = "Additional Models & Special Buildings"
+    type = minor
+    priority = 1000
+}

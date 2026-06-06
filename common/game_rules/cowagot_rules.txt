@@ -1,0 +1,9 @@
+﻿use_rebuilt_crag = {
+	default = no_use_rebuilt_crag
+	
+	no_use_rebuilt_crag = {
+	}
+	
+	yes_use_rebuilt_crag = {
+	}
+}

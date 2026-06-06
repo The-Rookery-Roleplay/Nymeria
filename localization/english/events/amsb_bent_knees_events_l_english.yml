@@ -1,0 +1,27 @@
+﻿
+l_english:
+ #event for vassal choice
+ amsb_bent_knees.0001.t:0 "Summoned to Bend The Knee"
+ amsb_bent_knees.0001.desc:0 "I have recieved a raven from [actor.GetName] of House [actor.GetHouse.GetBaseNameNoTooltip] requesting that I travel to [actor.GetHerHis] court in order to bend the knee and declare loyalty to the throne for all time. While this is something that is very obviously out of the ordinary I must decide if I will accept this request or if I will refuse and risk the potential consequences of refusal..."
+ amsb_bent_knees.0001.a:0 "I must travel to [actor.GetName]'s court to swear fealty."
+ amsb_bent_knees.0001.b:0 "I will not subject myself or my house to such demands!"
+
+ #Ruler Event for bending of limbs
+ amsb_bent_knees.0002.t:0 "Bend The Knee"
+ amsb_bent_knees.0002.desc:0 "Lord [bent_knees.GetFirstName] [bent_knees.GetDynasty.GetName] enters the throne room and slowly walks toward me.\n\n\"You've come to bend the knee, Lord [bent_knees.GetFirstNameNoTooltip]?\" \n\n\"I have, your grace,\" [bent_knees.GetSheHe] says as [bent_knees.GetSheHe] kneels before me.\n\n#bold "I, [bent_knees.GetFirstNameBase] of House [bent_knees.GetDynasty.GetNameNoTooltip], swear my loyalty to [ruler.GetFirstNameNoTooltip] of House [ruler.GetHouse.GetBaseNameNoTooltip], [Select_CString( ruler.IsFemale, 'Queen', 'King' )] of the Andals, the Rhoynar, and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm.\"#! \n\nAfter a few seconds [bent_knees.GetHerHis] head tilts up, seeking my response."
+ amsb_bent_knees.0002.a:0 "@prestige_icon! I accept your oath of fealty."
+ amsb_bent_knees.0002.a_tt:0 "Blocked from joining a faction against you for 10 years."
+ amsb_bent_knees.0002.a_title.desc:0 "[bent_knees.GetName] has bent their knee and swore loyalty to the crown."
+ amsb_bent_knees.0002.a_title:0 "Vassal Bends The Knee"
+ amsb_bent_knees.0002.b:0 "@dread_icon! On second thought, enjoy the black cells!"
+ amsb_bent_knees.0002.c:0 "@death_icon! Sorry, but I called you here to die."
+
+#  #Vassal Accepts
+#  amsb_bent_knees.0003.t:0 "Vassal Accepts The Decree"
+#  amsb_bent_knees.0003.desc:0 "..."
+#  amsb_bent_knees.0003.a:0 "I shall await their arrival"
+
+ #Vassal Refuses
+ amsb_bent_knees.0004.t:0 "Vassal Refuses the Decree"
+ amsb_bent_knees.0004.desc:0 "I stare down at the raven's scroll in complete disbelief. The message from [bent_knees.GetName] easily was crumpled into a tight paper ball in my palm as the anger rises within me.\n\n"I will not tolerate this disrespect!" I shout to no one in particular, knowing there wasn't much that I could do without drastically escalating the situation.\n\nBut maybe that is what is needed... maybe an example needs to be made so that the remaining lords of the realm learn their place..."
+ amsb_bent_knees.0004.a:0 "This is unacceptable!"

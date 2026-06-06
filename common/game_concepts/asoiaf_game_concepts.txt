@@ -1,0 +1,6 @@
+﻿asoiaf_canon_children_concept = {
+	texture = gfx/interface/icons/historical_character.dds
+}
+asoiaf_canon_child_concept = { #gives the same description!
+	texture = gfx/interface/icons/historical_character.dds
+}

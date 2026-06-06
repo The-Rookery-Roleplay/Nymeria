@@ -1,0 +1,47 @@
+﻿bordello_littlefinger = {
+    construction_time = standard_construction_time
+
+    potential = {
+        always = no
+    }
+
+    can_construct = {
+        always = no
+        custom_tooltip = {
+			text = need_baelish_agreement
+            always = no
+        }
+    }
+
+    # can_construct_potential = {
+    #     building_requirement_castle_city_church = { LEVEL = 01 }
+    # }
+
+    can_construct_showing_failures_only = {
+        building_requirement_tribal = no
+    }
+    
+    is_enabled = {
+        always = yes
+    }
+
+    cost_gold = normal_building_tier_1_cost
+    
+    province_modifier = {
+        monthly_income = 3
+        #tax_mult = 0.05
+    }
+
+    character_modifier = {
+        clergy_opinion = -50
+        monthly_piety = -2
+    }
+
+    can_destroy = no
+    category = economic
+    type_icon = "icon_structure_cluny_abbey.dds"
+    
+    ai_value = {
+        base = 10
+    }
+}

@@ -1,0 +1,21 @@
+# citadel_trade_debug_decision = {
+#     picture = {
+# 		reference = "gfx/interface/illustrations/decisions/decision_spend_money.dds"
+# 	}
+
+#     desc = citadel_trade_debug_decision_desc
+#     selection_tooltip = citadel_trade_debug_decision_desc
+#     decision_group_type = major
+
+#     is_shown = { is_debug_mode = yes }
+#     is_valid = { always = yes }
+
+#     ai_potential = { always = no }
+#     ai_will_do = { base = 0 }
+
+#     effect = {
+#         root = {
+#             trigger_event = { id = citadel_trade.0001 }
+#         }
+#     }
+# }

@@ -1,0 +1,13 @@
+﻿quarterly_playable_pulse = {
+    events = {
+        baelish_franchise.0001
+        baelish_franchise.0002
+    }
+}
+
+on_death = {
+    events = {
+        baelish_franchise.1000
+    }
+}
+

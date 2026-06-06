@@ -1,0 +1,37 @@
+﻿dynn_Galliwick = {
+	pattern = "pattern_solid.dds"
+	color1 = "asoiaf_grey_light_warm"
+	color2 = "agot_red_dark"
+	colored_emblem = {
+		texture = "vale_seasons_fall.dds"
+		color1 = "asoiaf_field_green_dark"
+		instance = { position = { 0.5 0.5 } scale = { 0.91 0.91 } }
+	}
+	colored_emblem = {
+		texture = "vale_jesper_stones.dds"
+		color1 = "asoiaf_red_dark"
+		instance = { position = { 0.5 0.5 } scale = { 0.48 0.48 } }
+	}
+}
+
+dynn_Bardrox = {
+	pattern = "pattern_solid.dds"
+	color1 = "asoiaf_black_alt"
+	color2 = "asoiaf_white"
+	colored_emblem = {
+		texture = "historical_fretty.dds"
+		color1 = "asoiaf_black_deep"
+		color2 = "asoiaf_black_alt"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+	}
+	colored_emblem = {
+		texture = "ce_star_07.dds"
+		color1 = "asoiaf_white_dark"
+		instance = { position = { 0.5 0.47 } scale = { 0.8 0.8 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_07.dds"
+		color1 = "asoiaf_white"
+		instance = { position = { 0.5 0.47 } scale = { 0.57 0.57 } }
+	}
+}

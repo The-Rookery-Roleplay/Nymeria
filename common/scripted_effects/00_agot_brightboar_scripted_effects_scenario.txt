@@ -1,0 +1,160 @@
+﻿# agot_brightboar_historical_artifacts_setup = {
+# 	agot_brightboar_assign_starting_valyrian_steel_effect = yes
+# 	agot_brightboar_assign_starting_armor_effect = yes
+# }
+
+# agot_brightboar_assign_starting_valyrian_steel_effect = {
+# 	if = { # Brightboar - Valyrian Steel sword of house Rowan (its not real)
+# 		limit = { always = yes }
+# 		if = {
+# 			limit = { game_start_date >= 8280.1.1 }
+# 			character:Rowan_1 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8264.1.1 }
+# 			character:Rowan_53 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8224.1.1 }
+# 			character:Rowan_50 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8196.1.1 }
+# 			character:Rowan_48 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8160.1.4 }
+# 			character:Rowan_46 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8136.3.1 }
+# 			character:Rowan_45 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8114.1.1 }
+# 			character:Rowan_29 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8097.1.1 }
+# 			character:Rowan_23 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8075.1.1 }
+# 			character:Rowan_21 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8040.1.1 }
+# 			character:Rowan_20 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7990.1.1 }
+# 			character:Rowan_17 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7926.1.1 }
+# 			character:Rowan_14 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7924.1.1 }
+# 			character:Rowan_65 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7900.1.1 }
+# 			character:Rowan_63 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7884.1.1 }
+# 			character:Rowan_62 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7855.1.1 }
+# 			character:Rowan_9 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7827.1.1 }
+# 			character:Rowan_8 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 60.1.1 }
+# 			character:Rowan_6 ?= { agot_create_artifact_vs_brightboar_effect = { OWNER = THIS } }
+# 		}
+# 	}
+# }
+
+# agot_brightboar_assign_starting_armor_effect = {
+# 	if = { # Rowan Armor
+# 		limit = { always = yes }
+# 		if = {
+# 			limit = { game_start_date >= 8280.1.1 }
+# 			character:Rowan_1 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8264.1.1 }
+# 			character:Rowan_53 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8224.1.1 }
+# 			character:Rowan_50 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8196.1.1 }
+# 			character:Rowan_48 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8160.1.4 }
+# 			character:Rowan_46 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8136.3.1 }
+# 			character:Rowan_45 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8114.1.1 }
+# 			character:Rowan_29 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8097.1.1 }
+# 			character:Rowan_23 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8075.1.1 }
+# 			character:Rowan_21 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 8040.1.1 }
+# 			character:Rowan_20 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7990.1.1 }
+# 			character:Rowan_17 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7926.1.1 }
+# 			character:Rowan_14 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7924.1.1 }
+# 			character:Rowan_65 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7900.1.1 }
+# 			character:Rowan_63 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7884.1.1 }
+# 			character:Rowan_62 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7855.1.1 }
+# 			character:Rowan_9 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 7827.1.1 }
+# 			character:Rowan_8 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 		else_if = {
+# 			limit = { game_start_date >= 60.1.1 }
+# 			character:Rowan_6 ?= { agot_create_artifact_rowan_armor_effect = { OWNER = THIS } }
+# 		}
+# 	}
+# }

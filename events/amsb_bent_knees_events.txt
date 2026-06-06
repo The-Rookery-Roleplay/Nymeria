@@ -1,0 +1,389 @@
+﻿namespace = amsb_bent_knees
+amsb_bent_knees.0001 = {
+	#event for vassal choice
+	type = character_event
+	content_source = dlc_AMSB
+	title = amsb_bent_knees.0001.t
+	desc = amsb_bent_knees.0001.desc
+	theme = crown
+	immediate = {
+		root.liege = {
+			save_scope_as = actor
+		}
+		root = {
+			save_scope_as = recipient
+		}
+	}
+	lower_right_portrait = {
+		character = scope:actor
+	}
+	left_portrait = {
+		character = scope:recipient
+		animation = reading
+	}
+	option = {
+		name = amsb_bent_knees.0001.a
+		start_travel_plan = {
+			players_use_planner = no
+			destination = liege.capital_province
+			on_arrival_event = amsb_bent_knees.9999
+			on_arrival_destinations = first
+			return_trip = yes
+		}
+		scope:actor = {
+			add_character_flag = {
+				flag = holding_court_character_flag
+				years = 5
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 125
+				scope:actor = {
+					any_vassal_or_below = {
+						this = scope:recipient
+					}
+				}
+				desc = AI_REFUSAL_IS_TREASON
+			}
+			opinion_modifier = {
+				who = scope:recipient
+				opinion_target = scope:actor
+				multiplier = 0.5
+				desc = AI_OPINION_REASON
+			}
+			modifier = {
+				add = 40
+				scope:recipient = {
+					has_relation_friend = scope:actor
+				}
+				desc = WE_ARE_FRIENDS
+			}
+			modifier = {
+				add = 50
+				scope:recipient = {
+					has_trait = craven
+				}
+				desc = BENT_KNEES_AI_IS_craven
+			}
+			modifier = {
+				add = 15
+				scope:recipient = {
+					has_trait = content
+				}
+				desc = BENT_KNEES_AI_IS_content
+			}
+			modifier = {
+				add = 50
+				scope:actor = {
+					primary_title = {
+						title_is_held_by_legitimate_house = yes
+					}
+				}
+				desc = BENT_KNEES_AI_IS_legit_house
+			}
+		}
+	}
+	option = {
+		name = amsb_bent_knees.0001.b
+		scope:recipient = {
+			add_character_flag = {
+				flag = refused_to_bend_knees
+				years = 5
+			}
+		}
+		scope:actor = {
+			trigger_event = {
+				id = amsb_bent_knees.0004
+				days = { 1 10 }
+			}
+		}
+		ai_chance = {
+			base = 0
+			opinion_modifier = {
+				who = scope:recipient
+				opinion_target = scope:actor
+				multiplier = -0.5
+				desc = AI_OPINION_REASON
+			}
+			modifier = {
+				add = 50
+				scope:recipient = {
+					has_relation_rival = scope:actor
+				}
+				desc = WE_ARE_RIVALS
+			}
+			modifier = {
+				add = 15
+				scope:recipient = {
+					has_trait = arrogant
+				}
+				desc = BENT_KNEES_AI_IS_arrogant
+			}
+			modifier = {
+				add = 25
+				scope:actor = {
+					tyranny >= 1
+					tyranny <= 20
+				}
+				desc = BENT_KNEES_TYRANNY
+			}
+			modifier = {
+				add = 50
+				scope:actor = {
+					tyranny >= 21
+					tyranny <= 75
+				}
+				desc = BENT_KNEES_TYRANNY
+			}
+			modifier = {
+				add = 100
+				scope:actor = {
+					tyranny >= 76
+				}
+				desc = BENT_KNEES_TYRANNY
+			}
+			modifier = {
+				add = 50
+				scope:recipient = {
+					has_strong_claim_on = title:h_the_iron_throne
+				}
+				desc = BENT_KNEES_PRESSED_CLAIM
+			}
+			modifier = {
+				add = 50
+				scope:actor = {
+					primary_title = {
+						title_is_held_by_legitimate_house = no
+					}
+				}
+				desc = BENT_KNEES_AI_IS_NOT_legit_house
+			}
+		}
+	}
+}
+
+amsb_bent_knees.0002 = {
+	#Ruler Event for bending of limbs
+	type = character_event
+	content_source = dlc_AMSB
+	title = amsb_bent_knees.0002.t
+	desc = amsb_bent_knees.0002.desc
+	theme = crown
+	immediate = {
+		scope:actor = {
+			save_scope_as = ruler
+		}
+		scope:recipient = {
+			save_scope_as = bent_knees
+		}
+	}
+	right_portrait = {
+		character = scope:ruler
+		animation = war_over_win
+	}
+	left_portrait = {
+		character = scope:bent_knees
+		animation = throne_room_kneel_1
+	}
+	option = {
+		name = amsb_bent_knees.0002.a
+		scope:ruler = {
+			send_interface_message = {
+				type = msg_vassal_decision_good
+				title = amsb_bent_knees.0002.a_title
+				desc = amsb_bent_knees.0002.a_title.desc
+				right_icon = scope:bent_knees
+				scope:bent_knees = {
+					custom_tooltip = amsb_bent_knees.0002.a_tt
+					add_character_flag = {
+						flag = joining_faction_block
+						years = 5
+					}
+				}
+			}
+		}
+		scope:ruler = {
+			if = {
+				limit = {
+					NOT = {
+						primary_title = {
+							var:new_house_progress = 100
+						}
+					}
+				}
+				primary_title = {
+					save_scope_as = ruler_primary_title
+				}
+				agot_add_new_house_progress = {
+					TITLE = scope:ruler_primary_title
+					CHANGE = 5
+				}
+			}
+		}
+		scope:bent_knees = {
+			add_opinion = {
+				target = scope:ruler
+				modifier = amsb_bent_knees_opinion
+			}
+		}
+	}
+	option = {
+		name = amsb_bent_knees.0002.b
+		imprison_character_effect_ignore_reason = {
+			TARGET = scope:bent_knees
+			IMPRISONER = scope:ruler
+		}
+		scope:ruler = {
+			add_tyranny = 15
+		}
+		scope:ruler = {
+			if = {
+				primary_title = {
+					save_scope_as = ruler_primary_title
+				}
+				agot_add_new_house_progress = {
+					TITLE = scope:ruler_primary_title
+					CHANGE = -5
+				}
+			}
+		}
+		scope:bent_knees = {
+			add_opinion = {
+				target = scope:ruler
+				modifier = amsb_bent_knees_opinion
+			}
+		}
+	}
+	option = {
+		name = amsb_bent_knees.0002.c
+		add_internal_flag = dangerous
+		agot_filler_execute_character_effect = {
+			VICTIM = scope:bent_knees
+			EXECUTIONER = scope:ruler
+		}
+		scope:ruler = {
+			add_tyranny = 60
+		}
+		scope:ruler = {
+			if = {
+				primary_title = {
+					save_scope_as = ruler_primary_title
+				}
+				agot_add_new_house_progress = {
+					TITLE = scope:ruler_primary_title
+					CHANGE = -15
+				}
+			}
+		}
+	}
+}
+
+# amsb_bent_knees.0003 = {
+# 	#Vassal Accepts event for ruler
+# 	type = character_event
+# 	title = amsb_bent_knees.0003.t
+# 	desc = amsb_bent_knees.0003.desc
+# 	theme = crown
+# 	immediate = {
+# 		scope:actor = {
+# 			save_scope_as = ruler
+# 		}
+# 		scope:recipient = {
+# 			save_scope_as = bent_knees
+# 		}
+# 	}
+# 	left_portrait = {
+# 		character = scope:ruler
+# 		animation = personality_bold
+# 	}
+# 	lower_right_portrait = {
+# 		character = scope:bent_knees
+# 	}
+# 	option = {
+# 		name = amsb_bent_knees.0003.a
+# 	}
+# }
+
+amsb_bent_knees.0004 = {
+	#Vassal Refuses event for ruler
+	type = character_event
+	content_source = dlc_AMSB
+	title = amsb_bent_knees.0004.t
+	desc = amsb_bent_knees.0004.desc
+	theme = crown
+	immediate = {
+		scope:actor = {
+			save_scope_as = ruler
+		}
+		scope:recipient = {
+			save_scope_as = bent_knees
+		}
+	}
+	left_portrait = {
+		character = scope:ruler
+		animation = rage
+	}
+	lower_right_portrait = {
+		character = scope:bent_knees
+	}
+	option = {
+		name = amsb_bent_knees.0004.a
+		scope:ruler = {
+			if = {
+				primary_title = {
+					save_scope_as = ruler_primary_title
+				}
+				agot_add_new_house_progress = {
+					TITLE = scope:ruler_primary_title
+					CHANGE = -5
+				}
+			}
+			add_opinion = {
+				target = scope:bent_knees
+				modifier = amsb_bent_knees_refusal_opinion
+				years = 10
+			}
+			send_interface_toast = {
+				title = amsb_bent_knees_vassal_interaction_refusal_msg_title
+				custom_tooltip = amsb_bent_knees_vassal_interaction_refusal_msg_desc
+				left_icon = scope:bent_knees
+			}
+		}
+		scope:bent_knees = {
+			add_opinion = {
+				target = scope:ruler
+				modifier = amsb_bent_knees_opinion
+			}
+		}
+	}
+}
+
+amsb_bent_knees.9999 = {
+	hidden = yes
+	immediate = {
+		scope:actor = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_ai = no
+					has_royal_court = yes # make sure only royal court characters get a court event
+					has_dlc_feature = royal_court
+				}
+				open_view_data = {
+					view = royal_court
+					player = scope:actor
+				}
+				trigger_event = {
+					id = amsb_court_event.0001
+				}
+			}
+			else = {
+				trigger_event = {
+					id = amsb_bent_knees.0002
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+﻿dynn_Essos = { #497 - leaving it if its ever needed
+	#prefix = "dynnp_of"
+	name = "dynn_Essos" # Aegon VI
+	culture = "high_valyrian"
+	motto = dynn_Targaryen_motto # Fire and Blood
+}

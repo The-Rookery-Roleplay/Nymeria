@@ -1,0 +1,31 @@
+﻿agot_iron_throne = { #AGOT+ changed
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/ironthrone/throneroom_ironthrone.dds"
+		environment = "environment_throneroom_iron_throne"
+		ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
+	}
+}
+
+agot_dragonstone_throneroom = { #AGOT+ changed
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/Dragonstone/asoiaf_throneroom_dragonstone.dds"
+		environment = "environment_event_bp1_bonfire"
+		ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
+	}
+}
+
+agot_eyrie_throneroom = { #AGOT+ changed
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/Eyrie/asoiaf_throneroom_eyrie.dds"
+		environment = "environment_bp2_university"
+		ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
+	}
+}
+
+agot_winterfell_throneroom = { #AGOT+ changed
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/Winterfell/asoiaf_throneroom_winterfell.dds"
+		environment = "environment_bp2_university"
+		ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
+	}
+}

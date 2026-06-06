@@ -143,7 +143,7 @@ agot_ghaston_grey_01 = {
 	character_modifier = {
 		dread_gain_mult = 0.3
 		prisoner_opinion = -10
-		domain_limit = 1
+		#domain_limit = 1
 	}
 
 	province_modifier = {
@@ -890,7 +890,7 @@ agot_yronwood_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = 0.25
+		#tax_mult = 0.25
 		development_growth_factor = 0.2
 	}
 
@@ -2021,7 +2021,7 @@ agot_castamere_ruins_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = -0.35
+		#tax_mult = -0.35
 		levy_size = -0.1
 	}
 
@@ -5239,7 +5239,7 @@ agot_starpike_01 = {
 		liege_opinion = 15
 		personal_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
 		owned_scheme_secrecy_add = -10
-		domain_limit = 1
+		#domain_limit = 1
 	}
 
 	ai_value = {
@@ -5664,7 +5664,7 @@ agot_old_oak_01 = {
 		development_growth_factor = 0.1
 		hostile_raid_time = 0.35
 		levy_size = 0.2
-		tax_mult = 0.2
+		#tax_mult = 0.2
 	}
 
 	province_modifier = {

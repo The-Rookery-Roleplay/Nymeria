@@ -1,0 +1,36 @@
+﻿# Standard Values
+@pos_compat_high = 30
+@pos_compat_medium = 15
+@pos_compat_low = 5
+
+@neg_compat_high = -30
+@neg_compat_medium = -15
+@neg_compat_low = -5
+
+################### ABDICATION ##################
+
+amsb_abdicated = {
+	category = fame
+
+	inheritance_blocker = all
+	claim_inheritance_blocker = all
+
+	stress_gain_mult = -0.15
+	stress_loss_mult = 0.15
+	
+	flag = cannot_inherit_titles
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_amsb_abdicated_desc
+			}
+			desc = trait_amsb_abdicated_character_desc
+		}
+	}
+}

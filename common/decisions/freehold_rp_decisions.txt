@@ -1,0 +1,82 @@
+﻿freehold_rp_decision_on = {
+	ai_check_interval = 0
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+
+	decision_group_type = major
+
+	desc = freehold_rp_decision_on_desc
+
+	selection_tooltip = freehold_rp_on_decision_tooltip
+
+	confirm_text = freehold_rp_decision_on_tooltip_confirm_text_desc
+
+	is_shown = {
+	OR = { 
+				has_title = title:e_the_iron_throne 
+				has_character_flag = freehold_gm
+				debug_only = yes
+				}
+	
+		NOT = {
+			has_global_variable = freehold_rp_decisions
+		}
+	}
+
+	effect = {
+		set_global_variable = freehold_rp_decisions
+		
+		
+	}
+
+	ai_potential = {
+		always = no #we don't want the AI doing this
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+
+freehold_rp_decision_off = {
+	ai_check_interval = 0
+picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+
+	decision_group_type = major
+
+	desc = freehold_rp_decision_off_desc
+
+	selection_tooltip = freehold_rp_off_decision_tooltip
+
+	confirm_text = freehold_rp_decision_off_tooltip_confirm_text_desc
+
+	is_shown = {
+		
+		OR = { 
+				has_title = title:e_the_iron_throne
+				has_character_flag = freehold_gm
+				debug_only = yes
+				}
+		
+			has_global_variable = freehold_rp_decisions
+		
+	}
+
+	effect = {
+		remove_global_variable = freehold_rp_decisions
+		
+		
+	}
+
+	ai_potential = {
+		always = no #we don't want the AI doing this
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

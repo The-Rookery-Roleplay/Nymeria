@@ -1,0 +1,71 @@
+﻿namespace = amsb_dragonpit
+
+amsb_dragonpit.0001 = { #Create the Dragonpit of King's Landing
+    type = character_event
+    content_source = dlc_AMSB
+    title = amsb_dragonpit.0001.t
+    desc = amsb_dragonpit.0001.desc
+
+    theme = dragon
+
+    override_background = { reference = agot_dragonpit }
+
+    left_portrait = {
+        character = root
+        animation = brave
+    }
+
+    right_portrait = {
+        character = scope:head_dragonkeeper
+        animation = throne_room_writer
+    }
+
+    immediate = {
+        create_character = { # Create Head Dragonkeeper
+            template = agot_head_dragonkeeper_high_funding_template
+            employer = root
+            culture = root.location.culture
+            faith = root.location.faith
+            save_scope_as = head_dragonkeeper
+        }
+    }
+
+    # Yes, they raise a good point.
+    option = {
+        name = amsb_dragonpit.0001.a
+        title:c_kings_landing = {
+            set_variable = { name = has_dragonkeeper_order }
+            holder = { agot_dragonpit_access_law_close_family_effect = yes }
+        }
+        appoint_court_position = {
+            recipient = scope:head_dragonkeeper
+            court_position = head_dragonkeeper_court_position
+        }
+        if = {
+            limit = {
+                has_ep1_dlc_trigger = yes
+            }
+            set_amenity_level = {
+                type = agot_dragonpit_amenities
+                value = 4 # High
+            }
+        }
+    }
+}
+
+amsb_dragonpit.9000 = {
+    hidden = yes
+
+    immediate = {
+        title:b_rhaenyss_hill.title_province = {
+            if = {
+                limit = {
+                    has_building_or_higher = agot_sept_of_remembrance_02
+                }
+                remove_building = agot_sept_of_remembrance_02
+            }
+            add_special_building = dragonpit_03
+		}
+		trigger_event = amsb_dragonpit.0001
+    }
+}

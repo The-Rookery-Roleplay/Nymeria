@@ -1,0 +1,25 @@
+﻿# Just disables the normal Reachmen Legacy for the Honeywiners, instead they get their own one.
+reachman_legacy_track = { 
+  is_shown = {
+    AND = {
+      culture = {
+        NOT = {
+          OR = {
+            this = culture:honeywiner
+            this = culture:marcher
+			this = culture:stone_dornish
+          }
+        }
+      }
+      OR = {
+        culture = {
+          OR = {
+            this = culture:reachman
+            any_parent_culture_or_above = { this = culture:reachman }
+          }
+        }
+        dynasty = { has_dynasty_perk = reachman_legacy_1 }
+      }
+    }
+  }
+}

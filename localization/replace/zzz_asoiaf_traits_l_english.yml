@@ -1,0 +1,4 @@
+﻿l_english:
+ trait_knight_desc:0 "This character was knighted, swearing to be courageous, just, and to protect the innocent, no matter the danger."
+ trait_knight_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] was knighted, swearing to be courageous, just, and to protect the innocent, no matter the danger."
+ trait_knight_unique_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] was knighted, swearing to be courageous, just, and to protect the innocent, no matter the danger."

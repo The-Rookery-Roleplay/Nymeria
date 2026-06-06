@@ -1,0 +1,145 @@
+﻿namespace = asoiaf_canon_children_baratheon_events
+
+asoiaf_canon_children_baratheon_events.0751 = { #children of Ormund Baratheon (son of Lyonel) by his Targaryen wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_1_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_1_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_baratheon_events.0011 = { #children of Steffon Baratheon (son of Ormund) by his Estermont wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_4_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_4_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_3_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_3_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_2_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_2_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_baratheon_events.0021 = { #children of Robert I Baratheon by his Lannister wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_2_1_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_2_1_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_baratheon_events.0022 = { #children of Cersei Lannister (daughter of Tywin) by her Lannister (close family) lover
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_7_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_7_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_6_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_6_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_5_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_5_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_baratheon_events.0031 = { #children of Stannis Baratheon (son of Steffon) by his Florent wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_13_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_13_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_3_3_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_3_3_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_3_2_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_3_2_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Baratheon_3_1_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Baratheon_3_1_birth_effect = yes
+		}
+	}
+}
+asoiaf_canon_children_baratheon_events.0032 = { #event to remove greyscale from Shireen
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		remove_trait = greyscale
+	}
+}

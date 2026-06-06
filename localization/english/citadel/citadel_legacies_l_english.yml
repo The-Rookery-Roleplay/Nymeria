@@ -1,0 +1,21 @@
+﻿l_english:
+
+dulver_legacy_track_name: "Dulver"
+dulver_legacy_track_desc: "Earth Yields"
+
+dulver_legacy_1_name: "First Man Origins"
+dulver_legacy_2_name: "Stone to Citadel"
+dulver_legacy_3_name: "Glimmering Caverns and Hallways"
+dulver_legacy_4_name: "The Mightiest of Halls"
+dulver_legacy_5_name: "Honor the Ancestors"
+
+DULVER_1:0 "From the oldest blood of the First Men, House Dulver remembers the age before crowns, when stone and oath were all that mattered. Their roots run deep beneath the hills and deeper still in memory."
+DULVER_2:0 "Where others saw rock, the Dulvers saw purpose. Through patience, craft, and stubborn will, they raised halls that turned bare stone into lasting refuge and strength."
+DULVER_3:0 "Beneath the surface lie shining corridors shaped by careful hands. Their caverns reflect both beauty and defense, a hidden world where light dances on ancient stone."
+DULVER_4:0 "The halls of Dulver stand vast and unyielding, built to weather siege, storm, and time itself. Here, feasts echo like thunder and banners never bow."
+DULVER_5:0 "Every stone laid bears the weight of those who came before. The Dulvers walk in reverence, carrying old names, old lessons, and old pride into each new generation."
+
+
+DULVER_3:0 "Their loyalty was proven in service to the dragons, and their vows remain bound to the Iron Throne. \n\n#weak Children of House Rykker tend to be [GetTrait('loyal').GetName( GetNullCharacter )]."
+DULVER_4:0 "Rykker knights are forged through duty and reward, not ancient lineage, serving the Crown in war and peace. \n#weak Our [heavy_cavalry|E] are perfectly suited to overrun our foes.\n#weak Enables recruitment of [GetMaA('rykker_blackwater_knights').GetName] as [men_at_arms|E].#!"
+DULVER_5:0 "New blood at court learns quickly, and House Rykker survives through restraint and careful words. \n\n#weak Children of House Rykker tend to be [GetTrait('patient').GetName( GetNullCharacter )] or [GetTrait('shrewd').GetName( GetNullCharacter )]."

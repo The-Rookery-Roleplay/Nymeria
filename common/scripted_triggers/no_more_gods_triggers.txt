@@ -1,0 +1,6 @@
+﻿#Check for trait that might be missing from current game
+#has_trait_modded = {
+#	exists = trait:$TRAIT$ 
+#	has_trait = $TRAIT$
+#}
+

@@ -1,0 +1,266 @@
+﻿amsb_bent_knees_vassal_interaction = {
+	icon = icon_vassal
+	category = interaction_category_vassal
+	common_interaction = yes
+	interface_priority = 60
+	desc = amsb_bent_knees_vassal_interaction_desc
+
+	ai_maybe = yes
+	ai_max_reply_days = 10
+	popup_on_receive = yes
+	pause_on_receive = yes
+	use_diplomatic_range = yes
+	can_send_despite_rejection = yes
+
+	ai_frequency = 10
+	ai_will_do = { base = 10 }
+	ai_targets = { ai_recipients = vassals }
+	ai_potential = {
+		OR = {
+			AND = {
+				is_available = yes
+				is_physically_able_adult = no
+				is_imprisoned = no
+				NOT = { has_trait = incapable }
+			}
+		}
+	}
+
+	ai_min_reply_days = 1
+	ai_max_reply_days = 10
+
+	is_shown = {
+		scope:actor = {
+			is_ai = no
+			primary_title.tier >= tier_kingdom
+			NOT = {
+				has_government = administrative_government
+				has_government = nights_watch_government
+			}
+			culture = { agot_is_wildling_culture = no }
+		}
+		scope:recipient = {
+			NOT = { this = scope:actor }
+			exists = liege
+			liege = scope:actor
+			is_ruler = yes
+			highest_held_title_tier >= tier_county
+			is_ai = yes
+			is_human = yes
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			NOR = {
+				is_at_war_with = scope:actor
+				is_allied_to = scope:actor
+				has_strong_hook = scope:actor
+				has_character_flag = joining_faction_block
+				has_character_flag = refused_to_bend_knees
+			}
+			can_join_or_create_faction_against = scope:actor
+		}
+	}
+
+	can_send = {
+		scope:recipient = {
+			NOT = { this = scope:actor }
+			exists = liege
+			liege = scope:actor
+			is_ruler = yes
+			is_imprisoned = no
+			is_human = yes
+			is_available = yes
+			age >= 13
+		}
+		scope:actor = {
+			prestige >= {
+				value = 300
+				multiply = -1
+			}
+			is_ai = no
+			is_imprisoned = no
+		}
+	}
+
+	on_auto_accept = { }
+
+	ai_accept = {
+		base = 0
+
+		modifier = {
+			add = 125
+			scope:actor = {
+				any_vassal_or_below = { this = scope:recipient }
+			}
+			desc = AI_REFUSAL_IS_TREASON
+		}
+
+		opinion_modifier = {
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 0.5
+			desc = AI_OPINION_REASON
+		}
+
+		modifier = {
+			add = 40
+			scope:recipient = {
+				has_relation_friend = scope:actor
+			}
+			desc = WE_ARE_FRIENDS
+		}
+
+		modifier = {
+			add = -50
+			scope:recipient = {
+				has_relation_rival = scope:actor
+			}
+			desc = WE_ARE_RIVALS
+		}
+
+		modifier = {
+			add = 50
+			scope:recipient = {
+				has_trait = craven
+			}
+			desc = BENT_KNEES_AI_IS_craven
+		}
+		modifier = {
+			add = 15
+			scope:recipient = {
+				has_trait = content
+			}
+			desc = BENT_KNEES_AI_IS_content
+		}
+		modifier = {
+			add = -15
+			scope:recipient = {
+				has_trait = arrogant
+			}
+			desc = BENT_KNEES_AI_IS_arrogant
+		}
+		modifier = {
+			add = -25
+			scope:actor = {
+				tyranny >= 1
+				tyranny <= 20
+			}
+			desc = BENT_KNEES_TYRANNY
+		}
+		modifier = {
+			add = -50
+			scope:actor = {
+				tyranny >= 21
+				tyranny <= 75
+			}
+			desc = BENT_KNEES_TYRANNY
+		}
+		modifier = {
+			add = -100
+			scope:actor = {
+				tyranny >= 76
+			}
+			desc = BENT_KNEES_TYRANNY
+		}
+
+		modifier = {
+			add = -50
+			scope:recipient = {
+				has_strong_claim_on = title:h_the_iron_throne
+			}
+			desc = BENT_KNEES_PRESSED_CLAIM
+		}
+		modifier = {
+			add = -50
+			scope:actor = {
+				location = { geographical_region = world_westeros_seven_kingdoms_without_wall }
+				primary_title = {
+					title_is_held_by_legitimate_house = no
+				}
+			}
+			desc = BENT_KNEES_AI_IS_NOT_legit_house
+		}
+		modifier = {
+			add = 50
+			scope:actor = {
+				location = { geographical_region = world_westeros_seven_kingdoms_without_wall }
+				primary_title = {
+					title_is_held_by_legitimate_house = yes
+				}
+			}
+			desc = BENT_KNEES_AI_IS_legit_house
+		}
+	}
+
+	on_accept = {
+		scope:recipient = {
+			custom_tooltip = amsb_bent_knees_vassal_interaction_accept_desc_a
+			custom_tooltip = amsb_bent_knees_vassal_interaction_accept_desc_b
+			start_travel_plan = {
+				players_use_planner = no
+				destination = liege.capital_province
+				on_arrival_event = amsb_bent_knees.9999
+				on_arrival_destinations = first
+				return_trip = yes
+			}
+		}
+		scope:actor = {
+			add_prestige = -300
+			stress_impact = {
+				craven = medium_stress_impact_gain
+				shy = medium_stress_impact_gain
+				trusting = medium_stress_impact_gain
+				compassionate = medium_stress_impact_gain
+				arrogant = medium_stress_impact_loss
+				paranoid = major_stress_impact_loss
+			}
+			add_character_flag = {
+				flag = holding_court_character_flag
+				years = 5
+			}
+		}
+	}
+
+	on_decline = {
+		scope:recipient = {
+			add_prestige = -300
+		}
+		scope:actor = {
+			add_opinion = {
+				target = scope:recipient
+				modifier = amsb_bent_knees_refusal_opinion
+			}
+			send_interface_toast = {
+				title = amsb_bent_knees_vassal_interaction_refusal_msg_title
+				custom_tooltip = amsb_bent_knees_vassal_interaction_refusal_msg_desc
+				left_icon = scope:recipient
+			}
+		}
+		scope:actor = {
+			if = {
+				primary_title = {
+					save_scope_as = ruler_primary_title
+				}
+				agot_add_new_house_progress = {
+					TITLE = scope:ruler_primary_title
+					CHANGE = -5
+				}
+			}
+		}
+		scope:recipient = {
+			add_character_flag = {
+				flag = refused_to_bend_knees
+				years = 10
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

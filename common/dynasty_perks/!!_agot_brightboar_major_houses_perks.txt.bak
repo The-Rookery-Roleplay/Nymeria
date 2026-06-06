@@ -1,0 +1,1037 @@
+﻿# GARDENER
+
+gardener_legacy_1 = { # House of Garth Greenhand
+	legacy = gardener_legacy_track
+
+	can_be_picked = { 
+		dynasty = dynasty:dynn_Gardener
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = gardener_legacy_1_effect
+		}
+	}
+
+	traits = {
+		greensight = 100
+	}
+
+	character_modifier = {
+		fertility = 0.2
+		dynasty_house_opinion = 10
+		close_relative_opinion = 15
+		stress_loss_mult = 0.2
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+gardener_legacy_2 = { # Children of Garth the Gardener
+	legacy = gardener_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = gardener_legacy_2_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		reachman_opinion = 15
+		shieldman_opinion = 15
+		harborman_opinion = 5
+		honeywiner_opinion = 15
+		marcher_opinion = 15
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+gardener_legacy_3 = { # The Golden Reign
+	legacy = gardener_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = gardener_legacy_3_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		domain_tax_mult = 0.2
+		vassal_tax_mult = 0.2
+		general_opinion = 10
+		ironborn_opinion = -25
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+gardener_legacy_4 = { # House of Highgarden
+	legacy = gardener_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = gardener_legacy_4_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.15
+		stewardship = 5
+		monthly_stewardship_lifestyle_xp_gain_mult = 0.05
+		fort_level = 4
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+gardener_legacy_5 = { # Kings of the Reach
+	legacy = gardener_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = gardener_legacy_5_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_prestige_gain_per_knight_mult  = 0.02
+		knight_limit = 8
+		knight_effectiveness_mult = 0.5
+		legitimacy_gain_mult = 0.5
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+# TYRELL
+
+tyrell_legacy_1 = { # Our claim to Highgarden
+	legacy = tyrell_legacy_track
+
+	can_be_picked = { 
+		dynasty = dynasty:dynn_Tyrell
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = tyrell_legacy_1_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		reachman_opinion = 5
+		shieldman_opinion = 5
+		harborman_opinion = 5
+		honeywiner_opinion = 5
+		marcher_opinion = 5
+		diplomacy_per_prestige_level = 1
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+tyrell_legacy_2 = { # Warden of the South
+	legacy = tyrell_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = tyrell_legacy_2_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		controlled_province_advantage = 5
+		stone_dornish_opinion = -15
+		greenblood_opinion = -10
+		sand_dornish_opinion = -10
+		salt_dornish_opinion = -10
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+tyrell_legacy_3 = { # Lords of Highgarden
+	legacy = tyrell_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = tyrell_legacy_3_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.15
+		martial = 1
+		vassal_opinion = -10
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+tyrell_legacy_4 = { # Legacy as High Stewards
+	legacy = tyrell_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = tyrell_legacy_4_effect
+		}
+	}
+
+	traits = {
+		diligent = 100
+	}
+
+	character_modifier = {
+		stewardship = 2
+		monthly_stewardship_lifestyle_xp_gain_mult = 0.05
+		development_growth = 0.2
+		opinion_of_liege = 10
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+tyrell_legacy_5 = { # Lord Paramounts of the Mander
+	legacy = tyrell_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = tyrell_legacy_5_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_prestige_gain_per_knight_mult  = 0.01
+		knight_limit = 4
+		knight_effectiveness_mult = 0.50
+		legitimacy_gain_mult = 0.25
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+# HIGHTOWER
+
+hightower_legacy_1 = { # The Legendary King Uthor of the High Tower
+	legacy = hightower_legacy_track
+
+	can_be_picked = { 
+		dynasty = dynasty:dynn_Hightower
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = hightower_legacy_1_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		stewardship = 1
+		build_speed = -0.15
+		holding_build_speed = -0.15
+		domicile_build_speed = -0.15
+		build_gold_cost = -0.1
+		holding_build_gold_cost = -0.1
+		domicile_build_gold_cost = -0.1
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+hightower_legacy_2 = { # Patrons of the Citadel
+	legacy = hightower_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = hightower_legacy_2_effect
+		}
+	}
+
+	traits = {
+		lifestyle_mystic = 100
+	}
+
+	character_modifier = {
+		learning = 1
+		dynasty_house_opinion = 5
+		liege_opinion = 20
+		ai_rationality = 10
+		ai_greed = -10
+		ai_sociability = -5
+		ai_boldness = -5
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+hightower_legacy_3 = { # Patrons of the Faith of the Seven
+	legacy = hightower_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = hightower_legacy_3_effect
+		}
+	}
+
+	traits = {
+		shrewd = 100
+	}
+
+	character_modifier = {
+		same_faith_opinion = 30
+		monthly_piety = 0.5
+		clergy_opinion = 20
+		learning = 1
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+hightower_legacy_4 = { # The Hightower of Oldtown
+	legacy = hightower_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = hightower_legacy_4_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		diplomacy = 1
+		parochial_opinion = 10
+		vassal_opinion = 5
+		tributary_opinion = 5
+		epidemic_resistance = 10
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+hightower_legacy_5 = { # Mythical Heritage
+	legacy = hightower_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = hightower_legacy_5_effect
+		}
+	}
+
+	traits = {
+		arrogant = 100
+		ambitious = 100
+	}
+
+	character_modifier = {
+		health = 0.25
+		fertility = 0.1
+		stress_gain_mult = -0.2
+		years_of_fertility = 2
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+# BARATHEON
+
+baratheon_legacy_1 = { # Legacy of Orys Baratheon
+	legacy = baratheon_legacy_track
+
+	can_be_picked = { 
+		dynasty = dynasty:dynn_Baratheon
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = baratheon_legacy_1_effect
+		}
+	}
+
+	traits = {
+		physique_good_2 = 100
+	}
+
+	character_modifier = {
+		martial = 1
+		diplomacy = 1
+		dread_baseline_add = 10
+		tyranny_gain_mult = -0.2
+		dread_decay_mult = -0.15
+		dread_gain_mult = 0.1
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+baratheon_legacy_2 = { # Lord Paramounts of the Stormlands
+	legacy = baratheon_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = baratheon_legacy_2_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_prestige_gain_per_knight_mult  = 0.01
+		knight_limit = 4
+		knight_effectiveness_mult = 0.50
+		legitimacy_gain_mult = 0.25
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+baratheon_legacy_3 = { # Close ties to House Targaryen
+	legacy = baratheon_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = baratheon_legacy_3_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		opinion_of_liege = 20
+		attraction_opinion = 20
+		diplomacy = 1
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+baratheon_legacy_4 = { # Lords of Storm's End
+	legacy = baratheon_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = baratheon_legacy_4_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.15
+		martial = 1
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+baratheon_legacy_5 = { # Decendants of the Storm Kings
+	legacy = baratheon_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = baratheon_legacy_5_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		legitimacy_gain_mult = 0.2
+		prowess = 3
+		glory_hound_opinion = 10
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+# DURRANDON
+
+durrandon_legacy_1 = { # Bloodline of Elenei the daughter of gods
+	legacy = durrandon_legacy_track
+
+	can_be_picked = { 
+		dynasty = dynasty:dynn_Durrandon
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = durrandon_legacy_1_effect
+		}
+	}
+
+	traits = {
+		physique_good_2 = 100
+	}
+
+	character_modifier = {
+		legitimacy_gain_mult = 0.2
+		prowess = 1
+		glory_hound_opinion = 20
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+durrandon_legacy_2 = { # Storm's End the Castle defying the gods
+	legacy = durrandon_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = durrandon_legacy_2_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_county_control_growth_factor = 0.25
+		defender_advantage = 2
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+durrandon_legacy_3 = { # Legacy of Durran Godsgrief
+	legacy = durrandon_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = durrandon_legacy_3_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		stewardship = 2
+		negate_health_penalty_add = 0.1
+		owned_scheme_secrecy_add = -10
+		mountains_advantage = 2
+		majorroad_mountains_advantage = 2
+		minorroad_mountains_advantage = 2
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+durrandon_legacy_4 = { # Stormy like their weather
+	legacy = durrandon_legacy_track
+
+	can_be_picked = { 
+		always = yes 
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = durrandon_legacy_4_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		martial = 2
+		prowess = 1
+		parochial_opinion = -10
+		courtly_opinion = -10
+		dread_baseline_add = 20
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+durrandon_legacy_5 = { # Storm Kings
+	legacy = durrandon_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = durrandon_legacy_5_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_prestige_gain_per_knight_mult  = 0.01
+		knight_limit = 1
+		knight_effectiveness_mult = 0.1
+		legitimacy_gain_mult = 0.1
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+# MARTELL
+
+martell_legacy_1 = { # Heritage of Morgan Martell
+	legacy = martell_legacy_track
+
+	can_be_picked = { 
+		dynasty = dynasty:dynn_Martell
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = martell_legacy_1_effect
+		}
+	}
+
+	traits = {
+		eccentric = 100
+	}
+
+	character_modifier = {
+		character_travel_speed_mult = 0.1
+		learning = 1
+		diplomacy = 1
+		health = 0.05
+		monthly_wanderer_lifestyle_xp_gain_mult = 0.05
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+martell_legacy_2 = { # Andal Origins Rhoynish Traditions
+	legacy = martell_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = martell_legacy_2_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		fertility = 0.05
+		intrigue = 1
+		seduce_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+martell_legacy_3 = { # Princes of Dorne
+	legacy = martell_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = martell_legacy_3_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_prestige_gain_per_knight_mult  = 0.01
+		knight_limit = 2
+		knight_effectiveness_mult = 0.6
+		legitimacy_gain_mult = 0.15
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+martell_legacy_4 = { # Queen Nymeria’s Legacy
+	legacy = martell_legacy_track
+
+	can_be_picked = { 
+		always = yes 
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = martell_legacy_4_effect
+		}
+	}
+
+	traits = {
+		beauty_good_1 = 100
+	}
+
+	character_modifier = {
+		martial = 1
+		dread_baseline_add = 5
+		tyranny_gain_mult = -0.2
+		dread_decay_mult = -0.15
+		dread_gain_mult = 0.05
+		opinion_of_liege = -10
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+martell_legacy_5 = { # The Yellow Toad of Dorne
+	legacy = martell_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = martell_legacy_5_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		enemy_hostile_scheme_success_chance_add = -15
+		prowess = 1
+		attraction_opinion = 10
+		glory_hound_opinion = 10
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+# TARGARYEN
+
+targaryen_legacy_1 = { # Closer to Dragons than Men
+	legacy = targaryen_legacy_track
+
+	can_be_picked = { 
+		dynasty = dynasty:dynn_Targaryen
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = targaryen_legacy_1_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_prestige = 0.1
+		short_reign_duration_mult = -0.25
+		monthly_influence = 0.25
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+targaryen_legacy_2 = { # Legacy of Daenys the Dreamer
+	legacy = targaryen_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = targaryen_legacy_2_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		intrigue = 2
+		general_opinion = -10
+		high_valyrian_opinion = 25
+		dynasty_opinion = -75
+		dynasty_house_opinion = 25
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+targaryen_legacy_3 = { # Conquest, Tyranny, & Conciliation
+	legacy = targaryen_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = targaryen_legacy_3_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		martial = 1
+		dread_baseline_add = 15
+		diplomacy = 1
+		glory_hound_opinion = 25
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}
+
+targaryen_legacy_4 = { # Valyrian Knights
+	legacy = targaryen_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = targaryen_legacy_4_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		monthly_prestige_gain_per_knight_mult  = 0.04
+		knight_limit = 3
+		knight_effectiveness_mult = 0.25
+		legitimacy_gain_mult = 0.2
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+targaryen_legacy_5 = { # Balerion, Meraxes, & Vhagar
+	legacy = targaryen_legacy_track
+
+	can_be_picked = { 
+		always = yes
+	}
+
+	effect = {
+		custom_description_no_bullet = {
+			text = targaryen_legacy_5_effect
+		}
+	}
+
+	traits = {
+		
+	}
+
+	character_modifier = {
+		years_of_fertility = 5
+		prowess = 2
+	}
+	
+	ai_chance = {
+		value = 100
+	}
+}

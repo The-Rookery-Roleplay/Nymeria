@@ -1,0 +1,11 @@
+﻿
+l_english:
+ #Ruler Event for bending of limbs
+ amsb_court_event.0001.t:0 "Bend The Knee"
+ amsb_court_event.0001.desc:0 "Lord [bent_knees.GetFirstName] [bent_knees.GetDynasty.GetName] enters the throne room and slowly walks toward me.\n\n\"You've come to bend the knee, Lord [bent_knees.GetFirstNameNoTooltip]?\" \n\n\"I have, your grace,\" [bent_knees.GetSheHe] says as [bent_knees.GetSheHe] kneels before me.\n\n#bold "I, [bent_knees.GetFirstNameBase] of House [bent_knees.GetDynasty.GetNameNoTooltip], swear my loyalty to [ruler.GetFirstNameNoTooltip] of House [ruler.GetHouse.GetBaseNameNoTooltip], [Select_CString( ruler.IsFemale, 'Queen', 'King' )] of the Andals, the Rhoynar, and the First Men, Lord of the Seven Kingdoms, and Protector of the Realm.\"#! \n\nAfter a few seconds [bent_knees.GetHerHis] head tilts up, seeking my response."
+ amsb_court_event.0001.a:0 "@prestige_icon! I accept your oath of fealty."
+ amsb_court_event.0001.a_tt:0 "Blocked from joining a faction against you for 10 years."
+ amsb_court_event.0001.a_title.desc:0 "[bent_knees.GetName] has bent their knee and swore loyalty to the crown."
+ amsb_court_event.0001.a_title:0 "Vassal Bends The Knee"
+ amsb_court_event.0001.b:0 "@dread_icon! On second thought, enjoy the black cells!"
+ amsb_court_event.0001.c:0 "@death_icon! Sorry, but I called you here to die."

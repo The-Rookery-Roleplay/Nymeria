@@ -1,0 +1,93 @@
+﻿l_english:
+
+ citadel_trade_debug_decision:0 "Citadel Trade System"
+ citadel_trade_debug_decision_desc:0 "Open the debug trade system interface."
+
+ citadel_trade.0001.t:0 "Citadel Trade System"
+ citadel_trade.0001.d:0 "Select what you wish to do."
+
+ citadel_trade.0001.a:0 "Apply Buff"
+ citadel_trade.0001.b:0 "Apply Debuff"
+ citadel_trade.0001.c:0 "Remove All Trade Modifiers"
+ citadel_trade.0001.ct:0 "Removes ALL active Trade Modifiers."
+
+ citadel_trade.scope.t:0 "Application Scope"
+ citadel_trade.scope.d:0 "Who should receive the effects?"
+ citadel_trade.scope.a:0 "Only Me / My Holdings"
+ citadel_trade.scope.b:0 "Me, My Vassals and Their Holdings"
+
+ citadel_trade.duration.t:0 "Duration"
+ citadel_trade.duration.d:0 "How long should the modifier last?"
+ citadel_trade.duration.5:0 "5 Years"
+ citadel_trade.duration.10:0 "10 Years"
+ citadel_trade.duration.15:0 "15 Years"
+
+ citadel_trade.execute.t:0 "Trade Effects Applied"
+ citadel_trade.execute.d:0 "The trade system has been updated."
+
+ citadel_trade_debug_decision:0 "Citadel Trade System"
+ citadel_trade_debug_decision_desc:0 "Debug only tool. Apply or remove Citadel trade modifiers."
+
+ citadel_trade.0001.t:0 "Citadel Trade System"
+ citadel_trade.0001.d:0 "Select an action."
+
+ citadel_trade.0010.t:0 "Scope"
+ citadel_trade.0010.d:0 "Who should receive the modifiers?"
+
+ citadel_trade.0020.t:0 "Duration"
+ citadel_trade.0020.d:0 "How long should the modifiers last?"
+
+ citadel_trade.0030.t:0 "Select Modifier Group"
+ citadel_trade.0030.d:0 "Choose which group to apply."
+
+ citadel_trade.0040.t:0 "Citadel Trade System"
+ citadel_trade.0040.d:0 "Applied character modifier."
+
+ citadel_trade.0050.t:0 "Select Modifier Group"
+ citadel_trade.0050.d:0 "Choose which group to apply."
+
+ citadel_trade.0060.t:0 "Select Modifier Group"
+ citadel_trade.0060.d:0 "Choose which group to apply."
+
+ citadel_trade.0070.t:0 "Select County Modifier Group"
+ citadel_trade.0070.d:0 "Choose which county group to apply."
+
+ citadel_trade.0080.t:0 "Citadel Trade System"
+ citadel_trade.0080.d:0 "County modifiers applied."
+
+ citadel_trade.0090.t:0 "Remove All Trade Modifiers"
+ citadel_trade.0090.d:0 "This removes all Citadel trade modifiers from you and your realm."
+
+ citadel_trade.back:0 "Back"
+ citadel_trade.tier.t:0 "Select Tier"
+ citadel_trade.tier.d:0 "Choose Tier I, II, or III."
+ citadel_trade.tier.1:0 "Tier I"
+ citadel_trade.tier.2:0 "Tier II"
+ citadel_trade.tier.3:0 "Tier III"
+ citadel_trade.apply.t:0 "Citadel Trade System"
+ citadel_trade.apply.d:0 "Changes applied."
+
+ citadel_trade.group.construction:0 "Construction"
+ citadel_trade.group.health:0 "Health and Fertility"
+ citadel_trade.group.armymaint:0 "Army Maintenance"
+ citadel_trade.group.maaupkeep:0 "MAA Upkeep"
+ citadel_trade.group.publicimage:0 "Public Image"
+ citadel_trade.group.vassalop:0 "Vassal Opinion"
+ citadel_trade.group.luxury:0 "Luxury Deficit"
+ citadel_trade.group.iron:0 "Iron Deficit"
+
+ citadel_trade.group.fort:0 "Fortifications"
+ citadel_trade.group.travel:0 "Travel"
+ citadel_trade.group.shipcost:0 "Ship Cost"
+ citadel_trade.group.siege:0 "Siege Bonus"
+ citadel_trade.group.maa:0 "MAA Bonus"
+ citadel_trade.group.development:0 "Development"
+ citadel_trade.group.levy:0 "Levy"
+ citadel_trade.group.heavy:0 "Heavy Units"
+ citadel_trade.group.popular:0 "Popular Opinion"
+ citadel_trade.group.food:0 "Food Deficit"
+ citadel_trade.group.food_major:0 "Food Deficit Major"
+ citadel_trade.group.wood:0 "Wood Deficit"
+ citadel_trade.group.stone:0 "Stone Deficit"
+
+HOLDER_NOT_LANNISTER:0 "Holder cannot be a [GetDynastyByID('dynn_Lannister').GetName]!"

@@ -1,0 +1,86 @@
+﻿name_list_summer_valyrian = {
+
+    dynasty_names = {
+        "dynn_Anogaryen" "dynn_Atroksiarys" "dynn_Daomiorys" "dynn_Embaryen" "dynn_Gelenkys"
+        "dynn_Gelionar" "dynn_Gryvetheon" "dynn_Hoskagys" "dynn_Haedaryen" "dynn_Ilirigys"
+        "dynn_Jelmazeon" "dynn_Jentys" "dynn_Kastaryen" "dynn_Kostagar" "dynn_Mazigonys"
+        "dynn_Ondoryen" "dynn_Perzys" "dynn_Qogrorys" "dynn_Syzeon"
+        "dynn_Tresys" "dynn_Belaerys" "dynn_Zaldrizyen" "dynn_Manaereon" "dynn_Urnebar"
+        "dynn_Sonaryen" "dynn_Kessatheon" "dynn_Bevilar" "dynn_Ezimatheon" "dynn_Laeseon"
+        "dynn_Jenqeleon" "dynn_Pirtiryen" "dynn_Sytivilar" "dynn_Tistaleon" "dynn_Qupteneon"
+        "dynn_Nuqiryen" "dynn_Orbareon" "dynn_Quvyar" "dynn_Valzyren" "dynn_Ilontheon"
+        "dynn_Boniryen" "dynn_Jorraezys" "dynn_Quptys" "dynn_Tyvar" "dynn_Jomozar"
+        "dynn_Huretheon" "dynn_Ruakys" "dynn_Celereon" "dynn_Jaeganyon" "dynn_Arranion"
+        "dynn_Vezenkar" "dynn_Unendia" "dynn_Voksia" "dynn_Galgaeron" "dynn_Laergyr"
+        "dynn_Enreos" "dynn_Merntys" "dynn_Maznareon" "dynn_Henaeris" "dynn_Ronnon"
+        "dynn_Haeteros" "dynn_Gevgarys" "dynn_Hurys" "dynn_Pyllyr" "dynn_Raegaros"
+    }
+
+    #Temp, Copied from HV
+    male_names = {
+        15 = {
+            Aemon Daeron Jaehaerys Viserys Bearaxes Bearlerion Beargar
+        }
+        65 = {
+            Aegor Aelor Aelyx Aenar Aenys Aerion Aeryn Aerys Aethan
+            Baelon Baelor
+            Daemion Daemon
+            Gaemon
+            Haegon
+            Maegon Maekar Maelor Maelys Maenar Matarys
+            Rhaegar Rhaegel
+            Vaegon Valarr Valerion
+            Balaq Bokkoko
+            Ithoke
+            Jalabhar
+            Malthar
+            Quhuru
+            Sandoq
+            Tal
+            Xhobar Xhondo
+        }
+        5 = {
+            Aemond Maegor
+        }
+    }
+    female_names = {
+        20 = { # most common
+            Daenerys Rhaena Rhaenys
+        }
+        80 = { # most common
+            Aelinor Aelora Aemma Aerea Alysanne Alyssa Alaerys
+            Baela
+            Daella Daena Daenaera Daenys Daeryssa
+            Elaena
+            Gael
+            Helaena
+            Jaehaera Jaenara
+            Maegelle
+            Naerys
+            Rhae Rhaella Rhaelle Rhaenyra
+            Saera Shaena Shaera
+            Vaella Valaena Visenya Viserra
+            Alayaya
+            Chatana Chataya
+            Kojja
+            Xanda
+        }
+    }
+    dynasty_of_location_prefix = "dynnp_of"
+
+    # Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+    pat_grf_name_chance = 15
+    mat_grf_name_chance = 5
+    father_name_chance = 5
+
+    # Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+    pat_grm_name_chance = 10
+    mat_grm_name_chance = 15
+    mother_name_chance = 5
+
+
+
+    mercenary_names = {
+        #{ name = "mercenary_company_teutonic_brotherhood" }
+    }
+}

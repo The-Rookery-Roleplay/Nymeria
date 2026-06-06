@@ -1,0 +1,115 @@
+namespace = baelish_franchise
+
+####################################
+# Monthly franchise income
+####################################
+
+baelish_franchise.0001 = {
+    type = character_event
+    hidden = yes
+
+    trigger = {
+        
+
+        OR = {
+            has_character_flag = baelish_franchise_used_1
+            has_character_flag = baelish_franchise_used_2
+            has_character_flag = baelish_franchise_used_3
+            has_character_flag = baelish_franchise_used_4
+            has_character_flag = baelish_franchise_used_5
+        }
+    }
+
+    immediate = {
+        custom_tooltip = baelish_franchise_tt_monthly_income
+        if = { limit = { has_character_flag = baelish_franchise_used_1 } add_gold = 62.5 }
+        if = { limit = { has_character_flag = baelish_franchise_used_2 } add_gold = 62.5 }
+        if = { limit = { has_character_flag = baelish_franchise_used_3 } add_gold = 62.5 }
+        if = { limit = { has_character_flag = baelish_franchise_used_4 } add_gold = 62.5 }
+        if = { limit = { has_character_flag = baelish_franchise_used_5 } add_gold = 62.5 }
+    }
+
+    option = { name = OK }
+}
+
+baelish_franchise.0002 = {
+    type = character_event
+    title = baelish_franchise_title
+    desc = baelish_franchise_desc
+    theme = stewardship_wealth_focus 
+    left_portrait = {   
+        character = ROOT     
+        animation = steward 
+    }
+    
+    trigger = {
+        has_character_flag = baelish_franchise_used_1
+        NOT = { has_character_flag = baelish_franchise_suppress_income_popup }
+    }
+
+    immediate = {
+
+        if = {
+            limit = { has_character_flag = baelish_franchise_used_5 }
+            custom_tooltip = baelish_franchise_tt_income_3125
+        }
+        else_if = {
+            limit = { has_character_flag = baelish_franchise_used_4 }
+            custom_tooltip = baelish_franchise_tt_income_250
+        }
+        else_if = {
+            limit = { has_character_flag = baelish_franchise_used_3 }
+            custom_tooltip = baelish_franchise_tt_income_1875
+        }
+        else_if = {
+            limit = { has_character_flag = baelish_franchise_used_2 }
+            custom_tooltip = baelish_franchise_tt_income_125
+        }
+        else_if = {
+            limit = { has_character_flag = baelish_franchise_used_1 }
+            custom_tooltip = baelish_franchise_tt_income_625
+        }
+    }
+
+    option = {
+        name = baelish_franchise.0001.a
+    }
+
+    option = {
+        name = baelish_franchise.0002.b
+        custom_tooltip = baelish_franchise_tt_disable_income_popup
+        add_character_flag = baelish_franchise_suppress_income_popup
+    }
+}
+
+####################################
+# Franchise cleanup on founder death
+####################################
+
+baelish_franchise.1000 = {
+    type = character_event
+    hidden = yes
+
+    trigger = {
+        has_character_flag = baelish_franchise_founder
+    }
+
+    immediate = {
+        every_county = {
+            limit = {
+                title_province = {
+                    has_province_modifier = baelish_franchise_bordello_modifier
+                }
+            }
+
+            title_province = {
+                if = { limit = { has_building = bordello_littlefinger } remove_building = bordello_littlefinger }
+                if = { limit = { has_province_modifier = extra_building_slot } remove_province_modifier = extra_building_slot }
+                if = { limit = { has_province_modifier = baelish_franchise_bordello_modifier } remove_province_modifier = baelish_franchise_bordello_modifier }
+                if = { limit = { exists = var:baelish_franchise_owner } remove_variable = baelish_franchise_owner }
+            }
+        }
+    }
+
+    option = { name = OK }
+}

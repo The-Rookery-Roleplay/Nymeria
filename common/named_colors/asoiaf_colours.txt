@@ -1,0 +1,190 @@
+colors = {
+	#vanilla colours (converted to ASOIAF)
+	asoiaf_red 			= hsv { 0.02 0.8 0.45 } #732217ff
+	asoiaf_blue 		= hsv { 0.58 0.8 0.4 } #143f66ff
+	asoiaf_yellow		= hsv { 0.1 0.75 0.75 } #bf8630ff
+	asoiaf_green		= hsv { 0.35 0.6 0.30 } #1f4d23ff
+	asoiaf_black		= hsv { 0.1 0.25 0.10 } #1A1313ff
+	asoiaf_white		= hsv { 0.08 0.02 0.8 } #CCCAC8ff
+	asoiaf_purple 		= hsv { 0.9 0.7 0.35 } #591b40ff
+	asoiaf_orange 		= hsv { 0.064 1 0.6 } #993b00ff
+	asoiaf_grey 		= hsv { 0.0 0.0 0.50 } #808080ff (?)
+	asoiaf_brown 		= hsv360 { 021 074 045 }
+	asoiaf_blue_light	= hsv { 0.58 0.70 0.55 } #2a5d8cff
+	asoiaf_green_light	= hsv { 0.35 0.50 0.40 }
+	asoiaf_yellow_light = hsv { 0.1 0.80 1.0 }
+	
+	#ASOIAF COLOURS
+	#Whites
+	asoiaf_white_dark				= rgb { 183 175 166 }
+	asoiaf_white_dark_warm 			= rgb { 180 177 157 }
+	asoiaf_bone_dark 				= rgb { 206 200 177 }
+	asoiaf_white_yellow_undertone 	= rgb { 213 197 158 }
+	asoiaf_bone_dark_warm 			= rgb { 211 197 171 }
+	asoiaf_bone_medium 				= rgb { 213 206 178 }
+	asoiaf_bone_medium_pale 		= rgb { 208 208 181 }
+	asoiaf_bone_light_warm 			= rgb { 227 220 192 }
+	asoiaf_steel_white 				= rgb { 209 208 201 }
+	asoiaf_white_blue_undertone		= rgb { 193 197 226 }
+	asoiaf_bone_light				= rgb { 212 203 188 }
+	
+	#Browns
+	asoiaf_burgundy_dark			= rgb { 57 29 34 }
+	asoiaf_brown_dark 				= rgb { 64 46 38 }
+	asoiaf_brown_medium				= rgb { 89 64 53 }
+	asoiaf_brown_light 				= rgb { 114 89 66 }
+	asoiaf_brown_orange_undertone 	= rgb { 143 88 51 }
+	
+	#Blacks/Greys
+	asoiaf_black_deep			= rgb { 0 0 0 }
+	asoiaf_black_alt			= rgb { 38 38 38 } #262626
+	asoiaf_black_light 			= rgb { 38 48 57 }
+	asoiaf_grey_dark 			= rgb { 80 80 80 }
+	asoiaf_grey_medium			= rgb {	118 118 118 }
+	asoiaf_grey_medium_light 	= rgb { 125 125 125 }
+	asoiaf_grey_light_warm 		= rgb { 154 154 142 }
+	asoiaf_grey_light 			= rgb { 169 169 169 }
+	
+	#Purples
+	asoiaf_purple_medium 	= rgb { 104 49 89 }
+	asoiaf_violet			= rgb { 75 51 116 }
+	asoiaf_indigo 			= rgb { 39 38 89 }
+	asoiaf_lilac			= rgb { 121 112 137 }
+	
+	#Blues
+	asoiaf_blue_dark_deep	 	 = rgb { 25 23 60 }
+	asoiaf_blue_dark			 = rgb { 11 38 64 }
+	asoiaf_blue_indigo_undertone = rgb { 32 35 78 }
+	asoiaf_blue_medium 			 = rgb { 51 70 113 }
+	asoiaf_blue_grey			 = rgb { 120 129 141 }
+	
+	#Blue-Greens
+	asoiaf_sea_green_dark_deep	= rgb { 10 90 100 }
+	asoiaf_sea_green_dark 		= rgb { 39 94 90 }
+	asoiaf_sea_green_medium		= rgb { 60 128 101 }
+	asoiaf_sea_green_light 		= rgb { 27 142 136 }
+	
+	#Greens
+	asoiaf_green_blue_undertone = rgb { 0 87 70 }
+	asoiaf_green_cool_undertone = rgb { 36 79 59 }
+	asoiaf_green_warm_undertone = rgb { 38 74 29 }
+	asoiaf_field_green_warm 	= rgb { 104 110 65 }
+	asoiaf_field_green_dark		= rgb { 90 95 55 }
+	asoiaf_field_green_medium 	= rgb { 107 124 94 }
+	asoiaf_field_green_light 	= rgb { 123  144 111 }
+	asoiaf_green_bright 		= rgb { 98 133 84 }
+
+	#Yellows/Golds
+	asoiaf_yellow_light_dull 		= rgb { 195 165 77 }
+	asoiaf_yellow_bright 			= rgb { 222 177 57 }
+	asoiaf_yellow_bright_special 	= rgb { 252 223 85 }
+	asoiaf_sand_warm				= rgb { 167 152 103 }
+	asoiaf_sand_pale 				= rgb { 166 154 117 }
+	asoiaf_sand_light 				= rgb { 194  173 109 }
+	asoiaf_cream_yellow_undertone 	= rgb { 218 218 160 }
+	
+	#Oranges
+	asoiaf_bronze_dark			= rgb {	133	83 33 } ##################
+	asoiaf_orange_medium 		= rgb { 161 85 33 }
+	asoiaf_orange_light 		= rgb { 204 105 36 }
+	asoiaf_orange_light_warm	= rgb { 203 110 29 }
+	asoiaf_orange_light_dull  	= rgb { 191 117 50 }
+	asoiaf_bronze_light			= rgb { 205 127 50 }
+	
+	#Reds
+	asoiaf_red_dark_purple_undertone	= rgb { 66 3 24 }
+	asoiaf_red_purple_undertone 		= rgb { 121 22 59 }
+	asoiaf_red_dark 					= rgb { 95 17 13 }
+	asoiaf_murrey_light					= rgb { 150 52 72 }
+	asoiaf_red_light					= rgb { 165 47 45 }
+	asoiaf_rose_dark					= rgb { 174 67 47 }
+	asoiaf_rose_medium_dark				= rgb { 184 71 69 }
+	asoiaf_rose_medium					= rgb { 179 125 125 }
+	asoiaf_rose_light    				= rgb { 217 146 146 }
+	asoiaf_pink							= rgb { 218 120 120 }
+	asoiaf_pink_pale					= rgb { 234 191 162 }
+	
+	
+	
+	
+	#AGOT OVERWRITE COLOURS: MADE TO MATCH THE ONES ABOVE
+	#vanilla colours (converted to AGOT)
+	agot_red 			= hsv {		0.02 	0.8 	0.45 	} #732217ff
+	agot_blue 		= hsv {		0.58 	0.8 	0.4 	} #143f66ff
+	agot_yellow		= hsv {		0.1 	0.75 	0.75 	} #bf8630ff
+	agot_green		= hsv {		0.35 	0.6 	0.30 	} #1f4d23ff
+	agot_black		= hsv {		0.1 	0.25 	0.10 	} #1A1313ff
+	agot_white		= hsv {		0.08 	0.02 	0.8 	} #CCCAC8ff
+	agot_purple 		= hsv {		0.9 	0.7 	0.35 	} #591b40ff
+	agot_orange 		= hsv {		0.064 	1 		0.6 	} #993b00ff
+	agot_grey 		= hsv {		0.0 	0.0 	0.50 	} #808080ff (?)
+	agot_brown 		= hsv360 {	021 	074 	045		}
+	agot_blue_light	= hsv {		0.58 	0.70 	0.55 	} #2a5d8cff
+	agot_green_light	= hsv {		0.35 	0.50 	0.40 	}
+	agot_yellow_light = hsv {		0.1 	0.80 	1.0 	}
+	
+	#AGOT COA COLOURS
+	#Whites
+	agot_bone					= rgb { 212 203 188 } #ASOIAF UPDATED
+	agot_cream 					= rgb { 213 197 158 } #ASOIAF UPDATED
+	
+	#Browns
+	agot_burgundy				= rgb { 66 3 24 } #ASOIAF UPDATED
+	agot_mud					= rgb { 78 56 43 } #ASOIAF UPDATED
+	agot_russet					= rgb { 85 44 24 } #ASOIAF UPDATED
+	agot_brown_dark 			= rgb { 64 46 38 } #ASOIAF UPDATED
+	agot_brown_light 			= rgb { 114 89 66 } #ASOIAF UPDATED
+	agot_bronze 				= rgb { 143 88 51 } #ASOIAF UPDATED
+	agot_copper					= rgb { 150 86 42 } #ASOIAF UPDATED
+	
+	#Blacks/Greys
+	agot_black_light		= rgb { 38 38 38 } #ASOIAF UPDATED
+	agot_charcoal 			= rgb { 38 48 57 } #ASOIAF UPDATED
+	agot_smoke				= rgb { 92 78 78 }
+	agot_silver				= rgb { 183 175 166 } #ASOIAF UPDATED
+	agot_grey_dark			= rgb { 78 78 78 } #ASOIAF UPDATED
+	agot_grey_light 		= rgb { 169 169 169 } #ASOIAF UPDATED
+	
+	#Purples
+	agot_violet			= rgb { 74 58 102 } #ASOIAF UPDATED
+	agot_indigo 		= rgb { 39 38 89 } #ASOIAF UPDATED
+	agot_lilac			= rgb { 121 112 137 } #ASOIAF UPDATED
+	agot_violet_light	= rgb { 85 67 116 } #ASOIAF UPDATED
+	
+	#Blues
+	agot_blue_dark			= rgb { 11 38 64 } #ASOIAF UPDATED
+	agot_blue_sky			= rgb { 80 107 133 } #ASOIAF UPDATED
+	agot_blue_grey 			= rgb { 51 70 113 } #ASOIAF UPDATED
+	
+	#Blue-Greens
+	agot_teal				= rgb { 10 90 100 } #ASOIAF UPDATED
+	agot_turquoise			= rgb { 27 142 136 } #ASOIAF UPDATED
+	agot_sea_green			= rgb { 39 94 90 } #ASOIAF UPDATED
+	
+	#Greens
+	agot_green_dark				= rgb {1 60 21} #ASOIAF UPDATED (unchanged)
+	agot_olive			 		= rgb { 90 95 55 } #ASOIAF UPDATED
+	agot_green_grey				= rgb { 111 129 98 } #ASOIAF UPDATED
+	
+	#Yellows/Golds
+	agot_gold					= hsv {		0.1 	0.75 	0.75 	} #ASOIAF UPDATED
+	agot_sand					= rgb { 194  173 109 } #ASOIAF UPDATED
+	
+	#Oranges
+	agot_orange_light 		= rgb { 187 104 47 } #ASOIAF UPDATED
+	agot_oak				= rgb { 89 64 53 } #ASOIAF UPDATED
+
+	#Reds
+	agot_mud_red 					= rgb { 106 42 17 } #ASOIAF UPDATED
+	agot_rust						= rgb { 129 55 29 } #ASOIAF UPDATED
+	agot_scarlet					= rgb { 133 22 0 } #ASOIAF UPDATED
+	agot_crimson					= rgb { 102 0 26 } #ASOIAF UPDATED
+
+	agot_red_dark 		  			= rgb { 95 17 13 } #ASOIAF UPDATED
+	agot_red_light		  			= rgb { 165 47 45 } #ASOIAF UPDATED
+	agot_rose						= rgb { 150 52 72 } #ASOIAF UPDATED
+	agot_pink			  			= rgb { 179 125 125 } #ASOIAF UPDATED
+	agot_carnation		  			= rgb {229 181 148} #ASOIAF UPDATED (unchanged)
+}
+
+	

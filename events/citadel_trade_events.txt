@@ -1,0 +1,212 @@
+# namespace = citadel_trade
+
+# # ------------------------------------------------------------
+# # 0001 MAIN MENU
+# # ------------------------------------------------------------
+# citadel_trade.0001 = {
+#     type = character_event
+#     title = citadel_trade.0001.t
+#     desc = citadel_trade.0001.d
+#     is_triggered_only = yes
+
+#     immediate = {
+#         clear_variable = citadel_scope
+#         clear_variable = citadel_years
+#         clear_variable = citadel_group
+#         clear_variable = citadel_tier
+#         clear_variable = citadel_pick
+#     }
+
+#     option = {
+#         name = "Apply Buffs"
+#         root = { trigger_event = { id = citadel_trade.0100 } }
+#     }
+
+#     option = {
+#         name = "Apply Debuffs"
+#         root = { trigger_event = { id = citadel_trade.0200 } }
+#     }
+
+#     option = {
+#         name = "Remove All Trade Modifiers"
+#         root = { trigger_event = { id = citadel_trade.0090 } }
+#     }
+
+#     option = { name = "Close" }
+# }
+
+# # ============================================================
+# # BUFF CHAIN
+# # ============================================================
+
+# citadel_trade.0100 = {
+#     type = character_event
+#     title = "Buff Group"
+#     desc = "Choose a buff group."
+#     is_triggered_only = yes
+
+#     option = { name = "Construction"       set_variable = { name = citadel_group value = 101 } root = { trigger_event = { id = citadel_trade.0110 } } }
+#     option = { name = "Health & Fertility" set_variable = { name = citadel_group value = 102 } root = { trigger_event = { id = citadel_trade.0110 } } }
+#     option = { name = "Army Maintenance"   set_variable = { name = citadel_group value = 103 } root = { trigger_event = { id = citadel_trade.0110 } } }
+#     option = { name = "MAA Upkeep"         set_variable = { name = citadel_group value = 104 } root = { trigger_event = { id = citadel_trade.0110 } } }
+#     option = { name = "Public Image"       set_variable = { name = citadel_group value = 105 } root = { trigger_event = { id = citadel_trade.0110 } } }
+#     option = { name = "Vassal Opinion"     set_variable = { name = citadel_group value = 106 } root = { trigger_event = { id = citadel_trade.0110 } } }
+
+#     option = { name = "Back" root = { trigger_event = { id = citadel_trade.0001 } } }
+# }
+
+# citadel_trade.0110 = {
+#     type = character_event
+#     title = "Tier"
+#     desc = "Choose tier."
+#     is_triggered_only = yes
+
+#     option = { name = "Tier I"   set_variable = { name = citadel_tier value = 1 } root = { trigger_event = { id = citadel_trade.0120 } } }
+#     option = { name = "Tier II"  set_variable = { name = citadel_tier value = 2 } root = { trigger_event = { id = citadel_trade.0120 } } }
+#     option = { name = "Tier III" set_variable = { name = citadel_tier value = 3 } root = { trigger_event = { id = citadel_trade.0120 } } }
+
+#     option = { name = "Back" root = { trigger_event = { id = citadel_trade.0100 } } }
+# }
+
+# citadel_trade.0120 = {
+#     type = character_event
+#     title = "Scope"
+#     desc = "Who should receive it?"
+#     is_triggered_only = yes
+
+#     option = { name = "Only Me"      set_variable = { name = citadel_scope value = 1 } root = { trigger_event = { id = citadel_trade.0130 } } }
+#     option = { name = "Me + Vassals" set_variable = { name = citadel_scope value = 2 } root = { trigger_event = { id = citadel_trade.0130 } } }
+
+#     option = { name = "Back" root = { trigger_event = { id = citadel_trade.0110 } } }
+# }
+
+# citadel_trade.0130 = {
+#     type = character_event
+#     title = "Duration"
+#     desc = "How long?"
+#     is_triggered_only = yes
+
+#     option = { name = "5 Years"  set_variable = { name = citadel_years value = 5 }  root = { trigger_event = { id = citadel_trade.0140 } } }
+#     option = { name = "10 Years" set_variable = { name = citadel_years value = 10 } root = { trigger_event = { id = citadel_trade.0140 } } }
+#     option = { name = "15 Years" set_variable = { name = citadel_years value = 15 } root = { trigger_event = { id = citadel_trade.0140 } } }
+
+#     option = { name = "Back" root = { trigger_event = { id = citadel_trade.0120 } } }
+# }
+
+# citadel_trade.0140 = {
+#     type = character_event
+#     title = "Done"
+#     desc = "Buff applied."
+#     is_triggered_only = yes
+
+#     immediate = {
+#         set_variable = { name = citadel_pick value = var:citadel_group }
+#         multiply_variable = { name = citadel_pick value = 10 }
+#         add_to_variable = { name = citadel_pick value = var:citadel_tier }
+
+#         root = { trigger_event = { id = citadel_trade.0400 } }
+
+#         if = {
+#             limit = { check_variable = { name = citadel_scope value = 2 } }
+#             every_vassal_or_below = {
+#                 limit = { is_alive = yes }
+#                 trigger_event = { id = citadel_trade.0400 }
+#             }
+#         }
+#     }
+
+#     option = { name = "OK" }
+#     option = { name = "Back" root = { trigger_event = { id = citadel_trade.0130 } } }
+# }
+
+# # ============================================================
+# # DEBUFF CHAIN
+# # ============================================================
+
+# citadel_trade.0200 = {
+#     type = character_event
+#     title = "Debuff Group"
+#     desc = "Choose a debuff group."
+#     is_triggered_only = yes
+
+#     option = {
+#         name = "Luxury Deficit"
+#         set_variable = { name = citadel_group value = 201 }
+#         root = { trigger_event = { id = citadel_trade.0210 } }
+#     }
+
+#     option = {
+#         name = "Iron Deficit"
+#         set_variable = { name = citadel_group value = 202 }
+#         root = { trigger_event = { id = citadel_trade.0210 } }
+#     }
+
+#     option = {
+#         name = "Back"
+#         root = { trigger_event = { id = citadel_trade.0001 } }
+#     }
+# }
+
+# citadel_trade.0210 = {
+#     type = character_event
+#     title = "Tier"
+#     desc = "Choose tier."
+#     is_triggered_only = yes
+
+#     option = { name = "Tier I"   set_variable = { name = citadel_tier value = 1 } root = { trigger_event = { id = citadel_trade.0220 } } }
+#     option = { name = "Tier II"  set_variable = { name = citadel_tier value = 2 } root = { trigger_event = { id = citadel_trade.0220 } } }
+#     option = { name = "Tier III" set_variable = { name = citadel_tier value = 3 } root = { trigger_event = { id = citadel_trade.0220 } } }
+
+#     option = { name = "Back" root = { trigger_event = { id = citadel_trade.0200 } } }
+# }
+
+# citadel_trade.0220 = {
+#     type = character_event
+#     title = "Scope"
+#     desc = "Who should receive it?"
+#     is_triggered_only = yes
+
+#     option = { name = "Only Me"      set_variable = { name = citadel_scope value = 1 } root = { trigger_event = { id = citadel_trade.0230 } } }
+#     option = { name = "Me + Vassals" set_variable = { name = citadel_scope value = 2 } root = { trigger_event = { id = citadel_trade.0230 } } }
+
+#     option = { name = "Back" root = { trigger_event = { id = citadel_trade.0210 } } }
+# }
+
+# citadel_trade.0230 = {
+#     type = character_event
+#     title = "Duration"
+#     desc = "How long?"
+#     is_triggered_only = yes
+
+#     option = { name = "5 Years"  set_variable = { name = citadel_years value = 5 }  root = { trigger_event = { id = citadel_trade.0240 } } }
+#     option = { name = "10 Years" set_variable = { name = citadel_years value = 10 } root = { trigger_event = { id = citadel_trade.0240 } } }
+#     option = { name = "15 Years" set_variable = { name = citadel_years value = 15 } root = { trigger_event = { id = citadel_trade.0240 } } }
+
+#     option = { name = "Back" root = { trigger_event = { id = citadel_trade.0220 } } }
+# }
+
+# citadel_trade.0240 = {
+#     type = character_event
+#     title = "Done"
+#     desc = "Debuff applied."
+#     is_triggered_only = yes
+
+#     immediate = {
+#         set_variable = { name = citadel_pick value = var:citadel_group }
+#         multiply_variable = { name = citadel_pick value = 10 }
+#         add_to_variable = { name = citadel_pick value = var:citadel_tier }
+
+#         root = { trigger_event = { id = citadel_trade.0400 } }
+
+#         if = {
+#             limit = { check_variable = { name = citadel_scope value = 2 } }
+#             every_vassal_or_below = {
+#                 limit = { is_alive = yes }
+#                 trigger_event = { id = citadel_trade.0400 }
+#             }
+#         }
+#     }
+
+#     option = { name = "OK" }
+#     option = { name = "Back" root = { trigger_event = { id = citadel_trade.0230 } } }
+# }

@@ -1,0 +1,10 @@
+﻿l_french:
+ #Ruler Event for bending of limbs
+ amsb_court_event.0001.t:0 "Plier le Genou"
+ amsb_court_event.0001.desc:0 "Lord [bent_knees.GetFirstName] [bent_knees.GetDynasty.GetName] pénètre dans la salle du trône et s'avance lentement vers moi.\n\n\"Vous êtes venu[bent_knees.GetCharacterFeminineForm|E] plier le genou, Lord [bent_knees.GetFirstNameNoTooltip] ?\"\n\n\"En effet, Votre Grâce,\" dit [bent_knees.GetSheHe] en s'agenouillant devant moi.\n\n#bold \"Moi, [bent_knees.GetFirstNameBase] de la Maison [bent_knees.GetDynasty.GetNameNoTooltip], jure ma loyauté à [ruler.GetFirstNameNoTooltip] de la Maison [ruler.GetHouse.GetBaseNameNoTooltip], [Select_CString( ruler.IsFemale, 'Reine', 'Roi' )] des Andals, des Rhoynars et des Premiers Hommes, Seigneur des Sept Couronnes et Protecteur du Royaume.\"#!\n\nAprès quelques secondes, [bent_knees.GetHerHis] tête se relève, quêtant ma réponse."
+ amsb_court_event.0001.a:0 "@prestige_icon! J'accepte votre serment de féauté."
+ amsb_court_event.0001.a_tt:0 "Empêché[bent_knees.GetCharacterFeminineForm|E] de rejoindre une faction contre vous pendant 10 ans."
+ amsb_court_event.0001.a_title.desc:0 "[bent_knees.GetName] a plié le genou et juré loyauté à la couronne."
+ amsb_court_event.0001.a_title:0 "Le Vassal Plie le Genou"
+ amsb_court_event.0001.b:0 "@dread_icon! À la réflexion, savourez les cellules noires !"
+ amsb_court_event.0001.c:0 "@death_icon! Désolé[ROOT.Char.GetCharacterFeminineForm|E], mais je vous ai fait venir ici pour mourir."

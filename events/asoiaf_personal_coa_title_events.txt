@@ -1,0 +1,449 @@
+﻿namespace = asoiaf_personal_coa_title_events
+
+asoiaf_personal_coa_title_events.1 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = rodrick_ryswell_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.2 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = barbery_dustin_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.3 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = benfrey_frey_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.4 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = aemon_rivers_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.5 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = garlan_tyrell_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.6 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = loras_tyrell_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.7 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = bryden_blackfish_tully_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.8 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = cleos_frey_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.9 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = euron_greyjoy_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.10 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = hotho_harlaw_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.11 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = harras_harlaw_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.12 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = boremund_harlaw_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.13 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = sigfryd_harlaw_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.14 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa has_game_rule = asoiaf_alternative_arryn_sigil_rule_off }
+				every_held_title = { set_coa = rhaenrya_personal_coa }
+			}
+			if = {
+				limit = { has_character_flag = has_personal_coa has_game_rule = asoiaf_alternative_arryn_sigil_rule_on }
+				every_held_title = { set_coa = rhaenrya_personal_coa_alt }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.15 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = aegon_ii_personal_arms }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.16 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = daemon_targaryen_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.17 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = aegor_bittersteel_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.18 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = {
+					has_character_flag = has_personal_coa
+					NOR = {
+						has_trait = nightswatch_historical
+						has_trait = nightswatch
+					}
+				}
+				every_held_title = { set_coa = brynden_bloodraven_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.19 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = daemon_iii_blackfyre_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.20 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = valarr_targaryen_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.21 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = maekar_targaryen_personal_arms }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.22 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = daeron_targaryen_personal_arms }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.23 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = aerion_targaryen_personal_arms }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.24 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = robert_blackwood_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.25 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = roland_blackwood_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.26 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = roger_blackwood_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.27 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = robb_stark_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.28 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa has_game_rule = asoiaf_alternative_arryn_sigil_rule_off }
+				every_held_title = { set_coa = harrold_hardyng_personal_coa }
+			}
+			if = {
+				limit = { has_character_flag = has_personal_coa has_game_rule = asoiaf_alternative_arryn_sigil_rule_on }
+				every_held_title = { set_coa = harrold_hardyng_personal_coa_alt }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.29 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = hugh_of_the_vale_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.30 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = viserys_I_targaryen_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.31 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa has_game_rule = asoiaf_alternative_dayne_sigil_rule_off }
+				every_held_title = { set_coa = gerold_dayne_personal_coa }
+			}
+			if = {
+				limit = { has_character_flag = has_personal_coa has_game_rule = asoiaf_alternative_dayne_sigil_rule_on }
+				every_held_title = { set_coa = gerold_dayne_personal_coa_alt }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.32 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = lancel_lannister_personal_coa }
+			}
+		}
+	}
+}
+asoiaf_personal_coa_title_events.33 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		root = {
+			if = {
+				limit = { has_character_flag = has_personal_coa }
+				every_held_title = { set_coa = dorkstar_personal_coa_alt }
+			}
+		}
+	}
+}
