@@ -163,7 +163,6 @@ crownlander_legacy_1 = {
 	
 	character_modifier = {
 		accolade_glory_gain_mult = 0.25
-		active_accolades = 1
 		prowess = 1
 	}
 }
@@ -1249,7 +1248,6 @@ sisterman_legacy_4 = {
     	enemy_hard_casualty_modifier = 0.1
 		siege_morale_loss = 0.1
 		health = 0.2
-		valeman_opinion = -10
 		sisterman_opinion = 25
 	}
 

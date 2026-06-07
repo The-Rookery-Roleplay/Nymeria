@@ -1,0 +1,123 @@
+﻿### Citadel Bodyguard orders - enable the knightly orders at game start + keep members landless. - Kizan
+# The order variable on the empire title is vestigial (the gate trigger checks primary_title = title:X directly),
+# kept for parity with how AGOT flags the Iron Throne. Gates: Vale=e_the_vale, Reach=e_the_reach, Dorne=e_dorne,
+# Stormlands=e_the_stormlands, Riverlands=e_the_riverlands, Westerlands=e_the_westerlands,
+# Iron Islands=e_the_iron_islands, North=e_the_north.
+
+on_game_start_after_lobby = {
+	effect = {
+		if = {
+			limit = { exists = title:e_the_vale }
+			title:e_the_vale = { set_variable = winged_knight }
+		}
+		if = {
+			limit = { exists = title:e_the_reach }
+			title:e_the_reach = { set_variable = green_knight }
+		}
+	}
+}
+
+# Free up a slot when a member dies. AGOT's on_death only fires agot_kingsguard.1000 (the default order), so our
+# orders' .1000 maintenance events (which clear the dead member's slot variable + vacate the position) never ran.
+# Each .1000 self-gates on its own trait/position, so firing all eight on every death is safe. - Kizan
+on_death = {
+	events = {
+		agot_winged_knight.1000
+		agot_green_knight.1000
+		agot_sun_knight.1000
+		agot_storm_knight.1000
+		agot_loyal_knight.1000
+		agot_golden_knight.1000
+		agot_saltguard.1000
+		agot_winter_wolf.1000
+	}
+	effect = {
+		# Self-heal: clear any slot still marked occupied by a member who died/left before these fixes existed.
+		# Fixes pre-existing saves automatically (no console) since deaths happen constantly; a no-op once cleared.
+		citadel_bodyguard_heal_stuck_slots_effect = yes
+	}
+}
+
+# Sworn brothers of every order hold no land. If a member ever gains a real landed title (inheritance, grant,
+# usurpation) it is immediately passed on (to a non-member heir, else the order's king) and their guard
+# government is restored. Each order's own dummy titles are exempt. - Kizan
+on_title_gain = {
+	on_actions = {
+		citadel_bodyguard_sworn_landless_check
+	}
+}
+
+citadel_bodyguard_sworn_landless_check = {
+	trigger = {
+		exists = root
+		root = { OR = { has_trait = winged_knight  has_trait = green_knight  has_trait = sun_knight  has_trait = storm_knight  has_trait = loyal_knight  has_trait = golden_knight  has_trait = saltguard  has_trait = winter_wolf } }
+		exists = scope:title
+		scope:title = {
+			tier >= tier_barony
+			NOR = {
+				this = title:d_winged_knight
+				this = title:d_green_knight
+				this = title:d_sun_knight
+				this = title:d_storm_knight
+				this = title:d_loyal_knight
+				this = title:d_golden_knight
+				this = title:d_saltguard
+				this = title:d_winter_wolf
+				this = title:d_dummy_winged_knight
+				this = title:d_dummy_green_knight
+				this = title:d_dummy_sun_knight
+				this = title:d_dummy_storm_knight
+				this = title:d_dummy_loyal_knight
+				this = title:d_dummy_golden_knight
+				this = title:d_dummy_saltguard
+				this = title:d_dummy_winter_wolf
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = root.primary_heir
+				NOT = { root.primary_heir = root }
+				root.primary_heir = { NOR = { has_trait = winged_knight  has_trait = green_knight  has_trait = sun_knight  has_trait = storm_knight  has_trait = loyal_knight  has_trait = golden_knight  has_trait = saltguard  has_trait = winter_wolf } }
+			}
+			root.primary_heir = { save_scope_as = ck_sworn_recipient }
+		}
+		else_if = { limit = { root = { has_trait = winged_knight }  exists = title:e_the_vale.holder }  title:e_the_vale.holder = { save_scope_as = ck_sworn_recipient } }
+		else_if = { limit = { root = { has_trait = green_knight }  exists = title:e_the_reach.holder }  title:e_the_reach.holder = { save_scope_as = ck_sworn_recipient } }
+		else_if = { limit = { root = { has_trait = sun_knight }  exists = title:e_dorne.holder }  title:e_dorne.holder = { save_scope_as = ck_sworn_recipient } }
+		else_if = { limit = { root = { has_trait = storm_knight }  exists = title:e_the_stormlands.holder }  title:e_the_stormlands.holder = { save_scope_as = ck_sworn_recipient } }
+		else_if = { limit = { root = { has_trait = loyal_knight }  exists = title:e_the_riverlands.holder }  title:e_the_riverlands.holder = { save_scope_as = ck_sworn_recipient } }
+		else_if = { limit = { root = { has_trait = golden_knight }  exists = title:e_the_westerlands.holder }  title:e_the_westerlands.holder = { save_scope_as = ck_sworn_recipient } }
+		else_if = { limit = { root = { has_trait = saltguard }  exists = title:e_the_iron_islands.holder }  title:e_the_iron_islands.holder = { save_scope_as = ck_sworn_recipient } }
+		else_if = { limit = { root = { has_trait = winter_wolf }  exists = title:e_the_north.holder }  title:e_the_north.holder = { save_scope_as = ck_sworn_recipient } }
+		if = {
+			limit = {
+				exists = scope:ck_sworn_recipient
+				NOT = { scope:ck_sworn_recipient = root }
+			}
+			create_title_and_vassal_change = {
+				type = inheritance
+				save_scope_as = ck_sworn_change
+				add_claim_on_loss = no
+			}
+			scope:title = {
+				change_title_holder = {
+					holder = scope:ck_sworn_recipient
+					change = scope:ck_sworn_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:ck_sworn_change
+		}
+		root = {
+			if = { limit = { has_trait = winged_knight  is_landed = no }  change_government = winged_knight_government }
+			else_if = { limit = { has_trait = green_knight  is_landed = no }  change_government = green_knight_government }
+			else_if = { limit = { has_trait = sun_knight  is_landed = no }  change_government = sun_knight_government }
+			else_if = { limit = { has_trait = storm_knight  is_landed = no }  change_government = storm_knight_government }
+			else_if = { limit = { has_trait = loyal_knight  is_landed = no }  change_government = loyal_knight_government }
+			else_if = { limit = { has_trait = golden_knight  is_landed = no }  change_government = golden_knight_government }
+			else_if = { limit = { has_trait = saltguard  is_landed = no }  change_government = saltguard_government }
+			else_if = { limit = { has_trait = winter_wolf  is_landed = no }  change_government = winter_wolf_government }
+		}
+	}
+}

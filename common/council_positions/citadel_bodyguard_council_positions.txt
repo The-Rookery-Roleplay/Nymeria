@@ -1,0 +1,4503 @@
+﻿### Citadel Bodyguard orders (council positions) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+##### WINGED KNIGHTS (Vale) #####
+winged_knight_lord_commander = { # Special
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winged_knight_lord_commander_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winged_knight_lord_commander_name
+			}
+		}
+	}
+
+	# Give public opinion and control tasks
+
+	tooltip = game_concept_lord_commander_desc
+
+	modifier = {
+		name = winged_knight_lord_commander_modifier
+		monthly_prestige = 1
+		monthly_dynasty_prestige = 1
+	}
+
+	can_fire = { # A winged_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winged_knight_lord_commander = { has_character_flag = can_fire_winged_knight }
+				# has_realm_law = winged_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winged_knight_lord_commander ?= { has_character_flag = can_fire_winged_knight }
+				# has_realm_law = winged_knight_law_2
+			}
+		}
+	}
+
+	valid_position = {
+		can_have_winged_knight = yes
+		#has_character_flag = assigning_winged_knight This will be useful soon
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winged_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winged_knight
+	}
+
+	on_get_position = {
+		agot_on_get_winged_knight_lord_commander = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winged_knight = yes
+		#remove_character_flag = lord_commander Need to keep this for weirdness
+	}
+	portrait_animation = kingsguard
+}
+
+winged_knight_1 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+			desc = winged_knight_name
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = winged_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A winged_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:winged_knight_1 = { has_character_flag = can_fire_winged_knight }
+			# has_realm_law = winged_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winged_knight_1 = { has_character_flag = can_fire_winged_knight }
+				# has_realm_law = winged_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_winged_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winged_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winged_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_winged_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+winged_knight_2 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = winged_knight_name #fallback
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = winged_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A winged_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:winged_knight_2 = { has_character_flag = can_fire_winged_knight }
+			# has_realm_law = winged_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {  # A winged_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:winged_knight_2 = { has_character_flag = can_fire_winged_knight }
+			# has_realm_law = winged_knight_law_2
+		}
+	}
+	}
+
+	valid_position = {
+		can_have_winged_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winged_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winged_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_winged_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+winged_knight_3 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = winged_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A winged_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:winged_knight_3 = { has_character_flag = can_fire_winged_knight }
+			# has_realm_law = winged_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winged_knight_3 = { has_character_flag = can_fire_winged_knight }
+				# has_realm_law = winged_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_winged_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winged_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winged_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_winged_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+winged_knight_4 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = winged_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A winged_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winged_knight_4 = { has_character_flag = can_fire_winged_knight }
+				# has_realm_law = winged_knight_law_2
+			}
+		}
+	}
+
+	# A winged_knight serves for life; Joffrey interrupted that tradition;
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winged_knight_4 = { has_character_flag = can_fire_winged_knight }
+				# has_realm_law = winged_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_winged_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winged_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winged_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_winged_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+winged_knight_5 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = winged_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A winged_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winged_knight_5 = { has_character_flag = can_fire_winged_knight }
+				# has_realm_law = winged_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winged_knight_5 = { has_character_flag = can_fire_winged_knight }
+				# has_realm_law = winged_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_winged_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winged_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winged_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_winged_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+winged_knight_6 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winged_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winged_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = winged_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A winged_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winged_knight_6 = { has_character_flag = can_fire_winged_knight }
+				# has_realm_law = winged_knight_law_2
+			}
+		}
+	}
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winged_knight_6 = { has_character_flag = can_fire_winged_knight }
+				# has_realm_law = winged_knight_law_2
+			}
+		}
+	} # A winged_knight serves for life; Joffrey interrupted that tradition;
+	valid_position = {
+		can_have_winged_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winged_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winged_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_winged_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winged_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+##### GREEN KNIGHTS (Reach) #####
+green_knight_lord_commander = { # Special
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = green_knight_lord_commander_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = green_knight_lord_commander_name
+			}
+		}
+	}
+
+	# Give public opinion and control tasks
+
+	tooltip = game_concept_lord_commander_desc
+
+	modifier = {
+		name = green_knight_lord_commander_modifier
+		monthly_prestige = 1
+		monthly_dynasty_prestige = 1
+	}
+
+	can_fire = { # A green_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:green_knight_lord_commander = { has_character_flag = can_fire_green_knight }
+				# has_realm_law = green_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:green_knight_lord_commander ?= { has_character_flag = can_fire_green_knight }
+				# has_realm_law = green_knight_law_2
+			}
+		}
+	}
+
+	valid_position = {
+		can_have_green_knight = yes
+		#has_character_flag = assigning_green_knight This will be useful soon
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_green_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = green_knight
+	}
+
+	on_get_position = {
+		agot_on_get_green_knight_lord_commander = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_green_knight = yes
+		#remove_character_flag = lord_commander Need to keep this for weirdness
+	}
+	portrait_animation = kingsguard
+}
+
+green_knight_1 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = green_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = green_knight_name
+			}
+			desc = green_knight_name
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = green_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A green_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:green_knight_1 = { has_character_flag = can_fire_green_knight }
+			# has_realm_law = green_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:green_knight_1 = { has_character_flag = can_fire_green_knight }
+				# has_realm_law = green_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_green_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_green_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = green_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_green_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+green_knight_2 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = green_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = green_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = green_knight_name #fallback
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = green_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A green_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:green_knight_2 = { has_character_flag = can_fire_green_knight }
+			# has_realm_law = green_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {  # A green_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:green_knight_2 = { has_character_flag = can_fire_green_knight }
+			# has_realm_law = green_knight_law_2
+		}
+	}
+	}
+
+	valid_position = {
+		can_have_green_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_green_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = green_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_green_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+green_knight_3 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = green_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = green_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = green_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A green_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:green_knight_3 = { has_character_flag = can_fire_green_knight }
+			# has_realm_law = green_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:green_knight_3 = { has_character_flag = can_fire_green_knight }
+				# has_realm_law = green_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_green_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_green_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = green_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_green_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+green_knight_4 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = green_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = green_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = green_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A green_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:green_knight_4 = { has_character_flag = can_fire_green_knight }
+				# has_realm_law = green_knight_law_2
+			}
+		}
+	}
+
+	# A green_knight serves for life; Joffrey interrupted that tradition;
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:green_knight_4 = { has_character_flag = can_fire_green_knight }
+				# has_realm_law = green_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_green_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_green_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = green_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_green_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+green_knight_5 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = green_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = green_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = green_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A green_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:green_knight_5 = { has_character_flag = can_fire_green_knight }
+				# has_realm_law = green_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:green_knight_5 = { has_character_flag = can_fire_green_knight }
+				# has_realm_law = green_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_green_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_green_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = green_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_green_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+green_knight_6 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = green_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_green_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = green_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = green_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A green_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:green_knight_6 = { has_character_flag = can_fire_green_knight }
+				# has_realm_law = green_knight_law_2
+			}
+		}
+	}
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:green_knight_6 = { has_character_flag = can_fire_green_knight }
+				# has_realm_law = green_knight_law_2
+			}
+		}
+	} # A green_knight serves for life; Joffrey interrupted that tradition;
+	valid_position = {
+		can_have_green_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_green_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = green_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_green_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_green_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+##### Sun Knights (e_dorne) #####
+sun_knight_lord_commander = { # Special
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = sun_knight_lord_commander_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = sun_knight_lord_commander_name
+			}
+		}
+	}
+
+	# Give public opinion and control tasks
+
+	tooltip = game_concept_lord_commander_desc
+
+	modifier = {
+		name = sun_knight_lord_commander_modifier
+		monthly_prestige = 1
+		monthly_dynasty_prestige = 1
+	}
+
+	can_fire = { # A sun_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:sun_knight_lord_commander = { has_character_flag = can_fire_sun_knight }
+				# has_realm_law = sun_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:sun_knight_lord_commander ?= { has_character_flag = can_fire_sun_knight }
+				# has_realm_law = sun_knight_law_2
+			}
+		}
+	}
+
+	valid_position = {
+		can_have_sun_knight = yes
+		#has_character_flag = assigning_sun_knight This will be useful soon
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_sun_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = sun_knight
+	}
+
+	on_get_position = {
+		agot_on_get_sun_knight_lord_commander = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_sun_knight = yes
+		#remove_character_flag = lord_commander Need to keep this for weirdness
+	}
+	portrait_animation = kingsguard
+}
+
+sun_knight_1 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+			desc = sun_knight_name
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = sun_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A sun_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:sun_knight_1 = { has_character_flag = can_fire_sun_knight }
+			# has_realm_law = sun_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:sun_knight_1 = { has_character_flag = can_fire_sun_knight }
+				# has_realm_law = sun_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_sun_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_sun_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = sun_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_sun_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+sun_knight_2 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = sun_knight_name #fallback
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = sun_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A sun_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:sun_knight_2 = { has_character_flag = can_fire_sun_knight }
+			# has_realm_law = sun_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {  # A sun_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:sun_knight_2 = { has_character_flag = can_fire_sun_knight }
+			# has_realm_law = sun_knight_law_2
+		}
+	}
+	}
+
+	valid_position = {
+		can_have_sun_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_sun_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = sun_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_sun_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+sun_knight_3 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = sun_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A sun_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:sun_knight_3 = { has_character_flag = can_fire_sun_knight }
+			# has_realm_law = sun_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:sun_knight_3 = { has_character_flag = can_fire_sun_knight }
+				# has_realm_law = sun_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_sun_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_sun_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = sun_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_sun_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+sun_knight_4 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = sun_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A sun_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:sun_knight_4 = { has_character_flag = can_fire_sun_knight }
+				# has_realm_law = sun_knight_law_2
+			}
+		}
+	}
+
+	# A sun_knight serves for life; Joffrey interrupted that tradition;
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:sun_knight_4 = { has_character_flag = can_fire_sun_knight }
+				# has_realm_law = sun_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_sun_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_sun_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = sun_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_sun_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+sun_knight_5 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = sun_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A sun_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:sun_knight_5 = { has_character_flag = can_fire_sun_knight }
+				# has_realm_law = sun_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:sun_knight_5 = { has_character_flag = can_fire_sun_knight }
+				# has_realm_law = sun_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_sun_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_sun_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = sun_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_sun_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+sun_knight_6 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_sun_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = sun_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = sun_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A sun_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:sun_knight_6 = { has_character_flag = can_fire_sun_knight }
+				# has_realm_law = sun_knight_law_2
+			}
+		}
+	}
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:sun_knight_6 = { has_character_flag = can_fire_sun_knight }
+				# has_realm_law = sun_knight_law_2
+			}
+		}
+	} # A sun_knight serves for life; Joffrey interrupted that tradition;
+	valid_position = {
+		can_have_sun_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_sun_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = sun_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_sun_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_sun_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+##### Storm Knights (e_the_stormlands) #####
+storm_knight_lord_commander = { # Special
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = storm_knight_lord_commander_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = storm_knight_lord_commander_name
+			}
+		}
+	}
+
+	# Give public opinion and control tasks
+
+	tooltip = game_concept_lord_commander_desc
+
+	modifier = {
+		name = storm_knight_lord_commander_modifier
+		monthly_prestige = 1
+		monthly_dynasty_prestige = 1
+	}
+
+	can_fire = { # A storm_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:storm_knight_lord_commander = { has_character_flag = can_fire_storm_knight }
+				# has_realm_law = storm_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:storm_knight_lord_commander ?= { has_character_flag = can_fire_storm_knight }
+				# has_realm_law = storm_knight_law_2
+			}
+		}
+	}
+
+	valid_position = {
+		can_have_storm_knight = yes
+		#has_character_flag = assigning_storm_knight This will be useful soon
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_storm_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = storm_knight
+	}
+
+	on_get_position = {
+		agot_on_get_storm_knight_lord_commander = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_storm_knight = yes
+		#remove_character_flag = lord_commander Need to keep this for weirdness
+	}
+	portrait_animation = kingsguard
+}
+
+storm_knight_1 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+			desc = storm_knight_name
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = storm_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A storm_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:storm_knight_1 = { has_character_flag = can_fire_storm_knight }
+			# has_realm_law = storm_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:storm_knight_1 = { has_character_flag = can_fire_storm_knight }
+				# has_realm_law = storm_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_storm_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_storm_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = storm_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_storm_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+storm_knight_2 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = storm_knight_name #fallback
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = storm_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A storm_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:storm_knight_2 = { has_character_flag = can_fire_storm_knight }
+			# has_realm_law = storm_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {  # A storm_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:storm_knight_2 = { has_character_flag = can_fire_storm_knight }
+			# has_realm_law = storm_knight_law_2
+		}
+	}
+	}
+
+	valid_position = {
+		can_have_storm_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_storm_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = storm_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_storm_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+storm_knight_3 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = storm_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A storm_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:storm_knight_3 = { has_character_flag = can_fire_storm_knight }
+			# has_realm_law = storm_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:storm_knight_3 = { has_character_flag = can_fire_storm_knight }
+				# has_realm_law = storm_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_storm_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_storm_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = storm_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_storm_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+storm_knight_4 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = storm_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A storm_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:storm_knight_4 = { has_character_flag = can_fire_storm_knight }
+				# has_realm_law = storm_knight_law_2
+			}
+		}
+	}
+
+	# A storm_knight serves for life; Joffrey interrupted that tradition;
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:storm_knight_4 = { has_character_flag = can_fire_storm_knight }
+				# has_realm_law = storm_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_storm_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_storm_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = storm_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_storm_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+storm_knight_5 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = storm_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A storm_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:storm_knight_5 = { has_character_flag = can_fire_storm_knight }
+				# has_realm_law = storm_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:storm_knight_5 = { has_character_flag = can_fire_storm_knight }
+				# has_realm_law = storm_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_storm_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_storm_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = storm_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_storm_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+storm_knight_6 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_storm_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = storm_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = storm_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A storm_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:storm_knight_6 = { has_character_flag = can_fire_storm_knight }
+				# has_realm_law = storm_knight_law_2
+			}
+		}
+	}
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:storm_knight_6 = { has_character_flag = can_fire_storm_knight }
+				# has_realm_law = storm_knight_law_2
+			}
+		}
+	} # A storm_knight serves for life; Joffrey interrupted that tradition;
+	valid_position = {
+		can_have_storm_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_storm_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = storm_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_storm_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_storm_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+##### Loyal Knights (e_the_riverlands) #####
+loyal_knight_lord_commander = { # Special
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = loyal_knight_lord_commander_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = loyal_knight_lord_commander_name
+			}
+		}
+	}
+
+	# Give public opinion and control tasks
+
+	tooltip = game_concept_lord_commander_desc
+
+	modifier = {
+		name = loyal_knight_lord_commander_modifier
+		monthly_prestige = 1
+		monthly_dynasty_prestige = 1
+	}
+
+	can_fire = { # A loyal_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:loyal_knight_lord_commander = { has_character_flag = can_fire_loyal_knight }
+				# has_realm_law = loyal_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:loyal_knight_lord_commander ?= { has_character_flag = can_fire_loyal_knight }
+				# has_realm_law = loyal_knight_law_2
+			}
+		}
+	}
+
+	valid_position = {
+		can_have_loyal_knight = yes
+		#has_character_flag = assigning_loyal_knight This will be useful soon
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_loyal_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = loyal_knight
+	}
+
+	on_get_position = {
+		agot_on_get_loyal_knight_lord_commander = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_loyal_knight = yes
+		#remove_character_flag = lord_commander Need to keep this for weirdness
+	}
+	portrait_animation = kingsguard
+}
+
+loyal_knight_1 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+			desc = loyal_knight_name
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = loyal_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A loyal_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:loyal_knight_1 = { has_character_flag = can_fire_loyal_knight }
+			# has_realm_law = loyal_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:loyal_knight_1 = { has_character_flag = can_fire_loyal_knight }
+				# has_realm_law = loyal_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_loyal_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_loyal_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = loyal_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_loyal_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+loyal_knight_2 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = loyal_knight_name #fallback
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = loyal_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A loyal_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:loyal_knight_2 = { has_character_flag = can_fire_loyal_knight }
+			# has_realm_law = loyal_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {  # A loyal_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:loyal_knight_2 = { has_character_flag = can_fire_loyal_knight }
+			# has_realm_law = loyal_knight_law_2
+		}
+	}
+	}
+
+	valid_position = {
+		can_have_loyal_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_loyal_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = loyal_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_loyal_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+loyal_knight_3 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = loyal_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A loyal_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:loyal_knight_3 = { has_character_flag = can_fire_loyal_knight }
+			# has_realm_law = loyal_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:loyal_knight_3 = { has_character_flag = can_fire_loyal_knight }
+				# has_realm_law = loyal_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_loyal_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_loyal_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = loyal_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_loyal_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+loyal_knight_4 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = loyal_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A loyal_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:loyal_knight_4 = { has_character_flag = can_fire_loyal_knight }
+				# has_realm_law = loyal_knight_law_2
+			}
+		}
+	}
+
+	# A loyal_knight serves for life; Joffrey interrupted that tradition;
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:loyal_knight_4 = { has_character_flag = can_fire_loyal_knight }
+				# has_realm_law = loyal_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_loyal_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_loyal_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = loyal_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_loyal_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+loyal_knight_5 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = loyal_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A loyal_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:loyal_knight_5 = { has_character_flag = can_fire_loyal_knight }
+				# has_realm_law = loyal_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:loyal_knight_5 = { has_character_flag = can_fire_loyal_knight }
+				# has_realm_law = loyal_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_loyal_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_loyal_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = loyal_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_loyal_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+loyal_knight_6 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_loyal_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = loyal_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = loyal_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A loyal_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:loyal_knight_6 = { has_character_flag = can_fire_loyal_knight }
+				# has_realm_law = loyal_knight_law_2
+			}
+		}
+	}
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:loyal_knight_6 = { has_character_flag = can_fire_loyal_knight }
+				# has_realm_law = loyal_knight_law_2
+			}
+		}
+	} # A loyal_knight serves for life; Joffrey interrupted that tradition;
+	valid_position = {
+		can_have_loyal_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_loyal_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = loyal_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_loyal_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_loyal_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+##### Golden Knights (e_the_westerlands) #####
+golden_knight_lord_commander = { # Special
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = golden_knight_lord_commander_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = golden_knight_lord_commander_name
+			}
+		}
+	}
+
+	# Give public opinion and control tasks
+
+	tooltip = game_concept_lord_commander_desc
+
+	modifier = {
+		name = golden_knight_lord_commander_modifier
+		monthly_prestige = 1
+		monthly_dynasty_prestige = 1
+	}
+
+	can_fire = { # A golden_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:golden_knight_lord_commander = { has_character_flag = can_fire_golden_knight }
+				# has_realm_law = golden_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:golden_knight_lord_commander ?= { has_character_flag = can_fire_golden_knight }
+				# has_realm_law = golden_knight_law_2
+			}
+		}
+	}
+
+	valid_position = {
+		can_have_golden_knight = yes
+		#has_character_flag = assigning_golden_knight This will be useful soon
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_golden_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = golden_knight
+	}
+
+	on_get_position = {
+		agot_on_get_golden_knight_lord_commander = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_golden_knight = yes
+		#remove_character_flag = lord_commander Need to keep this for weirdness
+	}
+	portrait_animation = kingsguard
+}
+
+golden_knight_1 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+			desc = golden_knight_name
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = golden_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A golden_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:golden_knight_1 = { has_character_flag = can_fire_golden_knight }
+			# has_realm_law = golden_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:golden_knight_1 = { has_character_flag = can_fire_golden_knight }
+				# has_realm_law = golden_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_golden_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_golden_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = golden_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_golden_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+golden_knight_2 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = golden_knight_name #fallback
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = golden_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A golden_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:golden_knight_2 = { has_character_flag = can_fire_golden_knight }
+			# has_realm_law = golden_knight_law_2
+		}
+	}
+	}
+
+	can_reassign = {  # A golden_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:golden_knight_2 = { has_character_flag = can_fire_golden_knight }
+			# has_realm_law = golden_knight_law_2
+		}
+	}
+	}
+
+	valid_position = {
+		can_have_golden_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_golden_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = golden_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_golden_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+golden_knight_3 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = golden_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A golden_knight serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:golden_knight_3 = { has_character_flag = can_fire_golden_knight }
+			# has_realm_law = golden_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:golden_knight_3 = { has_character_flag = can_fire_golden_knight }
+				# has_realm_law = golden_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_golden_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_golden_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = golden_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_golden_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+golden_knight_4 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = golden_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A golden_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:golden_knight_4 = { has_character_flag = can_fire_golden_knight }
+				# has_realm_law = golden_knight_law_2
+			}
+		}
+	}
+
+	# A golden_knight serves for life; Joffrey interrupted that tradition;
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:golden_knight_4 = { has_character_flag = can_fire_golden_knight }
+				# has_realm_law = golden_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_golden_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_golden_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = golden_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_golden_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+golden_knight_5 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = golden_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A golden_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:golden_knight_5 = { has_character_flag = can_fire_golden_knight }
+				# has_realm_law = golden_knight_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:golden_knight_5 = { has_character_flag = can_fire_golden_knight }
+				# has_realm_law = golden_knight_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_golden_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_golden_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = golden_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_golden_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+golden_knight_6 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_golden_knight_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = golden_knight_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = golden_knight_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A golden_knight serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:golden_knight_6 = { has_character_flag = can_fire_golden_knight }
+				# has_realm_law = golden_knight_law_2
+			}
+		}
+	}
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:golden_knight_6 = { has_character_flag = can_fire_golden_knight }
+				# has_realm_law = golden_knight_law_2
+			}
+		}
+	} # A golden_knight serves for life; Joffrey interrupted that tradition;
+	valid_position = {
+		can_have_golden_knight = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_golden_knight_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = golden_knight
+
+	}
+
+	on_get_position = {
+		agot_on_get_golden_knight = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_golden_knight = yes
+	}
+	portrait_animation = kingsguard
+}
+
+##### Saltguards (e_the_iron_islands) #####
+saltguard_lord_commander = { # Special
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = saltguard_lord_commander_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = saltguard_lord_commander_name
+			}
+		}
+	}
+
+	# Give public opinion and control tasks
+
+	tooltip = game_concept_lord_commander_desc
+
+	modifier = {
+		name = saltguard_lord_commander_modifier
+		monthly_prestige = 1
+		monthly_dynasty_prestige = 1
+	}
+
+	can_fire = { # A saltguard serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:saltguard_lord_commander = { has_character_flag = can_fire_saltguard }
+				# has_realm_law = saltguard_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:saltguard_lord_commander ?= { has_character_flag = can_fire_saltguard }
+				# has_realm_law = saltguard_law_2
+			}
+		}
+	}
+
+	valid_position = {
+		can_have_saltguard = yes
+		#has_character_flag = assigning_saltguard This will be useful soon
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_saltguard_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = saltguard
+	}
+
+	on_get_position = {
+		agot_on_get_saltguard_lord_commander = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_saltguard = yes
+		#remove_character_flag = lord_commander Need to keep this for weirdness
+	}
+	portrait_animation = kingsguard
+}
+
+saltguard_1 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = saltguard_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = saltguard_name
+			}
+			desc = saltguard_name
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = saltguard_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A saltguard serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:saltguard_1 = { has_character_flag = can_fire_saltguard }
+			# has_realm_law = saltguard_law_2
+		}
+	}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:saltguard_1 = { has_character_flag = can_fire_saltguard }
+				# has_realm_law = saltguard_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_saltguard = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_saltguard_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = saltguard
+
+	}
+
+	on_get_position = {
+		agot_on_get_saltguard = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+	portrait_animation = kingsguard
+}
+
+saltguard_2 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = saltguard_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = saltguard_name
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = saltguard_name #fallback
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = saltguard_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A saltguard serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:saltguard_2 = { has_character_flag = can_fire_saltguard }
+			# has_realm_law = saltguard_law_2
+		}
+	}
+	}
+
+	can_reassign = {  # A saltguard serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:saltguard_2 = { has_character_flag = can_fire_saltguard }
+			# has_realm_law = saltguard_law_2
+		}
+	}
+	}
+
+	valid_position = {
+		can_have_saltguard = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_saltguard_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = saltguard
+
+	}
+
+	on_get_position = {
+		agot_on_get_saltguard = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+	portrait_animation = kingsguard
+}
+
+saltguard_3 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = saltguard_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = saltguard_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = saltguard_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A saltguard serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:saltguard_3 = { has_character_flag = can_fire_saltguard }
+			# has_realm_law = saltguard_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:saltguard_3 = { has_character_flag = can_fire_saltguard }
+				# has_realm_law = saltguard_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_saltguard = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_saltguard_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = saltguard
+
+	}
+
+	on_get_position = {
+		agot_on_get_saltguard = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+	portrait_animation = kingsguard
+}
+
+saltguard_4 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = saltguard_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = saltguard_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = saltguard_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A saltguard serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:saltguard_4 = { has_character_flag = can_fire_saltguard }
+				# has_realm_law = saltguard_law_2
+			}
+		}
+	}
+
+	# A saltguard serves for life; Joffrey interrupted that tradition;
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:saltguard_4 = { has_character_flag = can_fire_saltguard }
+				# has_realm_law = saltguard_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_saltguard = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_saltguard_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = saltguard
+
+	}
+
+	on_get_position = {
+		agot_on_get_saltguard = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+	portrait_animation = kingsguard
+}
+
+saltguard_5 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = saltguard_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = saltguard_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = saltguard_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A saltguard serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:saltguard_5 = { has_character_flag = can_fire_saltguard }
+				# has_realm_law = saltguard_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:saltguard_5 = { has_character_flag = can_fire_saltguard }
+				# has_realm_law = saltguard_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_saltguard = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_saltguard_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = saltguard
+
+	}
+
+	on_get_position = {
+		agot_on_get_saltguard = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+	portrait_animation = kingsguard
+}
+
+saltguard_6 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = saltguard_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_saltguard_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = saltguard_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = saltguard_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A saltguard serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:saltguard_6 = { has_character_flag = can_fire_saltguard }
+				# has_realm_law = saltguard_law_2
+			}
+		}
+	}
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:saltguard_6 = { has_character_flag = can_fire_saltguard }
+				# has_realm_law = saltguard_law_2
+			}
+		}
+	} # A saltguard serves for life; Joffrey interrupted that tradition;
+	valid_position = {
+		can_have_saltguard = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_saltguard_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = saltguard
+
+	}
+
+	on_get_position = {
+		agot_on_get_saltguard = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_saltguard = yes
+	}
+	portrait_animation = kingsguard
+}
+
+##### Winter Wolves (e_the_north) #####
+winter_wolf_lord_commander = { # Special
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winter_wolf_lord_commander_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winter_wolf_lord_commander_name
+			}
+		}
+	}
+
+	# Give public opinion and control tasks
+
+	tooltip = game_concept_lord_commander_desc
+
+	modifier = {
+		name = winter_wolf_lord_commander_modifier
+		monthly_prestige = 1
+		monthly_dynasty_prestige = 1
+	}
+
+	can_fire = { # A winter_wolf serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winter_wolf_lord_commander = { has_character_flag = can_fire_winter_wolf }
+				# has_realm_law = winter_wolf_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winter_wolf_lord_commander ?= { has_character_flag = can_fire_winter_wolf }
+				# has_realm_law = winter_wolf_law_2
+			}
+		}
+	}
+
+	valid_position = {
+		can_have_winter_wolf = yes
+		#has_character_flag = assigning_winter_wolf This will be useful soon
+	}
+
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winter_wolf_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winter_wolf
+	}
+
+	on_get_position = {
+		agot_on_get_winter_wolf_lord_commander = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winter_wolf = yes
+		#remove_character_flag = lord_commander Need to keep this for weirdness
+	}
+	portrait_animation = kingsguard
+}
+
+winter_wolf_1 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+			desc = winter_wolf_name
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = winter_wolf_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A winter_wolf serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:winter_wolf_1 = { has_character_flag = can_fire_winter_wolf }
+			# has_realm_law = winter_wolf_law_2
+		}
+	}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winter_wolf_1 = { has_character_flag = can_fire_winter_wolf }
+				# has_realm_law = winter_wolf_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_winter_wolf = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winter_wolf_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winter_wolf
+
+	}
+
+	on_get_position = {
+		agot_on_get_winter_wolf = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+	portrait_animation = kingsguard
+}
+
+winter_wolf_2 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = winter_wolf_name #fallback
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = winter_wolf_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A winter_wolf serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:winter_wolf_2 = { has_character_flag = can_fire_winter_wolf }
+			# has_realm_law = winter_wolf_law_2
+		}
+	}
+	}
+
+	can_reassign = {  # A winter_wolf serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:winter_wolf_2 = { has_character_flag = can_fire_winter_wolf }
+			# has_realm_law = winter_wolf_law_2
+		}
+	}
+	}
+
+	valid_position = {
+		can_have_winter_wolf = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winter_wolf_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winter_wolf
+
+	}
+
+	on_get_position = {
+		agot_on_get_winter_wolf = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+	portrait_animation = kingsguard
+}
+
+winter_wolf_3 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = winter_wolf_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A winter_wolf serves for life; Joffrey interrupted that tradition;
+	custom_description = {
+		text = "agot_kingsguard_can_fire"
+		OR = {
+			has_global_variable = agot_startup_fire_councillors
+			cp:winter_wolf_3 = { has_character_flag = can_fire_winter_wolf }
+			# has_realm_law = winter_wolf_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winter_wolf_3 = { has_character_flag = can_fire_winter_wolf }
+				# has_realm_law = winter_wolf_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_winter_wolf = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winter_wolf_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winter_wolf
+
+	}
+
+	on_get_position = {
+		agot_on_get_winter_wolf = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+	portrait_animation = kingsguard
+}
+
+winter_wolf_4 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = winter_wolf_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A winter_wolf serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winter_wolf_4 = { has_character_flag = can_fire_winter_wolf }
+				# has_realm_law = winter_wolf_law_2
+			}
+		}
+	}
+
+	# A winter_wolf serves for life; Joffrey interrupted that tradition;
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winter_wolf_4 = { has_character_flag = can_fire_winter_wolf }
+				# has_realm_law = winter_wolf_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_winter_wolf = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winter_wolf_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winter_wolf
+
+	}
+
+	on_get_position = {
+		agot_on_get_winter_wolf = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+	portrait_animation = kingsguard
+}
+
+winter_wolf_5 = { # 6 of them
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	skill = prowess
+
+	modifier = {
+		name = winter_wolf_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+
+	can_fire = { # A winter_wolf serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winter_wolf_5 = { has_character_flag = can_fire_winter_wolf }
+				# has_realm_law = winter_wolf_law_2
+			}
+		}
+	}
+
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winter_wolf_5 = { has_character_flag = can_fire_winter_wolf }
+				# has_realm_law = winter_wolf_law_2
+			}
+		}
+	}
+	valid_position = {
+		can_have_winter_wolf = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winter_wolf_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winter_wolf
+
+	}
+
+	on_get_position = {
+		agot_on_get_winter_wolf = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+	portrait_animation = kingsguard
+}
+
+winter_wolf_6 = { # 6 of them
+	skill = prowess
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_male = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+			triggered_desc = {
+				trigger = {
+					liege ?= {
+						ruler_primary_title_has_winter_wolf_trigger = yes
+						is_female = yes
+					}
+				}
+				desc = winter_wolf_name
+			}
+		}
+	}
+
+	tooltip = game_concept_kingsguard_desc
+
+	modifier = {
+		name = winter_wolf_modifier
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige = 0.5
+	}
+	can_fire = { # A winter_wolf serves for life; Joffrey interrupted that tradition;
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winter_wolf_6 = { has_character_flag = can_fire_winter_wolf }
+				# has_realm_law = winter_wolf_law_2
+			}
+		}
+	}
+	can_reassign = {
+		custom_description = {
+			text = "agot_kingsguard_can_fire"
+			OR = {
+				has_global_variable = agot_startup_fire_councillors
+				cp:winter_wolf_6 = { has_character_flag = can_fire_winter_wolf }
+				# has_realm_law = winter_wolf_law_2
+			}
+		}
+	} # A winter_wolf serves for life; Joffrey interrupted that tradition;
+	valid_position = {
+		can_have_winter_wolf = yes
+	}
+	valid_character = {
+		exists = root.liege_or_court_owner
+		can_be_winter_wolf_trigger = { COURT_OWNER = root.liege_or_court_owner }
+		has_trait = winter_wolf
+
+	}
+
+	on_get_position = {
+		agot_on_get_winter_wolf = yes
+	}
+
+	on_lose_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+
+	on_fired_from_position = {
+		agot_on_fired_from_winter_wolf = yes
+	}
+	portrait_animation = kingsguard
+}

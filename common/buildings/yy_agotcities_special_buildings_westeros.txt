@@ -1673,14 +1673,12 @@ agot_plankytown_01 = {
         embarkation_cost_mult = -0.15
         diplomatic_range_mult = 0.25
         naval_movement_speed_mult = 0.1
-        rhoynish_religion_opinion = 10
     }
 
     county_holder_character_modifier = {
         embarkation_cost_mult = -0.15
         diplomatic_range_mult = 0.25
         naval_movement_speed_mult = 0.1
-        rhoynish_religion_opinion = 5
     }
 
     type = special

@@ -1,0 +1,377 @@
+﻿### Citadel Bodyguard orders (memory) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+##### WINGED KNIGHTS (Vale) #####
+agot_winged_knight_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_winged_knight_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_winged_knight_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_winged_knight_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+agot_winged_knight_lord_commander_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_winged_knight_lord_commander_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_winged_knight_lord_commander_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_winged_knight_lord_commander_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+##### GREEN KNIGHTS (Reach) #####
+agot_green_knight_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_green_knight_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_green_knight_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_green_knight_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+agot_green_knight_lord_commander_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_green_knight_lord_commander_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_green_knight_lord_commander_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_green_knight_lord_commander_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+##### Sun Knights (e_dorne) #####
+agot_sun_knight_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_sun_knight_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_sun_knight_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_sun_knight_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+agot_sun_knight_lord_commander_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_sun_knight_lord_commander_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_sun_knight_lord_commander_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_sun_knight_lord_commander_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+##### Storm Knights (e_the_stormlands) #####
+agot_storm_knight_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_storm_knight_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_storm_knight_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_storm_knight_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+agot_storm_knight_lord_commander_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_storm_knight_lord_commander_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_storm_knight_lord_commander_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_storm_knight_lord_commander_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+##### Loyal Knights (e_the_riverlands) #####
+agot_loyal_knight_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_loyal_knight_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_loyal_knight_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_loyal_knight_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+agot_loyal_knight_lord_commander_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_loyal_knight_lord_commander_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_loyal_knight_lord_commander_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_loyal_knight_lord_commander_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+##### Golden Knights (e_the_westerlands) #####
+agot_golden_knight_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_golden_knight_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_golden_knight_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_golden_knight_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+agot_golden_knight_lord_commander_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_golden_knight_lord_commander_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_golden_knight_lord_commander_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_golden_knight_lord_commander_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+##### Saltguards (e_the_iron_islands) #####
+agot_saltguard_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_saltguard_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_saltguard_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_saltguard_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+agot_saltguard_lord_commander_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_saltguard_lord_commander_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_saltguard_lord_commander_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_saltguard_lord_commander_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+##### Winter Wolves (e_the_north) #####
+agot_winter_wolf_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_winter_wolf_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_winter_wolf_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_winter_wolf_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+agot_winter_wolf_lord_commander_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = agot_winter_wolf_lord_commander_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = agot_winter_wolf_lord_commander_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = agot_winter_wolf_lord_commander_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}

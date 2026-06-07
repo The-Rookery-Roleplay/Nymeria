@@ -88,17 +88,17 @@ citadel_army_maintenance_t3 = {
 
 citadel_maa_upkeep_t1 = {
     icon = army_maintenance
-    men_at_arms_maintenance_mult = -0.05
+    men_at_arms_maintenance = -0.05
 }
 
 citadel_maa_upkeep_t2 = {
     icon = army_maintenance
-    men_at_arms_maintenance_mult = -0.10
+    men_at_arms_maintenance = -0.10
 }
 
 citadel_maa_upkeep_t3 = {
     icon = army_maintenance
-    men_at_arms_maintenance_mult = -0.15
+    men_at_arms_maintenance = -0.15
 }
 
 # Public Image
@@ -323,7 +323,7 @@ citadel_food_deficit_t2 = {
     icon = food_negative
     development_growth = -0.30
     levy_reinforcement_rate = -0.15
-    control_growth = -0.2
+    monthly_county_control_growth_add = -0.2
     county_opinion_add = -25
 }
 
@@ -331,7 +331,7 @@ citadel_food_deficit_t3 = {
     icon = food_negative
     development_growth = -0.50
     levy_reinforcement_rate = -0.50
-    control_growth = -0.5
+    monthly_county_control_growth_add = -0.5
     supply_limit_mult = -0.25
     county_opinion_add = -50
 }
@@ -349,7 +349,7 @@ citadel_food_deficit_major_t2 = {
     icon = food_negative
     development_growth = -0.60
     levy_reinforcement_rate = -0.30
-    control_growth = -0.4
+    monthly_county_control_growth_add = -0.4
     county_opinion_add = -75
 }
 
@@ -357,7 +357,7 @@ citadel_food_deficit_major_t3 = {
     icon = food_negative
     development_growth = -1.00
     levy_reinforcement_rate = -1.00
-    control_growth = -1.0
+    monthly_county_control_growth_add = -1.0
     supply_limit_mult = -0.50
     county_opinion_add = -200
 }
@@ -417,14 +417,14 @@ citadel_luxury_deficit_t1 = {
 citadel_luxury_deficit_t2 = {
     icon = legend_negative
     monthly_prestige_gain_mult = -0.20
-    monthly_dynasty_renown = -0.5
+    monthly_dynasty_prestige = -0.5
     vassal_opinion = -20
 }
 
 citadel_luxury_deficit_t3 = {
     icon = legend_negative
     monthly_prestige_gain_mult = -0.50
-    monthly_dynasty_renown = -1.5
+    monthly_dynasty_prestige = -1.5
     vassal_opinion = -40
 }
 
@@ -446,5 +446,5 @@ citadel_iron_deficit_t3 = {
     icon = martial_negative
     army_maintenance_mult = 0.35
     army_damage_mult = -0.35
-    combat_advantage = -10
+    advantage = -10
 }

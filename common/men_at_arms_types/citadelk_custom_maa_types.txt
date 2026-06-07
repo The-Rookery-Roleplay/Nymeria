@@ -121,15 +121,6 @@ minorroad_the_bog = { damage = -50  toughness = -50  pursuit = -50 }
 	}
 	
 
-	can_recruit = {
-		OR = {
-			AND = {
-				exists = dynasty
-				dynasty = { has_dynasty_perk = templeton_legacy_3 }
-			}
-			culture = { has_cultural_parameter = unlock_maa_temp_star_knights }
-		}
-	}
 
 
 	buy_cost = { gold = 110 piety = 110 }

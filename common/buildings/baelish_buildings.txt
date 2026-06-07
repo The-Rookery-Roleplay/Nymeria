@@ -1,7 +1,7 @@
 ﻿bordello_littlefinger = {
     construction_time = standard_construction_time
 
-    potential = {
+    can_construct_potential = {
         always = no
     }
 
@@ -37,8 +37,6 @@
         monthly_piety = -2
     }
 
-    can_destroy = no
-    category = economic
     type_icon = "icon_structure_cluny_abbey.dds"
     
     ai_value = {

@@ -1,0 +1,1384 @@
+﻿### Citadel Bodyguard orders (triggers) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+##### WINGED KNIGHTS (Vale) #####
+title_has_winged_knight_trigger = {
+	tier >= tier_empire
+	this = title:e_the_vale
+}
+
+ruler_has_winged_knight_trigger = {
+	any_held_title = {
+		title_has_winged_knight_trigger = yes
+	}
+}
+
+ruler_primary_title_has_winged_knight_trigger = {
+	primary_title = title:e_the_vale
+}
+
+can_be_winged_knight_trigger = {
+	can_be_councillor_basics_trigger = yes
+	OR = {
+		is_ruler = no
+		AND = {
+			has_title = title:d_winged_knight
+			has_trait = winged_knight
+		}
+	}
+	is_married = no
+	is_capable_adult = yes
+	is_human = yes
+	NOR = {
+		has_trait = nightswatch
+		has_trait = order_member #Go away Areo Hotah
+		has_trait = devoted
+		has_trait = septon
+		has_trait = maester
+	}
+	save_temporary_scope_as = root_character
+	OR = {
+		can_be_knight_trigger = { ARMY_OWNER = $COURT_OWNER$ }
+		is_courtier_of = $COURT_OWNER$
+		#for historical KG who don't meet reqs
+		has_trait = winged_knight
+	}
+	valid_winged_knight_gender_trigger = yes
+	custom_tooltip = {
+		text = winged_knight_grand_wedding_desc
+		trigger_if = {
+			limit = {
+				involved_activity ?= { has_activity_type = activity_wedding }
+			}
+			NOT = {
+				involved_activity = {
+					OR = {
+						prev = special_guest:spouse_1
+						prev = special_guest:spouse_2
+					}
+				}
+			}
+		}
+	}
+}
+
+valid_winged_knight_gender_trigger = {
+	is_male = yes
+}
+
+highborn_winged_knight_candidate = {
+	is_lowborn = no
+	trigger_if = {
+		limit = {
+			any_close_or_extended_family_member = {
+				AND = {
+					is_landed = yes
+					this = prev.employer
+				}
+			}
+		}
+		highest_held_title_tier >= tier_county
+	}
+	NOT = { #Don't send your heir dummy
+		any_heir_title = {
+			place_in_line_of_succession = {
+				target = prev
+				value == 1
+			}
+		}
+		has_trait = winged_knight
+		has_trait = nightswatch
+		has_trait = maester
+		has_trait = order_member
+	}
+	NOT = { exists = betrothed }
+	has_trait = education_martial_prowess #Send me people who can fight plz
+	trigger_if = {
+		limit = {
+			faith != root.faith
+		}
+		OR = {
+			has_character_modifier = training_for_winged_knight
+			house ?= {
+				house_head = {
+					opinion = {
+						target = root
+						value >= 51
+					}
+				}
+			}
+		}
+	}
+}
+
+can_have_winged_knight = {
+	ruler_primary_title_has_winged_knight_trigger = yes
+	# TODO pretenders should also be able to have a winged_knight; eg Rhaenyra or Daenerys
+}
+
+valid_winged_knight_bodyguard_councillor = {
+	scope:councillor = {
+		agot_is_councillor_available_trigger = yes
+	}
+}
+
+valid_winged_knight_bodyguard_target = {
+	OR = {
+		dynasty ?= scope:councillor_liege.dynasty
+		any_spouse = {
+			dynasty ?= scope:councillor_liege.dynasty
+		}
+	}
+	num_of_relation_bodyguard = 0
+}
+
+potential_winged_knight_bodyguard_court = {
+	scope:councillor = {
+		trigger_if = {
+			limit = { var:agot_target_court ?= scope:target_character }
+			scope:target_character = {
+				is_landed = yes
+			}
+			any_relation = {
+				type = bodyguard_target
+				is_in_the_same_court_as_or_guest = scope:target_character
+				is_imprisoned = no
+			}
+		}
+	}
+}
+
+valid_winged_knight_bodyguard_court = {
+	custom_description = {
+		text = valid_winged_knight_bodyguard_court
+		scope:target_character = {
+			OR = {
+				valid_winged_knight_bodyguard_target = yes
+				any_courtier_or_guest = {
+					valid_winged_knight_bodyguard_target = yes
+				}
+			}
+		}
+	}
+}
+##### GREEN KNIGHTS (Reach) #####
+title_has_green_knight_trigger = {
+	tier >= tier_empire
+	this = title:e_the_reach
+}
+
+ruler_has_green_knight_trigger = {
+	any_held_title = {
+		title_has_green_knight_trigger = yes
+	}
+}
+
+ruler_primary_title_has_green_knight_trigger = {
+	primary_title = title:e_the_reach
+}
+
+can_be_green_knight_trigger = {
+	can_be_councillor_basics_trigger = yes
+	OR = {
+		is_ruler = no
+		AND = {
+			has_title = title:d_green_knight
+			has_trait = green_knight
+		}
+	}
+	is_married = no
+	is_capable_adult = yes
+	is_human = yes
+	NOR = {
+		has_trait = nightswatch
+		has_trait = order_member #Go away Areo Hotah
+		has_trait = devoted
+		has_trait = septon
+		has_trait = maester
+	}
+	save_temporary_scope_as = root_character
+	OR = {
+		can_be_knight_trigger = { ARMY_OWNER = $COURT_OWNER$ }
+		is_courtier_of = $COURT_OWNER$
+		#for historical KG who don't meet reqs
+		has_trait = green_knight
+	}
+	valid_green_knight_gender_trigger = yes
+	custom_tooltip = {
+		text = green_knight_grand_wedding_desc
+		trigger_if = {
+			limit = {
+				involved_activity ?= { has_activity_type = activity_wedding }
+			}
+			NOT = {
+				involved_activity = {
+					OR = {
+						prev = special_guest:spouse_1
+						prev = special_guest:spouse_2
+					}
+				}
+			}
+		}
+	}
+}
+
+valid_green_knight_gender_trigger = {
+	is_male = yes
+}
+
+highborn_green_knight_candidate = {
+	is_lowborn = no
+	trigger_if = {
+		limit = {
+			any_close_or_extended_family_member = {
+				AND = {
+					is_landed = yes
+					this = prev.employer
+				}
+			}
+		}
+		highest_held_title_tier >= tier_county
+	}
+	NOT = { #Don't send your heir dummy
+		any_heir_title = {
+			place_in_line_of_succession = {
+				target = prev
+				value == 1
+			}
+		}
+		has_trait = green_knight
+		has_trait = nightswatch
+		has_trait = maester
+		has_trait = order_member
+	}
+	NOT = { exists = betrothed }
+	has_trait = education_martial_prowess #Send me people who can fight plz
+	trigger_if = {
+		limit = {
+			faith != root.faith
+		}
+		OR = {
+			has_character_modifier = training_for_green_knight
+			house ?= {
+				house_head = {
+					opinion = {
+						target = root
+						value >= 51
+					}
+				}
+			}
+		}
+	}
+}
+
+can_have_green_knight = {
+	ruler_primary_title_has_green_knight_trigger = yes
+	# TODO pretenders should also be able to have a green_knight; eg Rhaenyra or Daenerys
+}
+
+valid_green_knight_bodyguard_councillor = {
+	scope:councillor = {
+		agot_is_councillor_available_trigger = yes
+	}
+}
+
+valid_green_knight_bodyguard_target = {
+	OR = {
+		dynasty ?= scope:councillor_liege.dynasty
+		any_spouse = {
+			dynasty ?= scope:councillor_liege.dynasty
+		}
+	}
+	num_of_relation_bodyguard = 0
+}
+
+potential_green_knight_bodyguard_court = {
+	scope:councillor = {
+		trigger_if = {
+			limit = { var:agot_target_court ?= scope:target_character }
+			scope:target_character = {
+				is_landed = yes
+			}
+			any_relation = {
+				type = bodyguard_target
+				is_in_the_same_court_as_or_guest = scope:target_character
+				is_imprisoned = no
+			}
+		}
+	}
+}
+
+valid_green_knight_bodyguard_court = {
+	custom_description = {
+		text = valid_green_knight_bodyguard_court
+		scope:target_character = {
+			OR = {
+				valid_green_knight_bodyguard_target = yes
+				any_courtier_or_guest = {
+					valid_green_knight_bodyguard_target = yes
+				}
+			}
+		}
+	}
+}
+##### is_X_trigger (from councillor_triggers) #####
+is_winged_knight_trigger = {
+	OR = {
+		has_council_position = winged_knight_1
+		has_council_position = winged_knight_2
+		has_council_position = winged_knight_3
+		has_council_position = winged_knight_4
+		has_council_position = winged_knight_5
+		has_council_position = winged_knight_6
+		has_council_position = winged_knight_lord_commander
+	}
+}
+
+is_green_knight_trigger = {
+	OR = {
+		has_council_position = green_knight_1
+		has_council_position = green_knight_2
+		has_council_position = green_knight_3
+		has_council_position = green_knight_4
+		has_council_position = green_knight_5
+		has_council_position = green_knight_6
+		has_council_position = green_knight_lord_commander
+	}
+}
+
+##### Sun Knights (e_dorne) #####
+title_has_sun_knight_trigger = {
+	tier >= tier_empire
+	this = title:e_dorne
+}
+
+ruler_has_sun_knight_trigger = {
+	any_held_title = {
+		title_has_sun_knight_trigger = yes
+	}
+}
+
+ruler_primary_title_has_sun_knight_trigger = {
+	primary_title = title:e_dorne
+}
+
+can_be_sun_knight_trigger = {
+	can_be_councillor_basics_trigger = yes
+	OR = {
+		is_ruler = no
+		AND = {
+			has_title = title:d_sun_knight
+			has_trait = sun_knight
+		}
+	}
+	is_married = no
+	is_capable_adult = yes
+	is_human = yes
+	NOR = {
+		has_trait = nightswatch
+		has_trait = order_member #Go away Areo Hotah
+		has_trait = devoted
+		has_trait = septon
+		has_trait = maester
+	}
+	save_temporary_scope_as = root_character
+	OR = {
+		can_be_knight_trigger = { ARMY_OWNER = $COURT_OWNER$ }
+		is_courtier_of = $COURT_OWNER$
+		#for historical KG who don't meet reqs
+		has_trait = sun_knight
+	}
+	valid_sun_knight_gender_trigger = yes
+	custom_tooltip = {
+		text = sun_knight_grand_wedding_desc
+		trigger_if = {
+			limit = {
+				involved_activity ?= { has_activity_type = activity_wedding }
+			}
+			NOT = {
+				involved_activity = {
+					OR = {
+						prev = special_guest:spouse_1
+						prev = special_guest:spouse_2
+					}
+				}
+			}
+		}
+	}
+}
+
+valid_sun_knight_gender_trigger = {
+	is_male = yes
+}
+
+highborn_sun_knight_candidate = {
+	is_lowborn = no
+	trigger_if = {
+		limit = {
+			any_close_or_extended_family_member = {
+				AND = {
+					is_landed = yes
+					this = prev.employer
+				}
+			}
+		}
+		highest_held_title_tier >= tier_county
+	}
+	NOT = { #Don't send your heir dummy
+		any_heir_title = {
+			place_in_line_of_succession = {
+				target = prev
+				value == 1
+			}
+		}
+		has_trait = sun_knight
+		has_trait = nightswatch
+		has_trait = maester
+		has_trait = order_member
+	}
+	NOT = { exists = betrothed }
+	has_trait = education_martial_prowess #Send me people who can fight plz
+	trigger_if = {
+		limit = {
+			faith != root.faith
+		}
+		OR = {
+			has_character_modifier = training_for_sun_knight
+			house ?= {
+				house_head = {
+					opinion = {
+						target = root
+						value >= 51
+					}
+				}
+			}
+		}
+	}
+}
+
+can_have_sun_knight = {
+	ruler_primary_title_has_sun_knight_trigger = yes
+	# TODO pretenders should also be able to have a sun_knight; eg Rhaenyra or Daenerys
+}
+
+valid_sun_knight_bodyguard_councillor = {
+	scope:councillor = {
+		agot_is_councillor_available_trigger = yes
+	}
+}
+
+valid_sun_knight_bodyguard_target = {
+	OR = {
+		dynasty ?= scope:councillor_liege.dynasty
+		any_spouse = {
+			dynasty ?= scope:councillor_liege.dynasty
+		}
+	}
+	num_of_relation_bodyguard = 0
+}
+
+potential_sun_knight_bodyguard_court = {
+	scope:councillor = {
+		trigger_if = {
+			limit = { var:agot_target_court ?= scope:target_character }
+			scope:target_character = {
+				is_landed = yes
+			}
+			any_relation = {
+				type = bodyguard_target
+				is_in_the_same_court_as_or_guest = scope:target_character
+				is_imprisoned = no
+			}
+		}
+	}
+}
+
+valid_sun_knight_bodyguard_court = {
+	custom_description = {
+		text = valid_sun_knight_bodyguard_court
+		scope:target_character = {
+			OR = {
+				valid_sun_knight_bodyguard_target = yes
+				any_courtier_or_guest = {
+					valid_sun_knight_bodyguard_target = yes
+				}
+			}
+		}
+	}
+}
+
+##### Storm Knights (e_the_stormlands) #####
+title_has_storm_knight_trigger = {
+	tier >= tier_empire
+	this = title:e_the_stormlands
+}
+
+ruler_has_storm_knight_trigger = {
+	any_held_title = {
+		title_has_storm_knight_trigger = yes
+	}
+}
+
+ruler_primary_title_has_storm_knight_trigger = {
+	primary_title = title:e_the_stormlands
+}
+
+can_be_storm_knight_trigger = {
+	can_be_councillor_basics_trigger = yes
+	OR = {
+		is_ruler = no
+		AND = {
+			has_title = title:d_storm_knight
+			has_trait = storm_knight
+		}
+	}
+	is_married = no
+	is_capable_adult = yes
+	is_human = yes
+	NOR = {
+		has_trait = nightswatch
+		has_trait = order_member #Go away Areo Hotah
+		has_trait = devoted
+		has_trait = septon
+		has_trait = maester
+	}
+	save_temporary_scope_as = root_character
+	OR = {
+		can_be_knight_trigger = { ARMY_OWNER = $COURT_OWNER$ }
+		is_courtier_of = $COURT_OWNER$
+		#for historical KG who don't meet reqs
+		has_trait = storm_knight
+	}
+	valid_storm_knight_gender_trigger = yes
+	custom_tooltip = {
+		text = storm_knight_grand_wedding_desc
+		trigger_if = {
+			limit = {
+				involved_activity ?= { has_activity_type = activity_wedding }
+			}
+			NOT = {
+				involved_activity = {
+					OR = {
+						prev = special_guest:spouse_1
+						prev = special_guest:spouse_2
+					}
+				}
+			}
+		}
+	}
+}
+
+valid_storm_knight_gender_trigger = {
+	is_male = yes
+}
+
+highborn_storm_knight_candidate = {
+	is_lowborn = no
+	trigger_if = {
+		limit = {
+			any_close_or_extended_family_member = {
+				AND = {
+					is_landed = yes
+					this = prev.employer
+				}
+			}
+		}
+		highest_held_title_tier >= tier_county
+	}
+	NOT = { #Don't send your heir dummy
+		any_heir_title = {
+			place_in_line_of_succession = {
+				target = prev
+				value == 1
+			}
+		}
+		has_trait = storm_knight
+		has_trait = nightswatch
+		has_trait = maester
+		has_trait = order_member
+	}
+	NOT = { exists = betrothed }
+	has_trait = education_martial_prowess #Send me people who can fight plz
+	trigger_if = {
+		limit = {
+			faith != root.faith
+		}
+		OR = {
+			has_character_modifier = training_for_storm_knight
+			house ?= {
+				house_head = {
+					opinion = {
+						target = root
+						value >= 51
+					}
+				}
+			}
+		}
+	}
+}
+
+can_have_storm_knight = {
+	ruler_primary_title_has_storm_knight_trigger = yes
+	# TODO pretenders should also be able to have a storm_knight; eg Rhaenyra or Daenerys
+}
+
+valid_storm_knight_bodyguard_councillor = {
+	scope:councillor = {
+		agot_is_councillor_available_trigger = yes
+	}
+}
+
+valid_storm_knight_bodyguard_target = {
+	OR = {
+		dynasty ?= scope:councillor_liege.dynasty
+		any_spouse = {
+			dynasty ?= scope:councillor_liege.dynasty
+		}
+	}
+	num_of_relation_bodyguard = 0
+}
+
+potential_storm_knight_bodyguard_court = {
+	scope:councillor = {
+		trigger_if = {
+			limit = { var:agot_target_court ?= scope:target_character }
+			scope:target_character = {
+				is_landed = yes
+			}
+			any_relation = {
+				type = bodyguard_target
+				is_in_the_same_court_as_or_guest = scope:target_character
+				is_imprisoned = no
+			}
+		}
+	}
+}
+
+valid_storm_knight_bodyguard_court = {
+	custom_description = {
+		text = valid_storm_knight_bodyguard_court
+		scope:target_character = {
+			OR = {
+				valid_storm_knight_bodyguard_target = yes
+				any_courtier_or_guest = {
+					valid_storm_knight_bodyguard_target = yes
+				}
+			}
+		}
+	}
+}
+
+##### Loyal Knights (e_the_riverlands) #####
+title_has_loyal_knight_trigger = {
+	tier >= tier_empire
+	this = title:e_the_riverlands
+}
+
+ruler_has_loyal_knight_trigger = {
+	any_held_title = {
+		title_has_loyal_knight_trigger = yes
+	}
+}
+
+ruler_primary_title_has_loyal_knight_trigger = {
+	primary_title = title:e_the_riverlands
+}
+
+can_be_loyal_knight_trigger = {
+	can_be_councillor_basics_trigger = yes
+	OR = {
+		is_ruler = no
+		AND = {
+			has_title = title:d_loyal_knight
+			has_trait = loyal_knight
+		}
+	}
+	is_married = no
+	is_capable_adult = yes
+	is_human = yes
+	NOR = {
+		has_trait = nightswatch
+		has_trait = order_member #Go away Areo Hotah
+		has_trait = devoted
+		has_trait = septon
+		has_trait = maester
+	}
+	save_temporary_scope_as = root_character
+	OR = {
+		can_be_knight_trigger = { ARMY_OWNER = $COURT_OWNER$ }
+		is_courtier_of = $COURT_OWNER$
+		#for historical KG who don't meet reqs
+		has_trait = loyal_knight
+	}
+	valid_loyal_knight_gender_trigger = yes
+	custom_tooltip = {
+		text = loyal_knight_grand_wedding_desc
+		trigger_if = {
+			limit = {
+				involved_activity ?= { has_activity_type = activity_wedding }
+			}
+			NOT = {
+				involved_activity = {
+					OR = {
+						prev = special_guest:spouse_1
+						prev = special_guest:spouse_2
+					}
+				}
+			}
+		}
+	}
+}
+
+valid_loyal_knight_gender_trigger = {
+	is_male = yes
+}
+
+highborn_loyal_knight_candidate = {
+	is_lowborn = no
+	trigger_if = {
+		limit = {
+			any_close_or_extended_family_member = {
+				AND = {
+					is_landed = yes
+					this = prev.employer
+				}
+			}
+		}
+		highest_held_title_tier >= tier_county
+	}
+	NOT = { #Don't send your heir dummy
+		any_heir_title = {
+			place_in_line_of_succession = {
+				target = prev
+				value == 1
+			}
+		}
+		has_trait = loyal_knight
+		has_trait = nightswatch
+		has_trait = maester
+		has_trait = order_member
+	}
+	NOT = { exists = betrothed }
+	has_trait = education_martial_prowess #Send me people who can fight plz
+	trigger_if = {
+		limit = {
+			faith != root.faith
+		}
+		OR = {
+			has_character_modifier = training_for_loyal_knight
+			house ?= {
+				house_head = {
+					opinion = {
+						target = root
+						value >= 51
+					}
+				}
+			}
+		}
+	}
+}
+
+can_have_loyal_knight = {
+	ruler_primary_title_has_loyal_knight_trigger = yes
+	# TODO pretenders should also be able to have a loyal_knight; eg Rhaenyra or Daenerys
+}
+
+valid_loyal_knight_bodyguard_councillor = {
+	scope:councillor = {
+		agot_is_councillor_available_trigger = yes
+	}
+}
+
+valid_loyal_knight_bodyguard_target = {
+	OR = {
+		dynasty ?= scope:councillor_liege.dynasty
+		any_spouse = {
+			dynasty ?= scope:councillor_liege.dynasty
+		}
+	}
+	num_of_relation_bodyguard = 0
+}
+
+potential_loyal_knight_bodyguard_court = {
+	scope:councillor = {
+		trigger_if = {
+			limit = { var:agot_target_court ?= scope:target_character }
+			scope:target_character = {
+				is_landed = yes
+			}
+			any_relation = {
+				type = bodyguard_target
+				is_in_the_same_court_as_or_guest = scope:target_character
+				is_imprisoned = no
+			}
+		}
+	}
+}
+
+valid_loyal_knight_bodyguard_court = {
+	custom_description = {
+		text = valid_loyal_knight_bodyguard_court
+		scope:target_character = {
+			OR = {
+				valid_loyal_knight_bodyguard_target = yes
+				any_courtier_or_guest = {
+					valid_loyal_knight_bodyguard_target = yes
+				}
+			}
+		}
+	}
+}
+
+##### Golden Knights (e_the_westerlands) #####
+title_has_golden_knight_trigger = {
+	tier >= tier_empire
+	this = title:e_the_westerlands
+}
+
+ruler_has_golden_knight_trigger = {
+	any_held_title = {
+		title_has_golden_knight_trigger = yes
+	}
+}
+
+ruler_primary_title_has_golden_knight_trigger = {
+	primary_title = title:e_the_westerlands
+}
+
+can_be_golden_knight_trigger = {
+	can_be_councillor_basics_trigger = yes
+	OR = {
+		is_ruler = no
+		AND = {
+			has_title = title:d_golden_knight
+			has_trait = golden_knight
+		}
+	}
+	is_married = no
+	is_capable_adult = yes
+	is_human = yes
+	NOR = {
+		has_trait = nightswatch
+		has_trait = order_member #Go away Areo Hotah
+		has_trait = devoted
+		has_trait = septon
+		has_trait = maester
+	}
+	save_temporary_scope_as = root_character
+	OR = {
+		can_be_knight_trigger = { ARMY_OWNER = $COURT_OWNER$ }
+		is_courtier_of = $COURT_OWNER$
+		#for historical KG who don't meet reqs
+		has_trait = golden_knight
+	}
+	valid_golden_knight_gender_trigger = yes
+	custom_tooltip = {
+		text = golden_knight_grand_wedding_desc
+		trigger_if = {
+			limit = {
+				involved_activity ?= { has_activity_type = activity_wedding }
+			}
+			NOT = {
+				involved_activity = {
+					OR = {
+						prev = special_guest:spouse_1
+						prev = special_guest:spouse_2
+					}
+				}
+			}
+		}
+	}
+}
+
+valid_golden_knight_gender_trigger = {
+	is_male = yes
+}
+
+highborn_golden_knight_candidate = {
+	is_lowborn = no
+	trigger_if = {
+		limit = {
+			any_close_or_extended_family_member = {
+				AND = {
+					is_landed = yes
+					this = prev.employer
+				}
+			}
+		}
+		highest_held_title_tier >= tier_county
+	}
+	NOT = { #Don't send your heir dummy
+		any_heir_title = {
+			place_in_line_of_succession = {
+				target = prev
+				value == 1
+			}
+		}
+		has_trait = golden_knight
+		has_trait = nightswatch
+		has_trait = maester
+		has_trait = order_member
+	}
+	NOT = { exists = betrothed }
+	has_trait = education_martial_prowess #Send me people who can fight plz
+	trigger_if = {
+		limit = {
+			faith != root.faith
+		}
+		OR = {
+			has_character_modifier = training_for_golden_knight
+			house ?= {
+				house_head = {
+					opinion = {
+						target = root
+						value >= 51
+					}
+				}
+			}
+		}
+	}
+}
+
+can_have_golden_knight = {
+	ruler_primary_title_has_golden_knight_trigger = yes
+	# TODO pretenders should also be able to have a golden_knight; eg Rhaenyra or Daenerys
+}
+
+valid_golden_knight_bodyguard_councillor = {
+	scope:councillor = {
+		agot_is_councillor_available_trigger = yes
+	}
+}
+
+valid_golden_knight_bodyguard_target = {
+	OR = {
+		dynasty ?= scope:councillor_liege.dynasty
+		any_spouse = {
+			dynasty ?= scope:councillor_liege.dynasty
+		}
+	}
+	num_of_relation_bodyguard = 0
+}
+
+potential_golden_knight_bodyguard_court = {
+	scope:councillor = {
+		trigger_if = {
+			limit = { var:agot_target_court ?= scope:target_character }
+			scope:target_character = {
+				is_landed = yes
+			}
+			any_relation = {
+				type = bodyguard_target
+				is_in_the_same_court_as_or_guest = scope:target_character
+				is_imprisoned = no
+			}
+		}
+	}
+}
+
+valid_golden_knight_bodyguard_court = {
+	custom_description = {
+		text = valid_golden_knight_bodyguard_court
+		scope:target_character = {
+			OR = {
+				valid_golden_knight_bodyguard_target = yes
+				any_courtier_or_guest = {
+					valid_golden_knight_bodyguard_target = yes
+				}
+			}
+		}
+	}
+}
+
+##### Saltguards (e_the_iron_islands) #####
+title_has_saltguard_trigger = {
+	tier >= tier_empire
+	this = title:e_the_iron_islands
+}
+
+ruler_has_saltguard_trigger = {
+	any_held_title = {
+		title_has_saltguard_trigger = yes
+	}
+}
+
+ruler_primary_title_has_saltguard_trigger = {
+	primary_title = title:e_the_iron_islands
+}
+
+can_be_saltguard_trigger = {
+	can_be_councillor_basics_trigger = yes
+	OR = {
+		is_ruler = no
+		AND = {
+			has_title = title:d_saltguard
+			has_trait = saltguard
+		}
+	}
+	is_married = no
+	is_capable_adult = yes
+	is_human = yes
+	NOR = {
+		has_trait = nightswatch
+		has_trait = order_member #Go away Areo Hotah
+		has_trait = devoted
+		has_trait = septon
+		has_trait = maester
+	}
+	save_temporary_scope_as = root_character
+	OR = {
+		can_be_knight_trigger = { ARMY_OWNER = $COURT_OWNER$ }
+		is_courtier_of = $COURT_OWNER$
+		#for historical KG who don't meet reqs
+		has_trait = saltguard
+	}
+	valid_saltguard_gender_trigger = yes
+	custom_tooltip = {
+		text = saltguard_grand_wedding_desc
+		trigger_if = {
+			limit = {
+				involved_activity ?= { has_activity_type = activity_wedding }
+			}
+			NOT = {
+				involved_activity = {
+					OR = {
+						prev = special_guest:spouse_1
+						prev = special_guest:spouse_2
+					}
+				}
+			}
+		}
+	}
+}
+
+valid_saltguard_gender_trigger = {
+	is_male = yes
+}
+
+highborn_saltguard_candidate = {
+	is_lowborn = no
+	trigger_if = {
+		limit = {
+			any_close_or_extended_family_member = {
+				AND = {
+					is_landed = yes
+					this = prev.employer
+				}
+			}
+		}
+		highest_held_title_tier >= tier_county
+	}
+	NOT = { #Don't send your heir dummy
+		any_heir_title = {
+			place_in_line_of_succession = {
+				target = prev
+				value == 1
+			}
+		}
+		has_trait = saltguard
+		has_trait = nightswatch
+		has_trait = maester
+		has_trait = order_member
+	}
+	NOT = { exists = betrothed }
+	has_trait = education_martial_prowess #Send me people who can fight plz
+	trigger_if = {
+		limit = {
+			faith != root.faith
+		}
+		OR = {
+			has_character_modifier = training_for_saltguard
+			house ?= {
+				house_head = {
+					opinion = {
+						target = root
+						value >= 51
+					}
+				}
+			}
+		}
+	}
+}
+
+can_have_saltguard = {
+	ruler_primary_title_has_saltguard_trigger = yes
+	# TODO pretenders should also be able to have a saltguard; eg Rhaenyra or Daenerys
+}
+
+valid_saltguard_bodyguard_councillor = {
+	scope:councillor = {
+		agot_is_councillor_available_trigger = yes
+	}
+}
+
+valid_saltguard_bodyguard_target = {
+	OR = {
+		dynasty ?= scope:councillor_liege.dynasty
+		any_spouse = {
+			dynasty ?= scope:councillor_liege.dynasty
+		}
+	}
+	num_of_relation_bodyguard = 0
+}
+
+potential_saltguard_bodyguard_court = {
+	scope:councillor = {
+		trigger_if = {
+			limit = { var:agot_target_court ?= scope:target_character }
+			scope:target_character = {
+				is_landed = yes
+			}
+			any_relation = {
+				type = bodyguard_target
+				is_in_the_same_court_as_or_guest = scope:target_character
+				is_imprisoned = no
+			}
+		}
+	}
+}
+
+valid_saltguard_bodyguard_court = {
+	custom_description = {
+		text = valid_saltguard_bodyguard_court
+		scope:target_character = {
+			OR = {
+				valid_saltguard_bodyguard_target = yes
+				any_courtier_or_guest = {
+					valid_saltguard_bodyguard_target = yes
+				}
+			}
+		}
+	}
+}
+
+##### Winter Wolves (e_the_north) #####
+title_has_winter_wolf_trigger = {
+	tier >= tier_empire
+	this = title:e_the_north
+}
+
+ruler_has_winter_wolf_trigger = {
+	any_held_title = {
+		title_has_winter_wolf_trigger = yes
+	}
+}
+
+ruler_primary_title_has_winter_wolf_trigger = {
+	primary_title = title:e_the_north
+}
+
+can_be_winter_wolf_trigger = {
+	can_be_councillor_basics_trigger = yes
+	OR = {
+		is_ruler = no
+		AND = {
+			has_title = title:d_winter_wolf
+			has_trait = winter_wolf
+		}
+	}
+	is_married = no
+	is_capable_adult = yes
+	is_human = yes
+	NOR = {
+		has_trait = nightswatch
+		has_trait = order_member #Go away Areo Hotah
+		has_trait = devoted
+		has_trait = septon
+		has_trait = maester
+	}
+	save_temporary_scope_as = root_character
+	OR = {
+		can_be_knight_trigger = { ARMY_OWNER = $COURT_OWNER$ }
+		is_courtier_of = $COURT_OWNER$
+		#for historical KG who don't meet reqs
+		has_trait = winter_wolf
+	}
+	valid_winter_wolf_gender_trigger = yes
+	custom_tooltip = {
+		text = winter_wolf_grand_wedding_desc
+		trigger_if = {
+			limit = {
+				involved_activity ?= { has_activity_type = activity_wedding }
+			}
+			NOT = {
+				involved_activity = {
+					OR = {
+						prev = special_guest:spouse_1
+						prev = special_guest:spouse_2
+					}
+				}
+			}
+		}
+	}
+}
+
+valid_winter_wolf_gender_trigger = {
+	is_male = yes
+}
+
+highborn_winter_wolf_candidate = {
+	is_lowborn = no
+	trigger_if = {
+		limit = {
+			any_close_or_extended_family_member = {
+				AND = {
+					is_landed = yes
+					this = prev.employer
+				}
+			}
+		}
+		highest_held_title_tier >= tier_county
+	}
+	NOT = { #Don't send your heir dummy
+		any_heir_title = {
+			place_in_line_of_succession = {
+				target = prev
+				value == 1
+			}
+		}
+		has_trait = winter_wolf
+		has_trait = nightswatch
+		has_trait = maester
+		has_trait = order_member
+	}
+	NOT = { exists = betrothed }
+	has_trait = education_martial_prowess #Send me people who can fight plz
+	trigger_if = {
+		limit = {
+			faith != root.faith
+		}
+		OR = {
+			has_character_modifier = training_for_winter_wolf
+			house ?= {
+				house_head = {
+					opinion = {
+						target = root
+						value >= 51
+					}
+				}
+			}
+		}
+	}
+}
+
+can_have_winter_wolf = {
+	ruler_primary_title_has_winter_wolf_trigger = yes
+	# TODO pretenders should also be able to have a winter_wolf; eg Rhaenyra or Daenerys
+}
+
+valid_winter_wolf_bodyguard_councillor = {
+	scope:councillor = {
+		agot_is_councillor_available_trigger = yes
+	}
+}
+
+valid_winter_wolf_bodyguard_target = {
+	OR = {
+		dynasty ?= scope:councillor_liege.dynasty
+		any_spouse = {
+			dynasty ?= scope:councillor_liege.dynasty
+		}
+	}
+	num_of_relation_bodyguard = 0
+}
+
+potential_winter_wolf_bodyguard_court = {
+	scope:councillor = {
+		trigger_if = {
+			limit = { var:agot_target_court ?= scope:target_character }
+			scope:target_character = {
+				is_landed = yes
+			}
+			any_relation = {
+				type = bodyguard_target
+				is_in_the_same_court_as_or_guest = scope:target_character
+				is_imprisoned = no
+			}
+		}
+	}
+}
+
+valid_winter_wolf_bodyguard_court = {
+	custom_description = {
+		text = valid_winter_wolf_bodyguard_court
+		scope:target_character = {
+			OR = {
+				valid_winter_wolf_bodyguard_target = yes
+				any_courtier_or_guest = {
+					valid_winter_wolf_bodyguard_target = yes
+				}
+			}
+		}
+	}
+}
+
+is_sun_knight_trigger = {
+	OR = {
+		has_council_position = sun_knight_1
+		has_council_position = sun_knight_2
+		has_council_position = sun_knight_3
+		has_council_position = sun_knight_4
+		has_council_position = sun_knight_5
+		has_council_position = sun_knight_6
+		has_council_position = sun_knight_lord_commander
+	}
+}
+
+is_storm_knight_trigger = {
+	OR = {
+		has_council_position = storm_knight_1
+		has_council_position = storm_knight_2
+		has_council_position = storm_knight_3
+		has_council_position = storm_knight_4
+		has_council_position = storm_knight_5
+		has_council_position = storm_knight_6
+		has_council_position = storm_knight_lord_commander
+	}
+}
+
+is_loyal_knight_trigger = {
+	OR = {
+		has_council_position = loyal_knight_1
+		has_council_position = loyal_knight_2
+		has_council_position = loyal_knight_3
+		has_council_position = loyal_knight_4
+		has_council_position = loyal_knight_5
+		has_council_position = loyal_knight_6
+		has_council_position = loyal_knight_lord_commander
+	}
+}
+
+is_golden_knight_trigger = {
+	OR = {
+		has_council_position = golden_knight_1
+		has_council_position = golden_knight_2
+		has_council_position = golden_knight_3
+		has_council_position = golden_knight_4
+		has_council_position = golden_knight_5
+		has_council_position = golden_knight_6
+		has_council_position = golden_knight_lord_commander
+	}
+}
+
+is_saltguard_trigger = {
+	OR = {
+		has_council_position = saltguard_1
+		has_council_position = saltguard_2
+		has_council_position = saltguard_3
+		has_council_position = saltguard_4
+		has_council_position = saltguard_5
+		has_council_position = saltguard_6
+		has_council_position = saltguard_lord_commander
+	}
+}
+
+is_winter_wolf_trigger = {
+	OR = {
+		has_council_position = winter_wolf_1
+		has_council_position = winter_wolf_2
+		has_council_position = winter_wolf_3
+		has_council_position = winter_wolf_4
+		has_council_position = winter_wolf_5
+		has_council_position = winter_wolf_6
+		has_council_position = winter_wolf_lord_commander
+	}
+}

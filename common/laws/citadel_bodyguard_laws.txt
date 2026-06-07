@@ -1,0 +1,407 @@
+﻿### Citadel Bodyguard orders (laws) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+##### WINGED KNIGHTS (Vale) #####
+# @winged_knight_laws_cooldown_years = 100
+
+# winged_knight_laws = {
+# 	default = winged_knight_law_1
+# 	flag = realm_law
+
+# 	winged_knight_law_1 = {
+# 		can_have = {
+# 			ruler_primary_title_has_winged_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_vale
+# 		}
+# 		should_start_with = {
+# 			always = yes
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = winged_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = winged_knight_law_2
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = winged_knight_laws_cooldown
+# 				years = @winged_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+
+# 	winged_knight_law_2 = {
+# 		can_have = {
+# 			ruler_primary_title_has_winged_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_vale
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = winged_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = winged_knight_law_1
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = winged_knight_laws_cooldown
+# 				years = @winged_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+# }
+##### GREEN KNIGHTS (Reach) #####
+# @green_knight_laws_cooldown_years = 100
+
+# green_knight_laws = {
+# 	default = green_knight_law_1
+# 	flag = realm_law
+
+# 	green_knight_law_1 = {
+# 		can_have = {
+# 			ruler_primary_title_has_green_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_reach
+# 		}
+# 		should_start_with = {
+# 			always = yes
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = green_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = green_knight_law_2
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = green_knight_laws_cooldown
+# 				years = @green_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+
+# 	green_knight_law_2 = {
+# 		can_have = {
+# 			ruler_primary_title_has_green_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_reach
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = green_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = green_knight_law_1
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = green_knight_laws_cooldown
+# 				years = @green_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+# }
+##### Sun Knights (e_dorne) #####
+# @sun_knight_laws_cooldown_years = 100
+
+# sun_knight_laws = {
+# 	default = sun_knight_law_1
+# 	flag = realm_law
+
+# 	sun_knight_law_1 = {
+# 		can_have = {
+# 			ruler_primary_title_has_sun_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_dorne
+# 		}
+# 		should_start_with = {
+# 			always = yes
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = sun_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = sun_knight_law_2
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = sun_knight_laws_cooldown
+# 				years = @sun_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+
+# 	sun_knight_law_2 = {
+# 		can_have = {
+# 			ruler_primary_title_has_sun_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_dorne
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = sun_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = sun_knight_law_1
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = sun_knight_laws_cooldown
+# 				years = @sun_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+# }
+
+##### Storm Knights (e_the_stormlands) #####
+# @storm_knight_laws_cooldown_years = 100
+
+# storm_knight_laws = {
+# 	default = storm_knight_law_1
+# 	flag = realm_law
+
+# 	storm_knight_law_1 = {
+# 		can_have = {
+# 			ruler_primary_title_has_storm_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_stormlands
+# 		}
+# 		should_start_with = {
+# 			always = yes
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = storm_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = storm_knight_law_2
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = storm_knight_laws_cooldown
+# 				years = @storm_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+
+# 	storm_knight_law_2 = {
+# 		can_have = {
+# 			ruler_primary_title_has_storm_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_stormlands
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = storm_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = storm_knight_law_1
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = storm_knight_laws_cooldown
+# 				years = @storm_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+# }
+
+##### Loyal Knights (e_the_riverlands) #####
+# @loyal_knight_laws_cooldown_years = 100
+
+# loyal_knight_laws = {
+# 	default = loyal_knight_law_1
+# 	flag = realm_law
+
+# 	loyal_knight_law_1 = {
+# 		can_have = {
+# 			ruler_primary_title_has_loyal_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_riverlands
+# 		}
+# 		should_start_with = {
+# 			always = yes
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = loyal_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = loyal_knight_law_2
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = loyal_knight_laws_cooldown
+# 				years = @loyal_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+
+# 	loyal_knight_law_2 = {
+# 		can_have = {
+# 			ruler_primary_title_has_loyal_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_riverlands
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = loyal_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = loyal_knight_law_1
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = loyal_knight_laws_cooldown
+# 				years = @loyal_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+# }
+
+##### Golden Knights (e_the_westerlands) #####
+# @golden_knight_laws_cooldown_years = 100
+
+# golden_knight_laws = {
+# 	default = golden_knight_law_1
+# 	flag = realm_law
+
+# 	golden_knight_law_1 = {
+# 		can_have = {
+# 			ruler_primary_title_has_golden_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_westerlands
+# 		}
+# 		should_start_with = {
+# 			always = yes
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = golden_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = golden_knight_law_2
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = golden_knight_laws_cooldown
+# 				years = @golden_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+
+# 	golden_knight_law_2 = {
+# 		can_have = {
+# 			ruler_primary_title_has_golden_knight_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_westerlands
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = golden_knight_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = golden_knight_law_1
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = golden_knight_laws_cooldown
+# 				years = @golden_knight_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+# }
+
+##### Saltguards (e_the_iron_islands) #####
+# @saltguard_laws_cooldown_years = 100
+
+# saltguard_laws = {
+# 	default = saltguard_law_1
+# 	flag = realm_law
+
+# 	saltguard_law_1 = {
+# 		can_have = {
+# 			ruler_primary_title_has_saltguard_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_iron_islands
+# 		}
+# 		should_start_with = {
+# 			always = yes
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = saltguard_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = saltguard_law_2
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = saltguard_laws_cooldown
+# 				years = @saltguard_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+
+# 	saltguard_law_2 = {
+# 		can_have = {
+# 			ruler_primary_title_has_saltguard_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_iron_islands
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = saltguard_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = saltguard_law_1
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = saltguard_laws_cooldown
+# 				years = @saltguard_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+# }
+
+##### Winter Wolves (e_the_north) #####
+# @winter_wolf_laws_cooldown_years = 100
+
+# winter_wolf_laws = {
+# 	default = winter_wolf_law_1
+# 	flag = realm_law
+
+# 	winter_wolf_law_1 = {
+# 		can_have = {
+# 			ruler_primary_title_has_winter_wolf_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_north
+# 		}
+# 		should_start_with = {
+# 			always = yes
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = winter_wolf_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = winter_wolf_law_2
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = winter_wolf_laws_cooldown
+# 				years = @winter_wolf_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+
+# 	winter_wolf_law_2 = {
+# 		can_have = {
+# 			ruler_primary_title_has_winter_wolf_trigger = yes
+# 		}
+# 		can_title_have = {
+# 			this = title:e_the_north
+# 		}
+# 		can_pass = {
+# 			#NOT = { has_variable = winter_wolf_laws_cooldown }
+# 		}
+# 		on_pass = {
+# 			remove_realm_law = winter_wolf_law_1
+# 			# Set regular cooldown.
+# 			set_variable = {
+# 				name = winter_wolf_laws_cooldown
+# 				years = @winter_wolf_laws_cooldown_years
+# 			}
+# 		}
+# 	}
+# }

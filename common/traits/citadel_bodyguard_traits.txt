@@ -1,0 +1,393 @@
+﻿### Citadel Bodyguard orders (traits) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+##### WINGED KNIGHTS (Vale) #####
+winged_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	same_opinion = 5
+	liege_opinion = 30
+	diplomacy = 1
+	prowess = 4
+	monthly_prestige_gain_mult = 0.2
+	monthly_piety_gain_mult = 0.01
+
+	inheritance_blocker = all
+	claim_inheritance_blocker = all
+
+	flag = can_not_marry
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_winged_knight_desc
+			}
+			desc = trait_winged_knight_character_desc
+		}
+	}
+}
+
+former_winged_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_former_winged_knight_desc
+			}
+			desc = trait_former_winged_knight_character_desc
+		}
+	}
+}
+
+##### GREEN KNIGHTS (Reach) #####
+green_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	same_opinion = 5
+	liege_opinion = 30
+	diplomacy = 1
+	prowess = 4
+	monthly_prestige_gain_mult = 0.2
+	monthly_piety_gain_mult = 0.01
+
+	inheritance_blocker = all
+	claim_inheritance_blocker = all
+
+	flag = can_not_marry
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_green_knight_desc
+			}
+			desc = trait_green_knight_character_desc
+		}
+	}
+}
+
+former_green_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_former_green_knight_desc
+			}
+			desc = trait_former_green_knight_character_desc
+		}
+	}
+}
+
+##### Sun Knights (e_dorne) #####
+sun_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	same_opinion = 5
+	liege_opinion = 30
+	diplomacy = 1
+	prowess = 4
+	monthly_prestige_gain_mult = 0.2
+	monthly_piety_gain_mult = 0.01
+
+	inheritance_blocker = all
+	claim_inheritance_blocker = all
+
+	flag = can_not_marry
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_sun_knight_desc
+			}
+			desc = trait_sun_knight_character_desc
+		}
+	}
+}
+
+former_sun_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_former_sun_knight_desc
+			}
+			desc = trait_former_sun_knight_character_desc
+		}
+	}
+}
+
+##### Storm Knights (e_the_stormlands) #####
+storm_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	same_opinion = 5
+	liege_opinion = 30
+	diplomacy = 1
+	prowess = 4
+	monthly_prestige_gain_mult = 0.2
+	monthly_piety_gain_mult = 0.01
+
+	inheritance_blocker = all
+	claim_inheritance_blocker = all
+
+	flag = can_not_marry
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_storm_knight_desc
+			}
+			desc = trait_storm_knight_character_desc
+		}
+	}
+}
+
+former_storm_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_former_storm_knight_desc
+			}
+			desc = trait_former_storm_knight_character_desc
+		}
+	}
+}
+
+##### Loyal Knights (e_the_riverlands) #####
+loyal_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	same_opinion = 5
+	liege_opinion = 30
+	diplomacy = 1
+	prowess = 4
+	monthly_prestige_gain_mult = 0.2
+	monthly_piety_gain_mult = 0.01
+
+	inheritance_blocker = all
+	claim_inheritance_blocker = all
+
+	flag = can_not_marry
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_loyal_knight_desc
+			}
+			desc = trait_loyal_knight_character_desc
+		}
+	}
+}
+
+former_loyal_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_former_loyal_knight_desc
+			}
+			desc = trait_former_loyal_knight_character_desc
+		}
+	}
+}
+
+##### Golden Knights (e_the_westerlands) #####
+golden_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	same_opinion = 5
+	liege_opinion = 30
+	diplomacy = 1
+	prowess = 4
+	monthly_prestige_gain_mult = 0.2
+	monthly_piety_gain_mult = 0.01
+
+	inheritance_blocker = all
+	claim_inheritance_blocker = all
+
+	flag = can_not_marry
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_golden_knight_desc
+			}
+			desc = trait_golden_knight_character_desc
+		}
+	}
+}
+
+former_golden_knight = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_former_golden_knight_desc
+			}
+			desc = trait_former_golden_knight_character_desc
+		}
+	}
+}
+
+##### Saltguards (e_the_iron_islands) #####
+saltguard = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	same_opinion = 5
+	liege_opinion = 30
+	diplomacy = 1
+	prowess = 4
+	monthly_prestige_gain_mult = 0.2
+	monthly_piety_gain_mult = 0.01
+
+	inheritance_blocker = all
+	claim_inheritance_blocker = all
+
+	flag = can_not_marry
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_saltguard_desc
+			}
+			desc = trait_saltguard_character_desc
+		}
+	}
+}
+
+former_saltguard = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_former_saltguard_desc
+			}
+			desc = trait_former_saltguard_character_desc
+		}
+	}
+}
+
+##### Winter Wolves (e_the_north) #####
+winter_wolf = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	same_opinion = 5
+	liege_opinion = 30
+	diplomacy = 1
+	prowess = 4
+	monthly_prestige_gain_mult = 0.2
+	monthly_piety_gain_mult = 0.01
+
+	inheritance_blocker = all
+	claim_inheritance_blocker = all
+
+	flag = can_not_marry
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_winter_wolf_desc
+			}
+			desc = trait_winter_wolf_character_desc
+		}
+	}
+}
+
+former_winter_wolf = {
+	category = fame
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_former_winter_wolf_desc
+			}
+			desc = trait_former_winter_wolf_character_desc
+		}
+	}
+}

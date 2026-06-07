@@ -1,0 +1,57 @@
+﻿### Citadel Bodyguard orders (scripted lists) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+living_winged_knight = {
+	base = living_character
+	conditions = {
+		has_trait = winged_knight
+	}
+}
+
+living_green_knight = {
+	base = living_character
+	conditions = {
+		has_trait = green_knight
+	}
+}
+
+living_sun_knight = {
+	base = living_character
+	conditions = {
+		has_trait = sun_knight
+	}
+}
+
+living_storm_knight = {
+	base = living_character
+	conditions = {
+		has_trait = storm_knight
+	}
+}
+
+living_loyal_knight = {
+	base = living_character
+	conditions = {
+		has_trait = loyal_knight
+	}
+}
+
+living_golden_knight = {
+	base = living_character
+	conditions = {
+		has_trait = golden_knight
+	}
+}
+
+living_saltguard = {
+	base = living_character
+	conditions = {
+		has_trait = saltguard
+	}
+}
+
+living_winter_wolf = {
+	base = living_character
+	conditions = {
+		has_trait = winter_wolf
+	}
+}

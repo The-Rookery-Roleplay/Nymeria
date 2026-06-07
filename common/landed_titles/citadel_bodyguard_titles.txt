@@ -1,0 +1,238 @@
+﻿### Citadel Bodyguard orders (titles) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+# script constants the title blocks reference (must be defined in-file)
+@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+
+##### WINGED KNIGHTS (Vale) #####
+d_winged_knight = {
+	color = { 255 249 198 }
+
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	can_create = { always = no }
+	destroy_on_succession = yes
+
+	capital = c_kings_landing
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
+d_dummy_winged_knight = { #dummy title that allows us to change winged_knight history
+	color= { 255 249 198 }
+	landless = yes
+
+	capital = c_kings_landing
+
+	can_create = { always = no }
+}
+
+##### GREEN KNIGHTS (Reach) #####
+d_green_knight = {
+	color = { 255 249 198 }
+
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	can_create = { always = no }
+	destroy_on_succession = yes
+
+	capital = c_kings_landing
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
+d_dummy_green_knight = { #dummy title that allows us to change green_knight history
+	color= { 255 249 198 }
+	landless = yes
+
+	capital = c_kings_landing
+
+	can_create = { always = no }
+}
+
+##### Sun Knights (e_dorne) #####
+d_sun_knight = {
+	color = { 255 249 198 }
+
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	can_create = { always = no }
+	destroy_on_succession = yes
+
+	capital = c_kings_landing
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
+d_dummy_sun_knight = { #dummy title that allows us to change sun_knight history
+	color= { 255 249 198 }
+	landless = yes
+
+	capital = c_kings_landing
+
+	can_create = { always = no }
+}
+
+##### Storm Knights (e_the_stormlands) #####
+d_storm_knight = {
+	color = { 255 249 198 }
+
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	can_create = { always = no }
+	destroy_on_succession = yes
+
+	capital = c_kings_landing
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
+d_dummy_storm_knight = { #dummy title that allows us to change storm_knight history
+	color= { 255 249 198 }
+	landless = yes
+
+	capital = c_kings_landing
+
+	can_create = { always = no }
+}
+
+##### Loyal Knights (e_the_riverlands) #####
+d_loyal_knight = {
+	color = { 255 249 198 }
+
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	can_create = { always = no }
+	destroy_on_succession = yes
+
+	capital = c_kings_landing
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
+d_dummy_loyal_knight = { #dummy title that allows us to change loyal_knight history
+	color= { 255 249 198 }
+	landless = yes
+
+	capital = c_kings_landing
+
+	can_create = { always = no }
+}
+
+##### Golden Knights (e_the_westerlands) #####
+d_golden_knight = {
+	color = { 255 249 198 }
+
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	can_create = { always = no }
+	destroy_on_succession = yes
+
+	capital = c_kings_landing
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
+d_dummy_golden_knight = { #dummy title that allows us to change golden_knight history
+	color= { 255 249 198 }
+	landless = yes
+
+	capital = c_kings_landing
+
+	can_create = { always = no }
+}
+
+##### Saltguards (e_the_iron_islands) #####
+d_saltguard = {
+	color = { 255 249 198 }
+
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	can_create = { always = no }
+	destroy_on_succession = yes
+
+	capital = c_kings_landing
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
+d_dummy_saltguard = { #dummy title that allows us to change saltguard history
+	color= { 255 249 198 }
+	landless = yes
+
+	capital = c_kings_landing
+
+	can_create = { always = no }
+}
+
+##### Winter Wolves (e_the_north) #####
+d_winter_wolf = {
+	color = { 255 249 198 }
+
+	definite_form = yes
+	ruler_uses_title_name = no
+	landless = yes
+	can_create = { always = no }
+	destroy_on_succession = yes
+
+	capital = c_kings_landing
+
+	ai_primary_priority = {
+		add = @always_primary_score
+	}
+
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
+d_dummy_winter_wolf = { #dummy title that allows us to change winter_wolf history
+	color= { 255 249 198 }
+	landless = yes
+
+	capital = c_kings_landing
+
+	can_create = { always = no }
+}
