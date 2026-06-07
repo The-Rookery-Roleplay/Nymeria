@@ -19,24 +19,24 @@ asoiaf_destroy_ww_ok_effect = {
 asoiaf_religion_doctrines_effect = {
 	if = {
 		limit = { has_game_rule = default_gender_equality }
-		faith:old_gods_wnw = {
+		faith:old_gods_wnw ?= {
 			remove_doctrine = doctrine_gender_equal
 			add_doctrine = doctrine_gender_male_dominated #male dominated in the Seven Kingdoms
 		}
-		faith:valyrian_pan_freehold = {
+		faith:valyrian_pan_freehold ?= {
 			remove_doctrine = doctrine_gender_equal
 			add_doctrine = doctrine_gender_male_dominated #evidence points to male dominance
 		}
-		faith:fots_dragon = {
+		faith:fots_dragon ?= {
 			remove_doctrine = doctrine_gender_equal
 			add_doctrine = doctrine_gender_male_dominated #same as regular Valyrian faith
 		}
 	}
-	faith:old_gods_wnw = {
+	faith:old_gods_wnw ?= {
 		remove_doctrine = doctrine_consanguinity_cousins
 		add_doctrine = doctrine_consanguinity_aunt_nephew_and_uncle_niece #examples exist of northmen marrying nieces
 	}
-	faith:rhllor_fots = { #Red God is based on the faith followed by Stannis and his supporters, which was 100% fundamentalist
+	faith:rhllor_fots ?= { #Red God is based on the faith followed by Stannis and his supporters, which was 100% fundamentalist
 		remove_doctrine = doctrine_pluralism_righteous
 		add_doctrine = doctrine_pluralism_fundamentalist
 	}
@@ -794,7 +794,7 @@ asoiaf_setup_houses_effect = {
 	if = {
 		limit = { exists = house:house_Brightflame }
 		character:Ruin_Empress ?= { trigger_event = { id = asoiaf_setup_events.8 days = 1 } } #House Brightflame dragonrider modifier removal event (delayed since the modifier is ALSO given on game start)
-		house:house_Brightflame = { remove_variable = agot_allow_adelphogamous_incest }
+		house:house_Brightflame ?= { remove_variable = agot_allow_adelphogamous_incest }
 	}
 }
 
@@ -819,7 +819,7 @@ asoiaf_setup_characters_effect = {
 					is_great_grandchild_of = title:e_the_vale.holder
 				}
 			}
-			title:c_the_bloody_gate.holder = { set_designated_heir_unsafe = title:e_the_vale.holder }
+			title:c_the_bloody_gate.holder ?= { set_designated_heir_unsafe = title:e_the_vale.holder }
 		}
 	}
 	character:Targaryen_1 ?= { #Aerys II Targaryen crown inheritance
@@ -1400,7 +1400,7 @@ asoiaf_setup_characters_effect = {
 				is_alive = yes
 				current_date >= 8062.1.1 #born, lived, and died in Dorne
 			}
-			title:b_bloodbridge.holder = { add_courtier = character:asoiaf_Kat_1 }
+			title:b_bloodbridge.holder ?= { add_courtier = character:asoiaf_Kat_1 }
 		}
 	}
 	character:asoiaf_Kat_1_rs ?= { #Kat's mother in Dorne
@@ -1409,13 +1409,13 @@ asoiaf_setup_characters_effect = {
 				is_alive = yes
 				current_date >= 8063.1.1 #born, lived, and died in Dorne
 			}
-			title:b_bloodbridge.holder = { add_courtier = character:asoiaf_Kat_1_rs }
+			title:b_bloodbridge.holder ?= { add_courtier = character:asoiaf_Kat_1_rs }
 		}
 	}
 	character:Hammer_2 ?= { #Hendry (father of Hugh)
 		if = {
 			limit = { is_alive = yes }
-			title:b_hookmarket.holder = { add_courtier = character:Hammer_2 }
+			title:b_hookmarket.holder ?= { add_courtier = character:Hammer_2 }
 		}
 	}
 	character:Hammer_1 ?= { #Hugh the Hammer
@@ -1425,14 +1425,14 @@ asoiaf_setup_characters_effect = {
 				current_date >= 8095.1.1 #lived in King's Landing
 				current_date < 8129.12.5
 			}
-			title:b_hookmarket.holder = { add_courtier = character:Hammer_1 }
+			title:b_hookmarket.holder ?= { add_courtier = character:Hammer_1 }
 		}
 		if = {
 			limit = {
 				is_alive = yes
 				current_date >= 8129.12.5 #went to Dragonstone for the sowing
 			}
-			title:b_dragonstone.holder = { add_courtier = character:Hammer_1 }
+			title:b_dragonstone.holder ?= { add_courtier = character:Hammer_1 }
 		}
 	}
 	character:asoiaf_Kat_2 ?= { #Kat (wife of Hugh the Hamer)
@@ -1442,14 +1442,14 @@ asoiaf_setup_characters_effect = {
 				current_date >= 8097.1.1 #born where her father lives in Dorne
 				current_date < 8118.1.1
 			}
-			title:b_bloodbridge.holder = { add_courtier = character:asoiaf_Kat_2 }
+			title:b_bloodbridge.holder ?= { add_courtier = character:asoiaf_Kat_2 }
 		}
 		if = {
 			limit = {
 				is_alive = yes
 				current_date >= 8118.1.1 #she moves away to King's Landing
 			}
-			title:b_hookmarket.holder = { add_courtier = character:asoiaf_Kat_2 }
+			title:b_hookmarket.holder ?= { add_courtier = character:asoiaf_Kat_2 }
 		}
 	}
 	character:asoiaf_Kat_3 ?= { #Kat's brother in Tumbleton
@@ -1459,14 +1459,14 @@ asoiaf_setup_characters_effect = {
 				current_date >= 8100.1.1 #born where his father lives in Dorne
 				current_date < 8118.1.1
 			}
-			title:b_bloodbridge.holder = { add_courtier = character:asoiaf_Kat_3 }
+			title:b_bloodbridge.holder ?= { add_courtier = character:asoiaf_Kat_3 }
 		}
 		if = {
 			limit = {
 				is_alive = yes
 				current_date >= 8118.1.1 #he moves away to Tumbleton
 			}
-			title:b_tumbleton.holder = { add_courtier = character:asoiaf_Kat_3 }
+			title:b_tumbleton.holder ?= { add_courtier = character:asoiaf_Kat_3 }
 		}
 	}
 	character:asoiaf_Hammer_2 ?= { #Kat/Hugh's daughter
@@ -1475,7 +1475,7 @@ asoiaf_setup_characters_effect = {
 				is_alive = yes
 				current_date >= 8119.1.1 #born and raised in King's Landing
 			}
-			title:b_hookmarket.holder = { add_courtier = character:asoiaf_Hammer_2 }
+			title:b_hookmarket.holder ?= { add_courtier = character:asoiaf_Hammer_2 }
 		}
 	}
 	character:White_1 ?= { #Ulf the White
@@ -1485,14 +1485,14 @@ asoiaf_setup_characters_effect = {
 				current_date >= 8091.1.1 #lived in King's Landing
 				current_date < 8129.12.5
 			}
-			title:b_hookmarket.holder = { add_courtier = character:White_1 }
+			title:b_hookmarket.holder ?= { add_courtier = character:White_1 }
 		}
 		if = {
 			limit = {
 				is_alive = yes
 				current_date >= 8129.12.5 #went to Dragonstone for the sowing
 			}
-			title:b_dragonstone.holder = { add_courtier = character:White_1 }
+			title:b_dragonstone.holder ?= { add_courtier = character:White_1 }
 		}
 	}
 	character:asoiaf_Leipa_12 ?= { #Hanush of Leipa easter egg
@@ -1710,7 +1710,7 @@ asoiaf_setup_characters_effect = {
 				character:Baratheon_3 ?= { is_alive = yes } #Stannis
 				is_spouse_of = character:Baratheon_3
 			}
-			character:Baratheon_3 = {
+			character:Baratheon_3 ?= {
 				create_alliance = { #alliance with the Florents via marriage
 					target = dynasty:dynn_Florent.dynast #whomever is the head of House Florent
 					allied_through_owner = character:Baratheon_3 #Stannis
@@ -1741,7 +1741,7 @@ asoiaf_setup_characters_effect = {
 				NOT = { is_spouse_of = character:Baratheon_3 }
 			}
 			marry = character:Baratheon_3 #Stannis married Selyse before Robert's Rebellion in AGOT+'s canon
-			character:Baratheon_3 = {
+			character:Baratheon_3 ?= {
 				create_alliance = { #alliance with the Florents via marriage
 					target = dynasty:dynn_Florent.dynast #whomever is the head of House Florent
 					allied_through_owner = character:Baratheon_3 #Stannis
@@ -1753,14 +1753,14 @@ asoiaf_setup_characters_effect = {
 					character:Florent_3 ?= { is_alive = yes } #Axell Florent (son of Imry)
 					character:Baratheon_3 ?= { is_landed = yes } #Stannis is landed somewhere
 				}
-				character:Baratheon_3 = { add_courtier = character:Florent_3 }
+				character:Baratheon_3 ?= { add_courtier = character:Florent_3 }
 			}
 			if = {
 				limit = {
 					character:Florent_16 ?= { is_alive = yes } #Jon Flowers (bastard of Axell)
 					character:Baratheon_3 ?= { is_landed = yes } #Stannis is landed somewhere
 				}
-				character:Baratheon_3 = { add_courtier = character:Florent_16 }
+				character:Baratheon_3 ?= { add_courtier = character:Florent_16 }
 			}
 		}
 	}
@@ -1967,7 +1967,7 @@ asoiaf_setup_characters_effect = {
 		}
 	}
 	exists = character:Lannister_1
-	character:Lannister_1 = { #Tywin Lannister (son of Tytos)
+	character:Lannister_1 ?= { #Tywin Lannister (son of Tytos)
 		add_intrigue_skill = 5
 		add_trait = shrewd
 		if = {
@@ -2257,7 +2257,7 @@ asoiaf_setup_characters_effect = {
 		if = {
 			limit = {
 				exists = character:Baratheon_hh_3
-				character:Baratheon_hh_3 = { is_alive = yes } #Maester Cressen
+				character:Baratheon_hh_3 ?= { is_alive = yes } #Maester Cressen
 			}
 			add_hook = {
 				type = loyalty_hook
@@ -2432,7 +2432,7 @@ asoiaf_setup_characters_effect = {
 		}
 	}
 	exists = character:Lannister_135 #Orson Lannister (son of Daven)
-	character:Lannister_135 = {
+	character:Lannister_135 ?= {
 		if = {
 			limit = {
 				has_trait = intellect_bad_2
@@ -6625,7 +6625,7 @@ asoiaf_got_traits_effect = {
 		add_pressed_claim = title:c_dragonstone
 		if = {
 			limit = { current_date = 8284.6.2 } #Crowned Stag start date
-			character:Targaryen_8.house = { set_house_head = character:Targaryen_8 } #set Viserys as House head instead of Aemon
+			character:Targaryen_8.house ?= { set_house_head = character:Targaryen_8 } #set Viserys as House head instead of Aemon
 		}
 	}
 	character:Targaryen_9 ?= { #Daenerys Targaryen (daughter of Aerys II)
@@ -6776,7 +6776,7 @@ asoiaf_got_traits_effect = {
 		set_culture = culture:crownlander
 		#set_real_father = character:Targaryen_46 #Baelon Targaryen (son of Jaehaerys I); disabled since there's little chance that Baelon would betray Alyssa (will enable if it's proven in some clear way)
 	}
-	character:Palehair_hh_1 = { #Dyanna (Gaemon Palehair's mother)
+	character:Palehair_hh_1 ?= { #Dyanna (Gaemon Palehair's mother)
 		change_first_name = Dyanna #Essie -> Dyanna
 		asoiaf_clear_personality_traits_effect = yes
 		add_trait = beauty_good_1
@@ -6793,7 +6793,7 @@ asoiaf_got_traits_effect = {
 				NOT = { exists = character:Palehair_1 } #she hasn't been impregnated by Aegon yet
 				age > 16 #she's old enough to have a job in the castle
 			}
-			title:c_kings_landing.holder = { add_courtier = character:Palehair_hh_1 } #Dyanna was a servant in the castle
+			title:c_kings_landing.holder ?= { add_courtier = character:Palehair_hh_1 } #Dyanna was a servant in the castle
 		}
 		if = {
 			limit = {
@@ -8685,7 +8685,7 @@ asoiaf_got_traits_effect = {
 			limit = {
 				current_date >= 8283.6.1 #Robert inherits the throne; Crowned Stag bookmark
 				is_alive = yes #Robert is alive
-				character:Stark_3 = { is_alive = yes } #Eddard is alive
+				character:Stark_3 ?= { is_alive = yes } #Eddard is alive
 			}
 			remove_hook = { target = character:Stark_3 } #no hook so Robb doesn't become stormlander each playthrough
 		}
@@ -8748,13 +8748,13 @@ asoiaf_got_traits_effect = {
 		}
 		if = {
 			limit = {
-				character:Baratheon_3.father = { is_alive = no } #Steffon Baratheon is dead
+				character:Baratheon_3.father ?= { is_alive = no } #Steffon Baratheon is dead
 			}
 			add_secret = { type = secret_non_believer }
 		}
 		if = {
 			limit = {
-				character:Baratheon_4 = { has_title = title:c_storms_end } #Renly has Storm's End
+				character:Baratheon_4 ?= { has_title = title:c_storms_end } #Renly has Storm's End
 			}
 			set_relation_grudge = { reason = asoiaf_stannis_renly_grudge_desc target = character:Baratheon_4 } #Renly
 		}

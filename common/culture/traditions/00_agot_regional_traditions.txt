@@ -235,7 +235,7 @@ tradition_agot_honeywiner = {
 
 	character_modifier = {
 		negate_health_penalty_add = 0.15
-		vassal_tax_mult = -0.25
+		vassal_tax_mult = -0.30
 	}
 
 	cost = {

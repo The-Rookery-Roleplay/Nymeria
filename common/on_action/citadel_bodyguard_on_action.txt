@@ -4,18 +4,7 @@
 # Stormlands=e_the_stormlands, Riverlands=e_the_riverlands, Westerlands=e_the_westerlands,
 # Iron Islands=e_the_iron_islands, North=e_the_north.
 
-on_game_start_after_lobby = {
-	effect = {
-		if = {
-			limit = { exists = title:e_the_vale }
-			title:e_the_vale = { set_variable = winged_knight }
-		}
-		if = {
-			limit = { exists = title:e_the_reach }
-			title:e_the_reach = { set_variable = green_knight }
-		}
-	}
-}
+# on_game_start_after_lobby removed: the empire-title order variable was vestigial (gates check primary_title = title:X directly, never this variable). A bare-token set_variable (winged_knight/green_knight) collides with a trait+government of the same name and was the only bodyguard code in the post-worldgen handoff window where the game access-violates. - Kizan
 
 # Free up a slot when a member dies. AGOT's on_death only fires agot_kingsguard.1000 (the default order), so our
 # orders' .1000 maintenance events (which clear the dead member's slot variable + vacate the position) never ran.

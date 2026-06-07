@@ -1,5 +1,5 @@
 ﻿asoiaf_westeros_heresy_fix_effect = {
-	title:e_the_crownlands = {
+	title:e_the_crownlands ?= {
 		every_de_jure_county = {
 			limit = {
 				OR = {
@@ -12,7 +12,7 @@
 			set_county_faith = faith:fots_seven
 		}
 	}
-	title:e_the_stormlands = {
+	title:e_the_stormlands ?= {
 		every_de_jure_county = {
 			limit = {
 				OR = {
@@ -25,7 +25,7 @@
 			set_county_faith = faith:fots_seven
 		}
 	}
-	title:e_the_westerlands = {
+	title:e_the_westerlands ?= {
 		every_de_jure_county = {
 			limit = {
 				OR = {
@@ -38,7 +38,7 @@
 			set_county_faith = faith:fots_seven
 		}
 	}
-	title:e_the_riverlands = {
+	title:e_the_riverlands ?= {
 		every_de_jure_county = {
 			limit = {
 				OR = {
@@ -51,7 +51,7 @@
 			set_county_faith = faith:fots_seven
 		}
 	}
-	title:e_the_reach = {
+	title:e_the_reach ?= {
 		every_de_jure_county = {
 			limit = {
 				OR = {
@@ -64,7 +64,7 @@
 			set_county_faith = faith:fots_seven
 		}
 	}
-	title:e_dorne = {
+	title:e_dorne ?= {
 		every_de_jure_county = {
 			limit = {
 				OR = {
@@ -77,7 +77,7 @@
 			set_county_faith = faith:fots_seven
 		}
 	}
-	title:e_the_vale = {
+	title:e_the_vale ?= {
 		every_de_jure_county = {
 			limit = {
 				OR = {
@@ -90,7 +90,7 @@
 			set_county_faith = faith:fots_seven
 		}
 	}
-	title:e_the_iron_islands = {
+	title:e_the_iron_islands ?= {
 		every_de_jure_county = {
 			limit = {
 				faith = faith:storm_god
@@ -98,7 +98,7 @@
 			set_county_faith = faith:drowned_god
 		}
 	}
-	title:e_the_north = {
+	title:e_the_north ?= {
 		every_de_jure_county = {
 			limit = {
 				OR = {

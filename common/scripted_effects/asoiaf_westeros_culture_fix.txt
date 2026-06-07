@@ -1,25 +1,25 @@
 ﻿#Setup
 asoiaf_westeros_culture_fix_effect = {
-	title:e_the_vale = {
+	title:e_the_vale ?= {
 		every_de_jure_county = {
 			limit = { NOT = { culture = culture:sisterman } }
 			set_county_culture = culture:valeman_main
 		}
 	}
-	culture:valeman_main = { add_culture_tradition = tradition_agot_valemen_upper }
-	title:e_the_reach = {
+	culture:valeman_main ?= { add_culture_tradition = tradition_agot_valemen_upper }
+	title:e_the_reach ?= {
 		every_de_jure_county = {
 			set_county_culture = culture:reachman
 		}
 	}
-	culture:reachman = { add_culture_tradition = tradition_agot_honeywiner }
-	title:e_the_stormlands = {
+	culture:reachman ?= { add_culture_tradition = tradition_agot_honeywiner }
+	title:e_the_stormlands ?= {
 		every_de_jure_county = {
 			set_county_culture = culture:stormlander_main
 		}
 	}
-	culture:stormlander_main = { add_culture_tradition = tradition_stand_and_fight }
-	title:e_the_north = {
+	culture:stormlander_main ?= { add_culture_tradition = tradition_stand_and_fight }
+	title:e_the_north ?= {
 		every_de_jure_county = {
 			limit = {
 				NOR = { culture = culture:crannogman culture = culture:northern_clan culture = culture:skagosi }
@@ -27,20 +27,20 @@ asoiaf_westeros_culture_fix_effect = {
 			set_county_culture = culture:northman
 		}
 	}
-	culture:northman = { add_culture_tradition = tradition_agot_wolfswood_clansmen }
-	culture:riverman_main = { add_culture_tradition = tradition_hunters }
+	culture:northman ?= { add_culture_tradition = tradition_agot_wolfswood_clansmen }
+	culture:riverman_main ?= { add_culture_tradition = tradition_hunters }
 	#culture:ironborn = { add_culture_tradition = tradition_ruling_caste }
-	culture:ironborn = { add_culture_tradition = tradition_isolationist }
-	culture:westerman_main = { add_culture_tradition = tradition_fp2_state_ransoming }
-	culture:crownlander = {
+	culture:ironborn ?= { add_culture_tradition = tradition_isolationist }
+	culture:westerman_main ?= { add_culture_tradition = tradition_fp2_state_ransoming }
+	culture:crownlander ?= {
 		add_culture_tradition = tradition_chivalry
 		add_culture_tradition = tradition_loyal_soldiers
 	}
-	culture:salt_dornish = { add_culture_tradition = tradition_eye_for_an_eye }
-	culture:sand_dornish = { add_culture_tradition = tradition_eye_for_an_eye }
-	culture:stone_dornish = { add_culture_tradition = tradition_martial_admiration }
-	culture:high_valyrian = { add_culture_tradition = tradition_poetry }
-	culture:westerosi_valyrian = { add_culture_tradition = tradition_welcoming }
+	culture:salt_dornish ?= { add_culture_tradition = tradition_eye_for_an_eye }
+	culture:sand_dornish ?= { add_culture_tradition = tradition_eye_for_an_eye }
+	culture:stone_dornish ?= { add_culture_tradition = tradition_martial_admiration }
+	culture:high_valyrian ?= { add_culture_tradition = tradition_poetry }
+	culture:westerosi_valyrian ?= { add_culture_tradition = tradition_welcoming }
 	every_living_character = {
 		if = { #Vale block
 			limit = {

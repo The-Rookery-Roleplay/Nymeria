@@ -1671,7 +1671,7 @@ asoiaf_canon_children_Baratheon_2_1_birth_effect = { #Alaric Baratheon (son of R
 }
 
 asoiaf_canon_children_Lannister_6_pregnancy_effect = {
-	dynasty:dynn_Lannister = {
+	dynasty:dynn_Lannister ?= {
 		every_dynasty_member = {
 			limit = {
 				has_inactive_trait = asoiaf_Lannister_6_trait #Cersei Lannister (daughter of Tywin)
@@ -1679,7 +1679,7 @@ asoiaf_canon_children_Lannister_6_pregnancy_effect = {
 			save_scope_as = asoiaf_Lannister_6
 		}
 	}
-	dynasty:dynn_Lannister = { #DON'T default to Jaime, first check if she has a viable lover that's in her close family. Then use Jaime as long as they're both lovers.
+	dynasty:dynn_Lannister ?= { #DON'T default to Jaime, first check if she has a viable lover that's in her close family. Then use Jaime as long as they're both lovers.
 		every_dynasty_member = {
 			limit = {
 				has_inactive_trait = asoiaf_Lannister_7_trait #Jaime Lannister (son of Tywin)
@@ -2838,7 +2838,7 @@ asoiaf_canon_children_Lannister_6_and_7_birth_effect = { #Cersei & Jaime Lannist
 	}
 	hidden_effect = {
 		scope:child_2 = {
-			dynasty:dynn_Lannister = {
+			dynasty:dynn_Lannister ?= {
 				every_dynasty_member = {
 					limit = {
 						has_inactive_trait = asoiaf_Lannister_6_trait #Cersei Lannister (daughter of Tywin)
@@ -2938,7 +2938,7 @@ asoiaf_canon_children_Lannister_8_birth_effect = { #Tyrion Lannister (son of Tyw
 			}
 		}
 		scope:child = {
-			dynasty:dynn_Lannister = {
+			dynasty:dynn_Lannister ?= {
 				every_dynasty_member = {
 					limit = {
 						has_inactive_trait = asoiaf_Lannister_6_trait #Cersei Lannister (daughter of Tywin)
@@ -2960,7 +2960,7 @@ asoiaf_canon_children_Lannister_8_birth_effect = { #Tyrion Lannister (son of Tyw
 						modifier = murdered_close_family #blamed Tyrion for Joanna's death
 					}
 				}
-				dynasty:dynn_Lannister = {
+				dynasty:dynn_Lannister ?= {
 					every_dynasty_member = {
 						limit = {
 							has_inactive_trait = asoiaf_Lannister_7_trait #Jaime Lannister (son of Tywin)
@@ -6900,7 +6900,7 @@ asoiaf_canon_children_Targaryen_65_birth_effect = { #Aegon II Targaryen
 	hidden_effect = {
 		scope:mother = {
 			trigger_event = birth.1001 #regular
-			dynasty:dynn_Targaryen = {
+			dynasty:dynn_Targaryen ?= {
 				every_dynasty_member = {
 					limit = { has_inactive_trait = asoiaf_Targaryen_63_trait } #Rhaenyra Targaryen (daughter of Viserys I)
 					save_scope_as = asoiaf_rhaenyra
@@ -6926,7 +6926,7 @@ asoiaf_canon_children_Targaryen_65_birth_effect = { #Aegon II Targaryen
 			copy_inheritable_appearance_from = character:Targaryen_asoiaf_65
 		}
 		scope:child = { #set friendship with Criston Cole if he's available
-			dynasty:dynn_Cole = {
+			dynasty:dynn_Cole ?= {
 				every_dynasty_member = {
 					limit = {
 						has_inactive_trait = asoiaf_Cole_11_trait #Criston Cole (the Kingmaker)
@@ -7025,7 +7025,7 @@ asoiaf_canon_children_Targaryen_66_birth_effect = { #Helaena Targaryen (daughter
 		scope:mother = { trigger_event = birth.1001 } #regular
 		scope:father = { trigger_event = birth.1003 } #regular
 		scope:child = { #set friendship with Criston Cole if he's available
-			dynasty:dynn_Cole = {
+			dynasty:dynn_Cole ?= {
 				every_dynasty_member = {
 					limit = {
 						has_inactive_trait = asoiaf_Cole_11_trait #Criston Cole (the Kingmaker)
@@ -7135,7 +7135,7 @@ asoiaf_canon_children_Targaryen_67_birth_effect = { #Aemond Targaryen (son of Vi
 	hidden_effect = {
 		scope:mother = {
 			trigger_event = birth.1001 #regular
-			dynasty:dynn_Targaryen = {
+			dynasty:dynn_Targaryen ?= {
 				every_dynasty_member = {
 					limit = { has_inactive_trait = asoiaf_Targaryen_63_trait } #Rhaenyra Targaryen (daughter of Viserys I)
 					save_scope_as = asoiaf_rhaenyra
@@ -7143,7 +7143,7 @@ asoiaf_canon_children_Targaryen_67_birth_effect = { #Aemond Targaryen (son of Vi
 			}
 			if = {
 				limit = {
-					dynasty:dynn_Targaryen = { #Aegon died
+					dynasty:dynn_Targaryen ?= { #Aegon died
 						any_dynasty_member = { # every_dynasty_member to any_dynasty_member, 1.19 needs the any iterator inside a trigger scope - Kizan
 							has_inactive_trait = asoiaf_Targaryen_65_trait
 							is_alive = no
@@ -7161,7 +7161,7 @@ asoiaf_canon_children_Targaryen_67_birth_effect = { #Aemond Targaryen (son of Vi
 					is_landed = yes #is Viserys a ruler?
 					exists = character:Targaryen_63 #is the Rhaenyra in this world the HISTORICAL Rhaenyra? If not, the event won't work anyways so don't bother firing it
 					scope:father.player_heir ?= character:Targaryen_63 #if his heir was someone else, then the event is not needed
-					dynasty:dynn_Targaryen = { #Aegon died
+					dynasty:dynn_Targaryen ?= { #Aegon died
 						any_dynasty_member = { # every_dynasty_member to any_dynasty_member, 1.19 needs the any iterator inside a trigger scope - Kizan
 							has_inactive_trait = asoiaf_Targaryen_65_trait
 							is_alive = no
@@ -7175,7 +7175,7 @@ asoiaf_canon_children_Targaryen_67_birth_effect = { #Aemond Targaryen (son of Vi
 			}
 		}
 		scope:child = { #set friendship with Criston Cole if he's available
-			dynasty:dynn_Cole = {
+			dynasty:dynn_Cole ?= {
 				every_dynasty_member = {
 					limit = {
 						has_inactive_trait = asoiaf_Cole_11_trait #Criston Cole (the Kingmaker)
@@ -7187,7 +7187,7 @@ asoiaf_canon_children_Targaryen_67_birth_effect = { #Aemond Targaryen (son of Vi
 			scope:asoiaf_criston_cole = {
 				set_relation_friend = { reason = asoiaf_criston_aemond_friend_desc target = scope:child } #Cole takes on a father figure to Alicent's children
 			}
-			dynasty:dynn_Targaryen = {
+			dynasty:dynn_Targaryen ?= {
 				every_dynasty_member = {
 					limit = {
 						has_inactive_trait = asoiaf_Targaryen_65_trait #Aegon II Targaryen
@@ -7292,7 +7292,7 @@ asoiaf_canon_children_Targaryen_68_birth_effect = { #Daeron Targaryen (son of Vi
 		}
 		scope:mother = {
 			trigger_event = birth.1001 #regular
-			dynasty:dynn_Targaryen = {
+			dynasty:dynn_Targaryen ?= {
 				every_dynasty_member = {
 					limit = { has_inactive_trait = asoiaf_Targaryen_63_trait } #Rhaenyra Targaryen (daughter of Viserys I)
 					save_scope_as = asoiaf_rhaenyra
@@ -7300,13 +7300,13 @@ asoiaf_canon_children_Targaryen_68_birth_effect = { #Daeron Targaryen (son of Vi
 			}
 			if = {
 				limit = {
-					dynasty:dynn_Targaryen = { #Aegon died
+					dynasty:dynn_Targaryen ?= { #Aegon died
 						any_dynasty_member = { # every_dynasty_member to any_dynasty_member, 1.19 needs the any iterator inside a trigger scope - Kizan
 							has_inactive_trait = asoiaf_Targaryen_65_trait
 							is_alive = no
 						}
 					}
-					dynasty:dynn_Targaryen = { #Aemond died
+					dynasty:dynn_Targaryen ?= { #Aemond died
 						any_dynasty_member = { # every_dynasty_member to any_dynasty_member, 1.19 needs the any iterator inside a trigger scope - Kizan
 							has_inactive_trait = asoiaf_Targaryen_67_trait
 							is_alive = no
@@ -7324,13 +7324,13 @@ asoiaf_canon_children_Targaryen_68_birth_effect = { #Daeron Targaryen (son of Vi
 					is_landed = yes #is Viserys a ruler?
 					exists = character:Targaryen_63 #is the Rhaenyra in this world the HISTORICAL Rhaenyra? If not, the event won't work anyways so don't bother firing it
 					scope:father.player_heir ?= character:Targaryen_63 #if his heir was someone else, then the event is not needed
-					dynasty:dynn_Targaryen = { #Aegon died
+					dynasty:dynn_Targaryen ?= { #Aegon died
 						any_dynasty_member = { # every_dynasty_member to any_dynasty_member, 1.19 needs the any iterator inside a trigger scope - Kizan
 							has_inactive_trait = asoiaf_Targaryen_65_trait
 							is_alive = no
 						}
 					}
-					dynasty:dynn_Targaryen = { #Aemond died
+					dynasty:dynn_Targaryen ?= { #Aemond died
 						any_dynasty_member = { # every_dynasty_member to any_dynasty_member, 1.19 needs the any iterator inside a trigger scope - Kizan
 							has_inactive_trait = asoiaf_Targaryen_67_trait
 							is_alive = no
@@ -9183,7 +9183,7 @@ asoiaf_canon_children_Targaryen_92_and_93_birth_effect = { #Daenerys & Aemond Ta
 	}
 	hidden_effect = {
 		scope:child = { #make Daenerys and Daemon I have crushes on each other as children
-			dynasty:dynn_Targaryen = {
+			dynasty:dynn_Targaryen ?= {
 				every_dynasty_member = {
 					limit = { has_inactive_trait = asoiaf_Targaryen_94_trait } #Daemon I Blackfyre
 					save_scope_as = asoiaf_daemon_I
@@ -9376,7 +9376,7 @@ asoiaf_canon_children_Targaryen_94_birth_effect = { #Daemon I Blackfyre
 	}
 	hidden_effect = {
 		scope:child = { #make Daemon and Daenerys have crushes on each other as children
-			dynasty:dynn_Targaryen = {
+			dynasty:dynn_Targaryen ?= {
 				every_dynasty_member = {
 					limit = { has_inactive_trait = asoiaf_Targaryen_92_trait } #Daenerys Targaryen (daughter of Aegon IV)
 					save_scope_as = asoiaf_daenerys
@@ -11838,7 +11838,7 @@ asoiaf_canon_children_Velaryon_35_birth_effect = { #Laenor Velaryon (son of Corl
 			}
 		}
 		scope:child = {
-			dynasty:dynn_Velaryon = {
+			dynasty:dynn_Velaryon ?= {
 				every_dynasty_member = {
 					limit = {
 						has_inactive_trait = asoiaf_Velaryon_34_trait #Laena Velaryon (daughter of Corlys)
@@ -13475,442 +13475,442 @@ asoiaf_canon_children_Greyjoy_14_birth_effect = { #Theon Greyjoy (son of Balon)
 asoiaf_canon_children_assign_pregnancy_negation_modifiers_effect = { #make sure the mothers who get the modifier here match the ones who get it in the above effects (if a mother exceptionally DOESNT up there, she shouldn't here either)
 	if = {
 		limit = {
-			character:Stark_87 = { exists = yes }
+			character:Stark_87 ?= { exists = yes }
 			character:Stark_87.mother ?= { is_alive = yes }
 			character:Stark_87.mother ?= { is_spouse_of = character:Stark_87.father }
 		}
-		character:Stark_87.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Stark_87.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Stark_94 = { exists = yes }
+			character:Stark_94 ?= { exists = yes }
 			character:Stark_94.mother ?= { is_alive = yes }
 			character:Stark_94.mother ?= { is_spouse_of = character:Stark_94.father }
 		}
-		character:Stark_94.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Stark_94.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Stark_98 = { exists = yes }
+			character:Stark_98 ?= { exists = yes }
 			character:Stark_98.mother ?= { is_alive = yes }
 			character:Stark_98.mother ?= { is_spouse_of = character:Stark_98.father }
 		}
-		character:Stark_98.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Stark_98.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Stark_103 = { exists = yes }
+			character:Stark_103 ?= { exists = yes }
 			character:Stark_103.mother ?= { is_alive = yes }
 			character:Stark_103.mother ?= { is_spouse_of = character:Stark_103.father }
 		}
-		character:Stark_103.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Stark_103.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Stark_4 = { exists = yes }
+			character:Stark_4 ?= { exists = yes }
 			character:Stark_4.mother ?= { is_alive = yes }
 			character:Stark_4.mother ?= { is_spouse_of = character:Stark_4.father }
 		}
-		character:Stark_4.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Stark_4.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Stark_11 = { exists = yes }
+			character:Stark_11 ?= { exists = yes }
 			character:Stark_11.mother ?= { is_alive = yes }
 			#character:Stark_11.mother ?= { is_spouse_of = character:Stark_11.father }
 		}
-		character:Stark_11.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Stark_11.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Reed_3 = { exists = yes }
+			character:Reed_3 ?= { exists = yes }
 			character:Reed_3.mother ?= { is_alive = yes }
 			character:Reed_3.mother ?= { is_spouse_of = character:Reed_3.father }
 		}
-		character:Reed_3.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Reed_3.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Baratheon_1 = { exists = yes }
+			character:Baratheon_1 ?= { exists = yes }
 			character:Baratheon_1.mother ?= { is_alive = yes }
 			character:Baratheon_1.mother ?= { is_spouse_of = character:Baratheon_1.father }
 		}
-		character:Baratheon_1.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Baratheon_1.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Baratheon_4 = { exists = yes }
+			character:Baratheon_4 ?= { exists = yes }
 			character:Baratheon_4.mother ?= { is_alive = yes }
 			character:Baratheon_4.mother ?= { is_spouse_of = character:Baratheon_4.father }
 		}
-		character:Baratheon_4.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Baratheon_4.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Baratheon_7 = { exists = yes }
+			character:Baratheon_7 ?= { exists = yes }
 			character:Baratheon_7.mother ?= { is_alive = yes }
 			#character:Baratheon_7.mother ?= { is_spouse_of = character:Baratheon_7.father }
 		}
-		character:Baratheon_7.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Baratheon_7.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Baratheon_13 = { exists = yes }
+			character:Baratheon_13 ?= { exists = yes }
 			character:Baratheon_13.mother ?= { is_alive = yes }
 			character:Baratheon_13.mother ?= { is_spouse_of = character:Baratheon_13.father }
 		}
-		character:Baratheon_13.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Baratheon_13.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Lannister_8 = { exists = yes }
+			character:Lannister_8 ?= { exists = yes }
 			character:Lannister_8.mother ?= { is_alive = yes }
 			character:Lannister_8.mother ?= { is_spouse_of = character:Lannister_8.father }
 		}
-		character:Lannister_8.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Lannister_8.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Lannister_12 = { exists = yes }
+			character:Lannister_12 ?= { exists = yes }
 			character:Lannister_12.mother ?= { is_alive = yes }
 			character:Lannister_12.mother ?= { is_spouse_of = character:Lannister_12.father }
 		}
-		character:Lannister_12.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Lannister_12.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Arryn_8 = { exists = yes }
+			character:Arryn_8 ?= { exists = yes }
 			character:Arryn_8.mother ?= { is_alive = yes }
 			#character:Arryn_8.mother ?= { is_spouse_of = character:Arryn_8.father }
 		}
-		character:Arryn_8.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Arryn_8.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Arryn_80 = { exists = yes }
+			character:Arryn_80 ?= { exists = yes }
 			character:Arryn_80.mother ?= { is_alive = yes }
 			character:Arryn_80.mother ?= { is_spouse_of = character:Arryn_80.father }
 		}
-		character:Arryn_80.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Arryn_80.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Tyrell_10 = { exists = yes }
+			character:Tyrell_10 ?= { exists = yes }
 			character:Tyrell_10.mother ?= { is_alive = yes }
 			character:Tyrell_10.mother ?= { is_spouse_of = character:Tyrell_10.father }
 		}
-		character:Tyrell_10.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Tyrell_10.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Tyrell_14 = { exists = yes }
+			character:Tyrell_14 ?= { exists = yes }
 			character:Tyrell_14.mother ?= { is_alive = yes }
 			character:Tyrell_14.mother ?= { is_spouse_of = character:Tyrell_14.father }
 		}
-		character:Tyrell_14.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Tyrell_14.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Tarly_6 = { exists = yes }
+			character:Tarly_6 ?= { exists = yes }
 			character:Tarly_6.mother ?= { is_alive = yes }
 			character:Tarly_6.mother ?= { is_spouse_of = character:Tarly_6.father }
 		}
-		character:Tarly_6.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Tarly_6.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Hightower_99 = { exists = yes }
+			character:Hightower_99 ?= { exists = yes }
 			character:Hightower_99.mother ?= { is_alive = yes }
 			character:Hightower_99.mother ?= { is_spouse_of = character:Hightower_99.father }
 		}
-		character:Hightower_99.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Hightower_99.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_30 = { exists = yes }
+			character:Targaryen_30 ?= { exists = yes }
 			character:Targaryen_30.mother ?= { is_alive = yes }
 			character:Targaryen_30.mother ?= { is_spouse_of = character:Targaryen_30.father }
 		}
-		character:Targaryen_30.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_30.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_31 = { exists = yes }
+			character:Targaryen_31 ?= { exists = yes }
 			character:Targaryen_31.mother ?= { is_alive = yes }
 			character:Targaryen_31.mother ?= { is_spouse_of = character:Targaryen_31.father }
 		}
-		character:Targaryen_31.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_31.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_37 = { exists = yes }
+			character:Targaryen_37 ?= { exists = yes }
 			character:Targaryen_37.mother ?= { is_alive = yes }
 			character:Targaryen_37.mother ?= { is_spouse_of = character:Targaryen_37.father }
 		}
-		character:Targaryen_37.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_37.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_37 = { exists = yes }
+			character:Targaryen_37 ?= { exists = yes }
 			character:Targaryen_37.mother ?= { is_alive = yes }
 			character:Targaryen_37.mother ?= { is_spouse_of = character:Targaryen_37.father }
 		}
-		character:Targaryen_37.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_37.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_38 = { exists = yes }
+			character:Targaryen_38 ?= { exists = yes }
 			character:Targaryen_38.mother ?= { is_alive = yes }
 			character:Targaryen_38.mother ?= { is_spouse_of = character:Targaryen_38.father }
 		}
-		character:Targaryen_38.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_38.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_40 = { exists = yes }
+			character:Targaryen_40 ?= { exists = yes }
 			character:Targaryen_40.mother ?= { is_alive = yes }
 			character:Targaryen_40.mother ?= { is_spouse_of = character:Targaryen_40.father }
 		}
-		character:Targaryen_40.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_40.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_39 = { exists = yes }
+			character:Targaryen_39 ?= { exists = yes }
 			character:Targaryen_39.mother ?= { is_alive = yes }
 			character:Targaryen_39.mother ?= { is_spouse_of = character:Targaryen_39.father }
 		}
-		character:Targaryen_39.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_39.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_42 = { exists = yes }
+			character:Targaryen_42 ?= { exists = yes }
 			character:Targaryen_42.mother ?= { is_alive = yes }
 			character:Targaryen_42.mother ?= { is_spouse_of = character:Targaryen_42.father }
 		}
-		character:Targaryen_42.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_42.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_55 = { exists = yes }
+			character:Targaryen_55 ?= { exists = yes }
 			character:Targaryen_55.mother ?= { is_alive = yes }
 			character:Targaryen_55.mother ?= { is_spouse_of = character:Targaryen_55.father }
 		}
-		character:Targaryen_55.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_55.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:asoiaf_Hammer_2 = { exists = yes }
+			character:asoiaf_Hammer_2 ?= { exists = yes }
 			character:asoiaf_Hammer_2.mother ?= { is_alive = yes }
 			character:asoiaf_Hammer_2.mother ?= { is_spouse_of = character:asoiaf_Hammer_2.father }
 		}
-		character:asoiaf_Hammer_2.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:asoiaf_Hammer_2.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_59 = { exists = yes }
+			character:Targaryen_59 ?= { exists = yes }
 			character:Targaryen_59.mother ?= { is_alive = yes }
 			character:Targaryen_59.mother ?= { is_spouse_of = character:Targaryen_59.father }
 		}
-		character:Targaryen_59.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_59.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_62 = { exists = yes }
+			character:Targaryen_62 ?= { exists = yes }
 			character:Targaryen_62.mother ?= { is_alive = yes }
 			character:Targaryen_62.mother ?= { is_spouse_of = character:Targaryen_62.father }
 		}
-		character:Targaryen_62.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_62.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_64 = { exists = yes }
+			character:Targaryen_64 ?= { exists = yes }
 			character:Targaryen_64.mother ?= { is_alive = yes }
 			character:Targaryen_64.mother ?= { is_spouse_of = character:Targaryen_64.father }
 		}
-		character:Targaryen_64.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_64.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_68 = { exists = yes }
+			character:Targaryen_68 ?= { exists = yes }
 			character:Targaryen_68.mother ?= { is_alive = yes }
 			#character:Targaryen_68.mother ?= { is_spouse_of = character:Targaryen_68.father }
 		}
-		character:Targaryen_68.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_68.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_61_1 = { exists = yes }
+			character:Targaryen_61_1 ?= { exists = yes }
 			character:Targaryen_61_1.mother ?= { is_alive = yes }
 			character:Targaryen_61_1.mother ?= { is_spouse_of = character:Targaryen_61_1.father }
 		}
-		character:Targaryen_31.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_31.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_73 = { exists = yes }
+			character:Targaryen_73 ?= { exists = yes }
 			character:Targaryen_73.mother ?= { is_alive = yes }
 			character:Targaryen_73.mother ?= { is_spouse_of = character:Targaryen_73.father }
 		}
-		character:Targaryen_73.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_73.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_80 = { exists = yes }
+			character:Targaryen_80 ?= { exists = yes }
 			character:Targaryen_80.mother ?= { is_alive = yes }
 			character:Targaryen_80.mother ?= { is_spouse_of = character:Targaryen_80.father }
 		}
-		character:Targaryen_80.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_80.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_85 = { exists = yes }
+			character:Targaryen_85 ?= { exists = yes }
 			character:Targaryen_85.mother ?= { is_alive = yes }
 			character:Targaryen_85.mother ?= { is_spouse_of = character:Targaryen_85.father }
 		}
-		character:Targaryen_85.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_85.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_90 = { exists = yes }
+			character:Targaryen_90 ?= { exists = yes }
 			character:Targaryen_90.mother ?= { is_alive = yes }
 			character:Targaryen_90.mother ?= { is_spouse_of = character:Targaryen_90.father }
 		}
-		character:Targaryen_90.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_90.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_135 = { exists = yes }
+			character:Targaryen_135 ?= { exists = yes }
 			character:Targaryen_135.mother ?= { is_alive = yes }
 			character:Targaryen_135.mother ?= { is_spouse_of = character:Targaryen_135.father }
 		}
-		character:Targaryen_135.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_135.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_101 = { exists = yes }
+			character:Targaryen_101 ?= { exists = yes }
 			character:Targaryen_101.mother ?= { is_alive = yes }
 			#character:Targaryen_101.mother ?= { is_spouse_of = character:Targaryen_101.father }
 		}
-		character:Targaryen_101.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_101.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_94 = { exists = yes }
+			character:Targaryen_94 ?= { exists = yes }
 			character:Targaryen_94.mother ?= { is_alive = yes }
 			#character:Targaryen_94.mother ?= { is_spouse_of = character:Targaryen_94.father }
 		}
-		character:Targaryen_94.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_94.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_110 = { exists = yes }
+			character:Targaryen_110 ?= { exists = yes }
 			character:Targaryen_110.mother ?= { is_alive = yes }
 			character:Targaryen_110.mother ?= { is_spouse_of = character:Targaryen_110.father }
 		}
-		character:Targaryen_110.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_110.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_112 = { exists = yes }
+			character:Targaryen_112 ?= { exists = yes }
 			character:Targaryen_112.mother ?= { is_alive = yes }
 			character:Targaryen_112.mother ?= { is_spouse_of = character:Targaryen_112.father }
 		}
-		character:Targaryen_112.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_112.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_117 = { exists = yes }
+			character:Targaryen_117 ?= { exists = yes }
 			character:Targaryen_117.mother ?= { is_alive = yes }
 			character:Targaryen_117.mother ?= { is_spouse_of = character:Targaryen_117.father }
 		}
-		character:Targaryen_117.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_117.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_123 = { exists = yes }
+			character:Targaryen_123 ?= { exists = yes }
 			character:Targaryen_123.mother ?= { is_alive = yes }
 			character:Targaryen_123.mother ?= { is_spouse_of = character:Targaryen_123.father }
 		}
-		character:Targaryen_123.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_123.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_130 = { exists = yes }
+			character:Targaryen_130 ?= { exists = yes }
 			character:Targaryen_130.mother ?= { is_alive = yes }
 			character:Targaryen_130.mother ?= { is_spouse_of = character:Targaryen_130.father }
 		}
-		character:Targaryen_130.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_130.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_2 = { exists = yes }
+			character:Targaryen_2 ?= { exists = yes }
 			character:Targaryen_2.mother ?= { is_alive = yes }
 			character:Targaryen_2.mother ?= { is_spouse_of = character:Targaryen_2.father }
 		}
-		character:Targaryen_2.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_2.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_9 = { exists = yes }
+			character:Targaryen_9 ?= { exists = yes }
 			character:Targaryen_9.mother ?= { is_alive = yes }
 			character:Targaryen_9.mother ?= { is_spouse_of = character:Targaryen_9.father }
 		}
-		character:Targaryen_9.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_9.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Targaryen_11 = { exists = yes }
+			character:Targaryen_11 ?= { exists = yes }
 			character:Targaryen_11.mother ?= { is_alive = yes }
 			character:Targaryen_11.mother ?= { is_spouse_of = character:Targaryen_11.father }
 		}
-		character:Targaryen_11.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Targaryen_11.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Velaryon_35 = { exists = yes }
+			character:Velaryon_35 ?= { exists = yes }
 			character:Velaryon_35.mother ?= { is_alive = yes }
 			character:Velaryon_35.mother ?= { is_spouse_of = character:Velaryon_35.father }
 		}
-		character:Velaryon_35.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Velaryon_35.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Velaryon_44 = { exists = yes }
+			character:Velaryon_44 ?= { exists = yes }
 			character:Velaryon_44.mother ?= { is_alive = yes }
 			#character:Velaryon_44.mother ?= { is_spouse_of = character:Velaryon_44.father }
 		}
-		character:Velaryon_44.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Velaryon_44.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Martell_11 = { exists = yes }
+			character:Martell_11 ?= { exists = yes }
 			character:Martell_11.mother ?= { is_alive = yes }
 			character:Martell_11.mother ?= { is_spouse_of = character:Martell_11.father }
 		}
-		character:Martell_11.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Martell_11.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Tully_8 = { exists = yes }
+			character:Tully_8 ?= { exists = yes }
 			character:Tully_8.mother ?= { is_alive = yes }
 			character:Tully_8.mother ?= { is_spouse_of = character:Tully_8.father }
 		}
-		character:Tully_8.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Tully_8.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Strong_33 = { exists = yes }
+			character:Strong_33 ?= { exists = yes }
 			character:Strong_33.mother ?= { is_alive = yes }
 			character:Strong_33.mother ?= { is_spouse_of = character:Strong_33.father }
 		}
-		character:Strong_33.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Strong_33.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 	if = {
 		limit = {
-			character:Greyjoy_14 = { exists = yes }
+			character:Greyjoy_14 ?= { exists = yes }
 			character:Greyjoy_14.mother ?= { is_alive = yes }
 			character:Greyjoy_14.mother ?= { is_spouse_of = character:Greyjoy_14.father }
 		}
-		character:Greyjoy_14.mother = { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
+		character:Greyjoy_14.mother ?= { add_character_modifier = asoiaf_canon_children_pregnancy_negation_modifier }
 	}
 }

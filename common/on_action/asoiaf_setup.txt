@@ -37,20 +37,20 @@ asoiaf_start = {
 asoiaf_feudal_contract_fixes = {
 	effect = {
 		#cant be effect because the AGOT effect making these contracts is an on_action for game start too
-		title:c_driftmark.holder = {
+		title:c_driftmark.holder ?= {
 			trigger_event = { id = asoiaf_setup_events.1 days = 1 }
 		}
-		title:c_claw_isle.holder = {
+		title:c_claw_isle.holder ?= {
 			trigger_event = { id = asoiaf_setup_events.1 days = 1 }
 		}
-		title:c_wolf_branch.holder = {
+		title:c_wolf_branch.holder ?= {
 			trigger_event = { id = asoiaf_setup_events.1 days = 1 }
 		}
 		if = {
 			limit = {
 				character:Baratheon_3 ?= { primary_title ?= title:k_dragonstone }
 			}
-			title:k_dragonstone.holder = {
+			title:k_dragonstone.holder ?= {
 				trigger_event = { id = asoiaf_setup_events.6 days = 1 }
 			}
 		}
@@ -104,7 +104,7 @@ asoiaf_setup_general = {
 				character:Targaryen_122 ?= { is_alive = no } #but Aegon V is already dead (so Summerhall is a ruin)
 			}
 			title:d_grandview.holder ?= { get_title = title:c_summerfield } #give Summerhall to the High Lord of Grandview
-			dynasty:dynn_Targaryen = { #cleanup claims for Targaryens
+			dynasty:dynn_Targaryen ?= { #cleanup claims for Targaryens
 				every_dynasty_member = {
 					limit = {
 						OR = {
@@ -129,37 +129,37 @@ asoiaf_setup_general = {
 		#title:e_dorne = {
 		#	set_definitive_form = yes
 		#}
-		title:d_brandons_gift = {
+		title:d_brandons_gift ?= {
 			set_definitive_form = yes
 		}
-		title:d_new_gift = {
+		title:d_new_gift ?= {
 			set_definitive_form = yes
 		}
-		title:k_thenn = {
+		title:k_thenn ?= {
 			set_definitive_form = yes
 		}
-		title:k_first_forest = {
+		title:k_first_forest ?= {
 			set_definitive_form = yes
 		}
-		title:h_the_iron_throne = {
+		title:h_the_iron_throne ?= {
 			clear_title_laws = yes
 		}
-		title:e_the_crownlands = {
+		title:e_the_crownlands ?= {
 			clear_title_laws = yes
 		}
-		title:d_kings_landing = {
+		title:d_kings_landing ?= {
 			clear_title_laws = yes
 		}
-		title:c_kings_landing = {
+		title:c_kings_landing ?= {
 			clear_title_laws = yes
 		}
-		title:c_blackstripe = {
+		title:c_blackstripe ?= {
 			clear_title_laws = yes
 		}
-		title:k_dragonstone = {
+		title:k_dragonstone ?= {
 			clear_title_laws = yes
 		}
-		title:d_dragonstone = {
+		title:d_dragonstone ?= {
 			clear_title_laws = yes
 		}
 	}
@@ -247,7 +247,7 @@ asoiaf_npk_rhaegar_birth_effects = {
 		}
 	}
 	effect = {
-		dynasty:dynn_Targaryen = {
+		dynasty:dynn_Targaryen ?= {
 			every_dynasty_member = {
 				trigger_event = { id = asoiaf_setup_events.7 months = 11 }
 			}

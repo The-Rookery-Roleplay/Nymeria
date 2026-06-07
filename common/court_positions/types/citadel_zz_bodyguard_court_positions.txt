@@ -1,0 +1,262 @@
+﻿household_guard_court_position = {
+	sort_order = 978
+	max_available_positions = 1
+	court_position_asset = {
+		animation = marshal_random_weapon
+		background = "gfx/interface/illustrations/event_scenes/armory.dds"
+	}
+	opinion = {
+		value = regular_court_position_opinion
+	}
+
+	# How high the aptitude has to be to reach the 5 different modifier levels
+	aptitude_level_breakpoints = { 20 40 60 80 }
+
+	# How good is this character in this position? root scope is the holder of the court position
+	aptitude = {
+		value = 1
+		add = {
+			value = martial
+			multiply = 2.5
+			max = 50
+			desc = court_position_skill_martial
+		}
+		add = {
+			value = prowess
+			multiply = 2
+			max = 50
+			desc = court_position_skill_prowess
+		}
+		if = {
+			limit = {
+				has_trait = authoritative
+			}
+			add = {
+				value = 15
+				desc = court_position_authoritative_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = lifestyle_blademaster
+				has_trait_xp = {
+					trait = lifestyle_blademaster
+					value >= 100
+				}
+			}
+			add = {
+				value = 15
+				desc = court_position_blademaster_3_trait
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = lifestyle_blademaster
+				has_trait_xp = {
+					trait = lifestyle_blademaster
+					value >= 50
+				}
+			}
+			add = {
+				value = 10
+				desc = court_position_blademaster_2_trait
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = lifestyle_blademaster
+			}
+			add = {
+				value = 5
+				desc = court_position_blademaster_1_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = paranoid
+			}
+			add = {
+				value = 10
+				desc = court_position_paranoid_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = craven
+			}
+			add = {
+				value = -15
+				desc = court_position_craven_trait
+			}
+		}
+		if = {
+			limit = {
+				employer ?= {
+					agot_is_landless_pirate_character = yes
+					has_perk = toe_the_line_perk
+				}
+			}
+			add = {
+				value = 10
+				desc = court_position_positions_of_landless_pirate_toe_the_line_perk_bonus
+			}
+		}
+		add = court_position_aptitude_high_penalty_value
+		add = general_aptitude_bonus
+	}
+
+	is_shown = {
+		NOT = { government_has_flag = government_is_landless_adventurer }
+		NOT = { government_has_flag = government_is_custom_landless }
+		has_ep1_court_positions_dlc_trigger = yes
+	}
+
+	is_shown_character = {
+		scope:employee = {
+			can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:liege }
+			is_courtier_of = scope:liege
+		}
+	}
+
+	valid_position = {}
+
+	valid_character = {
+		scope:employee = {
+			base_court_position_validity_trigger = { EMPLOYER = scope:liege }
+			custom_tooltip = {
+				text = none_does_not_have_a_full_time_job
+				trigger_if = {
+					limit = { NOT = { has_court_position = household_guard_court_position } }
+					OR = {
+						court_position_does_not_already_have_a_job_trigger = yes
+						is_citadel_bodyguard_member_trigger = yes
+					}
+				}
+			}
+			can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:liege }
+		}
+	}
+
+	revoke_cost = {
+		prestige = {
+			value = major_court_position_prestige_revoke_cost
+			if = {
+				limit = {
+					exists = this
+					is_ai = yes
+				}
+				multiply = 0
+			}
+		}
+	}
+
+	salary = {
+		round = no
+		gold = {
+			value = minor_court_position_salary
+			# Set to 0 with Dynasty Perk Inner Circle
+			if = {
+				limit = {
+					scope:liege = {
+						exists = dynasty
+						dynasty = { has_dynasty_perk = fp2_coterie_legacy_1 }
+
+						employs_court_position = household_guard_court_position
+						any_court_position_holder = {
+							type = household_guard_court_position
+							exists = dynasty
+							house = prev.house
+						}
+					}
+				}
+				multiply = {
+					value = 0.0
+					desc = inner_circle_salary_mod
+					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+				}
+			}
+		}
+		prestige = {
+			value = major_court_position_prestige_salary
+			# Set to 0 with Dynasty Perk Inner Circle
+			if = {
+				limit = {
+					scope:liege = {
+						exists = dynasty
+						dynasty = { has_dynasty_perk = fp2_coterie_legacy_1 }
+
+						employs_court_position = household_guard_court_position
+						any_court_position_holder = {
+							type = household_guard_court_position
+							exists = dynasty
+							house = prev.house
+						}
+					}
+				}
+				multiply = {
+					value = 0.0
+					desc = inner_circle_salary_mod
+					format = "BASE_VALUE_FORMAT_DECIMALS_MINUS_POSITIVE"
+				}
+			}
+		}
+	}
+
+	# These modifiers are employed based on what level the aptitude reaches (levels are defined as breakpoints)
+	scaling_employer_modifiers = {
+		terrible = {
+			monthly_court_grandeur_change_mult = 0.05
+		}
+		poor = {
+			dread_gain_mult = 0.05
+			dread_decay_mult = -0.05
+			monthly_court_grandeur_change_mult = 0.05
+		}
+		average = {
+			dread_gain_mult = 0.1
+			dread_decay_mult = -0.1
+			monthly_court_grandeur_change_mult = 0.10
+		}
+		good = {
+			dread_gain_mult = 0.2
+			dread_decay_mult = -0.2
+			monthly_court_grandeur_change_mult = 0.10
+		}
+		excellent = {
+			dread_gain_mult = 0.3
+			dread_decay_mult = -0.3
+			monthly_court_grandeur_change_mult = 0.15
+		}
+	}
+
+
+	custom_employer_modifier_description = household_guard_employer_custom_effect_description
+
+	modifier = {
+		prowess = household_guard_prowess_svalue
+	}
+
+	on_court_position_received = {
+		agot_household_guard_title_accepted_effect = yes
+	}
+	on_court_position_revoked = {
+		agot_household_guard_title_revoked_effect = yes
+	}
+	on_court_position_invalidated = {
+		agot_household_guard_title_invalidated_effect = yes
+	}
+	on_court_position_vacated = {
+		court_position_vacated_event_effect = {
+			COURT_POSITION_TYPE = household_guard_court_position
+		}
+	}
+	# Scripted value to determine whether an AI will hire/fire a position or not. Hires over 0, fires under -50. Look in _court_positions.info for more extensive documentation!
+	ai_candidate_score = {
+		value = 100
+		add = scope:base_value
+		add = court_position_candidate_score_base_value
+		add = court_position_candidate_aptitude_value
+		add = court_position_debt_considerations_value
+	}
+}
+
