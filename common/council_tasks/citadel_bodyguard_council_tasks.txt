@@ -1,0 +1,3761 @@
+﻿### Citadel Bodyguard orders (council tasks) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+##### WINGED KNIGHTS (Vale) #####
+
+winged_knight_default_1 = {
+	default_task = yes
+	position = winged_knight_1
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winged_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winged_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winged_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winged_knight_bodyguard_1 = {
+	position = winged_knight_1
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winged_knight_bg_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winged_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winged_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winged_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winged_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winged_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winged_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+winged_knight_default_2 = {
+	default_task = yes
+	position = winged_knight_2
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winged_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winged_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winged_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winged_knight_bodyguard_2 = {
+	position = winged_knight_2
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winged_knight_bg_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winged_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winged_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winged_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winged_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winged_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winged_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+winged_knight_default_3 = {
+	default_task = yes
+	position = winged_knight_3
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winged_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winged_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winged_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winged_knight_bodyguard_3 = {
+	position = winged_knight_3
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winged_knight_bg_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winged_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winged_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winged_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winged_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winged_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winged_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+winged_knight_default_4 = {
+	default_task = yes
+	position = winged_knight_4
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winged_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winged_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winged_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winged_knight_bodyguard_4 = {
+	position = winged_knight_4
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winged_knight_bg_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winged_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winged_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winged_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winged_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winged_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winged_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+winged_knight_default_5 = {
+	default_task = yes
+	position = winged_knight_5
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winged_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winged_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winged_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winged_knight_bodyguard_5 = {
+	position = winged_knight_5
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winged_knight_bg_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winged_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winged_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winged_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winged_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winged_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winged_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+winged_knight_default_6 = {
+	default_task = yes
+	position = winged_knight_6
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winged_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winged_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winged_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winged_knight_bodyguard_6 = {
+	position = winged_knight_6
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winged_knight_bg_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winged_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winged_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winged_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winged_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winged_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winged_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+##### GREEN KNIGHTS (Reach) #####
+
+green_knight_default_1 = {
+	default_task = yes
+	position = green_knight_1
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = green_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_green_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_green_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+green_knight_bodyguard_1 = {
+	position = green_knight_1
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_green_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_green_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_green_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_green_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_green_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_green_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_green_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+green_knight_default_2 = {
+	default_task = yes
+	position = green_knight_2
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = green_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_green_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_green_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+green_knight_bodyguard_2 = {
+	position = green_knight_2
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_green_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_green_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_green_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_green_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_green_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_green_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_green_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+green_knight_default_3 = {
+	default_task = yes
+	position = green_knight_3
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = green_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_green_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_green_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+green_knight_bodyguard_3 = {
+	position = green_knight_3
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_green_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_green_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_green_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_green_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_green_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_green_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_green_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+green_knight_default_4 = {
+	default_task = yes
+	position = green_knight_4
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = green_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_green_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_green_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+green_knight_bodyguard_4 = {
+	position = green_knight_4
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_green_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_green_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_green_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_green_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_green_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_green_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_green_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+green_knight_default_5 = {
+	default_task = yes
+	position = green_knight_5
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = green_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_green_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_green_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+green_knight_bodyguard_5 = {
+	position = green_knight_5
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_green_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_green_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_green_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_green_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_green_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_green_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_green_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+green_knight_default_6 = {
+	default_task = yes
+	position = green_knight_6
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = green_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_green_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_green_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+green_knight_bodyguard_6 = {
+	position = green_knight_6
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_green_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_green_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_green_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_green_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_green_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_green_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_green_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+##### Sun Knights (e_dorne) #####
+
+sun_knight_default_1 = {
+	default_task = yes
+	position = sun_knight_1
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = sun_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_sun_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_sun_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+sun_knight_bodyguard_1 = {
+	position = sun_knight_1
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_sun_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_sun_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_sun_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_sun_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_sun_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_sun_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_sun_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+sun_knight_default_2 = {
+	default_task = yes
+	position = sun_knight_2
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = sun_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_sun_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_sun_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+sun_knight_bodyguard_2 = {
+	position = sun_knight_2
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_sun_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_sun_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_sun_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_sun_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_sun_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_sun_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_sun_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+sun_knight_default_3 = {
+	default_task = yes
+	position = sun_knight_3
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = sun_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_sun_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_sun_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+sun_knight_bodyguard_3 = {
+	position = sun_knight_3
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_sun_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_sun_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_sun_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_sun_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_sun_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_sun_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_sun_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+sun_knight_default_4 = {
+	default_task = yes
+	position = sun_knight_4
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = sun_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_sun_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_sun_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+sun_knight_bodyguard_4 = {
+	position = sun_knight_4
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_sun_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_sun_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_sun_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_sun_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_sun_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_sun_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_sun_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+sun_knight_default_5 = {
+	default_task = yes
+	position = sun_knight_5
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = sun_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_sun_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_sun_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+sun_knight_bodyguard_5 = {
+	position = sun_knight_5
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_sun_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_sun_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_sun_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_sun_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_sun_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_sun_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_sun_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+sun_knight_default_6 = {
+	default_task = yes
+	position = sun_knight_6
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = sun_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_sun_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_sun_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+sun_knight_bodyguard_6 = {
+	position = sun_knight_6
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_sun_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_sun_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_sun_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_sun_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_sun_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_sun_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_sun_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+##### Storm Knights (e_the_stormlands) #####
+
+storm_knight_default_1 = {
+	default_task = yes
+	position = storm_knight_1
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = storm_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_storm_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_storm_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+storm_knight_bodyguard_1 = {
+	position = storm_knight_1
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_storm_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_storm_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_storm_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_storm_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_storm_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_storm_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_storm_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+storm_knight_default_2 = {
+	default_task = yes
+	position = storm_knight_2
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = storm_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_storm_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_storm_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+storm_knight_bodyguard_2 = {
+	position = storm_knight_2
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_storm_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_storm_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_storm_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_storm_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_storm_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_storm_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_storm_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+storm_knight_default_3 = {
+	default_task = yes
+	position = storm_knight_3
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = storm_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_storm_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_storm_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+storm_knight_bodyguard_3 = {
+	position = storm_knight_3
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_storm_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_storm_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_storm_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_storm_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_storm_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_storm_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_storm_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+storm_knight_default_4 = {
+	default_task = yes
+	position = storm_knight_4
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = storm_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_storm_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_storm_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+storm_knight_bodyguard_4 = {
+	position = storm_knight_4
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_storm_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_storm_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_storm_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_storm_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_storm_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_storm_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_storm_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+storm_knight_default_5 = {
+	default_task = yes
+	position = storm_knight_5
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = storm_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_storm_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_storm_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+storm_knight_bodyguard_5 = {
+	position = storm_knight_5
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_storm_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_storm_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_storm_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_storm_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_storm_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_storm_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_storm_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+storm_knight_default_6 = {
+	default_task = yes
+	position = storm_knight_6
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = storm_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_storm_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_storm_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+storm_knight_bodyguard_6 = {
+	position = storm_knight_6
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_storm_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_storm_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_storm_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_storm_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_storm_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_storm_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_storm_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+##### Loyal Knights (e_the_riverlands) #####
+
+loyal_knight_default_1 = {
+	default_task = yes
+	position = loyal_knight_1
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = loyal_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_loyal_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_loyal_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+loyal_knight_bodyguard_1 = {
+	position = loyal_knight_1
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_loyal_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_loyal_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_loyal_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_loyal_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_loyal_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_loyal_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_loyal_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+loyal_knight_default_2 = {
+	default_task = yes
+	position = loyal_knight_2
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = loyal_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_loyal_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_loyal_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+loyal_knight_bodyguard_2 = {
+	position = loyal_knight_2
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_loyal_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_loyal_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_loyal_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_loyal_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_loyal_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_loyal_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_loyal_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+loyal_knight_default_3 = {
+	default_task = yes
+	position = loyal_knight_3
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = loyal_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_loyal_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_loyal_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+loyal_knight_bodyguard_3 = {
+	position = loyal_knight_3
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_loyal_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_loyal_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_loyal_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_loyal_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_loyal_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_loyal_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_loyal_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+loyal_knight_default_4 = {
+	default_task = yes
+	position = loyal_knight_4
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = loyal_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_loyal_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_loyal_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+loyal_knight_bodyguard_4 = {
+	position = loyal_knight_4
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_loyal_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_loyal_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_loyal_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_loyal_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_loyal_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_loyal_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_loyal_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+loyal_knight_default_5 = {
+	default_task = yes
+	position = loyal_knight_5
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = loyal_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_loyal_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_loyal_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+loyal_knight_bodyguard_5 = {
+	position = loyal_knight_5
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_loyal_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_loyal_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_loyal_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_loyal_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_loyal_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_loyal_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_loyal_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+loyal_knight_default_6 = {
+	default_task = yes
+	position = loyal_knight_6
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = loyal_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_loyal_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_loyal_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+loyal_knight_bodyguard_6 = {
+	position = loyal_knight_6
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_loyal_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_loyal_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_loyal_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_loyal_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_loyal_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_loyal_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_loyal_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+##### Golden Knights (e_the_westerlands) #####
+
+golden_knight_default_1 = {
+	default_task = yes
+	position = golden_knight_1
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = golden_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_golden_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_golden_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+golden_knight_bodyguard_1 = {
+	position = golden_knight_1
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_golden_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_golden_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_golden_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_golden_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_golden_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_golden_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_golden_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+golden_knight_default_2 = {
+	default_task = yes
+	position = golden_knight_2
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = golden_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_golden_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_golden_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+golden_knight_bodyguard_2 = {
+	position = golden_knight_2
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_golden_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_golden_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_golden_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_golden_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_golden_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_golden_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_golden_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+golden_knight_default_3 = {
+	default_task = yes
+	position = golden_knight_3
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = golden_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_golden_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_golden_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+golden_knight_bodyguard_3 = {
+	position = golden_knight_3
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_golden_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_golden_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_golden_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_golden_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_golden_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_golden_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_golden_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+golden_knight_default_4 = {
+	default_task = yes
+	position = golden_knight_4
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = golden_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_golden_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_golden_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+golden_knight_bodyguard_4 = {
+	position = golden_knight_4
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_golden_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_golden_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_golden_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_golden_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_golden_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_golden_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_golden_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+golden_knight_default_5 = {
+	default_task = yes
+	position = golden_knight_5
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = golden_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_golden_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_golden_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+golden_knight_bodyguard_5 = {
+	position = golden_knight_5
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_golden_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_golden_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_golden_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_golden_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_golden_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_golden_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_golden_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+golden_knight_default_6 = {
+	default_task = yes
+	position = golden_knight_6
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = golden_knight_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_golden_knight_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_golden_knight_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+golden_knight_bodyguard_6 = {
+	position = golden_knight_6
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_golden_knight_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_golden_knight_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_golden_knight_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_golden_knight_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_golden_knight_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_golden_knight_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_golden_knight_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+##### Saltguards (e_the_iron_islands) #####
+
+saltguard_default_1 = {
+	default_task = yes
+	position = saltguard_1
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = saltguard_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_saltguard_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_saltguard_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+saltguard_bodyguard_1 = {
+	position = saltguard_1
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_saltguard_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_saltguard_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_saltguard_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_saltguard_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_saltguard_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_saltguard_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_saltguard_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+saltguard_default_2 = {
+	default_task = yes
+	position = saltguard_2
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = saltguard_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_saltguard_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_saltguard_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+saltguard_bodyguard_2 = {
+	position = saltguard_2
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_saltguard_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_saltguard_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_saltguard_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_saltguard_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_saltguard_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_saltguard_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_saltguard_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+saltguard_default_3 = {
+	default_task = yes
+	position = saltguard_3
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = saltguard_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_saltguard_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_saltguard_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+saltguard_bodyguard_3 = {
+	position = saltguard_3
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_saltguard_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_saltguard_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_saltguard_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_saltguard_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_saltguard_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_saltguard_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_saltguard_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+saltguard_default_4 = {
+	default_task = yes
+	position = saltguard_4
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = saltguard_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_saltguard_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_saltguard_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+saltguard_bodyguard_4 = {
+	position = saltguard_4
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_saltguard_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_saltguard_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_saltguard_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_saltguard_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_saltguard_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_saltguard_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_saltguard_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+saltguard_default_5 = {
+	default_task = yes
+	position = saltguard_5
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = saltguard_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_saltguard_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_saltguard_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+saltguard_bodyguard_5 = {
+	position = saltguard_5
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_saltguard_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_saltguard_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_saltguard_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_saltguard_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_saltguard_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_saltguard_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_saltguard_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+saltguard_default_6 = {
+	default_task = yes
+	position = saltguard_6
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = saltguard_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_saltguard_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_saltguard_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+saltguard_bodyguard_6 = {
+	position = saltguard_6
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_saltguard_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_saltguard_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_saltguard_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_saltguard_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_saltguard_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_saltguard_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_saltguard_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+##### Winter Wolves (e_the_north) #####
+
+winter_wolf_default_1 = {
+	default_task = yes
+	position = winter_wolf_1
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winter_wolf_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winter_wolf_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winter_wolf_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winter_wolf_bodyguard_1 = {
+	position = winter_wolf_1
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_1.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winter_wolf_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winter_wolf_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winter_wolf_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winter_wolf_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winter_wolf_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winter_wolf_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winter_wolf_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+winter_wolf_default_2 = {
+	default_task = yes
+	position = winter_wolf_2
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winter_wolf_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winter_wolf_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winter_wolf_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winter_wolf_bodyguard_2 = {
+	position = winter_wolf_2
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_2.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winter_wolf_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winter_wolf_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winter_wolf_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winter_wolf_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winter_wolf_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winter_wolf_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winter_wolf_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+winter_wolf_default_3 = {
+	default_task = yes
+	position = winter_wolf_3
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winter_wolf_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winter_wolf_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winter_wolf_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winter_wolf_bodyguard_3 = {
+	position = winter_wolf_3
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_3.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winter_wolf_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winter_wolf_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winter_wolf_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winter_wolf_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winter_wolf_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winter_wolf_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winter_wolf_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+winter_wolf_default_4 = {
+	default_task = yes
+	position = winter_wolf_4
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winter_wolf_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winter_wolf_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winter_wolf_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winter_wolf_bodyguard_4 = {
+	position = winter_wolf_4
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_4.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winter_wolf_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winter_wolf_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winter_wolf_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winter_wolf_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winter_wolf_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winter_wolf_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winter_wolf_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+winter_wolf_default_5 = {
+	default_task = yes
+	position = winter_wolf_5
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winter_wolf_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winter_wolf_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winter_wolf_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winter_wolf_bodyguard_5 = {
+	position = winter_wolf_5
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_5.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winter_wolf_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winter_wolf_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winter_wolf_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winter_wolf_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winter_wolf_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winter_wolf_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winter_wolf_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}
+
+winter_wolf_default_6 = {
+	default_task = yes
+	position = winter_wolf_6
+	task_type = task_type_general
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_default_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = winter_wolf_protection
+
+	council_owner_modifier = {
+		name = task_protection_modifier
+		enemy_hostile_scheme_success_chance_add = -0.25
+		enemy_hostile_scheme_phase_duration_add = 0.25
+		scale = prowess
+	}
+
+	on_start_task = {
+		agot_on_start_winter_wolf_default = yes
+	}
+
+	on_monthly = {
+		agot_on_monthly_winter_wolf_default = yes
+	}
+
+	ai_will_do = {
+		value = 1
+	}
+}
+
+winter_wolf_bodyguard_6 = {
+	position = winter_wolf_6
+	task_type = task_type_court
+	task_progress = task_progress_infinite
+
+	asset = {
+		icon = "gfx/interface/icons/council_task_types/kingsguard_bodyguard_6.dds"
+		background = "gfx/interface/buttons/button_round_bg.dds"
+		frame = "gfx/interface/buttons/button_round_frame.dds"
+		glow = "gfx/particles/halo.dds"
+	}
+
+	effect_desc = task_winter_wolf_bodyguard_effect_desc
+
+	is_valid_showing_failures_only = {
+		valid_winter_wolf_bodyguard_councillor = yes
+	}
+
+	potential_target_court = {
+		potential_winter_wolf_bodyguard_court = yes
+	}
+
+	valid_target_court = {
+		valid_winter_wolf_bodyguard_court = yes
+	}
+
+	on_start_task_court = {
+		agot_on_start_winter_wolf_bodyguard = yes
+	}
+
+	on_cancel_task_court = {
+		agot_on_cancel_winter_wolf_bodyguard = yes
+	}
+
+	on_monthly_court = {
+		agot_on_monthly_winter_wolf_bodyguard = yes
+	}
+
+	ai_will_do = {
+		value = 0
+	}
+}

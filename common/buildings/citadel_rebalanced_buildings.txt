@@ -8168,6 +8168,8 @@ agot_goldengrove_01 = {
 		development_growth_factor = 0.25
 		monthly_county_control_growth_factor = 0.1
 		county_opinion_add = 10
+	}
+	character_modifier = {
 		heavy_cavalry_damage_mult = 0.1
 		heavy_cavalry_toughness_mult = 0.1
 	}
@@ -9106,11 +9108,11 @@ agot_gates_of_the_moon_02 = {
 	county_modifier = {
 		defender_holding_advantage = 5
 		hostile_raid_time = 0.5
-		stationed_heavy_cavalry_damage_mult = 0.1
-		stationed_heavy_cavalry_toughness_mult = 0.1
 	}
 
 	province_modifier = {
+		stationed_heavy_cavalry_damage_mult = 0.1
+		stationed_heavy_cavalry_toughness_mult = 0.1
 		fort_level = 4
 	}
 
@@ -9661,7 +9663,7 @@ agot_lordsport_01 = {
 	}
 
 	character_modifier = {
-        domain_size = -1
+        domain_limit = -1
     }
 
     province_modifier = {

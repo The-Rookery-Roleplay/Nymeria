@@ -1,0 +1,45 @@
+﻿### Citadel Bodyguard orders - self-heal stuck order slots. - Kizan
+# If a member died BEFORE the on_death maintenance fix existed, their slot variable on the empire title was never
+# cleared, so the order looked "full" and replacements were blocked. This clears any slot variable whose target is
+# dead, purged, or no longer a member. Called from on_death, so existing saves heal within days of play (no console).
+
+citadel_clear_dead_slot_effect = {
+	if = {
+		limit = {
+			$TITLE$ = { exists = var:$SLOT$ }
+			OR = {
+				NOT = { exists = $TITLE$.var:$SLOT$ }
+				$TITLE$.var:$SLOT$ = { is_alive = no }
+				$TITLE$.var:$SLOT$ = { NOT = { has_trait = $TRAIT$ } }
+			}
+		}
+		$TITLE$ = { remove_variable = $SLOT$ }
+	}
+}
+
+citadel_bodyguard_heal_stuck_slots_effect = {
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_vale         SLOT = winged_knight_lord_commander  TRAIT = winged_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_vale         SLOT = winged_knight_1               TRAIT = winged_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_vale         SLOT = winged_knight_2               TRAIT = winged_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_reach        SLOT = green_knight_lord_commander   TRAIT = green_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_reach        SLOT = green_knight_1                TRAIT = green_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_reach        SLOT = green_knight_2                TRAIT = green_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_dorne            SLOT = sun_knight_lord_commander     TRAIT = sun_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_dorne            SLOT = sun_knight_1                  TRAIT = sun_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_dorne            SLOT = sun_knight_2                  TRAIT = sun_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_stormlands   SLOT = storm_knight_lord_commander   TRAIT = storm_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_stormlands   SLOT = storm_knight_1                TRAIT = storm_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_stormlands   SLOT = storm_knight_2                TRAIT = storm_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_riverlands   SLOT = loyal_knight_lord_commander   TRAIT = loyal_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_riverlands   SLOT = loyal_knight_1                TRAIT = loyal_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_riverlands   SLOT = loyal_knight_2                TRAIT = loyal_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_westerlands  SLOT = golden_knight_lord_commander  TRAIT = golden_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_westerlands  SLOT = golden_knight_1               TRAIT = golden_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_westerlands  SLOT = golden_knight_2               TRAIT = golden_knight }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_iron_islands SLOT = saltguard_lord_commander      TRAIT = saltguard }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_iron_islands SLOT = saltguard_1                   TRAIT = saltguard }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_iron_islands SLOT = saltguard_2                   TRAIT = saltguard }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_north        SLOT = winter_wolf_lord_commander    TRAIT = winter_wolf }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_north        SLOT = winter_wolf_1                 TRAIT = winter_wolf }
+	citadel_clear_dead_slot_effect = { TITLE = title:e_the_north        SLOT = winter_wolf_2                 TRAIT = winter_wolf }
+}

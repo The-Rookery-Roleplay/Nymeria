@@ -602,4 +602,309 @@ color_lists = {
 		1 = asoiaf_green_light
 		1 = agot_violet_light
 	}
+	agot_colorful_list = {
+		#WHITE
+		special_selection = {
+			trigger = {
+				has_character_flag = dragon_color_white
+			}
+			10 = agot_white
+			10 = agot_bone
+			10 = agot_silver
+		}
+		#GREY
+		special_selection = {
+			trigger = {
+				has_character_flag = dragon_color_grey
+			}
+			10 = agot_grey_light
+			10 = agot_grey_dark
+			10 = agot_smoke
+			10 = agot_grey
+		}
+		#BLACK
+		special_selection = {
+			trigger = {
+				has_character_flag = dragon_color_black
+			}
+			10 = agot_black
+			10 = agot_black_light
+			10 = agot_charcoal
+		}
+		#RED
+		special_selection = {
+			trigger = {
+				has_character_flag = dragon_color_red
+			}
+			10 = agot_red
+			10 = agot_mud_red
+			10 = agot_red_dark
+			10 = agot_crimson
+			10 = agot_red_light
+			10 = agot_scarlet
+		}
+		#ORANGE
+		special_selection = {
+			trigger = {
+				has_character_flag = dragon_color_orange
+			}
+			10 = agot_orange
+			10 = agot_orange_light
+			10 = agot_copper
+			10 = agot_bronze
+			10 = agot_carnation
+			10 = agot_oak
+			10 = agot_russet
+			10 = agot_rust
+		}
+		#YELLOW
+		special_selection = {
+			trigger = {
+				has_character_flag = dragon_color_yellow
+			}
+			10 = agot_yellow
+			10 = agot_yellow_light
+			10 = agot_gold
+			10 = agot_cream
+			10 = agot_sand
+		}
+		#GREEN
+		special_selection = {
+			trigger = {
+				has_character_flag = dragon_color_green
+			}
+			10 = agot_green
+			10 = agot_green_light
+			10 = agot_green_dark
+			10 = agot_olive
+			10 = agot_green_grey
+			10 = agot_sea_green
+			10 = agot_teal
+			10 = agot_turquoise
+		}
+		#BLUE
+		special_selection = {
+			trigger = {
+				OR = {
+					has_character_flag = dragon_color_blue
+					has_character_flag = dragon_color_light_blue
+				}
+			}
+			10 = agot_blue_light
+			10 = agot_blue_sky
+			10 = agot_blue
+			10 = agot_indigo
+			10 = agot_blue_dark
+			10 = agot_blue_grey
+		}
+		#PURPLE
+		special_selection = {
+			trigger = {
+				has_character_flag = dragon_color_purple
+			}
+			10 = agot_purple
+			10 = agot_violet_light
+			10 = agot_lilac
+			10 = agot_burgundy
+		}
+		#PINK
+		special_selection = {
+			trigger = {
+				OR = {
+					has_character_flag = dragon_color_pink
+					has_character_flag = dragon_color_fuschia
+				}
+			}
+			10 = agot_pink
+			10 = agot_rose
+		}
+		#GENERIC
+		special_selection = {
+			trigger = {
+				NOT = { has_character_flag = dragon_color_white }
+				NOT = { has_character_flag = dragon_color_grey }
+				NOT = { has_character_flag = dragon_color_black }
+				NOT = { has_character_flag = dragon_color_red }
+				NOT = { has_character_flag = dragon_color_orange }
+				NOT = { has_character_flag = dragon_color_yellow }
+				NOT = { has_character_flag = dragon_color_green }
+				NOT = { has_character_flag = dragon_color_blue }
+				NOT = { has_character_flag = dragon_color_light_blue }
+				NOT = { has_character_flag = dragon_color_purple }
+				NOT = { has_character_flag = dragon_color_pink }
+				NOT = { has_character_flag = dragon_color_fuschia }
+			}
+			10 = agot_red
+			10 = agot_orange
+			#10 = agot_bone
+			10 = agot_mud_red
+			10 = agot_charcoal
+			10 = agot_lilac
+			10 = agot_blue_dark
+			10 = agot_red_light
+			10 = agot_blue
+			10 = agot_grey
+			10 = agot_mud
+			10 = agot_rust
+			10 = agot_smoke
+			10 = agot_violet_light
+			10 = agot_blue_sky
+			10 = agot_scarlet
+			10 = agot_yellow
+			10 = agot_brown
+			10 = agot_russet
+			10 = agot_orange_light
+			#10 = agot_silver
+			10 = agot_pink
+			10 = agot_blue_grey
+			10 = agot_crimson
+			10 = agot_green
+			10 = agot_blue_light
+			10 = agot_brown_dark
+			10 = agot_oak
+			10 = agot_grey_dark
+			10 = agot_burgundy
+			10 = agot_teal
+			10 = agot_rose
+			10 = agot_green_light
+			10 = agot_brown_light
+			10 = agot_gold
+			#10 = agot_grey_light
+			10 = agot_green_dark
+			10 = agot_sea_green
+			10 = agot_carnation
+			10 = agot_yellow_light
+			10 = agot_bronze
+			10 = agot_sand
+			10 = agot_violet
+			10 = agot_olive
+			10 = agot_turquoise
+			10 = agot_purple
+			#10 = agot_cream
+			10 = agot_copper
+			10 = agot_black_light
+			10 = agot_indigo
+			10 = agot_green_grey
+			10 = agot_red_dark
+		}
+	}
+	agot_blackwhite_list = {
+		special_selection = {
+			trigger = {
+				OR = {
+					has_character_flag = dragon_color_white
+					has_character_flag = dragon_color_grey
+					has_character_flag = dragon_color_yellow
+				}
+			}
+			10 = agot_black
+			10 = agot_red
+			10 = agot_orange
+			10 = agot_mud_red
+			10 = agot_charcoal
+			10 = agot_lilac
+			10 = agot_blue_dark
+			10 = agot_red_light
+			10 = agot_blue
+			10 = agot_mud
+			10 = agot_rust
+			10 = agot_violet_light
+			10 = agot_blue_sky
+			10 = agot_scarlet
+			10 = agot_brown
+			10 = agot_russet
+			10 = agot_orange_light
+			10 = agot_pink
+			10 = agot_blue_grey
+			10 = agot_crimson
+			10 = agot_green
+			10 = agot_blue_light
+			10 = agot_brown_dark
+			10 = agot_oak
+			10 = agot_burgundy
+			10 = agot_teal
+			10 = agot_rose
+			10 = agot_green_light
+			10 = agot_brown_light
+			10 = agot_green_dark
+			10 = agot_sea_green
+			10 = agot_carnation
+			10 = agot_bronze
+			10 = agot_violet
+			10 = agot_olive
+			10 = agot_turquoise
+			10 = agot_purple
+			10 = agot_copper
+			10 = agot_black_light
+			10 = agot_indigo
+			10 = agot_green_grey
+			10 = agot_red_dark
+		}
+		special_selection = {
+			trigger = {
+				OR = {
+					has_character_flag = dragon_color_black
+					has_character_flag = dragon_color_blue
+					has_character_flag = dragon_color_light_blue
+				}
+			}
+			10 = agot_white
+			10 = agot_red
+			10 = agot_orange
+			10 = agot_bone
+			10 = agot_mud_red
+			10 = agot_lilac
+			10 = agot_red_light
+			10 = agot_grey
+			10 = agot_mud
+			10 = agot_rust
+			10 = agot_smoke
+			10 = agot_violet_light
+			10 = agot_scarlet
+			10 = agot_yellow
+			10 = agot_brown
+			10 = agot_russet
+			10 = agot_orange_light
+			10 = agot_silver
+			10 = agot_pink
+			10 = agot_crimson
+			10 = agot_green
+			10 = agot_brown_dark
+			10 = agot_oak
+			10 = agot_grey_dark
+			10 = agot_burgundy
+			10 = agot_teal
+			10 = agot_rose
+			10 = agot_green_light
+			10 = agot_brown_light
+			10 = agot_gold
+			10 = agot_grey_light
+			10 = agot_green_dark
+			10 = agot_sea_green
+			10 = agot_carnation
+			10 = agot_yellow_light
+			10 = agot_bronze
+			10 = agot_sand
+			10 = agot_violet
+			10 = agot_olive
+			10 = agot_turquoise
+			10 = agot_purple
+			10 = agot_cream
+			10 = agot_copper
+			10 = agot_green_grey
+			10 = agot_red_dark
+		}
+		special_selection = {
+			trigger = {
+				NOT = { has_character_flag = dragon_color_white }
+				NOT = { has_character_flag = dragon_color_grey }
+				NOT = { has_character_flag = dragon_color_yellow }
+				NOT = { has_character_flag = dragon_color_black }
+				NOT = { has_character_flag = dragon_color_blue }
+				NOT = { has_character_flag = dragon_color_light_blue }
+			}
+			10 = agot_black
+			10 = agot_white
+		}
+	}
 }

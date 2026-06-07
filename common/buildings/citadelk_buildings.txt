@@ -826,11 +826,9 @@ citadel_bandallon = {	#Bandallon - House Blackbar / Reach .
 	}
 	
 	cost_gold = 1000
-	county_modifier = {
-		monthly_income = 0.5
-	}
 
 	character_modifier = {
+		monthly_income = 0.5
 		fertility = 0.05
 		personal_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
 		attraction_opinion = 10
@@ -1024,7 +1022,6 @@ citadel_whispers = {	# The Whispers - Crownlands.
 
 	character_modifier = {
 		general_opinion = -15
-		active_accolades = 1
 		dread_gain_mult = 0.3
 		dread_baseline_add = 10
 		knight_effectiveness_per_dread = 0.0025
@@ -1098,11 +1095,9 @@ citadel_antlers = {	# Antlers - Crownlands.
 
 	cost_gold = 1000
 
-	county_modifier = {
-		monthly_income = 0.5
-	}
 
 	character_modifier = {
+		monthly_income = 0.5
 		lifestyle_hunter_xp_gain_mult = 0.2
 		parochial_opinion = 5
 		parochial_tax_contribution_mult = 0.1
@@ -1589,9 +1584,6 @@ citadel_fisher = { # Fisher - The North
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
 
 	cost_gold = expensive_building_tier_6_cost
 	
@@ -1628,9 +1620,6 @@ citadel_spearwatch_island = { # Spearwatch Island - The North
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
 
 	cost_gold = expensive_building_tier_6_cost
 	
@@ -1660,9 +1649,6 @@ citadel_deepwood_motte = { # Deepwood Motte - The North
 
 	type_icon = "icon_skye_fairy_pool.dds"
 
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
@@ -1698,9 +1684,6 @@ citadel_blackpool = { # Blackpool - The North
 
 	type_icon = "icon_ub_bran_castle.dds"
 
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
@@ -1743,9 +1726,6 @@ citadel_castle_cerwyn = { # Castle Cerwyn - The North
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
 
 	cost_gold = expensive_building_tier_6_cost
 	levy = 250
@@ -1775,9 +1755,6 @@ citadel_haystack_hall = { # Haystack Hall - The Stormlands
 
 	type_icon = "icon_building_cereal_fields.dds"
 
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
@@ -1961,13 +1938,11 @@ citadel_three_towers = {
 		stationed_heavy_cavalry_damage_mult = 0.05
 		stationed_heavy_cavalry_pursuit_mult = 0.05
 		stationed_heavy_cavalry_screen_mult = 0.05
-		knight_effectiveness_mult = 0.3
 		levy_size = 0.1
 	}
-	county_modifier = {
-		monthly_income = 2
-	}
 	character_modifier = {
+		knight_effectiveness_mult = 0.3
+		monthly_income = 2
 		monthly_dynasty_prestige_mult = 0.03
 		monthly_prestige = 0.25
 	}	
@@ -2580,10 +2555,8 @@ citadel_northmarch = {
 		monthly_income = 4
 		levy_size = 0.3
 	}
-	county_modifier = {
-		army_maintenance_mult = 0.1
-	}
 	character_modifier = {
+		army_maintenance_mult = 0.1
 		westerman_main_opinion = -10
 		Western_Valelanders_opinion = -10
 		martial = 2
@@ -2620,10 +2593,8 @@ citadel_woodbine = {
 		stationed_heavy_cavalry_damage_mult = 0.05
 		stationed_heavy_cavalry_pursuit_mult = 0.05
 	}
-	county_modifier = {
-		army_maintenance_mult = 0.1
-	}
 	character_modifier = {
+		army_maintenance_mult = 0.1
 		prowess = 1
 		monthly_prestige = 0.25
 	}	
@@ -2745,7 +2716,7 @@ citadel_stillhouse_vineyards = {
 	county_modifier = {
 	}
 	county_holder_character_modifier = {
-		prestige = 0.2
+		monthly_prestige = 0.2
 		stewardship = 2
 	}
 	character_modifier = {
@@ -3955,7 +3926,7 @@ citadel_greenstone = {
 			has_innovation = innovation_manorialism
 		}
 	}
-	garrison_size = 250
+	max_garrison = 250
 	cost_gold = expensive_building_tier_4_cost
 
 	province_modifier = {
@@ -4722,7 +4693,7 @@ im_footly_hall = {
 	}
 
 	county_modifier = {
-		development_growth_mult = 0.15
+		development_growth_factor = 0.15
 	}
 
 	province_modifier = {

@@ -173,7 +173,6 @@ innovation_bannus = {
 		#AGOT Modified
 		#levy_reinforcement_rate = 0.15
 		levy_reinforcement_rate = 0.08
-		active_accolades = 1
 		herd_conversion = 0.005
 	}
 

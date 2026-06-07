@@ -1,0 +1,171 @@
+﻿### Citadel Bodyguard orders - portrait armor presets. - Kizan
+# Separate pack at priority 6 so it overrides default clothing for members only (entries base=0, fire on the
+# order trait). Winged Knights: Vale High armor + Winged Guard Helm + Kingsguard Cloak (EP1; no-DLC = no cloak).
+# Green Knights: Reach High armor + Reach High Helm + Reach Plate legwear + Half Cape (AGOT asset, no DLC gate).
+
+citadel_bodyguard_clothes = {
+
+	usage = game
+	selection_behavior = weighted_random
+	priority = 6
+
+	# ---- WINGED KNIGHTS (Vale) ----
+	citadel_clothing_winged_knight = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors      accessory = male_clothes_vale_war_03 }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear     accessory = male_legwear_secular_vale_war_03 }
+			accessory = { mode = add  gene = headgear  template = agot_most_headgears  accessory = male_headgear_secular_vale_war_04 }
+			accessory = { mode = add  gene = cloaks    template = kingsguard_cloak     value = 1 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				has_trait = winged_knight
+				has_ep1_dlc_trigger = yes
+				NOT = { has_character_flag = use_stealth_clothes }
+			}
+		}
+	}
+
+	citadel_clothing_winged_knight_no_dlc = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors      accessory = male_clothes_vale_war_03 }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear     accessory = male_legwear_secular_vale_war_03 }
+			accessory = { mode = add  gene = headgear  template = agot_most_headgears  accessory = male_headgear_secular_vale_war_04 }
+			accessory = { mode = add  gene = cloaks    template = no_cloak             value = 1 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				has_trait = winged_knight
+				has_ep1_dlc_trigger = no
+				NOT = { has_character_flag = use_stealth_clothes }
+			}
+		}
+	}
+
+	# ---- GREEN KNIGHTS (Reach) ----
+	citadel_clothing_green_knight = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors                 accessory = male_clothes_reach_tyrell_war_03 }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear                accessory = male_legwear_secular_reach_tyrell_war_03 }
+			accessory = { mode = add  gene = headgear  template = agot_most_headgears             accessory = male_headgear_secular_reach_tyrell_war_03 }
+			accessory = { mode = add  gene = cloaks    template = male_cloaks_secular_halfcape_01  value = 0 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				has_trait = green_knight
+				NOT = { has_character_flag = use_stealth_clothes }
+			}
+		}
+	}
+
+	# ---- Sun Knights (Dorne) : Arabic Armor High 1 + Dynastic Dorne High Helmet + Stone Dornish Legwear, no cloak ----
+	citadel_clothing_sun_knight = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = most_clothes        accessory = m_clothes_sec_ep2_mena_war_nob_01_hi }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear    accessory = male_legwear_secular_stone_dornish_war_03 }
+			accessory = { mode = add  gene = headgear  template = agot_most_headgears  accessory = male_headgear_secular_dorne_war_03 }
+			accessory = { mode = add  gene = cloaks    template = no_cloak            value = 1 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = { base = 0  modifier = { add = 1000  has_trait = sun_knight  NOT = { has_character_flag = use_stealth_clothes } } }
+	}
+
+	# ---- Storm Knights (Stormlands) : Robert's Armor + Robert's Plate Legwear, no cloak; LC = Robert's Helm, members = Stormlands High Helm ----
+	citadel_clothing_storm_knight_lc = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors     accessory = male_clothes_stormlands_war_04 }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear    accessory = male_legwear_secular_stormlands_war_04 }
+			accessory = { mode = add  gene = headgear  template = agot_most_headgears  accessory = male_headgear_secular_stormlands_war_04 }
+			accessory = { mode = add  gene = cloaks    template = no_cloak            value = 1 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = { base = 0  modifier = { add = 1100  has_trait = storm_knight  has_character_flag = lord_commander  NOT = { has_character_flag = use_stealth_clothes } } }
+	}
+	citadel_clothing_storm_knight_member = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors     accessory = male_clothes_stormlands_war_04 }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear    accessory = male_legwear_secular_stormlands_war_04 }
+			accessory = { mode = add  gene = headgear  template = agot_most_headgears  accessory = male_headgear_secular_stormlands_war_03 }
+			accessory = { mode = add  gene = cloaks    template = no_cloak            value = 1 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = { base = 0  modifier = { add = 1000  has_trait = storm_knight  NOT = { has_character_flag = lord_commander }  NOT = { has_character_flag = use_stealth_clothes } } }
+	}
+
+	# ---- Loyal Knights / Guardians of the Trident (Riverlands) : Riverlands High Armor 1 + English Greathelm 1 + Riverlands High Legwear + Explorer's Cloak ----
+	citadel_clothing_loyal_knight = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors                 accessory = male_clothes_riverlands_war_04 }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear                accessory = male_legwear_secular_riverlands_war_04 }
+			accessory = { mode = add  gene = headgear  template = ccp5_english_era4_war_nobility   accessory = m_headgear_ccp5_english_war_nob_04 }
+			accessory = { mode = add  gene = cloaks    template = all_cloaks                      accessory = male_cloaks_secular_ep1_adventurer_01 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = { base = 0  modifier = { add = 1000  has_trait = loyal_knight  NOT = { has_character_flag = use_stealth_clothes } } }
+	}
+
+	# ---- Golden Knights (Westerlands) : Jaime's Armor + Jaime's High Helm + Jaime's Plate Legwear + Kingsguard Cloak (EP1; no-DLC = no cloak) ----
+	citadel_clothing_golden_knight = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors     accessory = male_clothes_westerlands_jimothy_war }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear    accessory = male_legwear_secular_westerlands_jimothy_war_03 }
+			accessory = { mode = add  gene = headgear  template = agot_most_headgears  accessory = male_headgear_secular_westerlands_jimothy_war }
+			accessory = { mode = add  gene = cloaks    template = kingsguard_cloak    value = 1 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = { base = 0  modifier = { add = 1000  has_trait = golden_knight  has_ep1_dlc_trigger = yes  NOT = { has_character_flag = use_stealth_clothes } } }
+	}
+	citadel_clothing_golden_knight_no_dlc = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors     accessory = male_clothes_westerlands_jimothy_war }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear    accessory = male_legwear_secular_westerlands_jimothy_war_03 }
+			accessory = { mode = add  gene = headgear  template = agot_most_headgears  accessory = male_headgear_secular_westerlands_jimothy_war }
+			accessory = { mode = add  gene = cloaks    template = no_cloak            value = 1 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = { base = 0  modifier = { add = 1000  has_trait = golden_knight  has_ep1_dlc_trigger = no  NOT = { has_character_flag = use_stealth_clothes } } }
+	}
+
+	# ---- Saltguards (Iron Islands) : Ironborn High Armor + Legwear; LC = Gilded Gjermundbu (w/ mail), members = Runed Gjermundbu. No cloak. ----
+	citadel_clothing_saltguard_lc = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors   accessory = male_clothes_ironborn_greyjoy_war_03 }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear  accessory = male_legwear_secular_ironborn_greyjoy_war_03 }
+			accessory = { mode = add  gene = headgear  template = fp1_war           accessory = male_headgear_secular_fp1_war_nobility_01 }
+			accessory = { mode = add  gene = cloaks    template = no_cloak          value = 1 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = { base = 0  modifier = { add = 1100  has_trait = saltguard  has_character_flag = lord_commander  NOT = { has_character_flag = use_stealth_clothes } } }
+	}
+	citadel_clothing_saltguard_member = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors   accessory = male_clothes_ironborn_greyjoy_war_03 }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear  accessory = male_legwear_secular_ironborn_greyjoy_war_03 }
+			accessory = { mode = add  gene = headgear  template = fp1_war           accessory = male_headgear_secular_fp1_war_nobility_02 }
+			accessory = { mode = add  gene = cloaks    template = no_cloak          value = 1 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = { base = 0  modifier = { add = 1000  has_trait = saltguard  NOT = { has_character_flag = lord_commander }  NOT = { has_character_flag = use_stealth_clothes } } }
+	}
+
+	# ---- Winter Wolves (North) : Northern High Armor + Northern High Legwear + Nasal Helmet + High Winter Cloak ----
+	citadel_clothing_winter_wolf = {
+		dna_modifiers = {
+			accessory = { mode = add  gene = clothes   template = agot_all_armors                  accessory = male_clothes_north_war_03 }
+			accessory = { mode = add  gene = legwear   template = agot_all_legwear                 accessory = male_legwear_secular_north_war_03 }
+			accessory = { mode = add  gene = headgear  template = northern_war                     accessory = m_headgear_sec_northern_war_nob_01_lo }
+			accessory = { mode = add  gene = cloaks    template = agot_coa_cloaks_fp1_dynamic_low  accessory = male_cloaks_secular_north_high_winter_01 }
+			morph = { mode = modify_multiply  gene = gene_bs_bust  value = 0.8  template = bust_clothes }
+		}
+		weight = { base = 0  modifier = { add = 1000  has_trait = winter_wolf  NOT = { has_character_flag = use_stealth_clothes } } }
+	}
+}

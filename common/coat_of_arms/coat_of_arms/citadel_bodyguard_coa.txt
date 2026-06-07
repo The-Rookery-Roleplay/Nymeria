@@ -1,0 +1,401 @@
+﻿### Citadel Bodyguard orders (coat of arms) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+d_winged_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_dummy_winged_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_green_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_dummy_green_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_sun_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_dummy_sun_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_storm_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_dummy_storm_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_loyal_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_dummy_loyal_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_golden_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_dummy_golden_knight={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_saltguard={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_dummy_saltguard={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_winter_wolf={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}
+
+d_dummy_winter_wolf={
+	pattern="pattern_solid.dds"
+	color1=agot_white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=agot_black
+		color2=agot_white
+		color3=agot_black
+		texture="ce_most_devout.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.280000 0.280000 }
+		}
+	}
+	colored_emblem={
+		color1=agot_black
+		texture="ce_kingsguard_1.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			depth=1.010000
+		}
+	}
+}

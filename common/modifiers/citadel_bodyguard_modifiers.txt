@@ -1,0 +1,199 @@
+﻿### Citadel Bodyguard orders (modifiers) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+##### WINGED KNIGHTS (Vale) #####
+winged_knight_bodyguard = {
+	icon = family_positive
+	stacking = yes
+	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+	scheme_discovery_chance_mult = 0.05
+	enemy_hostile_scheme_success_chance_add = -20
+}
+
+training_for_winged_knight = {
+	icon = prowess_positive
+	prowess = 2
+	monthly_prestige = 0.1
+}
+
+winged_knight_oathbreaker = {
+	icon = prestige_negative
+	diplomacy = -2
+	general_opinion = -30
+}
+
+agot_former_winged_knight  = {
+	icon = prestige_negative
+}
+##### GREEN KNIGHTS (Reach) #####
+green_knight_bodyguard = {
+	icon = family_positive
+	stacking = yes
+	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+	scheme_discovery_chance_mult = 0.05
+	enemy_hostile_scheme_success_chance_add = -20
+}
+
+training_for_green_knight = {
+	icon = prowess_positive
+	prowess = 2
+	monthly_prestige = 0.1
+}
+
+green_knight_oathbreaker = {
+	icon = prestige_negative
+	diplomacy = -2
+	general_opinion = -30
+}
+
+agot_former_green_knight  = {
+	icon = prestige_negative
+}
+##### Sun Knights (e_dorne) #####
+sun_knight_bodyguard = {
+	icon = family_positive
+	stacking = yes
+	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+	scheme_discovery_chance_mult = 0.05
+	enemy_hostile_scheme_success_chance_add = -20
+}
+
+training_for_sun_knight = {
+	icon = prowess_positive
+	prowess = 2
+	monthly_prestige = 0.1
+}
+
+sun_knight_oathbreaker = {
+	icon = prestige_negative
+	diplomacy = -2
+	general_opinion = -30
+}
+
+agot_former_sun_knight  = {
+	icon = prestige_negative
+}
+
+##### Storm Knights (e_the_stormlands) #####
+storm_knight_bodyguard = {
+	icon = family_positive
+	stacking = yes
+	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+	scheme_discovery_chance_mult = 0.05
+	enemy_hostile_scheme_success_chance_add = -20
+}
+
+training_for_storm_knight = {
+	icon = prowess_positive
+	prowess = 2
+	monthly_prestige = 0.1
+}
+
+storm_knight_oathbreaker = {
+	icon = prestige_negative
+	diplomacy = -2
+	general_opinion = -30
+}
+
+agot_former_storm_knight  = {
+	icon = prestige_negative
+}
+
+##### Loyal Knights (e_the_riverlands) #####
+loyal_knight_bodyguard = {
+	icon = family_positive
+	stacking = yes
+	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+	scheme_discovery_chance_mult = 0.05
+	enemy_hostile_scheme_success_chance_add = -20
+}
+
+training_for_loyal_knight = {
+	icon = prowess_positive
+	prowess = 2
+	monthly_prestige = 0.1
+}
+
+loyal_knight_oathbreaker = {
+	icon = prestige_negative
+	diplomacy = -2
+	general_opinion = -30
+}
+
+agot_former_loyal_knight  = {
+	icon = prestige_negative
+}
+
+##### Golden Knights (e_the_westerlands) #####
+golden_knight_bodyguard = {
+	icon = family_positive
+	stacking = yes
+	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+	scheme_discovery_chance_mult = 0.05
+	enemy_hostile_scheme_success_chance_add = -20
+}
+
+training_for_golden_knight = {
+	icon = prowess_positive
+	prowess = 2
+	monthly_prestige = 0.1
+}
+
+golden_knight_oathbreaker = {
+	icon = prestige_negative
+	diplomacy = -2
+	general_opinion = -30
+}
+
+agot_former_golden_knight  = {
+	icon = prestige_negative
+}
+
+##### Saltguards (e_the_iron_islands) #####
+saltguard_bodyguard = {
+	icon = family_positive
+	stacking = yes
+	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+	scheme_discovery_chance_mult = 0.05
+	enemy_hostile_scheme_success_chance_add = -20
+}
+
+training_for_saltguard = {
+	icon = prowess_positive
+	prowess = 2
+	monthly_prestige = 0.1
+}
+
+saltguard_oathbreaker = {
+	icon = prestige_negative
+	diplomacy = -2
+	general_opinion = -30
+}
+
+agot_former_saltguard  = {
+	icon = prestige_negative
+}
+
+##### Winter Wolves (e_the_north) #####
+winter_wolf_bodyguard = {
+	icon = family_positive
+	stacking = yes
+	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+	scheme_discovery_chance_mult = 0.05
+	enemy_hostile_scheme_success_chance_add = -20
+}
+
+training_for_winter_wolf = {
+	icon = prowess_positive
+	prowess = 2
+	monthly_prestige = 0.1
+}
+
+winter_wolf_oathbreaker = {
+	icon = prestige_negative
+	diplomacy = -2
+	general_opinion = -30
+}
+
+agot_former_winter_wolf  = {
+	icon = prestige_negative
+}

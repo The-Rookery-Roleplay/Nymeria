@@ -1,0 +1,103 @@
+﻿### Citadel Bodyguard orders (scripted gui) - duplicated from AGOT kingsguard for Vale (Winged Knights) + Reach (Green Knights). - Kizan
+
+##### WINGED KNIGHTS (Vale) #####
+winged_knight_tab = {
+	is_shown = {
+		ruler_primary_title_has_winged_knight_trigger = yes
+	}
+}
+
+#small_council_tab = {
+#	is_shown = {
+#		primary_title = title:e_the_vale
+#	}
+#}
+##### GREEN KNIGHTS (Reach) #####
+green_knight_tab = {
+	is_shown = {
+		ruler_primary_title_has_green_knight_trigger = yes
+	}
+}
+
+#small_council_tab = {
+#	is_shown = {
+#		primary_title = title:e_the_reach
+#	}
+#}
+##### Sun Knights (e_dorne) #####
+sun_knight_tab = {
+	is_shown = {
+		ruler_primary_title_has_sun_knight_trigger = yes
+	}
+}
+
+#small_council_tab = {
+#	is_shown = {
+#		primary_title = title:e_dorne
+#	}
+#}
+
+##### Storm Knights (e_the_stormlands) #####
+storm_knight_tab = {
+	is_shown = {
+		ruler_primary_title_has_storm_knight_trigger = yes
+	}
+}
+
+#small_council_tab = {
+#	is_shown = {
+#		primary_title = title:e_the_stormlands
+#	}
+#}
+
+##### Loyal Knights (e_the_riverlands) #####
+loyal_knight_tab = {
+	is_shown = {
+		ruler_primary_title_has_loyal_knight_trigger = yes
+	}
+}
+
+#small_council_tab = {
+#	is_shown = {
+#		primary_title = title:e_the_riverlands
+#	}
+#}
+
+##### Golden Knights (e_the_westerlands) #####
+golden_knight_tab = {
+	is_shown = {
+		ruler_primary_title_has_golden_knight_trigger = yes
+	}
+}
+
+#small_council_tab = {
+#	is_shown = {
+#		primary_title = title:e_the_westerlands
+#	}
+#}
+
+##### Saltguards (e_the_iron_islands) #####
+saltguard_tab = {
+	is_shown = {
+		ruler_primary_title_has_saltguard_trigger = yes
+	}
+}
+
+#small_council_tab = {
+#	is_shown = {
+#		primary_title = title:e_the_iron_islands
+#	}
+#}
+
+##### Winter Wolves (e_the_north) #####
+winter_wolf_tab = {
+	is_shown = {
+		ruler_primary_title_has_winter_wolf_trigger = yes
+	}
+}
+
+#small_council_tab = {
+#	is_shown = {
+#		primary_title = title:e_the_north
+#	}
+#}

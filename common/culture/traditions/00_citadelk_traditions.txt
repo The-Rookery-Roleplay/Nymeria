@@ -52,7 +52,7 @@ tradition_citadel_raid = {
             }
         }
 
-        air_will_do = {
+        ai_will_do = {
             value = 0 #So the AI doesn't pick the Tradition.
         }
 }

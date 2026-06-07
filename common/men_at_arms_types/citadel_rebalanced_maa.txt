@@ -12391,7 +12391,7 @@ house_guard = {
 	}
 
 	#AGOT Added
-	terrain_bonus = 
+	terrain_bonus = {
 	plains = { damage = 10  toughness = 10 }
 floodplains = { damage = 5  toughness = 5 }
 farmlands = { damage = 5  toughness = 5 }
@@ -12448,6 +12448,7 @@ minorroad_glacier = { damage = -10  toughness = -10  screen = -10 }
 
 minorroad_the_bog = { damage = -30  toughness = -30  screen = -30 }
 	}
+}
 pikemen_militia = {
 	type = peasant_militia
 
