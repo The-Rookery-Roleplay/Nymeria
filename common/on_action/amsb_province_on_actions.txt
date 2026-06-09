@@ -41,12 +41,15 @@ amsb_game_start = {
             name = AMSB_is_loaded
             value = yes
         }
-        title:c_triarchs_fall = {
+        title:c_triarchs_fall ?= {
             set_county_culture = culture:summer_valyrian
             set_county_faith = faith:valyrian_pan_freehold
         }
         character:Vaelaror_1.house.house_head ?= {
-            get_title = title:c_triarchs_fall
+            if = {
+                limit = { exists = title:c_triarchs_fall }
+                get_title = title:c_triarchs_fall
+            }
         }
     }
 }
@@ -57,13 +60,13 @@ set_kl_buildings = {
                 game_start_date > 7890.1.1
                 game_start_date < 8000.1.6
             }
-            title:b_the_red_keep.title_province = {
+            title:b_the_red_keep.title_province ?= {
                 set_holding_type = castle_holding
                 add_building = castle_01
                 add_special_building_slot = the_red_keep_01
             }
         }
-        title:b_rhaenyss_hill.title_province = {
+        title:b_rhaenyss_hill.title_province ?= {
             if = {
                 limit = {
                     game_start_date > 8010.1.1
@@ -98,7 +101,7 @@ set_kl_buildings = {
         }
         if = {
             limit = { game_start_date > 8030.1.1 }
-            title:b_hookmarket.title_province = {
+            title:b_hookmarket.title_province ?= {
                 add_special_building = river_gate_01
             }
         }
@@ -107,7 +110,7 @@ set_kl_buildings = {
 
 set_special_buildings = {
     effect = {
-        title:b_hellgate_hall.title_province = {
+        title:b_hellgate_hall.title_province ?= {
             if = {
                 limit = {
                     has_building_or_higher = agot_ruins_hellgate_hall_01
@@ -116,7 +119,7 @@ set_special_buildings = {
             }
             add_special_building = amsb_ruins_hellgate_hall_01
         }
-        title:b_bloodstone_lair.title_province = {
+        title:b_bloodstone_lair.title_province ?= {
             if = {
                 limit = {
                     has_building_or_higher = agot_racallios_fort_01
@@ -125,7 +128,7 @@ set_special_buildings = {
             }
             add_special_building = bloodstone_special_01
         }
-        title:b_hookmarket.title_province = {
+        title:b_hookmarket.title_province ?= {
             add_special_building_slot = river_gate_01
         }
     }
@@ -133,7 +136,7 @@ set_special_buildings = {
 
 amsb_game_start_after_lobby = {
     effect = {
-        character:Hoare_31 = {
+        character:Hoare_31 ?= {
             if = {
                 limit = { is_alive = yes }
                 add_character_modifier = { modifier = harrenhal_constructed }

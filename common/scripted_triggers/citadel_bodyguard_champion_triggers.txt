@@ -1,0 +1,12 @@
+﻿is_citadel_bodyguard_member_trigger = {
+	OR = {
+		has_trait = winged_knight
+		has_trait = green_knight
+		has_trait = sun_knight
+		has_trait = storm_knight
+		has_trait = loyal_knight
+		has_trait = golden_knight
+		has_trait = saltguard
+		has_trait = winter_wolf
+	}
+}

@@ -214984,7 +214984,7 @@ Redwyne_200 = {
 	dynasty = dynn_Redwyne
 	random_traits = yes
 	religion = fots_seven
-	culture = honeywiner
+	culture = vineman
 	7259.1.1 = {
 		birth = yes
 	}

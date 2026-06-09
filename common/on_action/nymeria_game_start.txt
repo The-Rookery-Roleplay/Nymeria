@@ -12,33 +12,33 @@ nymeria_dorne_test_event = {
     effect = {
         if = {
             limit = { has_game_rule = nymeria_dorne_story_on }
-            character:Fowler_11 = {
+            character:Fowler_11 ?= {
                 trigger_event = nymeria_dorne_events.0001
             }
-            character:Blackmont_10 = {
+            character:Blackmont_10 ?= {
                 trigger_event = nymeria_dorne_events.0002
             }
-            character:Dayne_17 = {
+            character:Dayne_17 ?= {
                 trigger_event = nymeria_dorne_events.0003
             }
-            character:Manwoody_9 = {
+            character:Manwoody_9 ?= {
                 trigger_event = nymeria_dorne_events.0004
             }
-            character:Yronwood_16 = {
+            character:Yronwood_16 ?= {
                 trigger_event = nymeria_dorne_events.0005
             }
-            character:Dryland_1 = {
+            character:Dryland_1 ?= {
                 trigger_event = nymeria_dorne_events.0006
             }
-            character:Martell_23 = {
+            character:Martell_23 ?= {
                 trigger_event = nymeria_dorne_events.0007
             }
             # Hidden - gives Lord Uller the refusing_marriage trait. - Kizan
-            character:Uller_200 = {
+            character:Uller_200 ?= {
                 trigger_event = nymeria_dorne_events.0009
             }
             # Hidden - stops Lord Santagar crowning himself before the Broken Arm war. - Kizan
-            character:Santagar_200 = {
+            character:Santagar_200 ?= {
                 trigger_event = nymeria_dorne_events.0010
             }
         }
@@ -120,12 +120,12 @@ nymeria_setup_ai_nymeria = {
         if = {
             limit = {
                 exists = character:Nymeros_1
-                character:Nymeros_1 = {
+                character:Nymeros_1 ?= {
                     is_ai = yes
                     NOT = { has_trait = nymeria_refuses_marriage }
                 }
             }
-            character:Nymeros_1 = { add_trait = nymeria_refuses_marriage }
+            character:Nymeros_1 ?= { add_trait = nymeria_refuses_marriage }
         }
     }
 }
@@ -134,7 +134,7 @@ nymeria_block_dragonstone_colonization = {
     effect = {
         if = {
             limit = { NOT = { title:c_dragonstone = { has_county_modifier = block_settlement_ability } } }
-            title:c_dragonstone = { add_county_modifier = block_settlement_ability }
+            title:c_dragonstone ?= { add_county_modifier = block_settlement_ability }
         }
     }
 }
@@ -173,14 +173,14 @@ nymeria_stormlands_gardener_death = {
         if = {
             limit = {
                 has_game_rule = nymeria_stormlands_story_on
-                character:Durrandon_62 = { is_alive = yes }
+                character:Durrandon_62 ?= { is_alive = yes }
                 NOT = {
-                    character:Durrandon_62 = {
+                    character:Durrandon_62 ?= {
                         has_character_flag = nymeria_stormlands_story_ended
                     }
                 }
             }
-            character:Durrandon_62 = {
+            character:Durrandon_62 ?= {
                 trigger_event = nymeria_stormlands.0050
             }
         }
@@ -242,7 +242,7 @@ nymeria_check_fate_of_dorne = {
         NOT = { has_global_variable = nymeria_fate_of_dorne_declared }
         # The Bloodroyal still stands a free king, and Nymeria still wears a crown. - Kizan
         exists = title:k_yronwood.holder
-        title:k_yronwood.holder = { is_independent_ruler = yes }
+        title:k_yronwood.holder ?= { is_independent_ruler = yes }
         any_held_title = { tier = tier_kingdom }
         NOT = { title:k_yronwood.holder = { is_at_war_with = character:Nymeros_1 } }
     }
@@ -267,9 +267,9 @@ nymeria_check_greenblood_consolidation = {
         # Every Greenblood duchy is hers or a vassal's. A duchy still inside Lucifer
         # Dryland's realm is accepted here too, Chapter 4 dissolves him and delivers it,
         # so the story never stalls waiting on land the duel will hand her. - Kizan
-        title:d_godsgrace.holder = { OR = { this = root  is_vassal_or_below_of = root  top_liege = character:Dryland_1 } }
-        title:d_salt_shore.holder = { OR = { this = root  is_vassal_or_below_of = root  top_liege = character:Dryland_1 } }
-        title:d_lemonwood.holder = { OR = { this = root  is_vassal_or_below_of = root  top_liege = character:Dryland_1 } }
+        title:d_godsgrace.holder ?= { OR = { this = root  is_vassal_or_below_of = root  top_liege = character:Dryland_1 } }
+        title:d_salt_shore.holder ?= { OR = { this = root  is_vassal_or_below_of = root  top_liege = character:Dryland_1 } }
+        title:d_lemonwood.holder ?= { OR = { this = root  is_vassal_or_below_of = root  top_liege = character:Dryland_1 } }
     }
     effect = {
         trigger_event = nymeria_laamp_events.0011
@@ -350,7 +350,7 @@ nymeria_stormlands_events_cycle = {
     effect = {
         if = {
             limit = { has_game_rule = nymeria_dorne_story_on }
-            character:Durrandon_62 = {
+            character:Durrandon_62 ?= {
                 trigger_event = nymeria_stormlands.0001
             }
         }
@@ -363,11 +363,11 @@ nymeria_stormlands_events_cycle2 = {
             limit = {
                 has_game_rule = nymeria_stormlands_story_on
                 current_date >= 7299.7.20
-                character:Durrandon_62 = {
+                character:Durrandon_62 ?= {
                     has_character_flag = stormlands_war_pending
                 }
             }
-            character:Durrandon_62 = {
+            character:Durrandon_62 ?= {
                 # trigger_event = nymeria_stormlands.0004
                 trigger_event = nymeria_stormlands.0002
             }
@@ -380,15 +380,15 @@ nymeria_stormlands_events_cycle3 = {
         if = {
             limit = {
                 has_game_rule = nymeria_stormlands_story_on
-                character:Durrandon_62 = {
+                character:Durrandon_62 ?= {
                     has_character_flag = nymeria_duskwashes_war_pending
                     is_at_war = no
                     NOT = { has_character_flag = nymeria_stormlands_story_ended }
                     NOT = { has_character_flag = nymeria_duskwashes_delay }
                 }
-                title:k_duskwashes = { exists = holder }
+                title:k_duskwashes ?= { exists = holder }
             }
-            character:Durrandon_62 = {
+            character:Durrandon_62 ?= {
                 trigger_event = nymeria_stormlands.0018
             }
         }
@@ -397,13 +397,13 @@ nymeria_stormlands_events_cycle3 = {
 
 nymeria_dorne_events_cycle = {
     effect = {
-        character:Nymeros_1 = {
+        character:Nymeros_1 ?= {
             trigger_event = nymeria_laamp_events.0001
         }
 
         if = {
             limit = { has_game_rule = nymeria_dorne_story_on }
-            character:Nymeros_1 = {
+            character:Nymeros_1 ?= {
                 trigger_event = nymeria_laamp_events.0002
             }
         }

@@ -11,3 +11,8 @@ tradition_citadel_horse_name:0 "Riders of the Burning Dunes"
 tradition_citadel_horse_desc:0 "Raised beneath relentless heat, this culture thrives in the desert. Invaders weaken quickly, but its warriors remain deadly."
 
 culture_parameter_unlock_maa_sanddornish_horse_archers:0 "Can recruit [GetMaA('sanddornish_horse_archers').GetName]"
+
+# Vineman (the Arbor)
+
+tradition_agot_vineman_name:0 "Fruit of the Vine"
+tradition_agot_vineman_desc:0 "Upon the terraced slopes of the Arbor and the green hills of the Reach, the vine is tended as lovingly as any child. Wine flows at every table, gardens are coaxed to bloom in every season, and a people grown rich on the grape welcome the world to share in their bounty."

@@ -27,20 +27,26 @@ agot_brightboar_on_game_start_after_lobby = {
 		# agot_brightboar_dragons_setup = yes
 		agot_brightboar_historical_artifacts_setup = yes
 		
-		dynasty:dynn_Rowan = {
+		dynasty:dynn_Rowan ?= {
 			add_dynasty_modifier = golden_tree_dynasty_modifier
 		}
 		
-		character:Gardener_3 = {
+		character:Gardener_3 ?= {
 			change_age = 30
 		}
 		
-		character:Stark_12 = {
-			set_father = character:Gardener_3
+		character:Stark_12 ?= {
+			if = {
+				limit = { exists = character:Gardener_3 }
+				set_father = character:Gardener_3
+			}
 		}
 		
-		character:Lannister_29 = {
-			set_mother = character:Rowan_6
+		character:Lannister_29 ?= {
+			if = {
+				limit = { exists = character:Rowan_6 }
+				set_mother = character:Rowan_6
+			}
 		}
 		
 		if = {
@@ -48,7 +54,7 @@ agot_brightboar_on_game_start_after_lobby = {
 				exists = character:Osgrey_55
 				has_game_rule = agot_brightboar_easter_eggs_enabled
 			}
-			character:Osgrey_55 = {
+			character:Osgrey_55 ?= {
 				give_nickname = nick_the_grand_glazer
 			}
 		}
@@ -195,7 +201,7 @@ agot_brightboar_on_game_start_after_lobby = {
 
 agot_brightboar_set_legacies_rowan = {
 	effect = {
-		dynasty:dynn_Rowan = {
+		dynasty:dynn_Rowan ?= {
 			add_dynasty_prestige = 12964
 			agot_safe_add_dynasty_perk_history_effect = { PERK = rowan_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = rowan_legacy_2 }
@@ -208,7 +214,7 @@ agot_brightboar_set_legacies_rowan = {
 
 agot_brightboar_set_legacies_webber = {
 	effect = {
-		dynasty:dynn_Webber = {
+		dynasty:dynn_Webber ?= {
 			add_dynasty_prestige = 10295
 			agot_safe_add_dynasty_perk_history_effect = { PERK = webber_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = webber_legacy_2 }
@@ -221,7 +227,7 @@ agot_brightboar_set_legacies_webber = {
 
 agot_brightboar_set_legacies_osgrey = {
 	effect = {
-		dynasty:dynn_Osgrey = {
+		dynasty:dynn_Osgrey ?= {
 			add_dynasty_prestige = 7625
 			agot_safe_add_dynasty_perk_history_effect = { PERK = osgrey_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = osgrey_legacy_2 }
@@ -234,7 +240,7 @@ agot_brightboar_set_legacies_osgrey = {
 
 agot_brightboar_set_legacies_crane = {
 	effect = {
-		dynasty:dynn_Crane = {
+		dynasty:dynn_Crane ?= {
 			add_dynasty_prestige = 10136
 			agot_safe_add_dynasty_perk_history_effect = { PERK = crane_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = crane_legacy_2 }
@@ -247,7 +253,7 @@ agot_brightboar_set_legacies_crane = {
 
 agot_brightboar_set_legacies_oakheart = {
 	effect = {
-		dynasty:dynn_Oakheart = {
+		dynasty:dynn_Oakheart ?= {
 			add_dynasty_prestige = 12936
 			agot_safe_add_dynasty_perk_history_effect = { PERK = oakheart_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = oakheart_legacy_2 }
@@ -260,7 +266,7 @@ agot_brightboar_set_legacies_oakheart = {
 
 agot_brightboar_set_legacies_ball = {
 	effect = {
-		dynasty:dynn_Ball = {
+		dynasty:dynn_Ball ?= {
 			add_dynasty_prestige = 7383
 			agot_safe_add_dynasty_perk_history_effect = { PERK = ball_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = ball_legacy_2 }
@@ -273,7 +279,7 @@ agot_brightboar_set_legacies_ball = {
 
 agot_brightboar_set_legacies_peake = {
 	effect = {
-		dynasty:dynn_Peake = {
+		dynasty:dynn_Peake ?= {
 			add_dynasty_prestige = 13816
 			agot_safe_add_dynasty_perk_history_effect = { PERK = peake_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = peake_legacy_2 }
@@ -286,7 +292,7 @@ agot_brightboar_set_legacies_peake = {
 
 agot_brightboar_set_legacies_florent = {
 	effect = {
-		dynasty:dynn_Florent = {
+		dynasty:dynn_Florent ?= {
 			add_dynasty_prestige = 12987
 			agot_safe_add_dynasty_perk_history_effect = { PERK = florent_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = florent_legacy_2 }
@@ -299,7 +305,7 @@ agot_brightboar_set_legacies_florent = {
 
 agot_brightboar_set_legacies_tarly = {
 	effect = {
-		dynasty:dynn_Tarly = {
+		dynasty:dynn_Tarly ?= {
 			add_dynasty_prestige = 13044
 			agot_safe_add_dynasty_perk_history_effect = { PERK = tarly_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = tarly_legacy_2 }
@@ -312,7 +318,7 @@ agot_brightboar_set_legacies_tarly = {
 
 agot_brightboar_set_legacies_fossoway = {
 	effect = {
-		dynasty:dynn_Fossoway = {
+		dynasty:dynn_Fossoway ?= {
 			add_dynasty_prestige = 12931
 			agot_safe_add_dynasty_perk_history_effect = { PERK = fossoway_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = fossoway_legacy_2 }
@@ -325,7 +331,7 @@ agot_brightboar_set_legacies_fossoway = {
 
 agot_brightboar_set_legacies_beesbury = {
 	effect = {
-		dynasty:dynn_Beesbury = {
+		dynasty:dynn_Beesbury ?= {
 			add_dynasty_prestige = 10186
 			agot_safe_add_dynasty_perk_history_effect = { PERK = beesbury_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = beesbury_legacy_2 }
@@ -338,7 +344,7 @@ agot_brightboar_set_legacies_beesbury = {
 
 agot_brightboar_set_legacies_bulwer = {
 	effect = {
-		dynasty:dynn_Bulwer = {
+		dynasty:dynn_Bulwer ?= {
 			add_dynasty_prestige = 13095
 			agot_safe_add_dynasty_perk_history_effect = { PERK = bulwer_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = bulwer_legacy_2 }
@@ -351,7 +357,7 @@ agot_brightboar_set_legacies_bulwer = {
 
 agot_brightboar_set_legacies_redwyne = {
 	effect = {
-		dynasty:dynn_Redwyne = {
+		dynasty:dynn_Redwyne ?= {
 			add_dynasty_prestige = 15725
 			agot_safe_add_dynasty_perk_history_effect = { PERK = redwyne_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = redwyne_legacy_2 }
@@ -364,7 +370,7 @@ agot_brightboar_set_legacies_redwyne = {
 
 agot_brightboar_set_legacies_gardener = {
 	effect = {
-		dynasty:dynn_Gardener = {
+		dynasty:dynn_Gardener ?= {
 			add_dynasty_prestige = 21346
 			agot_safe_add_dynasty_perk_history_effect = { PERK = gardener_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = gardener_legacy_2 }
@@ -377,7 +383,7 @@ agot_brightboar_set_legacies_gardener = {
 
 agot_brightboar_set_legacies_tyrell = {
 	effect = {
-		dynasty:dynn_Tyrell = {
+		dynasty:dynn_Tyrell ?= {
 			add_dynasty_prestige = 12918
 			agot_safe_add_dynasty_perk_history_effect = { PERK = tyrell_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = tyrell_legacy_2 }
@@ -390,7 +396,7 @@ agot_brightboar_set_legacies_tyrell = {
 
 agot_brightboar_set_legacies_hightower = {
 	effect = {
-		dynasty:dynn_Hightower = {
+		dynasty:dynn_Hightower ?= {
 			add_dynasty_prestige = 18478
 			agot_safe_add_dynasty_perk_history_effect = { PERK = hightower_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = hightower_legacy_2 }
@@ -403,7 +409,7 @@ agot_brightboar_set_legacies_hightower = {
 
 agot_brightboar_set_legacies_hunt = {
 	effect = {
-		dynasty:dynn_Hunt = {
+		dynasty:dynn_Hunt ?= {
 			add_dynasty_prestige = 10340
 			agot_safe_add_dynasty_perk_history_effect = { PERK = hunt_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = hunt_legacy_2 }
@@ -416,7 +422,7 @@ agot_brightboar_set_legacies_hunt = {
 
 agot_brightboar_set_legacies_baratheon = {
 	effect = {
-		dynasty:dynn_Baratheon = {
+		dynasty:dynn_Baratheon ?= {
 			add_dynasty_prestige = 18199
 			agot_safe_add_dynasty_perk_history_effect = { PERK = baratheon_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = baratheon_legacy_2 }
@@ -429,7 +435,7 @@ agot_brightboar_set_legacies_baratheon = {
 
 agot_brightboar_set_legacies_durrandon = {
 	effect = {
-		dynasty:dynn_Durrandon = {
+		dynasty:dynn_Durrandon ?= {
 			add_dynasty_prestige = 16240
 			agot_safe_add_dynasty_perk_history_effect = { PERK = durrandon_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = durrandon_legacy_2 }
@@ -442,7 +448,7 @@ agot_brightboar_set_legacies_durrandon = {
 
 agot_brightboar_set_legacies_caron = {
 	effect = {
-		dynasty:dynn_Caron = {
+		dynasty:dynn_Caron ?= {
 			add_dynasty_prestige = 15794
 			agot_safe_add_dynasty_perk_history_effect = { PERK = caron_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = caron_legacy_2 }
@@ -455,7 +461,7 @@ agot_brightboar_set_legacies_caron = {
 
 agot_brightboar_set_legacies_selmy = {
 	effect = {
-		dynasty:dynn_Selmy = {
+		dynasty:dynn_Selmy ?= {
 			add_dynasty_prestige = 12897
 			agot_safe_add_dynasty_perk_history_effect = { PERK = selmy_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = selmy_legacy_2 }
@@ -468,7 +474,7 @@ agot_brightboar_set_legacies_selmy = {
 
 agot_brightboar_set_legacies_dondarrion = {
 	effect = {
-		dynasty:dynn_Dondarrion = {
+		dynasty:dynn_Dondarrion ?= {
 			add_dynasty_prestige = 13014
 			agot_safe_add_dynasty_perk_history_effect = { PERK = dondarrion_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = dondarrion_legacy_2 }
@@ -481,7 +487,7 @@ agot_brightboar_set_legacies_dondarrion = {
 
 agot_brightboar_set_legacies_swann = {
 	effect = {
-		dynasty:dynn_Swann = {
+		dynasty:dynn_Swann ?= {
 			add_dynasty_prestige = 15532
 			agot_safe_add_dynasty_perk_history_effect = { PERK = swann_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = swann_legacy_2 }
@@ -494,7 +500,7 @@ agot_brightboar_set_legacies_swann = {
 
 agot_brightboar_set_legacies_tarth = {
 	effect = {
-		dynasty:dynn_Tarth = {
+		dynasty:dynn_Tarth ?= {
 			add_dynasty_prestige = 15761
 			agot_safe_add_dynasty_perk_history_effect = { PERK = tarth_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = tarth_legacy_2 }
@@ -507,7 +513,7 @@ agot_brightboar_set_legacies_tarth = {
 
 agot_brightboar_set_legacies_estermont = {
 	effect = {
-		dynasty:dynn_Estermont = {
+		dynasty:dynn_Estermont ?= {
 			add_dynasty_prestige = 10159
 			agot_safe_add_dynasty_perk_history_effect = { PERK = estermont_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = estermont_legacy_2 }
@@ -520,7 +526,7 @@ agot_brightboar_set_legacies_estermont = {
 
 agot_brightboar_set_legacies_connington = {
 	effect = {
-		dynasty:dynn_Connington = {
+		dynasty:dynn_Connington ?= {
 			add_dynasty_prestige = 13086
 			agot_safe_add_dynasty_perk_history_effect = { PERK = connington_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = connington_legacy_2 }
@@ -533,7 +539,7 @@ agot_brightboar_set_legacies_connington = {
 
 agot_brightboar_set_legacies_mertyns = {
 	effect = {
-		dynasty:dynn_Mertyns = {
+		dynasty:dynn_Mertyns ?= {
 			add_dynasty_prestige = 10273
 			agot_safe_add_dynasty_perk_history_effect = { PERK = mertyns_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = mertyns_legacy_2 }
@@ -546,7 +552,7 @@ agot_brightboar_set_legacies_mertyns = {
 
 agot_brightboar_set_legacies_grandison = {
 	effect = {
-		dynasty:dynn_Grandison = {
+		dynasty:dynn_Grandison ?= {
 			add_dynasty_prestige = 12984
 			agot_safe_add_dynasty_perk_history_effect = { PERK = grandison_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = grandison_legacy_2 }
@@ -559,7 +565,7 @@ agot_brightboar_set_legacies_grandison = {
 
 agot_brightboar_set_legacies_dayne = {
 	effect = {
-		dynasty:dynn_Dayne = {
+		dynasty:dynn_Dayne ?= {
 			add_dynasty_prestige = 13880
 			agot_safe_add_dynasty_perk_history_effect = { PERK = dayne_legacy_2 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = dayne_legacy_3 }
@@ -571,7 +577,7 @@ agot_brightboar_set_legacies_dayne = {
 
 agot_brightboar_set_legacies_blackmont = {
 	effect = {
-		dynasty:dynn_Blackmont = {
+		dynasty:dynn_Blackmont ?= {
 			add_dynasty_prestige = 10300
 			agot_safe_add_dynasty_perk_history_effect = { PERK = blackmont_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = blackmont_legacy_2 }
@@ -584,7 +590,7 @@ agot_brightboar_set_legacies_blackmont = {
 
 agot_brightboar_set_legacies_fowler = {
 	effect = {
-		dynasty:dynn_Fowler = {
+		dynasty:dynn_Fowler ?= {
 			add_dynasty_prestige = 12937
 			agot_safe_add_dynasty_perk_history_effect = { PERK = fowler_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = fowler_legacy_2 }
@@ -597,7 +603,7 @@ agot_brightboar_set_legacies_fowler = {
 
 agot_brightboar_set_legacies_manwoody = {
 	effect = {
-		dynasty:dynn_Manwoody = {
+		dynasty:dynn_Manwoody ?= {
 			add_dynasty_prestige = 10282
 			agot_safe_add_dynasty_perk_history_effect = { PERK = manwoody_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = manwoody_legacy_2 }
@@ -610,7 +616,7 @@ agot_brightboar_set_legacies_manwoody = {
 
 agot_brightboar_set_legacies_wyl = {
 	effect = {
-		dynasty:dynn_Wyl = {
+		dynasty:dynn_Wyl ?= {
 			add_dynasty_prestige = 10195
 			agot_safe_add_dynasty_perk_history_effect = { PERK = wyl_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = wyl_legacy_2 }
@@ -623,7 +629,7 @@ agot_brightboar_set_legacies_wyl = {
 
 agot_brightboar_set_legacies_yronwood = {
 	effect = {
-		dynasty:dynn_Yronwood = {
+		dynasty:dynn_Yronwood ?= {
 			add_dynasty_prestige = 18499
 			agot_safe_add_dynasty_perk_history_effect = { PERK = yronwood_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = yronwood_legacy_2 }
@@ -636,7 +642,7 @@ agot_brightboar_set_legacies_yronwood = {
 
 agot_brightboar_set_legacies_qorgyle = {
 	effect = {
-		dynasty:dynn_Qorgyle = {
+		dynasty:dynn_Qorgyle ?= {
 			add_dynasty_prestige = 12627
 			agot_safe_add_dynasty_perk_history_effect = { PERK = qorgyle_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = qorgyle_legacy_2 }
@@ -649,7 +655,7 @@ agot_brightboar_set_legacies_qorgyle = {
 
 agot_brightboar_set_legacies_uller = {
 	effect = {
-		dynasty:dynn_Uller = {
+		dynasty:dynn_Uller ?= {
 			add_dynasty_prestige = 10214
 			agot_safe_add_dynasty_perk_history_effect = { PERK = uller_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = uller_legacy_2 }
@@ -662,7 +668,7 @@ agot_brightboar_set_legacies_uller = {
 
 agot_brightboar_set_legacies_dryland = {
 	effect = {
-		dynasty:dynn_Dryland = {
+		dynasty:dynn_Dryland ?= {
 			add_dynasty_prestige = 7625
 			agot_safe_add_dynasty_perk_history_effect = { PERK = dryland_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = dryland_legacy_2 }
@@ -675,7 +681,7 @@ agot_brightboar_set_legacies_dryland = {
 
 agot_brightboar_set_legacies_allyrion = {
 	effect = {
-		dynasty:dynn_Allyrion = {
+		dynasty:dynn_Allyrion ?= {
 			add_dynasty_prestige = 12993
 			agot_safe_add_dynasty_perk_history_effect = { PERK = allyrion_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = allyrion_legacy_2 }
@@ -688,7 +694,7 @@ agot_brightboar_set_legacies_allyrion = {
 
 agot_brightboar_set_legacies_vaith = {
 	effect = {
-		dynasty:dynn_Vaith = {
+		dynasty:dynn_Vaith ?= {
 			add_dynasty_prestige = 10234
 			agot_safe_add_dynasty_perk_history_effect = { PERK = vaith_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = vaith_legacy_2 }
@@ -701,7 +707,7 @@ agot_brightboar_set_legacies_vaith = {
 
 agot_brightboar_set_legacies_jordayne = {
 	effect = {
-		dynasty:dynn_Jordayne = {
+		dynasty:dynn_Jordayne ?= {
 			add_dynasty_prestige = 10297
 			agot_safe_add_dynasty_perk_history_effect = { PERK = jordayne_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = jordayne_legacy_2 }
@@ -714,7 +720,7 @@ agot_brightboar_set_legacies_jordayne = {
 
 agot_brightboar_set_legacies_toland = {
 	effect = {
-		dynasty:dynn_Toland = {
+		dynasty:dynn_Toland ?= {
 			add_dynasty_prestige = 10246
 			agot_safe_add_dynasty_perk_history_effect = { PERK = toland_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = toland_legacy_2 }
@@ -727,7 +733,7 @@ agot_brightboar_set_legacies_toland = {
 
 agot_brightboar_set_legacies_gargalen = {
 	effect = {
-		dynasty:dynn_Gargalen = {
+		dynasty:dynn_Gargalen ?= {
 			add_dynasty_prestige = 10234
 			agot_safe_add_dynasty_perk_history_effect = { PERK = gargalen_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = gargalen_legacy_2 }
@@ -740,7 +746,7 @@ agot_brightboar_set_legacies_gargalen = {
 
 agot_brightboar_set_legacies_martell = {
 	effect = {
-		dynasty:dynn_Martell = {
+		dynasty:dynn_Martell ?= {
 			add_dynasty_prestige = 21159
 			agot_safe_add_dynasty_perk_history_effect = { PERK = martell_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = martell_legacy_2 }
@@ -753,7 +759,7 @@ agot_brightboar_set_legacies_martell = {
 
 agot_brightboar_set_legacies_santagar = {
 	effect = {
-		dynasty:dynn_Santagar = {
+		dynasty:dynn_Santagar ?= {
 			add_dynasty_prestige = 10297
 			agot_safe_add_dynasty_perk_history_effect = { PERK = santagar_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = santagar_legacy_2 }
@@ -766,7 +772,7 @@ agot_brightboar_set_legacies_santagar = {
 
 agot_brightboar_set_legacies_dalt = {
 	effect = {
-		dynasty:dynn_Dalt = {
+		dynasty:dynn_Dalt ?= {
 			add_dynasty_prestige = 7508
 			agot_safe_add_dynasty_perk_history_effect = { PERK = dalt_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = dalt_legacy_2 }
@@ -779,7 +785,7 @@ agot_brightboar_set_legacies_dalt = {
 
 agot_brightboar_set_legacies_belaerys = {
 	effect = {
-		dynasty:dynn_Belaerys = {
+		dynasty:dynn_Belaerys ?= {
 			add_dynasty_prestige = 7625
 			agot_safe_add_dynasty_perk_history_effect = { PERK = belaerys_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = belaerys_legacy_2 }
@@ -792,7 +798,7 @@ agot_brightboar_set_legacies_belaerys = {
 
 agot_brightboar_set_legacies_varezys = {
 	effect = {
-		dynasty:dynn_Varezys = {
+		dynasty:dynn_Varezys ?= {
 			add_dynasty_prestige = 7625
 			agot_safe_add_dynasty_perk_history_effect = { PERK = varezys_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = varezys_legacy_2 }
@@ -805,7 +811,7 @@ agot_brightboar_set_legacies_varezys = {
 
 agot_brightboar_set_legacies_mataeryon = {
 	effect = {
-		dynasty:dynn_Mataeryon = {
+		dynasty:dynn_Mataeryon ?= {
 			add_dynasty_prestige = 7625
 			agot_safe_add_dynasty_perk_history_effect = { PERK = mataeryon_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = mataeryon_legacy_2 }
@@ -818,7 +824,7 @@ agot_brightboar_set_legacies_mataeryon = {
 
 agot_brightboar_set_legacies_targaryen = {
 	effect = {
-		dynasty:dynn_Targaryen = {
+		dynasty:dynn_Targaryen ?= {
 			add_dynasty_prestige = 26851
 			agot_safe_add_dynasty_perk_history_effect = { PERK = targaryen_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = targaryen_legacy_2 }
@@ -831,7 +837,7 @@ agot_brightboar_set_legacies_targaryen = {
 
 agot_brightboar_set_legacies_velaryon = {
 	effect = {
-		dynasty:dynn_Velaryon = {
+		dynasty:dynn_Velaryon ?= {
 			add_dynasty_prestige = 13993
 			agot_safe_add_dynasty_perk_history_effect = { PERK = velaryon_legacy_2 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = velaryon_legacy_3 }
@@ -843,7 +849,7 @@ agot_brightboar_set_legacies_velaryon = {
 
 agot_brightboar_set_legacies_celtigar = {
 	effect = {
-		dynasty:dynn_Celtigar = {
+		dynasty:dynn_Celtigar ?= {
 			add_dynasty_prestige = 13002
 			agot_safe_add_dynasty_perk_history_effect = { PERK = celtigar_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = celtigar_legacy_2 }
@@ -856,7 +862,7 @@ agot_brightboar_set_legacies_celtigar = {
 
 agot_brightboar_set_legacies_bar_emmon = {
 	effect = {
-		dynasty:dynn_Bar_Emmon = {
+		dynasty:dynn_Bar_Emmon ?= {
 			add_dynasty_prestige = 13053
 			agot_safe_add_dynasty_perk_history_effect = { PERK = bar_emmon_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = bar_emmon_legacy_2 }
@@ -869,7 +875,7 @@ agot_brightboar_set_legacies_bar_emmon = {
 
 agot_brightboar_set_legacies_scales = {
 	effect = {
-		dynasty:dynn_Scales = {
+		dynasty:dynn_Scales ?= {
 			add_dynasty_prestige = 7589
 			agot_safe_add_dynasty_perk_history_effect = { PERK = scales_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = scales_legacy_2 }
@@ -882,7 +888,7 @@ agot_brightboar_set_legacies_scales = {
 
 agot_brightboar_set_legacies_massey = {
 	effect = {
-		dynasty:dynn_Massey = {
+		dynasty:dynn_Massey ?= {
 			add_dynasty_prestige = 12999
 			agot_safe_add_dynasty_perk_history_effect = { PERK = massey_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = massey_legacy_2 }
@@ -895,7 +901,7 @@ agot_brightboar_set_legacies_massey = {
 
 agot_brightboar_set_legacies_bywater = {
 	effect = {
-		dynasty:dynn_Bywater = {
+		dynasty:dynn_Bywater ?= {
 			add_dynasty_prestige = 7581
 			agot_safe_add_dynasty_perk_history_effect = { PERK = bywater_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = bywater_legacy_2 }
@@ -908,7 +914,7 @@ agot_brightboar_set_legacies_bywater = {
 
 agot_brightboar_set_legacies_follard = {
 	effect = {
-		dynasty:dynn_Follard = {
+		dynasty:dynn_Follard ?= {
 			add_dynasty_prestige = 7532
 			agot_safe_add_dynasty_perk_history_effect = { PERK = follard_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = follard_legacy_2 }
@@ -921,7 +927,7 @@ agot_brightboar_set_legacies_follard = {
 
 agot_brightboar_set_legacies_farring = {
 	effect = {
-		dynasty:dynn_Farring = {
+		dynasty:dynn_Farring ?= {
 			add_dynasty_prestige = 10243
 			agot_safe_add_dynasty_perk_history_effect = { PERK = farring_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = farring_legacy_2 }
@@ -934,7 +940,7 @@ agot_brightboar_set_legacies_farring = {
 
 agot_brightboar_set_legacies_pyle = {
 	effect = {
-		dynasty:dynn_Pyle = {
+		dynasty:dynn_Pyle ?= {
 			add_dynasty_prestige = 7577
 			agot_safe_add_dynasty_perk_history_effect = { PERK = pyle_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = pyle_legacy_2 }
@@ -947,7 +953,7 @@ agot_brightboar_set_legacies_pyle = {
 
 agot_brightboar_set_legacies_gaunt = {
 	effect = {
-		dynasty:dynn_Gaunt = {
+		dynasty:dynn_Gaunt ?= {
 			add_dynasty_prestige = 10301
 			agot_safe_add_dynasty_perk_history_effect = { PERK = gaunt_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = gaunt_legacy_2 }
@@ -960,7 +966,7 @@ agot_brightboar_set_legacies_gaunt = {
 
 agot_brightboar_set_legacies_staunton = {
 	effect = {
-		dynasty:dynn_Staunton = {
+		dynasty:dynn_Staunton ?= {
 			add_dynasty_prestige = 10222
 			agot_safe_add_dynasty_perk_history_effect = { PERK = staunton_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = staunton_legacy_2 }
@@ -973,7 +979,7 @@ agot_brightboar_set_legacies_staunton = {
 
 agot_brightboar_set_legacies_darklyn = {
 	effect = {
-		dynasty:dynn_Darklyn = {
+		dynasty:dynn_Darklyn ?= {
 			add_dynasty_prestige = 15683
 			agot_safe_add_dynasty_perk_history_effect = { PERK = darklyn_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = darklyn_legacy_2 }
@@ -986,7 +992,7 @@ agot_brightboar_set_legacies_darklyn = {
 
 agot_brightboar_set_legacies_rykker = {
 	effect = {
-		dynasty:dynn_Rykker = {
+		dynasty:dynn_Rykker ?= {
 			add_dynasty_prestige = 10213
 			agot_safe_add_dynasty_perk_history_effect = { PERK = rykker_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = rykker_legacy_2 }
@@ -999,7 +1005,7 @@ agot_brightboar_set_legacies_rykker = {
 
 agot_brightboar_set_legacies_stokeworth = {
 	effect = {
-		dynasty:dynn_Stokeworth = {
+		dynasty:dynn_Stokeworth ?= {
 			add_dynasty_prestige = 15677
 			agot_safe_add_dynasty_perk_history_effect = { PERK = stokeworth_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = stokeworth_legacy_2 }
@@ -1012,7 +1018,7 @@ agot_brightboar_set_legacies_stokeworth = {
 
 agot_brightboar_set_legacies_buckwell = {
 	effect = {
-		dynasty:dynn_Buckwell = {
+		dynasty:dynn_Buckwell ?= {
 			add_dynasty_prestige = 7496
 			agot_safe_add_dynasty_perk_history_effect = { PERK = buckwell_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = buckwell_legacy_2 }
@@ -1025,7 +1031,7 @@ agot_brightboar_set_legacies_buckwell = {
 
 agot_brightboar_set_legacies_rosby = {
 	effect = {
-		dynasty:dynn_Rosby = {
+		dynasty:dynn_Rosby ?= {
 			add_dynasty_prestige = 10261
 			agot_safe_add_dynasty_perk_history_effect = { PERK = rosby_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = rosby_legacy_2 }
@@ -1038,7 +1044,7 @@ agot_brightboar_set_legacies_rosby = {
 
 agot_brightboar_set_legacies_hayford = {
 	effect = {
-		dynasty:dynn_Hayford = {
+		dynasty:dynn_Hayford ?= {
 			add_dynasty_prestige = 10210
 			agot_safe_add_dynasty_perk_history_effect = { PERK = hayford_legacy_1 }
 			agot_safe_add_dynasty_perk_history_effect = { PERK = hayford_legacy_2 }
@@ -1051,7 +1057,7 @@ agot_brightboar_set_legacies_hayford = {
 
 agot_brightboar_set_legacies_byrch = {
     effect = {
-        dynasty:dynn_Byrch = {
+        dynasty:dynn_Byrch ?= {
             add_dynasty_prestige = 7581
             agot_safe_add_dynasty_perk_history_effect = { PERK = byrch_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = byrch_legacy_2 }
@@ -1064,7 +1070,7 @@ agot_brightboar_set_legacies_byrch = {
 
 agot_brightboar_set_legacies_harte = {
     effect = {
-        dynasty:dynn_Harte = {
+        dynasty:dynn_Harte ?= {
             add_dynasty_prestige = 7532
             agot_safe_add_dynasty_perk_history_effect = { PERK = harte_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = harte_legacy_2 }
@@ -1077,7 +1083,7 @@ agot_brightboar_set_legacies_harte = {
 
 agot_brightboar_set_legacies_cargyll = {
     effect = {
-        dynasty:dynn_Cargyll = {
+        dynasty:dynn_Cargyll ?= {
             add_dynasty_prestige = 10343
             agot_safe_add_dynasty_perk_history_effect = { PERK = cargyll_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = cargyll_legacy_2 }
@@ -1090,7 +1096,7 @@ agot_brightboar_set_legacies_cargyll = {
 
 agot_brightboar_set_legacies_hogg = {
     effect = {
-        dynasty:dynn_Hogg = {
+        dynasty:dynn_Hogg ?= {
             add_dynasty_prestige = 7566
             agot_safe_add_dynasty_perk_history_effect = { PERK = hogg_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = hogg_legacy_2 }
@@ -1103,7 +1109,7 @@ agot_brightboar_set_legacies_hogg = {
 
 agot_brightboar_set_legacies_brune = {
     effect = {
-        dynasty:dynn_Brune = {
+        dynasty:dynn_Brune ?= {
             add_dynasty_prestige = 7502
             agot_safe_add_dynasty_perk_history_effect = { PERK = brune_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = brune_legacy_2 }
@@ -1116,7 +1122,7 @@ agot_brightboar_set_legacies_brune = {
 
 agot_brightboar_set_legacies_crabb = {
     effect = {
-        dynasty:dynn_Crabb = {
+        dynasty:dynn_Crabb ?= {
             add_dynasty_prestige = 7566
             agot_safe_add_dynasty_perk_history_effect = { PERK = crabb_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = crabb_legacy_2 }
@@ -1129,7 +1135,7 @@ agot_brightboar_set_legacies_crabb = {
 
 agot_brightboar_set_legacies_cafferen = {
     effect = {
-        dynasty:dynn_Cafferen = {
+        dynasty:dynn_Cafferen ?= {
             add_dynasty_prestige = 10330
             agot_safe_add_dynasty_perk_history_effect = { PERK = cafferen_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = cafferen_legacy_2 }
@@ -1142,7 +1148,7 @@ agot_brightboar_set_legacies_cafferen = {
 
 agot_brightboar_set_legacies_peasebury = {
     effect = {
-        dynasty:dynn_Peasebury = {
+        dynasty:dynn_Peasebury ?= {
             add_dynasty_prestige = 12963
             agot_safe_add_dynasty_perk_history_effect = { PERK = peasebury_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = peasebury_legacy_2 }
@@ -1155,7 +1161,7 @@ agot_brightboar_set_legacies_peasebury = {
 
 agot_brightboar_set_legacies_fell = {
     effect = {
-        dynasty:dynn_Fell = {
+        dynasty:dynn_Fell ?= {
             add_dynasty_prestige = 13059
             agot_safe_add_dynasty_perk_history_effect = { PERK = fell_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = fell_legacy_2 }
@@ -1168,7 +1174,7 @@ agot_brightboar_set_legacies_fell = {
 
 agot_brightboar_set_legacies_penrose = {
     effect = {
-        dynasty:dynn_Penrose = {
+        dynasty:dynn_Penrose ?= {
             add_dynasty_prestige = 12969
             agot_safe_add_dynasty_perk_history_effect = { PERK = penrose_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = penrose_legacy_2 }
@@ -1181,7 +1187,7 @@ agot_brightboar_set_legacies_penrose = {
 
 agot_brightboar_set_legacies_morrigen = {
     effect = {
-        dynasty:dynn_Morrigen = {
+        dynasty:dynn_Morrigen ?= {
             add_dynasty_prestige = 9488
             agot_safe_add_dynasty_perk_history_effect = { PERK = morrigen_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = morrigen_legacy_2 }
@@ -1194,7 +1200,7 @@ agot_brightboar_set_legacies_morrigen = {
 
 agot_brightboar_set_legacies_staedmon = {
     effect = {
-        dynasty:dynn_Staedmon = {
+        dynasty:dynn_Staedmon ?= {
             add_dynasty_prestige = 10306
             agot_safe_add_dynasty_perk_history_effect = { PERK = staedmon_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = staedmon_legacy_2 }
@@ -1207,7 +1213,7 @@ agot_brightboar_set_legacies_staedmon = {
 
 agot_brightboar_set_legacies_errol = {
     effect = {
-        dynasty:dynn_Errol = {
+        dynasty:dynn_Errol ?= {
             add_dynasty_prestige = 10279
             agot_safe_add_dynasty_perk_history_effect = { PERK = errol_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = errol_legacy_2 }
@@ -1220,7 +1226,7 @@ agot_brightboar_set_legacies_errol = {
 
 agot_brightboar_set_legacies_wylde = {
     effect = {
-        dynasty:dynn_Wylde = {
+        dynasty:dynn_Wylde ?= {
             add_dynasty_prestige = 10237
             agot_safe_add_dynasty_perk_history_effect = { PERK = wylde_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = wylde_legacy_2 }
@@ -1233,7 +1239,7 @@ agot_brightboar_set_legacies_wylde = {
 
 agot_brightboar_set_legacies_rogers = {
     effect = {
-        dynasty:dynn_Rogers = {
+        dynasty:dynn_Rogers ?= {
             add_dynasty_prestige = 10352
             agot_safe_add_dynasty_perk_history_effect = { PERK = rogers_legacy_1 }
             agot_safe_add_dynasty_perk_history_effect = { PERK = rogers_legacy_2 }

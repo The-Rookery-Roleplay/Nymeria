@@ -69,100 +69,100 @@ set_provinces_start_citadel = {
         # title:b_fairgate_tower.title_province = {
         #     add_special_building = citadel_fairmarket3
         # }
-        title:b_lanniskeep.title_province = {
+        title:b_lanniskeep.title_province ?= {
             remove_building = lannisport_01
             add_special_building = city_of_lannisport_01
         }
-        title:b_debtors_docks.title_province = {
+        title:b_debtors_docks.title_province ?= {
             add_special_building = lannisport_01
         }
-        title:b_whitecaster.title_province = {
+        title:b_whitecaster.title_province ?= {
             add_special_building = citadel_fisher
         }
-        title:b_spearwatch_island.title_province = {
+        title:b_spearwatch_island.title_province ?= {
             add_special_building = citadel_spearwatch_island
         }
-        title:b_bottleneck.title_province = {
+        title:b_bottleneck.title_province ?= {
             add_special_building = citadel_princesspath
         }
-        title:b_dunestale.title_province = {
+        title:b_dunestale.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_truestable.title_province = {
+        title:b_truestable.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_scarcrest.title_province = {
+        title:b_scarcrest.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_dustwalk.title_province = {
+        title:b_dustwalk.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_first_well.title_province = {
+        title:b_first_well.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_goodsprings.title_province = {
+        title:b_goodsprings.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_three_strings.title_province = {
+        title:b_three_strings.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_castle_burndune.title_province = {
+        title:b_castle_burndune.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_willburn.title_province = {
+        title:b_willburn.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
         # Re-enabled, the AGOT default was not spawning here so restoring the Citadel special building - Kizan
 #        title:b_hellholt.title_province = {
 #            add_special_building = citadel_dornishdunes
 #        }
-        title:b_torrid_drifts.title_province = {
+        title:b_torrid_drifts.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_first_sand.title_province = {
+        title:b_first_sand.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_arnight_hall.title_province = {
+        title:b_arnight_hall.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_sulphur_hall.title_province = {
+        title:b_sulphur_hall.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_brimstone_hall.title_province = {
+        title:b_brimstone_hall.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_steamfall.title_province = {
+        title:b_steamfall.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_dantellion.title_province = {
+        title:b_dantellion.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_dustbowl_keep.title_province = {
+        title:b_dustbowl_keep.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
-        title:b_desert_hearth.title_province = {
+        title:b_desert_hearth.title_province ?= {
             add_special_building = citadel_dornishdunes
         }
         # Re-enabled, the AGOT default was not spawning here so restoring the Citadel special building - Kizan
 #        title:b_blackcrown.title_province = {
 #            add_special_building = citadel_singingcliffs
 #        }
-        title:b_bandallon.title_province = {
+        title:b_bandallon.title_province ?= {
             add_special_building = citadel_bandallon
         }
-        title:b_bloatstone.title_province = {
+        title:b_bloatstone.title_province ?= {
             add_special_building = citadel_saltcliffe
         }
-        title:b_blacktyde_castle.title_province = {
+        title:b_blacktyde_castle.title_province ?= {
             add_special_building = citadel_blacktyde
         }
-        title:b_needlewater.title_province = {
+        title:b_needlewater.title_province ?= {
             add_special_building = citadel_crackclaw_mountains
         }
-        title:b_dyre_den.title_province = {
+        title:b_dyre_den.title_province ?= {
             add_special_building = citadel_crackclaw_mountains
         }
-        title:b_plankside.title_province = {
+        title:b_plankside.title_province ?= {
             add_special_building = citadel_crackclaw_mountains
         }
         # Re-enabled, the AGOT default was not spawning here so restoring the Citadel special building - Kizan
@@ -170,61 +170,61 @@ set_provinces_start_citadel = {
 #            remove_building = whispers_01
 #            add_special_building = citadel_whispers_ruin
 #        }
-        title:b_castle_stokeworth.title_province = {
+        title:b_castle_stokeworth.title_province ?= {
             add_special_building = citadel_castle_stokeworth
         }
-        title:b_antlers.title_province = {
+        title:b_antlers.title_province ?= {
             add_special_building = citadel_antlers
         }
-        title:b_maston.title_province = {
+        title:b_maston.title_province ?= {
             add_special_building = citadel_maston
         }
         # Re-enabled, the AGOT default was not spawning here so restoring the Citadel special building - Kizan
 #        title:b_blackpool.title_province = {
 #            add_special_building = citadel_blackpool
 #        }
-        title:b_castle_cerwyn.title_province = {
+        title:b_castle_cerwyn.title_province ?= {
             add_special_building = citadel_castle_cerwyn
         }
-        title:b_haystack_hall.title_province = {
+        title:b_haystack_hall.title_province ?= {
             add_special_building = citadel_haystack_hall
         }
-        title:b_cleganes_keep.title_province = {
+        title:b_cleganes_keep.title_province ?= {
             remove_building = fang_hill_kennel_01
         }
-        title:b_deepen_hall.title_province = {
+        title:b_deepen_hall.title_province ?= {
             add_special_building = citadel_dulver_mine1
         }
-        title:b_viridian_stay.title_province = {
+        title:b_viridian_stay.title_province ?= {
             add_special_building = citadel_saan_estate
         }
-        title:b_three_towers.title_province = {
+        title:b_three_towers.title_province ?= {
             add_special_building = citadel_three_towers
         } 
-        title:b_skullhammer.title_province = {
+        title:b_skullhammer.title_province ?= {
             add_special_building = citadel_skullhammer
             add_building = agot_pirate_control_06
         }
-        title:b_morrefall.title_province = {
+        title:b_morrefall.title_province ?= {
             add_special_building = citadel_morrefall
         } 
-        title:b_winehouse.title_province = {  
+        title:b_winehouse.title_province ?= {  
             add_special_building = citadel_vinetown
         }
         # Re-enabled, the AGOT default was not spawning here so restoring the Citadel special building - Kizan
-        title:b_the_ring.title_province = {  
+        title:b_the_ring.title_province ?= {  
             add_special_building = citadel_the_ring 
         }
-        title:b_wyl.title_province = {
+        title:b_wyl.title_province ?= {
             add_special_building = agot_wyl_tunnels_of_wyl_01 # added, c_wyl was missing its special building spawn, b_wyl is the capital barony - Kizan
         }
-        title:b_longcove.title_province = {  
+        title:b_longcove.title_province ?= {  
             add_special_building = citadel_longcove_center
         }
-        title:b_footway.title_province = {  
+        title:b_footway.title_province ?= {  
             add_special_building = citadel_footway
         }
-        title:b_newkeep.title_province = {  
+        title:b_newkeep.title_province ?= {  
             add_special_building = citadel_newkeep
             add_building = hill_forts_06
             add_building = military_camps_04
@@ -232,74 +232,74 @@ set_provinces_start_citadel = {
             add_building = watermills_05
             add_building = smiths_04
         }
-        title:b_hearts_home.title_province = {  
+        title:b_hearts_home.title_province ?= {  
             add_special_building = citadel_hearts_home
         }  
-        title:b_snakewood.title_province = {  
+        title:b_snakewood.title_province ?= {  
             add_special_building = citadel_snakewood
         } 
-        title:b_silverhall.title_province = {  
+        title:b_silverhall.title_province ?= {  
             add_special_building = citadel_silverhall
             add_building = tax_assessor_03
         } 
-        title:b_wesselvare.title_province = {  
+        title:b_wesselvare.title_province ?= {  
             add_special_building = citadel_wesselvare
         } 
-        title:b_argent_mine.title_province = {
+        title:b_argent_mine.title_province ?= {
             remove_building = silverhill_mines_01
         }
-        title:b_new_barrel.title_province = {
+        title:b_new_barrel.title_province ?= {
             add_special_building = citadel_new_barrel
         }
-        title:b_lakehaven.title_province = {
+        title:b_lakehaven.title_province ?= {
             add_special_building = citadel_lakehaven
         }
-        title:b_uplands.title_province = {
+        title:b_uplands.title_province ?= {
             add_special_building = citadel_uplands
         }
         # title:b_spalding.title_province = {
         #     add_special_building = silverhill_mines_01
         # }
-        title:b_sweetport.title_province = {
+        title:b_sweetport.title_province ?= {
             add_special_building = citadel_sweetport
         } 
-        title:b_starfish_harbor.title_province = {
+        title:b_starfish_harbor.title_province ?= {
             add_special_building = citadel_starfish_vineyards
         }  
-        title:b_peach_port.title_province = {
+        title:b_peach_port.title_province ?= {
             add_special_building = citadel_peachtree_vineyards
         } 
-        title:b_stonecrab_cay.title_province = {
+        title:b_stonecrab_cay.title_province ?= {
             add_special_building = citadel_stoneclaw_vineyards
         } 
-        title:b_balmer_mill.title_province = {
+        title:b_balmer_mill.title_province ?= {
             add_special_building = citadel_northmarch
         } 
-        title:b_golden_vines.title_province = {
+        title:b_golden_vines.title_province ?= {
             add_special_building = citadel_golden_vines
         }  
-        title:b_woodbine.title_province = {
+        title:b_woodbine.title_province ?= {
             add_special_building = citadel_woodbine
         }  
-        title:b_stillhouse.title_province = {
+        title:b_stillhouse.title_province ?= {
             add_special_building = citadel_stillhouse_vineyards
         }
-        title:b_gallow_cove.title_province = {
+        title:b_gallow_cove.title_province ?= {
             add_special_building = citadel_gallow_cove
         }
-        title:b_maidenpool.title_province = {
+        title:b_maidenpool.title_province ?= {
             add_special_building = citadel_maidenpool
         }  
-        title:b_willow_wood.title_province = {
+        title:b_willow_wood.title_province ?= {
             add_special_building = citadel_willow_wood_1
         }
-        title:b_castle_darry.title_province = {
+        title:b_castle_darry.title_province ?= {
             add_special_building = citadel_castle_darry 
         }
-        title:b_coughing_keep.title_province = {
+        title:b_coughing_keep.title_province ?= {
             add_special_building = citadel_northern_steppes_01
         }
-        title:b_flints_finger.title_province = {
+        title:b_flints_finger.title_province ?= {
             add_special_building = citadel_flints_finger
         }  
         # Re-enabled, the AGOT default was not spawning here so restoring the Citadel special building - Kizan
@@ -314,135 +314,135 @@ set_provinces_start_citadel = {
 #        title:b_oldcastle.title_province = {
 #            add_special_building = agot_locke_oldcastle_01
 #        }   
-        title:b_whitewalls.title_province = {
+        title:b_whitewalls.title_province ?= {
             add_special_building = agot_butterwell_whitewalls_castle_01
         }
         # Re-enabled, the AGOT default was not spawning here so restoring the Citadel special building - Kizan
 #        title:b_ramsgate.title_province = {
 #            add_special_building = citadel_ramsgate
 #        }  
-        title:b_wyverns_rest.title_province = {
+        title:b_wyverns_rest.title_province ?= {
             add_special_building = citadel_wyverns_rest
         } 
-        title:b_sarsfield.title_province = { 
+        title:b_sarsfield.title_province ?= { 
             add_special_building = citadel_sarsfield_1
         }  
-        title:b_barrowton.title_province = { 
+        title:b_barrowton.title_province ?= { 
             add_special_building = citadel_barrowton
         }
-        title:b_old_anchor.title_province = { 
+        title:b_old_anchor.title_province ?= { 
             add_special_building = citadel_old_anchor
             add_building = agot_lighthouse_03
         }  
-        title:b_longbow_hall.title_province = { 
+        title:b_longbow_hall.title_province ?= { 
             add_special_building = citadel_longbow_hall
             add_building = archery_ranges_03
         } 
-        title:b_proudwood.title_province = { 
+        title:b_proudwood.title_province ?= { 
             add_special_building = citadel_ironoaks_quarry1
         }  
-        title:b_ninestars.title_province = { 
+        title:b_ninestars.title_province ?= { 
             add_special_building = citadel_ninestars
         }  
-        title:b_greenstone.title_province = { 
+        title:b_greenstone.title_province ?= { 
             add_special_building = citadel_greenstone
         }  
-        title:b_harrentown.title_province = { 
+        title:b_harrentown.title_province ?= { 
             add_special_building = citadel_harrentown 
         }  
-        title:b_pebbleton_tower.title_province = { 
+        title:b_pebbleton_tower.title_province ?= { 
             add_special_building = citadel_pebbleton_tower
         }   
-        title:b_pronged_port.title_province = { 
+        title:b_pronged_port.title_province ?= { 
             add_special_building = citadel_pronged_port
         } 
-        title:b_harvest_hall.title_province = { 
+        title:b_harvest_hall.title_province ?= { 
             add_special_building = agot_selmy_harvest_hall_01
         } 
-        title:b_lord_hewetts_town.title_province = { 
+        title:b_lord_hewetts_town.title_province ?= { 
             add_special_building = agot_hewett_lord_hewetts_town_01
         }  
-        title:b_crows_nest.title_province = { 
+        title:b_crows_nest.title_province ?= { 
             add_special_building = agot_morrigen_crows_nest_01
         } 
-        title:b_grandview.title_province = { 
+        title:b_grandview.title_province ?= { 
             add_special_building = agot_grandison_grandview_01
         } 
-        title:b_bearstone.title_province = { 
+        title:b_bearstone.title_province ?= { 
             add_special_building = agot_mormont_russet_den_01
         }   
-        title:b_lords_mill.title_province = { 
+        title:b_lords_mill.title_province ?= { 
             add_special_building = citadel_lords_mill
         }   
-        title:b_drainburne.title_province = { 
+        title:b_drainburne.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_bushmills.title_province = { 
+        title:b_bushmills.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_plum_fork.title_province = { 
+        title:b_plum_fork.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_santon.title_province = { 
+        title:b_santon.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_olive_grove.title_province = { 
+        title:b_olive_grove.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_murkside.title_province = { 
+        title:b_murkside.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_millers_town.title_province = { 
+        title:b_millers_town.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_greenwash.title_province = { 
+        title:b_greenwash.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_bloods_way.title_province = { 
+        title:b_bloods_way.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_woodrind.title_province = { 
+        title:b_woodrind.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_rhoynes_tear.title_province = { 
+        title:b_rhoynes_tear.title_province ?= { 
             add_special_building = citadel_greenblood
         } 
-        title:b_scourgeside.title_province = { 
+        title:b_scourgeside.title_province ?= { 
             add_special_building = citadel_greenblood
         }   
-        title:b_stormfleet.title_province = { 
+        title:b_stormfleet.title_province ?= { 
             add_special_building = citadel_sapphire_port_01 
         } 
         # ADD NORMAL BUILDINGS
-        title:b_silverhall.title_province = {  
+        title:b_silverhall.title_province ?= {  
             add_special_building = citadel_silverhall
             add_building = tax_assessor_01
         } 
-        title:b_strongsong.title_province = {  
+        title:b_strongsong.title_province ?= {  
             add_building = tax_assessor_02
         } 
-        title:b_west_jaw.title_province = {  
+        title:b_west_jaw.title_province ?= {  
             add_building = quarriers_08
         } 
-        title:b_deep_den.title_province = {  
+        title:b_deep_den.title_province ?= {  
             add_building = tax_assessor_03
             add_building = windmills_03
         } 
-        title:b_ashemark.title_province = {  
+        title:b_ashemark.title_province ?= {  
             add_building = military_academy_02
         } 
-        title:b_hardline.title_province = {
+        title:b_hardline.title_province ?= {
             add_building = quarries_08
         }
-        title:b_hornvale.title_province = {
+        title:b_hornvale.title_province ?= {
             add_special_building = citadel_hornvale_mines
             add_building = tax_assessor_03
             add_building = windmills_02
         }
-        title:b_pools_guard.title_province = {
+        title:b_pools_guard.title_province ?= {
             add_building = tax_assessor_03
         }
-        title:b_west_tower.title_province = {
+        title:b_west_tower.title_province ?= {
             add_special_building = citadel_westtwin
             add_building = curtain_walls_04
             add_building = military_camps_02
@@ -450,14 +450,14 @@ set_provinces_start_citadel = {
             add_building = stables_02
             add_building = smiths_03
         }
-        title:b_stonebushel.title_province = {
+        title:b_stonebushel.title_province ?= {
             add_building = outposts_06
             add_building = military_camps_04
             add_building = barracks_06
             add_building = workshops_07
             add_building = quarries_07
         } 
-        title:b_cleganes_keep.title_province = {
+        title:b_cleganes_keep.title_province ?= {
             add_building = curtain_walls_06
             add_building = military_camps_04
             add_building = barracks_06
@@ -468,13 +468,13 @@ set_provinces_start_citadel = {
 #        title:b_stone_hedge.title_province = {
 #            add_special_building = agot_stone_hedge_01
 #        }
-        title:b_pick_hall.title_province = {
+        title:b_pick_hall.title_province ?= {
             add_building = curtain_walls_06
             add_building = barracks_06
             add_building = stables_04
             add_building = windmills_06
         } 
-        title:b_hayholt.title_province = {
+        title:b_hayholt.title_province ?= {
             add_special_building = citadel_hayholt
             add_building = tax_assessor_03
         } 
@@ -482,14 +482,14 @@ set_provinces_start_citadel = {
 #        title:b_balmer_mill.title_province = {
 #            add_special_building = watermills_08
 #        } 
-        title:b_spalding.title_province = {  
+        title:b_spalding.title_province ?= {  
             add_building = outposts_06
             add_building = military_camps_04
             add_building = barracks_06
             add_building = workshops_07
             add_building = quarries_07
         }
-        title:b_karmfort.title_province = {  
+        title:b_karmfort.title_province ?= {  
             add_building = outposts_06
             add_building = military_camps_04
             add_building = barracks_06
@@ -499,7 +499,7 @@ set_provinces_start_citadel = {
 
         # 3D MODELS
         
-        title:b_footly_hall.title_province = {
+        title:b_footly_hall.title_province ?= {
             add_special_building_slot = im_footly_hall
             add_special_building = im_footly_hall
         }
@@ -585,7 +585,7 @@ citadel_renown_set_hegemony = { # Renown for 5 perks, hegemon and targs
 
 citadel_renown_set_other = {
     effect = {
-        dynasty:dynn_Targaryen = {
+        dynasty:dynn_Targaryen ?= {
 			add_dynasty_prestige = 6250
         }
     }
