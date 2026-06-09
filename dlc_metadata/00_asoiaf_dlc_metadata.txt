@@ -1,5 +1,0 @@
-﻿dlc_asoiaf = {
-	key = "AGOT+"
-	type = medium
-	priority = 1000
-}

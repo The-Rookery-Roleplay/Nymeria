@@ -1,6 +1,0 @@
-﻿l_english:
- death_self_defence:0 "was killed in self-defence"
- death_self_defence_killer:0 "was killed in self-defence by [TARGET_CHARACTER.GetUIName]"
-
- death_fake_murder:0 "was "murdered""
- death_fake_murder_killer:0 "was "murdered" by [TARGET_CHARACTER.GetUIName]"
