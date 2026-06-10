@@ -1,0 +1,4 @@
+dynn_citadel_qo = {
+	name = "dynn_citadel_qo"
+	culture = "feicui_ren"
+}

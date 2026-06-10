@@ -80817,10 +80817,33 @@ Blackberry_200 = {
 	7255.1.1 = {
 		birth = yes
 	}
+	7295.1.1 = {
+		add_spouse = Qo_200
+	}
 	7294.1.1 = {
 		trait = knight
 	}
 	7325.1.1 = { death = yes }
+}
+
+Qo_200 = {
+	name = Lihua
+	female = yes
+	dynasty = dynn_citadel_qo
+	dna = citadel_lihua_qo
+
+	religion = yt_court_celestial
+	culture = feicui_ren
+
+	intrigue = 7
+
+	trait = beauty_good_3
+	trait = education_intrigue_3
+
+	7277.1.1 = {
+		birth = yes
+	}
+	7340.1.1 = { death = yes }
 }
 
 Blackberry_201 = {

@@ -1,2 +1,5 @@
 ﻿nick_citadel_the_merciless = {
 }
+
+nick_citadel_the_wraith = {
+}

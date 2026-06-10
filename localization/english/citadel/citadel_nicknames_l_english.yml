@@ -3,3 +3,6 @@
  nick_citadel_the_merciless_desc:0 "House Manderly remembers every debt of blood, but [CHARACTER.GetShortUINameNoTooltipNoFormat|U] repays them tenfold. Rivals who begged for quarter found none, a ruthlessness striking even among the mermen of Dunstonbury."
  rival_gardener_twin_sisters:0 "[CHARACTER.GetShortUIName|U] and [TARGET_CHARACTER.GetShortUIName] have competed for everything since they shared a cradle, and their marriages into feuding houses turned sisterly spite into open enmity."
  rival_gardener_twin_sisters_corresponding:0 "[CHARACTER.GetShortUIName|U] and [TARGET_CHARACTER.GetShortUIName] have competed for everything since they shared a cradle, and their marriages into feuding houses turned sisterly spite into open enmity."
+ dynn_citadel_qo:0 "Qo"
+ nick_citadel_the_wraith:0 "the Wraith"
+ nick_citadel_the_wraith_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U]'s enemies know [CHARACTER.GetHerHim] to be a force unseen, but ever present. It seems the Ghost Hills' namesake was not entirely unearned."
