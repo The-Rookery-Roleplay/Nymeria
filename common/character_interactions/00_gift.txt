@@ -39,7 +39,7 @@ gift_interaction = {
 	}
 
 	is_shown = {
-		debug_only = yes # Kizan
+		always = no # Kizan
 		scope:recipient != scope:actor
 
 		# Prioritize paying back loans first

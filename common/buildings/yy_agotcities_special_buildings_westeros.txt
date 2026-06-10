@@ -3236,7 +3236,6 @@ agot_walls_of_seagard_01 = {
 		hostile_raid_time = 0.25
 		fort_level = 4
 		travel_danger = -25
-		tax_mult = low_building_tax_mult_tier_3
 	}
 
 	character_modifier = {

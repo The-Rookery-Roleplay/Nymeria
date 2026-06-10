@@ -3,3 +3,6 @@
 
 nick_citadel_the_wraith = {
 }
+
+nick_citadel_the_voyager = {
+}

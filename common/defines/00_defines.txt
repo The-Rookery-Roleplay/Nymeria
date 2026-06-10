@@ -358,11 +358,11 @@ NOldAge = {
 
 	#AGOT Modified, many older characters are renowned warriors
 	#LOWER_PROWESS_START_AGE = 45 # At this age characters start getting the chance to lose prowess each year
-	LOWER_PROWESS_START_AGE = 60 # At this age characters start getting the chance to lose prowess each year
-	LOWER_PROWESS_BASE_CHANCE = 0.1 # This is the base chance of losing prowess at the START_AGE
-	LOWER_PROWESS_YEARLY_INCREASE = 0.015 # This is the yearly increase of the chance to lose prowess
-	LOWER_PROWESS_MAX_CHANCE = 0.75 # This is the maximum chance to lose prowess
-	LOWER_PROWESS_FACTOR = 0.1 # This is the prowess change mutliplier on each failed yearly roll
+	LOWER_PROWESS_START_AGE = 40 # At this age characters start getting the chance to lose prowess each year
+	LOWER_PROWESS_BASE_CHANCE = 0.25 # This is the base chance of losing prowess at the START_AGE
+	LOWER_PROWESS_YEARLY_INCREASE = 0.03 # This is the yearly increase of the chance to lose prowess
+	LOWER_PROWESS_MAX_CHANCE = 0.9 # This is the maximum chance to lose prowess
+	LOWER_PROWESS_FACTOR = 0.2 # This is the prowess change mutliplier on each failed yearly roll
 
 }
 

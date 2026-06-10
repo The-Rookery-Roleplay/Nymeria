@@ -859,57 +859,6 @@ the_eyrie_01 = {
 
 	flag = travel_point_of_interest_diplomatic
 }
-casterly_rock_01 = {
-
-	construction_time = very_slow_construction_time
-	next_building = casterly_rock_02
-	type_icon = "icon_casterly_rock.dds"
-
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
-
-	asset = {
-		type = pdxmesh
-		name = "casterlyrock_mesh"
-	}
-
-	is_enabled = {
-		agot_generic_is_special_building_enabled = yes
-	}
-
-	cost_gold = expensive_building_tier_8_cost
-
-	character_modifier = {
-		court_grandeur_baseline_add = 5
-		legitimacy_gain_mult = 0.1
-		owned_legend_spread_mult = 0.1
-		dynasty_opinion = 10
-		stewardship = 2
-	}
-
-	max_garrison = normal_building_max_garrison_tier_10
-
-	province_modifier = {
-		defender_holding_advantage = 20
-		fort_level = 20
-		monthly_income = 10
-	}
-
-	county_modifier = {
-		development_growth_factor = 0.2
-	}
-
-	ai_value = {
-		base = 100
-		culture_likely_to_fortify_modifier = yes
-	}
-
-	type = special
-
-	flag = travel_point_of_interest_economic
-	flag = special_building_enabled_in_ruin_county
-}
 highgarden_01 = {
 
 	construction_time = very_slow_construction_time
@@ -1552,7 +1501,7 @@ the_hightower_01 = {
 
 	province_modifier = {
 		fort_level = 6
-		monthly_income = 10
+		monthly_income = 4
 	}
 
 	max_garrison = normal_building_max_garrison_tier_3
@@ -4289,6 +4238,11 @@ agot_starfall_01 = {
 	levy = 800
 	cost_gold = expensive_building_tier_5_cost
 
+	asset = {
+		type = pdxmesh
+		name = "building_palestone_sword_01_mesh"
+	}
+
 	county_modifier = {
 		hostile_raid_time = 0.5
 		levy_size = 0.2
@@ -4914,6 +4868,11 @@ agot_raventree_hall_01 = {
 
 	cost_gold = expensive_building_tier_5_cost
 
+	asset = {
+		type = pdxmesh
+		name = "building_special_raventree_mesh"
+	}
+
 	character_modifier = {
 		the_pact_religion_opinion = 10
 	}
@@ -5116,6 +5075,11 @@ agot_seagard_01 = {
 
 	cost_gold = expensive_building_tier_6_cost
 
+	asset = {
+		type = pdxmesh
+		name = "building_seagard_01_mesh"
+	}
+
 	county_modifier = {
 		defender_holding_advantage = 5
 		hostile_raid_time = 0.5
@@ -5296,6 +5260,11 @@ agot_oldstones_02 = {
 	}
 
 	cost_gold = expensive_building_tier_7_cost
+
+	asset = {
+		type = pdxmesh
+		name = "oldstones_restored_mesh"
+	}
 
 	county_modifier = {
 		defender_holding_advantage = 4
@@ -6221,6 +6190,11 @@ agot_griffins_roost_01 = {
 
 	cost_gold = expensive_building_tier_4_cost
 
+	asset = {
+		type = pdxmesh
+		name = "building_special_griffins_roost_mesh"
+	}
+
 	county_modifier = {
 		defender_holding_advantage = 8
 		hostile_raid_time = 0.5
@@ -6268,6 +6242,11 @@ agot_blackhaven_01 = {
 	}
 
 	cost_gold = expensive_building_tier_4_cost
+
+	asset = {
+		type = pdxmesh
+		name = "cow_blackhaven_mesh"
+	}
 
 	ai_value = {
 		base = 100
@@ -6506,6 +6485,11 @@ agot_evenfall_hall_01 = {
 	}
 
 	cost_gold = expensive_building_tier_5_cost
+
+	asset = {
+		type = entity
+		name = "building_special_evenfall_entity"
+	}
 
 	ai_value = {
 		base = 100
@@ -7450,6 +7434,11 @@ agot_karhold_01 = {
 	levy = 900
 	cost_gold = expensive_building_tier_5_cost
 
+	asset = {
+		type = pdxmesh
+		name = "karhold_mesh"
+	}
+
 	province_modifier = {
 		fort_level = 4
 		monthly_income = 2
@@ -7890,6 +7879,11 @@ agot_rodriks_gift_01 = {
 
 	cost_gold = expensive_building_tier_5_cost
 
+asset = {
+        type = pdxmesh
+        name = "bear_island_mesh"
+    }
+
 	ai_value = {
 		base = 100
 		modifier = { # Fill all building slots before going for special buildings
@@ -8174,7 +8168,7 @@ agot_goldengrove_01 = {
 		heavy_cavalry_toughness_mult = 0.1
 	}
 	province_modifier = {
-		monthly_income = 5
+		monthly_income = 1.5
 	}
 
 	ai_value = {
@@ -8408,6 +8402,11 @@ agot_starpike_01 = {
 	}
 
 	cost_gold = expensive_building_tier_6_cost
+
+	asset = {
+		type = pdxmesh
+		name = "starpike_mesh"
+	}
 
 	ai_value = {
 		base = 100
@@ -9044,6 +9043,11 @@ agot_runestone_01 = {
 
 	cost_gold = expensive_building_tier_6_cost
 
+	asset = {
+		type = pdxmesh
+		name = "runestone_mesh"
+	}
+
 	ai_value = {
 		base = 100
 		culture_likely_to_fortify_modifier = yes
@@ -9227,7 +9231,6 @@ agot_waxley_candlery_01 = {
 	cost_gold = expensive_building_tier_6_cost
 
 	county_holder_character_modifier = {
-		monthly_income_mult = 0.05
 	}
 
 	character_modifier = {
@@ -9647,7 +9650,7 @@ agot_lordsport_01 = {
 
 	asset = {
 		type = pdxmesh
-		name = "port_3_mesh"
+		name = "lordsport_mesh"
 	}
 
 	is_enabled = {
@@ -10080,6 +10083,11 @@ agot_duskendale_01 = {
 
 	cost_gold = expensive_building_tier_7_cost
 
+	asset = {
+		type = pdxmesh
+		name = "building_special_duskendale_mesh"
+	}
+
 	province_modifier = {
 		fort_level = 4
 	}
@@ -10128,6 +10136,11 @@ agot_hightide_01 = {
 	}
 
 	cost_gold = expensive_building_tier_7_cost
+
+	asset = {
+		type = pdxmesh
+		name = "hightide_1_mesh"
+	}
 
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_8
@@ -10211,6 +10224,11 @@ agot_ruins_hightide_02 = {
 	}
 
 	cost_gold = expensive_building_tier_7_cost
+
+	asset = {
+		type = pdxmesh
+		name = "hightide_1_mesh"
+	}
 
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_8
@@ -11167,4 +11185,186 @@ apiaries_08 = {
 		ai_general_building_modifier = yes
 		ai_economical_building_preference_modifier = yes
 	}
+}
+
+citadel_blackmark_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_house_merling.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+
+	asset = {
+		type = pdxmesh
+		name = "port_1_mesh"
+	}
+
+	cost_gold = expensive_building_tier_7_cost
+
+	character_modifier = {
+		fg_pan_merling_opinion = 10
+		embarkation_cost_mult = -0.1
+		no_disembark_penalty = yes
+	}
+
+	province_modifier = {
+		monthly_income = good_building_tax_tier_8
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+
+citadel_small_fishing_wharf_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_tradeport.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+
+	# asset = { Makes the buildings appear buggy ! - kizan
+	# 	type = pdxmesh
+	# 	name = "port_1_mesh"
+	# }
+
+	cost_gold = expensive_building_tier_2_cost
+
+	province_modifier = {
+		monthly_income = 2
+		hostile_raid_time = -0.5
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+
+citadel_pennytree_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_raventree_hall.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+
+	cost_gold = expensive_building_tier_2_cost
+
+	character_modifier = {
+		monthly_piety = 0.1
+	}
+
+	county_modifier = {
+		county_opinion_add = 10
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_religious
+}
+
+citadel_port_of_duskendale_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_tradeport.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+
+	cost_gold = expensive_building_tier_6_cost
+
+	character_modifier = {
+		embarkation_cost_mult = -0.15
+		no_disembark_penalty = yes
+	}
+
+	province_modifier = {
+		monthly_income = 3
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+
+citadel_seven_swords_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_royal_armory.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+	}
+
+	cost_gold = expensive_building_tier_4_cost
+
+	levy = 400
+
+	character_modifier = {
+		monthly_prestige = 0.15
+	}
+
+	province_modifier = {
+		monthly_income = 2.5
+	}
+
+	county_modifier = {
+		county_opinion_add = 5
+		development_growth_factor = 0.05
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_economic
 }

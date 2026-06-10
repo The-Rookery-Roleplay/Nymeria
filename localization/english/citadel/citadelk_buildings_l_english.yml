@@ -446,3 +446,29 @@
  
 
 
+
+ building_type_citadel_blackmark_01:0 "Blackmark Keep"
+ building_citadel_blackmark_01:0 "Blackmark Keep"
+ building_citadel_blackmark_01_desc:0 "A humble castle overseeing the port of Blackmark. Its walls are modest and its halls unadorned, but every ship that passes through the harbor below pays its due to the lord above."
+
+ building_type_citadel_small_fishing_wharf_01:0 "Small Fishing Wharf"
+ building_citadel_small_fishing_wharf_01:0 "Small Fishing Wharf"
+ building_citadel_small_fishing_wharf_01_desc:0 "Weathered jetties and drying racks crowd the waterline, and the smell of the day's catch hangs over everything. The wharf brings steady coin to the lord's coffers, but its open piers offer raiders a swift and easy landing."
+
+ building_type_highgarden_02:0 "Highgarden"
+
+ building_casterly_rock_05:0 "The Gilded Depths"
+ building_casterly_rock_05_desc:0 "The hunger of House Lannister for the Rock's gold knows no rest. New shafts and galleries burrow ever deeper beneath the ancient fortress, and the walls of each fresh tunnel sparkle with the untapped gold that veins through the Rock itself."
+ building_casterly_rock_06:0 "Casterly's Hoard"
+ building_casterly_rock_06_desc:0 "The deepest delvings yet dug beneath the Rock, where the miners of House Lannister chase the golden veins far below the sea itself. The wealth drawn up from these depths is beyond counting, and the walls of every gallery sparkle with the untapped gold that veins through the Rock."
+
+ building_type_citadel_pennytree_01:0 "The Pennytree"
+ building_citadel_pennytree_01:0 "The Pennytree"
+ building_citadel_pennytree_01_desc:0 "An ancient oak rises over the village green, its trunk studded with hundreds of copper pennies grown half into the bark. The smallfolk tell many tales of how the first penny came to be nailed there, an offering to the old gods, a toll paid to a forgotten lord, a debt of luck repaid. None agree, yet every traveler who passes leaves a penny all the same, for it is said the tree remembers those who pay their due."
+
+ building_type_citadel_port_of_duskendale_01:0 "Port of Duskendale"
+ building_citadel_port_of_duskendale_01:0 "Port of Duskendale"
+ building_citadel_port_of_duskendale_01_desc:0 "The greatest harbor on the Blackwater, crowded with carracks, cogs and fishing sloops from every shore of the narrow sea. Whatever trade the bay carries must pass beneath the Dun Fort's shadow and pay its harbor dues, and the wealth of Duskendale grows with every tide."
+ building_type_citadel_seven_swords_01:0 "The Seven Swords"
+ building_citadel_seven_swords_01:0 "The Seven Swords"
+ building_citadel_seven_swords_01_desc:0 "At the heart of Duskendale stands its famous square, named for the seven white blades of House Darklyn, borne by the champions sworn to guard the kings of the Dusklands in ages past. Merchants hawk their wares beneath the old statues, and every lord who rules here claims the swords' legacy as his own."

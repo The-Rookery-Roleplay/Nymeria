@@ -96,6 +96,7 @@ nymeria_place_bookmark_artifacts = {
             # Longthorn, the Gardener blade. AGOT forges it in 7300, one year after our start,
             # so its grant chain skips our bookmark. Our Gardener king gets it a year early. - Kizan
             character:Gardener_200 ?= { agot_create_artifact_vs_longthorn_effect = { OWNER = THIS } }
+            character:Blackberry_200 ?= { add_gold = 800 }
             # The Seastone Chair belongs to the ruling Hoares, not the Greyjoys of Pyke. AGOT
             # hands it to b_pyke's holder at setup, so take it from whoever got it and give it
             # to King Hagon Hoare (Hoare_19, Iron Islands king from 7293). - Kizan
@@ -262,6 +263,25 @@ nymeria_rework_white_harbor = {
             title:d_white_harbor ?= {
                 save_title_name_change_data = { TRANSFER_VAR = no }
                 set_title_name = citadel_wolfs_den
+            }
+            title:b_castle_driftmark.title_province ?= {
+                remove_building = agot_driftmark_01
+                add_special_building = citadel_blackmark_01
+            }
+            title:b_hull.title_province ?= {
+                add_special_building = citadel_small_fishing_wharf_01
+            }
+            title:b_brave_port.title_province ?= {
+                add_special_building = citadel_small_fishing_wharf_01
+            }
+            title:b_spicetown.title_province ?= {
+                add_special_building = citadel_small_fishing_wharf_01
+            }
+            title:b_casterly_rock.title_province ?= {
+                remove_building = tax_assessor_01
+                add_building = tax_assessor_03
+                remove_building = castle_01
+                add_building = castle_05
             }
         }
     }

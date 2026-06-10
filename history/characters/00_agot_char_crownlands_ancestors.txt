@@ -80809,7 +80809,7 @@ Blackberry_199 = {
 }
 
 Blackberry_200 = {
-	name = Martyn
+	name = Tyson
 	dynasty = dynn_Blackberry
 	religion = fots_seven
 	culture = riverman_main
@@ -80819,6 +80819,7 @@ Blackberry_200 = {
 	}
 	7295.1.1 = {
 		add_spouse = Qo_200
+		give_nickname = nick_citadel_the_voyager
 	}
 	7294.1.1 = {
 		trait = knight
@@ -80839,9 +80840,11 @@ Qo_200 = {
 
 	trait = beauty_good_3
 	trait = education_intrigue_3
+	trait = fashionable
 
 	7277.1.1 = {
 		birth = yes
+		add_character_flag = citadel_lihua_outfit
 	}
 	7340.1.1 = { death = yes }
 }

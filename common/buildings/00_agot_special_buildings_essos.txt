@@ -1613,7 +1613,6 @@ agot_magister_harbor_01 = {
 	}
 
 	character_modifier = {
-		monthly_income_mult = 0.25
 	}
 
 	ai_value = {
@@ -2144,7 +2143,6 @@ agot_iron_bank_01 = {
 
 	county_holder_character_modifier = {
 		independent_ruler_opinion = -10
-		monthly_income_mult = 0.15
 	}
 
 	county_modifier = {

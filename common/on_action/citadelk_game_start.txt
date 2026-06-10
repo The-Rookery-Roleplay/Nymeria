@@ -1,4 +1,4 @@
-on_game_start = {
+﻿on_game_start = {
     on_actions = {
         set_provinces_start_citadel
         citadel_renown_set_duke_and_count
@@ -502,6 +502,16 @@ set_provinces_start_citadel = {
         title:b_footly_hall.title_province ?= {
             add_special_building_slot = im_footly_hall
             add_special_building = im_footly_hall
+        }
+
+        title:b_pennytree.title_province ?= {
+            add_special_building = citadel_pennytree_01
+        }
+        title:b_duskendale.title_province ?= {
+            add_special_building = citadel_port_of_duskendale_01
+        }
+        title:b_brickelburn.title_province ?= {
+            add_special_building = citadel_seven_swords_01
         }
 
     }

@@ -1164,27 +1164,9 @@ march_01 = {
 		defender_holding_advantage = 5
 		additional_fort_level = normal_building_fort_level_tier_2
 		travel_danger = -10
-		mountains_tax_mult = 0.15
 		#AGOT Added
-		majorroad_mountains_tax_mult = 0.15
-		minorroad_mountains_tax_mult = 0.15
-		desert_mountains_tax_mult = 0.15
 		#AGOT Added
-		majorroad_desert_mountains_tax_mult = 0.15
-		minorroad_desert_mountains_tax_mult = 0.15
-		hills_tax_mult = 0.15
 		#AGOT Added
-		majorroad_hills_tax_mult = 0.15
-		minorroad_hills_tax_mult = 0.15
-		glacier_tax_mult = 0.15
-		majorroad_glacier_tax_mult = 0.15
-		minorroad_glacier_tax_mult = 0.15
-		canyon_tax_mult = 0.15
-		majorroad_canyon_tax_mult = 0.15
-		minorroad_canyon_tax_mult = 0.15
-		highlands_tax_mult = 0.15
-		majorroad_highlands_tax_mult = 0.15
-		minorroad_highlands_tax_mult = 0.15
 	}
 
 	effect_desc = marches_effect_desc
@@ -1250,27 +1232,9 @@ march_02 = {
 		defender_holding_advantage = 10
 		additional_fort_level = normal_building_fort_level_tier_4
 		travel_danger = -20
-		mountains_tax_mult = 0.2
 		#AGOT Added
-		majorroad_mountains_tax_mult = 0.2
-		minorroad_mountains_tax_mult = 0.2
-		desert_mountains_tax_mult = 0.2
 		#AGOT Added
-		majorroad_desert_mountains_tax_mult = 0.2
-		minorroad_desert_mountains_tax_mult = 0.2
-		hills_tax_mult = 0.2
 		#AGOT Added
-		majorroad_hills_tax_mult = 0.2
-		minorroad_hills_tax_mult = 0.2
-		glacier_tax_mult = 0.2
-		majorroad_glacier_tax_mult = 0.2
-		minorroad_glacier_tax_mult = 0.2
-		canyon_tax_mult = 0.2
-		majorroad_canyon_tax_mult = 0.2
-		minorroad_canyon_tax_mult = 0.2
-		highlands_tax_mult = 0.2
-		majorroad_highlands_tax_mult = 0.2
-		minorroad_highlands_tax_mult = 0.2
 	}
 
 	effect_desc = marches_effect_2_desc
@@ -1327,28 +1291,10 @@ march_03 = {
 		defender_holding_advantage = 15
 		additional_fort_level = normal_building_fort_level_tier_6
 		travel_danger = -30
-		mountains_tax_mult = 0.3
 		#AGOT Added
-		majorroad_mountains_tax_mult = 0.3
-		minorroad_mountains_tax_mult = 0.3
-		desert_mountains_tax_mult = 0.3
 		#AGOT Added
-		majorroad_desert_mountains_tax_mult = 0.3
-		minorroad_desert_mountains_tax_mult = 0.3
-		hills_tax_mult = 0.3
 		#AGOT Added
-		majorroad_hills_tax_mult = 0.3
-		minorroad_hills_tax_mult = 0.3
 		#AGOT Added
-		glacier_tax_mult = 0.3
-		majorroad_glacier_tax_mult = 0.3
-		minorroad_glacier_tax_mult = 0.3
-		canyon_tax_mult = 0.3
-		majorroad_canyon_tax_mult = 0.3
-		minorroad_canyon_tax_mult = 0.3
-		highlands_tax_mult = 0.3
-		majorroad_highlands_tax_mult = 0.3
-		minorroad_highlands_tax_mult = 0.3
 	}
 
 	effect_desc = marches_effect_2_desc
@@ -2551,7 +2497,7 @@ tax_assessor_01 = {
 		monthly_income = 1
 	}
 	character_modifier = {
-		vassal_tax_mult = 0.02
+		vassal_tax_mult = 0.05
 	}
 	
 	next_building = tax_assessor_02
@@ -2625,7 +2571,7 @@ tax_assessor_02 = {
 		monthly_income = 2
 	}
 	character_modifier = {
-		vassal_tax_mult = 0.04
+		vassal_tax_mult = 0.10
 	}
 	next_building = tax_assessor_03
 	
@@ -2670,7 +2616,7 @@ tax_assessor_03 = {
 		monthly_county_control_growth_factor = 0.2
 	}
 	character_modifier = {
-		vassal_tax_mult = 0.06
+		vassal_tax_mult = 0.15
 	}
 	province_modifier = {
 		monthly_income = 3

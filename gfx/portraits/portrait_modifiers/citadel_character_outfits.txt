@@ -1,104 +1,160 @@
 ﻿citadel_outfit_headgear = {
 	usage = game
-	priority = 100
+	selection_behavior = max
+	priority = 10
 	citadel_dayne17_crown = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = headgear
+				template = agot_crowns
 				accessory = dayne_crown
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
-				add = 200
+				add = 60000
 				has_character_flag = citadel_dayne17_outfit
 			}
-		}
-	}
-	citadel_outfit_headgear_none = {
-		weight = {
-			base = 1
 		}
 	}
 }
 
 citadel_outfit_cloaks = {
 	usage = game
-	priority = 100
+	selection_behavior = max
+	priority = 10
 	citadel_dayne17_cape = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = cloaks
+				template = agot_all_ep1_cloaks
 				accessory = male_cloaks_secular_halfcape_02
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
-				add = 200
+				add = 60000
 				has_character_flag = citadel_dayne17_outfit
 			}
-		}
-	}
-	citadel_outfit_cloaks_none = {
-		weight = {
-			base = 1
 		}
 	}
 }
 
 citadel_outfit_clothes = {
 	usage = game
-	priority = 100
+	selection_behavior = max
+	priority = 10
 	citadel_dayne17_armor = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = clothes
+				template = agot_all_armors
 				accessory = male_clothes_stone_dornish_war_03
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
-				add = 200
+				add = 60000
 				has_character_flag = citadel_dayne17_outfit
 			}
 		}
 	}
-	citadel_outfit_clothes_none = {
+	citadel_lihua_hanfu = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = tgp_chinese_era1_nobility_clothes
+				accessory = f_clothes_sec_tgp_chinese_nob_01
+			}
+		}
 		weight = {
-			base = 1
+			base = 0
+			modifier = {
+				add = 60000
+				has_character_flag = citadel_lihua_outfit
+			}
 		}
 	}
 }
 
 citadel_outfit_legwear = {
 	usage = game
-	priority = 100
+	selection_behavior = max
+	priority = 10
 	citadel_dayne17_legwear = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
 				gene = legwear
+				template = agot_all_legwear
 				accessory = male_legwear_special_dragon_rider_dynastic_01
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
-				add = 200
+				add = 60000
 				has_character_flag = citadel_dayne17_outfit
 			}
 		}
 	}
-	citadel_outfit_legwear_none = {
+}
+
+citadel_outfit_jewelry = {
+	usage = game
+	selection_behavior = max
+	priority = 10
+	citadel_lihua_necklace = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = special_accessories_jewelry
+				template = female_westerosi_necklace_03_rhaenyra
+				accessory = female_westerosi_necklace_03_rhaenyra
+			}
+		}
 		weight = {
-			base = 1
+			base = 0
+			modifier = {
+				add = 60000
+				has_character_flag = citadel_lihua_outfit
+			}
 		}
 	}
 }
 
+citadel_outfit_makeup = {
+	usage = game
+	selection_behavior = max
+	priority = 10
+	citadel_lihua_makeup = {
+		dna_modifiers = {
+			morph = {
+				mode = add
+				gene = cosmetics_eyeshadow
+				template = iranian_1
+				value = 0.75
+			}
+			morph = {
+				mode = add
+				gene = cosmetics_eyeliner
+				template = iranian_1
+				value = 1.0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60000
+				has_character_flag = citadel_lihua_outfit
+			}
+		}
+	}
+}

@@ -6,3 +6,5 @@
  dynn_citadel_qo:0 "Qo"
  nick_citadel_the_wraith:0 "the Wraith"
  nick_citadel_the_wraith_desc:0 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U]'s enemies know [CHARACTER.GetHerHim] to be a force unseen, but ever present. It seems the Ghost Hills' namesake was not entirely unearned."
+ nick_citadel_the_voyager:0 "the Voyager"
+ nick_citadel_the_voyager_desc:0 "With the small but masterfully crewed fleet of House Blackberry, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] has seen places far beyond the reach of most Westerosi sails, from the grand cities of Valyria to the golden harbors of Yi Ti, where the voyager found the love of his life in the far east."

@@ -221,8 +221,6 @@ bear_den = {
 	}
 
 	province_modifier = {
-		forest_tax_mult = -0.35
-		hills_tax_mult = -0.35
 		#tax_mult = -0.15
 	}
 

@@ -2,7 +2,7 @@
 # Bloodstone Daemon #
 #####################
 
-# Bloodstone Lair
+# Bloodstone Lair 
 bloodstone_special_01 = {
     construction_time = very_slow_construction_time
     type_icon = "icon_bloodstone.dds"
@@ -882,7 +882,6 @@ seven_gates_01 = {
 
     duchy_capital_county_modifier = {
         levy_size = 0.15
-        tax_mult = normal_building_tax_mult_tier_2
     }
 
     county_modifier = {

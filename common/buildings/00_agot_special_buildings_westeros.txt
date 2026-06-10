@@ -182,7 +182,6 @@ agot_the_shadow_city_01 = {
 
 	county_modifier = {
 		development_growth_factor = 0.1
-		tax_mult = low_building_tax_mult_tier_2
 		hostile_raid_time = 0.5
 	}
 
@@ -211,6 +210,11 @@ agot_starfall_01 = {
 	}
 
 	cost_gold = expensive_building_tier_5_cost
+
+	asset = {
+		type = pdxmesh
+		name = "building_palestone_sword_01_mesh"
+	}
 
 	county_modifier = {
 		hostile_raid_time = 0.5
@@ -877,6 +881,15 @@ agot_yronwood_01 = {
 
 	cost_gold = expensive_building_tier_7_cost
 
+asset = {
+        type = pdxmesh
+        name = "building_special_yronwood_mesh"
+    }
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
 	character_modifier = {
 		court_grandeur_baseline_add = 5
 		salt_dornish_opinion = -5
@@ -926,6 +939,11 @@ agot_raventree_hall_01 = {
 
 	cost_gold = expensive_building_tier_5_cost
 
+	asset = {
+		type = pdxmesh
+		name = "building_special_raventree_mesh"
+	}
+
 	character_modifier = {
 		the_pact_religion_opinion = 10
 	}
@@ -938,7 +956,6 @@ agot_raventree_hall_01 = {
 	county_modifier = {
 		defender_holding_advantage = 5
 		development_growth_factor = 0.1
-		tax_mult = low_building_tax_mult_tier_2
 	}
 
 	ai_value = {
@@ -1132,6 +1149,11 @@ agot_seagard_01 = {
 
 	cost_gold = expensive_building_tier_6_cost
 
+	asset = {
+		type = pdxmesh
+		name = "building_seagard_01_mesh"
+	}
+
 	county_modifier = {
 		defender_holding_advantage = 5
 		hostile_raid_time = 0.5
@@ -1181,7 +1203,6 @@ agot_walls_of_seagard_01 = {
 		hostile_raid_time = 0.25
 		fort_level = 4
 		travel_danger = -25
-		tax_mult = low_building_tax_mult_tier_3
 	}
 
 	character_modifier = {
@@ -1219,6 +1240,11 @@ agot_maidenpool_01 = {
 	}
 
 	cost_gold = expensive_building_tier_6_cost
+
+asset = {
+		type = entity
+		name = "maidenpool_entity"
+	}
 
 	character_modifier = {
 		learning_per_prestige_level = 1
@@ -1877,7 +1903,6 @@ agot_stone_hedge_01 = {
 	county_modifier = {
 		defender_holding_advantage = 5
 		development_growth_factor = 0.1
-		tax_mult = low_building_tax_mult_tier_2
 	}
 
 	ai_value = {
@@ -1952,7 +1977,7 @@ agot_castamere_01 = {
 
 	asset = {
 		type = pdxmesh
-		name = "agot_holding_westerlands_01_mesh"
+		name = "24castamere_1_mesh"
 	}
 
 	cost_gold = expensive_building_tier_7_cost
@@ -1971,7 +1996,6 @@ agot_castamere_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_7
 		development_growth_factor = 0.2
 		levy_size = 0.1
 		monthly_county_control_growth_factor = 0.1
@@ -2009,7 +2033,7 @@ agot_castamere_ruins_01 = {
 
 	asset = {
 		type = pdxmesh
-		name = "agot_building_western_ruin_mesh"
+		name = "ruincastamere_1_mesh"
 	}
 
 	next_building = agot_castamere_ruins_02
@@ -2062,7 +2086,7 @@ agot_castamere_ruins_02 = {
 
 	asset = {
 		type = pdxmesh
-		name = "agot_holding_westerlands_01_mesh"
+		name = "ruincastamere_1_mesh"
 	}
 
 	cost_gold = expensive_building_tier_8_cost
@@ -2083,7 +2107,6 @@ agot_castamere_ruins_02 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_7
 		development_growth_factor = 0.2
 		levy_size = 0.1
 		monthly_county_control_growth_factor = 0.1
@@ -2148,7 +2171,6 @@ agot_lann_sept_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_4
 		development_growth_factor = 0.2
 	}
 
@@ -2226,7 +2248,6 @@ agot_crakehall_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_2
 	}
 
 	province_modifier = {
@@ -2391,7 +2412,6 @@ agot_fair_isle_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_3
 		development_growth_factor = 0.15
 	}
 
@@ -2427,7 +2447,6 @@ agot_hornvale_01 = {
 	}
 
 	character_modifier = {
-		monthly_income_mult = 0.15
 	}
 
 	type = duchy_capital
@@ -2462,7 +2481,6 @@ agot_feastfires_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_3
 		monthly_county_control_growth_factor = 0.1
 	}
 
@@ -2541,6 +2559,15 @@ agot_ashemark_01 = {
 	}
 
 	cost_gold = expensive_building_tier_4_cost
+
+asset = {
+        type = pdxmesh
+        name = "ashemark_mesh"
+    }
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
 
 	character_modifier = {
 		monthly_dynasty_prestige_mult = 0.05
@@ -2627,6 +2654,11 @@ agot_griffins_roost_01 = {
 
 	cost_gold = expensive_building_tier_4_cost
 
+	asset = {
+		type = pdxmesh
+		name = "building_special_griffins_roost_mesh"
+	}
+
 	county_modifier = {
 		defender_holding_advantage = 8
 		hostile_raid_time = 0.5
@@ -2662,6 +2694,11 @@ agot_blackhaven_01 = {
 	}
 
 	cost_gold = expensive_building_tier_4_cost
+
+	asset = {
+		type = pdxmesh
+		name = "cow_blackhaven_mesh"
+	}
 
 	character_modifier = {
 		character_travel_speed_mult = 0.25
@@ -2796,7 +2833,6 @@ agot_morne_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_2
 		development_growth_factor = 0.2
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -2874,7 +2910,6 @@ agot_morne_03 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_2
 		development_growth_factor = 0.2
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -2909,6 +2944,11 @@ agot_evenfall_hall_01 = {
 	}
 
 	cost_gold = expensive_building_tier_5_cost
+
+	asset = {
+		type = entity
+		name = "building_special_evenfall_entity"
+	}
 
 	character_modifier = {
 		diplomacy_per_piety_level = 1
@@ -2960,7 +3000,6 @@ agot_summerhall_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_2
 		development_growth_factor = 0.2
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -3052,7 +3091,6 @@ agot_summerhall_ruins_02 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_2
 		development_growth_factor = 0.2
 		monthly_county_control_growth_factor = 0.1
 	}
@@ -3508,7 +3546,6 @@ agot_barrow_keep_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_1
 		development_growth_factor = 0.1
 	}
 
@@ -3622,7 +3659,6 @@ agot_sept_of_the_snows_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_4
 		development_growth_factor = 0.2
 	}
 
@@ -3808,7 +3844,6 @@ agot_new_castle_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_1
 		development_growth_factor = 0.1
 		levy_size = 0.05
 	}
@@ -3880,6 +3915,11 @@ agot_karhold_01 = {
 	}
 
 	cost_gold = expensive_building_tier_5_cost
+
+	asset = {
+		type = pdxmesh
+		name = "karhold_mesh"
+	}
 
 	province_modifier = {
 		fort_level = 4
@@ -4328,6 +4368,22 @@ agot_rodriks_gift_01 = {
 
 	cost_gold = expensive_building_tier_5_cost
 
+asset = {
+        type = pdxmesh
+        name = "bear_island_mesh"
+    }
+
+	is_enabled = {
+		agot_generic_is_special_building_enabled = yes
+		# scope:holder = {
+		# 	NOT = {
+		# 		culture = {
+		# 			has_cultural_pillar = heritage_ironman
+		# 		}
+		# 	}
+		# }
+	}
+
 	character_modifier = {
 		opinion_of_liege = 10
 		ironborn_opinion = -50
@@ -4461,6 +4517,11 @@ agot_ironrath_01 = {
 
 	cost_gold = expensive_building_tier_4_cost
 
+asset = {
+        type = pdxmesh
+        name = "building_special_ironrath_mesh"
+    }
+
 	character_modifier = {
 		prowess_per_prestige_level = 1
 	}
@@ -4553,8 +4614,6 @@ agot_blackpool_01 = {
 	county_modifier = {
 		taiga_supply_limit_mult = 0.25
 		hills_supply_limit_mult = 0.25
-		taiga_tax_mult = 0.25
-		hills_tax_mult = 0.25
 	}
 
 	ai_value = {
@@ -4619,6 +4678,11 @@ agot_deepwood_motte_01 = {
 	}
 
 	cost_gold = expensive_building_tier_3_cost
+
+asset = {
+        type = pdxmesh
+        name = "deepwood_motte_mesh"
+    }
 
 	character_modifier = {
 		taiga_travel_danger = -15
@@ -4785,7 +4849,6 @@ agot_port_of_oldtown_01 = {
 	cost_gold = expensive_building_tier_7_cost
 
 	county_modifier = {
-		tax_mult = good_building_tax_mult_tier_8
 	}
 
 	province_modifier = {
@@ -4821,7 +4884,6 @@ agot_chequered_square_01 = {
 	cost_gold = expensive_building_tier_7_cost
 
 	county_modifier = {
-		tax_mult = good_building_tax_mult_tier_4
 	}
 
 	province_modifier = {
@@ -4859,7 +4921,6 @@ agot_oldtown_walls_01 = {
 
 	duchy_capital_county_modifier = {
 		levy_size = 0.20
-		tax_mult = low_building_tax_mult_tier_4
 	}
 
 	county_modifier = {
@@ -4985,7 +5046,6 @@ agot_bitterbridge_01 = {
 
 	county_modifier = {
 		development_growth_factor = 0.25
-		tax_mult = low_building_tax_mult_tier_6
 	}
 
 	province_modifier = {
@@ -5023,7 +5083,6 @@ agot_bitterbridge_02 = {
 
 	county_modifier = {
 		development_growth_factor = 0.2
-		tax_mult = low_building_tax_mult_tier_5
 	}
 
 	province_modifier = {
@@ -5235,6 +5294,11 @@ agot_starpike_01 = {
 
 	cost_gold = expensive_building_tier_6_cost
 
+	asset = {
+		type = pdxmesh
+		name = "starpike_mesh"
+	}
+
 	character_modifier = {
 		liege_opinion = 15
 		personal_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
@@ -5281,7 +5345,6 @@ agot_redwyne_port_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = good_building_tax_mult_tier_5
 		development_growth_factor = 0.2
 	}
 
@@ -5389,7 +5452,6 @@ agot_brightwater_moat_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_4
 		development_growth_factor = 0.2
 	}
 
@@ -5550,7 +5612,6 @@ agot_honeyholt_apiaries_01 = {
 
 	county_modifier = {
 		development_growth_factor = 0.15
-		tax_mult = low_building_tax_mult_tier_3
 	}
 
 	ai_value = {
@@ -5590,7 +5651,6 @@ agot_sept_at_holyhall_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_2
 	}
 
 	character_modifier = {
@@ -5807,7 +5867,6 @@ agot_maris_motherhouse_01 = {
 	}
 
 	county_modifier = {
-		tax_mult = low_building_tax_mult_tier_4
 		development_growth_factor = 0.2
 	}
 
@@ -5910,6 +5969,11 @@ agot_runestone_01 = {
 	}
 
 	cost_gold = expensive_building_tier_6_cost
+
+	asset = {
+		type = pdxmesh
+		name = "runestone_mesh"
+	}
 
 	character_modifier = {
 		the_pact_religion_opinion = 10
@@ -6040,7 +6104,6 @@ agot_sisterton_01 = {
 
 	county_modifier = {
 		development_growth_factor = 0.05
-		tax_mult = low_building_tax_mult_tier_1
 	}
 
 	ai_value = {
@@ -6109,7 +6172,6 @@ agot_waxley_candlery_01 = {
 	cost_gold = expensive_building_tier_6_cost
 
 	county_holder_character_modifier = {
-		monthly_income_mult = 0.05
 	}
 
 	character_modifier = {
@@ -6620,7 +6682,7 @@ agot_lordsport_01 = {
 
 	asset = {
 		type = pdxmesh
-		name = "port_3_mesh"
+		name = "lordsport_mesh"
 	}
 
 	cost_gold = expensive_building_tier_6_cost
@@ -6782,7 +6844,6 @@ agot_dragonmont_01 = {
 
 	duchy_capital_county_modifier = {
 		levy_size = -0.20
-		tax_mult = low_building_tax_mult_tier_1
 	}
 
 	county_modifier = {
@@ -7103,6 +7164,11 @@ agot_duskendale_01 = {
 
 	cost_gold = expensive_building_tier_7_cost
 
+	asset = {
+		type = pdxmesh
+		name = "building_special_duskendale_mesh"
+	}
+
 	province_modifier = {
 		fort_level = 4
 	}
@@ -7153,6 +7219,11 @@ agot_hightide_01 = {
 
 	cost_gold = expensive_building_tier_7_cost
 
+	asset = {
+		type = pdxmesh
+		name = "hightide_1_mesh"
+	}
+
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_8
 		fort_level = 2
@@ -7160,7 +7231,6 @@ agot_hightide_01 = {
 
 	character_modifier = {
 		court_grandeur_baseline_add = 10
-		tax_mult = low_building_tax_mult_tier_2
 		legitimacy_gain_mult = 0.1
 		legitimacy_loss_mult = -0.1
 		owned_legend_spread_mult = 0.1
@@ -7240,6 +7310,11 @@ agot_ruins_hightide_02 = {
 
 	cost_gold = expensive_building_tier_7_cost
 
+	asset = {
+		type = pdxmesh
+		name = "hightide_1_mesh"
+	}
+
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_8
 		fort_level = 2
@@ -7247,7 +7322,6 @@ agot_ruins_hightide_02 = {
 
 	character_modifier = {
 		court_grandeur_baseline_add = 10
-		tax_mult = low_building_tax_mult_tier_2
 		legitimacy_gain_mult = 0.1
 		legitimacy_loss_mult = -0.1
 		owned_legend_spread_mult = 0.1
@@ -7377,7 +7451,6 @@ agot_sharp_point_beacon_01 = {
 
 	county_modifier = {
 		development_growth_factor = 0.15
-		tax_mult = low_building_tax_mult_tier_3
 	}
 
 	province_modifier = {

@@ -1,0 +1,5 @@
+﻿l_english:
+ citadel_no_revoke_under_construction:0 "There is construction underway in these lands. Unless the holder is a criminal, the [title|E] cannot be [revoked|E] until the builders have finished their work."
+ citadel_no_revoke_under_construction_first:0 "There is construction underway in these lands. Unless the holder is a criminal, the [title|E] cannot be [revoked|E] until the builders have finished their work."
+ not_citadel_no_revoke_under_construction:0 "There is construction underway in these lands. Unless the holder is a criminal, the [title|E] cannot be [revoked|E] until the builders have finished their work."
+ not_citadel_no_revoke_under_construction_first:0 "There is construction underway in these lands. Unless the holder is a criminal, the [title|E] cannot be [revoked|E] until the builders have finished their work."
