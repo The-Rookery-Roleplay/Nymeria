@@ -1,0 +1,47 @@
+﻿asoiaf_jaimes_sword_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"        game_entity_override = weapon	entity = "asoiaf_sword_jaimes_sword_entity" }
+}
+
+asoiaf_sword_krakenfall_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"        game_entity_override = weapon 	entity = "asoiaf_sword_krakenfall_entity" }
+}
+
+asoiaf_sword_ice_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		game_entity_override = weapon 	entity = "asoiaf_sword_ice_entity" }
+}
+
+asoiaf_sword_heartsbane_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		game_entity_override = weapon 	entity = "asoiaf_sword_heartsbane_entity" }
+}
+
+asoiaf_sword_longclaw_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		game_entity_override = weapon 	entity = "asoiaf_sword_longclaw_entity" }
+}
+
+asoiaf_sword_oathkeeper_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		game_entity_override = weapon 	entity = "asoiaf_sword_oathkeeper_entity" }
+}
+
+asoiaf_sword_widows_wail_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		game_entity_override = weapon 	entity = "asoiaf_sword_widows_wail_entity" }
+}
+
+asoiaf_sword_dark_sister_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		game_entity_override = weapon 	entity = "asoiaf_sword_dark_sister_entity" }
+}
+
+asoiaf_sword_needle_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		game_entity_override = weapon 	entity = "asoiaf_sword_needle_entity" }
+}
+
+asoiaf_sword_hearteater_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		game_entity_override = weapon 	entity = "asoiaf_sword_hearteater_entity" }
+}
+
+asoiaf_spear_red_vipers_spear_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"		game_entity_override = weapon 	entity = "asoiaf_spear_red_vipers_spear_entity" }
+}
+
+asoiaf_sword_radzig_sword_prop = {
+	entity = {	required_tags = ""        node = "bn_r_prop"        game_entity_override = weapon	entity = "asoiaf_sword_radzig_sword_entity" }
+}

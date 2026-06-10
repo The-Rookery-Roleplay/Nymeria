@@ -1,0 +1,865 @@
+﻿asoiaf_legwear = {
+	# interface_position = 1
+	usage = game
+	selection_behavior = max
+	priority = 4
+
+	asoiaf_legwear_kingsguard_default = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = asoiaf_all_legwears
+				accessory = male_legwear_asoiaf_kingsguard_legs_1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 1000
+				is_male = yes #until a female version is added
+				OR = {
+					has_trait = kingsguard
+					any_equipped_character_artifact = { has_variable = kingsguard_armour }
+				}
+				has_game_rule = asoiaf_new_clothes_crownlands_rule_on
+			}
+			modifier = {
+				factor = 0
+				is_aotk_loaded_trigger = yes
+				has_game_rule = show_armor_enabled #if the player is using AOTK and has its armour enabled, disable AGOT+'s version
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_legwear_kingsguard_tunic = {
+		dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = legwear
+                template = asoiaf_all_legwears
+                accessory = male_legwear_asoiaf_kingsguard_legs_2
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 1500
+                is_male = yes #until a female version is added
+                OR = {
+                    AND = { #either this is a Kingsguard who is currently out-of-commission (due to being captured, incapable, etc.)
+                        has_trait = kingsguard
+                        NOR = {
+                            has_council_position = kingsguard_lord_commander
+                            has_council_position = kingsguard_1
+                            has_council_position = kingsguard_2
+                            has_council_position = kingsguard_3
+                            has_council_position = kingsguard_4
+                            has_council_position = kingsguard_5
+                            has_council_position = kingsguard_6
+                        }
+                    }
+                    AND = { #or it's a Kingsguard attending a feast/funeral
+                        has_trait = kingsguard
+                        involved_activity ?= {
+							OR = {
+								has_activity_type = activity_feast
+								has_activity_type = activity_funeral
+							}
+						}
+                    }
+                }
+				has_game_rule = asoiaf_new_clothes_crownlands_rule_on
+            }
+			modifier = { #dead Kingsguard always wear their armour
+				factor = 0
+				has_trait = kingsguard
+                is_alive = no
+			}
+            modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+        }
+    }
+	
+	asoiaf_legwear_lannister_armour = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = asoiaf_lannister_war_legs
+				value = 1 
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+                add = 130
+				is_male = yes #until a female version is added
+				AND = {
+                    OR = { #Lannister westermen, crownlanders, and reachmen can have the special armour
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = westerman_main
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = westerman_main
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = westerman_main
+                        }
+						portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = crownlander
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = crownlander
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = crownlander
+                        }
+						portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = reachman
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = reachman
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = reachman
+                        }
+                    }
+					OR = {
+						dynasty ?= dynasty:dynn_Lannister
+						house ?= house:house_BaratheonKL
+					}
+                }
+				has_game_rule = asoiaf_new_clothes_westerlands_rule_on
+            }
+			modifier = {
+				add = 130
+				is_male = yes #until a female version is added
+				portrait_wear_lannister_armour_courtiers_trigger = yes
+			}
+			modifier = {
+				add = -1000
+				OR = {
+					has_trait = nightswatch
+					has_trait = kingsguard
+				}
+				has_game_rule = asoiaf_new_clothes_westerlands_rule_on
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+
+	asoiaf_legwear_tyrell_armour = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = asoiaf_all_legwears
+				accessory = male_legwear_asoiaf_tyrell_legs
+			}
+		}
+		weight = {
+			base = 0
+			modifier = { #FOR DYNAST ARMOUR
+                add = 130
+				is_male = yes #until a female version is added
+				AND = {
+                    OR = { #Lannister westermen, crownlanders, and reachmen can have the special armour
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = westerman_main
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = westerman_main
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = westerman_main
+                        }
+						portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = crownlander
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = crownlander
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = crownlander
+                        }
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = valeman_main
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = valeman_main
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = valeman_main
+                        }
+						portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = reachman
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = reachman
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = reachman
+                        }
+                    }
+					OR = {
+                        AND = { #either you're the dynasty head of the Tyrell dynasty
+                            is_dynast = yes
+                            dynasty ?= dynasty:dynn_Tyrell
+							highest_held_title_tier >= tier_kingdom
+                        }
+                        AND = { #or you're a House head, but NOT under the same top liege as the dynasty head
+                            is_house_head = yes
+                            dynasty ?= dynasty:dynn_Tyrell
+							highest_held_title_tier >= tier_kingdom
+                            OR = {
+                                agot_is_independent_ruler = yes
+                                NOT = { top_liege ?= dynasty:dynn_Tyrell.dynast.top_liege }
+                            }
+                        }
+                    }
+                }
+				has_game_rule = asoiaf_new_clothes_reach_rule_on
+            }
+			modifier = { #FOR HIGH ARMOUR
+                add = 125
+				is_male = yes #until a female version is added
+				AND = {
+                    OR = { #Lannister westermen, crownlanders, and reachmen can have the special armour
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = westerman_main
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = westerman_main
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = westerman_main
+                        }
+						portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = crownlander
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = crownlander
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = crownlander
+                        }
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = valeman_main
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = valeman_main
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = valeman_main
+                        }
+						portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = reachman
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = reachman
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = reachman
+                        }
+                    }
+					OR = {
+                        AND = { #ruling Tyrells (Duke and above)
+                            dynasty ?= dynasty:dynn_Tyrell
+							highest_held_title_tier >= tier_duchy
+                        }
+						#AND = { #close family of ruling Tyrells (Duke and above)
+                        #    dynasty ?= dynasty:dynn_Tyrell
+						#	any_close_family_member ?= {
+						#		dynasty ?= dynasty:dynn_Tyrell
+						#		is_landed = yes
+						#		highest_held_title_tier >= tier_duchy
+						#	}
+                        #}
+                        AND = { #Acclaimed Knights of ruling Tyrells (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							is_acclaimed = yes
+							liege ?= {
+								dynasty ?= dynasty:dynn_Tyrell
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+						AND = { #Captains of the Household Guard of ruling Tyrells (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							has_court_position = household_guard_court_position
+							liege ?= {
+								dynasty ?= dynasty:dynn_Tyrell
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+						AND = { #Personal Champions of ruling Tyrells (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							has_court_position = champion_court_position
+							liege ?= {
+								dynasty ?= dynasty:dynn_Tyrell
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+						AND = { #Master-at-Arms (counciller) of ruling Tyrells (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							has_council_position = councillor_marshal
+							liege ?= {
+								dynasty ?= dynasty:dynn_Tyrell
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+                    }
+                }
+				has_game_rule = asoiaf_new_clothes_reach_rule_on
+            }
+			modifier = { #FOR LOW ARMOUR
+                add = 120
+				is_male = yes #until a female version is added
+				AND = {
+					portrait_wear_armor_trigger = yes
+					portrait_wear_helmet_trigger = yes
+                    OR = { #Tyrell westermen, crownlanders, valemen, and reachmen can have the special armour
+						culture = culture:westerman_main
+						culture = culture:crownlander
+						culture = culture:valeman_main
+						culture = culture:reachman
+                    }
+					AND = { #Sworn Shields of ruling Tyrells (Duke and above) - ONLY COURTIERS
+						is_courtier = yes
+						has_court_position = bodyguard_court_position
+						liege ?= {
+							dynasty ?= dynasty:dynn_Tyrell
+							is_landed = yes
+							highest_held_title_tier >= tier_duchy
+						}
+					}
+                }
+				has_game_rule = asoiaf_new_clothes_reach_rule_on
+            }
+			modifier = {
+				factor = 0
+				OR = {
+					should_be_naked_trigger = yes
+					#has_trait = septon
+					#has_trait = most_devout_member
+					#has_trait = silent_sister
+					#has_trait = red_priest
+					#has_trait = devoted
+					has_trait = maester
+					has_trait = maester_historical
+					has_trait = archmaester
+					has_trait = kingsguard
+					has_trait = nightswatch
+					has_trait = nightswatch_historical
+					has_trait = lifestyle_nw_builder
+					has_trait = lifestyle_nw_ranger
+					has_trait = lifestyle_nw_steward
+					has_court_position = court_jester_court_position
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+
+	asoiaf_legwear_greyjoy_armour = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = asoiaf_all_legwears
+				accessory = male_legwear_asoiaf_greyjoy_legs
+			}
+		}
+		weight = {
+			base = 0
+			modifier = { #FOR DYNAST ARMOUR
+                add = 130
+				is_male = yes #until a female version is added
+				AND = {
+                    OR = { #Greyjoy ironborn can have the special armour
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                    }
+					OR = {
+                        AND = { #either you're the dynasty head of the Greyjoy dynasty
+                            is_dynast = yes
+                            dynasty ?= dynasty:dynn_Greyjoy
+							highest_held_title_tier >= tier_kingdom
+                        }
+                        AND = { #or you're a House head, but NOT under the same top liege as the dynasty head
+                            is_house_head = yes
+                            dynasty ?= dynasty:dynn_Greyjoy
+							highest_held_title_tier >= tier_kingdom
+                            OR = {
+                                agot_is_independent_ruler = yes
+                                NOT = { top_liege ?= dynasty:dynn_Greyjoy.dynast.top_liege }
+                            }
+                        }
+                    }
+                }
+				has_game_rule = asoiaf_new_clothes_iron_isles_rule_on
+            }
+			modifier = { #FOR HIGH ARMOUR
+                add = 125
+				is_male = yes #until a female version is added
+				AND = {
+                    OR = { #Greyjoy ironborn can have the special armour
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                    }
+					OR = {
+                        AND = { #ruling Greyjoys (Duke and above)
+                            dynasty ?= dynasty:dynn_Greyjoy
+							highest_held_title_tier >= tier_duchy
+                        }
+						#AND = { #close family of ruling Greyjoys (Duke and above)
+                        #    dynasty ?= dynasty:dynn_Greyjoy
+						#	any_close_family_member ?= {
+						#		dynasty ?= dynasty:dynn_Greyjoy
+						#		is_landed = yes
+						#		highest_held_title_tier >= tier_duchy
+						#	}
+                        #}
+                        AND = { #Acclaimed Knights of ruling Greyjoys (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							is_acclaimed = yes
+							liege ?= {
+								dynasty ?= dynasty:dynn_Greyjoy
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+						AND = { #Captains of the Household Guard of ruling Greyjoys (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							has_court_position = household_guard_court_position
+							liege ?= {
+								dynasty ?= dynasty:dynn_Greyjoy
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+						AND = { #Personal Champions of ruling Greyjoys (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							has_court_position = champion_court_position
+							liege ?= {
+								dynasty ?= dynasty:dynn_Greyjoy
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+						AND = { #Master-at-Arms (counciller) of ruling Greyjoys (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							has_council_position = councillor_marshal
+							liege ?= {
+								dynasty ?= dynasty:dynn_Greyjoy
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+                    }
+                }
+				has_game_rule = asoiaf_new_clothes_iron_isles_rule_on
+            }
+			modifier = {
+				factor = 0
+				OR = {
+					should_be_naked_trigger = yes
+					has_trait = septon
+					has_trait = most_devout_member
+					has_trait = silent_sister
+					has_trait = red_priest
+					has_trait = devoted
+					#has_trait = drowned_man
+					has_trait = maester
+					has_trait = archmaester
+					has_trait = kingsguard
+					has_trait = nightswatch
+					has_trait = lifestyle_nw_builder
+					has_trait = lifestyle_nw_ranger
+					has_trait = lifestyle_nw_steward
+					has_court_position = court_jester_court_position
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_legwear_ironborn_armour = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = asoiaf_all_legwears
+				accessory = male_legwear_asoiaf_ironborn_legs_coa
+			}
+		}
+		weight = {
+			base = 0
+			modifier = { #FOR DYNAST ARMOUR
+                add = 125
+				is_male = yes #until a female version is added
+				AND = {
+                    OR = {
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                    }
+					OR = {
+                        AND = { #either you're the dynasty head of the dynasty...
+                            is_dynast = yes
+                            culture = { has_cultural_pillar = heritage_ironman }
+							highest_held_title_tier >= tier_kingdom
+                        }
+                        AND = { #or you're a House head, but NOT under the same top liege as the dynasty head
+                            is_house_head = yes
+                            culture = { has_cultural_pillar = heritage_ironman }
+							highest_held_title_tier >= tier_kingdom
+                            OR = {
+                                agot_is_independent_ruler = yes
+                                NOT = { top_liege ?= this.dynasty.dynast.top_liege }
+                            }
+                        }
+                    }
+                }
+				has_game_rule = asoiaf_new_clothes_iron_isles_rule_on
+            }
+			modifier = { #FOR HIGH ARMOUR
+                add = 120
+				is_male = yes #until a female version is added
+				AND = {
+                    OR = {
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = ironborn
+                        }
+                    }
+					OR = {
+                        AND = { #ruling Ironborn (Duke and above)
+                            culture = { has_cultural_pillar = heritage_ironman }
+							highest_held_title_tier >= tier_duchy
+                        }
+						#AND = { #close family of ruling Ironborn (Duke and above)
+                        #    culture = { has_cultural_pillar = heritage_ironman }
+						#	any_close_family_member ?= {
+						#		culture = { has_cultural_pillar = heritage_ironman }
+						#		is_landed = yes
+						#		highest_held_title_tier >= tier_duchy
+						#	}
+                        #}
+                        AND = { #Acclaimed Knights of ruling Ironborn (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							is_acclaimed = yes
+							liege ?= {
+								culture = { has_cultural_pillar = heritage_ironman }
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+						AND = { #Captains of the Household Guard of ruling Ironborn (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							has_court_position = household_guard_court_position
+							liege ?= {
+								culture = { has_cultural_pillar = heritage_ironman }
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+						AND = { #Personal Champions of ruling Ironborn (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							has_court_position = champion_court_position
+							liege ?= {
+								culture = { has_cultural_pillar = heritage_ironman }
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+						AND = { #Master-at-Arms (counciller) of ruling Ironborn (Duke and above) - ONLY COURTIERS
+							is_courtier = yes
+							has_council_position = councillor_marshal
+							liege ?= {
+								culture = { has_cultural_pillar = heritage_ironman }
+								is_landed = yes
+								highest_held_title_tier >= tier_duchy
+							}
+						}
+                    }
+                }
+				has_game_rule = asoiaf_new_clothes_iron_isles_rule_on
+            }
+			modifier = {
+				add = -3000
+				OR = {
+					should_be_naked_trigger = yes
+					has_trait = septon
+					has_trait = most_devout_member
+					has_trait = silent_sister
+					has_trait = red_priest
+					has_trait = devoted
+					has_trait = maester
+					has_trait = maester_historical
+					has_trait = archmaester
+					has_trait = kingsguard
+					has_trait = nightswatch
+					has_trait = nightswatch_historical
+					has_trait = lifestyle_nw_builder
+					has_trait = lifestyle_nw_ranger
+					has_trait = lifestyle_nw_steward
+					has_court_position = court_jester_court_position
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+
+	#Dragonstone Armours
+    asoiaf_legwear_dragonstone_legs_male = {
+        dna_modifiers = {
+            accessory = {
+				mode = add
+				gene = legwear
+				template = asoiaf_all_legwears
+				accessory = male_legwear_asoiaf_dragonstone_legs
+			}
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+			modifier = {
+                add = 130
+				is_male = yes
+				AND = {
+                    OR = { #All "western" cultures
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = western
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = western
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = western
+                        }
+                    }
+					OR = {
+                        AND = { #rulers of Dragonstone
+                            is_landed = yes
+                            capital_province.barony ?= { this = title:b_dragonstone }
+                        }
+                        AND = { #courtiers of rulers of Dragonstone
+                            exists = liege
+                            is_courtier = yes
+                            liege.capital_province.barony ?= { this = title:b_dragonstone }
+                        }
+                        house ?= house:house_BaratheonDS #members of House Baratheon of Dragonstone
+						AND = { #courtiers of members of House Baratheon of Dragonstone
+                            exists = liege
+                            is_courtier = yes
+                            liege.house ?= house:house_BaratheonDS
+                        }
+                    }
+                    NOT = { dynasty ?= dynasty:dynn_Targaryen } #Targaryen exception so they use cultural Valyrian armour
+					NAND = { #Exception for Rhaenyra's "Velaryon" children
+                        mother ?= { has_inactive_trait = asoiaf_Targaryen_63_trait }
+                        culture = { has_cultural_pillar = heritage_valyrian }
+                    }
+                }
+				has_game_rule = asoiaf_new_clothes_crownlands_rule_on
+            }
+            modifier = {
+				factor = 0
+				OR = {
+					should_be_naked_trigger = yes
+					has_trait = septon
+					has_trait = most_devout_member
+					has_trait = silent_sister
+					has_trait = red_priest
+					has_trait = devoted
+					has_trait = maester
+					has_trait = maester_historical
+					has_trait = archmaester
+					has_trait = kingsguard
+					has_trait = nightswatch
+					has_trait = nightswatch_historical
+					has_trait = lifestyle_nw_builder
+					has_trait = lifestyle_nw_ranger
+					has_trait = lifestyle_nw_steward
+					has_court_position = court_jester_court_position
+				}
+			}
+            modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	asoiaf_legwear_dragonstone_legs_female = {
+        dna_modifiers = {
+            accessory = {
+				mode = add
+				gene = legwear
+				template = asoiaf_all_legwears
+				accessory = female_legwear_asoiaf_dragonstone_legs
+				type = female
+			}
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+			modifier = {
+                add = 130
+				is_female = yes
+				AND = {
+                    OR = { #All "western" cultures
+                        portrait_commoner_armor_trigger = {
+                            CULTURE_INPUT = western
+                        }
+                        portrait_low_nobles_armor_trigger = {
+                            CULTURE_INPUT = western
+                        }
+                        portrait_high_nobles_armor_trigger = {
+                            CULTURE_INPUT = western
+                        }
+                    }
+					OR = {
+                        AND = { #rulers of Dragonstone
+                            is_landed = yes
+                            capital_province.barony ?= { this = title:b_dragonstone }
+                        }
+                        AND = { #courtiers of rulers of Dragonstone
+                            exists = liege
+                            is_courtier = yes
+                            liege.capital_province.barony ?= { this = title:b_dragonstone }
+                        }
+                        house ?= house:house_BaratheonDS #members of House Baratheon of Dragonstone
+						AND = { #courtiers of members of House Baratheon of Dragonstone
+                            exists = liege
+                            is_courtier = yes
+                            liege.house ?= house:house_BaratheonDS
+                        }
+                    }
+                    NOT = { dynasty ?= dynasty:dynn_Targaryen } #Targaryen exception so they use cultural Valyrian armour
+					NAND = { #Exception for Rhaenyra's "Velaryon" children
+                        mother ?= { has_inactive_trait = asoiaf_Targaryen_63_trait }
+                        culture = { has_cultural_pillar = heritage_valyrian }
+                    }
+                }
+				has_game_rule = asoiaf_new_clothes_crownlands_rule_on
+            }
+            modifier = {
+				factor = 0
+				OR = {
+					should_be_naked_trigger = yes
+					has_trait = septon
+					has_trait = most_devout_member
+					has_trait = silent_sister
+					has_trait = red_priest
+					has_trait = devoted
+					has_trait = maester
+					has_trait = maester_historical
+					has_trait = archmaester
+					has_trait = kingsguard
+					has_trait = nightswatch
+					has_trait = nightswatch_historical
+					has_trait = lifestyle_nw_builder
+					has_trait = lifestyle_nw_ranger
+					has_trait = lifestyle_nw_steward
+					has_court_position = court_jester_court_position
+				}
+			}
+            modifier = {
+				factor = 0
+				NOT =  { is_agot_plus_loaded_trigger = yes }
+			}
+		}
+	}
+	
+	asoiaf_legwear_rhaegar_armour = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = high_valyrian_war_legwear
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				any_equipped_character_artifact = { has_variable = rhaegar_armor }
+				portrait_wear_armor_trigger = yes
+			}
+			modifier = {
+				factor = 0
+				has_trait = kingsguard
+			}
+		}
+	}
+
+	asoiaf_legwear_robert_armour = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = stormlands_war_04_legwear
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 300
+				any_equipped_character_artifact = { has_variable = robert_armor }
+				portrait_wear_armor_trigger = yes
+			}
+			modifier = {
+				factor = 0
+				has_trait = kingsguard
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+pdxmesh = {
+	name = "asoiaf_executioner_cowl_mesh"
+	file = "asoiaf_executioner_cowl.mesh"
+
+	meshsettings = {
+		name = "asoiaf_executioner_cowlShape"
+		index = 0
+		texture_diffuse = "asoiaf_executioner_cowl_diffuse.dds"
+		texture_normal = "asoiaf_executioner_cowl_normal.dds"
+		texture_specular = "asoiaf_executioner_cowl_properties.dds"
+		shader = "portrait_attachment_pattern"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+entity = {
+	name = "male_headgear_asoiaf_executioner_cowl_entity"
+	pdxmesh = "asoiaf_executioner_cowl_mesh"
+
+	game_data = {
+		portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/m_headgears/asoiaf/asoiaf_generic/asoiaf_executioner_cowl/asoiaf_executioner_cowl_mask_pattern.dds"
+				variation = "asoiaf_executioner_clothes"
+			}
+		}
+	}
+}

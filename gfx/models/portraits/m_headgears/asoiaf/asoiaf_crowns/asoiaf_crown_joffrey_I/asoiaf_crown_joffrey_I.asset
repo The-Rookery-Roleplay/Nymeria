@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "male_headgear_secular_asoiaf_crown_joffrey_I_mesh"
+	file = "asoiaf_crown_joffrey_I.mesh"
+
+	meshsettings = {
+		name = "asoiaf_crown_joffrey_IShape"
+		index = 0
+		texture_diffuse = "asoiaf_crown_joffrey_I_diffuse.dds"
+		texture_normal = "asoiaf_crown_joffrey_I_normal.dds"
+		texture_specular = "asoiaf_crown_joffrey_I_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "male_headgear_secular_asoiaf_crown_joffrey_I_entity"
+	pdxmesh = "male_headgear_secular_asoiaf_crown_joffrey_I_mesh"
+}

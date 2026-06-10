@@ -1,0 +1,27 @@
+pdxmesh = {
+	name = "asoiaf_umber_helm_low_mesh"
+	file = "asoiaf_umber_helm_low.mesh"
+
+	meshsettings = {
+		name = "asoiaf_umber_helm_lowShape"
+		index = 0
+		texture_diffuse = "asoiaf_umber_helm_low_diffuse.dds"
+		texture_normal = "asoiaf_umber_helm_low_normal.dds"
+		texture_specular = "asoiaf_umber_helm_low_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	meshsettings = {
+		name = "asoiaf_umber_helm_lowShape"
+		index = 1
+		texture_diffuse = "asoiaf_umber_helm_low_2_diffuse.dds"
+		texture_normal = "asoiaf_umber_helm_low_2_normal.dds"
+		texture_specular = "asoiaf_umber_helm_low_2_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+entity = {
+	name = "male_headgear_asoiaf_umber_helm_low_entity"
+	pdxmesh = "asoiaf_umber_helm_low_mesh"
+}

@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "asoiaf_sword_longclaw_mesh"
+	file = "asoiaf_sword_longclaw.mesh"
+
+	meshsettings = {
+		name = "asoiaf_sword_longclawShape"
+		index = 0
+		texture_diffuse = "asoiaf_sword_longclaw_diffuse.dds"
+		texture_normal = "asoiaf_sword_longclaw_normal.dds"
+		texture_specular = "asoiaf_sword_longclaw_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "asoiaf_sword_longclaw_entity"
+	pdxmesh = "asoiaf_sword_longclaw_mesh"
+}

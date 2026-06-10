@@ -1,0 +1,2931 @@
+﻿##################
+#	Variations	 #
+##################
+
+variation = {
+	name = "asoiaf_handmaiden_cloth_1"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	#pattern = { #commented out for now because silk just looks closer to the show's flowy/airy textile
+	#	weight = 1
+	#	#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+	#	r = { textures = "western_wool_plain_01" 	layout = "small_trim_layout" }
+	#	g = { textures = "western_wool_plain_01" 	layout = "plain_fabric_layout" }
+	#	b = { textures = "western_wool_plain_01" 	layout = "plain_fabric_layout" }
+	#	a = { textures = "western_wool_plain_01"	layout = "plain_fabric_layout" }
+	#}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01" 	layout = "plain_fabric_layout" }
+		g = { textures = "western_silk_plain_01" 	layout = "plain_fabric_layout" }
+		b = { textures = "western_silk_plain_01" 	layout = "plain_fabric_layout" }
+		a = { textures = "western_silk_plain_01"	layout = "plain_fabric_layout" }
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_handmaiden_cloth_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_handmaiden_cloth_2"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = { #low
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_02"	layout = "plain_fabric_layout" } #bodice
+		g = { textures = "western_linen_plain_02"	layout = "plain_fabric_layout" } #skirt
+		b = { textures = "western_silk_brocade_04"	layout = "western_silk_brocade_01_layout" } #belt
+		a = { textures = "western_wool_trim_01"		layout = "medium_trim_layout" } #collar
+	}
+	pattern = { #higher
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"	layout = "plain_fabric_layout" } #bodice
+		g = { textures = "western_linen_plain_02"	layout = "plain_fabric_layout" } #skirt
+		b = { textures = "western_silk_brocade_04"	layout = "western_silk_brocade_01_layout" } #belt
+		a = { textures = "western_wool_trim_01"		layout = "medium_trim_layout" } #collar
+	}
+	pattern = { #highest
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #bodice
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #skirt
+		b = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #belt
+		a = { textures = "western_silk_trim_01"			layout = "medium_trim_layout" } #collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/color_palette_western_nobility_high_01.dds" }
+}
+
+variation = {
+	name = "asoiaf_reach_tunic_1_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_reach_tunic_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_reach_tunic_1_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_reach_tunic_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_reach_tunic_1_coa"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #tunic
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_reach_tunic_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_crownlands_tunic_joffrey_sash"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sash
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_crownlands_tunic_joffrey_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_crownlands_tunic_joffrey_no_clasps"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "velvet_01"					layout = "plain_fabric_layout" } #sash
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_crownlands_tunic_joffrey_2.dds" }
+}
+
+variation = {
+	name = "asoiaf_crownlands_tunic_joffrey_no_clasps_leather"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"					layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"			layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"		layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_04"			layout = "western_silk_brocade_01_layout" } #sash
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_crownlands_tunic_joffrey_4.dds" }
+}
+
+variation = {
+	name = "asoiaf_crownlands_tunic_joffrey_mourning"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_03"		layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_03"		layout = "plain_fabric_layout" } #sash
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_crownlands_tunic_joffrey_3.dds" }
+}
+
+variation = {
+	name = "asoiaf_crownlands_tunic_tommen"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_02"	layout = "small_trim_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "byzantine_silk_brocade_02"	layout = "small_trim_layout" } #sash
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_crownlands_tunic_tommen.dds" }
+}
+
+variation = {
+	name = "asoiaf_crownlands_tunic_tommen_necklace"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_02"	layout = "small_trim_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "byzantine_silk_brocade_02"	layout = "small_trim_layout" } #sash
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_crownlands_tunic_tommen_necklace.dds" }
+}
+
+variation = { #byzantine_silk_brocade_01, byzantine_silk_brocade_02
+	name = "asoiaf_crownlands_tunic_necklace"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_01"	layout = "small_trim_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "byzantine_silk_brocade_01"	layout = "small_trim_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_02"	layout = "small_trim_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "byzantine_silk_brocade_02"	layout = "small_trim_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "small_trim_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_01"		layout = "small_trim_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_02"		layout = "small_trim_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_02"		layout = "small_trim_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "velvet_01"					layout = "plain_fabric_layout" } #sash
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_crownlands_tunic_1_necklace.dds" }
+}
+
+variation = {
+	name = "asoiaf_crownlands_tunic_1_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "small_trim_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #sash
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_crownlands_tunic_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_crownlands_tunic_1_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #sash
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #sash
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_crownlands_tunic_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_crownlands_tunic_1_coa"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #tunic - CoA
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sash - CoA
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "small_trim_layout" } #tunic - CoA
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sash - CoA
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #tunic - CoA
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sash - CoA
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #tunic - CoA
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #sash - CoA
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #tunic - CoA
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #sash - CoA
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #tunic - CoA
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sash - CoA
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #tunic - CoA
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #sash - CoA
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #tunic - CoA
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #neck
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #sash - CoA
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_crownlands_tunic_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_westeros_dress_1_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_01"	layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_01"	layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_westeros_dress_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_westeros_dress_1_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_westeros_dress_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_emerald_necklace"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		g = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #UNUSED
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #UNUSED
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #UNUSED
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_emerald_necklace.dds" }
+}
+
+variation = {
+	name = "asoiaf_westeros_dress_2_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_01"	layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_01"	layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth secondary
+		b = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_westeros_dress_2.dds" }
+}
+
+variation = {
+	name = "asoiaf_westeros_dress_2_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth secondary
+		b = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth main
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth secondary
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #cloth trim
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_westeros_dress_2.dds" }
+}
+
+variation = {
+	name = "asoiaf_knights_jerkin_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "byzantine_silk_brocade_01"	layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_knights_jerkin.dds" }
+}
+
+variation = {
+	name = "asoiaf_knights_jerkin_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_knights_jerkin.dds" }
+}
+
+variation = {
+	name = "asoiaf_knights_jerkin_bronn"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "northern_wool_04"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_knights_jerkin_bronn.dds" }
+}
+
+variation = {
+	name = "asoiaf_knights_jerkin_lancel"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_03"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_knights_jerkin_lancel.dds" }
+}
+
+variation = {
+	name = "asoiaf_knights_jerkin_radzig"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "byzantine_silk_brocade_04"	layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #cloth collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_knights_jerkin_radzig.dds" }
+}
+
+variation = {
+	name = "asoiaf_stormlands_overcoat_1_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "byzantine_silk_brocade_01"	layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "byzantine_silk_brocade_01"	layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "byzantine_silk_brocade_01"	layout = "western_silk_brocade_01_layout" } #sleeves
+		b = { textures = "velvet_01"					layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #sleeves
+		b = { textures = "velvet_01"					layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #sleeves
+		b = { textures = "velvet_01"					layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #sleeves
+		b = { textures = "velvet_01"					layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #sleeves
+		b = { textures = "velvet_01"					layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #sleeves
+		b = { textures = "velvet_01"					layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_stormlands_overcoat_1.dds" }
+}
+
+variation = { #western_linen_fine_plain_01; western_wool_plain_01; western_linen_plain_02
+	name = "asoiaf_stormlands_overcoat_1_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #sleeves
+		b = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_stormlands_overcoat_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_lannister_tunic_1_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #tunic
+		g = { textures = "western_wool_trim_01"			layout = "medium_trim_layout" } #tunic trim
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_lannister_tunic_1.dds" }
+}
+variation = {
+	name = "asoiaf_lannister_tunic_1_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_wool_trim_01"			layout = "medium_trim_layout" } #tunic trim
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #scarf
+		a = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_lannister_tunic_1.dds" }
+}
+
+variation = { #ccp7_fishskin_leather_01; fishskin_layout
+	name = "asoiaf_coa_ironborn_armour"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_02"		layout = "agot_armor_layout_01" } #all else
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #scarf
+		#b = { textures = "western_wool_plain_02"		layout = "agot_armor_layout_01" } #unused
+		#a = { textures = "western_wool_plain_02"		layout = "agot_armor_layout_01" } #unused
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_ironborn_armour_coa.dds" }
+}
+
+variation = {
+	name = "asoiaf_coa_ironborn_helm"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_wool_plain_02"		layout = "agot_armor_layout_01" } #cloth
+		g = { textures = "western_wool_plain_02"		layout = "agot_armor_layout_01" } #all else
+		b = { textures = "western_wool_plain_02"		layout = "agot_armor_layout_01" } #all else
+		a = { textures = "western_wool_plain_02"		layout = "agot_armor_layout_01" } #all else
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_ironborn_helm_coa.dds" }
+}
+
+variation = {
+	name = "asoiaf_bolton_tunic"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth skirt
+		b = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #leather jerkin
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #all else
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #cloth skirt
+		b = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #leather jerkin
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #all else
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth skirt
+		b = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #leather jerkin
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #all else
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #cloth skirt
+		b = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #leather jerkin
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #all else
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth skirt
+		b = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #leather jerkin
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #all else
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth skirt
+		b = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #leather jerkin
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #all else
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth skirt
+		b = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #leather jerkin
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #all else
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "velvet_01"					layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth skirt
+		b = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #leather jerkin
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #all else
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_bolton_tunic.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_jerkin_1"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #sleeves
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #sleeves
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #sleeves
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #sleeves
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #sleeves
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #sleeves
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_jerkin_1.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_jerkin_2_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_01"			layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "ccp4_fur_01"				layout = "fine_fur_layout" } #fur collar
+		a = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"			layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_01"			layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "ccp4_fur_01"				layout = "fine_fur_layout" } #fur collar
+		a = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_01"			layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_01"			layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "ccp4_fur_01"				layout = "fine_fur_layout" } #fur collar
+		a = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_02"	layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_01"			layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "ccp4_fur_01"				layout = "fine_fur_layout" } #fur collar
+		a = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_01"	layout = "plain_fabric_layout" } #shirt
+		g = { textures = "leather_plain_01"			layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "ccp4_fur_01"				layout = "fine_fur_layout" } #fur collar
+		a = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_jerkin_2_high.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_jerkin_2_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #shirt
+		g = { textures = "northern_wool_02"			layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "ccp4_fur_01"				layout = "fine_fur_layout" } #fur collar
+		a = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_01"			layout = "plain_fabric_layout" } #shirt
+		g = { textures = "northern_wool_02"			layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "ccp4_fur_01"				layout = "fine_fur_layout" } #fur collar
+		a = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_02"	layout = "plain_fabric_layout" } #shirt
+		g = { textures = "northern_wool_02"			layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "ccp4_fur_01"				layout = "fine_fur_layout" } #fur collar
+		a = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_01"	layout = "plain_fabric_layout" } #shirt
+		g = { textures = "northern_wool_02"			layout = "plain_fabric_layout" } #jerkin
+		b = { textures = "ccp4_fur_01"				layout = "fine_fur_layout" } #fur collar
+		a = { textures = "northern_wool_04"			layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_jerkin_2_low.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_tunic_1_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_tunic_1_high.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_tunic_1_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_03"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_01"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_03"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_03"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_03"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_03"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_01"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_03"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_01"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_03"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_01"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_01"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_01"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "northern_wool_01"				layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_03"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_01"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_03"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_01"				layout = "plain_fabric_layout" } #tunic
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		a = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur collar
+	}
+
+	# Color palette textures are 16-wide and N-high.western_linen_plain_01
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_tunic_1_low.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_dress_1_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #dress (jacket + outer skirt)
+		g = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #scarf
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #dress (jacket + outer skirt)
+		g = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #scarf
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #dress (jacket + outer skirt)
+		g = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #scarf
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #dress (jacket + outer skirt)
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #scarf
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #dress (jacket + outer skirt)
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #scarf
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #dress (jacket + outer skirt)
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #scarf
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_dress_1_high.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_dress_1_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #dress (jacket + outer skirt)
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #scarf
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #dress (jacket + outer skirt)
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #scarf
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_dress_1_low.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_dress_1_catelyn"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #dress (jacket + outer skirt)
+		g = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #scarf
+		b = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_dress_1_catelyn.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_dress_1_catelyn_ceremonial"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #dress (jacket + outer skirt)
+		g = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #scarf
+		b = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #sleeves
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_dress_1_catelyn_ceremonial.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_dress_1_sansa"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = { #ep3_byzantine_era1_brocade_04 (brocade with branches and birds)
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "ep3_byzantine_era2_brocade_04"	layout = "small_trim_layout" } #dress (jacket + outer skirt)
+		g = { textures = "western_linen_fine_plain_01"		layout = "plain_fabric_layout" } #scarf
+		b = { textures = "northern_wool_02"					layout = "plain_fabric_layout" } #inner skirt
+		a = { textures = "western_linen_plain_02"			layout = "plain_fabric_layout" } #sleeves
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_dress_1_sansa.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_dress_2"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = { #wood_painted_01; wood_plain_01
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #dress
+		g = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #apron
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #dress
+		g = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #apron
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #dress
+		g = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #apron
+		b = { textures = "all_silver_plain_rough_01"	layout = "plain_fabric_layout" } #metal
+		a = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_dress_2.dds" }
+}
+
+variation = {
+	name = "asoiaf_huntsman_clothes"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 3
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #coloured wraps
+		g = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #inner leather hose
+		b = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #coloured wraps
+		g = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #inner leather hose
+		b = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #coloured wraps
+		g = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #inner leather hose
+		b = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #coloured wraps
+		g = { textures = "leather_plain_03"				layout = "plain_fabric_layout" } #inner hose
+		b = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_huntsman_clothes.dds" }
+}
+
+variation = {
+	name = "asoiaf_executioner_clothes"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 3
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		b = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+		a = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 2
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		b = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+		a = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		b = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+		a = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		b = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+		a = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather
+		b = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+		a = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_executioner_clothes.dds" }
+}
+
+variation = {
+	name = "asoiaf_leather_jerkin_1_north"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_wool_plain_02"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_leather_jerkin_1_north.dds" }
+}
+variation = {
+	name = "asoiaf_leather_jerkin_1_high"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_01"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_02"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_03"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_brocade_04"		layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "byzantine_silk_brocade_01"	layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "byzantine_silk_brocade_02"	layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "byzantine_silk_brocade_03"	layout = "western_silk_brocade_01_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_silk_plain_01"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "velvet_01"					layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_leather_jerkin_1_high.dds" }
+}
+variation = {
+	name = "asoiaf_leather_jerkin_1_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_plain_02"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_wool_plain_02"		layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "western_linen_fine_plain_01"	layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_leather_jerkin_1_high.dds" }
+}
+variation = {
+	name = "asoiaf_leather_jerkin_1_eddard"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_leather_jerkin_1_eddard.dds" }
+}
+variation = {
+	name = "asoiaf_leather_jerkin_1_jon"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth shirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather skirt
+		a = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth collar
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_leather_jerkin_1_jon.dds" }
+}
+
+variation = {
+	name = "asoiaf_umber_armour_dynast"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #leather jerkin
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather buckles
+		b = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur
+		a = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #leather skirt trim
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_umber_armour_dynast.dds" }
+}
+
+variation = {
+	name = "asoiaf_umber_armour_low"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth scarf
+		b = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #leather skirt trim
+		a = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth scarf
+		b = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #leather skirt trim
+		a = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth scarf
+		b = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #leather skirt trim
+		a = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #N/A
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth scarf
+		b = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #leather skirt trim
+		a = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "western_linen_plain_01"		layout = "plain_fabric_layout" } #cloth scarf
+		b = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #leather skirt trim
+		a = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth shirt
+		g = { textures = "western_wool_plain_01"		layout = "plain_fabric_layout" } #cloth scarf
+		b = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #leather skirt trim
+		a = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_umber_armour_low.dds" }
+}
+
+variation = {
+	name = "asoiaf_umber_legs"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		b = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur
+		a = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #N/A
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		b = { textures = "ccp4_fur_01"					layout = "fine_fur_layout" } #fur
+		a = { textures = "leather_plain_02"				layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_umber_armour_dynast.dds" }
+}
+
+variation = {
+	name = "asoiaf_stark_legs"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+	#
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_stark_legs.dds" }
+}
+
+variation = {
+	name = "asoiaf_north_armour"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather hard
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather hard
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_north_armour.dds" }
+}
+
+variation = {
+	name = "asoiaf_manderly_armour"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_manderly_armour.dds" }
+}
+
+variation = {
+	name = "asoiaf_manderly_armour_dynast"
+
+	# patterns are sampled using UV-set 2
+	# uv-coordinates will be modified with scale, rotation, and offset before the texture is sampled
+	# If more than one pattern_layout is provided one will be chosen at random (uniformly, no weights)
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_04"				layout = "plain_fabric_layout" } #cloth collar
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather skirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+	pattern = {
+		weight = 1
+		#r,g,b,a here refers to the channels in the pattern_mask scripted in the entity
+		r = { textures = "northern_wool_02"				layout = "plain_fabric_layout" } #cloth collar
+		g = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #leather skirt
+		b = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+		a = { textures = "leather_plain_01"				layout = "plain_fabric_layout" } #N/A
+	}
+
+	# Color palette textures are 16-wide and N-high.
+	# Shaders will chose a row in the texture at random, and each column will be sampled once.
+	# First column will be masked by the red channel in the masks, second by the green, etc.
+	# If more than one color palette texture is provided one will be chosen at random (uniformly, no weights)
+	color_palette = { weight = 1		texture = "gfx/portraits/accessory_variations/textures/asoiaf_colour_palette_manderly_armour_dynast.dds" }
+}

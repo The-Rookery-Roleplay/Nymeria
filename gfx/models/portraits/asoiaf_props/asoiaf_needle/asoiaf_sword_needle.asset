@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "asoiaf_sword_needle_mesh"
+	file = "asoiaf_sword_needle.mesh"
+
+	meshsettings = {
+		name = "asoiaf_sword_needleShape"
+		index = 0
+		texture_diffuse = "asoiaf_sword_needle_diffuse.dds"
+		texture_normal = "asoiaf_sword_needle_normal.dds"
+		texture_specular = "asoiaf_sword_needle_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "asoiaf_sword_needle_entity"
+	pdxmesh = "asoiaf_sword_needle_mesh"
+}

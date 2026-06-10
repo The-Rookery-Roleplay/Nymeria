@@ -1,0 +1,27 @@
+pdxmesh = {
+	name = "f_asoiaf_bolton_helm_high_mesh"
+	file = "f_asoiaf_bolton_helm_high.mesh"
+
+	meshsettings = {
+		name = "f_asoiaf_bolton_helm_highShape"
+		index = 0
+		texture_diffuse = "asoiaf_bolton_helm_high_diffuse.dds"
+		texture_normal = "asoiaf_bolton_helm_high_normal.dds"
+		texture_specular = "asoiaf_bolton_helm_high_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	meshsettings = {
+		name = "f_asoiaf_bolton_helm_highShape"
+		index = 1
+		texture_diffuse = "asoiaf_nights_watch_coif_diffuse.dds"
+		texture_normal = "asoiaf_nights_watch_coif_normal.dds"
+		texture_specular = "asoiaf_nights_watch_coif_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+entity = {
+	name = "female_headgear_asoiaf_bolton_helm_high_entity"
+	pdxmesh = "f_asoiaf_bolton_helm_high_mesh"
+}

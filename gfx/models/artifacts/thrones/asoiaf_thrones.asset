@@ -1,0 +1,42 @@
+
+#################
+#	Meshes		#
+#################
+
+pdxmesh = {
+	name = "asoiaf_stark_throne_mesh"
+	file = "asoiaf_stark_throne.mesh"
+	#scale = 40
+	
+	#lod_percentages = {
+	#	lod = { index = 1 percent = 40.0 }
+	#	lod = { index = 2 percent = 20.0 }
+	#}
+
+	meshsettings = {
+		name = "asoiaf_stark_throneShape"
+		index = 0
+		texture_diffuse = "asoiaf_stark_throne_diffuse.dds"
+		texture_normal = "asoiaf_stark_throne_normal.dds"
+		#texture_specular = "asoiaf_stark_throne_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+#################
+#	Entities	#
+#################
+
+entity = {
+	name = "asoiaf_stark_throne_entity"
+	pdxmesh = "asoiaf_stark_throne_mesh"
+	locator = { name = ruler_locator position = { -1 14 -38 } }
+
+	game_data = {
+		throne_entity_user_data = {
+			animation = throne_room_ruler
+			use_throne_transform = no
+		}
+	}
+}
