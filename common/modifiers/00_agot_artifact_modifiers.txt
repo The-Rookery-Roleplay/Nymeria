@@ -26,72 +26,72 @@ artifact_learning_1_stacking_modifier = {
 
 # Unique modifiers
 vs_blackfyre_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	vassal_opinion = 10
 	vassal_limit = 10
 }
 vs_black_blood_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	dread_baseline_add = 5
 	dread_gain_mult = 0.2
 }
 vs_eleneis_grace_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	additional_fort_level = 1
 }
 vs_brightroar_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	development_growth = 0.10
 	domain_tax_mult = 0.05
 }
 vs_cloudbreak_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	diplomacy = 2
 }
 vs_pincer_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	monthly_stewardship_lifestyle_xp_gain_mult = 0.25
 }
 
 vs_dark_moon_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	learning = 2
 }
 
 vs_dark_sister_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	dread_baseline_add = 10
 }
 vs_heartsbane_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	movement_speed = 0.10
 }
 vs_ice_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	short_reign_duration_mult = -0.32
-	#domain_limit = 1
+	domain_limit = 1
 }
 vs_oathkeeper_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	knight_effectiveness_mult = 0.15
@@ -104,7 +104,7 @@ vs_oathkeeper_modifier = {
 # 	westerman_main_opinion = 20
 # }
 vs_widows_wail_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	dread_baseline_add = 10
@@ -117,19 +117,19 @@ vs_widows_wail_modifier = {
 # 	westerman_main_opinion = 20
 # }
 vs_lady_forlorn_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	martial = 2
 }
 vs_lamentation_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	dynasty_opinion = 5
 }
 vs_longclaw_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	health = 0.05
@@ -138,37 +138,37 @@ vs_longclaw_modifier = {
 	minorroad_forest_advantage = 6
 }
 vs_nightfall_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	max_loot_mult = 0.5
 }
 vs_orphan_maker_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	dread_baseline_add = 20
 }
 vs_red_rain_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	raid_speed = 0.50
 }
 vs_truth_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	monthly_income_per_stress_level_mult = 0.1
 }
 vs_vigilance_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	learning = 2
 }
 vs_dawn_modifier = {
-	prowess_no_portrait = 10
+	prowess_no_portrait = 17
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.5
 	monthly_martial_lifestyle_xp_gain_mult = 0.10
@@ -211,7 +211,7 @@ vs_dawn_modifier = {
 # 	diplomacy = 2
 # }
 vs_seafoam_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	diplomatic_range_mult = 0.50
@@ -235,53 +235,53 @@ vs_seafoam_modifier = {
 # 	#Max Development Level: +5 effect implemented in steward_values, uncomment when this is uncommented
 # }
 vs_stalwart_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	monthly_county_control_growth_add = 2
 	monthly_martial_lifestyle_xp_gain_mult = 0.10
 }
 vs_swansong_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	enemy_hard_casualty_modifier = 0.1
 	hard_casualty_modifier = 0.1
 }
 vs_swordfish_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	levy_reinforcement_rate_same_faith = 0.1
 	attraction_opinion = 5
 }
 vs_tranquility_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	heavy_cavalry_toughness_mult = 0.08
 }
 vs_skullcleaver_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	monthly_martial_lifestyle_xp_gain_mult = 0.20
 	different_culture_opinion = -10
 }
 vs_pride_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	negate_health_penalty_add = 0.5
 }
 vs_darktalon_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	monthly_intrigue_lifestyle_xp_gain_mult = 0.05
 }
 vs_defiance_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	light_cavalry_maintenance_mult = -0.25
@@ -293,7 +293,7 @@ vs_defiance_modifier = {
 # 	monthly_diplomacy_lifestyle_xp_gain_mult = 0.05
 # }
 vs_disputant_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	courtier_and_guest_opinion = 10
@@ -305,19 +305,19 @@ vs_disputant_modifier = {
 # 	additional_fort_level = 1
 # }
 vs_remige_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	knight_effectiveness_mult = 0.15
 }
 vs_supremacy_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	attraction_opinion = 15
 }
 vs_wyrmfang_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	same_faith_opinion = 15
@@ -326,7 +326,7 @@ vs_wyrmfang_modifier = {
 	minorroad_steppe_advantage = 5
 }
 vs_widestripe_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	hills_advantage = 4
@@ -337,7 +337,7 @@ vs_widestripe_modifier = {
 	minorroad_highlands_advantage = 4
 }
 vs_dancer_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	mountains_advantage = 5
@@ -349,7 +349,7 @@ vs_dancer_modifier = {
 # 	controlled_province_advantage = 5
 # }
 vs_adders_fang_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	enemy_hard_casualty_modifier = 0.05
@@ -366,7 +366,7 @@ vs_adders_fang_modifier = {
 # 	steppe_advantage = 5
 # }
 vs_iron_will_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	forest_advantage = 6
@@ -374,7 +374,7 @@ vs_iron_will_modifier = {
 	minorroad_forest_advantage = 6
 }
 vs_evergold_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	development_growth = 0.05
@@ -386,7 +386,7 @@ vs_evergold_modifier = {
 # 	different_faith_opinion = 5
 # }
 vs_longthorn_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	monthly_stewardship_lifestyle_xp_gain_mult = 0.05
@@ -592,84 +592,84 @@ dragonbone_longbow_modifier = {
 
 #Forgables
 vs_black_death_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	dread_baseline_add = 10
 }
 vs_mothers_grief_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	retreat_losses = -0.2
 }
 vs_talon_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	movement_speed = 0.05
 }
 vs_glory_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	tolerance_advantage_mod = 5
 }
 vs_skinpeeler_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	dread_baseline_add = 5
 }
 vs_sting_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	stewardship_per_stress_level = 2
 }
 vs_stormy_nights_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	min_combat_roll = -2
 	max_combat_roll = 4
 }
 vs_strangers_touch_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	dread_decay_mult = -0.15
 }
 vs_dragonbane_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	monthly_martial_lifestyle_xp_gain_mult = 0.05
 }
 vs_iron_price_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	raid_speed = 0.15
 }
 vs_unkindness_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 	knight_effectiveness_mult = 0.1
 }
 vs_generic_andal_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 }
 vs_generic_firstman_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 }
 vs_generic_valyrian_modifier = {
-	prowess_no_portrait = 9
+	prowess_no_portrait = 15
 	monthly_dynasty_prestige_mult = 0.05
 	monthly_prestige = 0.2
 }

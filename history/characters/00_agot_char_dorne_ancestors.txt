@@ -1,4 +1,4 @@
-############################       SALTY DORNISH        ############################
+﻿############################       SALTY DORNISH        ############################
 ####################################################################################
 
 ###### HOUSE MARTELL (id = dynn_Martell/house_Martell)
@@ -36705,6 +36705,7 @@ Dayne_17 = {
 		make_trait_inactive = black_hair
 		make_trait_inactive = purple_eyes_13
 		add_character_flag = canon_status_canon
+		add_character_flag = citadel_dayne17_outfit
 		make_trait_inactive = scripted_appearance
 	}
 	7281.1.1 = {

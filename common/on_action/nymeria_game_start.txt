@@ -69,12 +69,16 @@ nymeria_place_bookmark_artifacts = {
             character:Jast_200 ?= { agot_create_artifact_vs_pride_effect = { OWNER = THIS } }
             character:Celtigar_200 ?= { agot_create_artifact_vs_pincer_effect = { OWNER = THIS } }
             character:Roxton_200 ?= { agot_create_artifact_vs_orphan_maker_effect = { OWNER = THIS } }
-            character:Greyjoy_200 ?= { agot_create_artifact_vs_nightfall_effect = { OWNER = THIS } }
+            # The Greyjoys do not carry Nightfall at this start. - Kizan
+            # character:Greyjoy_200 ?= { agot_create_artifact_vs_nightfall_effect = { OWNER = THIS } }
             character:Mormont_200 ?= { agot_create_artifact_vs_longclaw_effect = { OWNER = THIS } }
             character:Royce_200 ?= { agot_create_artifact_vs_lamentation_effect = { OWNER = THIS } }
             character:Corbray_200 ?= { agot_create_artifact_vs_lady_forlorn_effect = { OWNER = THIS } }
-            character:Stark_200 ?= { agot_create_artifact_vs_ice_effect = { OWNER = THIS } }
-            character:Tarly_200 ?= { agot_create_artifact_vs_heartsbane_effect = { OWNER = THIS } }
+            # Stark_200 does not exist, the ?= silently skipped and Ice never spawned. Brandon
+            # the Burner (Stark_30, alive 7245-7307) carries it instead. - Kizan
+            character:Stark_30 ?= { agot_create_artifact_vs_ice_effect = { OWNER = THIS } }
+            # The Tarlys do not carry Heartsbane at this start. - Kizan
+            # character:Tarly_200 ?= { agot_create_artifact_vs_heartsbane_effect = { OWNER = THIS } }
             character:Forrester_200 ?= { agot_create_artifact_vs_iron_will_effect = { OWNER = THIS } }
             character:Rowan_200 ?= { agot_create_artifact_vs_evergold_effect = { OWNER = THIS } }
             character:Ironsmith_200 ?= { agot_create_artifact_vs_defiance_effect = { OWNER = THIS } }
@@ -88,6 +92,30 @@ nymeria_place_bookmark_artifacts = {
             character:Targaryen_200 ?= { agot_create_artifact_vs_blackfyre_effect = { OWNER = THIS } }
             character:Wyl_200 ?= { agot_create_artifact_vs_adders_fang_effect = { OWNER = THIS } }
             character:Beesbury_200 ?= { agot_create_artifact_bumblin_sword_effect = { OWNER = THIS } }
+            # Longthorn, the Gardener blade. AGOT forges it in 7300, one year after our start,
+            # so its grant chain skips our bookmark. Our Gardener king gets it a year early. - Kizan
+            character:Gardener_200 ?= { agot_create_artifact_vs_longthorn_effect = { OWNER = THIS } }
+            # The Seastone Chair belongs to the ruling Hoares, not the Greyjoys of Pyke. AGOT
+            # hands it to b_pyke's holder at setup, so take it from whoever got it and give it
+            # to King Hagon Hoare (Hoare_19, Iron Islands king from 7293). - Kizan
+            if = {
+                limit = {
+                    exists = character:Hoare_19
+                    exists = title:b_pyke.holder
+                }
+                title:b_pyke.holder = {
+                    every_character_artifact = {
+                        limit = { has_variable = seastone_chair }
+                        set_owner = {
+                            target = character:Hoare_19
+                            history = {
+                                type = given
+                                recipient = character:Hoare_19
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

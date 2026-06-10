@@ -1,10 +1,6 @@
 ﻿l_english:
 
- citadel_trade_debug_decision:0 "Citadel Trade System"
- citadel_trade_debug_decision_desc:0 "Open the debug trade system interface."
 
- citadel_trade.0001.t:0 "Citadel Trade System"
- citadel_trade.0001.d:0 "Select what you wish to do."
 
  citadel_trade.0001.a:0 "Apply Buff"
  citadel_trade.0001.b:0 "Apply Debuff"

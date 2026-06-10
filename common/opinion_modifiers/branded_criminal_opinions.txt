@@ -1,0 +1,10 @@
+﻿branded_criminal_crime = {
+	opinion = -100
+	imprisonment_reason = yes
+	execute_reason = yes
+	revoke_title_reason = yes
+}
+
+branded_me_opinion  = {
+	opinion = -100
+}

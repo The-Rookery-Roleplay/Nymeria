@@ -1,0 +1,28 @@
+﻿l_english:
+  nickname_interaction:0 "Give a nickname"
+  NICKNAME_PROPOSAL:0 "Give a nickname of your choice"
+  nickname_interaction_desc:0 "Opens a window in which you can assign a new nickname."
+  
+  nickname_event.1.t:0 "Give a nickname"
+  nickname_event.1.desc:0 "How do you want [recipient.GetSheHe|U] to be called?"
+  nickname.1.a:0 "From now on, we'll call it..."
+  
+  nickname_event.2.t:0 "Description"
+  nickname_event.2.desc:0 "Description"
+  nickname.2.a:0 "OK"
+  
+  remove_nickname_interaction:0 "Remove nickname"
+  REMOVE_NICKNAME_PROPOSAL:0 "Remove nickname"
+  remove_nickname_interaction_desc:0 "Remove nickname"
+
+  nickname_1:0 "[ROOT.Char.GetLocalizedText('nickname_text')]"
+  nickname_2:0 "[CHARACTER.Custom('Nicknamelocalization')]"
+  nickname_1_desc:0 "[ROOT.Char.GetLocalizedText('nickname_desc_text')]"
+  nickname_2_desc:0 "[CHARACTER.Custom('NicknameDesclocalization')]"
+  
+  game_rule_category_mod:0 "Mod"
+  rule_give_a_nickname_conditions:0 "Give a nickname"
+  setting_nickname_conditions_default:0 "Default"
+  setting_nickname_conditions_default_desc:0 "Nicknames can be assigned to your court, your direct vassals, and yourself."
+  setting_nickname_conditions_free:0 "Unlimited"
+  setting_nickname_conditions_free_desc:0 "There are no restrictions on the assignment of nicknames."

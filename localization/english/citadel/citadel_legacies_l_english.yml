@@ -16,6 +16,6 @@ DULVER_4:0 "The halls of Dulver stand vast and unyielding, built to weather sieg
 DULVER_5:0 "Every stone laid bears the weight of those who came before. The Dulvers walk in reverence, carrying old names, old lessons, and old pride into each new generation."
 
 
-DULVER_3:0 "Their loyalty was proven in service to the dragons, and their vows remain bound to the Iron Throne. \n\n#weak Children of House Rykker tend to be [GetTrait('loyal').GetName( GetNullCharacter )]."
-DULVER_4:0 "Rykker knights are forged through duty and reward, not ancient lineage, serving the Crown in war and peace. \n#weak Our [heavy_cavalry|E] are perfectly suited to overrun our foes.\n#weak Enables recruitment of [GetMaA('rykker_blackwater_knights').GetName] as [men_at_arms|E].#!"
-DULVER_5:0 "New blood at court learns quickly, and House Rykker survives through restraint and careful words. \n\n#weak Children of House Rykker tend to be [GetTrait('patient').GetName( GetNullCharacter )] or [GetTrait('shrewd').GetName( GetNullCharacter )]."
+RYKKER_3:0 "Their loyalty was proven in service to the dragons, and their vows remain bound to the Iron Throne. \n\n#weak Children of House Rykker tend to be [GetTrait('loyal').GetName( GetNullCharacter )]."
+RYKKER_4:0 "Rykker knights are forged through duty and reward, not ancient lineage, serving the Crown in war and peace. \n#weak Our [heavy_cavalry|E] are perfectly suited to overrun our foes.\n#weak Enables recruitment of [GetMaA('rykker_blackwater_knights').GetName] as [men_at_arms|E].#!"
+RYKKER_5:0 "New blood at court learns quickly, and House Rykker survives through restraint and careful words. \n\n#weak Children of House Rykker tend to be [GetTrait('patient').GetName( GetNullCharacter )] or [GetTrait('shrewd').GetName( GetNullCharacter )]."

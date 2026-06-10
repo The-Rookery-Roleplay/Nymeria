@@ -76,7 +76,6 @@ learn_commander_trait.101.t:0 "Bannerlord"
 #Offer:
 learn_commander_trait.3101.desc:0 "\n\n[teacher.GetFirstName] is renowned for [teacher.GetHerHis] strategic prowess on the battlefield, particularly in leading relentless offensives. If there was one who could help me understand, it would be [teacher.GetHerHim]."
 #Final test
-learn_commander_trait.3102.desc:0 "[teacher.GetTitledFirstName] has demonstrated the art of pressing on the attack with unwavering determination. My final test is a mock battle where I must lead my troops in a relentless assault against [teacher.GetHerHis] fortified positions."
 #Success
 learn_commander_trait.3103.desc:0 "[teacher.GetTitledFirstName] strides up to me. "Impressive!" [teacher.GetSheHe] declares. "Your troops displayed remarkable tenacity, pressing forward without faltering.""
 #Failure
@@ -89,9 +88,7 @@ learn_commander_trait.3102.desc:0 "\n\n[teacher.GetFirstName] is renowned as a s
 #Final test
 learn_commander_trait.3202.desc:0 "[teacher.GetTitledFirstName] has revealed to me the secrets of battlefield medicine and the importance of tending to the wounded. My final test is a simulated skirmish where I must ensure my troops receive timely medical attention amidst the chaos of combat."
 #Success
-learn_commander_trait.3302.desc:0 "[teacher.GetTitledFirstName] approaches me with a nod of approval. "Well done!" [teacher.GetSheHe] commends. "Your swift actions saved many lives on the battlefield today.""
 #Failure
-learn_commander_trait.3402.desc:0 "It all appeared to be going smoothly until the wounded overwhelmed us!\n\n[teacher.GetTitledFirstName] stands amidst the chaos of strewn bandages when I approach. "I believe I've identified where things went awry!" [teacher.GetSheHe] offers, [teacher.Custom('quirk_pos_pp')]."
 
 #CAUTIOUS PLANNER
 learn_commander_trait.301.t:0 "Cautious Planner"

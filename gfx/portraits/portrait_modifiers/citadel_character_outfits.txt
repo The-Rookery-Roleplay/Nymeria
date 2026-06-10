@@ -1,0 +1,104 @@
+﻿citadel_outfit_headgear = {
+	usage = game
+	priority = 100
+	citadel_dayne17_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				accessory = dayne_crown
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 200
+				has_character_flag = citadel_dayne17_outfit
+			}
+		}
+	}
+	citadel_outfit_headgear_none = {
+		weight = {
+			base = 1
+		}
+	}
+}
+
+citadel_outfit_cloaks = {
+	usage = game
+	priority = 100
+	citadel_dayne17_cape = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = cloaks
+				accessory = male_cloaks_secular_halfcape_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 200
+				has_character_flag = citadel_dayne17_outfit
+			}
+		}
+	}
+	citadel_outfit_cloaks_none = {
+		weight = {
+			base = 1
+		}
+	}
+}
+
+citadel_outfit_clothes = {
+	usage = game
+	priority = 100
+	citadel_dayne17_armor = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				accessory = male_clothes_stone_dornish_war_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 200
+				has_character_flag = citadel_dayne17_outfit
+			}
+		}
+	}
+	citadel_outfit_clothes_none = {
+		weight = {
+			base = 1
+		}
+	}
+}
+
+citadel_outfit_legwear = {
+	usage = game
+	priority = 100
+	citadel_dayne17_legwear = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				accessory = male_legwear_special_dragon_rider_dynastic_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 200
+				has_character_flag = citadel_dayne17_outfit
+			}
+		}
+	}
+	citadel_outfit_legwear_none = {
+		weight = {
+			base = 1
+		}
+	}
+}
+

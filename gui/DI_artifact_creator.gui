@@ -1,4 +1,4 @@
-window = {
+﻿window = {
     name = 	"DI_artifact_window"
     parentanchor = top|right
     position = { -20 20 }
@@ -264,7 +264,7 @@ window = {
                             button_standard = {
                                 name = "artifact_type_button"
                                 size = { 100% 30 }
-                                text = "testbutton"
+                                raw_text = "testbutton"
 
                                 visible = "[InDebugMode]"
 

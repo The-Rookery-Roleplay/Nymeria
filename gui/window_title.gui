@@ -1,4 +1,4 @@
-### TITLE WINDOW
+﻿### TITLE WINDOW
 
 window = {
 	name = "title_view_window"
@@ -427,7 +427,7 @@ window = {
 									onclick = "[TitleViewWindow.GoToHolding]"
 
 									size = { 120 30 }
-									text = " [Holding.GetProvince.GetNameNoTooltip]"
+									raw_text = " [Holding.GetProvince.GetNameNoTooltip]"
 									max_width = 130
 
 									tooltip = "TITLE_VIEW_GO_TO_HOLDING"
