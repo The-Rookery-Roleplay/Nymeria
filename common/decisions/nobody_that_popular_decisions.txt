@@ -1,0 +1,170 @@
+﻿nobody_that_popular_settings = {
+	picture = { reference = "gfx/interface/illustrations/decisions/decision_culture.dds" }
+	decision_group_type = debug
+	is_shown = { is_ai = no }
+	ai_check_interval = 0
+	ai_potential = { always = no }
+	ai_will_do = { base = 0 }
+	sort_order = -100
+	title = nobody_that_popular_settings_title
+	desc = nobody_that_popular_settings_desc
+	selection_tooltip  = nobody_that_popular_settings_tooltip
+	
+	#Options
+	widget = {
+	  gui = "decision_view_widget_option_list_generic"
+	  controller = decision_option_list_controller
+	  decision_to_second_step_button = nobody_that_popular_button_label
+	  show_from_start = yes
+
+	  item = {
+		is_shown = { exists = global_var:nobody_that_popular_disable_flag }
+		value = nobody_that_popular_enable
+		localization = nobody_that_popular_enable_label
+		icon = "gfx/interface/icons/text_icons/action_can_righteously_imprison.dds"
+	  }
+	  item = {
+		is_shown = { NOT = { exists = global_var:nobody_that_popular_disable_flag } }
+		value = nobody_that_popular_disable
+		localization = nobody_that_popular_disable_label
+		icon = "gfx/interface/icons/character_interactions/icon_cross.dds"
+	  }
+	  item = {
+		is_shown = { 
+			NOR = {
+				exists = global_var:nobody_that_popular_disable_flag
+				exists = global_var:nobody_that_popular_player_only_flag
+			}
+		}  
+		value = nobody_that_popular_player_only_enable
+		localization = nobody_that_popular_player_only_enable_label
+		icon = "gfx/interface/icons/character_interactions/antagonistic.dds"
+	  }
+	  item = {
+		is_shown = { 
+			NOT = { exists = global_var:nobody_that_popular_disable_flag }
+			exists = global_var:nobody_that_popular_player_only_flag
+		}  
+		value = nobody_that_popular_player_only_disable
+		localization = nobody_that_popular_player_only_disable_label
+		icon = "gfx/interface/icons/character_interactions/unity_harmonious.dds"
+	  }
+	  item = {
+		is_shown = { 
+			AND = {
+				NOT = { exists = global_var:nobody_that_popular_disable_flag }
+				exists = global_var:stranger_opinion_threshold
+				NOT = { global_var:stranger_opinion_threshold = 30 }
+			}
+		}
+		value = nobody_that_popular_opinion_adjustment_default
+		localization = nobody_that_popular_opinion_adjustment_default_label
+		icon = "gfx/interface/icons/character_interactions/icon_acknowledge_governor.dds"
+	  }
+	  item = {
+		is_shown = { 
+			AND = {
+				NOT = { exists = global_var:nobody_that_popular_disable_flag }
+				exists = global_var:stranger_opinion_threshold
+				NOT = { global_var:stranger_opinion_threshold = 50 }
+			}
+		}
+		value = nobody_that_popular_opinion_adjustment_gentle
+		localization = nobody_that_popular_opinion_adjustment_gentle_label
+		icon = "gfx/interface/icons/character_interactions/icon_boost_efficiency.dds"
+	  }
+	  item = {
+		is_shown = { 
+			AND = {
+				NOT = { exists = global_var:nobody_that_popular_disable_flag }
+				exists = global_var:stranger_opinion_threshold
+				NOT = { global_var:stranger_opinion_threshold = 10 }
+			}
+		}
+		value = nobody_that_popular_opinion_adjustment_harsh
+		localization = nobody_that_popular_opinion_adjustment_harsh_label
+		icon = "gfx/interface/icons/character_interactions/icon_damage_efficiency.dds"
+	  }
+	  item = {
+		is_shown = { NOT = { exists = global_var:nobody_that_popular_disable_flag } }  
+		value = nobody_that_popular_force_update
+		localization = nobody_that_popular_update_label
+		icon = "gfx/interface/icons/character_interactions/torture_interaction.dds"
+	  }
+	}
+	#Effects
+	effect = {
+	  if = {
+		limit = { scope:nobody_that_popular_disable = yes }
+		hidden_effect = {
+			set_global_variable = {
+				name = nobody_that_popular_disable_flag
+				value = yes
+			}
+		}
+		custom_tooltip = nobody_that_popular_disable_tooltip
+	  }
+	  else_if = {
+		limit = { scope:nobody_that_popular_force_update = yes	}
+	    custom_tooltip = nobody_that_popular_force_update_tooltip
+	  } 
+	  else_if = {
+		limit = {  scope:nobody_that_popular_player_only_enable = yes }
+		hidden_effect = {
+			set_global_variable = {
+				name = nobody_that_popular_player_only_flag
+				value = yes
+			}
+		}
+		custom_tooltip = nobody_that_popular_player_only_enable_tooltip
+	  }
+	  else_if = {
+		limit = {  scope:nobody_that_popular_player_only_disable = yes }
+		hidden_effect = {
+			remove_global_variable = nobody_that_popular_player_only_flag
+		}
+		custom_tooltip = nobody_that_popular_player_only_disable_tooltip
+	  }
+	  else_if = {
+		limit = { scope:nobody_that_popular_enable = yes }
+		hidden_effect = {
+			remove_global_variable = nobody_that_popular_disable_flag
+		}
+		custom_tooltip = nobody_that_popular_enable_tooltip
+	  }
+	  else_if = {
+		limit = { scope:nobody_that_popular_opinion_adjustment_default = yes }
+		hidden_effect = {
+			set_global_variable = {
+				name = stranger_opinion_threshold
+				value = 30
+			}
+		}
+		custom_tooltip = nobody_that_popular_opinion_adjustment_default_tooltip
+	  }
+	  else_if = {
+		limit = { scope:nobody_that_popular_opinion_adjustment_gentle = yes }
+		hidden_effect = {
+			set_global_variable = {
+				name = stranger_opinion_threshold
+				value = 50
+			}
+		}
+		custom_tooltip = nobody_that_popular_opinion_adjustment_gentle_tooltip
+	  }
+	  else_if = {
+		limit = { scope:nobody_that_popular_opinion_adjustment_harsh = yes }
+		hidden_effect = {
+			set_global_variable = {
+				name = stranger_opinion_threshold
+				value = 10
+			}
+		}
+		custom_tooltip = nobody_that_popular_opinion_adjustment_harsh_tooltip
+	  }
+	  #Update all characters
+	  hidden_effect = {update_stranger_opinion_for_all}
+	}	
+}	
+
+

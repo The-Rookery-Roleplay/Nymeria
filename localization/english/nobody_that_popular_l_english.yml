@@ -1,0 +1,26 @@
+﻿l_english:
+ nobody_that_popular_settings_title: "General Opinion Adjustment Settings (Nobody is That Popular)"
+ nobody_that_popular_settings_tooltip: "Change mod settings for Nobody is That Popular"
+ nobody_that_popular_settings_desc: "Here you can change the settings for Nobody is That Popular, and also uninstall the mod."
+ nobody_that_popular_disable_label: "Disable General Opinion Adjustment"
+ nobody_that_popular_disable_tooltip: "Disable all General Opinion Adjustment effects (uninstall mod)"
+ nobody_that_popular_enable_label: "Enable General Opinion Adjustment"
+ nobody_that_popular_enable_tooltip: "Enable General Opinion Adjustment (install mod)"
+ nobody_that_popular_opinion_adjustment_default_label: "Default Adjustment to General Opinion"
+ nobody_that_popular_opinion_adjustment_default_tooltip: "General opinion bonuses from modifiers are reduced when their sum exceeds 30"
+ nobody_that_popular_opinion_adjustment_gentle_label: "Gentle Adjustment to General Opinion"
+ nobody_that_popular_opinion_adjustment_gentle_tooltip: "General opinion bonuses from modifiers are reduced when their sum exceeds 50"
+ nobody_that_popular_opinion_adjustment_harsh_label: "Harsh Adjustment to General Opinion"
+ nobody_that_popular_opinion_adjustment_harsh_tooltip: "General opinion bonuses from modifiers are reduced when their sum exceeds 10"
+ nobody_that_popular_button_label: "See Details"
+ nobody_that_popular_settings_confirm: "Confirm"
+ nobody_that_popular_player_only_enable_label: "Disable General Opinion Adjustment for AI characters"
+ nobody_that_popular_player_only_enable_tooltip: "General Opinion Adjustment is only applied to the Player character."
+ nobody_that_popular_player_only_disable_label: "Enable General Opinion Adjustment for AI characters"
+ nobody_that_popular_player_only_disable_tooltip: "General Opinion Adjustment is applied to ALL characters."
+ nobody_that_popular_update_label: "Force Update All Characters"
+ nobody_that_popular_force_update_tooltip: "Update opinion adjustment for ALL characters."
+  #Modifiers
+strangers_opinion_modifier: "Popularity balance adjustment"
+
+

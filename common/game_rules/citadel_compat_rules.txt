@@ -1,0 +1,9 @@
+﻿hotd_visuals_rule = {
+	categories = {
+		nymeria
+	}
+	default = hotd_visuals_off
+
+	hotd_visuals = {}
+	hotd_visuals_off = {}
+}

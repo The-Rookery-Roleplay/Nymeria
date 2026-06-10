@@ -1,0 +1,7 @@
+﻿l_english:
+ rule_agot_battlefield_duel_cooldown:0 "Battlefield Duel Cooldown"
+ rule_agot_battlefield_duel_cooldown_desc:0 "Whether a character must wait 30 days between battlefield duels."
+ setting_agot_battlefield_duel_cooldown_on:0 "On"
+ setting_agot_battlefield_duel_cooldown_on_desc:0 "30 day cooldown after each duel."
+ setting_agot_battlefield_duel_cooldown_off:0 "Off"
+ setting_agot_battlefield_duel_cooldown_off_desc:0 "No cooldown between duels."

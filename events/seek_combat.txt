@@ -1,0 +1,1773 @@
+﻿### Introduction
+
+namespace = seek_combat
+
+# Starting
+
+
+scripted_effect seek_combat_transfer_equipped_artifact_effect = {
+	if = {
+		limit = {
+			any_equipped_character_artifact = { artifact_slot_type = $TYPE$ }
+		}
+		save_scope_as = artifact_knight
+		random_equipped_character_artifact = {
+			limit = { artifact_slot_type = $TYPE$ }
+			if = {
+				#AGOT Modified
+				# limit = { artifact_durability >= define:NInventory|ARTIFACT_LOW_DURABILITY }
+				limit = {
+					NOT = { has_variable = valyrian_steel } # Handle VS Swords transfer post-battle through a separate event
+					artifact_durability >= define:NInventory|ARTIFACT_LOW_DURABILITY
+				}
+				save_scope_as = knight_artifact
+				if = {
+					limit = { exists = artifact_owner.house }
+					artifact_owner.house = { save_scope_as = artifact_house }
+				}
+				set_owner = {
+					target = $OWNER$
+					history = {
+						type = taken_in_battle
+						actor = scope:artifact_knight
+						recipient = $OWNER$
+						location = scope:artifact_knight.location
+					}
+				}
+				if = {
+					limit = {
+						exists = scope:artifact_house
+						NOT = {
+							any_artifact_house_claimant = {
+								this = scope:artifact_house
+							}
+						}
+					}
+					scope:artifact_house = { add_house_artifact_claim = prev }
+				}
+				scope:artifact_knight = {
+					if = {
+						limit = {
+							NOT = {
+								has_personal_artifact_claim = prev
+							}
+						}
+						add_personal_artifact_claim = prev
+					}
+				}
+				#debug_log = "ART_TRAN"
+			}
+			#AGOT Added, Valyrian Steel Swords handled separately
+			else_if = {
+				limit = { has_variable = valyrian_steel }
+				save_scope_as = looted_vs_sword
+
+			
+					scope:sc_victor = { trigger_event = agot_valyrian_steel.1001 }
+				
+			}
+			else = {
+				destroy_artifact = this
+				#debug_log = "ART_DEST"
+			}
+		}
+	}
+}
+
+
+##### Starting Event
+##### You see your target on the battlefield along with his sworn shield. Do you attempt to cut your way through his men and challenge him?
+
+
+## This a basic event, use it as a base for other events. Though you probably will want to remove the annotation spam first.
+seek_combat.00011 = { # Use comments (like this one!) to put the event name here, this way other scripters can find the event you are working on without knowing the ID.
+	type = character_event
+	title = seek_combat.00011.t
+	#desc = seek_combat.00011.desc # For Sublime users: there is a "find in files" feature that is excellent for digging through loc
+	desc = {
+			desc = seek_combat.00011.desc
+			desc = seek_combat.0002a.desc
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker
+					scope:seek_combat_attacker = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_1
+				}
+				desc = seek_combat.00021a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_1
+					scope:seek_combat_attacker_bodyguard_1 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_2
+				}
+				desc = seek_combat.00022a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_2
+					scope:seek_combat_attacker_bodyguard_2 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_3
+				}
+				desc = seek_combat.00023a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_3
+					scope:seek_combat_attacker_bodyguard_3 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_4
+				}
+				desc = seek_combat.00024a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_4
+					scope:seek_combat_attacker_bodyguard_4 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_5
+				}
+				desc = seek_combat.00025a.desc
+			}
+			
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_5
+					scope:seek_combat_attacker_bodyguard_5 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_6
+				}
+				desc = seek_combat.00026a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_6
+					scope:seek_combat_attacker_bodyguard_6 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_7
+				}
+				desc = seek_combat.00027a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_7
+					scope:seek_combat_attacker_bodyguard_7 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+		desc = seek_combat.0002d.desc
+		triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_1
+				}
+				desc = seek_combat.00021d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_1
+					scope:seek_combat_defender_bodyguard_1 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_2
+				}
+				desc = seek_combat.00022d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_2
+					scope:seek_combat_defender_bodyguard_2 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_3
+				}
+				desc = seek_combat.00023d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_3
+					scope:seek_combat_defender_bodyguard_3 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_4
+				}
+				desc = seek_combat.00024d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_4
+					scope:seek_combat_defender_bodyguard_4 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_5
+				}
+				desc = seek_combat.00025d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_5
+					scope:seek_combat_defender_bodyguard_5 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_6
+				}
+				desc = seek_combat.00026d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_6
+					scope:seek_combat_defender_bodyguard_6 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_7
+				}
+				desc = seek_combat.00027d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_7
+					scope:seek_combat_defender_bodyguard_7 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			
+		
+	}
+	
+	
+	
+	override_background = {
+		reference = terrain
+	}
+
+
+	theme = war
+	left_portrait = {
+		character = scope:seek_combat_attacker
+		scripted_animation = marshal
+	}
+	right_portrait = {
+		character = scope:seek_combat_attacker_bodyguard_1
+		scripted_animation = marshal
+	}
+	lower_right_portrait = {
+		character = scope:seek_combat_attacker_bodyguard_2
+		scripted_animation = duel_wield_weapon
+	}
+	lower_left_portrait = {
+		character = scope:seek_combat_attacker_bodyguard_3
+		scripted_animation = duel_wield_weapon
+	}
+	immediate = { 
+	scope:seek_combat_defender = { trigger_event = seek_combat.0006 }
+	}
+
+	option = { # Stay in formation
+		name = seek_combat.00011.a
+		ai_chance = {
+		base = 50 # Try to make it 0 for most interactions
+		}
+			
+			
+			scope:seek_combat_attacker = { trigger_event = seek_combat.0001 }
+			}
+		
+			
+	option = { # Meet them in single combat.
+		name = seek_combat.00011.b
+		
+	ai_chance = {
+		base = 5 # Try to make it 0 for most interactions
+		modifier = {
+				add = 10
+				has_relation_rival = scope:seek_combat_attacker
+			}
+			modifier = {
+				add = 15
+				has_relation_nemesis = scope:seek_combat_attacker
+			}
+		# Relative fightan ability.
+		modifier = {
+			desc = CTSC_RELATIVE_PROWESS
+			scope:seek_combat_attacker.prowess < scope:seek_combat_defender.prowess
+			add = {
+				value = scope:seek_combat_defender.prowess
+				subtract = scope:seek_combat_attacker.prowess
+				multiply = 2
+			}
+		}
+		modifier = {
+			desc = CTSC_RELATIVE_PROWESS
+			scope:seek_combat_defender.prowess < scope:seek_combat_attacker.prowess
+			add = {
+				value = scope:seek_combat_attacker.prowess
+				subtract = scope:seek_combat_defender.prowess
+				multiply = -2
+			}
+		}
+		# Weight up for personality values.
+		ai_value_modifier = {
+			who = scope:seek_combat_defender
+			ai_boldness = {
+				if = {
+					limit = {
+						scope:seek_combat_defender = {
+							ai_boldness > 0
+							ai_rationality < 0
+						}
+					}
+					value = 2
+				}
+				else_if = {
+					limit = {
+						scope:seek_combat_defender = {
+							NOT = { ai_boldness = 0 }
+						}
+					}
+					value = 1
+				}
+			}
+			ai_vengefulness = {
+				if = {
+					limit = {
+						scope:seek_combat_defender = {
+							NOT = { ai_vengefulness = 0 }
+						}
+					}
+					value = 0.75
+				}
+			}
+			ai_honor = {
+				if = {
+					limit = {
+						scope:seek_combat_defender = {
+							ai_honor > 0
+						}
+					}
+					value = 0.5
+				}
+			}
+		}
+		}
+			scope:seek_combat_attacker = {
+				location = { save_scope_as = duel_location }
+				add_character_flag = active_battlefield_duel
+				create_story = {
+					type = agot_battlefield_duel_story
+					save_scope_as = battlefield_duel_story 
+				}
+				
+				scope:battlefield_duel_story = {
+					add_to_variable_list = { name = attackers target = scope:seek_combat_attacker }
+				}
+				
+				
+				scope:battlefield_duel_story = {
+					add_to_variable_list = { name = defenders target = scope:seek_combat_defender }
+				}
+				
+				#every_in_list = {
+				#	list = duel_observers
+				#	scope:battlefield_duel_story = {
+				#		add_to_variable_list = { name = duel_observers target = PREV }
+				#	}
+				#}
+				scope:battlefield_duel_story = {
+					set_variable = { name = seek_combat_attacker value = scope:seek_combat_attacker }
+					set_variable = { name = seek_combat_defender value = scope:seek_combat_defender }
+					if = { limit = { scope:seek_combat_defender = { is_ruler = yes } } set_variable = { name = defender_home_court value = scope:seek_combat_defender.primary_title } }
+					else = { set_variable = { name = defender_home_court value = scope:seek_combat_defender.employer.primary_title } } 
+					set_variable = { name = battle_location value = scope:battle_location }
+					#if = { limit = { exists = scope:seek_combat_attacker_bodyguard_1 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_1 value = scope:seek_combat_attacker_bodyguard_1 } } }
+					#if = { limit = { exists = scope:seek_combat_attacker_bodyguard_2 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_2 value = scope:seek_combat_attacker_bodyguard_2 } } }
+					#if = { limit = { exists = scope:seek_combat_attacker_bodyguard_3 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_3 value = scope:seek_combat_attacker_bodyguard_3 } } }
+					#if = { limit = { exists = scope:seek_combat_attacker_bodyguard_4 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_4 value = scope:seek_combat_attacker_bodyguard_4 } } }
+					#if = { limit = { exists = scope:seek_combat_attacker_bodyguard_5 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_5 value = scope:seek_combat_attacker_bodyguard_5 } } }
+					#if = { limit = { exists = scope:seek_combat_attacker_bodyguard_6 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_6 value = scope:seek_combat_attacker_bodyguard_6 } } }
+					#if = { limit = { exists = scope:seek_combat_attacker_bodyguard_7 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_7 value = scope:seek_combat_attacker_bodyguard_7 } } }
+					#if = { limit = { exists = scope:seek_combat_defender_bodyguard_1 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_1 value = scope:seek_combat_defender_bodyguard_1 } } }
+					#if = { limit = { exists = scope:seek_combat_defender_bodyguard_2 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_2 value = scope:seek_combat_defender_bodyguard_2 } } }
+					#if = { limit = { exists = scope:seek_combat_defender_bodyguard_3 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_3 value = scope:seek_combat_defender_bodyguard_3 } } }
+					#if = { limit = { exists = scope:seek_combat_defender_bodyguard_4 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_4 value = scope:seek_combat_defender_bodyguard_4 } } }
+					#if = { limit = { exists = scope:seek_combat_defender_bodyguard_5 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_5 value = scope:seek_combat_defender_bodyguard_5 } } }
+					#if = { limit = { exists = scope:seek_combat_defender_bodyguard_6 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_6 value = scope:seek_combat_defender_bodyguard_6 } } }
+					#if = { limit = { exists = scope:seek_combat_defender_bodyguard_7 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_7 value = scope:seek_combat_defender_bodyguard_7 } } }
+					
+				}
+			}
+	}
+}
+
+
+seek_combat.0001 = { # Use comments (like this one!) to put the event name here, this way other scripters can find the event you are working on without knowing the ID.
+	type = character_event
+	title = seek_combat.0001.t
+	desc = seek_combat.0001.desc # For Sublime users: there is a "find in files" feature that is excellent for digging through loc
+	override_background = {
+		reference = terrain
+	}
+
+
+	theme = war
+	left_portrait = {
+		character = scope:seek_combat_attacker
+		scripted_animation = duel_wield_weapon
+	}
+	right_portrait = {
+		character = scope:seek_combat_defender
+		scripted_animation = duel_wield_weapon
+	}
+	lower_right_portrait = {
+		character = scope:seek_combat_defender_bodyguard_1
+		scripted_animation = duel_wield_weapon
+	}
+	lower_left_portrait = {
+		character = scope:seek_combat_attacker_bodyguard_1
+		scripted_animation = duel_wield_weapon
+	}
+	immediate = { 
+	scope:seek_combat_defender = { trigger_event = seek_combat.0006 }
+	}
+
+	option = { # Attack
+		name = seek_combat.0001.a
+		
+		duel = {
+			#skill = prowess
+			skills = { martial prowess }
+			target = scope:seek_combat_defender
+			
+			50 = {
+				#show_chance = no
+				desc = "You break through the enemy lines"
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 1
+				}
+				custom_tooltip = "A confrontation begins between you and [seek_combat_defender.GetFullName] along with any bodyguards."
+				location = { save_scope_as = duel_location }
+				add_character_flag = active_battlefield_duel
+				create_story = {
+					type = agot_battlefield_duel_story
+					save_scope_as = battlefield_duel_story 
+				}
+				every_in_list = {
+					list = attackers
+					scope:battlefield_duel_story = {
+						add_to_variable_list = { name = attackers target = PREV }
+					}
+				}
+				every_in_list = {
+					list = defenders
+					scope:battlefield_duel_story = {
+						add_to_variable_list = { name = defenders target = PREV }
+					}
+				}
+				every_in_list = {
+					list = duel_observers
+					scope:battlefield_duel_story = {
+						add_to_variable_list = { name = duel_observers target = PREV }
+					}
+				}
+				scope:battlefield_duel_story = {
+					set_variable = { name = seek_combat_attacker value = scope:seek_combat_attacker }
+					set_variable = { name = seek_combat_defender value = scope:seek_combat_defender }
+					if = { limit = { scope:seek_combat_defender = { is_ruler = yes } } set_variable = { name = defender_home_court value = scope:seek_combat_defender.primary_title } }
+					else = { set_variable = { name = defender_home_court value = scope:seek_combat_defender.employer.primary_title } } 
+					set_variable = { name = battle_location value = scope:battle_location }
+					if = { limit = { exists = scope:seek_combat_attacker_bodyguard_1 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_1 value = scope:seek_combat_attacker_bodyguard_1 } } }
+					if = { limit = { exists = scope:seek_combat_attacker_bodyguard_2 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_2 value = scope:seek_combat_attacker_bodyguard_2 } } }
+					if = { limit = { exists = scope:seek_combat_attacker_bodyguard_3 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_3 value = scope:seek_combat_attacker_bodyguard_3 } } }
+					if = { limit = { exists = scope:seek_combat_attacker_bodyguard_4 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_4 value = scope:seek_combat_attacker_bodyguard_4 } } }
+					if = { limit = { exists = scope:seek_combat_attacker_bodyguard_5 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_5 value = scope:seek_combat_attacker_bodyguard_5 } } }
+					if = { limit = { exists = scope:seek_combat_attacker_bodyguard_6 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_6 value = scope:seek_combat_attacker_bodyguard_6 } } }
+					if = { limit = { exists = scope:seek_combat_attacker_bodyguard_7 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_attacker_bodyguard_7 value = scope:seek_combat_attacker_bodyguard_7 } } }
+					if = { limit = { exists = scope:seek_combat_defender_bodyguard_1 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_1 value = scope:seek_combat_defender_bodyguard_1 } } }
+					if = { limit = { exists = scope:seek_combat_defender_bodyguard_2 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_2 value = scope:seek_combat_defender_bodyguard_2 } } }
+					if = { limit = { exists = scope:seek_combat_defender_bodyguard_3 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_3 value = scope:seek_combat_defender_bodyguard_3 } } }
+					if = { limit = { exists = scope:seek_combat_defender_bodyguard_4 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_4 value = scope:seek_combat_defender_bodyguard_4 } } }
+					if = { limit = { exists = scope:seek_combat_defender_bodyguard_5 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_5 value = scope:seek_combat_defender_bodyguard_5 } } }
+					if = { limit = { exists = scope:seek_combat_defender_bodyguard_6 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_6 value = scope:seek_combat_defender_bodyguard_6 } } }
+					if = { limit = { exists = scope:seek_combat_defender_bodyguard_7 } scope:battlefield_duel_story = { set_variable = { name = seek_combat_defender_bodyguard_7 value = scope:seek_combat_defender_bodyguard_7 } } }
+					
+				}
+
+				
+				
+			#scope:seek_combat_attacker = { trigger_event = seek_combat.0002 }
+		
+			}
+			30 = {
+				#show_chance = no
+				desc = "You are beaten back"
+				
+					scope:seek_combat_attacker = {
+				
+							increase_wounds_effect = { REASON = battle }
+							root = { add_prestige = minor_prestige_loss }
+					trigger_event = seek_combat.00021 
+				 
+			}
+			}
+			15 = {
+				#show_chance = no
+				desc = "You are captured in your attempt to challenge your foe"
+				if = { limit = { scope:seek_combat_defender = { is_landed = yes } }
+						rightfully_imprison_character_less_verbose_effect = {
+														TARGET = scope:seek_combat_attacker
+														IMPRISONER = scope:seek_combat_defender
+													}
+													rightfully_imprison_character_less_verbose_effect = {
+														TARGET = scope:seek_combat_attacker_bodyguard_1
+														IMPRISONER = scope:seek_combat_defender
+													}
+													}
+													else = { 
+															scope:seek_combat_defender = { liege = { save_scope_as = seek_combat_defender_liege } }
+															rightfully_imprison_character_less_verbose_effect = {
+														TARGET = scope:seek_combat_attacker
+														IMPRISONER = scope:seek_combat_defender_liege
+													}
+													rightfully_imprison_character_less_verbose_effect = {
+														TARGET = scope:seek_combat_attacker_bodyguard
+														IMPRISONER = scope:seek_combat_defender_liege
+													}
+													}
+															
+				
+			}
+			5 = {
+				#show_chance = no
+				desc = "You are overwhelmed by the enemy and killed"
+				
+					scope:seek_combat_attacker = {
+				death = {
+							death_reason = death_cut_off_by_enemy_troops_offensive
+							#killer = scope:seek_combat_defender
+						}
+			}
+			}
+		}
+		
+	}
+	option = { # Nevermind, this is too dangerous.
+		name = seek_combat.0001.b
+	}
+}
+
+#### You manage to make it through and your target is within striking distance. Do you attack yourself or send your own men first?
+####
+
+
+
+### You Attack
+###
+
+
+### The Sworn Shields fight
+
+
+
+### You fight your target
+
+
+seek_combat.0002 = {
+	type = character_event
+	window = duel_event
+	title = seek_combat.0002.t
+	#desc = seek_combat.0002.desc
+	desc = {
+			desc = seek_combat.0002.desc
+			desc = seek_combat.0002a.desc
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker
+					scope:seek_combat_attacker = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker
+					scope:seek_combat_attacker = { is_in_list = attacker_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_1
+				}
+				desc = seek_combat.00021a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_1
+					scope:seek_combat_attacker_bodyguard_1 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_1
+					scope:seek_combat_attacker_bodyguard_1 = { is_in_list = attacker_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_2
+				}
+				desc = seek_combat.00022a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_2
+					scope:seek_combat_attacker_bodyguard_2 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_2
+					scope:seek_combat_attacker_bodyguard_2 = { is_in_list = attacker_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_3
+				}
+				desc = seek_combat.00023a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_3
+					scope:seek_combat_attacker_bodyguard_3 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_3
+					scope:seek_combat_attacker_bodyguard_3 = { is_in_list = attacker_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_4
+				}
+				desc = seek_combat.00024a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_4
+					scope:seek_combat_attacker_bodyguard_4 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_4
+					scope:seek_combat_attacker_bodyguard_4 = { is_in_list = attacker_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_5
+				}
+				desc = seek_combat.00025a.desc
+			}
+			
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_5
+					scope:seek_combat_attacker_bodyguard_5 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_5
+					scope:seek_combat_attacker_bodyguard_5 = { is_in_list = attacker_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_6
+				}
+				desc = seek_combat.00026a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_6
+					scope:seek_combat_attacker_bodyguard_6 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_6
+					scope:seek_combat_attacker_bodyguard_1 = { is_in_list = attacker_pows }
+				}
+				desc = seek_combat.0006_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_7
+				}
+				desc = seek_combat.00027a.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_7
+					scope:seek_combat_attacker_bodyguard_7 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_attacker_bodyguard_7
+					scope:seek_combat_attacker_bodyguard_7 = { is_in_list = attacker_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+		desc = seek_combat.0002d.desc
+		triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender
+					scope:seek_combat_defender = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+		triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender
+					scope:seek_combat_defender = { is_in_list = defender_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+		triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_1
+				}
+				desc = seek_combat.00021d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_1
+					scope:seek_combat_defender_bodyguard_1 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_1
+					scope:seek_combat_defender_bodyguard_1 = { is_in_list = defender_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_2
+				}
+				desc = seek_combat.00022d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_2
+					scope:seek_combat_defender_bodyguard_2 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_2
+					scope:seek_combat_defender_bodyguard_2 = { is_in_list = defender_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_3
+				}
+				desc = seek_combat.00023d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_3
+					scope:seek_combat_defender_bodyguard_3 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_3
+					scope:seek_combat_defender_bodyguard_3 = { is_in_list = defender_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_4
+				}
+				desc = seek_combat.00024d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_4
+					scope:seek_combat_defender_bodyguard_4 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_4
+					scope:seek_combat_defender_bodyguard_4 = { is_in_list = defender_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_5
+				}
+				desc = seek_combat.00025d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_5
+					scope:seek_combat_defender_bodyguard_5 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_5
+					scope:seek_combat_defender_bodyguard_5 = { is_in_list = defender_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_6
+				}
+				desc = seek_combat.00026d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_6
+					scope:seek_combat_defender_bodyguard_6 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_6
+					scope:seek_combat_defender_bodyguard_6 = { is_in_list = defender_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_7
+				}
+				desc = seek_combat.00027d.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_7
+					scope:seek_combat_defender_bodyguard_7 = { is_alive = no }
+				}
+				desc = seek_combat.0002_dead.desc
+			}
+			triggered_desc = {
+				trigger = {
+					exists = scope:seek_combat_defender_bodyguard_7
+					scope:seek_combat_defender_bodyguard_7 = { is_in_list = defender_pows }
+				}
+				desc = seek_combat.0002_defeated.desc
+			}
+			
+		
+	}
+	theme = battle
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:attacker_portrait
+		scripted_animation = duel_wield_weapon
+	}
+	right_portrait = {
+		character = scope:defender_portrait
+		scripted_animation = duel_wield_weapon
+	}
+	
+	
+	
+													
+
+
+		immediate = {
+			if = {
+				limit = { scope:seek_combat_attacker = { is_alive = yes } }
+				scope:seek_combat_attacker = { save_scope_as = attacker_portrait }
+			}
+			else = {
+				random_in_list = {
+					list = attackers
+					limit = { is_alive = yes }
+					save_scope_as = attacker_portrait
+				}
+			}
+			if = {
+				limit = { scope:seek_combat_defender = { is_alive = yes } }
+				scope:seek_combat_defender = { save_scope_as = defender_portrait }
+			}
+			else = {
+				random_in_list = {
+					list = defenders
+					limit = { is_alive = yes }
+					save_scope_as = defender_portrait
+				}
+			}
+			if = {
+				limit = { NOT = { exists = scope:attacker_portrait } }
+				scope:seek_combat_attacker = { save_scope_as = attacker_portrait }
+			}
+			if = {
+				limit = { NOT = { exists = scope:defender_portrait } }
+				scope:seek_combat_defender = { save_scope_as = defender_portrait }
+			}
+			
+		}
+		
+	
+		option = { 
+			trigger = {
+				this = scope:duel_owner
+					
+				any_in_list = { 
+						list = attackers
+						is_alive = yes
+						NOT = { is_in_list = attacker_pows }
+					}
+				
+				any_in_list = { 
+						list = defenders
+						is_alive = yes
+						NOT = { is_in_list = defender_pows }
+				}
+				
+			}
+			name = seek_combat.0002.a
+			agot_battlefield_duel_combat_effect = yes
+		
+			
+		}
+		option = { 
+			trigger = { 
+					this = scope:duel_owner	
+					
+				NOT = {
+					any_in_list = { 
+						list = defenders
+						is_alive = yes
+						NOT = { is_in_list = defender_pows }
+					}
+				}
+			}
+			name = seek_combat.0002.b
+			custom_tooltip = seek_combat.0002.b
+			hidden_effect = {
+				every_in_list = {
+					list = defender_pows
+					imprison_character_effect = {
+							TARGET = this
+							IMPRISONER = scope:duel_owner
+						}
+				}
+			}
+			scope:battlefield_duel_story = { end_story = yes }
+		}
+		option = { 
+			trigger = { 
+					this = scope:duel_owner	
+					NOT = {	any_in_list = { 
+						list = attackers
+						is_alive = yes
+						NOT = { is_in_list = attacker_pows }
+					}
+					}
+			}
+			name = seek_combat.0002.c
+			hidden_effect = {
+				every_in_list = {
+					list = attacker_pows
+					imprison_character_effect = {
+							TARGET = this
+							IMPRISONER = scope:defender_home_court.holder
+					}
+				}
+			}
+			scope:battlefield_duel_story = { end_story = yes }
+			
+		}
+		option = { 
+			trigger = { exists = scope:duel_observer }
+			name = seek_combat.0002.a
+			
+		
+			
+		}
+		
+		
+
+	
+	
+}
+
+seek_combat.00021 = {
+	type = character_event
+	hidden = false
+	title = seek_combat.00021.t
+	desc =seek_combat.00021.desc
+	theme = battle
+	override_background = {
+		reference = terrain
+	}
+		left_portrait = {
+		character = scope:seek_combat_attacker
+		scripted_animation = celebrate_sword
+	}
+	right_portrait = {
+		character = scope:seek_combat_defender
+		scripted_animation = fear
+	}
+	lower_right_portrait = {
+		character = scope:seek_combat_defender_bodyguard
+		scripted_animation = marshal
+	}
+	lower_left_portrait = {
+		character = scope:seek_combat_attacker_bodyguard
+		scripted_animation = marshal
+	}
+	
+	
+
+	immediate = {
+	
+	
+		
+	}
+
+
+	
+	option = { # My charge failed.
+	name = seek_combat.00021.a
+
+	hidden_effect = {
+	}
+
+	ai_chance = {
+		base = 10 # What are the chances of selecting this option over others? (Does not need to be 0 to 100, it can be anything)
+		
+		modifier = {
+			add = 50 # To remove something you just add a negative number (5 + -10 = -5)
+			has_trait = compassionate
+		}
+	}
+}
+	
+	
+}
+
+
+
+seek_combat.0003 = {
+	type = character_event
+	hidden = false
+	title = seek_combat.0003.t
+	desc =seek_combat.0003.desc
+	theme = battle
+	override_background = {
+		reference = terrain
+	}
+		left_portrait = {
+		character = scope:seek_combat_attacker
+		scripted_animation = celebrate_sword
+	}
+	right_portrait = {
+		character = scope:seek_combat_defender
+		scripted_animation = fear
+	}
+	lower_right_portrait = {
+		character = scope:seek_combat_defender_bodyguard
+		scripted_animation = marshal
+	}
+	lower_left_portrait = {
+		character = scope:seek_combat_attacker_bodyguard
+		scripted_animation = marshal
+	}
+	
+	
+
+	immediate = {
+	
+	
+		
+	}
+
+
+	
+	option = { # I Refuse
+	name = seek_combat.0003.a
+
+	hidden_effect = {
+	}
+
+	ai_chance = {
+		base = 10 # What are the chances of selecting this option over others? (Does not need to be 0 to 100, it can be anything)
+		
+		modifier = {
+			add = 50 # To remove something you just add a negative number (5 + -10 = -5)
+			has_trait = compassionate
+		}
+	}
+}
+	
+	
+}
+
+
+
+
+seek_combat.0004 = {
+	type = character_event
+	hidden = false
+	title = seek_combat.0002.t
+	desc =seek_combat.0002.desc
+	theme = battle
+	override_background = {
+		reference = terrain
+	}
+	left_portrait = {
+		character = scope:seek_combat_attacker
+		scripted_animation = duel_wield_weapon
+	}
+	right_portrait = {
+		character = scope:seek_combat_defender
+		scripted_animation = duel_wield_weapon
+	}
+	lower_right_portrait = {
+		character = scope:seek_combat_defender_bodyguard
+		scripted_animation = duel_wield_weapon
+	}
+	lower_left_portrait = {
+		character = scope:seek_combat_attacker_bodyguard
+		scripted_animation = duel_wield_weapon
+	}
+
+
+	immediate = {
+	
+	
+		
+	}
+
+	
+	
+	
+	
+	
+}
+
+
+### Notify Defender of Victory
+
+seek_combat.0005 = {
+	type = character_event
+	hidden = false
+	title = seek_combat.0005.t
+	desc =seek_combat.0005.desc
+	theme = battle
+	override_background = {
+		reference = terrain
+	}
+		left_portrait = {
+		character = scope:seek_combat_attacker
+		scripted_animation = fear
+	}
+	right_portrait = {
+		character = scope:seek_combat_defender
+		scripted_animation = celebrate_sword
+	}
+	lower_right_portrait = {
+		character = scope:seek_combat_defender_bodyguard
+		scripted_animation = marshal
+	}
+	lower_left_portrait = {
+		character = scope:seek_combat_attacker_bodyguard
+		scripted_animation = marshal
+	}
+	
+	
+
+	immediate = {
+	
+	
+		
+	}
+
+
+	
+	option = { # I Refuse
+	name = seek_combat.0005.a
+
+	hidden_effect = {
+	}
+
+	ai_chance = {
+		base = 10 # What are the chances of selecting this option over others? (Does not need to be 0 to 100, it can be anything)
+		
+		modifier = {
+			add = 50 # To remove something you just add a negative number (5 + -10 = -5)
+			has_trait = compassionate
+		}
+	}
+}
+	
+	
+}
+
+#Notify Defender of Attack
+
+seek_combat.0006 = {
+	type = character_event
+	hidden = false
+	title = seek_combat.0006.t
+	desc =seek_combat.0006.desc
+	theme = battle
+	override_background = {
+		reference = terrain
+	}
+		left_portrait = {
+		character = scope:seek_combat_attacker
+		scripted_animation = duel_wield_weapon
+	}
+	right_portrait = {
+		character = scope:seek_combat_defender
+		scripted_animation = duel_wield_weapon
+	}
+	lower_right_portrait = {
+		character = scope:seek_combat_defender_bodyguard
+		scripted_animation = marshal
+	}
+	lower_left_portrait = {
+		character = scope:seek_combat_attacker_bodyguard
+		scripted_animation = marshal
+	}
+	
+	
+
+	immediate = {
+	
+	
+		
+	}
+
+
+	
+	option = { # I Refuse
+	name = seek_combat.0006.a
+
+	hidden_effect = {
+	}
+
+	ai_chance = {
+		base = 10 # What are the chances of selecting this option over others? (Does not need to be 0 to 100, it can be anything)
+		
+		modifier = {
+			add = 50 # To remove something you just add a negative number (5 + -10 = -5)
+			has_trait = compassionate
+		}
+	}
+	}
+	
+	
+}
+
+### Duel Finish
+
+
+seek_combat.0007 = { 
+	type = empty
+	#scope = none
+	hidden = yes
+	#title = others.0001.t
+	#desc =  others.0001.desc
+	#theme = prison
+
+	immediate = {
+		if = {
+			limit = { scope:sc_loser = { is_alive = yes } }
+	
+			scope:sc_loser = {
+				trigger_event = seek_combat.0008
+			}
+		}
+		else = {
+			scope:battlefield_duel_story = {
+				set_variable = {
+					name	= battlefield_duel
+					value	= flag:combat
+				}
+			}
+				
+		}
+	}
+}
+		
+		
+	
+seek_combat.0008 = {
+	type = character_event
+	hidden = false
+	title = seek_combat.0008.t
+	window = big_event_window
+	desc =seek_combat.0008.desc
+	theme = battle
+	override_background = {
+		reference = terrain
+	}
+		left_portrait = {
+		character = scope:sc_victor
+		animation = celebrate_sword
+	}
+	right_portrait = {
+		character = scope:sc_loser
+		animation = fear
+	}
+
+	
+	
+
+	immediate = {
+	
+	
+		
+	}
+	
+	option = { # It's not over yet!
+	name = seek_combat.0008.a
+		#trigger = { NOT = { has_trait = wounded_3 } }
+		
+		scope:battlefield_duel_story = {
+			set_variable = {
+			name	= battlefield_duel
+			value	= flag:combat
+			}
+		}
+		if = { 
+			limit = { has_trait = wounded_3 }
+			death = {
+								death_reason = death_battle
+								killer = scope:sc_victor
+			}
+		}
+		else = {
+			scope:sc_victor = { trigger_event = seek_combat.0010 }
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				ai_boldness > 0
+			}
+			modifier = {
+				add = 1
+				ai_boldness >= 50
+			}
+			modifier = {
+				add = 1
+				ai_boldness >= 75
+			}
+			modifier = {
+				add = 1
+				ai_boldness >= 100
+			}
+			modifier = {
+				add = 1
+				ai_energy >= 50
+			}
+			modifier = {
+				add = 10
+				any_character_war = {
+					is_war_leader = root
+				}
+			}
+			
+		}
+	
+	}
+	
+
+	
+	option = { # I Yield
+	name = seek_combat.0008.b
+		scope:sc_victor = {
+			trigger_event = seek_combat.0009
+		}
+		
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				ai_boldness < 0
+			}
+			modifier = {
+				add = 1
+				ai_boldness <= -50
+			}
+			modifier = {
+				add = 1
+				ai_boldness <= -100
+			}
+			modifier = {
+				add = 1
+				ai_energy <= 0
+			}
+			modifier = {
+				add = 2
+				has_trait = wounded_1
+			}
+			modifier = {
+				add = 3
+				has_trait = wounded_2
+			}
+			modifier = {
+				add = 4
+				has_trait = wounded_3
+			}
+			
+		}
+		
+		
+	}
+	
+	
+}
+
+
+seek_combat.0009 = {
+	type = character_event
+	hidden = false
+	title = seek_combat.0009.t
+	desc =seek_combat.0009.desc
+	window = big_event_window
+	theme = battle
+	override_background = {
+		reference = terrain
+	}
+		left_portrait = {
+		character = scope:sc_victor
+		animation = celebrate_sword
+	}
+	right_portrait = {
+		character = scope:sc_loser
+		animation = fear
+	}
+
+	
+	
+
+	immediate = {
+	
+	
+	
+	
+	
+		
+	}
+	
+	option = { 
+		
+		name = seek_combat.0009.a
+		scope:sc_loser = {
+				seek_combat_transfer_equipped_artifact_effect = { TYPE = primary_armament OWNER = scope:sc_victor }
+				#	seek_combat_transfer_equipped_artifact_effect = { TYPE = armor OWNER = scope:sc_victor }
+		}
+		scope:sc_loser = {
+					death = {
+								death_reason = death_battle
+								killer = scope:sc_victor
+							}
+		
+		}
+		ai_chance = {
+			base = 3 
+			modifier = {
+				ai_vengefulness >= 0
+				add = 1
+			}
+			modifier = {
+				ai_vengefulness >= 0.5
+				add = 1
+			}
+			modifier = {
+				ai_vengefulness >= 0.75
+				add = 1
+			}
+			modifier = {
+				ai_vengefulness >= 1
+				add = 1
+			}
+			modifier = {
+				ai_compassion <= -0
+				add = 1
+			}
+			modifier = {
+				ai_compassion <= -0.5
+				add = 1
+			}
+			modifier = {
+				ai_compassion <= -0.75
+				add = 1
+			}
+			modifier = {
+				ai_compassion <= -1
+				add = 1
+			}
+			modifier = {
+				opinion = { target = scope:sc_loser value <= 0 }
+				add = 1
+			}
+			modifier = {
+				opinion = { target = scope:sc_loser value <= -0.5 }
+				add = 1
+			}
+			modifier = {
+				opinion = { target = scope:sc_loser value <= -0.75 }
+				add = 1
+			}
+			modifier = {
+				opinion = { target = scope:sc_loser value <= -1 }
+				add = 1
+			}
+			modifier = {
+				has_relation_nemesis = scope:sc_loser
+				add = 1
+			}
+			modifier = {
+				has_relation_rival = scope:sc_loser
+				add = 1
+			}
+		}
+			
+	}
+	### Take them prisoner
+	option = {
+		name = seek_combat.0009.b
+		scope:battlefield_duel_story = {
+			if = { limit = { scope:sc_loser = { is_in_list = attackers } }
+				#remove_list_variable = { name = attackers target = root }
+				add_to_variable_list = { name = attacker_pows target = scope:sc_loser }
+			}
+			else = {
+				#remove_list_variable = { name = defenders target = scope:sc_loser }
+				add_to_variable_list = { name = defender_pows target = scope:sc_loser }
+			}
+		}
+		scope:sc_loser = {
+				seek_combat_transfer_equipped_artifact_effect = { TYPE = primary_armament OWNER = scope:sc_victor }
+				#seek_combat_transfer_equipped_artifact_effect = { TYPE = armor OWNER = scope:sc_victor }
+			}
+		ai_chance = {
+			base = 1 
+			modifier = {
+				ai_honor >= 0
+				add = 1
+			}
+			modifier = {
+				ai_honor >= 0.5
+				add = 1
+			}
+			modifier = {
+				ai_honor >= 0.75
+				add = 1
+			}
+			modifier = {
+				ai_honor >= 1
+				add = 1
+			}
+			modifier = {
+				ai_compassion >= 0
+				add = 1
+			}
+			modifier = {
+				ai_compassion >= 0.5
+				add = 1
+			}
+			modifier = {
+				ai_compassion >= 0.75
+				add = 1
+			}
+			modifier = {
+				ai_compassion >= 1
+				add = 1
+			}
+			modifier = {
+				is_close_family_of = scope:sc_loser
+				add = 1
+			}
+			modifier = {
+				is_close_or_extended_family_of = scope:sc_loser
+				add = 1
+			}
+			
+		}
+	}
+	after = { 
+		scope:battlefield_duel_story = {
+			set_variable = {
+			name	= battlefield_duel
+			value	= flag:combat
+			}
+		}
+	}
+
+
+
+}
+
+
+
+	
+#	option = { # I Refuse
+#	name = seek_combat_i_won.0003.a
+#
+#	hidden_effect = {
+#	}
+#
+#	ai_chance = {
+#		base = 10 # What are the chances of selecting this option over others? (Does not need to be 0 to 100, it can be anything)
+#		
+#		modifier = {
+#			add = 50 # To remove something you just add a negative number (5 + -10 = -5)
+#			has_trait = compassionate
+#		}
+#	}
+#	}
+	
+	
+
+
+
+
+
+
+seek_combat.0010 = {
+	type = character_event
+	hidden = false
+	title = seek_combat.0010.t
+	desc =seek_combat.0010.desc
+	window = big_event_window
+	theme = battle
+	override_background = {
+		reference = terrain
+	}
+		left_portrait = {
+		character = scope:sc_victor
+		scripted_animation = duel_wield_weapon
+	}
+	right_portrait = {
+		character = scope:sc_loser
+		scripted_animation = duel_wield_weapon
+	}
+	lower_right_portrait = {
+		character = scope:seek_combat_defender_bodyguard
+		scripted_animation = marshal
+	}
+	lower_left_portrait = {
+		character = scope:seek_combat_attacker_bodyguard
+		scripted_animation = marshal
+	}
+	
+	
+
+	immediate = {
+	
+	
+		
+	}
+
+
+	
+	option = { # I Refuse
+	name = seek_combat.0010.a
+
+	hidden_effect = {
+	}
+
+	ai_chance = {
+		base = 10 # What are the chances of selecting this option over others? (Does not need to be 0 to 100, it can be anything)
+		
+		modifier = {
+			add = 50 # To remove something you just add a negative number (5 + -10 = -5)
+			has_trait = compassionate
+		}
+	}
+	}
+	
+	
+}

@@ -1,0 +1,19 @@
+han_show_army = {
+	scope = character
+
+	saved_scopes = {
+		player
+		army_commander
+	}
+
+	is_shown = {
+		OR = {
+			is_allied_to = scope:player
+			this = scope:player
+			is_vassal_or_below_of = scope:player
+			scope:army_commander.location.county_controller = scope:player
+			scope:army_commander.location.county_controller = { is_vassal_or_below_of = scope:player }
+			scope:army_commander.location.county_controller = { is_allied_to = scope:player }
+		}
+	}
+}

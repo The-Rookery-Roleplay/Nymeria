@@ -1,0 +1,95 @@
+﻿l_english:
+  
+ interaction_category_freeholdrp:0 "#difficulty_hard Freehold Interactions#"
+ AGOT_FREEHOLD_ACTIONS:0 "Freehold Interactions" 
+ 
+ 
+ 
+                      
+  
+  ##Battlefield Duel/Seek Combat
+ seek_combat.00011.t:0 "The Battle of [battle_location.GetNameNoTooltip]"
+ seek_combat.00011.desc:0 "As I scanned the blood-soaked battlefield, my eyes locked onto #bold[seek_combat_attacker.GetFullName]#! in enemy colors, their banner flapping defiantly in the wind. The distance between us seemed to shrink as our gazes met, and I felt a surge of determination course through my veins, knowing our fates were now intertwined in this brutal dance of war."
+ seek_combat.00011.a:0 "Stay in formation and rally your retinue and sworn shields against this foe."
+ seek_combat.00011.b:0 "I will meet them in single combat."
+  
+  
+ seek_combat.0001.t:0 "The Battle of [battle_location.GetNameNoTooltip]"
+ seek_combat.0001.desc:0 "Amidst the thunderous clash and the cries of dying men, your gaze falls upon #bold[seek_combat_defender.GetFullName]#!. The battlefield is a maelstrom of chaos, a churning sea of blood and steel. Yet, in that moment, a chance flickers like a fleeting shadow. Perhaps, just perhaps, you might carve a path through the throng, cutting down their men one by one until you stand before them. The peril is immense, a wager of life and death, but perhaps worth this risk."
+ seek_combat.0001.a:0 "Attack!"
+ seek_combat.0001.b:0 "Stay in formation. It's not worth the risk."
+ 
+ 
+ seek_combat.0002.t:0 "The Battle of [battle_location.GetNameNoTooltip]"
+ seek_combat.0002.desc:0 "Steel clashed with steel all around as you and your foes met eachother in combat.\n\n"
+ seek_combat.0002a.desc:0 "\n #difficulty_hard Attackers:#! \n #bold;L [seek_combat_attacker.GetNameNicknamed] [seek_combat_attacker.GetHouse.GetNameNoTooltip] #!"
+ seek_combat.00021a.desc:0 "\n #bold;L [seek_combat_attacker_bodyguard_1.GetNameNicknamed] [seek_combat_attacker_bodyguard_1.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00022a.desc:0 "\n #bold;L [seek_combat_attacker_bodyguard_2.GetNameNicknamed] [seek_combat_attacker_bodyguard_2.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00023a.desc:0 "\n #bold;L [seek_combat_attacker_bodyguard_3.GetNameNicknamed] [seek_combat_attacker_bodyguard_3.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00024a.desc:0 "\n #bold;L [seek_combat_attacker_bodyguard_4.GetNameNicknamed] [seek_combat_attacker_bodyguard_4.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00025a.desc:0 "\n #bold;L [seek_combat_attacker_bodyguard_5.GetNameNicknamed] [seek_combat_attacker_bodyguard_5.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00026a.desc:0 "\n #bold;L [seek_combat_attacker_bodyguard_6.GetNameNicknamed] [seek_combat_attacker_bodyguard_6.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00027a.desc:0 "\n #bold;L [seek_combat_attacker_bodyguard_7.GetNameNicknamed] [seek_combat_attacker_bodyguard_7.GetHouse.GetNameNoTooltip]#!"
+ 
+ seek_combat.0002_dead.desc:0 "#N;bold  DEAD#! "
+ seek_combat.0002_defeated.desc:0 "#color_yellow;bold  DEFEATED#! "
+ 
+ seek_combat.0002d.desc:0 "\n \n #difficulty_hard Defenders:#! \n #bold;L [seek_combat_defender.GetNameNicknamed] [seek_combat_defender.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00021d.desc:0 "\n #bold;L [seek_combat_defender_bodyguard_1.GetNameNicknamed] [seek_combat_defender_bodyguard_1.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00022d.desc:0 "\n #bold;L [seek_combat_defender_bodyguard_2.GetNameNicknamed] [seek_combat_defender_bodyguard_2.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00023d.desc:0 "\n #bold;L [seek_combat_defender_bodyguard_3.GetNameNicknamed] [seek_combat_defender_bodyguard_3.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00024d.desc:0 "\n #bold;L [seek_combat_defender_bodyguard_4.GetNameNicknamed] [seek_combat_defender_bodyguard_4.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00025d.desc:0 "\n #bold;L [seek_combat_defender_bodyguard_5.GetNameNicknamed] [seek_combat_defender_bodyguard_5.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00026d.desc:0 "\n #bold;L [seek_combat_defender_bodyguard_6.GetNameNicknamed] [seek_combat_defender_bodyguard_6.GetHouse.GetNameNoTooltip]#!"
+ seek_combat.00027d.desc:0 "\n #bold;L [seek_combat_defender_bodyguard_7.GetNameNicknamed] [seek_combat_defender_bodyguard_7.GetHouse.GetNameNoTooltip]#!"
+
+ seek_combat.0002.a:0 "[ROOT.Char.GetHouse.GetMotto]"
+ seek_combat.0002.a1:0 "You slay your opponent in single combat."
+ seek_combat.0002.a2:0 "You are slain."
+ seek_combat.0002.b:0 "This battle is over."
+ seek_combat.0002.c:0 "We've lost!"
+ 
+ 
+ seek_combat.00021.t:0 "The Battle of [battle_location.GetNameNoTooltip]"
+ seek_combat.00021.desc:0 "Our efforts were futile and I was unable to break the enemy line and challenge my foe."
+ seek_combat.00021.a:0 "..."
+
+ 
+ 
+ seek_combat.0003.t:0 "The Battle of [battle_location.GetNameNoTooltip]"
+ seek_combat.0003.desc:0 "You stand over your fallen foe, the weight of your triumph settling upon your shoulders. Victory is yours."
+ seek_combat.0003.a:0 "I have won."
+ 
+ 
+ seek_combat.0005.t:0 "The Battle of [battle_location.GetNameNoTooltip]"
+ seek_combat.0005.desc:0 "Before you lays the fool who thought they could challenge you on the field. Ha!"
+ seek_combat.0005.a:0 "Victory!"
+ 
+ 
+ seek_combat.0006.t:0 "The Battle of [battle_location.GetNameNoTooltip]"
+ seek_combat.0006.desc:0 "Across the field you spot an enemy. He is making a push towards you, undoubtedly to challenge you in single combat."
+ seek_combat.0006.a:0 "Harden men! Stay in formation!"
+ 
+ seek_combat.0008.t:0 "The Battle of [battle_location.GetNameNoTooltip]"
+ seek_combat.0008.desc:0 "[sc_victor.GetName] stands above me, victorious. I am at [sc_victor.GetHerHis] mercy when [sc_victor.GetSheHe] demands that I yield."
+ seek_combat.0008.a:0 "It's not over yet!"
+ seek_combat.0008.b:0 "I yield!"
+ seek_combat.0008.c:0 "Maester! See to their wounds."
+ 
+ seek_combat.0009.t:0 "The Battle of [battle_location.GetNameNoTooltip]"
+ seek_combat.0009.desc:0 "[sc_loser.GetName] has fallen before me, defeated. [sc_loser.GetSheHe|U] is at my complete mercy."
+ seek_combat.0009.a:0 "[sc_loser.GetNamePossessive] path ends here."
+ seek_combat.0009.b:0 "Capture them!"
+ seek_combat.0009.c:0 "Maester! See to their wounds."
+ 
+ 
+ seek_combat_interaction:0 "#R Battlefield Duel# "
+
+ seek_combat_interaction_desc:0 "Cut your way through their men and face them in single combat."
+ 
+ seek_combat.0010.t:0 "The Battle of [battle_location.GetNameNoTooltip]"
+ seek_combat.0010.desc:0 "[sc_loser.GetName] returned to [sc_loser.GetHerHis] feet and refused to submit!"
+ seek_combat.0010.a:0 "This is the end for you, my [sc_loser.GetLadyLord]."
+
+ 
+ 

@@ -1,4 +1,4 @@
-e_the_reach = {
+﻿e_the_reach = {
     7059.1.1 = {
         # holder = 0 Gardener_52 # Garth X Greybeard. Where the direct line ends and goes to his 2nd cousin Mern VI
     }
@@ -1273,4 +1273,40 @@ c_pikemouth = {
         liege = d_heartland_heights
         holder = 0
     }
+}
+
+c_dunstonbury = {
+	7299.1.1 = {
+		holder = Manderly_13
+	}
+}
+
+d_the_roseroad = {
+	7299.1.1 = {
+		holder = Manderly_13
+	}
+}
+
+d_cockleswhent = {
+	7299.1.1 = {
+		holder = Peake_14
+	}
+}
+
+d_palemarch = {
+	7299.1.1 = {
+		holder = Peake_14
+	}
+}
+
+c_starpike = {
+	7299.1.1 = {
+		holder = Peake_14
+	}
+}
+
+c_whitegrove = {
+	7299.1.1 = {
+		holder = Peake_14
+	}
 }

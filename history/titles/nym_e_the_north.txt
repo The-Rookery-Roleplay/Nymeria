@@ -1,4 +1,4 @@
-c_cedar_peaks = {
+﻿c_cedar_peaks = {
 	7299.1.1 = {
 		holder = Weir_200
 	}
@@ -179,6 +179,13 @@ c_timberwatch = {
 	}
 }
 
+d_everstead = {
+	7299.1.1 = {
+		holder = Woolfield_200
+		liege = e_the_north
+	}
+}
+
 c_ramsgate = {
 	7299.1.1 = {
 		holder = Woolfield_200
@@ -188,24 +195,28 @@ c_ramsgate = {
 c_branch_head = {
 	7299.1.1 = {
 		holder = Crook_200
+		liege = d_everstead
 	}
 }
 
 c_haverstock = {
 	7299.1.1 = {
 		holder = Hawley_200
+		liege = d_everstead
 	}
 }
 
 c_reamwright = {
 	7299.1.1 = {
 		holder = Reamy_200
+		liege = d_everstead
 	}
 }
 
 c_sheepshead_hills = {
 	7299.1.1 = {
 		holder = Riggwelt_200
+		liege = d_everstead
 	}
 }
 

@@ -1,0 +1,149 @@
+﻿##################################################################
+adjust_stranger_opinion= {
+	#Init
+	save_scope_as  = root_character
+	set_variable = {
+		name = avg_stranger_opinion
+		value = 0
+	}
+	#Number of strangers to use for averaging
+	if = {
+		limit = { is_ai = no}
+		set_local_variable = {
+			name = N_strangers_to_avg
+			value = 60
+		}
+	}
+	else = {
+		set_local_variable = {
+			name = N_strangers_to_avg
+			value = 20
+		}
+	}
+	if = {
+		limit = { exists = var:stranger_opinion_fail_to_qualify_date}
+		remove_variable = stranger_opinion_fail_to_qualify_date
+	}
+	
+	#List of strangers
+	while = {
+		count = local_var:N_strangers_to_avg
+		random_living_character = {
+			limit = {
+				#faith.religion = scope:root_character.faith.religion #same religion
+				#has_same_culture_as = scope:root_character #same culture
+				NOT = { has_any_scripted_relation = scope:root_character }	
+			}
+			save_scope_as = stranger
+			save_opinion_value_as = { name = stranger_opinion_raw   target = scope:root_character }
+		}
+		set_local_variable  = {	name = stranger_opinion 	value = scope:stranger_opinion_raw }
+		#Correct for different religion
+		if = {
+			limit = { NOT = {faith.religion = scope:stranger.faith.religion } }
+			change_local_variable  = {	name = stranger_opinion 	add = 15 }
+		}
+		#Correct for different culture
+		if = {
+			limit = { NOT = {has_same_culture_as = scope:stranger } }
+			change_local_variable  = {	name = stranger_opinion 	add = 10 }
+		}	
+		change_variable = { name = avg_stranger_opinion add = local_var:stranger_opinion }
+	}
+
+	# #Get the average stranger opinion
+	change_variable  = {
+		name = avg_stranger_opinion
+		divide = local_var:N_strangers_to_avg
+	}
+	#Correct for any previous adjustment
+	if = { #Remove old modifier
+		limit = { has_character_modifier = strangers_opinion_modifier }
+		#apply correction
+		change_variable  = {
+			name = avg_stranger_opinion
+			add = var:strangers_opinion_modifier_var
+		}
+		#Remove old modifier
+		remove_character_modifier = strangers_opinion_modifier
+	}
+	#Get the opinion modifier based on how much avg_stranger_opinion is above global_var:stranger_opinion_threshold
+	if = {
+		limit = { var:avg_stranger_opinion > global_var:stranger_opinion_threshold }
+		#diminishing returns, only 1/2 of the opinion bonus against strangers above threshold (1 - 1/2)
+		set_variable = {
+			name = strangers_opinion_modifier_var
+			value = {
+				value = var:avg_stranger_opinion
+				subtract = global_var:stranger_opinion_threshold
+				divide = 2
+			}
+		}
+		#diminishing returns, only 1/3 of the opinion bonus against strangers above threshold + 10 (1 - 1/2 - 1/6)
+		if = {
+			limit = { var:avg_stranger_opinion > {value = global_var:stranger_opinion_threshold add = 10} }
+			change_variable = {
+				name = strangers_opinion_modifier_var
+				add = {
+					value = var:avg_stranger_opinion
+					subtract = global_var:stranger_opinion_threshold
+					subtract = 10
+					divide = 6
+				}
+			}
+		}
+		#diminishing returns, only 1/4 of the opinion bonus against strangers above threshold + 20 (1 - 1/2 - 1/6 - 1/12)
+		if = {
+			limit = { 
+				is_ai = no
+				var:avg_stranger_opinion > {value = global_var:stranger_opinion_threshold add = 20}
+			}
+			change_variable = {
+				name = strangers_opinion_modifier_var
+				add = {
+					value = var:avg_stranger_opinion
+					subtract = global_var:stranger_opinion_threshold
+					subtract = 20
+					divide = 12
+				}
+			}
+		}
+		#diminishing returns, only 1/10 of the opinion bonus against strangers above threshold + 30 (1 - 1/2 - 1/6 - 1/12 - 3/20)
+		if = {
+			limit = { 
+				is_ai = no
+				var:avg_stranger_opinion > {value = global_var:stranger_opinion_threshold add = 30}
+			}
+			change_variable = {
+				name = strangers_opinion_modifier_var
+				add = {
+					value = var:avg_stranger_opinion
+					subtract = global_var:stranger_opinion_threshold
+					subtract = 30
+					multiply = 3
+					divide = 20
+				}
+			}
+		}
+		#Round to integer
+		set_variable = {
+			name = strangers_opinion_modifier_var
+			value = {
+				value = var:strangers_opinion_modifier_var
+				round = yes
+			}
+		}
+		# Add general opinion modifier
+		add_character_modifier = strangers_opinion_modifier
+	}
+	else = {
+		set_variable = { name = stranger_opinion_fail_to_qualify_date value = current_date } #mark that the character failed to qualify today, so no need to check for a while
+	}
+}
+##################################################################
+#Force update all characters' opinions
+update_stranger_opinion_for_all = {
+	every_living_character = {
+		trigger_event = { on_action = on_action_adjust_stranger_opinion }
+	}
+}

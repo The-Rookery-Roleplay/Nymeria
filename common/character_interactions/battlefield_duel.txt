@@ -1,0 +1,1064 @@
+﻿
+seek_combat_interaction = {
+	icon = declare_war_interaction
+	interface_priority = 200
+	category = interaction_category_freeholdrp
+	common_interaction = yes
+	desc = seek_combat_interaction_desc
+
+	is_shown = {
+		#is_in_army = yes 
+		scope:actor.army = {
+			is_army_in_combat = yes
+
+		}
+		NOT = { scope:recipient = scope:actor }
+		
+		
+	scope:actor = {
+		NOT = { has_character_flag = active_battlefield_duel }
+		#NOT = { has_trait = dragonrider }
+			AND = {
+			is_in_army = yes   
+			is_at_same_location = scope:recipient
+			is_ai = no
+			
+					}
+					}
+
+		
+
+		scope:recipient = {
+			NOT = { has_character_flag = active_battlefield_duel }
+			
+			is_in_army = yes   
+			NOT = { has_trait = dragonrider }  
+			
+		}
+	}
+	
+
+	
+
+	on_auto_accept = {
+		scope:recipient = {
+		location = { save_scope_as = battle_location }
+		if = { limit = { has_game_rule = agot_battlefield_duel_cooldown_on }
+			add_character_flag = { flag = active_battlefield_duel days = 30 }
+		}
+		save_scope_as = seek_combat_defender
+		add_to_list = duel_observers
+		add_to_list = defenders
+			#trigger_event = seek_combat.0001
+			
+			if = { limit = { 
+			
+			OR = {
+					is_primary_heir_of = title:e_the_iron_throne.holder
+					has_title = title:e_the_iron_throne
+					is_child_of = title:e_the_iron_throne.holder
+
+					}
+	} 
+	
+		title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+				
+						has_council_position = kingsguard_1
+					
+					
+					AND = {
+					is_in_army = yes   
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				save_scope_as = seek_combat_defender_bodyguard_1
+				add_to_list = duel_observers
+				add_to_list = defenders
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+				
+						has_council_position = kingsguard_2
+					
+					
+					AND = {
+					is_in_army = yes   
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				save_scope_as = seek_combat_defender_bodyguard_2
+				add_to_list = duel_observers
+				add_to_list = defenders
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+				
+						
+						has_council_position = kingsguard_3
+						
+					AND = {
+					is_in_army = yes   
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				save_scope_as = seek_combat_defender_bodyguard_3
+				add_to_list = duel_observers
+				add_to_list = defenders
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+					
+						
+						has_council_position = kingsguard_4
+						
+					
+					AND = {
+					is_in_army = yes   
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				save_scope_as = seek_combat_defender_bodyguard_4
+				add_to_list = duel_observers
+				add_to_list = defenders
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+				
+						has_council_position = kingsguard_5
+					
+					AND = {
+					is_in_army = yes   
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				save_scope_as = seek_combat_defender_bodyguard_5
+				add_to_list = duel_observers
+				add_to_list = defenders
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+				
+						has_council_position = kingsguard_6
+						
+					
+					AND = {
+					is_in_army = yes   
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				save_scope_as = seek_combat_defender_bodyguard_6
+				add_to_list = duel_observers
+				add_to_list = defenders
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+					OR = {
+						
+						has_council_position = kingsguard_lord_commander
+					}
+					AND = {
+					is_in_army = yes   
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				save_scope_as = seek_combat_defender_bodyguard_7
+				add_to_list = duel_observers
+				add_to_list = defenders
+			}
+			}
+			
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_1 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			save_scope_as = seek_combat_defender_bodyguard_1
+			add_to_list = duel_observers
+			add_to_list = defenders
+			}
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_2 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOT = { this = scope:seek_combat_defender_bodyguard_1 }
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			save_scope_as = seek_combat_defender_bodyguard_2
+			add_to_list = duel_observers
+			add_to_list = defenders
+			}
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_3 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						this = scope:seek_combat_defender_bodyguard_2
+						this = scope:seek_combat_defender_bodyguard_3
+						this = scope:seek_combat_defender_bodyguard_4
+						this = scope:seek_combat_defender_bodyguard_5
+						this = scope:seek_combat_defender_bodyguard_6
+						this = scope:seek_combat_defender_bodyguard_7
+							}
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			save_scope_as = seek_combat_defender_bodyguard_3
+			add_to_list = duel_observers
+			add_to_list = defenders
+			}
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_4 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						this = scope:seek_combat_defender_bodyguard_2
+						this = scope:seek_combat_defender_bodyguard_3
+						this = scope:seek_combat_defender_bodyguard_4
+						this = scope:seek_combat_defender_bodyguard_5
+						this = scope:seek_combat_defender_bodyguard_6
+						this = scope:seek_combat_defender_bodyguard_7
+							}
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			save_scope_as = seek_combat_defender_bodyguard_4
+			add_to_list = duel_observers
+			add_to_list = defenders
+			}
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_5 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						this = scope:seek_combat_defender_bodyguard_2
+						this = scope:seek_combat_defender_bodyguard_3
+						this = scope:seek_combat_defender_bodyguard_4
+						this = scope:seek_combat_defender_bodyguard_5
+						this = scope:seek_combat_defender_bodyguard_6
+						this = scope:seek_combat_defender_bodyguard_7
+							}
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			save_scope_as = seek_combat_defender_bodyguard_5
+			add_to_list = duel_observers
+			add_to_list = defenders
+			}
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_6 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						this = scope:seek_combat_defender_bodyguard_2
+						this = scope:seek_combat_defender_bodyguard_3
+						this = scope:seek_combat_defender_bodyguard_4
+						this = scope:seek_combat_defender_bodyguard_5
+						this = scope:seek_combat_defender_bodyguard_6
+						this = scope:seek_combat_defender_bodyguard_7
+							}
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			save_scope_as = seek_combat_defender_bodyguard_6
+			add_to_list = duel_observers
+			add_to_list = defenders
+			}
+			
+			}
+			
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_7 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						this = scope:seek_combat_defender_bodyguard_2
+						this = scope:seek_combat_defender_bodyguard_3
+						this = scope:seek_combat_defender_bodyguard_4
+						this = scope:seek_combat_defender_bodyguard_5
+						this = scope:seek_combat_defender_bodyguard_6
+						this = scope:seek_combat_defender_bodyguard_7
+							}
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_7 }
+			
+			}
+			
+			
+		
+					
+		}
+		
+		if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_1 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			save_scope_as = seek_combat_defender_bodyguard_1 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_2 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_2 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_3 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_3 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_4 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_4 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_5 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_5 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_6 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_6 }
+			
+			}
+			
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_7 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes 
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_7 }
+			
+			}
+			if = { limit = { 
+								is_ruler = no
+								is_primary_heir_of = liege }
+								liege = {
+								
+								if = { limit = { NOR = {
+						 this = scope:seek_combat_defender
+						 this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		} }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_1 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_2 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = {
+						 this = scope:seek_combat_defender
+						 this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_2 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_3 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = {
+							this = scope:seek_combat_defender
+							this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_3 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_4 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { 
+							this = scope:seek_combat_defender
+							this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_4 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_5 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { 
+						this = scope:seek_combat_defender	
+						this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes 
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_5 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_6 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { 
+							this = scope:seek_combat_defender
+							this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders	
+			save_scope_as = seek_combat_defender_bodyguard_6 }
+			
+			}
+			
+			if = { limit = { NOT = { scope:seek_combat_defender_bodyguard_7 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = {
+						this = scope:seek_combat_defender
+						this = scope:seek_combat_defender_bodyguard_1
+						 this = scope:seek_combat_defender_bodyguard_2
+						 this = scope:seek_combat_defender_bodyguard_3
+						 this = scope:seek_combat_defender_bodyguard_4
+						 this = scope:seek_combat_defender_bodyguard_5
+						 this = scope:seek_combat_defender_bodyguard_6
+						 this = scope:seek_combat_defender_bodyguard_7
+																		
+																		}
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = defenders
+			save_scope_as = seek_combat_defender_bodyguard_7 }
+			
+			}
+								
+								
+								}
+								
+								
+								}
+			
+		}
+		scope:actor = {
+		if = { limit = { has_game_rule = agot_battlefield_duel_cooldown_on }
+			add_character_flag = { flag = active_battlefield_duel days = 30 }
+		}
+		save_scope_as = seek_combat_attacker
+		add_to_list = attackers
+		if = { limit = { 
+			
+			OR = {
+					is_primary_heir_of = title:e_the_iron_throne.holder
+					has_title = title:e_the_iron_throne
+					
+
+					}
+	} 
+	
+		title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+				
+						has_council_position = kingsguard_1
+					
+					
+					AND = {
+					is_in_army = yes  
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				add_to_list = duel_observers
+				add_to_list = attackers
+				save_scope_as = seek_combat_attacker_bodyguard_1
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+				
+						has_council_position = kingsguard_2
+					
+					
+					AND = {
+					is_in_army = yes   
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				add_to_list = duel_observers
+				add_to_list = attackers
+				save_scope_as = seek_combat_attacker_bodyguard_2
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+				
+						
+						has_council_position = kingsguard_3
+						
+					AND = {
+					is_in_army = yes   
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				add_to_list = duel_observers
+				add_to_list = attackers
+				save_scope_as = seek_combat_attacker_bodyguard_3
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+					
+						
+						has_council_position = kingsguard_4
+						
+					
+					AND = {
+					is_in_army = yes   
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				add_to_list = duel_observers
+				add_to_list = attackers
+				save_scope_as = seek_combat_attacker_bodyguard_4
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+				
+						has_council_position = kingsguard_5
+					
+					AND = {
+					is_in_army = yes  
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				add_to_list = duel_observers
+				add_to_list = attackers
+				save_scope_as = seek_combat_attacker_bodyguard_5
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+				
+						has_council_position = kingsguard_6
+						
+					
+					AND = {
+					is_in_army = yes  
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				add_to_list = duel_observers
+				add_to_list = attackers
+				save_scope_as = seek_combat_attacker_bodyguard_6
+			}
+			}
+			title:e_the_iron_throne.holder = {	random_councillor = {
+				limit = {
+					
+					OR = {
+						
+						has_council_position = kingsguard_lord_commander
+					}
+					AND = {
+					is_in_army = yes  
+					NOT = { has_trait = dragonrider }
+					is_at_same_location = scope:recipient
+							}
+				}
+				add_to_list = duel_observers
+				add_to_list = attackers
+				save_scope_as = seek_combat_attacker_bodyguard_7
+			}
+			}
+			
+			if = { limit = { NOT = { scope:seek_combat_attacker_bodyguard_1 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				is_in_army = yes 
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+				add_to_list = attackers
+			save_scope_as = seek_combat_attacker_bodyguard_1 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_attacker_bodyguard_2 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOT = { this = scope:seek_combat_attacker_bodyguard_1 }
+				is_in_army = yes 
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+				add_to_list = attackers
+			save_scope_as = seek_combat_attacker_bodyguard_2 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_attacker_bodyguard_3 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_attacker_bodyguard_1
+						 this = scope:seek_combat_attacker_bodyguard_2
+						 this = scope:seek_combat_attacker_bodyguard_3
+						 this = scope:seek_combat_attacker_bodyguard_4
+						 this = scope:seek_combat_attacker_bodyguard_5
+						 this = scope:seek_combat_attacker_bodyguard_6
+						 this = scope:seek_combat_attacker_bodyguard_7
+				}
+				is_in_army = yes   
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+				add_to_list = attackers
+			save_scope_as = seek_combat_attacker_bodyguard_3 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_attacker_bodyguard_4 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_attacker_bodyguard_1
+						 this = scope:seek_combat_attacker_bodyguard_2
+						 this = scope:seek_combat_attacker_bodyguard_3
+						 this = scope:seek_combat_attacker_bodyguard_4
+						 this = scope:seek_combat_attacker_bodyguard_5
+						 this = scope:seek_combat_attacker_bodyguard_6
+						 this = scope:seek_combat_attacker_bodyguard_7
+				}
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+				add_to_list = attackers
+			save_scope_as = seek_combat_attacker_bodyguard_4 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_attacker_bodyguard_5 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_attacker_bodyguard_1
+						 this = scope:seek_combat_attacker_bodyguard_2
+						 this = scope:seek_combat_attacker_bodyguard_3
+						 this = scope:seek_combat_attacker_bodyguard_4
+						 this = scope:seek_combat_attacker_bodyguard_5
+						 this = scope:seek_combat_attacker_bodyguard_6
+						 this = scope:seek_combat_attacker_bodyguard_7
+				}
+				is_in_army = yes 
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+				add_to_list = attackers
+			save_scope_as = seek_combat_attacker_bodyguard_5 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_attacker_bodyguard_6 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_attacker_bodyguard_1
+						 this = scope:seek_combat_attacker_bodyguard_2
+						 this = scope:seek_combat_attacker_bodyguard_3
+						 this = scope:seek_combat_attacker_bodyguard_4
+						 this = scope:seek_combat_attacker_bodyguard_5
+						 this = scope:seek_combat_attacker_bodyguard_6
+						 this = scope:seek_combat_attacker_bodyguard_7
+				}
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+				add_to_list = attackers
+			save_scope_as = seek_combat_attacker_bodyguard_6 }
+			
+			}
+			
+			if = { limit = { NOT = { scope:seek_combat_attacker_bodyguard_7 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_attacker_bodyguard_1
+						 this = scope:seek_combat_attacker_bodyguard_2
+						 this = scope:seek_combat_attacker_bodyguard_3
+						 this = scope:seek_combat_attacker_bodyguard_4
+						 this = scope:seek_combat_attacker_bodyguard_5
+						 this = scope:seek_combat_attacker_bodyguard_6
+						 this = scope:seek_combat_attacker_bodyguard_7
+				}
+				is_in_army = yes 
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+				add_to_list = attackers
+			save_scope_as = seek_combat_attacker_bodyguard_7 }
+			
+			}
+			
+			
+			
+			
+			
+		
+					}
+					
+					else = {
+					
+					if = { limit = { NOT = { scope:seek_combat_attacker_bodyguard_1 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+				add_to_list = attackers
+			save_scope_as = seek_combat_attacker_bodyguard_1 }
+			
+			}
+			if = { limit = { NOT = { scope:seek_combat_attacker_bodyguard_2 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOT = { this = scope:seek_combat_attacker_bodyguard_1 }
+				is_in_army = yes 
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+				add_to_list = attackers
+			save_scope_as = seek_combat_attacker_bodyguard_2 }
+			
+			}
+			
+			if = { limit = { NOT = { scope:seek_combat_attacker_bodyguard_3 = exists } }
+					
+					random_court_position_holder = {
+			type = bodyguard_court_position
+			limit = {
+				NOR = { this = scope:seek_combat_attacker_bodyguard_1
+						this = scope:seek_combat_attacker_bodyguard_2
+						}
+				is_in_army = yes  
+				NOT = { has_trait = dragonrider }
+			is_at_same_location = scope:recipient
+			}
+			add_to_list = duel_observers
+			add_to_list = attackers
+			save_scope_as = seek_combat_attacker_bodyguard_3 }
+			
+			}
+					
+					
+					
+					
+					}
+			#trigger_event = seek_combat.0001
+			
+		}
+		scope:recipient = {  trigger_event = seek_combat.00011
+												
+										
+										}
+	}
+
+	on_accept = {
+
+		
+	}
+	
+	ai_will_do = {
+		base = 0 #The AI should never do this!
+
+	
+		
+	}
+
+	auto_accept = yes
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

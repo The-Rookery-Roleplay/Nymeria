@@ -1,0 +1,7 @@
+﻿l_english:
+ rule_hotd_visuals_rule:0 "HOTD Visual Style"
+ rule_hotd_visuals_rule_desc:0 "Use House of the Dragon style crowns and artifact visuals from AGOT+."
+ setting_hotd_visuals:0 "On"
+ setting_hotd_visuals_desc:0 "HOTD show visuals."
+ setting_hotd_visuals_off:0 "Off"
+ setting_hotd_visuals_off_desc:0 "Book or default visuals."

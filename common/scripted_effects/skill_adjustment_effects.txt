@@ -321,11 +321,11 @@ adjust_skill_threshold = {
 				OR = {
 					AND = {
 					   $SKILL$ = stewardship
-					   has_trait = education_nht_leadership
+					   # has_trait = education_nht_leadership
 					}
 					AND = {
 					   $SKILL$ = prowess
-					   has_trait = education_nht_prowess
+					   # has_trait = education_nht_prowess
 					   
 					}
 				}
@@ -350,14 +350,14 @@ adjust_skill_threshold = {
 					   $SKILL$ = diplomacy
 					   #check_trait_modded = { TRAIT = education_nht_leadership }
 					   #exists = education_nht_leadership
-					   has_trait = education_nht_leadership
+					   # has_trait = education_nht_leadership
 					   
 					}
 					AND = {
 					   $SKILL$ = martial
 					   #check_trait_modded = { TRAIT = education_nht_prowess }
 					   #exists = education_nht_prowess
-					   has_trait = education_nht_prowess
+					   # has_trait = education_nht_prowess
 					   
 					}
 				}
@@ -722,8 +722,8 @@ get_education_level = {
 			   trigger_if = {
 					limit = { exists = global_var:more_lifestyles_mod_installed }
 					OR = {
-						has_trait = education_nht_prowess_1 
-						has_trait = education_nht_leadership_1 
+						# has_trait = education_nht_prowess_1 
+						# has_trait = education_nht_leadership_1 
 					}
 			   }
 			}
@@ -746,8 +746,8 @@ get_education_level = {
 			   trigger_if = {
 					limit = { exists = global_var:more_lifestyles_mod_installed }
 					OR = {
-						has_trait = education_nht_prowess_2 
-						has_trait = education_nht_leadership_2 
+						# has_trait = education_nht_prowess_2 
+						# has_trait = education_nht_leadership_2 
 					}
 			   }
 			}
@@ -770,8 +770,8 @@ get_education_level = {
 			   trigger_if = {
 					limit = { exists = global_var:more_lifestyles_mod_installed }
 					OR = {
-						has_trait = education_nht_prowess_3 
-						has_trait = education_nht_leadership_3
+						# has_trait = education_nht_prowess_3 
+						# has_trait = education_nht_leadership_3
 					}
 			   }
 			}
@@ -794,8 +794,8 @@ get_education_level = {
 			   trigger_if = {
 					limit = { exists = global_var:more_lifestyles_mod_installed }
 					OR = {
-						has_trait = education_nht_prowess_4 
-						has_trait = education_nht_leadership_4 
+						# has_trait = education_nht_prowess_4 
+						# has_trait = education_nht_leadership_4 
 					}
 			   }
 			}
@@ -818,8 +818,8 @@ get_education_level = {
 			   trigger_if = {
 					limit = { exists = global_var:more_lifestyles_mod_installed }
 					OR = {
-						has_trait = education_nht_prowess_5 
-						has_trait = education_nht_leadership_5 
+						# has_trait = education_nht_prowess_5 
+						# has_trait = education_nht_leadership_5 
 					}
 			   }
 			}

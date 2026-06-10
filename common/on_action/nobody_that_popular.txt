@@ -1,0 +1,58 @@
+﻿on_birthday_adulthood = { 
+	on_actions = { 
+		on_action_adjust_stranger_opinion 
+	} 
+}
+
+on_action_adjust_stranger_opinion = {
+	effect = {
+		save_scope_as  = root_scope
+		#is the mod enabled for this character
+		if = {
+			limit = {
+				NOT = { exists = global_var:nobody_that_popular_disable_flag }
+				NOR = { #exceptions
+					AND = {	is_ai = yes
+							exists = global_var:nobody_that_popular_player_only_flag # Check if the mod is disabled for AI
+					}
+					AND = {is_ai = yes # Does not apply to AI conquerors to keep them challenging 
+						OR = {
+							has_trait = conqueror # Conqueror
+							has_character_modifier = the_great_khan_modifier # Great Khan
+							has_trait = greatest_of_khans #Greatest of Khans
+						}
+					}
+				}
+				OR = { # hasn't failed to qualify for adjustments recently
+					NOT = { exists = var:stranger_opinion_fail_to_qualify_date }
+					var:stranger_opinion_fail_to_qualify_date <= {value = current_date subtract = 1825} # 5 yr wait
+				}
+				any_character_trait = { #it is unlikely that someone without a lot of traits would need this adjustment
+					count > 4
+					NOR = {
+						has_trait_category = education
+						has_trait_category = personality
+						has_trait_category = commander
+					}
+				} 
+				OR = { #This opinion adjustment is done for the following characters
+						is_ai = no # player
+						highest_held_title_tier >= tier_duchy # dukes and higher
+						any_parent = {highest_held_title_tier >= tier_kingdom} # children of kings and emperors
+						any_sibling = {highest_held_title_tier >= tier_kingdom} # siblings of kings and emperors
+				}	
+			}
+			#Set globals if they are missing
+			 #Opinion threshold above which the opinion should be reduced
+			if = {
+				limit = { NOT = { exists = global_var:stranger_opinion_threshold } }
+				set_global_variable = {
+					name = stranger_opinion_threshold
+					value = 30
+				}
+			}
+			scope:root_scope = {adjust_stranger_opinion}
+		}
+	}
+} 
+

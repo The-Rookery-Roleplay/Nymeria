@@ -18,6 +18,7 @@ DI_hide_button_check = {
     scope = character
 
     is_valid = {
+        exists = this
         NOT = {
             any_owned_story = {
                 story_type = DI_misc_variables_story

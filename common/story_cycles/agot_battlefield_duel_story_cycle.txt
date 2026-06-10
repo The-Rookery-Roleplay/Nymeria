@@ -1,0 +1,106 @@
+﻿agot_battlefield_duel_story = {
+	on_setup = {
+		set_variable = {
+			name	= day_counter
+			value	= 1
+		}
+		set_variable = {
+			name	= battlefield_duel
+			value	= flag:combat
+		}
+		every_in_list = {
+			variable = attackers
+			limit = { 
+				is_alive = yes
+				NOT = { has_character_flag = active_battlefield_duel }
+			}
+			add_character_flag = active_battlefield_duel
+		}
+		every_in_list = {
+			variable = defenders
+			limit = { 
+				is_alive = yes
+				NOT = { has_character_flag = active_battlefield_duel }
+			}
+			add_character_flag = active_battlefield_duel
+		}
+	}
+	on_end = {
+		story_owner = { remove_character_flag = active_battlefield_duel }
+		every_in_list = {
+			variable = attackers
+			limit = { is_alive = yes }
+			remove_character_flag = active_battlefield_duel
+		}
+		every_in_list = {
+			variable = defenders
+			limit = { is_alive = yes }
+			remove_character_flag = active_battlefield_duel
+		}
+	}
+
+	on_owner_death = {
+		story_owner.primary_heir = { add_character_flag = active_battlefield_duel }
+		make_story_owner = story_owner.primary_heir
+	}
+
+	effect_group = {
+		days = 1
+		first_valid = {
+			triggered_effect = {
+				trigger = {
+					var:battlefield_duel = flag:combat
+					NOT = {
+						any_in_list = {
+							variable = battlefield_duel_participants
+							has_variable = engaged_in_single_combat 
+						}
+					}
+				}
+				effect = {
+					set_variable = {
+							name = battlefield_duel
+							value = flag:paused
+						}
+					agot_battlefield_duel_variable_pull = yes
+					story_owner = { trigger_event = seek_combat.0002 }
+					every_in_list = {
+						variable = duel_observers
+						save_scope_as = duel_observer
+						trigger_event = seek_combat.0002
+					}
+					
+				}
+			}
+		}
+	}
+	effect_group = {
+		days = 1
+
+		trigger = {
+			exists = var:day_counter 
+		}
+		
+		triggered_effect = {
+			trigger = {
+				exists = var:day_counter 
+			}
+			effect = {
+				change_variable = {
+						name	= day_counter
+						add		= 1
+				}
+				
+
+				if = {
+					limit = {
+						
+						var:day_counter > 90
+					}
+					end_story = yes
+				}
+
+			}
+		}
+	}
+}

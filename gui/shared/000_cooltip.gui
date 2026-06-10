@@ -1,0 +1,578 @@
+template unit_icon_item_tooltip {
+
+	widget = {
+		alwaystransparent = no
+		using = GeneralTooltipSetup
+		datacontext = "[UnitItem.GetArmy]"
+
+		widget = {
+			name = "background"
+			using = DefaultTooltipBackground
+			size = { 100% 100% }
+			alwaystransparent = no
+		}
+
+		vbox = {
+			set_parent_size_to_minimum = yes
+			margin = { 5 5 }
+			spacing = 5
+			visible = yes
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				margin = { 5 0 }
+				margin_top = 5
+
+				background = {
+					using = Background_Header_Tall
+				}
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin_bottom = 5
+
+					widget = {
+						size = { 60 60 }
+						
+						coa_realm_small = {
+							datacontext = "[UnitItem.GetOwner]"
+							parentanchor = center
+							position = { 0 5 }
+							tintcolor = "[TooltipInfo.GetTintColor]"
+						}
+					}
+
+					vbox = {
+						layoutpolicy_vertical = expanding
+						
+						text_single = {
+							name = "title"
+							layoutpolicy_vertical = expanding
+							layoutpolicy_horizontal = expanding
+							align = top|left
+							raw_text = "[Army.GetNameNoTooltip] ([UnitItem.GetTooltipHeader])"
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+							
+							margin_top = 5
+							margin_right = 20
+						}
+
+						hbox = {
+							layoutpolicy_horizontal = growing#visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( UnitItem.GetOwner.MakeScope ).AddScope('player', GetPlayer.MakeScope ).AddScope('army_commander', UnitItem.GetArmy.GetCommander.MakeScope ).End )]"
+
+							hbox_soldiers_and_quality_small_core = {
+								datacontext = "[GetScriptedGui('han_show_army')]"
+								visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( UnitItem.GetOwner.MakeScope ).AddScope('player', GetPlayer.MakeScope ).AddScope('army_commander', UnitItem.GetArmy.GetCommander.MakeScope ).End )]"
+								datacontext = "[Army.GetComposition]"
+								spacing = 5
+							}
+
+							hbox_soldiers_and_quality_small_core_HIDE = {
+								datacontext = "[GetScriptedGui('han_show_army')]"
+								visible = "[Not(ScriptedGui.IsShown( GuiScope.SetRoot( UnitItem.GetOwner.MakeScope ).AddScope('player', GetPlayer.MakeScope ).AddScope('army_commander', UnitItem.GetArmy.GetCommander.MakeScope ).End ))]"
+								text = "???"
+								spacing = 5
+							}
+
+							expand = {
+								layoutpolicy_horizontal = growing
+							}
+						}
+
+						expand = {
+							layoutpolicy_vertical = growing
+						}
+					}
+
+					expand = {
+						layoutpolicy_horizontal = growing
+					}
+				}
+			}
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+
+				hbox = {
+					name = "troop_breakdown"
+					layoutpolicy_vertical = expanding
+					layoutpolicy_horizontal = expanding
+
+					margin = { 10 10 }
+					margin_left = 15
+
+					background = {
+						using = Background_Area
+					}
+
+					dynamicgridbox = {
+						name = "troops"
+						datamodel = "[CalculateBreakdownItems(Army.Self)]"
+						datacontext = "[GetScriptedGui('han_show_army')]"
+						visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( UnitItem.GetOwner.MakeScope ).AddScope('player', GetPlayer.MakeScope ).AddScope('army_commander', UnitItem.GetArmy.GetCommander.MakeScope ).End )]"
+						datamodel_wrap = 4
+						flipdirection = yes
+
+						item = {
+							widget = {
+								hbox = {
+									margin_right = 15
+									set_parent_size_to_minimum = yes
+									tooltip = "ARMY_VIEW_TROOP_TT"
+									spacing = 4
+
+									icon = {
+										name = "men_at_arms_icon"
+										visible = "[TroopItem.IsMaa]"
+										size = { 35 35 }
+										texture = "[TroopItem.GetRegiment.GetRegiment.GetMAAType.GetIcon]"
+									}
+
+									widget = {
+										size = { 35 35 }
+										name = "levies_icon"
+										visible = "[TroopItem.IsLevies]"
+
+										icon = {
+											# the levies icon is larger than the MaA icons so it looks better if smaller
+											size = { 30 30 }
+											texture = "gfx/interface/icons/icon_soldier.dds"
+											parentanchor = center
+										}
+									}
+
+									icon = {
+										name = "knight_icon"
+										visible = "[TroopItem.IsKnight]"
+										size = { 35 35 }
+										texture = "gfx/interface/icons/icon_knight_small.dds"
+									}
+
+									text_single = {
+										layoutpolicy_horizontal = growing
+										text = "[TroopItem.GetCount|*V]"
+										align = nobaseline
+										fonttintcolor = "[TooltipInfo.GetTintColor]"
+									}
+
+								}
+
+								highlight_icon = {
+									name = "levies_icon"
+									visible = "[TroopItem.IsLevies]"
+									size = { 35 35 }
+									texture = "gfx/interface/icons/icon_levies.dds"
+								}
+
+								highlight_icon = {
+									name = "knight_icon"
+									visible = "[TroopItem.IsKnight]"
+									size = { 35 35 }
+									texture = "gfx/interface/icons/icon_knight_small.dds"
+								}
+							}
+						}
+					}
+
+					hbox = {
+						datacontext = "[GetScriptedGui('han_show_army')]"
+						visible = "[Not(ScriptedGui.IsShown( GuiScope.SetRoot( UnitItem.GetOwner.MakeScope ).AddScope('player', GetPlayer.MakeScope ).AddScope('army_commander', UnitItem.GetArmy.GetCommander.MakeScope ).End ))]"
+						text = "???"
+					}
+
+					expand = {
+						layoutpolicy_vertical = expanding
+					}
+				}
+
+				hbox = {
+					name ="commander"
+					datacontext = "[Army.GetCommander]"
+					layoutpolicy_horizontal = expanding
+					margin = { 15 10 }
+
+					background = {
+						using = Background_Area
+					}
+
+					hbox = {
+						visible = "[Character.IsValid]"
+						layoutpolicy_horizontal = expanding
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							text = "ARMY_TOOLTIP_COMMANDER"
+							align = nobaseline
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+						}
+
+						hbox = {
+							tooltip = "[Character.GetCommanderAdvantageDesc]"
+							icon = {
+								name = "skill_icon"
+								texture = "gfx/interface/icons/icon_commander_advantage.dds"
+								size = { 30 30 }
+							}
+							text_single = {
+								text = "ARMY_TOOLTIP_COMMANDER_ADVANTAGE"
+								align = nobaseline
+								fonttintcolor = "[TooltipInfo.GetTintColor]"
+							}
+						}
+					}
+
+					text_single = {
+						name = "no_troop_commander"
+						visible = "[Not( Character.IsValid )]"
+						layoutpolicy_horizontal = expanding
+						text = "ARMY_TOOLTIP_NO_COMMANDER"
+						align = nobaseline
+
+						default_format = "#weak"
+						fonttintcolor = "[TooltipInfo.GetTintColor]"
+					}
+				}
+
+				hbox = {
+					visible = "[Army.IsRaidArmy]"
+
+					layoutpolicy_horizontal = expanding
+					margin = { 10 5 }
+
+					background = {
+						using = Background_Area
+					}
+
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						text = "ARMY_LOOT_INFO"
+						align = nobaseline
+						fonttintcolor = "[TooltipInfo.GetTintColor]"
+					}
+				}
+
+				vbox = {
+					name = "statuses"
+					layoutpolicy_horizontal = expanding
+
+					hbox = {
+						visible = "[UnitItem.IsRulerCommander]"
+						layoutpolicy_horizontal = expanding
+						margin = { 10 0 }
+						margin_bottom = 5 
+						spacing = 2
+
+						icon = {
+							texture = "gfx/interface/icons/map_icons/commander_is_leader.dds"
+							size = { 24 24 }
+						}
+
+						text_single = {
+							datacontext = "[UnitItem.GetUnitPortraitCharacter]"
+							layoutpolicy_horizontal = expanding
+							text = "COMMANDER_IS_LEADER"
+							align = nobaseline
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+						}
+					}
+
+					hbox = {
+						visible = "[UnitItem.HasDisembarkPenalty]"
+						layoutpolicy_horizontal = expanding
+						margin = { 10 0 }
+						margin_bottom = 5 
+						spacing = 2
+
+						icon = {
+							name = "sea_sickness_icon"
+							size = { 24 24 }
+							texture = "gfx/interface/icons/map_icons/army_icon_disembarked.dds"
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							text = "[Army.GetEmbarkInfoForTooltip]"
+							align = nobaseline
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+						}
+					}
+
+					hbox = {
+						visible = "[UnitItem.IsGathering]"
+						layoutpolicy_horizontal = expanding
+						margin = { 10 0 }
+						margin_bottom = 5 
+						spacing = 2
+
+						icon = {
+							texture = "gfx/interface/icons/map_icons/army_icon_gathering.dds"
+							size = { 24 24 }
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							text = "ARMY_TOOLTIP_IS_GATHERING"
+							align = nobaseline
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+						}
+					}
+
+					hbox = {
+						visible = "[And( Army.IsRaidArmy, Army.IsRaidLootCapped)]"
+						layoutpolicy_horizontal = expanding
+						margin = { 10 0 }
+						margin_bottom = 5 
+						spacing = 2
+
+						tooltip = ARMY_AT_LOOT_CAP_TOOLTIP
+
+						icon = {
+							texture = "gfx/interface/icons/map_icons/army_icon_at_loot_cap.dds"
+							size = { 24 24 }
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							text = "ARMY_AT_LOOT_CAP"
+							align = nobaseline
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+						}
+					}
+
+					hbox = {
+						visible = "[UnitItem.IsRetreating]"
+						layoutpolicy_horizontal = expanding
+						margin = { 10 0 }
+						margin_bottom = 5 
+						spacing = 2
+
+						icon = {
+							texture = "gfx/interface/icons/map_icons/army_icon_retreating.dds"
+							size = { 24 24 }
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							text = "ARMY_RETREATING"
+							align = nobaseline
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+						}
+					}
+				}
+
+				divider_light = {
+					layoutpolicy_horizontal = expanding
+				}
+
+				# #--------------------------------------
+				# |  ¤ Attrition: 1%/month
+				# |  & Well supplied (100) -10/month
+				# | -> Province, 17 days left (29 May yyyy)
+				# | () Movement locked
+				# #--------------------------------------
+
+				vbox = {
+					name = "involved_army_details"
+					visible = "[Not(Army.IsNeutralToPlayer)]"
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+
+					margin = { 10 5 }
+
+					hbox = {
+						name = "involved_army_attrition_warning"
+						visible = "[Army.IsArmySufferingFromAttrition]"
+						layoutpolicy_horizontal = expanding
+
+						tooltip = "ARMY_ATTRITION_TT"
+						spacing = 2
+
+						icon = {
+							texture = "gfx/interface/icons/map_icons/attrition_icon.dds"
+							size = { 24 24 }
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							name = "attrition"
+							text = "ARMY_TOOLTIP_ATTRITION"
+							align = nobaseline
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+						}
+					}
+
+					hbox = {
+						name = "involved_army_supply_status"
+						layoutpolicy_horizontal = expanding
+
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							text = "[Army.GetSupplyInfoForTooltip]"
+							tooltip = "[Army.GetSupplyStateTooltip]"
+							align = nobaseline
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+						}
+					}
+
+					vbox = {
+						layoutpolicy_horizontal = expanding
+
+						hbox = {
+							name = "involved_army_movement"
+							visible = "[Army.IsMoving]"
+							layoutpolicy_horizontal = expanding
+							spacing = 2
+
+							icon = {
+								name = "unit_moving"
+								visible = "[Not(UnitItem.IsRetreating)]"
+								texture = "gfx/interface/icons/combat_effects/moving_army.dds"
+								size = { 24 24 }
+							}
+
+							text_single = {
+								layoutpolicy_horizontal = expanding
+								text = "[Army.GetMovementInfoForTooltip]"
+								align = nobaseline
+								fonttintcolor = "[TooltipInfo.GetTintColor]"
+							}
+						}
+
+						hbox = {
+							name = "involved_army_movement_lock"
+							visible = "[UnitItem.IsMovementLocked]"
+							layoutpolicy_horizontal = expanding
+							spacing = 2
+
+							icon = {
+								texture = "gfx/interface/icons/map_icons/movement_locked.dds"
+								size = { 24 24 }
+							}
+
+							text_single = {
+								layoutpolicy_horizontal = expanding
+								text = "ARMY_TOOLTIP_IS_MOVEMENT_LOCKED"
+								align = nobaseline
+								fonttintcolor = "[TooltipInfo.GetTintColor]"
+							}
+						}
+					}
+				} 
+
+				block "extra_unit_info" {}
+
+				# PLAYER FACING AI INFO
+				vbox = {
+					visible = "[Or( Army.IsControlledByCompanionAI, UnitItem.IsUnitItemAlly)]"
+					layoutpolicy_horizontal = expanding
+
+					divider_light = {
+						layoutpolicy_horizontal = expanding
+					}
+
+					vbox = {
+						margin = { 15 5 }
+						layoutpolicy_horizontal = expanding
+
+						hbox = {
+							visible = "[Army.IsControlledByCompanionAI]"
+							layoutpolicy_horizontal = expanding
+							spacing = 2
+
+							army_automation_on = {
+								size = { 24 24 }
+							}
+
+							text_single = {
+								layoutpolicy_horizontal = expanding
+								text = "ARMY_IS_AUTOMATED"
+								align = nobaseline
+								fonttintcolor = "[TooltipInfo.GetTintColor]"
+							}
+						}
+
+						hbox = {
+							visible = "[UnitItem.IsUnitItemAlly]"
+							layoutpolicy_horizontal = expanding
+							spacing = 2
+
+							icon = {
+								texture = "gfx/interface/icons/message_feed/alliance.dds"
+								size = { 24 24 }
+							}
+
+							text_single = {
+								layoutpolicy_horizontal = expanding
+								text = "ARMY_IS_ALLY"
+								align = nobaseline
+								fonttintcolor = "[TooltipInfo.GetTintColor]"
+							}
+						}
+
+						hbox = {
+							layoutpolicy_horizontal = expanding
+							margin_top = 5
+							spacing = 2
+							
+							icon_ai_order = {}
+
+							text_multi = {
+								layoutpolicy_horizontal = expanding
+								autoresize = yes
+								text = "[Army.GetAIOrderDesc]"
+								align = nobaseline
+								fonttintcolor = "[TooltipInfo.GetTintColor]"
+							}
+
+							expand = {}
+						}
+					}
+				}
+
+				# AI DEBUG INFO
+				vbox = {
+					visible = "[And( InDebugMode, Not(ReleaseMode) )]"
+					layoutpolicy_horizontal = expanding
+
+					text_single = {
+						# Deliberately unlocalized since this is debug functionality
+						layoutpolicy_horizontal = expanding
+						raw_text = "DEBUG:"
+						align = nobaseline
+						default_format = "#debug"
+						fonttintcolor = "[TooltipInfo.GetTintColor]"
+					}
+
+
+					text_single = {
+						# Deliberately unlocalized since this is debug functionality
+						layoutpolicy_horizontal = expanding
+						raw_text = "Army: [Army.GetArmyId] Unit: [Army.GetUnitId]"
+						align = nobaseline
+						fonttintcolor = "[TooltipInfo.GetTintColor]"
+					}
+
+					text_single = {
+						# Deliberately unlocalized since this is debug functionality
+						layoutpolicy_horizontal = expanding
+						raw_text = "#E AI Coordinator: [Army.GetAiCoordinatorId]#!"
+						align = nobaseline
+						fonttintcolor = "[TooltipInfo.GetTintColor]"
+						
+						raw_tooltip = "Stack: [Army.GetAiUnitStackId] Sub: [Army.GetAiSubUnitStackId]"
+					}
+
+					text_multi = {
+						layoutpolicy_horizontal = expanding
+						autoresize = yes
+						text = "[Army.GetDebugAIInfo]"
+						align = nobaseline
+						fonttintcolor = "[TooltipInfo.GetTintColor]"
+					}
+				}
+			}
+		}
+	}
+}

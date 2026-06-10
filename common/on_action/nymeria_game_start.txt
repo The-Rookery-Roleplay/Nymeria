@@ -137,6 +137,7 @@ quarterly_playable_pulse = {
 on_game_start = {
     on_actions = {
         crackclaw_confed_on_game_start
+        nymeria_rework_white_harbor
         nymeria_lakefolk_confed_on_game_start
         nymeria_block_dragonstone_colonization
     }
@@ -226,6 +227,41 @@ nymeria_lakefolk_confed_on_game_start = {
                         add_confederation_member = scope:ck_lakefolk_joiner
                     }
                 }
+            }
+        }
+    }
+}
+
+nymeria_rework_white_harbor = {
+    effect = {
+        if = {
+            limit = { game_start_date = 7299.1.1 }
+            title:b_wolfs_den ?= { set_capital_barony = yes }
+            title:b_new_castle ?= {
+                save_title_name_change_data = { TRANSFER_VAR = no }
+                set_title_name = citadel_b_wolfs_hill
+                title_province = { remove_holding = yes }
+            }
+            title:b_white_harbor ?= {
+                save_title_name_change_data = { TRANSFER_VAR = no }
+                set_title_name = citadel_b_white_knifes_mouth
+                title_province = { remove_holding = yes }
+            }
+            title:b_pronged_port ?= {
+                title_province = { remove_holding = yes }
+            }
+            title:b_sept_of_the_snows ?= {
+                save_title_name_change_data = { TRANSFER_VAR = no }
+                set_title_name = citadel_b_snowfields
+                title_province = { remove_holding = yes }
+            }
+            title:c_white_harbor ?= {
+                save_title_name_change_data = { TRANSFER_VAR = no }
+                set_title_name = citadel_wolfs_den
+            }
+            title:d_white_harbor ?= {
+                save_title_name_change_data = { TRANSFER_VAR = no }
+                set_title_name = citadel_wolfs_den
             }
         }
     }

@@ -1,0 +1,85 @@
+﻿
+
+agot_battlefield_duel_combat_effect = {
+
+	random_in_list = {
+		list = attackers
+		limit = {
+		NOT = { is_in_list = attacker_pows }
+		is_alive = yes
+		}
+		save_scope_as = duelist_1
+	}
+	random_in_list = {
+		list = defenders
+		limit = {
+			NOT = { is_in_list = defender_pows }
+			is_alive = yes
+		}
+		save_scope_as = duelist_2
+	}
+	configure_start_single_combat_effect = {
+		SC_INITIATOR = scope:duelist_1
+		SC_ATTACKER = scope:duelist_1
+		SC_DEFENDER = scope:duelist_2
+		FATALITY = possible
+		FIXED = no
+		LOCALE = scope:background_terrain_scope
+		OUTPUT_EVENT = seek_combat.0007
+		INVALIDATION_EVENT = single_combat.1006	#In a real event, this would obviously be a different even to the output.
+	}
+}
+
+
+
+agot_battlefield_duel_variable_pull = {
+	story_owner = { save_scope_as = duel_owner }
+	save_scope_as = battlefield_duel_story
+	if = { limit = { exists = var:seek_combat_attacker } var:seek_combat_attacker = { save_scope_as = seek_combat_attacker } }
+	if = { limit = { exists = var:defender_home_court } var:defender_home_court = { save_scope_as = defender_home_court } }
+	
+	if = { limit = { exists = var:battle_location } var:battle_location = { save_scope_as = battle_location } }
+	
+	if = { limit = { exists = var:seek_combat_attacker_bodyguard_1 } var:seek_combat_attacker_bodyguard_1 = { save_scope_as = seek_combat_attacker_bodyguard_1 add_to_list = attackers } }
+	if = { limit = { exists = var:seek_combat_attacker_bodyguard_2 } var:seek_combat_attacker_bodyguard_2 = { save_scope_as = seek_combat_attacker_bodyguard_2 add_to_list = attackers } }
+	if = { limit = { exists = var:seek_combat_attacker_bodyguard_3 } var:seek_combat_attacker_bodyguard_3 = { save_scope_as = seek_combat_attacker_bodyguard_3 add_to_list = attackers } }
+	if = { limit = { exists = var:seek_combat_attacker_bodyguard_4 } var:seek_combat_attacker_bodyguard_4 = { save_scope_as = seek_combat_attacker_bodyguard_4 add_to_list = attackers } }
+	if = { limit = { exists = var:seek_combat_attacker_bodyguard_5 } var:seek_combat_attacker_bodyguard_5 = { save_scope_as = seek_combat_attacker_bodyguard_5 add_to_list = attackers } }
+	if = { limit = { exists = var:seek_combat_attacker_bodyguard_6 } var:seek_combat_attacker_bodyguard_6 = { save_scope_as = seek_combat_attacker_bodyguard_6 add_to_list = attackers } }
+	if = { limit = { exists = var:seek_combat_attacker_bodyguard_7 } var:seek_combat_attacker_bodyguard_7 = { save_scope_as = seek_combat_attacker_bodyguard_7 add_to_list = attackers } }
+	
+	if = { limit = { exists = var:seek_combat_defender } var:seek_combat_defender = { save_scope_as = seek_combat_defender add_to_list = defenders } }
+	if = { limit = { exists = var:seek_combat_defender_bodyguard_1 } var:seek_combat_defender_bodyguard_1 = { save_scope_as = seek_combat_defender_bodyguard_1 add_to_list = defenders } }
+	if = { limit = { exists = var:seek_combat_defender_bodyguard_2 } var:seek_combat_defender_bodyguard_2 = { save_scope_as = seek_combat_defender_bodyguard_2 add_to_list = defenders } }
+	if = { limit = { exists = var:seek_combat_defender_bodyguard_3 } var:seek_combat_defender_bodyguard_3 = { save_scope_as = seek_combat_defender_bodyguard_3 add_to_list = defenders } }
+	if = { limit = { exists = var:seek_combat_defender_bodyguard_4 } var:seek_combat_defender_bodyguard_4 = { save_scope_as = seek_combat_defender_bodyguard_4 add_to_list = defenders } }
+	if = { limit = { exists = var:seek_combat_defender_bodyguard_5 } var:seek_combat_defender_bodyguard_5 = { save_scope_as = seek_combat_defender_bodyguard_5 add_to_list = defenders } }
+	if = { limit = { exists = var:seek_combat_defender_bodyguard_6 } var:seek_combat_defender_bodyguard_6 = { save_scope_as = seek_combat_defender_bodyguard_6 add_to_list = defenders } }
+	if = { limit = { exists = var:seek_combat_defender_bodyguard_7 } var:seek_combat_defender_bodyguard_7 = { save_scope_as = seek_combat_defender_bodyguard_7 add_to_list = defenders } }
+	## LISTS
+	
+	if = { limit = { has_variable_list = defender_pows } 
+		every_in_list = {
+			variable = defender_pows
+			add_to_list = defender_pows
+		}
+	}
+	if = { limit = { has_variable_list = attacker_pows } 
+		every_in_list = {
+			variable = attacker_pows
+			add_to_list = attacker_pows
+		}
+	}
+	if = { limit = { has_variable_list = attackers } 
+		every_in_list = {
+			variable = attackers
+			add_to_list = attackers
+		}
+	}
+	if = { limit = { has_variable_list = defenders } 
+		every_in_list = {
+			variable = defenders
+			add_to_list = defenders
+		}
+	}
+}

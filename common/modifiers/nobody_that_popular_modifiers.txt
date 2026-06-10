@@ -1,0 +1,8 @@
+﻿strangers_opinion_modifier = {
+	icon = social_negative
+	general_opinion = -1
+	scale = {
+		value = var:strangers_opinion_modifier_var
+		display_mode = scaled
+	}
+}

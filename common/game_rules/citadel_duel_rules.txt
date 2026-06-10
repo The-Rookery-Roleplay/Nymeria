@@ -1,0 +1,9 @@
+﻿agot_battlefield_duel_cooldown = {
+	categories = {
+		nymeria
+	}
+	default = agot_battlefield_duel_cooldown_on
+
+	agot_battlefield_duel_cooldown_on = {}
+	agot_battlefield_duel_cooldown_off = {}
+}

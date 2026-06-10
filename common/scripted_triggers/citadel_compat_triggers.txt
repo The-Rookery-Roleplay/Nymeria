@@ -1,0 +1,3 @@
+﻿is_agot_plus_loaded_trigger = {
+	always = no
+}
