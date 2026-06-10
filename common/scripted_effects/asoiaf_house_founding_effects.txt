@@ -1,0 +1,9 @@
+﻿asoiaf_house_founding_bastard_effect = {
+	if = {
+		limit = {
+			has_trait = bastard
+		}
+		remove_trait = bastard
+		add_trait = legitimized_bastard
+	}
+}

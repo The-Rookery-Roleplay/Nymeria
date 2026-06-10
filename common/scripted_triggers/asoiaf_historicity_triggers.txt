@@ -1,0 +1,6 @@
+﻿asoiaf_historical_trigger = {
+	OR = {
+		has_game_rule = agot_story_historical_events_historical_outcomes
+		has_game_rule = agot_story_historical_events_weighted_outcomes
+	}
+}

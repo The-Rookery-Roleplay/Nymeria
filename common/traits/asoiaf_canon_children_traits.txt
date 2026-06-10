@@ -1,0 +1,2051 @@
+﻿
+asoiaf_Targaryen_12_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_13_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_14_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_15_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_16_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_17_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_20_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_21_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_22_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_23_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_24_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_25_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_26_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_28_trait = { #Visenya Targaryen (daughter of Aerion)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_27_trait = { #Aegon I Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_29_trait = { #Rhaenys Targaryen (daughter of Aerion)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_30_trait = { #Aenys I Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_31_trait = { #Maegor I Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_32_trait = { #Rhaena Targaryen (daughter of Aenys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_33_trait = { #Aegon Targaryen (son of Aenys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_34_trait = { #Viserys Targaryen (son of Aenys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_35_trait = { #Jaehaerys I Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_36_trait = { #Alysanne Targaryen (daughter of Aenys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_37_trait = { #Vaella Targaryen (daughter of Aenys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_38_trait = { #Aegon Targaryen (son of Maegor I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_40_trait = { #Rhaenys Targaryen (daughter of Maegor I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_39_trait = { #Viserys Targaryen (son of Maegor I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_41_trait = { #Aerea Targaryen (daughter of Aegon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_42_trait = { #Rhaella Targaryen (daughter of Aegon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_43_trait = { #Aegon Targaryen (son of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_44_trait = { #Daenerys Targaryen (daughter of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_45_trait = { #Aemon Targaryen (son of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_46_trait = { #Baelon Targaryen (son of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_47_trait = { #Alyssa Targaryen (daughter of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_48_trait = { #Maegelle Targaryen (daughter of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_49_trait = { #Vaegon Targaryen (son of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_50_trait = { #Daella Targaryen (daughter of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_51_trait = { #Saera Targaryen (daughter of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_52_trait = { #Viserra Targaryen (daughter of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_53_trait = { #Gaemon Targaryen (son of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_54_trait = { #Valerion Targaryen (son of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_55_trait = { #Gael Targaryen (daughter of Jaehaerys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_55_1_trait = { #Gael's Stillborn Son
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_56_trait = { #Aelor (bastard of Saera)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_57_trait = { #Jaecerys (bastard of Saera)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_58_trait = { #Aegon (bastard of Saera)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Hammer_1_trait = { #Hugh the Hammer
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Hammer_2_trait = { #Hugh's daughter
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_White_1_trait = { #Ulf the White
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Farseed_1_trait = { #Nettles
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_59_trait = { #Rhaenys Targaryen (daughter of Aemon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_60_trait = { #Viserys I Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_61_trait = { #Daemon Targaryen (son of Baelon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_62_trait = { #Aegon Targaryen (son of Baelon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_131_trait = { #Aemon Targaryen (son of Viserys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_63_trait = { #Rhaenyra Targaryen (daughter of Viserys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_64_trait = { #Baelon Targaryen (son of Viserys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_65_trait = { #Aegon II Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_66_trait = { #Helaena Targaryen (daughter of Viserys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_67_trait = { #Aemond Targaryen (son of Viserys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_68_trait = { #Daeron Targaryen (son of Viserys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_69_trait = { #Baela Targaryen (daughter of Daemon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_70_trait = { #Rhaena Targaryen (daughter of Daemon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_61_1_trait = { #Laena's Third Child
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_71_trait = { #Jaehaera Targaryen (daughter of Aegon II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_72_trait = { #Jaehaerys Targaryen (son of Aegon II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_73_trait = { #Maelor Targaryen (son of Aegon II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_74_trait = { #Alleged bastard son of Aemond Targaryen (son of Viserys I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_75_trait = { #Jacaerys Velaryon (son of Rhaenyra)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_76_trait = { #Lucerys Velaryon (son of Rhaenyra)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_77_trait = { #Joffrey Velaryon (son of Rhaenyra)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_78_trait = { #Aegon III Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_79_trait = { #Viserys II Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_80_trait = { #Visenya Targaryen (daughter of Rhaenyra)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_81_trait = { #Daeron I Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_82_trait = { #Baelor I Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_83_trait = { #Daena Targaryen (daughter of Aegon III)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_84_trait = { #Rhaena Targaryen (daughter of Aegon III)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_85_trait = { #Elaena Targaryen (daughter of Aegon III)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_88_trait = { #Aegon IV Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_89_trait = { #Aemond Targaryen (son of Viserys II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_90_trait = { #Naerys Targaryen (daughter of Viserys II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_91_trait = { #Daeron II Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_134_trait = { #Viserra Targaryen (daughter of Aegon IV)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_132_trait = { #Viserys Targaryen (son of Aegon IV)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_133_trait = { #Baelon Targaryen (son of Aegon IV)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_92_trait = { #Daenerys Targaryen (daughter of Aegon IV)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_93_trait = { #Aemond Targaryen (son of Aegon IV)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_135_trait = { #Haegon Targaryen (son of Aegon IV)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_94_trait = { #Daemon I Blackfyre
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_95_trait = { #Aegor Bittersteel
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_96_trait = { #Brynden Rivers (Bloodraven)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_97_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_98_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_99_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_100_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_101_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_102_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_103_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_104_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_105_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_106_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_107_trait = { #Baelor Targaryen (son of Daeron II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_108_trait = { #Aerys I Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_109_trait = { #Rhaegel Targaryen (son of Daeron II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_110_trait = { #Maekar I Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_111_trait = { #Valarr Targaryen (son of Baelor)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_112_trait = { #Matarys Targaryen (son of Baelor)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_113_trait = { #Daeron Targaryen (son of Valarr)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_114_trait = { #Baelor Targaryen (son of Valarr)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_115_trait = { #Aelor Targaryen (son of Rhaegel)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_116_trait = { #Aelora Targaryen (daughter of Rhaegel)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_117_trait = { #Daenora Targaryen (daughter of Rhaegel)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_118_trait = { #Daeron Targaryen (son of Maekar I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_119_trait = { #Aerion Targaryen (son of Maekar I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_120_trait = { #Aemon Targaryen (son of Maekar I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_121_trait = { #Daella Targaryen (daughter of Maekar I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_122_trait = { #Aegon V Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_123_trait = { #Rhae Targaryen (daughter of Maekar I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_124_trait = { #Vaella Targaryen (daughter of Daeron)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_125_trait = { #Maegor Targaryen (son of Aerion)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_126_trait = { #Duncan Targaryen (son of Aegon V)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_127_trait = { #Jaehaerys II Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_128_trait = { #Shaera Targaryen (daughter of Aegon V)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_129_trait = { #Daeron Targaryen (son of Aegon V)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_130_trait = { #Rhaelle Targaryen (daughter of Aegon V)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_1_trait = { #Aerys II Targaryen
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_2_trait = { #Rhaella Targaryen (daughter of Jaehaerys II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_3_trait = { #Rhaegar Targaryen (son of Aerys II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_4_trait = { #Shaena Targaryen (daughter of Aerys II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_5_trait = { #Daeron Targaryen (son of Aerys II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_6_trait = { #Aegon Targaryen (son of Aerys II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_7_trait = { #Jaehaerys Targaryen (son of Aerys II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_8_trait = { #Viserys Targaryen (son of Aerys II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_9_trait = { #Daenerys Targaryen (daughter of Aerys II)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_10_trait = { #Rhaenys Targaryen (daughter of Rhaegar)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Targaryen_11_trait = { #Aegon Targaryen (son of Rhaegar)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Velaryon_10_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_11_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_12_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_13_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_14_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_15_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_16_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_20_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_21_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_23_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_24_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_25_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_26_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_31_trait = { #Corlys Velaryon (the Sea Snake)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_34_trait = { #Laena Velaryon (daughter of Corlys)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_35_trait = { #Laenor Velaryon (son of Corlys)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_43_trait = { #Addam Velaryon (bastard of Corlys)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_44_trait = { #Alyn Velaryon (bastard of Corlys)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_45_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_53_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_54_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_56_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_57_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_58_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_59_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_60_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_61_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_62_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_63_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_1_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_2_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_3_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_4_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_5_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_6_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_7_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_7_b_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_8_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Velaryon_9_trait = {
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Stark_84_trait = { #Rickon Stark (son of Benjen)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_86_trait = { #Cregan Stark (son of Rickon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_87_trait = { #Bennard Stark (son of Rickon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_88_trait = { #Sara Snow (bastard of Rickon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_94_trait = { #Rickon Stark (son of Cregan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_95_trait = { #Sarra Stark (daughter of Cregan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_96_trait = { #Alys Stark (daughter of Cregan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_97_trait = { #Raya Stark (daughter of Cregan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_98_trait = { #Mariah Stark (daughter of Cregan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_99_trait = { #Jonnel Stark (son of Cregan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_100_trait = { #Edric Stark (son of Cregan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_101_trait = { #Lyanna Stark (daughter of Cregan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_102_trait = { #Barthogan Stark (son of Cregan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_103_trait = { #Brandon Stark (son of Cregan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_1_trait = { #Rickard Stark (son of Edwyle)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_2_trait = { #Brandon Stark (son of Rickard)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_3_trait = { #Eddard Stark (son of Rickard)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_5_trait = { #Lyanna Stark (daughter of Rickard)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_4_trait = { #Benjen Stark (son of Rickard)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_6_trait = { #Robb Stark (son of Eddard)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_7_trait = { #Jon Snow (son of Rhaegar)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_8_trait = { #Sansa Stark (daughter of Eddard)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_9_trait = { #Arya Stark (daughter of Eddard)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_10_trait = { #Brandon Stark (son of Eddard)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Stark_11_trait = { #Rickon Stark (son of Eddard)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Karstark_4_trait = { #Rickard Karstark (son of Brandon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Reed_1_trait = { #Howland Reed (son of Edwyle)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Reed_2_trait = { #Meera Reed (daughter of Howland)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Reed_3_trait = { #Jojen Reed (son of Howland)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Baratheon_71_trait = { #Lyonel Baratheon (son of Symeon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_75_trait = { #Ormund Baratheon (son of Lyonel)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_1_trait = { #Steffon Baratheon (son of Ormund)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_2_trait = { #Robert I Baratheon
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_3_trait = { #Stannis Baratheon (son of Steffon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_4_trait = { #Renly Baratheon (son of Steffon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_2_1_trait = { #Alaric Baratheon (son of Robert I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_5_trait = { #Joffrey I Baratheon
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_6_trait = { #Myrcella Baratheon (daughter of Robert I)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_7_trait = { #Tommen I Baratheon
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_3_1_trait = { #Petyr Baratheon (son of Stannis)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_3_2_trait = { #Tommard Baratheon (son of Stannis)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_3_3_trait = { #Edric Baratheon (son of Stannis)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Baratheon_13_trait = { #Shireen Baratheon (daughter of Stannis)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Cole_11_trait = { #Criston Cole (the Kingmaker)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Lannister_129_trait = { #Tytos Lannister (son of Gerold)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_1_trait = { #Tywin Lannister (son of Tytos)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_2_trait = { #Kevan Lannister (son of Tytos)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_3_trait = { #Genna Lannister (daughter of Tytos)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_4_trait = { #Tygett Lannister (son of Tytos)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_5_trait = { #Gerion Lannister (son of Tytos)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_6_trait = { #Cersei Lannister (daughter of Tywin)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_7_trait = { #Jaime Lannister (son of Tywin)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_8_trait = { #Tyrion Lannister (son of Tywin)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_9_trait = { #Lancel Lannister (son of Kevan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_10_trait = { #Willem Lannister (son of Kevan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_11_trait = { #Martyn Lannister (son of Kevan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Lannister_12_trait = { #Janei Lannister (daughter of Kevan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Arryn_80_trait = { #Aemma Arryn (daughter of Rodrik)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Arryn_84_trait = { #Jeyne Arryn (the Maiden of the Vale)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Arryn_3_trait = { #Jon Arryn (son of Jasper)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Arryn_7_trait = { #Jeyne Arryn (daughter of Jon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Arryn_8_trait = { #Robin Arryn (son of Jon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Arryn_3_1_trait = { #first stillbirth of Lysa
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Arryn_3_2_trait = { #second stillbirth of Lysa
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Baelish_2_trait = { #Petyr Baelish (Littlefinger)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Hightower_90_trait = { #Otto Hightower (brother of Hobert)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Hightower_96_trait = { #Bryndon Hightower (son of Otto)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Hightower_97_trait = { #Alicent Hightower (daughter of Otto)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Hightower_98_trait = { #Myles Hightower (son of Otto)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Hightower_99_trait = { #Gwayne Hightower (son of Otto)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Tyrell_4_trait = { #Luthor Tyrell (son of Garlan)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tyrell_8_trait = { #Mace Tyrell (son of Luthor)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tyrell_9_trait = { #Mina Tyrell (daughter of Luthor)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tyrell_10_trait = { #Janna Tyrell (daughter of Luthor)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tyrell_11_trait = { #Willas Tyrell (son of Mace)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tyrell_12_trait = { #Garlan Tyrell (son of Mace)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tyrell_13_trait = { #Loras Tyrell (son of Mace)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tyrell_14_trait = { #Margaery Tyrell (daughter of Mace)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Tarly_1_trait = { #Randyll Tarly (son of Talbert)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tarly_2_trait = { #Samwell Tarly (son of Randyll)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tarly_3_trait = { #Talla Tarly (daughter of Randyll)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tarly_4_trait = { #Samantha Tarly (daughter of Randyll)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tarly_5_trait = { #Sansara Tarly (daughter of Randyll)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tarly_6_trait = { #Dickon Tarly (son of Randyll)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+
+asoiaf_Martell_4_trait = { #Doran Martell (son of Loreza)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Martell_9_trait = { #Arianne Martell (daughter of Doran)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Martell_10_trait = { #Quentyn Martell (son of Doran)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Martell_11_trait = { #Trystane Martell (son of Doran)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Dayne_1_trait = { #Beric Dayne (son of Davos)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Dayne_3_trait = { #Ulrick Dayne (son of Beric)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Dayne_5_trait = { #Arthur Dayne (son of Beric)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Dayne_4_trait = { #Ashara Dayne (daughter of Beric)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Dayne_6_trait = { #Allyria Dayne (daughter of Beric)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Dayne_7_trait = { #Edric Dayne (son of Ulrick)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tully_1_trait = { #Hoster Tully (son of Edmyn)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tully_9_trait = { #Brynden Tully (son of Edmyn)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tully_2_trait = { #Edmund Tully (son of Hoster)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tully_3_trait = { #Denys Tully (son of Hoster)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tully_4_trait = { #Catelyn Tully (daughter of Hoster)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tully_5_trait = { #Lady Stoneheart
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tully_6_trait = { #Lysa Tully (daughter of Hoster)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tully_7_trait = { #Edmure Tully (son of Hoster)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Tully_8_trait = { #Patrek Tully (son of Hoster)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Strong_28_trait = { #Simon Strong
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Strong_29_trait = { #Lyonel Strong (son of Osmund)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Strong_34_trait = { #Alys Rivers
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Strong_30_trait = { #Harwin Strong (son of Lyonel)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Strong_31_trait = { #Larys Strong (son of Lyonel)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Strong_32_trait = { #Catelyn Strong (daughter of Lyonel)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Strong_33_trait = { #Lysa Strong (daughter of Lyonel)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Greyjoy_5_trait = { #Balon Greyjoy (son of Quellon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Greyjoy_11_trait = { #Rodrik Greyjoy (son of Balon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Greyjoy_12_trait = { #Maron Greyjoy (son of Balon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Greyjoy_13_trait = { #Yara Greyjoy (daughter of Balon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}
+asoiaf_Greyjoy_14_trait = { #Theon Greyjoy (son of Balon)
+	physical = no
+	shown_in_ruler_designer = no
+	shown_in_encyclopedia = no
+	desc = asoiaf_canon_children_trait_desc
+	icon = pure_blooded.dds
+}

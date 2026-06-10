@@ -1,0 +1,41 @@
+﻿namespace = asoiaf_canon_children_hightower_events
+
+asoiaf_canon_children_hightower_events.9001 = { #children of Otto Hightower (brother of Hobert) by his Florent wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Hightower_99_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Hightower_99_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Hightower_98_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Hightower_98_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Hightower_97_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Hightower_97_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Hightower_96_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Hightower_96_birth_effect = yes
+		}
+	}
+}

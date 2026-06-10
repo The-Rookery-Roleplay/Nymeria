@@ -1,0 +1,33 @@
+﻿namespace = asoiaf_canon_children_martell_events
+
+asoiaf_canon_children_martell_events.401 = { #children of Doran Martell (son of Loreza) by his Norvoshi wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Martell_11_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Martell_11_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Martell_10_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Martell_10_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Martell_9_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Martell_9_birth_effect = yes
+		}
+	}
+}

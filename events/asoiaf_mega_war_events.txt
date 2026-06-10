@@ -1,0 +1,10 @@
+﻿namespace = asoiaf_mega_war_events
+
+asoiaf_mega_war_events.0001 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		asoiaf_mega_war_effect = yes
+	}
+}

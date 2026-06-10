@@ -1,0 +1,6 @@
+﻿on_army_monthly = {
+	random_events = {
+		chance_to_happen = 50
+		1 = citadel_ambush_events.0001
+	}
+}

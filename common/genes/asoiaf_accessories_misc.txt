@@ -1,0 +1,154 @@
+﻿special_genes = {
+
+
+	accessory_genes = {
+
+	#####################################
+	#									#
+	# 		  	   PROPS  		        #
+	#									#
+	#####################################
+
+	  	props_asoiaf = {
+			no_props = {
+				index = 0
+				male = {
+				}
+				female = {
+				}
+				boy = {
+				}
+				girl = {
+				}
+			}
+
+			grid = {
+				index = 1
+				male = {
+					1 = debug_grid_01
+				}
+				female = male
+				boy = male
+				girl = male
+			}
+			
+			asoiaf_jaimes_sword = {
+				index = 2
+				male = {
+					1 = asoiaf_jaimes_sword_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}	   
+			asoiaf_ice = {
+				index = 3
+				male = {
+					1 = asoiaf_sword_ice_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			asoiaf_heartsbane = {
+				index = 4
+				male = {
+					1 = asoiaf_sword_heartsbane_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			asoiaf_longclaw = {
+				index = 5
+				male = {
+					1 = asoiaf_sword_longclaw_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			asoiaf_oathkeeper = {
+				index = 6
+				male = {
+					1 = asoiaf_sword_oathkeeper_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			asoiaf_widows_wail = {
+				index = 7
+				male = {
+					1 = asoiaf_sword_widows_wail_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			asoiaf_krakenfall = {
+				index = 8
+				male = {
+					1 = asoiaf_sword_krakenfall_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			asoiaf_dark_sister = {
+				index = 9
+				male = {
+					1 = asoiaf_sword_dark_sister_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			asoiaf_needle = {
+				index = 10
+				male = {
+					1 = asoiaf_sword_needle_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			asoiaf_hearteater = {
+				index = 11
+				male = {
+					1 = asoiaf_sword_hearteater_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			asoiaf_red_vipers_spear = {
+				index = 12
+				male = {
+					1 = asoiaf_spear_red_vipers_spear_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			asoiaf_radzig_sword = {
+				index = 13
+				male = {
+					1 = asoiaf_sword_radzig_sword_prop
+				}
+				female = male
+				boy = male
+				girl = female
+			}
+			#asoiaf_joffrey_I_crown = {
+			#	index = 50
+			#	male = {
+			#		1 = asoiaf_crown_joffrey_I_prop
+			#	}
+			#	female = male
+			#	boy = male
+			#	girl = female
+			#}
+		}
+  	}
+}

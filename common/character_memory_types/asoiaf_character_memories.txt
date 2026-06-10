@@ -1,0 +1,90 @@
+﻿
+### Kingsguard
+
+asoiaf_kingsguard_dismissal_memory = {
+	categories = { negative martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = asoiaf_kingsguard_dismissal_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = asoiaf_kingsguard_dismissal_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = asoiaf_kingsguard_dismissal_memory_desc_third_perspective_1
+	}
+
+	participants = { king }
+
+	duration = {
+		years = 100
+	}
+}
+
+### Event memories
+
+asoiaf_Targaryen_8_traits_change_memory = {
+	categories = { negative stress }
+	icon = "intimidation.dds"
+
+	description = {
+		desc = asoiaf_Targaryen_8_traits_change_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = asoiaf_Targaryen_8_traits_change_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = asoiaf_Targaryen_8_traits_change_memory_desc_third_perspective_1
+	}
+
+	duration = {
+		years = 100
+	}
+}
+
+asoiaf_Targaryen_9_traits_change_memory = {
+	categories = { positive stress }
+	icon = "intimidation.dds"
+
+	description = {
+		desc = asoiaf_Targaryen_9_traits_change_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = asoiaf_Targaryen_9_traits_change_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = asoiaf_Targaryen_9_traits_change_memory_desc_third_perspective_1
+	}
+
+	duration = {
+		years = 100
+	}
+}
+
+asoiaf_mance_rayder_desertion_memory = {
+	categories = { positive martial }
+	icon = "martial.dds"
+
+	description = {
+		desc = asoiaf_mance_rayder_desertion_memory_desc
+	}
+
+	second_perspective_description = {
+		desc = asoiaf_mance_rayder_desertion_memory_desc_second_perspective_1
+	}
+
+	third_perspective_description = {
+		desc = asoiaf_mance_rayder_desertion_memory_desc_third_perspective_1
+	}
+
+	duration = {
+		years = 100
+	}
+}

@@ -1,0 +1,11 @@
+﻿l_english:
+ CLAWMAN_AMBUSH_CB_NAME:0 "Ambush in the Claw"
+ CLAWMAN_AMBUSH_CB_NAME_BASE:0 "Crackclaw Ambush"
+ CLAWMAN_AMBUSH_CB:0 "Crackclaw Ambush"
+ clawman_duchy_title: "Clawmen's Ambush"
+ clawman_duchy_title_adj: "the "
+ clawman_leader_name: "Clawman"
+ clawman_army_name: "Clawmen"
+ citadel_ambush_events.0001.title:0 "Eyes in the Thicket"
+ citadel_ambush_events.0001.desc:0 "Crackclaw Point swallows armies. My men curse as the path narrows again, pinched between black pines, dripping bogs and hills riddled with caves. The locals never showed themselves at the border, and some of the men joked that the famous clawmen were nothing but fishwives' tales.\n\nThe joking stopped a moment ago. The man walking point is on his back with a throwing spear through his chest, and the brush on both sides of the trail rings with the sound of axes being drawn. They were never going to meet us in the field. They were waiting for us to come into the Claw, where every cave, creek and crab-pot is theirs...\n\nThe clawmen are upon us!"
+ citadel_ambush_events.0001.attack:0 "Damn!"

@@ -1,0 +1,29 @@
+﻿#asoiaf_red_priest_maintenance_effect = {
+#	if = { #AI red priest doesn't have a necklace - give the necklace
+#		limit = {
+#			NOT = {
+#				any_character_artifact = {
+#					has_variable = asoiaf_red_priest_necklace
+#				}
+#			}
+#		}
+#		root = { create_artifact_asoiaf_red_priest_necklace_effect = { OWNER = this } }
+#	}
+	#if = { #AI red priest has necklace in inventory but not equipped - equip it
+	#	limit = {
+	#		any_unequipped_artifact = {
+	#			has_variable = asoiaf_red_priest_necklace
+	#		}
+	#	}
+	#	every_character_artifact = {
+	#		limit = { has_variable = asoiaf_red_priest_necklace }
+	#		save_scope_as = this_artifact
+	#	}
+	#	scope:this_artifact = {
+	#		equip_artifact_to_owner_replace = yes
+	#	}
+	#}
+	#another entry to remove the infirm trait from ppl with the necklace equipped
+#}
+
+#THE ON_ACTION FOR THIS IS NOT WORKING

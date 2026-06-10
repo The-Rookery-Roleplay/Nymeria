@@ -1,0 +1,233 @@
+﻿namespace = asoiaf_canon_children_stark_events
+
+asoiaf_canon_children_stark_events.8401 = { #children of Rickon Stark (son of Benjen) by his Glover wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_87_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_87_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_86_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_86_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_stark_events.8402 = { #children of Rickon Stark (son of Benjen) by a First Man heritage woman out of wedlock
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_88_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_88_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_stark_events.8601 = { #children of Cregan Stark (son of Rickon) by his Norrey wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_94_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_94_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_stark_events.8602 = { #children of Cregan Stark (son of Rickon) by his Blackwood wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_98_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_98_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_97_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_97_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_96_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_96_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_95_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_95_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_stark_events.8603 = { #children of Cregan Stark (son of Rickon) by his Stark wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_103_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_103_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_102_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_102_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_101_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_101_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_100_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_100_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_99_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_99_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_stark_events.101 = { #children of Rickard Stark (son of Edwyle) by his Stark wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_4_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_4_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_5_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_5_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_3_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_3_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_2_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_2_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_stark_events.301 = { #children of Eddard Stark (son of Rickard) by his Tully wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_11_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_11_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_10_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_10_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_9_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_9_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_8_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_8_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Stark_6_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Stark_6_birth_effect = yes
+		}
+	}
+}

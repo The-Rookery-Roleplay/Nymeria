@@ -1,0 +1,25 @@
+﻿namespace = asoiaf_canon_children_reed_events
+
+asoiaf_canon_children_reed_events.0011 = { #children of Howland Reed (son of Edwyle) by his Crannogman wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Reed_3_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Reed_3_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Reed_2_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Reed_2_birth_effect = yes
+		}
+	}
+}

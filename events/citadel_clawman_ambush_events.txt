@@ -1,0 +1,63 @@
+﻿namespace = citadel_ambush_events
+
+citadel_ambush_events.0001 = {
+	title = citadel_ambush_events.0001.title
+	type = character_event
+	trigger = {
+		scope:army = {
+			location = { geographical_region = world_westeros_the_crownlands_crackclaw }
+			is_army_in_combat = no
+		}
+		scope:army.location.county.holder = { save_temporary_scope_as = ck_claw_local }
+		OR = {
+			scope:ck_claw_local = {
+				is_at_war_with = root
+			}
+			scope:ck_claw_local = {
+				any_liege_or_above = {
+					is_at_war_with = root
+				}
+			}
+		}
+		NOR = {
+			root = scope:ck_claw_local.top_liege
+			top_liege = scope:ck_claw_local.top_liege
+			has_culture = culture:clawman
+			has_character_flag = citadel_clawman_ambush_cooldown
+			any_character_war = {
+				using_cb = clawman_ambush_cb
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			root = {
+				add_character_flag = {
+					flag = citadel_clawman_ambush_cooldown
+					years = 2
+				}
+				scope:army = { location = { save_scope_as = target_location } }
+				citadel_create_clawman_ambush = {
+					TARGET = root
+				}
+			}
+		}
+	}
+	theme = war
+	override_background = {
+		reference = wilderness_forest
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	desc = citadel_ambush_events.0001.desc
+	option = {
+		name = citadel_ambush_events.0001.attack
+		stress_impact = {
+			craven = major_stress_impact_gain
+		}
+		citadel_spawn_clawman_army = { TARGET = root }
+	}
+}

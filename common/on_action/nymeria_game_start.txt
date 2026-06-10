@@ -4,6 +4,7 @@
         nymeria_stormlands_events_cycle
         nymeria_dorne_test_event
         nymeria_place_bookmark_artifacts
+        nymeria_set_bookmark_coas
         nymeria_setup_ai_nymeria
     }
 }
@@ -136,6 +137,7 @@ quarterly_playable_pulse = {
 on_game_start = {
     on_actions = {
         crackclaw_confed_on_game_start
+        nymeria_lakefolk_confed_on_game_start
         nymeria_block_dragonstone_colonization
     }
 }
@@ -143,6 +145,17 @@ on_game_start = {
 # If Nymeria is left to the AI (the player did not pick her), give her the trait that
 # blocks marriage, so the AI never weds her off and derails the Dornish story. A player
 # Nymeria is left free to marry as they like. - Kizan
+# Era-appropriate arms for the Nymeria's War start only; other bookmarks keep the
+# default art. - Kizan
+nymeria_set_bookmark_coas = {
+    effect = {
+        if = {
+            limit = { game_start_date = 7299.1.1 }
+            dynasty:dynn_Peake ?= { set_coa = citadel_peake_nymeria_coa }
+        }
+    }
+}
+
 nymeria_setup_ai_nymeria = {
     effect = {
         if = {
@@ -154,6 +167,66 @@ nymeria_setup_ai_nymeria = {
                 }
             }
             character:Nymeros_1 ?= { add_trait = nymeria_refuses_marriage }
+        }
+    }
+}
+
+# The Ice Lakes lakefolk have no confederation of their own, so the AI was folding
+# them into the Crackclaw confederation. Found their own at game start; members of
+# a confederation cannot be added to another. - Kizan
+nymeria_lakefolk_confed_on_game_start = {
+    effect = {
+        if = {
+            limit = {
+                game_start_date = 7299.1.1
+                NOT = { exists = global_var:lakefolk_confederation }
+            }
+            # Evict any lakefolk the engine already seeded into the Crackclaw confederation. - Kizan
+            if = {
+                limit = { exists = global_var:crackclaw_confederation }
+                every_ruler = {
+                    limit = {
+                        culture = culture:lakefolk
+                        is_confederation_member = yes
+                    }
+                    save_scope_as = ck_lakefolk_evictee
+                    global_var:crackclaw_confederation = {
+                        remove_confederation_member = scope:ck_lakefolk_evictee
+                    }
+                }
+            }
+            # Found their own confederacy, mirroring AGOT's later-era lakefolk setup. - Kizan
+            random_ruler = {
+                limit = {
+                    culture = culture:lakefolk
+                    is_confederation_member = no
+                }
+                save_scope_as = ck_lakefolk_founder
+                create_confederation = {
+                    name = d_the_lakefolk_confederacy
+                }
+                scope:new_confederation ?= {
+                    set_variable = confederation_is_lakefolk
+                    set_global_variable = {
+                        name = lakefolk_confederation
+                        value = scope:new_confederation
+                    }
+                }
+            }
+            if = {
+                limit = { exists = global_var:lakefolk_confederation }
+                every_ruler = {
+                    limit = {
+                        culture = culture:lakefolk
+                        is_confederation_member = no
+                        NOT = { this = scope:ck_lakefolk_founder }
+                    }
+                    save_scope_as = ck_lakefolk_joiner
+                    global_var:lakefolk_confederation = {
+                        add_confederation_member = scope:ck_lakefolk_joiner
+                    }
+                }
+            }
         }
     }
 }

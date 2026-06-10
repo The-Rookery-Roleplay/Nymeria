@@ -1,0 +1,2952 @@
+﻿# AGOT+ coats of arms, DISABLED on integration. Uncomment blocks to enable. - Kizan
+#template = {
+#	#CROWNLANDS_v1_
+#
+#	faction_coa_v1_dynn_Aranys = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "ce_griffin_rampant.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_brown"
+#			color3 = "agot_brown"
+#			instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_house_Telaryen = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "ce_griffin_rampant.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_grey"
+#			color3 = "agot_grey"
+#			instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Bar_Emmon = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_bar_emmon_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_silver"
+#			instance = { position = { 0.5 0.5 } scale = { 1.5 1.5 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_bar_emmon_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_blue"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_house_BaratheonKL = {
+#		pattern = "pattern_vertical_split_01.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_baratheon_lannister_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_baratheon_lannister_2.dds"
+#			color1 = color1
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_house_BaratheonDS = {
+#		pattern="pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2=agot_yellow
+#		color3=agot_yellow
+#		colored_emblem={
+#			color1 = list "agot_colorful_list"
+#			color2=agot_orange
+#			texture="st_baratheon_rhllor.dds"
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Baratheon_Old = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_yellow"
+#		colored_emblem = {
+#			texture = "cl_baratheon_old.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Bean = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_blue"
+#		colored_emblem = {
+#			texture = "cl_bean.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Belgrave = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "cl_belgrave_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_belgrave_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Blackberry = {
+#		pattern = "pattern_vertical_split_01.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_blackberry.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_purple"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_house_Blackfyre = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		color3 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_blackfyre.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.49 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_house_Otherys = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		colored_emblem = {
+#			texture = "ce_circle_mask.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = {
+#				scale = { 0.666000 0.666000 }
+#				depth = 1.010000
+#			}
+#		}
+#		colored_emblem = {
+#			texture = "cl_targaryen.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_blue_light"
+#			instance = {
+#				position = { 0.500000 0.490000 }
+#				scale = { 0.666000 0.666000 }
+#			}
+#		}
+#	}
+#
+#	faction_coa_v1_house_Brightflame = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red" #rgb { 50 8 8 }
+#		color3 = rgb { 196 100 4 }
+#		colored_emblem = {
+#			texture = "cl_targaryen_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_orange"
+#			color3 = "agot_yellow"
+#			instance = { position = { 0.5 0.49 } scale = { 0.85 0.85 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Blackhull = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_blackhull.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Blackwater = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_green_light"
+#		colored_emblem = {
+#			texture = "cl_blackwater.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_house_Blackwater = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_green_light"
+#		colored_emblem = {
+#			texture = "cl_blackwater.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Blount = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_blount.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Boggs = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_boggs.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Bourney = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_bourney_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_bourney_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_orange"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	# dynn_Broome = {
+#	# 	pattern = "pattern_solid.dds"
+#	# 	color1 = list "agot_blackwhite_list"
+#	# 	color2 = "agot_white"
+#	# 	colored_emblem = {
+#	# 		texture = "cl_broome.dds"
+#	# 		color1 = list "agot_blackwhite_list"
+#	# 		color2 = "agot_yellow"
+#	# 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#	# 	}
+#	# }
+#
+#	faction_coa_v1_dynn_Brune = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_brown"
+#		colored_emblem = {
+#			texture = "cl_winters.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_brown"
+#		}
+#	}
+#	faction_coa_v1_house_Brownhollow = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_brown"
+#		colored_emblem = {
+#			texture = "cl_brune.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_brown"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Buckwell = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "ce_blacktyde.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.45 } scale = { 1.3 1.3 } }
+#		}
+#		colored_emblem = {
+#			texture = "cl_buckwell_antlers_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "asoiaf_black_deep"
+#			instance = { position = { 0.5 0.47 } scale = { 0.85 0.85 } }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Bush = {
+#		pattern = "pattern_vertical_split_01.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "cl_bush_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_bush_2.dds"
+#			color1 = color1
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Byrch = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "cl_byrch.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Bywater = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_blue"
+#		colored_emblem = {
+#			texture = "cl_bywater.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_silver"
+#			instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Cargyll = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_cargyll_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_cargyll_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_brown"
+#			instance = { position = { 0.53 0.5 } scale = { 1.3 1.3 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Cave = {
+#		pattern = "pattern_vertical_split_01.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_blue"
+#		colored_emblem = {
+#			texture = "cl_cave.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Celtigar = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_celtigar.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.25 1.25 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Chelsted = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_chelsted_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_chelsted_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_brown"
+#			instance = { position = { 0.5 0.5 } scale = { 1.25 1.25 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Chyttering = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_gold"
+#		colored_emblem = {
+#			texture = "cl_chyttering.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Cole = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_cole.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Corne = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_corne.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.45 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Groves = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_foster_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_foster_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Correy = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_silver"
+#		color3 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_correy.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Crabb = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_yellow"
+#		colored_emblem = {
+#			texture = "ce_top_waves.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.5 0.55 } scale = { 1.2 1.2 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_crabb.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_blue_dark"
+#			instance = { position = { 0.5 0.595 } scale = { 0.82 0.82 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Cressey = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_silver"
+#		colored_emblem = {
+#			texture = "cl_cressey.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Rychard = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		colored_emblem = {
+#			texture = "cl_rychard_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_blue_light"
+#			color3 = "agot_red_light"
+#			instance = { depth = 1.010000 }
+#		}
+#		colored_emblem = {
+#			texture = "cl_rychard_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_yellow"
+#		}
+#	}
+#
+#	faction_coa_v1_house_Dargood = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "ce_checkers_diagonal_6x3.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_solidblock.dds"
+#			color1 = color1
+#			instance = { position = { 0.5 0.83 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_dargood_fish.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			color3 = "agot_white"
+#			instance = { position = { 0.5 0.65 } scale = { 0.5 0.5 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_house_Darke = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_yellow"
+#		colored_emblem = {
+#			texture = "ce_checkers_diagonal_6x3.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_solidblock.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.173 0.5 } scale = { 0.3128 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Darklyn = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_gold"
+#		colored_emblem = {
+#			texture = "ce_checkers_diagonal_6x3.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_solidblock.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.173 0.5 } scale = { 0.3128 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_shield_01.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.15 0.325 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.15 0.475 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.15 0.625 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.25 0.25 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.25 0.4 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.25 0.55 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.25 0.7 } scale = { 0.1 0.1 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_house_Darkwood = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "ce_checkers_diagonal_6x3.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_quarter.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_horse_shoe.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.29 0.27 } scale = { 0.5 0.5 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Deem = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_deem_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_deem_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Edgerton = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_edgerton.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_orange_light"
+#			instance = { position = { 0.5 0.51 } scale = { 1.25 1.25 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Farring = {
+#		pattern = "pattern_vertical_split_01.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "asoiaf_knight_poised.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.71 0.44 } scale = { 0.675 0.675 }  }
+#		}
+#		colored_emblem = {
+#			texture = "asoiaf_knight_poised.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.29 0.44 } scale = { -0.675 0.675 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Farseed = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_farseed_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_farseed_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_blue_light"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Follard = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_follard.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Foxglove = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_brown"
+#		colored_emblem = {
+#			texture = "cl_foxglove_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_foxglove_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_blue_light"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Gaunt = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_gaunt.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_pink"
+#			instance = { position = { 0.5 0.5 } scale = { 1.15 1.15 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Goode = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_goode.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Greenhill = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "cl_greenhill.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Hall = {
+#		pattern = "pattern__solid_designer.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red_dark"
+#		colored_emblem = {
+#			texture = "ce_ryswell_1.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.5 0.5 } scale = { 1.1 1.1 }  }
+#		}
+#		colored_emblem = {
+#			texture = "vl_underleaf.dds"
+#			color1 = color1
+#			instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Hammer = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_bronze"
+#		colored_emblem = {
+#			texture = "cl_hammer.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Hardy = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_hardy_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_hardy_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_carnation"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Harte = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "ce_blacktyde.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.45 } scale = { 1.3 1.3 } }
+#		}
+#		colored_emblem = {
+#			texture = "cl_harte_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.1 1.1 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Wheaton = {
+#		pattern = "pattern__solid_designer.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		color3 = "agot_gold"
+#		colored_emblem = {
+#			texture = "ce_grain.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Hayford = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "ce_fretty_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_pale_wavy.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_High_Septon = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_high_septon.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Hogg = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_hogg_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_hogg_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Yore = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "ce_vair_pattern.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.5 0.51 } scale = { 1.3 1.3 } }
+#		}
+#		colored_emblem = {
+#			texture = "ce_block_01.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.5 0.17 } scale = { 1.0 1.0 } }
+#		}
+#		colored_emblem = {
+#			texture = "re_cockshaw.dds"
+#			color1 = color1
+#			instance = { position = { 0.43 0.24 } scale = { 1.25 1.25 } rotation = 90 }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Hollard = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_pink"
+#		colored_emblem = {
+#			texture = "cl_hollard_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_pink"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_hollard_2.dds"
+#			color1 = color1
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Leek={
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "white"
+#		textured_emblem = {
+#			texture = "crownlands_leek.dds"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	#	colored_emblem = {
+#	#		texture = "cl_leek.dds"
+#	#		color1 = list "agot_colorful_list"
+#	#		color2 = "agot_white"
+#	#		instance = {
+#	#			scale = { 0.930000 0.930000 }
+#	#		}
+#	#	}
+#	}
+#
+#	faction_coa_v1_dynn_Kettleblack = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_kettleblack.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Langward = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_burgundy"
+#		colored_emblem = {
+#			texture = "cl_langward.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Largent = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_grey"
+#		colored_emblem = {
+#			texture = "cl_largent.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_house_Longwaters = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_blue"
+#		colored_emblem = {
+#			texture = "cl_longwaters.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Mallery = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_mallery.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.25 1.25 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Manning = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_manning.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.25 1.25 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Bentley = {
+#		pattern = "pattern__solid_designer.dds"
+#		color1 = list "agot_colorful_list"
+#		colored_emblem = {
+#			texture = "ce_ram_horn.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = {
+#				scale = { 0.890000 0.890000 }
+#			}
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Sweet = {
+#		pattern = "pattern__solid_designer.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "yellow"
+#		color3 = "red"
+#		colored_emblem = {
+#			texture = "ce_pagan_spiral_04.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_bronze"
+#			instance = {
+#				depth = 1.010000
+#			}
+#		}
+#		colored_emblem = {
+#			texture = "cl_sweet.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_yellow"
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Massey = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_massey_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_massey_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Pyle = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_grey"
+#		colored_emblem = {
+#			texture = "cl_pyle.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.52 } scale = { 1.15 1.15 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Miller = {
+#		pattern = "pattern_checkers_02.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_blue_light"
+#		colored_emblem = {
+#			texture = "cl_miller.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_brown"
+#			color3 = "agot_grey"
+#			instance = {
+#				scale = { 0.700000 0.700000 }
+#			}
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Pyne = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "cl_pyne.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Quince = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_yellow"
+#		colored_emblem = {
+#			texture = "cl_quince.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.52 } scale = { 1.3 1.3 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_house_Stoneseed = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		colored_emblem = {
+#			texture = "cl_quince.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = {
+#				scale = { -1.000000 1.000000 }
+#			}
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Bullock = {
+#		pattern = "pattern_shield_01.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = list "agot_blackwhite_list"
+#		color3 = list "agot_colorful_list"
+#		colored_emblem = {
+#			texture = "ce_chain_01.dds"
+#			color1 = color2
+#			color2 = color2
+#			color3 = color2
+#			instance = { position = { 0.5 0.47 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 0.22 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 -0.03 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 -0.28 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 0.72 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 0.98 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 1.23 } scale = { 1.2 1.2 } }
+#		}
+#		colored_emblem = {
+#			texture = "cl_bullock_bull.dds"
+#			color1 = color3
+#			color2 = color3
+#			instance = { position = { 0.5 0.46 } scale = { 0.825 0.825 } }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Rollingford = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_blue"
+#		color3 = "agot_white"
+#		colored_emblem={
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_blue"
+#			texture="ce_barry_undy.dds"
+#			instance={ position={ 0.500000 0.750000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.375000 0.500000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.625000 0.500000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.250000 0.250000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.500000 0.250000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.750000 0.250000 } scale={ 0.250000 0.250000 } }
+#		}
+#		colored_emblem={
+#			color1 = color1
+#			color2 = "agot_black"
+#			texture="ce_border_circle_fimbriated.dds"
+#			instance={ position={ 0.500000 0.750000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.375000 0.500000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.625000 0.500000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.250000 0.250000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.500000 0.250000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.750000 0.250000 } scale={ 0.250000 0.250000 } }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Rosby = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "ce_ermine_pattern.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_ordinary_chevron_3_inverted.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.5 0.43 } scale = { 1.5 1.5 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Rykker = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_rykker.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Scales = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_scales.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_purple"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Slynt = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_gold"
+#		colored_emblem = {
+#			texture = "cl_slynt.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.48 0.45 } scale = { 0.7 0.7 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Staunton = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_staunton.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Stokeworth = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_stokeworth.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.49 0.48 } scale = { 1.2 1.2 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Straw = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_yellow"
+#		colored_emblem = {
+#			texture = "cl_straw.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Suggs = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_suggs.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Sunglass = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_gold"
+#		colored_emblem = {
+#			texture = "cl_sunglass.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.52 } scale = { 1.2 1.2 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Tall = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = list "agot_blackwhite_list"
+#		color3 = list "agot_blackwhite_list"
+#		colored_emblem = {
+#			texture = "cl_tall_elm.dds"
+#			color1 = "agot_green_light"
+#			color2 = color2
+#			color3 = "agot_black"
+#			instance = { position = { 0.5 0.58 } scale = { 0.68 0.68 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_tall_star.dds"
+#			color1 = color2
+#			color2 = color3
+#			instance = { position = { 0.51 0.18 } scale = { 0.7 0.7 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Tanner = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_tanner_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_green_light"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_tanner_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.53 0.58 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Targaryen = {
+#		pattern = "pattern_solid.dds"
+#		color1 = "asoiaf_white"
+#		color2 = list "agot_colorful_list"
+#		color3 = "asoiaf_black"
+#		colored_emblem = {
+#			texture = "asoiaf_dragon_three_headed_1.dds"
+#			color1 = color2
+#			color2 = "asoiaf_black"
+#			color3 = "asoiaf_white"
+#			instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Targaryen = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "asoiaf_white"
+#		color3 = "asoiaf_black"
+#		colored_emblem = {
+#			texture = "asoiaf_dragon_three_headed_1.dds"
+#			color1 = color2
+#			color2 = "asoiaf_black_alt"
+#			color3 = "asoiaf_white"
+#			instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Essos = {
+#		pattern = "pattern_solid.dds"
+#		color1 = "asoiaf_black"
+#		color2 = list "agot_colorful_list"
+#		color3 = "asoiaf_black"
+#		colored_emblem = {
+#			texture = "asoiaf_dragon_three_headed_1.dds"
+#			color1 = color2
+#			color2 = "asoiaf_black"
+#			color3 = "asoiaf_white"
+#			instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#		}
+#	}
+#
+#	faction_coa_v1_house_Essos = {
+#		pattern = "pattern_solid.dds"
+#		color1 = "asoiaf_black"
+#		color2 = list "agot_colorful_list"
+#		color3 = "asoiaf_black"
+#		colored_emblem = {
+#			texture = "asoiaf_dragon_three_headed_1.dds"
+#			color1 = color2
+#			color2 = "asoiaf_black"
+#			color3 = "asoiaf_white"
+#			instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Thorne = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_thorne.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.5 0.5 } scale = { 1.1 1.1 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_flail.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.5 0.45 } scale = { 0.5 0.5 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Truefyre = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_truefyre.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Varezys = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_varezys.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Velaryon = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "asoiaf_grey"
+#		color3 = list "agot_colorful_list"
+#		colored_emblem = {
+#			texture = "asoiaf_seahorse_3.dds"
+#			color1 = "color3"
+#			instance = { position = { 0.515 0.475 } scale = { 0.79 0.79 } }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Velaryon = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "asoiaf_grey"
+#		color3 = list "agot_blackwhite_list"
+#		colored_emblem = {
+#			texture = "asoiaf_seahorse_3.dds"
+#			color1 = "color3"
+#			instance = { position = { 0.515 0.475 } scale = { 0.79 0.79 } }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Wendwater = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_brown"
+#		colored_emblem = {
+#			texture = "cl_wendwater_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_wendwater_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_White = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_grey"
+#		colored_emblem = {
+#			texture = "cl_white.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v1_dynn_Winters = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_winters.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	#CROWNLANDS_v2_
+#
+#	faction_coa_v2_dynn_Aranys = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "ce_griffin_rampant.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_brown"
+#			color3 = "agot_brown"
+#			instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_house_Telaryen = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "ce_griffin_rampant.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_grey"
+#			color3 = "agot_grey"
+#			instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Bar_Emmon = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_bar_emmon_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_silver"
+#			instance = { position = { 0.5 0.5 } scale = { 1.5 1.5 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_bar_emmon_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_blue"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_house_BaratheonKL = {
+#		pattern = "pattern_vertical_split_01.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_baratheon_lannister_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_baratheon_lannister_2.dds"
+#			color1 = color1
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_house_BaratheonDS = {
+#		pattern="pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2=agot_yellow
+#		color3=agot_yellow
+#		colored_emblem={
+#			color1 = list "agot_blackwhite_list"
+#			color2=agot_orange
+#			texture="st_baratheon_rhllor.dds"
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Baratheon_Old = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_yellow"
+#		colored_emblem = {
+#			texture = "cl_baratheon_old.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Bean = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_blue"
+#		colored_emblem = {
+#			texture = "cl_bean.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Belgrave = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "cl_belgrave_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_belgrave_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Blackberry = {
+#		pattern = "pattern_vertical_split_01.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_blackberry.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_purple"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_house_Blackfyre = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		color3 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_blackfyre.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.49 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_house_Otherys = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		colored_emblem = {
+#			texture = "ce_circle_mask.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = {
+#				scale = { 0.666000 0.666000 }
+#				depth = 1.010000
+#			}
+#		}
+#		colored_emblem = {
+#			texture = "cl_targaryen.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_blue_light"
+#			instance = {
+#				position = { 0.500000 0.490000 }
+#				scale = { 0.666000 0.666000 }
+#			}
+#		}
+#	}
+#
+#	faction_coa_v2_house_Brightflame = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red" #rgb { 50 8 8 }
+#		color3 = rgb { 196 100 4 }
+#		colored_emblem = {
+#			texture = "cl_targaryen_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_orange"
+#			color3 = "agot_yellow"
+#			instance = { position = { 0.5 0.49 } scale = { 0.85 0.85 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Blackhull = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_blackhull.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Blackwater = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_green_light"
+#		colored_emblem = {
+#			texture = "cl_blackwater.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_house_Blackwater = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_green_light"
+#		colored_emblem = {
+#			texture = "cl_blackwater.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Blount = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_blount.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Boggs = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_boggs.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Bourney = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_bourney_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_bourney_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_orange"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	# dynn_Broome = {
+#	# 	pattern = "pattern_solid.dds"
+#	# 	color1 = list "agot_colorful_list"
+#	# 	color2 = "agot_white"
+#	# 	colored_emblem = {
+#	# 		texture = "cl_broome.dds"
+#	# 		color1 = list "agot_colorful_list"
+#	# 		color2 = "agot_yellow"
+#	# 		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#	# 	}
+#	# }
+#
+#	faction_coa_v2_dynn_Brune = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_brown"
+#		colored_emblem = {
+#			texture = "cl_winters.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_brown"
+#		}
+#	}
+#	faction_coa_v2_house_Brownhollow = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_brown"
+#		colored_emblem = {
+#			texture = "cl_brune.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_brown"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Buckwell = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "ce_blacktyde.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.45 } scale = { 1.3 1.3 } }
+#		}
+#		colored_emblem = {
+#			texture = "cl_buckwell_antlers_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "asoiaf_black_deep"
+#			instance = { position = { 0.5 0.47 } scale = { 0.85 0.85 } }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Bush = {
+#		pattern = "pattern_vertical_split_01.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "cl_bush_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_bush_2.dds"
+#			color1 = color1
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Byrch = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "cl_byrch.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Bywater = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_blue"
+#		colored_emblem = {
+#			texture = "cl_bywater.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_silver"
+#			instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Cargyll = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_cargyll_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_cargyll_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_brown"
+#			instance = { position = { 0.53 0.5 } scale = { 1.3 1.3 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Cave = {
+#		pattern = "pattern_vertical_split_01.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_blue"
+#		colored_emblem = {
+#			texture = "cl_cave.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Celtigar = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_celtigar.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.25 1.25 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Chelsted = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_chelsted_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_chelsted_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_brown"
+#			instance = { position = { 0.5 0.5 } scale = { 1.25 1.25 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Chyttering = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_gold"
+#		colored_emblem = {
+#			texture = "cl_chyttering.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Cole = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_cole.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Corne = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_corne.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.45 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Groves = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_foster_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_foster_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Correy = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_silver"
+#		color3 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_correy.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Crabb = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_yellow"
+#		colored_emblem = {
+#			texture = "ce_top_waves.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.5 0.55 } scale = { 1.2 1.2 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_crabb.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_blue_dark"
+#			instance = { position = { 0.5 0.595 } scale = { 0.82 0.82 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Cressey = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_silver"
+#		colored_emblem = {
+#			texture = "cl_cressey.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Rychard = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		colored_emblem = {
+#			texture = "cl_rychard_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_blue_light"
+#			color3 = "agot_red_light"
+#			instance = { depth = 1.010000 }
+#		}
+#		colored_emblem = {
+#			texture = "cl_rychard_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_yellow"
+#		}
+#	}
+#
+#	faction_coa_v2_house_Dargood = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "ce_checkers_diagonal_6x3.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_solidblock.dds"
+#			color1 = color1
+#			instance = { position = { 0.5 0.83 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_dargood_fish.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = list "agot_colorful_list"
+#			color3 = "agot_white"
+#			instance = { position = { 0.5 0.65 } scale = { 0.5 0.5 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_house_Darke = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_yellow"
+#		colored_emblem = {
+#			texture = "ce_checkers_diagonal_6x3.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_solidblock.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.173 0.5 } scale = { 0.3128 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Darklyn = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_gold"
+#		colored_emblem = {
+#			texture = "ce_checkers_diagonal_6x3.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_solidblock.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.173 0.5 } scale = { 0.3128 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_shield_01.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.15 0.325 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.15 0.475 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.15 0.625 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.25 0.25 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.25 0.4 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.25 0.55 } scale = { 0.1 0.1 }  }
+#			instance = { position = { 0.25 0.7 } scale = { 0.1 0.1 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_house_Darkwood = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "ce_checkers_diagonal_6x3.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_quarter.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_horse_shoe.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.29 0.27 } scale = { 0.5 0.5 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Deem = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_deem_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_deem_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Edgerton = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_edgerton.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_orange_light"
+#			instance = { position = { 0.5 0.51 } scale = { 1.25 1.25 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Farring = {
+#		pattern = "pattern_vertical_split_01.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "asoiaf_knight_poised.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.71 0.44 } scale = { 0.675 0.675 }  }
+#		}
+#		colored_emblem = {
+#			texture = "asoiaf_knight_poised.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.29 0.44 } scale = { -0.675 0.675 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Farseed = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_farseed_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_farseed_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_blue_light"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Follard = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_follard.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Foxglove = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_brown"
+#		colored_emblem = {
+#			texture = "cl_foxglove_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_foxglove_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_blue_light"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Gaunt = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_gaunt.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_pink"
+#			instance = { position = { 0.5 0.5 } scale = { 1.15 1.15 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Goode = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_goode.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Greenhill = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "cl_greenhill.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Hall = {
+#		pattern = "pattern__solid_designer.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red_dark"
+#		colored_emblem = {
+#			texture = "ce_ryswell_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.5 0.5 } scale = { 1.1 1.1 }  }
+#		}
+#		colored_emblem = {
+#			texture = "vl_underleaf.dds"
+#			color1 = color1
+#			instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Hammer = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_bronze"
+#		colored_emblem = {
+#			texture = "cl_hammer.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Hardy = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_hardy_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_hardy_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_carnation"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Harte = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "ce_blacktyde.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.45 } scale = { 1.3 1.3 } }
+#		}
+#		colored_emblem = {
+#			texture = "cl_harte_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.1 1.1 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Wheaton = {
+#		pattern = "pattern__solid_designer.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		color3 = "agot_gold"
+#		colored_emblem = {
+#			texture = "ce_grain.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Hayford = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "ce_fretty_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_pale_wavy.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_High_Septon = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_high_septon.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Hogg = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_hogg_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_hogg_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Yore = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "ce_vair_pattern.dds"
+#			color1 = list "agot_colorful_list"
+#			instance = { position = { 0.5 0.51 } scale = { 1.3 1.3 } }
+#		}
+#		colored_emblem = {
+#			texture = "ce_block_01.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.5 0.17 } scale = { 1.0 1.0 } }
+#		}
+#		colored_emblem = {
+#			texture = "re_cockshaw.dds"
+#			color1 = color1
+#			instance = { position = { 0.43 0.24 } scale = { 1.25 1.25 } rotation = 90 }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Hollard = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_pink"
+#		colored_emblem = {
+#			texture = "cl_hollard_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_pink"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_hollard_2.dds"
+#			color1 = color1
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Leek={
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "white"
+#		textured_emblem = {
+#			texture = "crownlands_leek.dds"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	#	colored_emblem = {
+#	#		texture = "cl_leek.dds"
+#	#		color1 = list "agot_blackwhite_list"
+#	#		color2 = "agot_white"
+#	#		instance = {
+#	#			scale = { 0.930000 0.930000 }
+#	#		}
+#	#	}
+#	}
+#
+#	faction_coa_v2_dynn_Kettleblack = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_kettleblack.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Langward = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_burgundy"
+#		colored_emblem = {
+#			texture = "cl_langward.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Largent = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_grey"
+#		colored_emblem = {
+#			texture = "cl_largent.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_house_Longwaters = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_blue"
+#		colored_emblem = {
+#			texture = "cl_longwaters.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Mallery = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_mallery.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.25 1.25 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Manning = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_manning.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.25 1.25 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Bentley = {
+#		pattern = "pattern__solid_designer.dds"
+#		color1 = list "agot_blackwhite_list"
+#		colored_emblem = {
+#			texture = "ce_ram_horn.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = {
+#				scale = { 0.890000 0.890000 }
+#			}
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Sweet = {
+#		pattern = "pattern__solid_designer.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "yellow"
+#		color3 = "red"
+#		colored_emblem = {
+#			texture = "ce_pagan_spiral_04.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_bronze"
+#			instance = {
+#				depth = 1.010000
+#			}
+#		}
+#		colored_emblem = {
+#			texture = "cl_sweet.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_yellow"
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Massey = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_massey_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_massey_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Pyle = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_grey"
+#		colored_emblem = {
+#			texture = "cl_pyle.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.52 } scale = { 1.15 1.15 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Miller = {
+#		pattern = "pattern_checkers_02.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_blue_light"
+#		colored_emblem = {
+#			texture = "cl_miller.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_brown"
+#			color3 = "agot_grey"
+#			instance = {
+#				scale = { 0.700000 0.700000 }
+#			}
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Pyne = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_green"
+#		colored_emblem = {
+#			texture = "cl_pyne.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Quince = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_yellow"
+#		colored_emblem = {
+#			texture = "cl_quince.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.52 } scale = { 1.3 1.3 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_house_Stoneseed = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		colored_emblem = {
+#			texture = "cl_quince.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_black"
+#			instance = {
+#				scale = { -1.000000 1.000000 }
+#			}
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Bullock = {
+#		pattern = "pattern_shield_01.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "asoiaf_white"
+#		color3 = list "agot_blackwhite_list"
+#		colored_emblem = {
+#			texture = "ce_chain_01.dds"
+#			color1 = "asoiaf_white"
+#			color2 = "asoiaf_white"
+#			color3 = "asoiaf_white"
+#			instance = { position = { 0.5 0.47 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 0.22 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 -0.03 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 -0.28 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 0.72 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 0.98 } scale = { 1.2 1.2 } }
+#			instance = { position = { 0.5 1.23 } scale = { 1.2 1.2 } }
+#		}
+#		colored_emblem = {
+#			texture = "cl_bullock_bull.dds"
+#			color1 = color3
+#			color2 = color3
+#			instance = { position = { 0.5 0.46 } scale = { 0.825 0.825 } }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Rollingford = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_blue"
+#		color3 = "agot_white"
+#		colored_emblem={
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_blue"
+#			texture="ce_barry_undy.dds"
+#			instance={ position={ 0.500000 0.750000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.375000 0.500000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.625000 0.500000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.250000 0.250000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.500000 0.250000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.750000 0.250000 } scale={ 0.250000 0.250000 } }
+#		}
+#		colored_emblem={
+#			color1 = color1
+#			color2 = "agot_black"
+#			texture="ce_border_circle_fimbriated.dds"
+#			instance={ position={ 0.500000 0.750000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.375000 0.500000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.625000 0.500000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.250000 0.250000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.500000 0.250000 } scale={ 0.250000 0.250000 } }
+#			instance={ position={ 0.750000 0.250000 } scale={ 0.250000 0.250000 } }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Rosby = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "ce_ermine_pattern.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_black"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_ordinary_chevron_3_inverted.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.5 0.43 } scale = { 1.5 1.5 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Rykker = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_rykker.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Scales = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_scales.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_purple"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Slynt = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_gold"
+#		colored_emblem = {
+#			texture = "cl_slynt.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.48 0.45 } scale = { 0.7 0.7 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Staunton = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_staunton.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Stokeworth = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_stokeworth.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.49 0.48 } scale = { 1.2 1.2 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Straw = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_yellow"
+#		colored_emblem = {
+#			texture = "cl_straw.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_yellow"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Suggs = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_suggs.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Sunglass = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_gold"
+#		colored_emblem = {
+#			texture = "cl_sunglass.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_gold"
+#			instance = { position = { 0.5 0.52 } scale = { 1.2 1.2 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Tall = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = list "agot_colorful_list"
+#		color3 = list "agot_blackwhite_list"
+#		colored_emblem = {
+#			texture = "cl_tall_elm.dds"
+#			color1 = color2
+#			color2 = color2
+#			color3 = "agot_black"
+#			instance = { position = { 0.5 0.58 } scale = { 0.68 0.68 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_tall_star.dds"
+#			color1 = color3
+#			color2 = color2
+#			instance = { position = { 0.51 0.18 } scale = { 0.7 0.7 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Tanner = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_tanner_1.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_green_light"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_tanner_2.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.53 0.58 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v3_dynn_Targaryen = {
+#		pattern = "pattern_solid.dds"
+#		color1 = "asoiaf_black"
+#		color2 = list "agot_colorful_list"
+#		color3 = "asoiaf_black"
+#		colored_emblem = {
+#			texture = "asoiaf_dragon_three_headed_1.dds"
+#			color1 = color2
+#			color2 = "asoiaf_black"
+#			color3 = "asoiaf_white"
+#			instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#		}
+#	}
+#
+#	faction_coa_v4_dynn_Targaryen = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_black"
+#		colored_emblem = {
+#			texture = "asoiaf_dragon_three_headed_1.dds"
+#			color1 = "asoiaf_black"
+#			color2 = "asoiaf_black_alt"
+#			color3 = "asoiaf_white"
+#			instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Essos = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_black"
+#		colored_emblem = {
+#			texture = "asoiaf_dragon_three_headed_1.dds"
+#			color1 = "asoiaf_black"
+#			color2 = "asoiaf_black_alt"
+#			color3 = "asoiaf_white"
+#			instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#		}
+#	}
+#
+#	faction_coa_v2_house_Essos = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_black"
+#		colored_emblem = {
+#			texture = "asoiaf_dragon_three_headed_1.dds"
+#			color1 = "asoiaf_black"
+#			color2 = "asoiaf_black_alt"
+#			color3 = "asoiaf_white"
+#			instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Thorne = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_red"
+#		colored_emblem = {
+#			texture = "cl_thorne.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.5 0.5 } scale = { 1.1 1.1 }  }
+#		}
+#		colored_emblem = {
+#			texture = "ce_flail.dds"
+#			color1 = list "agot_blackwhite_list"
+#			instance = { position = { 0.5 0.45 } scale = { 0.5 0.5 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Truefyre = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_truefyre.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Varezys = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_black"
+#		colored_emblem = {
+#			texture = "cl_varezys.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v3_dynn_Velaryon = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "asoiaf_grey"
+#		color3 = list "agot_colorful_list"
+#		colored_emblem = {
+#			texture = "asoiaf_seahorse_3.dds"
+#			color1 = "color3"
+#			instance = { position = { 0.515 0.475 } scale = { 0.79 0.79 } }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Wendwater = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_brown"
+#		colored_emblem = {
+#			texture = "cl_wendwater_1.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_green"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#		colored_emblem = {
+#			texture = "cl_wendwater_2.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_White = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_colorful_list"
+#		color2 = "agot_grey"
+#		colored_emblem = {
+#			texture = "cl_white.dds"
+#			color1 = list "agot_blackwhite_list"
+#			color2 = "agot_red"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#
+#	faction_coa_v2_dynn_Winters = {
+#		pattern = "pattern_solid.dds"
+#		color1 = list "agot_blackwhite_list"
+#		color2 = "agot_white"
+#		colored_emblem = {
+#			texture = "cl_winters.dds"
+#			color1 = list "agot_colorful_list"
+#			color2 = "agot_white"
+#			instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		}
+#	}
+#}

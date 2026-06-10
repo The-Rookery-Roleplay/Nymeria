@@ -1,0 +1,7 @@
+﻿l_english:
+ ## Canon Children
+ game_concept_asoiaf_canon_children_concept:0 "Canon Children"
+ game_concept_asoiaf_canon_children_concept_desc:0 "The #bold Canon Children#! system allows canon characters to be dynamically born into a game.\n\nCanon children will be born so long as the dominant partner marries into the correct House. E.g., if Eddard Stark marries #italic any#! Tully, his canon children will be born.\n\nThis system uses CK3's regular pregnancy/birth cycle, so children will #italic not#! necessarily be born in the same year as in the lore.\n\nYou can read how to further a character's line by viewing the Canon Children modifier given to characters included in the system.\n\n@warning_icon! #X Will not work with vanilla AGOT's Canon Children system enabled.#!"
+
+ game_concept_asoiaf_canon_child_concept:0 "Canon Child"
+ game_concept_asoiaf_canon_child_concept_desc:0 "The #bold Canon Children#! system allows canon characters to be dynamically born into a game.\n\nCanon children will be born so long as the dominant partner marries into the correct House. E.g., if Eddard Stark marries #italic any#! Tully, his canon children will be born.\n\nThis system uses CK3's regular pregnancy/birth cycle, so children will #italic not#! necessarily be born in the same year as in the lore.\n\nYou can read how to further a character's line by viewing the Canon Children modifier given to characters included in the system.\n\n@warning_icon! #X Will not work with vanilla AGOT's Canon Children system enabled.#!"

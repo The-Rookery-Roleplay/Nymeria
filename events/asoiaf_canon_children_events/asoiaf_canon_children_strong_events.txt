@@ -1,0 +1,57 @@
+﻿namespace = asoiaf_canon_children_strong_events
+
+asoiaf_canon_children_strong_events.2901 = { #children of Lyonel Strong (son of Osmund) by his lowborn lover
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Strong_34_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Strong_34_birth_effect = yes
+		}
+	}
+}
+
+asoiaf_canon_children_strong_events.2902 = { #children of Lyonel Strong (son of Osmund) by his Riverlander wife
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				asoiaf_canon_children_Strong_33_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Strong_33_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Strong_32_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Strong_32_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Strong_31_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Strong_31_birth_effect = yes
+		}
+		if = {
+			limit = {
+				asoiaf_canon_children_Strong_30_trigger = yes
+				scope:mother = { has_trait = pregnant }
+			}
+			scope:mother = { asoiaf_canon_children_terminate_pregnancy_effect = yes }
+			asoiaf_canon_children_Strong_30_birth_effect = yes
+		}
+	}
+}

@@ -1,0 +1,18 @@
+﻿l_english:
+ nick_the_late_prefix:0 "The Late" #The Late Lord Frey
+ nick_bastard_prefix:0 "Bastard" #Bastard Walder Frey
+ nick_the_old_man:0 "the Old Man" #Leyton the Old Man (of Oldtown)
+ nick_fat_prefix:0 "Fat" #Fat Walda Frey
+ nick_the_heir_for_a_day:0 "the Heir for a Day" #Baelon Targaryen the Heir for a Day
+ nick_the_heir_for_a_day_desc:0 "[CHARACTER.GetFirstNameNoTooltip] lived only for a few hours, thereafter callously dubbed 'the Heir for a Day' by his uncle Daemon."
+ nick_homeless_prefix:0 "Homeless" #Homeless Harry Strickland
+ nick_red_prefix:0 "Red" #Red Eddard Waters
+ nick_the_anvil:0 "the Anvil" #Maekar the Anvil
+ nick_the_black_queen:0 "the Black Queen"
+ nick_the_black_queen_desc:1 "[CHARACTER.GetFirstNamePossessiveNoTooltip] slaughter of [CHARACTER.GetHerHis] brothers has forever stained [CHARACTER.GetHerHis] reputation."
+ nick_the_iron_one:0 "the Iron One"
+
+ nick_the_feral:0 "the Feral" #only keep until AGOT team fixes it on their end
+ nick_the_imp:0 "the Imp" #only keep until AGOT team fixes it on their end
+ nick_ironrod:0 "Ironrod" #only keep until AGOT team fixes it on their end
+ nick_ironrod_desc:0 "Known for an unbending attitude in matters of law, many say [CHARACTER.GetFirstNameNoTooltip] more than earned [CHARACTER.GetHerHis] sobriquet, while others claim it's from the stiffness of [CHARACTER.GetHerHis] member, having sired over two dozen children."

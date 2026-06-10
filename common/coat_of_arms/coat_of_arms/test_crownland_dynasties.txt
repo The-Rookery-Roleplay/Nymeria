@@ -1,0 +1,1907 @@
+﻿# AGOT+ coats of arms, DISABLED on integration. Uncomment blocks to enable. - Kizan
+#dynn_Varezys = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_yellow"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "cl_varezys.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_red"
+#		instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+#	}
+#}
+#
+#dynn_Belaerys = { #with vanilla AGOT oroboros dragon sigil; DESIGN BY "u/arbor-demure" on Reddit
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = rgb { 176 156 97 }
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "ce_sun_03.dds"
+#		color1 = rgb { 176 156 97 }
+#		instance = { position = { 0.5 0.495 } scale = { 0.93 0.93 } }
+#	}
+#	colored_emblem = {
+#		texture = "do_toland.dds"
+#		color1 = "asoiaf_black"
+#		instance = { position = { 0.5 0.48 } scale = { 0.7 0.7 } }
+#	}
+#}
+#
+#dynn_Essos = { #Aegon's temp dynasty during his reconquest
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = rgb { 59 17 11 }
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_three_headed_1.dds"
+#		color1 = rgb { 126 37 25 }
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_white"
+#		instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#	}
+#}
+#house_Essos = { #Aegon's temp dynasty during his reconquest
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = rgb { 59 17 11 }
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_three_headed_1.dds"
+#		color1 = rgb { 126 37 25 }
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_white"
+#		instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#	}
+#}
+#
+#dynn_Targaryen = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = rgb { 59 17 11 }
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_three_headed_1.dds"
+#		color1 = rgb { 126 37 25 }
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_white"
+#		instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#	}
+#}
+#house_Targaryen_Aegon_II = aegon_ii_personal_arms
+#house_Blackfyre = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_three_headed_1.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_black_alt"
+#		color3 = "asoiaf_white"
+#		instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#	}
+#}
+#house_Bittersteel = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_yellow"
+#	color2 = "asoiaf_red"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_bittersteel.dds"
+#		color1 = "asoiaf_red"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_orange"
+#		instance = { position = { 0.48 0.48 } scale = { 0.75 0.75 } }
+#	}
+#}
+#house_Bloodraven = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_single_headed_blank_space.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_red_light"
+#		instance = { position = { 0.5 0.487 } scale = { 0.725 0.725 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_flame_spout.dds"
+#		color1 = "asoiaf_red_light"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.19 0.3 } scale = { 0.225 0.225 } }
+#	}
+#}
+#house_Targaryen_Jon = {
+#	pattern = "pattern_solid.dds"	
+#	color1 = "asoiaf_white" #asoiaf_bone_light_warm
+#	color2 = "asoiaf_grey_medium" #asoiaf_field_green_light
+#	color3 = "asoiaf_black"
+#	#colored_emblem = {
+#	#	texture = "historical_plain.dds"
+#	#	color1 = "asoiaf_field_green_light"
+#	#	instance = { position = { 0.5 1.2 } scale = { 1.0 1.0 } }
+#	#}
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_three_headed_1.dds"
+#		color1 = "asoiaf_grey_medium"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_white"
+#		instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#	}
+#}
+#dynn_Truefyre = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_indigo"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_three_headed_1.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_red"
+#		instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#	}
+#}
+#dynn_Hammer = { #Hugh the Hammer's "House"
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = rgb { 113 68 43 }
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_three_headed_1.dds"
+#		color1 = rgb { 113 68 43 }
+#		color2 = "asoiaf_black"
+#		color3 = rgb { 117 85 67 }
+#		instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_bend_med.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.5 0.5 } scale = { -1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_warhammer.dds"
+#		color1 = rgb { 128 77 49 }
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.52 0.48 } scale = { 0.8 0.8 } rotation = 45 }
+#	}
+#}
+#house_Hammer = { #Hugh the Hammer's "House"
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = rgb { 113 68 43 }
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_three_headed_1.dds"
+#		color1 = rgb { 113 68 43 }
+#		color2 = "asoiaf_black"
+#		color3 = rgb { 117 85 67 }
+#		instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_bend_med.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.5 0.5 } scale = { -1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_warhammer.dds"
+#		color1 = rgb { 128 77 49 }
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.52 0.48 } scale = { 0.8 0.8 } rotation = 45 }
+#	}
+#}
+#dynn_White = { #Ulf the White's "House"
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_grey"
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_single_headed_1.dds"
+#		color1 = "asoiaf_grey"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_grey"
+#		instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_shield.dds"
+#		color1 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 0.45 0.45 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_fire.dds"
+#		color1 = rgb { 142 41 27 }
+#		color2 = rgb { 172 65 0 }
+#		instance = { position = { 0.5 0.43 } scale = { 0.23 0.23 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_chalice.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.5 0.57 } scale = { 0.25 0.25 } }
+#	}
+#}
+#house_White = { #Ulf the White's "House"
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_grey"
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_single_headed_1.dds"
+#		color1 = "asoiaf_grey"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_grey"
+#		instance = { position = { 0.5 0.48 } scale = { 0.725 0.725 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_shield.dds"
+#		color1 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 0.45 0.45 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_fire.dds"
+#		color1 = rgb { 142 41 27 }
+#		color2 = rgb { 172 65 0 }
+#		instance = { position = { 0.5 0.43 } scale = { 0.23 0.23 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_chalice.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.5 0.57 } scale = { 0.25 0.25 } }
+#	}
+#}
+#dynn_Farseed = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "cl_farseed_1.dds"
+#		color1 = "asoiaf_blue"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_regardant.dds"
+#		color1 = rgb { 110 80 63 }
+#		instance = { position = { 0.74 0.25 } scale = { -0.375 0.375 } rotation = -40 }
+#	}
+#}
+#house_Farseed = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "cl_farseed_1.dds"
+#		color1 = "asoiaf_blue"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_dragon_regardant.dds"
+#		color1 = rgb { 110 80 63 }
+#		instance = { position = { 0.74 0.25 } scale = { -0.375 0.375 } rotation = -40 }
+#	}
+#}
+#
+#dynn_Galgaeryn = { #Brightflame dummy dynasty
+#	pattern = "val_pattern_23.dds"	
+#	color1 = "agot_crimson"
+#	color2 = "agot_brown_light"
+#	color3 = "asoiaf_blue"
+#	colored_emblem = {
+#		texture = "val_ce_04.dds"
+#		color1 = "asoiaf_blue"
+#		color2 = "agot_crimson"
+#		color3 = "asoiaf_grey"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#}
+#house_Brightflame = { #CoA for House Tryzaen (Brightflame dummy House)
+#	pattern = "val_pattern_09.dds"	
+#	color1 = "asoiaf_black_light"
+#	color2 = "agot_olive"
+#	color3 = "asoiaf_blue_light"
+#}
+#
+#dynn_Belerys = { #Dummy dynasty for Gael (wife of Maegor Targaryen, founder of Targ dynasty) to prevent tree duplication
+#	pattern = "val_pattern_23.dds"	
+#	color1 = "agot_indigo"
+#	color2 = "agot_lilac"
+#	color3 = "asoiaf_blue"
+#	colored_emblem = {
+#		texture = "val_ce_04.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#}
+#house_Belerys = {
+#	pattern = "val_pattern_23.dds"	
+#	color1 = "agot_indigo"
+#	color2 = "agot_lilac"
+#	color3 = "asoiaf_blue"
+#	colored_emblem = {
+#		texture = "val_ce_04.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#}
+#
+#dynn_Velaryon = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black_light"
+#	color2 = rgb { 158 150 136 }
+#	color3 = rgb { 158 150 136 }
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = rgb { 27 73 82 }
+#		instance = { position = { 0.5 0.5 } scale = { 10.0 10.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_seahorse_3.dds"
+#		color1 = "asoiaf_bone_light"
+#		instance = { position = { 0.515 0.475 } scale = { 0.79 0.79 } }
+#	}
+#}
+#house_Longwaters = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_grey_light"
+#	color2 = "asoiaf_blue"
+#	color3 = "asoiaf_white"
+#	colored_emblem = {
+#		texture = "asoiaf_ship.dds"
+#		color1 = "asoiaf_blue"
+#		color2 = "asoiaf_blue"
+#		instance = { position = { 0.51 0.44 } scale = { 0.7 0.7 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_waves_4.dds"
+#		color1 = rgb { 227 227 227 }
+#		color2 = "asoiaf_grey_light"
+#		instance = { position = { 0.5 0.66 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_seahorse_3.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.46 0.4 } scale = { 0.35 0.35 } rotation = -10 }
+#	}
+#}
+#
+#dynn_Celtigar = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_red"
+#	color3 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_shield.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_crab.dds"
+#		color1= rgb { 126 37 25 }
+#		color2= "asoiaf_black"
+#		instance = { position = { 0.5 0.72 } scale = { 0.37 0.37 } }
+#		instance = { position = { 0.67 0.48 } scale = { 0.37 0.37 } }
+#		instance = { position = { 0.33 0.48 } scale = { 0.37 0.37 } }
+#		instance = { position = { 0.67 0.24 } scale = { 0.37 0.37 } }
+#		instance = { position = { 0.33 0.24 } scale = { 0.37 0.37 } }
+#	}
+#}
+#
+#dynn_Chelsted = {
+#	pattern = "pattern_diagonal_split_02.dds"
+#	color1 = "asoiaf_green"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_brown"
+#	colored_emblem = {
+#		texture = "asoiaf_mace.dds"
+#		color1 = "asoiaf_grey"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_brown"
+#		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_dagger.dds"
+#		color1 = "asoiaf_grey"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_brown"
+#		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+#	}
+#}
+#
+#dynn_Darklyn = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "ce_checkers_diagonal_6x3.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.0 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_shield_01.dds"
+#		color1 = "asoiaf_bone_light"
+#		instance = { position = { 0.37 0.18 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.18 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.38 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.38 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.58 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.58 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.78 } scale = { 0.135 0.135 } }
+#	}
+#}
+#dynn_Darklyn_0KG = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "ce_checkers_diagonal_6x3.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.0 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_shield_01.dds"
+#		color1 = "asoiaf_bone_light"
+#		instance = { position = { 0.37 0.18 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.18 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.38 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.38 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.58 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.58 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.78 } scale = { 0.135 0.135 } }
+#	}
+#}
+#dynn_Darklyn_3KG = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "ce_checkers_diagonal_6x3.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.0 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_shield_01.dds"
+#		color1 = "asoiaf_bone_light"
+#		instance = { position = { 0.37 0.18 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.18 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.38 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.38 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.58 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.58 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.78 } scale = { 0.135 0.135 } }
+#	}
+#}
+#dynn_Darklyn_4KG = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "ce_checkers_diagonal_6x3.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.0 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_shield_01.dds"
+#		color1 = "asoiaf_bone_light"
+#		instance = { position = { 0.37 0.18 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.18 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.38 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.38 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.58 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.58 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.78 } scale = { 0.135 0.135 } }
+#	}
+#}
+#dynn_Darklyn_5KG = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "ce_checkers_diagonal_6x3.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.0 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_shield_01.dds"
+#		color1 = "asoiaf_bone_light"
+#		instance = { position = { 0.37 0.18 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.18 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.38 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.38 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.58 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.58 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.78 } scale = { 0.135 0.135 } }
+#	}
+#}
+#dynn_Darklyn_6KG = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "ce_checkers_diagonal_6x3.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.0 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_shield_01.dds"
+#		color1 = "asoiaf_bone_light"
+#		instance = { position = { 0.37 0.18 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.18 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.38 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.38 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.58 } scale = { 0.135 0.135 } }
+#		instance = { position = { 0.17 0.58 } scale = { 0.135 0.135 } }
+#		
+#		instance = { position = { 0.37 0.78 } scale = { 0.135 0.135 } }
+#	}
+#}
+#house_Dargood = {	
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_red"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "ce_checkers_diagonal_6x3.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_red"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_bottom_solid.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_fish_two_headed.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.5 0.65 } scale = { 0.5 0.5 } }
+#	}
+#}
+#house_Darkwood = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_green"
+#	colored_emblem = {
+#		texture = "ce_checkers_diagonal_6x3.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_quarter.dds"
+#		color1 = "asoiaf_green"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_horse_shoe.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.27 0.27 } scale = { 0.5 0.5 } }
+#	}
+#}
+#house_Darke = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_green"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "ce_checkers_diagonal_6x3.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_green"
+#		instance = { position = { 0.0 0.5 } scale = { 1.0 1.0 } }
+#	}
+#}
+#
+#dynn_Farring = {
+#	pattern = "pattern_vertical_split_01.dds"
+#	color1 = "asoiaf_purple_medium"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_purple_medium"
+#	colored_emblem = {
+#		texture = "asoiaf_knight_poised.dds"
+#		color1 = "asoiaf_purple_medium"
+#		instance = { position = { 0.71 0.44 } scale = { 0.675 0.675 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_knight_poised.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.29 0.44 } scale = { -0.675 0.675 }  }
+#	}
+#}
+#
+#dynn_Gaunt = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_rose_medium"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_rose_medium"
+#	colored_emblem = {
+#		texture = "historical_flaunches.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_lance.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.35 0.5 } scale = { 0.8 0.8 }  }
+#		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 }  }
+#		instance = { position = { 0.65 0.5 } scale = { 0.8 0.8 }  }
+#	}
+#}
+#
+#dynn_Thorne = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = "asoiaf_red"
+#	color3 = "agot_silver"
+#	colored_emblem = {
+#		texture = "historical_shield_rayonne.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.5 0.5 } scale = { 0.85 0.85 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_flail.dds"
+#		color1 = "agot_silver"
+#		instance = { position = { 0.5 0.45 } scale = { 0.5 0.5 } }
+#	}
+#}
+#
+#dynn_Hayford = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_yellow"
+#	color2 = "asoiaf_green"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "historical_fretty.dds"
+#		color1 = "asoiaf_green"
+#		color2 = "asoiaf_yellow"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "historical_pale_wavy.dds"
+#		color1 = "asoiaf_green"
+#		color2 = "asoiaf_green"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#	}
+#}
+#
+#dynn_Langward = {
+#	pattern = "pattern_solid.dds"
+#	color1 = rgb { 150 52 72 }
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_white"
+#	colored_emblem = {
+#		texture = "historical_per_fess_wavy.dds"
+#		color1 = rgb { 150 52 72 }
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_crown_stars.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.25 } scale = { 1.0 1.0 }  }
+#	}
+#}
+#
+#dynn_Bar_Emmon = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_blue"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "historical_fretty.dds"
+#		color1 = rgb { 174 174 174 }
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_swordfish.dds"
+#		color1 = rgb { 40 71 112 }
+#		instance = { position = { 0.5 0.455 } scale = { 0.725 0.725 } }
+#	}
+#}
+#
+#dynn_Rosby = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_bone_light"
+#	color2 = "asoiaf_red"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_ermine_spot.dds"
+#		color1 = "asoiaf_black"
+#		instance = { position = { 0.5 0.16 } scale = { 0.2 0.2 } }
+#		instance = { position = { 0.5 0.81 } scale = { 0.2 0.2 } }
+#		instance = { position = { 0.2 0.56 } scale = { 0.2 0.2 } }
+#		instance = { position = { 0.8 0.56 } scale = { 0.2 0.2 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_block_05.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.068 -0.07 } scale = { 1.275 1.275 } rotation = 45 }
+#		instance = { position = { 0.932 -0.07 } scale = { -1.275 1.275 } rotation = -45 }
+#
+#		instance = { position = { 0.068 0.07 } scale = { 1.275 1.275 } rotation = 45 }
+#		instance = { position = { 0.932 0.07 } scale = { -1.275 1.275 } rotation = -45 }
+#
+#		instance = { position = { 0.068 0.21 } scale = { 1.275 1.275 } rotation = 45 }
+#		instance = { position = { 0.932 0.21 } scale = { -1.275 1.275 } rotation = -45 }
+#	}
+#}
+#
+#dynn_Rykker = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_blue"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_grey_medium"
+#	colored_emblem = {
+#		texture = "ce_ordinary_saltire_5.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.45 } scale = { 1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_warhammer.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_grey_medium"
+#		instance = { position = { 0.5 0.45 } scale = { 0.9 0.9 } rotation = -45 }
+#		instance = { position = { 0.5 0.45 } scale = { -0.9 0.9 } rotation = 45 }
+#	}
+#}
+#
+#dynn_Hollard = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_blue_indigo_undertone"
+#	color2 = "asoiaf_rose_light"
+#	color3 = "asoiaf_red_light"
+#	colored_emblem = {
+#		texture = "ce_barruly_10.dds"
+#		color1 = "asoiaf_rose_light"
+#		color2 = "asoiaf_red_light"
+#		instance = { position = { 0.5 0.815 } scale = { 1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_crown_2.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_yellow"
+#		instance = { position = { 0.5 0.18 } scale = { 0.2 0.2 }  }
+#		instance = { position = { 0.25 0.18 } scale = { 0.2 0.2 }  }
+#		instance = { position = { 0.75 0.18 } scale = { 0.2 0.2 }  }
+#	}
+#}
+#
+#dynn_Blackwater = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_grey_dark"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_arrow_flaming.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_white_dark_warm"
+#		color3 = "asoiaf_yellow"
+#		instance = { position = { 0.5 0.47 } scale = { 0.65 0.65 } }
+#	}
+#}
+#house_Blackwater = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_grey_dark"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_black"	
+#	colored_emblem = {
+#		texture = "asoiaf_arrow_flaming.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_white_dark_warm"
+#		color3 = "asoiaf_yellow"
+#		instance = { position = { 0.5 0.47 } scale = { 0.65 0.65 } }
+#	}
+#}
+#house_Blackwater_alt = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_grey_dark"
+#	color2 = "asoiaf_green_bright"
+#	color3 = "asoiaf_black"	
+#	colored_emblem = {
+#		texture = "asoiaf_arrow_flaming.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_white_dark_warm"
+#		color3 = rgb { 90 134 73 }
+#		instance = { position = { 0.5 0.47 } scale = { 0.65 0.65 } }
+#	}
+#}
+#
+#dynn_Slynt = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "asoiaf_spear_bloody_tip.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_yellow"
+#		color3 = rgb { 148 31 15 }
+#		instance = { position = { 0.5 0.925 } scale = { 1.5 1.5 }  }
+#	}
+#}
+#
+#dynn_Massey = {
+#	pattern = "pattern_solid.dds"
+#	color1 = rgb { 102 102 102 }
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_massey_sigil_2.dds"
+#		color1 = rgb { 114 44 21 }
+#		color2 = rgb { 22 57 26 }
+#		color3 = rgb { 17 59 88 }
+#		instance = { position = { 0.5 0.475 } scale = { 0.7 0.7 } rotation = -10 }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_massey_sigil_1.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_white"
+#		color3 = "asoiaf_black_light"
+#		instance = { position = { 0.5 0.475 } scale = { 0.7 0.7 } rotation = -10 }
+#	}
+#}
+#
+#dynn_Pyle = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_grey_dark"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_helm_feather.dds"
+#		color1 = "asoiaf_grey"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.525 } scale = { 1.2 1.2 }  }
+#	}
+#}
+#
+#dynn_Chyttering = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "ce_block_05.dds"
+#		color1 = "asoiaf_yellow"
+#		instance = { position = { 0.59 0.4 } scale = { 1.2 1.2 } rotation = 45 }
+#		instance = { position = { 0.69 0.3 } scale = { 1.2 1.2 } rotation = 45 }
+#		instance = { position = { 0.79 0.2 } scale = { 1.2 1.2 } rotation = 45 }
+#	}
+#}
+#
+#dynn_Rollingford = {
+#    pattern = "pattern_horizontal_split_01.dds"
+#    color1 = "asoiaf_grey_dark"
+#    color2 = "asoiaf_grey_dark"
+#	color3 = "asoiaf_blue"
+#    colored_emblem={
+#        color1 = "asoiaf_white"
+#        color2 = "asoiaf_blue"
+#        texture="ce_barry_undy.dds"
+#        instance={ position={ 0.500000 0.750000 } scale={ 0.250000 0.250000 } }
+#        instance={ position={ 0.375000 0.500000 } scale={ 0.250000 0.250000 } }
+#        instance={ position={ 0.625000 0.500000 } scale={ 0.250000 0.250000 } }
+#        instance={ position={ 0.250000 0.250000 } scale={ 0.250000 0.250000 } }
+#        instance={ position={ 0.500000 0.250000 } scale={ 0.250000 0.250000 } }
+#        instance={ position={ 0.750000 0.250000 } scale={ 0.250000 0.250000 } }
+#    }
+#    colored_emblem={
+#        color1 = "asoiaf_grey_dark"
+#        color2 = "asoiaf_black"
+#        texture="ce_border_circle_fimbriated.dds"
+#        instance={ position={ 0.500000 0.750000 } scale={ 0.250000 0.250000 } }
+#        instance={ position={ 0.375000 0.500000 } scale={ 0.250000 0.250000 } }
+#        instance={ position={ 0.625000 0.500000 } scale={ 0.250000 0.250000 } }
+#        instance={ position={ 0.250000 0.250000 } scale={ 0.250000 0.250000 } }
+#        instance={ position={ 0.500000 0.250000 } scale={ 0.250000 0.250000 } }
+#        instance={ position={ 0.750000 0.250000 } scale={ 0.250000 0.250000 } }
+#    }
+#}
+#
+#dynn_Sunglass = {
+#    pattern = "pattern_solid.dds"
+#    color1 = "asoiaf_steel_white"
+#    color2 = "asoiaf_yellow_light_dull"
+#	color3 = "asoiaf_orange"
+#    colored_emblem={
+#		texture="asoiaf_star_seven_pointed_estoile.dds"
+#        color1 = "asoiaf_orange"
+#        color2 = "asoiaf_yellow_light_dull"
+#        instance={ position={ 0.495 0.77 } scale={ 0.225 0.225 } } #bottom-most
+#		
+#        instance={ position={ 0.275 0.64 } scale={ 0.225 0.225 } } #bottom-mid
+#        instance={ position={ 0.715 0.64 } scale={ 0.225 0.225 } } #bottom-mid
+#		
+#        instance={ position={ 0.225 0.39 } scale={ 0.225 0.225 } } #top-mid
+#        instance={ position={ 0.765 0.39 } scale={ 0.225 0.225 } } #top-mid
+#		
+#        instance={ position={ 0.615 0.2 } scale={ 0.225 0.225 } } #top
+#		instance={ position={ 0.375 0.2 } scale={ 0.225 0.225 } } #top
+#    }
+#}
+#
+#dynn_Staunton = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_bone_light"
+#	color2 = "asoiaf_black"
+#	color3 = rgb { 128 106 67 }
+#	colored_emblem = {
+#		texture = "asoiaf_staunton_checkered_field.dds"
+#		color1 = "asoiaf_black"
+#		instance = { position = { 0.5 0.175 } scale = { 1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_wings_double_crowned.dds"
+#		color1 = "asoiaf_black"
+#		color2 = rgb { 128 106 67 }
+#		color3 = rgb { 188 152 95 }
+#		instance = { position = { 0.49 0.685 } scale = { 0.6 0.6 }  }
+#	}
+#}
+#
+#dynn_Stokeworth = {
+#	pattern = "pattern_solid.dds"
+#	color1 = rgb { 44 75 41 }
+#	color2 = "asoiaf_bone_light"
+#	color3 = rgb { 168 118 44 }
+#	colored_emblem = {
+#		texture = "asoiaf_lamb_goblet.dds"
+#		color1 = "asoiaf_bone_light"
+#		color2 = rgb { 168 118 44 }
+#		color3 = rgb { 44 75 41 }
+#		instance = { position = { 0.495 0.45 } scale = { 0.7 0.7 } }
+#	}
+#}
+#
+#dynn_Cargyll = {
+#	pattern = "asoiaf_pattern_bendy_sinister_thick.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "asoiaf_goose.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_yellow"
+#		instance = { position = { 0.5 0.47 } scale = { 0.75 0.75 }  }
+#	}
+#}
+#
+#house_BaratheonKL = { #Baratheon of King's Landing
+#	pattern = "pattern_vertical_split_01.dds"
+#	color1 = rgb { 176 133 69 }
+#	color2 = rgb { 93 38 31 }
+#	color3 = rgb { 195 143 77 }
+#	colored_emblem = {
+#		texture = "asoiaf_stag_split.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_yellow_bright"
+#		instance = { position = { 0.38 0.5 } scale = { 0.75 0.75 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_lion_split.dds"
+#		color1 = rgb { 195 143 77 }
+#		color2 = "asoiaf_cream_yellow_undertone"
+#		instance = { position = { 0.59 0.455 } scale = { 0.85 0.85 }  }
+#	}
+#}
+#house_BaratheonKL_Quartered = { #Baratheon of King's Landing Quartered
+#	pattern = "pattern_checkers_01.dds"	
+#	color1 = rgb { 93 38 31 }
+#	color2 = rgb { 176 133 69 }
+#	color3 = rgb { 195 143 77 }
+#	colored_emblem = {
+#		texture = "asoiaf_stag_head_2.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_yellow_bright"
+#		instance = { position = { 0.75 0.23 } scale = { -0.55 0.55 }  }	
+#		instance = { position = { 0.25 0.73 } scale = { 0.53 0.53 }  }	
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_lion_head_silhouette.dds"
+#		color1 = rgb { 195 143 77 }
+#		instance = { position = { 0.25 0.26 } scale = { -0.35 0.35 } }
+#		instance = { position = { 0.75 0.76 } scale = { 0.35 0.35 } }
+#	}	
+#}
+#house_BaratheonKL_wedding = { #Baratheon of King's Landing wedding version
+#	pattern = "pattern_vertical_split_01.dds"
+#	color1 = rgb { 176 133 69 }
+#	color2 = rgb { 93 38 31 }
+#	color3 = rgb { 202 188 162 }
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = rgb { 202 188 162 }
+#		instance = { position = { 0.5 0.5 } scale = { 2.0 2.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_stag_split.dds"
+#		color1 = rgb { 129 129 129 }
+#		color2 = rgb { 129 129 129 }
+#		instance = { position = { 0.38 0.5 } scale = { 0.75 0.75 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_lion_split.dds"
+#		color1 = rgb { 181 126 46 }
+#		color2 = rgb { 181 126 46 }
+#		instance = { position = { 0.59 0.455 } scale = { 0.85 0.85 }  }
+#	}
+#}
+#
+#dynn_Hogg = {
+#	pattern = "asoiaf_pattern_bendy_sinister_thick.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_red"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "asoiaf_bricks.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_boar.dds"
+#		color1 = "asoiaf_red_light"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_bone_light_warm"
+#		instance = { position = { 0.5 0.48 } scale = { 0.78 0.78 }  }
+#	}
+#}
+#
+#dynn_Bywater = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_blue"
+#	color3 = "asoiaf_grey"
+#	colored_emblem = {
+#		texture = "historical_fretty.dds"
+#		color1 = "asoiaf_blue"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_blue"
+#		instance = { position = { 0.5 0.07 } scale = { 1.0 0.5 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_fish_botley.dds"
+#		color1 = "asoiaf_grey"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.16 } scale = { 0.25 -0.35 } rotation = 90 }
+#		instance = { position = { 0.225 0.16 } scale = { 0.25 -0.35 } rotation = 90 }
+#		instance = { position = { 0.775 0.16 } scale = { 0.25 -0.35 } rotation = 90 }
+#	}
+#}
+#
+#dynn_Cressey = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_blue"
+#	color2 = "asoiaf_grey_light"
+#	color3 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "ce_bend_med.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.5 0.5 } scale = { -1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "ce_circle_mask.dds"
+#		color1 = "asoiaf_grey_light"
+#		instance = { position = { 0.235 0.765 } scale = { 0.11 0.11 }  }
+#		instance = { position = { 0.335 0.665 } scale = { 0.11 0.11 }  }
+#		instance = { position = { 0.435 0.565 } scale = { 0.11 0.11 }  }
+#		instance = { position = { 0.535 0.465 } scale = { 0.11 0.11 }  }
+#		instance = { position = { 0.635 0.365 } scale = { 0.11 0.11 }  }
+#		instance = { position = { 0.735 0.265 } scale = { 0.11 0.11 }  }
+#		instance = { position = { 0.835 0.165 } scale = { 0.11 0.11 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_helm.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_grey_light"
+#		instance = { position = { 0.75 0.7 } scale = { 0.6 0.6 }  }
+#		instance = { position = { 0.25 0.3 } scale = { -0.6 0.6 }  }
+#	}
+#}
+#
+#dynn_Mallery = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_purple"
+#	color2 = "asoiaf_purple"
+#	color3 = "asoiaf_white"
+#	colored_emblem = {
+#		texture = "asoiaf_star_four_pointed.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.5 0.75 } scale = { 0.25 0.25 }  } #bottom
+#		
+#		instance = { position = { 0.64 0.5 } scale = { 0.25 0.25 }  } #bottom 2
+#		instance = { position = { 0.36 0.5 } scale = { 0.25 0.25 }  } #bottom 2
+#		
+#		instance = { position = { 0.775 0.25 } scale = { 0.25 0.25 }  } #top 3
+#		instance = { position = { 0.5 0.25 } scale = { 0.25 0.25 }  } #top 3
+#		instance = { position = { 0.225 0.25 } scale = { 0.25 0.25 }  } #top 3
+#	}
+#}
+#
+#dynn_Bourney = {
+#	pattern = "pattern_checkers_08.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_blue"
+#	color3 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "historical_ordinary_pile.dds"
+#		color1 = "asoiaf_blue"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#		instance = { position = { 0.5 0.5 } rotation = -90 scale = { 1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "ce_bend_med.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { -1.0 1.0 }  }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_squiggly_line.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.575 0.485 } scale = { -2.0 2.0 } rotation = -45 }
+#	}
+#	colored_emblem = {
+#		texture = "cl_bourney_stork.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_orange_light"
+#		instance = { position = { 0.27 0.3 } scale = { 0.55 0.55 } rotation = 8 }
+#	}
+#}
+#
+#house_Scales = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_purple_medium"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_white"
+#	colored_emblem = {
+#		texture = "asoiaf_scales.dds"
+#		color1 = "asoiaf_purple_medium"
+#		color2 = "asoiaf_black_deep"
+#		instance = { position = { 0.5 0.5 } scale = { 1.55 1.55 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_snake_around_sword.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_white"
+#		instance = { position = { 0.48 0.48 } scale = { 0.7 0.75 } }
+#	}
+#}
+#
+#dynn_Correy = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = "asoiaf_grey_light"
+#	color3 = "asoiaf_grey_light"
+#	colored_emblem = {
+#		texture = "asoiaf_rose_2.dds"
+#		color1 = "asoiaf_grey_light"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.495 0.4725 } scale = { 0.71 0.71 } }
+#	}
+#}
+#
+#dynn_Leek={
+#	pattern = "pattern_solid.dds"
+#	color1 = rgb { 195 158 134 }
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_green_light"
+#	textured_emblem = {
+#		texture = "crownlands_leek.dds"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+#	}
+#}
+#
+#dynn_Blount = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_green"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "ce_bend_med.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.5 0.5 } scale = { -1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_porcupine.dds"
+#		color1 = "asoiaf_black_alt"
+#		color2 = "asoiaf_black_deep"
+#		color3 = "asoiaf_black"
+#		instance = { position = { 0.74 0.7 } scale = { 0.5 0.5 } rotation = -7 }
+#		instance = { position = { 0.3 0.25 } scale = { -0.5 0.5 } }
+#	}
+#}
+#
+#dynn_Buckwell = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_blue_medium"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "ce_blacktyde.dds"
+#		color1 = "asoiaf_blue_medium"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.45 } scale = { 1.3 1.3 } }
+#	}
+#	colored_emblem = {
+#		texture = "cl_buckwell_antlers_1.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black_deep"
+#		instance = { position = { 0.5 0.47 } scale = { 0.85 0.85 } }
+#	}
+#}
+#
+#dynn_Hall = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white_dark"
+#	color2 = "asoiaf_red_dark"
+#	color3 = "asoiaf_red_dark"
+#	colored_emblem = {
+#		texture = "historical_shield_engrailed_1.dds"
+#		color1 = "asoiaf_red_dark"
+#		instance = { position = { 0.5 0.49 } scale = { 0.725 0.725 } }
+#	}
+#	colored_emblem = {
+#		texture = "vl_underleaf.dds"
+#		color1 = "asoiaf_white_dark"
+#		instance = { position = { 0.5 0.52 } scale = { 0.9 0.9 } }
+#	}
+#}
+#
+#dynn_Byrch = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_green"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_grey"
+#	colored_emblem = {
+#		texture = "ce_gyronny_08.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.25 0.25 } scale = { 0.5 0.5 } }
+#		instance = { position = { 0.75 0.75 } scale = { 0.5 0.5 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_block_05.dds"
+#		color1 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 0.1 1.0 } rotation = 90 }
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 0.1 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_axe.dds"
+#		color1 = "asoiaf_grey_light"
+#		color2 = "asoiaf_grey"
+#		instance = { position = { 0.75 0.27 } scale = { 0.45 0.45 } rotation = -20 }
+#		instance = { position = { 0.31 0.73 } scale = { 0.45 0.45 } rotation = -20 }
+#	}
+#}
+#
+#dynn_Deem = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_blue_light"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "ce_african_pattern_05.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 0.5 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_blue_light"
+#		instance = { position = { 0.875 0.5 } scale = { 0.5 1.0 } } #right
+#		instance = { position = { 0.125 0.5 } scale = { 0.5 1.0 } } #left
+#	}
+#	colored_emblem = {
+#		texture = "ce_axe_long.dds"
+#		color1 = "asoiaf_grey"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.75 0.45 } scale = { -0.8 0.8 } } #right
+#		instance = { position = { 0.25 0.45 } scale = { 0.8 0.8 } } #left
+#	}
+#}
+#
+#dynn_Sweet = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_blue_light"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "ce_pagan_spiral_04.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_bronze_dark"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	#colored_emblem = {
+#	#	texture = "historical_shield.dds"
+#	#	color1 = "asoiaf_black"
+#	#	color2 = "asoiaf_black"
+#	#	instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }
+#	#}
+#	colored_emblem = {
+#		texture = "cl_sweet.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_yellow"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.1 } }
+#	}
+#}
+#
+#dynn_Pyne = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_black"
+#	color2 = "asoiaf_green"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "ce_pagan_star_04.dds"
+#		color1 = "asoiaf_green"
+#		instance = { position = { 0.1 0.0 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.3 0.0 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.5 0.0 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.7 0.0 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.9 0.0 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.0 0.2 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.2 0.2 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.4 0.2 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.6 0.2 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.8 0.2 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 1.0 0.2 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.1 0.4 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.3 0.4 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.5 0.4 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.7 0.4 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.9 0.4 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.0 0.6 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.2 0.6 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.4 0.6 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.6 0.6 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.8 0.6 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 1.0 0.6 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.1 0.8 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.3 0.8 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.5 0.8 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.7 0.8 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.9 0.8 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.0 1.0 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.2 1.0 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.4 1.0 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.6 1.0 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 0.8 1.0 } scale = { 0.2 0.2 } rotation = 45 }
+#		instance = { position = { 1.0 1.0 } scale = { 0.2 0.2 } rotation = 45 }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_star_four_pointed.dds"
+#		color1 = "asoiaf_green"
+#		instance = { position = { 0.1 0.0 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.3 0.0 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.5 0.0 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.7 0.0 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.9 0.0 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.0 0.2 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.2 0.2 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.4 0.2 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.6 0.2 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.8 0.2 } scale = { 0.165 0.165 } }
+#		instance = { position = { 1.0 0.2 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.1 0.4 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.3 0.4 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.5 0.4 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.7 0.4 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.9 0.4 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.0 0.6 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.2 0.6 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.4 0.6 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.6 0.6 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.8 0.6 } scale = { 0.165 0.165 } }
+#		instance = { position = { 1.0 0.6 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.1 0.8 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.3 0.8 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.5 0.8 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.7 0.8 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.9 0.8 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.0 1.0 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.2 1.0 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.4 1.0 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.6 1.0 } scale = { 0.165 0.165 } }
+#		instance = { position = { 0.8 1.0 } scale = { 0.165 0.165 } }
+#		instance = { position = { 1.0 1.0 } scale = { 0.165 0.165 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_mena_pale.dds"
+#		color1 = "asoiaf_yellow"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_tree_pine.dds"
+#		color1 = "asoiaf_green"
+#		color2 = "asoiaf_black"
+#		color3 = "asoiaf_brown"
+#		instance = { position = { 0.5 0.46 } scale = { 0.5 0.7 } }
+#	}
+#}
+#
+#dynn_Yore = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_yellow"
+#	color2 = "asoiaf_green"
+#	color3 = "asoiaf_white"
+#	colored_emblem = {
+#		texture = "historical_vairy.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.45 } scale = { 1.4 1.4 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_plain.dds"
+#		color1 = "asoiaf_green"
+#		instance = { position = { 0.5 0.122 } scale = { 1.0 0.5 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_quill_1.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.2 } scale = { 0.85 0.85 } rotation = 90 }
+#	}
+#}
+#
+#dynn_Groves = {
+#	pattern = "pattern_checkers_08.dds"
+#	color1 = "asoiaf_blue"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "ce_block_03.dds"
+#		color1 = "asoiaf_black"
+#		instance = { position = { 0.5 0.44 } scale = { 1.0 1.6 } }
+#	}
+#	colored_emblem = {
+#		texture = "reach_percy_eye.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_pink_pale"
+#		instance = { position = { 0.1 0.46 } scale = { 0.8 1.0 } }
+#		instance = { position = { 0.5 0.46 } scale = { 0.8 1.0 } }
+#		instance = { position = { 0.9 0.46 } scale = { 0.8 1.0 } }
+#	}
+#}
+#
+#dynn_Brune = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_brown"
+#	color2 = "asoiaf_brown"
+#	color3 = "asoiaf_white"
+#	colored_emblem = {
+#		texture = "cl_winters.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.5 0.52 } scale = { 1.2 1.2 }  }
+#	}
+#}
+#house_Brownhollow = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_brown"
+#	color3 = "asoiaf_brown"
+#	colored_emblem = {
+#		texture = "ce_1_shield_split.dds"
+#		color1 = "asoiaf_brown"
+#		color2 = "asoiaf_brown"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_1_shield_split.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_1_shield_split.dds"
+#		color1 = "asoiaf_brown"
+#		color2 = "asoiaf_brown"
+#		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_1_shield_split.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 0.7 0.7 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_pawprint.dds"
+#		color1 = "asoiaf_brown"
+#		instance = { position = { 0.5 0.48 } scale = { 0.5 0.5 } }
+#	}
+#}
+#
+#dynn_Cave = {
+#	pattern = "pattern_vertical_split_01.dds"
+#	color1 = "asoiaf_blue"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_white"
+#	colored_emblem = {
+#		texture = "ce_mena_bend.dds"
+#		color1 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_bat.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_black"
+#		color3 = rgb { 255 255 255 }
+#		instance = { position = { 0.17 0.21 } scale = { 0.45 0.45 } rotation = 45 }
+#		instance = { position = { 0.46 0.5 } scale = { 0.45 0.45 } rotation = 45 }
+#		instance = { position = { 0.75 0.79 } scale = { 0.45 0.45 } rotation = 45 }
+#	}
+#}
+#
+#dynn_Branfield = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_white"
+#	colored_emblem = {
+#		texture = "re_vyrwell_2.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.49 0.52 } scale = { 1.6 1.6 } }
+#	}
+#}
+#
+#dynn_Boggs = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_field_green_dark"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_white_dark"
+#	colored_emblem = {
+#		texture = "historical_shield.dds"
+#		color1 = "asoiaf_white_dark"
+#		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_shield.dds"
+#		color1 = "asoiaf_field_green_dark"
+#		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_frog.dds"
+#		color1 = "asoiaf_black"
+#		color2 = "asoiaf_black_deep"
+#		color3 = "asoiaf_field_green_dark"
+#		instance = { position = { 0.5 0.48 } scale = { 0.58 0.58 } }
+#	}
+#}
+#
+#dynn_Crabb = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_blue"
+#	color2 = "asoiaf_yellow"
+#	color3 = "asoiaf_white"
+#	colored_emblem = {
+#		texture = "ce_waves_rounded.dds"
+#		color1 = "asoiaf_yellow"
+#		instance = { position = { 0.5 -0.31 } scale = { 1.6 -1.6 }  }
+#	}
+#	colored_emblem = {
+#		texture = "cl_crabb_crab.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_blue_dark"
+#		instance = { position = { 0.5 0.575 } scale = { 0.82 0.82 }  }
+#	}
+#}
+#
+#dynn_Suggs = {
+#	pattern = "pattern_solid.dds"
+#	color1 = rgb { 94 32 18 }
+#	color2 = rgb { 94 32 18 }
+#	color3 = "asoiaf_pink_pale"
+#	colored_emblem = {
+#		texture = "cl_suggs.dds"
+#		color1 = "asoiaf_pink_pale"
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.495 0.55 } scale = { 1.3 1.3 } rotation = 5 }
+#	}
+#}
+#
+##dynn_Aranys = {
+##	pattern = "pattern_solid.dds"
+##	color1 = "asoiaf_black"
+##	color2 = "asoiaf_black"
+##	color3 = "asoiaf_yellow"
+##	colored_emblem = {
+##		texture = "ce_griffin_rampant.dds"
+##		color1 = "asoiaf_yellow"
+##		color2 = "asoiaf_brown"
+##		color3 = "asoiaf_brown"
+##		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }
+##	}
+##}
+##house_Telaryen = {
+##	pattern = "pattern_solid.dds"
+##	color1 = "asoiaf_black"
+##	color2 = "asoiaf_black"
+##	color3 = "asoiaf_white"
+##	colored_emblem = {
+##		texture = "ce_griffin_rampant.dds"
+##		color1 = "asoiaf_white"
+##		color2 = "asoiaf_grey"
+##		color3 = "asoiaf_grey"
+##		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }
+##	}
+##}
+#
+#dynn_Follard = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_red"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "cl_follard.dds"
+#		color1 = "asoiaf_red"
+#		color2 = "asoiaf_yellow"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#}
+#
+#dynn_Bentley = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_field_green_dark"
+#	color2 = "asoiaf_bronze_light"
+#	color3 = "asoiaf_bronze_light"
+#	colored_emblem = {
+#		texture = "ce_ram_horn.dds"
+#		color1 = "asoiaf_bronze_light"
+#		instance = { position = { 0.5 0.5 } scale = { 0.89 0.89 } }
+#	}
+#}
+#
+#dynn_Rambton = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "st_rambton.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_yellow"
+#		instance = { position = { 0.5 0.52 } scale = { 1.0 1.0 } }
+#	}
+#}
+#
+#dynn_Miller = {
+#	pattern = "pattern_checkers_02.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_blue_light"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "cl_miller.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_brown"
+#		color3 = "asoiaf_grey_medium"
+#		instance = { position = { 0.5 0.5 } scale = { 0.7 0.7 } }
+#	}
+#}
+#
+#dynn_Wheaton = {
+#	pattern = "pattern__solid_designer.dds"
+#	color1 = "asoiaf_field_green_dark"
+#	color2 = "asoiaf_white_dark"
+#	color3 = "asoiaf_yellow_light"
+#	colored_emblem = {
+#		texture = "ce_grain.dds"
+#		color1 = rgb { 219 156 64 }
+#		color2 = "asoiaf_white"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#}
+#
+#dynn_Bullock = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_green_cool_undertone"
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_red"
+#	colored_emblem = {
+#		texture = "ce_chain_01.dds"
+#		color1 = "asoiaf_white"
+#		color2 = "asoiaf_white"
+#		color3 = "asoiaf_white"
+#		instance = { position = { 0.5 0.47 } scale = { 1.2 1.2 } }
+#		instance = { position = { 0.5 0.22 } scale = { 1.2 1.2 } }
+#		instance = { position = { 0.5 -0.03 } scale = { 1.2 1.2 } }
+#		instance = { position = { 0.5 -0.28 } scale = { 1.2 1.2 } }
+#		instance = { position = { 0.5 0.72 } scale = { 1.2 1.2 } }
+#		instance = { position = { 0.5 0.98 } scale = { 1.2 1.2 } }
+#		instance = { position = { 0.5 1.23 } scale = { 1.2 1.2 } }
+#	}
+#	colored_emblem = {
+#		texture = "cl_bullock_bull.dds"
+#		color1 = "asoiaf_red"
+#		color2 = "asoiaf_red"
+#		instance = { position = { 0.5 0.46 } scale = { 0.825 0.825 } }
+#	}
+#}
+#
+#dynn_Blackberry = {
+#	pattern = "pattern_vertical_split_01.dds"
+#	color1 = "asoiaf_white"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_green_light"
+#	colored_emblem = {
+#		texture = "cl_blackberry_bush.dds"
+#		color1 = "asoiaf_green_light"
+#		color2 = "agot_purple"
+#		color3 = rgb {0 50 0 }
+#		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 }  }
+#	}
+#}
+#
+#dynn_Tall = {
+#	pattern = "asoiaf_pattern_gradient_2.dds"
+#	color1 = rgb { 207 149 67 }
+#	color2 = rgb { 154 76 28 }
+#	color3 = rgb { 80 59 27 }
+#	colored_emblem = {
+#		texture = "asoiaf_tree_dead_4.dds"
+#		color1 = rgb { 68 50 23 }
+#		instance = { position = { 0.5 0.55 } scale = { 0.7 0.7 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_star_shooting.dds"
+#		color1 = rgb { 229 225 176 }
+#		color2 = rgb { 229 225 176 }
+#		instance = { position = { 0.5 0.19 } scale = { 0.8 0.8 } }
+#	}
+#}
+#
+#dynn_Dunkel = {
+#	pattern = "pattern_solid.dds"
+#	color1 = rgb { 7 45 55 }
+#	color2 = "asoiaf_white"
+#	color3 = "asoiaf_yellow"
+#	colored_emblem = {
+#		texture = "ce_checkers_diagonal_6x3.dds"
+#		color1 = "asoiaf_white"
+#		color2 = rgb { 7 45 55 }
+#		instance = { position = { 0.5 0.99 } scale = { 1.0 1.0 } }
+#		instance = { position = { 0.5 0.0 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_shield.dds"
+#		color1 = rgb { 7 45 55 }
+#		instance = { position = { 0.5 0.5 } scale = { 0.75 0.75 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_sword_simple.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_yellow"
+#		color3 = "asoiaf_yellow"
+#		instance = { position = { 0.47 0.43 } scale = { -0.62 -0.62 } rotation = 319 }
+#		instance = { position = { 0.53 0.43 } scale = { -0.62 0.62 } rotation = 221 }
+#	}
+#	colored_emblem = {
+#		texture = "ce_diamond_01.dds"
+#		color1 = "asoiaf_yellow"
+#		instance = { position = { 0.62 0.3 } scale = { 0.23 0.23 } rotation = 104 }
+#		instance = { position = { 0.39 0.3 } scale = { 0.23 0.23 } rotation = 75 }
+#	}
+#	colored_emblem = {
+#		texture = "ce_square_kaaba.dds"
+#		color1 = "asoiaf_yellow"
+#		instance = { position = { 0.67 0.345 } scale = { 0.18 0.18 } rotation = 42 }
+#		instance = { position = { 0.33 0.35 } scale = { 0.18 0.18 } rotation = 49 }
+#	}
+#	colored_emblem = {
+#		texture = "ce_castle.dds"
+#		color1 = "asoiaf_yellow"
+#		color2 = "asoiaf_black"
+#		instance = { position = { 0.5 0.67 } scale = { 0.115 0.16 } }
+#	}
+#	colored_emblem = {
+#		texture = "ce_mjolnir.dds"
+#		color1 = "asoiaf_yellow"
+#		instance = { position = { 0.39 0.59 } scale = { 0.12 -0.12 } rotation = 220 }
+#		instance = { position = { 0.61 0.59 } scale = { 0.12 0.12 } rotation = 319 }
+#	}
+#}
+#
+#dynn_Kettleblack = {
+#	pattern = "pattern_solid.dds"
+#	color1 = "asoiaf_red"
+#	color2 = "asoiaf_black"
+#	color3 = "asoiaf_black"
+#	colored_emblem = {
+#		texture = "historical_shield.dds"
+#		color1 = "asoiaf_black"
+#		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }
+#	}
+#	colored_emblem = {
+#		texture = "historical_shield.dds"
+#		color1 = "asoiaf_red"
+#		instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }
+#	}
+#	colored_emblem = {
+#		texture = "asoiaf_kettle.dds"
+#		color1 = rgb { 16 14 12 }
+#		instance = { position = { 0.5 0.47 } scale = { 0.6 0.6 } }
+#	}
+#}

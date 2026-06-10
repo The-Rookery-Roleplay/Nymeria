@@ -1,0 +1,433 @@
+﻿asoiaf_westeros_culture_fix_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_westeros_culture_fix_rule_on
+	
+	asoiaf_westeros_culture_fix_rule_off = {}
+	asoiaf_westeros_culture_fix_rule_on = {}
+}
+
+asoiaf_westeros_heresy_fix_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_westeros_heresy_fix_rule_on
+	
+	asoiaf_westeros_heresy_fix_rule_off = {}
+	asoiaf_westeros_heresy_fix_rule_on = {}
+}
+
+asoiaf_sexuality_fix_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_sexuality_fix_rule_on
+	
+	asoiaf_sexuality_fix_rule_off = {}
+	asoiaf_sexuality_fix_rule_on = {}
+}
+
+asoiaf_fertility_health_boost_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_fertility_health_boost_rule_off
+	
+	asoiaf_fertility_health_boost_rule_off = {}
+	asoiaf_fertility_health_boost_rule_on = {}
+}
+
+asoiaf_got_names_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_got_names_rule_off
+	
+	asoiaf_got_names_rule_off = {}
+	asoiaf_got_names_rule_on = {}
+}
+
+asoiaf_got_traits_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_got_traits_rule_on
+	
+	asoiaf_got_traits_rule_off = {}
+	asoiaf_got_traits_rule_on = {}
+}
+
+asoiaf_alternative_ages_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_alternative_ages_rule_on
+	
+	asoiaf_alternative_ages_rule_off = {}
+	asoiaf_alternative_ages_rule_on = {}
+}
+
+asoiaf_hbo_velaryons_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_hbo_velaryons_rule_off
+	
+	asoiaf_hbo_velaryons_rule_off = {}
+	asoiaf_hbo_velaryons_rule_on = {}
+}
+
+asoiaf_alternative_dayne_sigil_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_alternative_dayne_sigil_rule_off
+	
+	asoiaf_alternative_dayne_sigil_rule_off = {}
+	asoiaf_alternative_dayne_sigil_rule_on = {}
+}
+
+#NEW DNAS
+asoiaf_new_dnas_valyrian_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_valyrian_rule_on
+	
+	asoiaf_new_dnas_valyrian_rule_off = {}
+	asoiaf_new_dnas_valyrian_rule_on = {}
+}
+
+asoiaf_new_dnas_north_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_north_rule_on
+	
+	asoiaf_new_dnas_north_rule_off = {}
+	asoiaf_new_dnas_north_rule_on = {}
+}
+
+asoiaf_new_dnas_crownlands_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_crownlands_rule_on
+	
+	asoiaf_new_dnas_crownlands_rule_off = {}
+	asoiaf_new_dnas_crownlands_rule_on = {}
+}
+
+asoiaf_new_dnas_vale_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_vale_rule_on
+	
+	asoiaf_new_dnas_vale_rule_off = {}
+	asoiaf_new_dnas_vale_rule_on = {}
+}
+
+asoiaf_new_dnas_riverlands_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_riverlands_rule_on
+	
+	asoiaf_new_dnas_riverlands_rule_off = {}
+	asoiaf_new_dnas_riverlands_rule_on = {}
+}
+
+asoiaf_new_dnas_westerlands_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_westerlands_rule_on
+	
+	asoiaf_new_dnas_westerlands_rule_off = {}
+	asoiaf_new_dnas_westerlands_rule_on = {}
+}
+
+asoiaf_new_dnas_reach_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_reach_rule_on
+	
+	asoiaf_new_dnas_reach_rule_off = {}
+	asoiaf_new_dnas_reach_rule_on = {}
+}
+
+asoiaf_new_dnas_stormlands_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_stormlands_rule_on
+	
+	asoiaf_new_dnas_stormlands_rule_off = {}
+	asoiaf_new_dnas_stormlands_rule_on = {}
+}
+
+asoiaf_new_dnas_dorne_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_dorne_rule_on
+	
+	asoiaf_new_dnas_dorne_rule_off = {}
+	asoiaf_new_dnas_dorne_rule_on = {}
+}
+
+asoiaf_new_dnas_iron_isles_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_iron_isles_rule_on
+	
+	asoiaf_new_dnas_iron_isles_rule_off = {}
+	asoiaf_new_dnas_iron_isles_rule_on = {}
+}
+
+asoiaf_new_dnas_beyond_the_wall_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_beyond_the_wall_rule_on
+	
+	asoiaf_new_dnas_beyond_the_wall_rule_off = {}
+	asoiaf_new_dnas_beyond_the_wall_rule_on = {}
+}
+
+asoiaf_new_dnas_essos_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_dnas_essos_rule_on
+	
+	asoiaf_new_dnas_essos_rule_off = {}
+	asoiaf_new_dnas_essos_rule_on = {}
+}
+
+#asoiaf_new_dnas_dragons_rule = {
+#	categories = {
+#		asoiaf
+#	}
+#
+#	default = asoiaf_new_dnas_dragons_rule_on
+#	
+#	asoiaf_new_dnas_dragons_rule_off = {}
+#	asoiaf_new_dnas_dragons_rule_on = {}
+#}
+
+#NEW CLOTHES
+asoiaf_new_clothes_valyrian_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_valyrian_rule_on
+	
+	asoiaf_new_clothes_valyrian_rule_off = {}
+	asoiaf_new_clothes_valyrian_rule_on = {}
+}
+
+asoiaf_new_clothes_north_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_north_rule_on
+	
+	asoiaf_new_clothes_north_rule_off = {}
+	asoiaf_new_clothes_north_rule_on = {}
+}
+
+asoiaf_new_clothes_crownlands_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_crownlands_rule_on
+	
+	asoiaf_new_clothes_crownlands_rule_off = {}
+	asoiaf_new_clothes_crownlands_rule_on = {}
+}
+
+asoiaf_new_clothes_vale_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_vale_rule_on
+	
+	asoiaf_new_clothes_vale_rule_off = {}
+	asoiaf_new_clothes_vale_rule_on = {}
+}
+
+asoiaf_new_clothes_riverlands_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_riverlands_rule_on
+	
+	asoiaf_new_clothes_riverlands_rule_off = {}
+	asoiaf_new_clothes_riverlands_rule_on = {}
+}
+
+asoiaf_new_clothes_westerlands_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_westerlands_rule_on
+	
+	asoiaf_new_clothes_westerlands_rule_off = {}
+	asoiaf_new_clothes_westerlands_rule_on = {}
+}
+
+asoiaf_new_clothes_reach_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_reach_rule_on
+	
+	asoiaf_new_clothes_reach_rule_off = {}
+	asoiaf_new_clothes_reach_rule_on = {}
+}
+
+asoiaf_new_clothes_stormlands_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_stormlands_rule_on
+	
+	asoiaf_new_clothes_stormlands_rule_off = {}
+	asoiaf_new_clothes_stormlands_rule_on = {}
+}
+
+asoiaf_new_clothes_dorne_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_dorne_rule_on
+	
+	asoiaf_new_clothes_dorne_rule_off = {}
+	asoiaf_new_clothes_dorne_rule_on = {}
+}
+
+asoiaf_new_clothes_iron_isles_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_iron_isles_rule_on
+	
+	asoiaf_new_clothes_iron_isles_rule_off = {}
+	asoiaf_new_clothes_iron_isles_rule_on = {}
+}
+
+asoiaf_new_clothes_essos_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_new_clothes_essos_rule_on
+	
+	asoiaf_new_clothes_essos_rule_off = {}
+	asoiaf_new_clothes_essos_rule_on = {}
+}
+
+asoiaf_canon_children_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_canon_children_rule_on
+	
+	asoiaf_canon_children_rule_off = {}
+	asoiaf_canon_children_rule_on = {}
+	asoiaf_canon_children_rule_on_traits = {}
+}
+
+asoiaf_canon_children_pregnancy_negation_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_canon_children_pregnancy_negation_rule_off
+	
+	asoiaf_canon_children_pregnancy_negation_rule_off = {}
+	asoiaf_canon_children_pregnancy_negation_rule_on = {}
+}
+
+asoiaf_canon_children_dragon_bonding_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_canon_children_dragon_bonding_rule_off
+	
+	asoiaf_canon_children_dragon_bonding_rule_off = {}
+	asoiaf_canon_children_dragon_bonding_rule_on = {}
+}
+
+asoiaf_assisted_ruler_capture_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_assisted_ruler_capture_off
+	
+	asoiaf_assisted_ruler_capture_off = {}
+	asoiaf_assisted_ruler_capture_player_only = {}
+	asoiaf_assisted_ruler_capture_universal = {}
+}
+
+asoiaf_spousal_claims_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_spousal_claims_off
+	
+	asoiaf_spousal_claims_off = {}
+	asoiaf_spousal_claims_player_only = {}
+	asoiaf_spousal_claims_universal = {}
+}
+
+asoiaf_lord_paramount_contract_fix_rule = {
+	categories = {
+		asoiaf
+	}
+
+	default = asoiaf_lord_paramount_contract_fix_on
+	
+	asoiaf_lord_paramount_contract_fix_off = {}
+	asoiaf_lord_paramount_contract_fix_on = {}
+}

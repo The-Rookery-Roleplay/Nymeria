@@ -1,0 +1,16 @@
+﻿#TARGARYEN LEGENDS
+asoiaf_aegon_I_targaryen = {
+	name = legend_aegon_I_targaryen
+	description = legend_aegon_I_targaryen_desc
+	properties = {
+		ancestor = character
+		title = landed_title
+	}
+	chapters = {
+		opening = legend_chapter_opening_ancestral_glory
+		motivation = legend_chapter_motivation_ancestral_glory
+		famous_deed = legend_chapter_famous_deed_generic
+		extra_deed = legend_chapter_extra_deed_ancestral_glory
+		conclusion = legend_chapter_conclusion_ancestral_glory
+	}
+}

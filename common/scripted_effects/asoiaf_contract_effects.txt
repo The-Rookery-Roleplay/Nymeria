@@ -1,0 +1,218 @@
+﻿asoiaf_north_contract_effect = {
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_taxes
+		level = 1
+	}
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_levies
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = title_revocation_rights
+		level = 1
+	}
+	if = { #ONLY set to Marcher if the special contract was reset to NORMAL (if the player gave made it something else, it should stay that way)
+		limit = {
+			NOR = {
+				vassal_contract_has_flag = has_march_contract
+				vassal_contract_has_flag = has_palatinate_contract
+				vassal_contract_has_flag = has_scutage_contract
+			}
+		}
+		vassal_contract_set_obligation_level = {
+			type = special_contract
+			level = 2 #Marcher
+		}
+	}
+	if = {
+		limit = {
+			NOT = { root.faith = root.liege.faith }
+		}
+		vassal_contract_set_obligation_level = {
+			type = religious_rights
+			level = 1
+		}
+	}
+}
+
+asoiaf_riverlands_contract_effect = {
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_taxes
+		level = 2
+	}
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_levies
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = title_revocation_rights
+		level = 1
+	}
+}
+
+asoiaf_vale_contract_effect = {
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_taxes
+		level = 2
+	}
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_levies
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = title_revocation_rights
+		level = 1
+	}
+}
+
+asoiaf_iron_islands_contract_effect = {
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_taxes
+		level = 1
+	}
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_levies
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = title_revocation_rights
+		level = 1
+	}
+	if = {
+		limit = {
+			NOT = { root.faith = root.liege.faith }
+		}
+		vassal_contract_set_obligation_level = {
+			type = religious_rights
+			level = 1
+		}
+	}
+}
+
+asoiaf_westerlands_contract_effect = {
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_taxes
+		level = 3
+	}
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_levies
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = title_revocation_rights
+		level = 1
+	}
+}
+
+asoiaf_crownlands_contract_effect = {
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_taxes
+		level = 2
+	}
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_levies
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = title_revocation_rights
+		level = 1
+	}
+}
+
+asoiaf_dragonstone_contract_effect = {
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_taxes
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_levies
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = title_revocation_rights
+		level = 1
+	}
+	if = { #ONLY set to Marcher if the special contract was reset to NORMAL (if the player gave made it something else, it should stay that way)
+		limit = {
+			NOR = {
+				vassal_contract_has_flag = has_march_contract
+				vassal_contract_has_flag = has_palatinate_contract
+				vassal_contract_has_flag = has_scutage_contract
+			}
+		}
+		vassal_contract_set_obligation_level = {
+			type = special_contract
+			level = 2 #Marcher
+		}
+	}
+}
+
+asoiaf_reach_contract_effect = {
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_taxes
+		level = 3
+	}
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_levies
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = title_revocation_rights
+		level = 1
+	}
+}
+
+asoiaf_stormlands_contract_effect = {
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_taxes
+		level = 2
+	}
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_levies
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = title_revocation_rights
+		level = 1
+	}
+	vassal_contract_set_obligation_level = {
+		type = fortification_rights
+		level = 1
+	}
+}
+
+asoiaf_dorne_contract_effect = {
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_taxes
+		level = 1
+	}
+	vassal_contract_set_obligation_level = {
+		type = feudal_government_levies
+		level = 0
+	}
+	vassal_contract_set_obligation_level = {
+		type = title_revocation_rights
+		level = 1
+	}
+	if = { #ONLY set to Palatinate if the special contract was reset to NORMAL (if the player gave made it something else, it should stay that way)
+		limit = {
+			NOR = {
+				vassal_contract_has_flag = has_march_contract
+				vassal_contract_has_flag = has_palatinate_contract
+				vassal_contract_has_flag = has_scutage_contract
+			}
+			OR = { #holder is Dornish or Rhoynish
+				culture = culture:stone_dornish
+				culture = culture:sand_dornish
+				culture = culture:salt_dornish
+				culture = {
+					has_cultural_pillar = heritage_rhoynar
+				}
+			}
+		}
+		vassal_contract_set_obligation_level = {
+			type = special_contract
+			level = 4 #Palatinate
+		}
+	}
+}
